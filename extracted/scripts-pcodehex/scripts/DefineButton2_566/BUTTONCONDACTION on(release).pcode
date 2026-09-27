@@ -1,0 +1,47 @@
+; 88 26 00 04 00 5f 70 61 72 65 6e 74 00 73 74 61 67 65 43 6c 65 61 72 00 67 61 6d 65 00 67 6f 74 6f 41 6e 64 50 6c 61 79 00
+ConstantPool "_parent", "stageClear", "game", "gotoAndPlay"
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 4e
+GetMember
+; 12
+Not
+; 9d 02 00 22 00
+If loc005d
+; 96 0c 00 07 01 00 00 00 07 01 00 00 00 08 00
+Push 1, 1, constant0
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 99 02 00 1d 00
+Jump loc007a
+; 96 0c 00 07 02 00 00 00 07 01 00 00 00 08 00
+loc005d:Push 2, 1, constant0
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 81 02 00 00 00
+loc007a:GotoFrame 0
+; 00

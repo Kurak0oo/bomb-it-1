@@ -1,0 +1,33 @@
+ConstantPool "_parent", "soundon", "bgMusic_sound", "stop", "start"
+Push constant0
+GetVariable
+Push constant1
+GetMember
+Not
+If loc0070
+Push constant0
+GetVariable
+Push constant1, false
+SetMember
+Push 0.0, constant0
+GetVariable
+Push constant2
+GetMember
+Push constant3
+CallMethod
+Pop
+NextFrame
+Jump loc009b
+loc0070:Push constant0
+GetVariable
+Push constant1, true
+SetMember
+PrevFrame
+Push 0.0, constant0
+GetVariable
+Push constant2
+GetMember
+Push constant4
+CallMethod
+Pop
+loc009b:

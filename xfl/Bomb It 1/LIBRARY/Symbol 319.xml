@@ -1,0 +1,135 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 319" itemID="6ab69380-000000f3" lastModified="1790348247" linkageIdentifier="fireEffect" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 319">
+               <layers>
+                    <DOMLayer name="Script Layer" color="#fc2074">
+                         <frames>
+                              <DOMFrame index="0" duration="39" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="39" keyMode="9728">
+                                   <Actionscript>
+                                        <script>this.removeMovieClip();
+</script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#f03dcb" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="39.95" centerPoint3DY="21.4">
+                                             <matrix>
+                                                  <Matrix tx="21.5" ty="15.0" a="1.52587890625E-5" d="9.1552734375E-5" b="0.106536865234375" c="-1.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="44.65" centerPoint3DY="-6.85">
+                                             <matrix>
+                                                  <Matrix tx="26.2" ty="-13.25" a="3.0517578125E-5" d="6.103515625E-5" b="0.910064697265625" c="-1.8668670654296875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="47.95" centerPoint3DY="-27.05">
+                                             <matrix>
+                                                  <Matrix tx="29.5" ty="-33.45" a="4.57763671875E-5" d="9.1552734375E-5" b="1.4840240478515625" c="-2.486083984375"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="50.0" centerPoint3DY="-39.15">
+                                             <matrix>
+                                                  <Matrix tx="31.55" ty="-45.55" a="6.103515625E-5" d="1.068115234375E-4" b="1.8283843994140625" c="-2.8575897216796875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="32" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="50.65" centerPoint3DY="-43.25">
+                                             <matrix>
+                                                  <Matrix tx="32.2" ty="-49.65" a="1.8310546875E-4" d="2.74658203125E-4" b="1.94317626953125" c="-2.981475830078125"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="36" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="44.7" centerPoint3DY="-7.35">
+                                             <matrix>
+                                                  <Matrix tx="26.25" ty="-13.75" a="3.0517578125E-5" d="4.57763671875E-5" b="0.9228363037109375" c="-1.8806610107421875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="37" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="41.15" centerPoint3DY="14.2">
+                                             <matrix>
+                                                  <Matrix tx="22.7" ty="7.8" a="1.52587890625E-5" d="4.57763671875E-5" b="0.3106231689453125" c="-1.220184326171875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="38" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="39.95" centerPoint3DY="21.4">
+                                             <matrix>
+                                                  <Matrix tx="21.5" ty="15.0" a="1.52587890625E-5" d="9.1552734375E-5" b="0.106536865234375" c="-1.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="39" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Sound Layer 0" color="#b0f85a">
+                         <frames>
+                              <DOMFrame index="0" duration="40" keyMode="9728" soundName="sound318.wav">
+                                   <SoundEnvelope>
+                                        <SoundEnvelopePoint level0="32768" level1="32768"/>
+                                   </SoundEnvelope>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

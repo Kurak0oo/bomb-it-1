@@ -1,0 +1,241 @@
+; 88 01 01 1b 00 73 74 61 67 65 4e 75 6d 00 68 65 72 6f 4e 75 6d 00 68 65 72 6f 4f 62 6a 00 74 68 69 73 00 74 6f 74 61 6c 53 63 6f 72 65 00 74 6f 74 61 6c 50 6c 61 79 65 72 00 6c 69 66 65 00 70 5f 70 6f 69 6e 74 65 72 31 00 72 65 6d 6f 76 65 4d 6f 76 69 65 43 6c 69 70 00 70 5f 70 6f 69 6e 74 65 72 32 00 62 67 4d 75 73 69 63 5f 73 6f 75 6e 64 00 73 74 6f 70 00 4b 65 79 00 72 65 6d 6f 76 65 4c 69 73 74 65 6e 65 72 00 71 75 61 6c 69 74 79 4e 75 6d 00 71 75 61 6c 69 74 79 5f 6d 63 00 67 6f 74 6f 41 6e 64 53 74 6f 70 00 73 6f 75 6e 64 6f 6e 00 73 6f 75 6e 64 6f 6e 5f 6d 63 00 6e 65 78 74 46 72 61 6d 65 00 76 61 72 48 61 72 64 00 65 61 73 79 00 6e 6f 72 6d 61 6c 00 68 61 72 64 00 74 6f 74 61 6c 53 74 61 67 65 00 76 61 72 48 61 72 64 3d 00 2c 74 6f 74 61 6c 53 74 61 67 65 3d 00
+ConstantPool "stageNum", "heroNum", "heroObj", "this", "totalScore", "totalPlayer", "life", "p_pointer1", "removeMovieClip", "p_pointer2", "bgMusic_sound", "stop", "Key", "removeListener", "qualityNum", "quality_mc", "gotoAndStop", "soundon", "soundon_mc", "nextFrame", "varHard", "easy", "normal", "hard", "totalStage", "varHard=", ",totalStage="
+; 96 0b 00 08 00 06 00 00 00 00 00 00 00 00
+Push constant0, 0.0
+; 1d
+SetVariable
+; 96 07 00 08 01 07 01 00 00 00
+Push constant1, 1
+; 3c
+DefineLocal
+; 96 02 00 08 01
+loc011e:Push constant1
+; 1c
+GetVariable
+; 96 05 00 07 04 00 00 00
+Push 4
+; 67
+Greater
+; 12
+Not
+; 12
+Not
+; 9d 02 00 72 00
+If loc01a6
+; 96 04 00 08 02 08 03
+Push constant2, constant3
+; 1c
+GetVariable
+; 96 04 00 08 02 08 01
+Push constant2, constant1
+; 1c
+GetVariable
+; 47
+Add2
+; 4e
+GetMember
+; 3c
+DefineLocal
+; 96 02 00 08 02
+Push constant2
+; 1c
+GetVariable
+; 96 0b 00 08 04 06 00 00 00 00 00 00 00 00
+Push constant4, 0.0
+; 4f
+SetMember
+; 96 02 00 08 01
+Push constant1
+; 1c
+GetVariable
+; 96 02 00 08 05
+Push constant5
+; 1c
+GetVariable
+; 67
+Greater
+; 12
+Not
+; 12
+Not
+; 9d 02 00 16 00
+If loc0186
+; 96 02 00 08 02
+Push constant2
+; 1c
+GetVariable
+; 96 07 00 08 06 07 03 00 00 00
+Push constant6, 3
+; 4f
+SetMember
+; 99 02 00 11 00
+Jump loc0197
+; 96 02 00 08 02
+loc0186:Push constant2
+; 1c
+GetVariable
+; 96 07 00 08 06 07 01 00 00 00
+Push constant6, 1
+; 4f
+SetMember
+; 96 04 00 08 01 08 01
+loc0197:Push constant1, constant1
+; 1c
+GetVariable
+; 50
+Increment
+; 1d
+SetVariable
+; 99 02 00 78 ff
+Jump loc011e
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 07
+loc01a6:Push 0.0, constant7
+; 1c
+GetVariable
+; 96 02 00 08 08
+Push constant8
+; 52
+CallMethod
+; 17
+Pop
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 09
+Push 0.0, constant9
+; 1c
+GetVariable
+; 96 02 00 08 08
+Push constant8
+; 52
+CallMethod
+; 17
+Pop
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 0a
+Push 0.0, constant10
+; 1c
+GetVariable
+; 96 02 00 08 0b
+Push constant11
+; 52
+CallMethod
+; 17
+Pop
+; 96 02 00 08 03
+Push constant3
+; 1c
+GetVariable
+; 96 07 00 07 01 00 00 00 08 0c
+Push 1, constant12
+; 1c
+GetVariable
+; 96 02 00 08 0d
+Push constant13
+; 52
+CallMethod
+; 17
+Pop
+; 96 02 00 08 0e
+Push constant14
+; 1c
+GetVariable
+; 96 07 00 07 01 00 00 00 08 0f
+Push 1, constant15
+; 1c
+GetVariable
+; 96 02 00 08 10
+Push constant16
+; 52
+CallMethod
+; 17
+Pop
+; 96 02 00 08 11
+Push constant17
+; 1c
+GetVariable
+; 12
+Not
+; 9d 02 00 1b 00
+If loc023f
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 12
+Push 0.0, constant18
+; 1c
+GetVariable
+; 96 02 00 08 0b
+Push constant11
+; 52
+CallMethod
+; 17
+Pop
+; 99 02 00 16 00
+Jump loc0255
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 12
+loc023f:Push 0.0, constant18
+; 1c
+GetVariable
+; 96 02 00 08 13
+Push constant19
+; 52
+CallMethod
+; 17
+Pop
+; 96 02 00 08 14
+loc0255:Push constant20
+; 1c
+GetVariable
+; 87 01 00 00
+StoreRegister 0
+; 96 02 00 08 15
+Push constant21
+; 66
+StrictEquals
+; 9d 02 00 1f 00
+If loc0289
+; 96 04 00 04 00 08 16
+Push register0, constant22
+; 66
+StrictEquals
+; 9d 02 00 22 00
+If loc0299
+; 96 04 00 04 00 08 17
+Push register0, constant23
+; 66
+StrictEquals
+; 9d 02 00 25 00
+If loc02a9
+; 99 02 00 30 00
+Jump loc02b9
+; 96 07 00 08 18 07 0f 00 00 00
+loc0289:Push constant24, 15
+; 1d
+SetVariable
+; 99 02 00 20 00
+Jump loc02b9
+; 96 07 00 08 18 07 14 00 00 00
+loc0299:Push constant24, 20
+; 1d
+SetVariable
+; 99 02 00 10 00
+Jump loc02b9
+; 96 07 00 08 18 07 19 00 00 00
+loc02a9:Push constant24, 25
+; 1d
+SetVariable
+; 99 02 00 00 00
+Jump loc02b9
+; 96 04 00 08 19 08 14
+loc02b9:Push constant25, constant20
+; 1c
+GetVariable
+; 47
+Add2
+; 96 02 00 08 1a
+Push constant26
+; 47
+Add2
+; 96 02 00 08 18
+Push constant24
+; 1c
+GetVariable
+; 47
+Add2
+; 26
+Trace
+; 00

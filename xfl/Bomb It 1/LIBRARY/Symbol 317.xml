@@ -1,0 +1,27 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 317" itemID="6ab69380-000000f2" lastModified="1790348247" linkageIdentifier="grenade_x" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 317">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#a0c35e" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#ff6600"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 301 331| 255 389| 169 389| 245 295| 173 212| 268 212| 301 260| 339 212| 427 212| 356 295| 432 389| 339 389| 301 331"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

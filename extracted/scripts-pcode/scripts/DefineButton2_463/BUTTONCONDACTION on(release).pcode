@@ -1,0 +1,3 @@
+Push "totalPlayer", 2
+SetVariable
+GoToLabel "menu3"

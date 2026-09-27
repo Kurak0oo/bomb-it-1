@@ -1,0 +1,70 @@
+; 88 47 00 08 00 73 6f 75 6e 64 6f 6e 00 67 61 6d 65 00 62 67 4d 75 73 69 63 5f 73 6f 75 6e 64 00 73 74 6f 70 00 73 6f 75 6e 64 6f 6e 5f 6d 63 00 6e 65 78 74 46 72 61 6d 65 00 73 74 61 72 74 00 70 72 65 76 46 72 61 6d 65 00
+ConstantPool "soundon", "game", "bgMusic_sound", "stop", "soundon_mc", "nextFrame", "start", "prevFrame"
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 12
+Not
+; 9d 02 00 3f 00
+If loc0095
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 01
+Push 0.0, constant1
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 04 00 08 00 05 00
+Push constant0, false
+; 1d
+SetVariable
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 04
+Push 0.0, constant4
+; 1c
+GetVariable
+; 96 02 00 08 05
+Push constant5
+; 52
+CallMethod
+; 17
+Pop
+; 99 02 00 3a 00
+Jump loc00cf
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 01
+loc0095:Push 0.0, constant1
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 4e
+GetMember
+; 96 02 00 08 06
+Push constant6
+; 52
+CallMethod
+; 17
+Pop
+; 96 04 00 08 00 05 01
+Push constant0, true
+; 1d
+SetVariable
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 04
+Push 0.0, constant4
+; 1c
+GetVariable
+; 96 02 00 08 07
+Push constant7
+; 52
+CallMethod
+; 17
+Pop
+; 00
+loc00cf:

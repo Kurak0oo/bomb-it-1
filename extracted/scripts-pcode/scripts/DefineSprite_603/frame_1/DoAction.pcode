@@ -1,0 +1,107 @@
+ConstantPool "hitArea", "enabled", "stageClear", "continue_mc", "gotoAndStop", "totalPlayer", "heroObj", "killScore", "destruction", "brickScore", "toolScore", "timeScore", "bonus", "score", "totalScore", "Key", "addListener", "onKeyUp", "game", "gotoAndPlay", "this", "removeListener"
+DefineFunction2 "f", 0, 5, true, false, true, false, true, false, false, true, false {
+Push constant0
+GetVariable
+Push constant1, false
+SetMember
+Push register2, constant2
+GetMember
+Not
+If loc0119
+Push 2, 1, constant3
+GetVariable
+Push constant4
+CallMethod
+Pop
+Jump loc0130
+loc0119:Push 1, 1, constant3
+GetVariable
+Push constant4
+CallMethod
+Pop
+loc0130:Push 1
+StoreRegister 3
+Pop
+loc013d:Push register3, register2, constant5
+GetMember
+Greater
+Not
+Not
+If loc01ea
+Push register2, constant6, register3
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register1, constant7, register3
+Add2
+Push register4, constant7
+GetMember
+SetMember
+Push register1, constant8, register3
+Add2
+Push register4, constant9
+GetMember
+Push register4, constant10
+GetMember
+Add2
+SetMember
+Push register1, constant11, register3
+Add2
+Push register4, constant11
+GetMember
+SetMember
+Push register1, constant12, register3
+Add2
+Push register4, constant12
+GetMember
+SetMember
+Push register1, constant13, register3
+Add2
+Push register4, constant13
+GetMember
+SetMember
+Push register1, constant14, register3
+Add2
+Push register4, constant14
+GetMember
+SetMember
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc013d
+loc01ea:Push register1, 1, constant15
+GetVariable
+Push constant16
+CallMethod
+Pop
+Push register1, constant17
+DefineFunction2 "", 0, 2, true, false, true, false, true, false, true, false, false {
+Push register1, constant2
+GetMember
+Not
+If loc023c
+Push 1, 1, register1, constant18
+GetMember
+Push constant19
+CallMethod
+Pop
+Jump loc0255
+loc023c:Push 2, 1, register1, constant18
+GetMember
+Push constant19
+CallMethod
+Pop
+loc0255:GotoFrame 0
+}
+SetMember
+}
+Stop
+Push constant20
+GetVariable
+Push 1, constant15
+GetVariable
+Push constant21
+CallMethod
+Pop

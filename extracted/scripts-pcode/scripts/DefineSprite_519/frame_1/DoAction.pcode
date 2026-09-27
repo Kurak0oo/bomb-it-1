@@ -1,0 +1,5 @@
+Push "_parent"
+GetVariable
+Push "totalPlayer"
+GetMember
+GotoFrame2 false, false

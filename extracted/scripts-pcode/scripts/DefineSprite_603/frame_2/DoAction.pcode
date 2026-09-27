@@ -1,0 +1,3 @@
+Push 0.0, "f"
+CallFunction
+Pop

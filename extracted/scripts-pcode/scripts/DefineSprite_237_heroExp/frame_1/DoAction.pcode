@@ -1,0 +1,19 @@
+ConstantPool "hero", "heroId", "this", "attachMovie", "down", "gotoAndStop", "brickExp"
+Push 0.0, constant0, constant0, constant1
+GetVariable
+Add2
+Push 3, constant2
+GetVariable
+Push constant3
+CallMethod
+Pop
+Push constant4, 1, constant0
+GetVariable
+Push constant5
+CallMethod
+Pop
+Push 1, constant6, constant6, 3, constant2
+GetVariable
+Push constant3
+CallMethod
+Pop

@@ -1,0 +1,49 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 500" itemID="6ab69380-0000016d" lastModified="1790348247" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 500" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <LinearGradient>
+                                                            <matrix>
+                                                                 <Matrix tx="397.0" ty="535.0" a="-9.1552734375E-4" d="-0.0018310546875" b="-0.2783203125" c="0.2264404296875"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#006633" ratio="0.0"/>
+                                                            <GradientEntry color="#3cb377" ratio="0.6627451"/>
+                                                            <GradientEntry color="#ccff99" ratio="1.0"/>
+                                                       </LinearGradient>
+                                                  </FillStyle>
+                                                  <FillStyle index="2">
+                                                       <LinearGradient>
+                                                            <matrix>
+                                                                 <Matrix tx="111.0" ty="270.0" a="0.0" d="0.0" b="0.341796875" c="-0.4119873046875"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#006633" ratio="0.0"/>
+                                                            <GradientEntry color="#3cb377" ratio="0.6627451"/>
+                                                            <GradientEntry color="#ccff99" ratio="1.0"/>
+                                                       </LinearGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="2" fillStyle1="0" strokeStyle="0" edges="! 14260 7960| 14260 0| 12540 0| 12540 8240"/>
+                                                  <Edge fillStyle0="2" fillStyle1="1" strokeStyle="0" edges="! 12540 8240| 14260 7960"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 14260 7960| 15880 7640| 15880 14160[ 13700 15320 8420 15200| 7880 13960| 7260 15300[ 2160 15340 0 14160| 0 7820| 1900 8280"/>
+                                                  <Edge fillStyle0="0" fillStyle1="2" strokeStyle="0" edges="! 1900 8280| 1900 0| 3540 0| 3540 8360"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 3540 8360[ 7860 8900 12540 8240"/>
+                                                  <Edge fillStyle0="1" fillStyle1="2" strokeStyle="0" edges="! 3540 8360| 1900 8280"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

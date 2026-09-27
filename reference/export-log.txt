@@ -1,0 +1,18 @@
+﻿export start
+16:28:58 START header
+16:28:59 OK header
+16:28:59 START dumpAS2
+16:29:00 OK dumpAS2
+16:29:00 START dumpSWF
+16:29:01 OK dumpSWF
+16:29:01 START scripts-as
+16:29:03 OK scripts-as
+16:29:03 START scripts-pcode
+16:29:05 OK scripts-pcode
+16:29:05 START scripts-pcodehex
+16:29:06 OK scripts-pcodehex
+16:29:06 START all
+16:29:18 OK all
+16:29:18 START xfl
+16:29:35 OK xfl
+16:29:35 ALL_DONE

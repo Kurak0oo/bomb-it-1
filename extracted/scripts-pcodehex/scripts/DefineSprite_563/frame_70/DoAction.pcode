@@ -1,0 +1,17 @@
+; 07
+Stop
+; 96 09 00 00 5f 70 61 72 65 6e 74 00
+Push "_parent"
+; 1c
+GetVariable
+; 96 0a 00 07 01 00 00 00 00 4b 65 79 00
+Push 1, "Key"
+; 1c
+GetVariable
+; 96 0d 00 00 61 64 64 4c 69 73 74 65 6e 65 72 00
+Push "addListener"
+; 52
+CallMethod
+; 17
+Pop
+; 00

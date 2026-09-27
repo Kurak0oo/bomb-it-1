@@ -1,0 +1,128 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 305" itemID="6ab69380-000000e8" lastModified="1790348247" linkageIdentifier="rocket" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 305">
+               <layers>
+                    <DOMLayer name="Labels Layer" color="#8e6a94">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728" name="left" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728" name="up" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728" name="right" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728" name="down" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#35e4b7">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 286" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="23.75" ty="21.2" a="-0.049999237060546875" d="-0.049999237060546875" b="7.629394644936838E-7" c="-7.629394644936838E-7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 286" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="1.0" ty="3.9" a="4.57763690064894E-6" d="4.57763690064894E-6" b="-0.049999237060546875" c="0.049999237060546875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 286" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="6.3" ty="-6.85" a="0.05000000074505806" d="0.05000000074505806"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 286" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="29.05" ty="3.45" a="4.57763690064894E-6" d="4.57763690064894E-6" b="0.05000000074505806" c="-0.05000000074505806"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 3" color="#5ac970" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="71.75" centerPoint3DY="20.1">
+                                             <matrix>
+                                                  <Matrix tx="53.3" ty="13.7" a="-0.9999847412109375" d="-0.9999847412109375" b="1.52587890625E-5" c="-1.52587890625E-5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="26.95" centerPoint3DY="39.85">
+                                             <matrix>
+                                                  <Matrix tx="8.5" ty="33.45" a="9.1552734375E-5" d="9.1552734375E-5" b="-0.9999847412109375" c="0.9999847412109375"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="-4.8" centerPoint3DY="7.05">
+                                             <matrix>
+                                                  <Matrix tx="-23.25" ty="0.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 304" centerPoint3DX="40.0" centerPoint3DY="-19.7">
+                                             <matrix>
+                                                  <Matrix tx="21.55" ty="-26.1" a="9.1552734375E-5" d="9.1552734375E-5" b="1.0" c="-1.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

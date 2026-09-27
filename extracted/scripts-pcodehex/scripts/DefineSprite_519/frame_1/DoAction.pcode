@@ -1,0 +1,11 @@
+; 96 09 00 00 5f 70 61 72 65 6e 74 00
+Push "_parent"
+; 1c
+GetVariable
+; 96 0d 00 00 74 6f 74 61 6c 50 6c 61 79 65 72 00
+Push "totalPlayer"
+; 4e
+GetMember
+; 9f 01 00 00
+GotoFrame2 false, false
+; 00

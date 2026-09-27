@@ -1,0 +1,10 @@
+Push "soundon"
+GetVariable
+Not
+If loc003b
+Push 0.0, "bgMusic_sound"
+GetVariable
+Push "start"
+CallMethod
+Pop
+loc003b:

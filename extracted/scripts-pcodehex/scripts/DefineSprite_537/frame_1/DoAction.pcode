@@ -1,0 +1,368 @@
+; 88 90 00 12 00 68 65 72 6f 4f 62 6a 00 70 61 6e 00 68 65 72 6f 49 64 00 67 6f 74 6f 41 6e 64 53 74 6f 70 00 6c 69 66 65 4d 63 00 74 78 74 00 6c 69 66 65 00 73 68 69 65 6c 64 00 74 6f 6f 6c 5f 6d 63 00 5f 76 69 73 69 62 6c 65 00 73 68 6f 65 00 67 6c 6f 76 65 00 70 61 6e 5f 6d 61 73 6b 00 73 63 6f 72 65 00 74 6f 74 61 6c 42 6f 6d 62 4d 63 00 74 6f 74 61 6c 42 6f 6d 62 00 64 65 6c 61 79 54 69 6d 65 00 6f 6e 45 6e 74 65 72 46 72 61 6d 65 00
+ConstantPool "heroObj", "pan", "heroId", "gotoAndStop", "lifeMc", "txt", "life", "shield", "tool_mc", "_visible", "shoe", "glove", "pan_mask", "score", "totalBombMc", "totalBomb", "delayTime", "onEnterFrame"
+; 8e 0c 00 69 6e 69 74 00 00 00 06 a9 00 57 01
+DefineFunction2 "init", 0, 6, true, false, true, false, true, false, false, true, false {
+; 96 05 00 07 01 00 00 00
+Push 1
+; 87 01 00 04
+StoreRegister 4
+; 17
+Pop
+; 96 07 00 04 04 07 04 00 00 00
+loc00af:Push register4, 4
+; 67
+Greater
+; 12
+Not
+; 12
+Not
+; 9d 02 00 38 01
+If loc01f9
+; 96 06 00 04 02 08 00 04 04
+Push register2, constant0, register4
+; 47
+Add2
+; 4e
+GetMember
+; 87 01 00 05
+StoreRegister 5
+; 17
+Pop
+; 96 06 00 04 01 08 01 04 04
+Push register1, constant1, register4
+; 47
+Add2
+; 4e
+GetMember
+; 87 01 00 03
+StoreRegister 3
+; 17
+Pop
+; 96 04 00 04 05 08 02
+Push register5, constant2
+; 4e
+GetMember
+; 96 09 00 07 01 00 00 00 04 03 08 03
+Push 1, register3, constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 04 00 04 03 08 04
+Push register3, constant4
+; 4e
+GetMember
+; 96 06 00 08 05 04 05 08 06
+Push constant5, register5, constant6
+; 4e
+GetMember
+; 4f
+SetMember
+; 96 0e 00 07 04 00 00 00 07 01 00 00 00 04 03 08 07
+Push 4, 1, register3, constant7
+; 4e
+GetMember
+; 96 02 00 08 08
+Push constant8
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 04 00 04 03 08 07
+Push register3, constant7
+; 4e
+GetMember
+; 96 04 00 08 09 05 00
+Push constant9, false
+; 4f
+SetMember
+; 96 0e 00 07 06 00 00 00 07 01 00 00 00 04 03 08 0a
+Push 6, 1, register3, constant10
+; 4e
+GetMember
+; 96 02 00 08 08
+Push constant8
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 04 00 04 03 08 0a
+Push register3, constant10
+; 4e
+GetMember
+; 96 04 00 08 09 05 00
+Push constant9, false
+; 4f
+SetMember
+; 96 0e 00 07 02 00 00 00 07 01 00 00 00 04 03 08 0b
+Push 2, 1, register3, constant11
+; 4e
+GetMember
+; 96 02 00 08 08
+Push constant8
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 04 00 04 03 08 0b
+Push register3, constant11
+; 4e
+GetMember
+; 96 04 00 08 09 05 00
+Push constant9, false
+; 4f
+SetMember
+; 96 04 00 04 05 08 06
+Push register5, constant6
+; 4e
+GetMember
+; 96 09 00 06 00 00 00 00 00 00 00 00
+Push 0.0
+; 67
+Greater
+; 12
+Not
+; 9d 02 00 1e 00
+If loc01d0
+; 96 0e 00 07 01 00 00 00 07 01 00 00 00 04 03 08 0c
+Push 1, 1, register3, constant12
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 99 02 00 19 00
+Jump loc01e9
+; 96 0e 00 07 02 00 00 00 07 01 00 00 00 04 03 08 0c
+loc01d0:Push 2, 1, register3, constant12
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 02 00 04 04
+loc01e9:Push register4
+; 50
+Increment
+; 87 01 00 04
+StoreRegister 4
+; 17
+Pop
+; 99 02 00 b6 fe
+Jump loc00af
+; 8e 0e 00 75 70 44 61 74 65 00 00 00 06 a9 00 b6 00
+}
+loc01f9:DefineFunction2 "upDate", 0, 6, true, false, true, false, true, false, false, true, false {
+; 96 05 00 07 01 00 00 00
+Push 1
+; 87 01 00 05
+StoreRegister 5
+; 17
+Pop
+; 96 07 00 04 05 07 04 00 00 00
+loc0217:Push register5, 4
+; 67
+Greater
+; 12
+Not
+; 12
+Not
+; 9d 02 00 97 00
+If loc02c0
+; 96 06 00 04 02 08 00 04 05
+Push register2, constant0, register5
+; 47
+Add2
+; 4e
+GetMember
+; 87 01 00 03
+StoreRegister 3
+; 17
+Pop
+; 96 06 00 04 01 08 01 04 05
+Push register1, constant1, register5
+; 47
+Add2
+; 4e
+GetMember
+; 87 01 00 04
+StoreRegister 4
+; 17
+Pop
+; 96 04 00 04 04 08 04
+Push register4, constant4
+; 4e
+GetMember
+; 96 06 00 08 05 04 03 08 06
+Push constant5, register3, constant6
+; 4e
+GetMember
+; 4f
+SetMember
+; 96 04 00 04 03 08 06
+Push register3, constant6
+; 4e
+GetMember
+; 96 09 00 06 00 00 00 00 00 00 00 00
+Push 0.0
+; 49
+Equals2
+; 12
+Not
+; 9d 02 00 19 00
+If loc0290
+; 96 0e 00 07 02 00 00 00 07 01 00 00 00 04 04 08 0c
+Push 2, 1, register4, constant12
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 08 00 04 04 08 0d 04 03 08 0d
+loc0290:Push register4, constant13, register3, constant13
+; 4e
+GetMember
+; 4f
+SetMember
+; 96 04 00 04 04 08 0e
+Push register4, constant14
+; 4e
+GetMember
+; 96 06 00 08 05 04 03 08 0f
+Push constant5, register3, constant15
+; 4e
+GetMember
+; 4f
+SetMember
+; 96 02 00 04 05
+Push register5
+; 50
+Increment
+; 87 01 00 05
+StoreRegister 5
+; 17
+Pop
+; 99 02 00 57 ff
+Jump loc0217
+; 8e 26 00 73 68 6f 77 4d 63 00 03 00 05 29 00 03 6d 63 4e 61 6d 65 00 04 68 65 72 6f 4e 75 6d 00 02 76 61 6c 75 65 00 19 00
+}
+loc02c0:DefineFunction2 "showMc", 3, 5, false, false, true, false, true, false, false, true, false, 3, "mcName", 4, "heroNum", 2, "value" {
+; 96 06 00 04 01 08 01 04 04
+Push register1, constant1, register4
+; 47
+Add2
+; 4e
+GetMember
+; 96 02 00 04 03
+Push register3
+; 4e
+GetMember
+; 96 04 00 08 09 04 02
+Push constant9, register2
+; 4f
+SetMember
+; 8e 20 00 6d 63 42 6c 69 6e 6b 00 02 00 05 29 00 03 6d 63 4e 61 6d 65 00 04 68 65 72 6f 4e 75 6d 00 a5 00
+}
+DefineFunction2 "mcBlink", 2, 5, false, false, true, false, true, false, false, true, false, 3, "mcName", 4, "heroNum" {
+; 96 06 00 04 01 08 01 04 04
+Push register1, constant1, register4
+; 47
+Add2
+; 4e
+GetMember
+; 96 02 00 04 03
+Push register3
+; 4e
+GetMember
+; 87 01 00 02
+StoreRegister 2
+; 17
+Pop
+; 96 09 00 04 02 08 10 07 23 00 00 00
+Push register2, constant16, 35
+; 4f
+SetMember
+; 96 04 00 04 02 08 11
+Push register2, constant17
+; 8e 08 00 00 00 00 02 29 00 6f 00
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+; 96 08 00 04 01 08 10 04 01 08 10
+Push register1, constant16, register1, constant16
+; 4e
+GetMember
+; 51
+Decrement
+; 87 01 00 00
+StoreRegister 0
+; 4f
+SetMember
+; 96 0b 00 04 00 06 00 00 00 00 00 00 00 00
+Push register0, 0.0
+; 67
+Greater
+; 12
+Not
+; 12
+Not
+; 9d 02 00 0e 00
+If loc0390
+; 96 04 00 04 01 08 11
+Push register1, constant17
+; 3a
+Delete
+; 17
+Pop
+; 99 02 00 39 00
+Jump loc03c9
+; 96 04 00 04 01 08 10
+loc0390:Push register1, constant16
+; 4e
+GetMember
+; 96 05 00 07 0a 00 00 00
+Push 10
+; 3f
+Modulo
+; 96 05 00 07 05 00 00 00
+Push 5
+; 48
+Less2
+; 12
+Not
+; 9d 02 00 0f 00
+If loc03bf
+; 96 06 00 04 01 08 09 05 01
+Push register1, constant9, true
+; 4f
+SetMember
+; 99 02 00 0a 00
+Jump loc03c9
+; 96 06 00 04 01 08 09 05 00
+loc03bf:Push register1, constant9, false
+; 4f
+SetMember
+; 4f
+}
+loc03c9:SetMember
+; 00
+}

@@ -1,0 +1,67 @@
+﻿\DefineButton2_439\BUTTONCONDACTION on(release)
+\DefineButton2_440\BUTTONCONDACTION on(release)
+\DefineButton2_441\BUTTONCONDACTION on(release)
+\DefineButton2_442\BUTTONCONDACTION on(release)
+\DefineButton2_443\BUTTONCONDACTION on(release)
+\DefineButton2_452\BUTTONCONDACTION on(release)
+\DefineButton2_458\BUTTONCONDACTION on(release)
+\DefineButton2_462\BUTTONCONDACTION on(release)
+\DefineButton2_463\BUTTONCONDACTION on(release)
+\DefineButton2_466\BUTTONCONDACTION on(release)
+\DefineButton2_467\BUTTONCONDACTION on(release)
+\DefineButton2_469\BUTTONCONDACTION on(release)
+\DefineButton2_473\BUTTONCONDACTION on(release)
+\DefineButton2_539\BUTTONCONDACTION on(release)
+\DefineButton2_540\BUTTONCONDACTION on(release)
+\DefineButton2_541\BUTTONCONDACTION on(release, keyPress p)
+\DefineButton2_541\BUTTONCONDACTION on(keyPress P)
+\DefineButton2_566\BUTTONCONDACTION on(release)
+\DefineButton2_614\BUTTONCONDACTION on(release)
+\DefineButton2_667\BUTTONCONDACTION on(release)
+\DefineSprite_237_heroExp\frame_1\DoAction
+\DefineSprite_237_heroExp\frame_6\DoAction
+\DefineSprite_237_heroExp\frame_36\DoAction
+\DefineSprite_248_brickExp\frame_11\DoAction
+\DefineSprite_279_heroDieSmoke\frame_36\DoAction
+\DefineSprite_306_mine\frame_60\DoAction
+\DefineSprite_312\frame_22\DoAction
+\DefineSprite_315_gasBomb\frame_101\DoAction
+\DefineSprite_319_fireEffect\frame_40\DoAction
+\DefineSprite_325_freezeEffect\frame_40\DoAction
+\DefineSprite_326_tool\frame_80\DoAction
+\DefineSprite_326_tool\frame_101\DoAction
+\DefineSprite_376\frame_1\DoAction
+\DefineSprite_395\frame_1\PlaceObject2_394_1\CLIPACTIONRECORD on(release)
+\DefineSprite_398\frame_1\DoAction
+\DefineSprite_414\frame_1\DoAction
+\DefineSprite_455\frame_1\DoAction
+\DefineSprite_455\frame_2\DoAction
+\DefineSprite_455\frame_3\DoAction
+\DefineSprite_460\frame_1\DoAction
+\DefineSprite_509\frame_1\DoAction
+\DefineSprite_519\frame_1\DoAction
+\DefineSprite_527\frame_1\DoAction
+\DefineSprite_533\frame_1\DoAction
+\DefineSprite_537\frame_1\DoAction
+\DefineSprite_544\frame_1\DoAction
+\DefineSprite_544\frame_2\DoAction
+\DefineSprite_550\frame_1\DoAction
+\DefineSprite_550\frame_2\DoAction
+\DefineSprite_550\frame_3\DoAction
+\DefineSprite_563\frame_1\DoAction
+\DefineSprite_563\frame_7\DoAction
+\DefineSprite_563\frame_70\DoAction
+\DefineSprite_564\frame_1\DoAction
+\DefineSprite_564\frame_2\DoAction
+\DefineSprite_564\frame_3\DoAction
+\DefineSprite_603\frame_1\DoAction
+\DefineSprite_603\frame_2\DoAction
+\DefineSprite_603\frame_3\DoAction
+\DefineSprite_629\frame_1\DoAction
+\frame_1\DoAction
+\frame_3\DoAction
+\frame_8\DoAction
+\frame_9\DoAction
+\frame_10\DoAction
+\frame_11\DoAction
+\frame_12\DoAction

@@ -1,0 +1,23 @@
+ConstantPool "_parent", "stageClear", "game", "gotoAndPlay"
+Push constant0
+GetVariable
+Push constant1
+GetMember
+Not
+If loc005d
+Push 1, 1, constant0
+GetVariable
+Push constant2
+GetMember
+Push constant3
+CallMethod
+Pop
+Jump loc007a
+loc005d:Push 2, 1, constant0
+GetVariable
+Push constant2
+GetMember
+Push constant3
+CallMethod
+Pop
+loc007a:GotoFrame 0

@@ -1,0 +1,76 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 313" itemID="6ab69380-000000f0" lastModified="1790348247" linkageIdentifier="rocketSmoke" linkageExportForAS="true">
+     <timeline>
+          <DOMTimeline name="Symbol 313">
+               <layers>
+                    <DOMLayer name="Labels Layer" color="#65ecd5">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728" name="left" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728" name="up" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728" name="right" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728" name="down" labelType="name">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#eea0f0" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 312" centerPoint3DX="31.2" centerPoint3DY="34.3">
+                                             <matrix>
+                                                  <Matrix tx="26.25" ty="7.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 312" centerPoint3DX="19.95" centerPoint3DY="31.45">
+                                             <matrix>
+                                                  <Matrix tx="15.0" ty="4.65" a="9.1552734375E-5" d="9.1552734375E-5" b="1.0" c="-1.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 312" centerPoint3DX="10.45" centerPoint3DY="34.15">
+                                             <matrix>
+                                                  <Matrix tx="5.5" ty="7.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="3" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 312" centerPoint3DX="19.95" centerPoint3DY="29.2">
+                                             <matrix>
+                                                  <Matrix tx="15.0" ty="2.4" a="9.1552734375E-5" d="9.1552734375E-5" b="1.0" c="-1.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

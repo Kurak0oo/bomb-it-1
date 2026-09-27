@@ -1,0 +1,69 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 423" itemID="6ab69380-0000012e" lastModified="1790348247" symbolType="graphic">
+     <timeline>
+          <DOMTimeline name="Symbol 423" currentFrame="0">
+               <layers>
+                    <DOMLayer name="Layer 1">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0">
+                                                            <matrix>
+                                                                 <Matrix tx="71.2" ty="53.35" a="0.090576171875" d="0.07330322265625" b="-0.008331298828125" c="0.006744384765625"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#990000" alpha="0.0" ratio="0.6627451"/>
+                                                            <GradientEntry color="#c14e02" alpha="0.4509804" ratio="1.0"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 2425 1600[ 2394 1948 2117 2170[ 1840 2393 1358 2351[ 1050 2323 867 2209[ 815 2177 776 2139[ 715 2100 638 1985[ 560 1869 541 1695[ 521 1521 601 1350[ 680 1178 816 1042[ 834 1023 910 966| 906 970[ 992 895 1086 850| 1108 840[ 1265 776 1600 785| 1603 786| 1603 785[ 1940 794 2198 1023[ 2339 1148 2394 1309[ 2439 1442 2425 1600"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2">
+                         <frames>
+                              <DOMFrame index="0" motionTweenScale="false" keyMode="8192">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#e8d006" alpha="1.0"/>
+                                                  </FillStyle>
+                                                  <FillStyle index="2">
+                                                       <SolidColor color="#fce72e" alpha="1.0"/>
+                                                  </FillStyle>
+                                                  <FillStyle index="3">
+                                                       <SolidColor color="#e7b907" alpha="1.0"/>
+                                                  </FillStyle>
+                                                  <FillStyle index="4">
+                                                       <SolidColor color="#fdee71" alpha="1.0"/>
+                                                  </FillStyle>
+                                                  <FillStyle index="5">
+                                                       <SolidColor color="#fef4a3" alpha="1.0"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="5" fillStyle1="4" strokeStyle="0" edges="! 1740 1030[ 1653 975 1573 953| 1520 942| 1441 942[ 1331 946 1271 970[ 1186 1019 1169 1037[ 1116 1090 1085 1157[ 1064 1201 1060 1249| 1060 1295[ 1065 1365 1087 1419[ 1109 1474 1147 1508| 1203 1558[ 1222 1573 1399 1603[ 1576 1632 1731 1533[ 1881 1436 1871 1279| 1870 1268[ 1855 1103 1740 1030"/>
+                                                  <Edge fillStyle0="1" fillStyle1="3" strokeStyle="0" edges="! 906 970| 905 971| 860 1014[ 738 1137 667 1291[ 595 1445 612 1603[ 629 1759 699 1863[ 769 1967 826 2021[ 883 2075 954 2122[ 1024 2169 1390 2216[ 1756 2263 2018 2047[ 2280 1830 2308 1516[ 2335 1202 2103 997[ 1885 804 1603 785"/>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 1603 785| 1600 785[ 1265 776 1108 840| 1086 850[ 991 895 906 970"/>
+                                                  <Edge fillStyle0="3" fillStyle1="0" strokeStyle="0" edges="! 906 970| 910 966[ 833 1022 815 1041[ 679 1178 600 1349[ 521 1520 541 1695[ 560 1869 637 1985[ 714 2100 775 2138[ 815 2176 866 2209[ 1050 2323 1358 2351[ 1839 2393 2117 2170[ 2394 1948 2425 1599[ 2455 1250 2198 1022[ 1940 794 1603 785"/>
+                                                  <Edge fillStyle0="2" fillStyle1="1" strokeStyle="0" edges="! 2192 1367[ 2163 1165 1972 1002[ 1781 838 1537 827[ 1291 814 1173 863[ 1054 910 939 1009[ 824 1107 773 1267[ 721 1426 737 1529[ 752 1632 792 1728[ 833 1824 929 1911[ 1025 1998 1208 2046[ 1391 2093 1655 2061[ 1918 2030 2070 1800[ 2221 1569 2192 1367"/>
+                                                  <Edge fillStyle0="4" fillStyle1="2" strokeStyle="0" edges="! 1874 1027[ 1726 895 1532 890| 1524 890[ 1335 885 1247 922[ 1123 975 1050 1042[ 975 1109 932 1203[ 889 1295 893 1403[ 896 1511 933 1577[ 970 1643 1019 1698[ 1067 1753 1189 1821[ 1310 1888 1545 1865[ 1778 1842 1918 1699[ 2057 1555 2040 1357[ 2022 1158 1874 1027"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

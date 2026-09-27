@@ -1,0 +1,9 @@
+Push "this"
+GetVariable
+Push "varWin"
+GetMember
+Push 1, "youWin_gra"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop

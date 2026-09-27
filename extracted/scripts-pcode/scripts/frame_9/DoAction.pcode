@@ -1,0 +1,120 @@
+ConstantPool "stageNum", "heroNum", "heroObj", "this", "totalScore", "totalPlayer", "life", "p_pointer1", "removeMovieClip", "p_pointer2", "bgMusic_sound", "stop", "Key", "removeListener", "qualityNum", "quality_mc", "gotoAndStop", "soundon", "soundon_mc", "nextFrame", "varHard", "easy", "normal", "hard", "totalStage", "varHard=", ",totalStage="
+Push constant0, 0.0
+SetVariable
+Push constant1, 1
+DefineLocal
+loc011e:Push constant1
+GetVariable
+Push 4
+Greater
+Not
+Not
+If loc01a6
+Push constant2, constant3
+GetVariable
+Push constant2, constant1
+GetVariable
+Add2
+GetMember
+DefineLocal
+Push constant2
+GetVariable
+Push constant4, 0.0
+SetMember
+Push constant1
+GetVariable
+Push constant5
+GetVariable
+Greater
+Not
+Not
+If loc0186
+Push constant2
+GetVariable
+Push constant6, 3
+SetMember
+Jump loc0197
+loc0186:Push constant2
+GetVariable
+Push constant6, 1
+SetMember
+loc0197:Push constant1, constant1
+GetVariable
+Increment
+SetVariable
+Jump loc011e
+loc01a6:Push 0.0, constant7
+GetVariable
+Push constant8
+CallMethod
+Pop
+Push 0.0, constant9
+GetVariable
+Push constant8
+CallMethod
+Pop
+Push 0.0, constant10
+GetVariable
+Push constant11
+CallMethod
+Pop
+Push constant3
+GetVariable
+Push 1, constant12
+GetVariable
+Push constant13
+CallMethod
+Pop
+Push constant14
+GetVariable
+Push 1, constant15
+GetVariable
+Push constant16
+CallMethod
+Pop
+Push constant17
+GetVariable
+Not
+If loc023f
+Push 0.0, constant18
+GetVariable
+Push constant11
+CallMethod
+Pop
+Jump loc0255
+loc023f:Push 0.0, constant18
+GetVariable
+Push constant19
+CallMethod
+Pop
+loc0255:Push constant20
+GetVariable
+StoreRegister 0
+Push constant21
+StrictEquals
+If loc0289
+Push register0, constant22
+StrictEquals
+If loc0299
+Push register0, constant23
+StrictEquals
+If loc02a9
+Jump loc02b9
+loc0289:Push constant24, 15
+SetVariable
+Jump loc02b9
+loc0299:Push constant24, 20
+SetVariable
+Jump loc02b9
+loc02a9:Push constant24, 25
+SetVariable
+Jump loc02b9
+loc02b9:Push constant25, constant20
+GetVariable
+Add2
+Push constant26
+Add2
+Push constant24
+GetVariable
+Add2
+Trace

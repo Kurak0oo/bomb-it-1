@@ -1,0 +1,70 @@
+; 88 42 00 06 00 74 68 69 73 00 6f 6e 45 6e 74 65 72 46 72 61 6d 65 00 67 65 74 42 79 74 65 73 4c 6f 61 64 65 64 00 67 65 74 42 79 74 65 73 54 6f 74 61 6c 00 67 6f 74 6f 41 6e 64 53 74 6f 70 00 70 6c 61 79 00
+ConstantPool "this", "onEnterFrame", "getBytesLoaded", "getBytesTotal", "gotoAndStop", "play"
+; 07
+Stop
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 8e 08 00 00 00 00 04 69 00 79 00
+DefineFunction2 "", 0, 4, false, true, true, false, true, false, false, true, false {
+; 96 0d 00 06 00 00 00 00 00 00 00 00 04 02 08 02
+Push 0.0, register2, constant2
+; 52
+CallMethod
+; 96 0d 00 06 00 00 00 00 00 00 00 00 04 02 08 03
+Push 0.0, register2, constant3
+; 52
+CallMethod
+; 0d
+Divide
+; 96 05 00 07 64 00 00 00
+Push 100
+; 0c
+Multiply
+; 18
+ToInteger
+; 87 01 00 03
+StoreRegister 3
+; 17
+Pop
+; 96 07 00 04 03 07 0a 00 00 00
+Push register3, 10
+; 0d
+Divide
+; 18
+ToInteger
+; 96 09 00 07 01 00 00 00 04 01 08 04
+Push 1, register1, constant4
+; 52
+CallMethod
+; 17
+Pop
+; 96 07 00 04 03 07 64 00 00 00
+Push register3, 100
+; 48
+Less2
+; 12
+Not
+; 12
+Not
+; 9d 02 00 1b 00
+If loc00d5
+; 96 04 00 04 01 08 01
+Push register1, constant1
+; 3a
+Delete
+; 17
+Pop
+; 96 0d 00 06 00 00 00 00 00 00 00 00 04 02 08 05
+Push 0.0, register2, constant5
+; 52
+CallMethod
+; 17
+Pop
+; 4f
+}
+loc00d5:SetMember
+; 00

@@ -1,0 +1,285 @@
+; 88 78 00 12 00 63 31 00 63 32 00 63 33 00 63 34 00 30 00 74 00 75 70 44 61 74 65 00 74 30 00 70 61 75 73 69 6e 67 00 74 69 6d 65 72 49 6e 74 65 72 76 61 6c 00 74 69 6d 65 53 74 6f 70 00 74 69 6d 65 75 70 00 67 61 6d 65 00 67 61 6d 65 6f 76 65 72 00 73 65 74 49 6e 74 65 72 76 61 6c 00 6c 65 6e 67 74 68 00 63 68 61 72 41 74 00 63 6c 65 61 72 49 6e 74 65 72 76 61 6c 00
+ConstantPool "c1", "c2", "c3", "c4", "0", "t", "upDate", "t0", "pausing", "timerInterval", "timeStop", "timeup", "game", "gameover", "setInterval", "length", "charAt", "clearInterval"
+; 9b 0d 00 74 69 6d 65 49 6e 69 74 00 00 00 5f 00
+DefineFunction "timeInit", 0 {
+; 96 0a 00 08 00 08 01 08 02 08 03 08 04
+Push constant0, constant1, constant2, constant3, constant4
+; 87 01 00 00
+StoreRegister 0
+; 1d
+SetVariable
+; 96 02 00 04 00
+Push register0
+; 87 01 00 00
+StoreRegister 0
+; 1d
+SetVariable
+; 96 02 00 04 00
+Push register0
+; 87 01 00 00
+StoreRegister 0
+; 1d
+SetVariable
+; 96 02 00 04 00
+Push register0
+; 1d
+SetVariable
+; 96 07 00 08 05 07 b4 00 00 00
+Push constant5, 180
+; 1d
+SetVariable
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 06
+Push 0.0, constant6
+; 3d
+CallFunction
+; 17
+Pop
+; 96 02 00 08 07
+Push constant7
+; 34
+GetTime
+; 96 05 00 07 e8 03 00 00
+Push 1000
+; 0d
+Divide
+; 1d
+SetVariable
+; 96 04 00 08 08 05 00
+Push constant8, false
+; 1d
+SetVariable
+; 9b 0e 00 74 69 6d 65 50 61 75 73 65 00 00 00 21 00
+}
+DefineFunction "timePause", 0 {
+; 96 02 00 08 08
+Push constant8
+; 1c
+GetVariable
+; 12
+Not
+; 9d 02 00 0d 00
+If loc0114
+; 96 04 00 08 08 05 00
+Push constant8, false
+; 1d
+SetVariable
+; 99 02 00 08 00
+Jump loc011c
+; 96 04 00 08 08 05 01
+loc0114:Push constant8, true
+; 1d
+SetVariable
+; 8e 11 00 74 69 6d 65 53 74 61 72 74 00 00 00 03 aa 00 b7 00
+}
+loc011c:DefineFunction2 "timeStart", 0, 3, true, false, true, false, true, false, true, false, false {
+; 96 07 00 08 09 07 f4 01 00 00
+Push constant9, 500
+; 8e 08 00 00 00 00 03 aa 00 96 00
+DefineFunction2 "", 0, 3, true, false, true, false, true, false, true, false, false {
+; 34
+GetTime
+; 96 05 00 07 e8 03 00 00
+Push 1000
+; 0d
+Divide
+; 87 01 00 02
+StoreRegister 2
+; 17
+Pop
+; 96 02 00 08 08
+Push constant8
+; 1c
+GetVariable
+; 96 02 00 05 00
+Push false
+; 49
+Equals2
+; 12
+Not
+; 9d 02 00 6d 00
+If loc01d3
+; 96 04 00 08 05 08 05
+Push constant5, constant5
+; 1c
+GetVariable
+; 96 04 00 04 02 08 07
+Push register2, constant7
+; 1c
+GetVariable
+; 0b
+Subtract
+; 0b
+Subtract
+; 1d
+SetVariable
+; 96 02 00 08 05
+Push constant5
+; 1c
+GetVariable
+; 96 05 00 07 01 00 00 00
+Push 1
+; 48
+Less2
+; 12
+Not
+; 9d 02 00 35 00
+If loc01c3
+; 96 0b 00 08 05 06 00 00 00 00 00 00 00 00
+Push constant5, 0.0
+; 1d
+SetVariable
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 0a
+Push 0.0, constant10
+; 3d
+CallFunction
+; 17
+Pop
+; 96 0b 00 08 0b 07 01 00 00 00 04 01 08 0c
+Push constant11, 1, register1, constant12
+; 4e
+GetMember
+; 96 02 00 08 0d
+Push constant13
+; 52
+CallMethod
+; 17
+Pop
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 06
+loc01c3:Push 0.0, constant6
+; 3d
+CallFunction
+; 17
+Pop
+; 96 04 00 08 07 04 02
+loc01d3:Push constant7, register2
+; 1d
+SetVariable
+; 96 07 00 07 02 00 00 00 08 0e
+}
+Push 2, constant14
+; 3d
+CallFunction
+; 1d
+SetVariable
+; 8e 0e 00 75 70 44 61 74 65 00 00 00 03 2a 00 e6 00
+}
+DefineFunction2 "upDate", 0, 3, false, false, true, false, true, false, true, false, false {
+; 96 02 00 08 05
+Push constant5
+; 1c
+GetVariable
+; 18
+ToInteger
+; 96 05 00 07 3c 00 00 00
+Push 60
+; 3f
+Modulo
+; 4b
+ToString
+; 87 01 00 01
+StoreRegister 1
+; 17
+Pop
+; 96 02 00 08 05
+Push constant5
+; 1c
+GetVariable
+; 96 02 00 04 01
+Push register1
+; 0b
+Subtract
+; 96 05 00 07 3c 00 00 00
+Push 60
+; 0d
+Divide
+; 18
+ToInteger
+; 4b
+ToString
+; 87 01 00 02
+StoreRegister 2
+; 17
+Pop
+; 96 04 00 04 01 08 0f
+Push register1, constant15
+; 4e
+GetMember
+; 96 05 00 07 02 00 00 00
+Push 2
+; 48
+Less2
+; 12
+Not
+; 9d 02 00 15 00
+If loc0256
+; 96 04 00 08 02 08 04
+Push constant2, constant4
+; 1d
+SetVariable
+; 96 04 00 08 03 04 01
+Push constant3, register1
+; 1d
+SetVariable
+; 99 02 00 2e 00
+Jump loc0284
+; 96 14 00 08 02 06 00 00 00 00 00 00 00 00 07 01 00 00 00 04 01 08 10
+loc0256:Push constant2, 0.0, 1, register1, constant16
+; 52
+CallMethod
+; 1d
+SetVariable
+; 96 10 00 08 03 07 01 00 00 00 07 01 00 00 00 04 01 08 10
+Push constant3, 1, 1, register1, constant16
+; 52
+CallMethod
+; 1d
+SetVariable
+; 96 04 00 04 02 08 0f
+loc0284:Push register2, constant15
+; 4e
+GetMember
+; 96 05 00 07 02 00 00 00
+Push 2
+; 48
+Less2
+; 12
+Not
+; 9d 02 00 15 00
+If loc02b0
+; 96 04 00 08 00 08 04
+Push constant0, constant4
+; 1d
+SetVariable
+; 96 04 00 08 01 04 02
+Push constant1, register2
+; 1d
+SetVariable
+; 99 02 00 2e 00
+Jump loc02de
+; 96 14 00 08 00 06 00 00 00 00 00 00 00 00 07 01 00 00 00 04 02 08 10
+loc02b0:Push constant0, 0.0, 1, register2, constant16
+; 52
+CallMethod
+; 1d
+SetVariable
+; 96 10 00 08 01 07 01 00 00 00 07 01 00 00 00 04 02 08 10
+Push constant1, 1, 1, register2, constant16
+; 52
+CallMethod
+; 1d
+SetVariable
+; 9b 0d 00 74 69 6d 65 53 74 6f 70 00 00 00 12 00
+}
+loc02de:DefineFunction "timeStop", 0 {
+; 96 02 00 08 09
+Push constant9
+; 1c
+GetVariable
+; 96 07 00 07 01 00 00 00 08 11
+Push 1, constant17
+; 3d
+CallFunction
+; 17
+Pop
+; 00
+}

@@ -1,0 +1,19 @@
+ConstantPool "qualityNum", "quality_mc", "gotoAndStop"
+Push constant0, constant0
+GetVariable
+Increment
+StoreRegister 0
+SetVariable
+Push register0, 3
+Greater
+Not
+If loc0051
+Push constant0, 1
+SetVariable
+loc0051:Push constant0
+GetVariable
+Push 1, constant1
+GetVariable
+Push constant2
+CallMethod
+Pop

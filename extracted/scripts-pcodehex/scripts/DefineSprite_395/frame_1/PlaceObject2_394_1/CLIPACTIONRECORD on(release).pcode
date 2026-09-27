@@ -1,0 +1,13 @@
+; 96 07 00 00 5f 72 6f 6f 74 00
+Push "_root"
+; 1c
+GetVariable
+; 96 13 00 00 6c 6f 63 61 6c 69 7a 61 74 69 6f 6e 5f 75 72 6c 31 00
+Push "localization_url1"
+; 4e
+GetMember
+; 96 08 00 00 5f 62 6c 61 6e 6b 00
+Push "_blank"
+; 9a 01 00 00
+GetURL2 false, false, 0
+; 00

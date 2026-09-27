@@ -1,0 +1,96 @@
+; 88 5f 00 0a 00 62 67 4d 75 73 69 63 5f 73 6f 75 6e 64 00 73 6f 75 6e 64 6f 6e 00 74 68 69 73 00 53 6f 75 6e 64 00 42 6f 6d 62 69 74 5f 2d 5f 6d 61 69 6e 73 63 72 65 65 6e 00 61 74 74 61 63 68 53 6f 75 6e 64 00 73 74 61 72 74 00 6f 6e 53 6f 75 6e 64 43 6f 6d 70 6c 65 74 65 00 70 31 00 70 32 00
+ConstantPool "bgMusic_sound", "soundon", "this", "Sound", "Bombit_-_mainscreen", "attachSound", "start", "onSoundComplete", "p1", "p2"
+; 07
+Stop
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 01 00 03
+Push undefined
+; 49
+Equals2
+; 12
+Not
+; 9d 02 00 7b 00
+If loc00ef
+; 96 04 00 08 01 05 01
+Push constant1, true
+; 1d
+SetVariable
+; 96 04 00 08 00 08 02
+Push constant0, constant2
+; 1c
+GetVariable
+; 96 07 00 07 01 00 00 00 08 03
+Push 1, constant3
+; 40
+NewObject
+; 1d
+SetVariable
+; 96 09 00 08 04 07 01 00 00 00 08 00
+Push constant4, 1, constant0
+; 1c
+GetVariable
+; 96 02 00 08 05
+Push constant5
+; 52
+CallMethod
+; 17
+Pop
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 00
+Push 0.0, constant0
+; 1c
+GetVariable
+; 96 02 00 08 06
+Push constant6
+; 52
+CallMethod
+; 17
+Pop
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 07
+Push constant7
+; 8e 08 00 00 00 00 02 29 00 1e 00
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+; 96 02 00 08 01
+Push constant1
+; 1c
+GetVariable
+; 12
+Not
+; 9d 02 00 12 00
+If loc00ee
+; 96 0d 00 06 00 00 00 00 00 00 00 00 04 01 08 06
+Push 0.0, register1, constant6
+; 52
+CallMethod
+; 17
+Pop
+; 4f
+}
+loc00ee:SetMember
+; 96 02 00 08 08
+loc00ef:Push constant8
+; 3b
+Delete2
+; 17
+Pop
+; 96 02 00 08 09
+Push constant9
+; 3b
+Delete2
+; 17
+Pop
+; 96 03 00 08 08 03
+Push constant8, undefined
+; 1d
+SetVariable
+; 96 03 00 08 09 03
+Push constant9, undefined
+; 1d
+SetVariable
+; 00

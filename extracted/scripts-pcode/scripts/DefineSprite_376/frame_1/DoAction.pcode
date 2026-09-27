@@ -1,0 +1,35 @@
+ConstantPool "this", "onEnterFrame", "getBytesLoaded", "getBytesTotal", "gotoAndStop", "play"
+Stop
+Push constant0
+GetVariable
+Push constant1
+DefineFunction2 "", 0, 4, false, true, true, false, true, false, false, true, false {
+Push 0.0, register2, constant2
+CallMethod
+Push 0.0, register2, constant3
+CallMethod
+Divide
+Push 100
+Multiply
+ToInteger
+StoreRegister 3
+Pop
+Push register3, 10
+Divide
+ToInteger
+Push 1, register1, constant4
+CallMethod
+Pop
+Push register3, 100
+Less2
+Not
+Not
+If loc00d5
+Push register1, constant1
+Delete
+Pop
+Push 0.0, register2, constant5
+CallMethod
+Pop
+}
+loc00d5:SetMember

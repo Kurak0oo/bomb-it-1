@@ -1,0 +1,8 @@
+Stop
+Push "_parent"
+GetVariable
+Push 1, "Key"
+GetVariable
+Push "addListener"
+CallMethod
+Pop

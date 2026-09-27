@@ -1,0 +1,19 @@
+ConstantPool "_parent", "qualityNum", "", "high"
+Push constant0
+GetVariable
+Push constant1
+GetMember
+Push 1
+Equals2
+Not
+If loc004c
+Stop
+Push constant2, 19, constant3
+SetProperty
+Jump loc005c
+loc004c:Push constant0
+GetVariable
+Push constant1
+GetMember
+GotoFrame2 false, false
+loc005c:

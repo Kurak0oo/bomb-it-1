@@ -1,0 +1,47 @@
+; 88 15 00 02 00 5f 70 61 72 65 6e 74 00 71 75 61 6c 69 74 79 4e 75 6d 00
+ConstantPool "_parent", "qualityNum"
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 04 00 08 01 08 00
+Push constant1, constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 4e
+GetMember
+; 50
+Increment
+; 87 01 00 00
+StoreRegister 0
+; 4f
+SetMember
+; 96 07 00 04 00 07 03 00 00 00
+Push register0, 3
+; 67
+Greater
+; 12
+Not
+; 9d 02 00 11 00
+If loc0054
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 07 00 08 01 07 01 00 00 00
+Push constant1, 1
+; 4f
+SetMember
+; 96 02 00 08 00
+loc0054:Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 4e
+GetMember
+; 9f 01 00 00
+GotoFrame2 false, false
+; 00

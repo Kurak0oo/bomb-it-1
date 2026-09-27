@@ -1,0 +1,39 @@
+; 88 24 00 03 00 71 75 61 6c 69 74 79 4e 75 6d 00 71 75 61 6c 69 74 79 5f 6d 63 00 67 6f 74 6f 41 6e 64 53 74 6f 70 00
+ConstantPool "qualityNum", "quality_mc", "gotoAndStop"
+; 96 04 00 08 00 08 00
+Push constant0, constant0
+; 1c
+GetVariable
+; 50
+Increment
+; 87 01 00 00
+StoreRegister 0
+; 1d
+SetVariable
+; 96 07 00 04 00 07 03 00 00 00
+Push register0, 3
+; 67
+Greater
+; 12
+Not
+; 9d 02 00 0b 00
+If loc0051
+; 96 07 00 08 00 07 01 00 00 00
+Push constant0, 1
+; 1d
+SetVariable
+; 96 02 00 08 00
+loc0051:Push constant0
+; 1c
+GetVariable
+; 96 07 00 07 01 00 00 00 08 01
+Push 1, constant1
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 52
+CallMethod
+; 17
+Pop
+; 00

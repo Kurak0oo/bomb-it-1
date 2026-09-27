@@ -1,0 +1,241 @@
+ConstantPool "nameOutput", "", "scoreOutput", "L", "highScore_arr", "length", "i", "j", "temp", "playerName", "highScore", "this", "name", "score", "totalPlayer", "heroObj", "totalScore", "new", "_visible", "gameSave"
+Push constant0, constant1
+SetVariable
+Push constant2, constant1
+SetVariable
+Push constant3, constant4
+GetVariable
+Push constant5
+GetMember
+DefineLocal
+Push constant6, 0.0
+DefineLocal
+loc00c5:Push constant6
+GetVariable
+Push constant3
+GetVariable
+Less2
+Not
+If loc020b
+Push constant7, constant6
+GetVariable
+DefineLocal
+loc00e1:Push constant7
+GetVariable
+Push constant3
+GetVariable
+Less2
+Not
+If loc01fc
+Push constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 1
+GetMember
+Push constant4
+GetVariable
+Push constant7
+GetVariable
+GetMember
+Push 1
+GetMember
+Less2
+Not
+If loc01ed
+Push constant8, constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 0.0
+GetMember
+DefineLocal
+Push constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 0.0, constant4
+GetVariable
+Push constant7
+GetVariable
+GetMember
+Push 0.0
+GetMember
+SetMember
+Push constant4
+GetVariable
+Push constant7
+GetVariable
+GetMember
+Push 0.0, constant8
+GetVariable
+SetMember
+Push constant8, constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 1
+GetMember
+DefineLocal
+Push constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 1, constant4
+GetVariable
+Push constant7
+GetVariable
+GetMember
+Push 1
+GetMember
+SetMember
+Push constant4
+GetVariable
+Push constant7
+GetVariable
+GetMember
+Push 1, constant8
+GetVariable
+SetMember
+loc01ed:Push constant7, constant7
+GetVariable
+Increment
+SetVariable
+Jump loc00e1
+loc01fc:Push constant6, constant6
+GetVariable
+Increment
+SetVariable
+Jump loc00c5
+loc020b:Push constant3
+GetVariable
+Push 10
+Greater
+Not
+If loc022b
+Push constant3, 10
+SetVariable
+loc022b:Push constant6, 0.0
+DefineLocal
+loc023a:Push constant6
+GetVariable
+Push constant3
+GetVariable
+Less2
+Not
+If loc0391
+Push constant9, constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 0.0
+GetMember
+DefineLocal
+Push constant10, constant4
+GetVariable
+Push constant6
+GetVariable
+GetMember
+Push 1
+GetMember
+DefineLocal
+Push constant11
+GetVariable
+Push constant12, constant6
+GetVariable
+Push 1
+Add2
+Add2
+Push constant9
+GetVariable
+SetMember
+Push constant11
+GetVariable
+Push constant13, constant6
+GetVariable
+Push 1
+Add2
+Add2
+Push constant10
+GetVariable
+SetMember
+Push constant7, 0.0
+DefineLocal
+loc02d0:Push constant7
+GetVariable
+Push constant14
+GetVariable
+Greater
+Not
+Not
+If loc033a
+Push constant9
+GetVariable
+Push constant11
+GetVariable
+Push constant9, constant7
+GetVariable
+Add2
+GetMember
+Equals2
+PushDuplicate
+Not
+If loc0320
+Pop
+Push constant10
+GetVariable
+Push constant11
+GetVariable
+Push constant15, constant7
+GetVariable
+Add2
+GetMember
+Push constant16
+GetMember
+Equals2
+loc0320:Not
+If loc032b
+Jump loc033a
+loc032b:Push constant7, constant7
+GetVariable
+Increment
+SetVariable
+Jump loc02d0
+loc033a:Push constant7
+GetVariable
+Push constant14
+GetVariable
+Greater
+Not
+If loc036a
+Push constant11
+GetVariable
+Push constant17, constant6
+GetVariable
+Add2
+GetMember
+Push constant18, false
+SetMember
+Jump loc0382
+loc036a:Push constant11
+GetVariable
+Push constant17, constant6
+GetVariable
+Add2
+GetMember
+Push constant18, true
+SetMember
+loc0382:Push constant6, constant6
+GetVariable
+Increment
+SetVariable
+Jump loc023a
+loc0391:Push 0.0, constant19
+CallFunction
+Pop

@@ -1,0 +1,10 @@
+Push "_parent"
+GetVariable
+Push "soundon"
+GetMember
+Not
+If loc0026
+Stop
+Jump loc0027
+loc0026:NextFrame
+loc0027:

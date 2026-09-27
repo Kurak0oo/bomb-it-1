@@ -1,0 +1,6 @@
+Push "_root"
+GetVariable
+Push "localization_url1"
+GetMember
+Push "_blank"
+GetURL2 false, false, 0

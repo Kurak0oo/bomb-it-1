@@ -1,0 +1,7 @@
+; 96 11 00 00 76 61 72 48 61 72 64 00 00 6e 6f 72 6d 61 6c 00
+Push "varHard", "normal"
+; 1d
+SetVariable
+; 8c 07 00 73 65 6c 65 63 74 00
+GoToLabel "select"
+; 00

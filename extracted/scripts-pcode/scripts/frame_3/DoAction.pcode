@@ -1,0 +1,48 @@
+ConstantPool "bgMusic_sound", "soundon", "this", "Sound", "Bombit_-_mainscreen", "attachSound", "start", "onSoundComplete", "p1", "p2"
+Stop
+Push constant0
+GetVariable
+Push undefined
+Equals2
+Not
+If loc00ef
+Push constant1, true
+SetVariable
+Push constant0, constant2
+GetVariable
+Push 1, constant3
+NewObject
+SetVariable
+Push constant4, 1, constant0
+GetVariable
+Push constant5
+CallMethod
+Pop
+Push 0.0, constant0
+GetVariable
+Push constant6
+CallMethod
+Pop
+Push constant0
+GetVariable
+Push constant7
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push constant1
+GetVariable
+Not
+If loc00ee
+Push 0.0, register1, constant6
+CallMethod
+Pop
+}
+loc00ee:SetMember
+loc00ef:Push constant8
+Delete2
+Pop
+Push constant9
+Delete2
+Pop
+Push constant8, undefined
+SetVariable
+Push constant9, undefined
+SetVariable

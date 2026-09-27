@@ -1,0 +1,153 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 537" itemID="6ab69380-00000185" lastModified="1790348247">
+     <timeline>
+          <DOMTimeline name="Symbol 537">
+               <layers>
+                    <DOMLayer name="Script Layer" color="#ca30f2">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <Actionscript>
+                                        <script>function init()
+{
+   var _loc4_ = 1;
+   var _loc5_;
+   var _loc3_;
+   while(_loc4_ &lt;= 4)
+   {
+      _loc5_ = _parent["heroObj" + _loc4_];
+      _loc3_ = this["pan" + _loc4_];
+      _loc3_.gotoAndStop(_loc5_.heroId);
+      _loc3_.lifeMc.txt = _loc5_.life;
+      _loc3_.shield.tool_mc.gotoAndStop(4);
+      _loc3_.shield._visible = false;
+      _loc3_.shoe.tool_mc.gotoAndStop(6);
+      _loc3_.shoe._visible = false;
+      _loc3_.glove.tool_mc.gotoAndStop(2);
+      _loc3_.glove._visible = false;
+      if(_loc5_.life &gt; 0)
+      {
+         _loc3_.pan_mask.gotoAndStop(1);
+      }
+      else
+      {
+         _loc3_.pan_mask.gotoAndStop(2);
+      }
+      _loc4_ = _loc4_ + 1;
+   }
+}
+function upDate()
+{
+   var _loc5_ = 1;
+   var _loc3_;
+   var _loc4_;
+   while(_loc5_ &lt;= 4)
+   {
+      _loc3_ = _parent["heroObj" + _loc5_];
+      _loc4_ = this["pan" + _loc5_];
+      _loc4_.lifeMc.txt = _loc3_.life;
+      if(_loc3_.life == 0)
+      {
+         _loc4_.pan_mask.gotoAndStop(2);
+      }
+      _loc4_.score = _loc3_.score;
+      _loc4_.totalBombMc.txt = _loc3_.totalBomb;
+      _loc5_ = _loc5_ + 1;
+   }
+}
+function showMc(mcName, heroNum, value)
+{
+   this["pan" + heroNum][mcName]._visible = value;
+}
+function mcBlink(mcName, heroNum)
+{
+   var _loc2_ = this["pan" + heroNum][mcName];
+   _loc2_.delayTime = 35;
+   _loc2_.onEnterFrame = function()
+   {
+      if(--this.delayTime &lt;= 0)
+      {
+         delete this.onEnterFrame;
+      }
+      else if(this.delayTime % 10 &lt; 5)
+      {
+         this._visible = true;
+      }
+      else
+      {
+         this._visible = false;
+      }
+   };
+}
+</script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#aa4bd0">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 536" name="pan2" centerPoint3DX="34.75" centerPoint3DY="14.45">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="-17.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 3" color="#b677b1">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 536" name="pan3" centerPoint3DX="34.75" centerPoint3DY="81.5">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="49.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 4" color="#f4516b">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 536" name="pan4" centerPoint3DX="34.75" centerPoint3DY="148.55">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="116.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 5" color="#6f56d9" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 536" name="pan1" centerPoint3DX="34.75" centerPoint3DY="-52.55">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="-84.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

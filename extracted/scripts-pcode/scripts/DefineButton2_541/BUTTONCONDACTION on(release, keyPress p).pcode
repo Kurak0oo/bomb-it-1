@@ -1,0 +1,15 @@
+Push 0.0, "pause_mc"
+GetVariable
+Push "play"
+CallMethod
+Pop
+Push 0.0, "game"
+GetVariable
+Push "pause"
+CallMethod
+Pop
+Push 0.0, "timer"
+GetVariable
+Push "timePause"
+CallMethod
+Pop

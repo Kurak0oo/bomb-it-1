@@ -1,0 +1,136 @@
+ConstantPool "saved", "bomb_it", "SharedObject", "getLocal", "playerName1", "playerName2", "highScore_arr", "data", "myObj", "stageNum_str", "", "0", "FSCommand:allowscale", "FSCommand:showmenu", "_root", "localization_url1", "http://moregames.agame.com/?utm_source=brandedgames&utm_medium=bomb_it", "localization_url2", "http://freegames.agame.com/?utm_source=brandedgames&utm_medium=bomb_it", "qualityNum", "life0", "totalPlayer", "myLSO", "first play", "cpu", "gameSave", "loaded", "slice"
+DefineFunction2 "gameSave", 0, 6, false, false, true, false, true, false, true, false, false {
+Push constant0
+Trace
+Push constant1, 1, constant2
+GetVariable
+Push constant3
+CallMethod
+StoreRegister 1
+Pop
+Push constant4, constant4
+GetVariable
+Push constant5, constant5
+GetVariable
+Push constant6, constant6
+GetVariable
+Push 3
+InitObject
+StoreRegister 2
+Pop
+Push register1, constant7
+GetMember
+Push constant8, register2
+SetMember
+}
+DefineFunction2 "upDateStageNum", 1, 2, false, false, true, false, true, false, true, false, false, 1, "stageNum" {
+Push constant9, constant10
+SetVariable
+Push register1, 10
+Less2
+Not
+If loc0244
+Push constant9, constant9
+GetVariable
+Push constant11
+Add2
+SetVariable
+loc0244:Push constant9, constant9
+GetVariable
+Push register1
+Add2
+SetVariable
+}
+Push constant12, false
+GetURL2 false, false, 0
+Push constant13, false
+GetURL2 false, false, 0
+Push constant14
+GetVariable
+Push constant15, constant16
+SetMember
+Push constant14
+GetVariable
+Push constant17, constant18
+SetMember
+Push constant19, 1
+SetVariable
+Push constant20, 3
+SetVariable
+Push constant21, 0.0
+DefineLocal
+Push constant22, constant1, 1, constant2
+GetVariable
+Push constant3
+CallMethod
+SetVariable
+Push constant22
+GetVariable
+Push constant7
+GetMember
+Push constant8
+GetMember
+Push undefined
+Equals2
+Not
+If loc03b4
+Push constant23
+Trace
+Push constant4, constant10
+SetVariable
+Push constant5, constant10
+SetVariable
+Push constant6, 1000, constant24, 2
+InitArray
+Push 3000, constant24, 2
+InitArray
+Push 5000, constant24, 2
+InitArray
+Push 10000, constant24, 2
+InitArray
+Push 20000, constant24, 2
+InitArray
+Push 30000, constant24, 2
+InitArray
+Push 40000, constant24, 2
+InitArray
+Push 50000, constant24, 2
+InitArray
+Push 137728, constant24, 2
+InitArray
+Push 100, constant24, 2
+InitArray
+Push 10
+InitArray
+SetVariable
+Push 0.0, constant25
+CallFunction
+Pop
+Jump loc040b
+loc03b4:Push constant26
+Trace
+Push constant8, constant22
+GetVariable
+Push constant7
+GetMember
+Push constant8
+GetMember
+DefineLocal
+Push constant4, constant8
+GetVariable
+Push constant4
+GetMember
+SetVariable
+Push constant5, constant8
+GetVariable
+Push constant5
+GetMember
+SetVariable
+Push constant6, 0.0, constant8
+GetVariable
+Push constant6
+GetMember
+Push constant27
+CallMethod
+SetVariable
+loc040b:

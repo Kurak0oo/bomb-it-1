@@ -1,0 +1,3 @@
+Push "varHard", "normal"
+SetVariable
+GoToLabel "select"

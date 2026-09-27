@@ -1,0 +1,66 @@
+; 88 2b 00 05 00 5f 70 61 72 65 6e 74 00 73 6f 75 6e 64 6f 6e 00 62 67 4d 75 73 69 63 5f 73 6f 75 6e 64 00 73 74 6f 70 00 73 74 61 72 74 00
+ConstantPool "_parent", "soundon", "bgMusic_sound", "stop", "start"
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 4e
+GetMember
+; 12
+Not
+; 9d 02 00 30 00
+If loc0070
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 04 00 08 01 05 00
+Push constant1, false
+; 4f
+SetMember
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 00
+Push 0.0, constant0
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 4e
+GetMember
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 04
+NextFrame
+; 99 02 00 2b 00
+Jump loc009b
+; 96 02 00 08 00
+loc0070:Push constant0
+; 1c
+GetVariable
+; 96 04 00 08 01 05 01
+Push constant1, true
+; 4f
+SetMember
+; 05
+PrevFrame
+; 96 0b 00 06 00 00 00 00 00 00 00 00 08 00
+Push 0.0, constant0
+; 1c
+GetVariable
+; 96 02 00 08 02
+Push constant2
+; 4e
+GetMember
+; 96 02 00 08 04
+Push constant4
+; 52
+CallMethod
+; 17
+Pop
+; 00
+loc009b:

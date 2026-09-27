@@ -1,0 +1,103 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 304" itemID="6ab69380-000000e7" lastModified="1790348247">
+     <timeline>
+          <DOMTimeline name="Symbol 304">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#21b8f4" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0">
+                                                            <matrix>
+                                                                 <Matrix tx="33.1" ty="6.5" a="0.049041748046875" d="0.013824462890625" b="0.0032958984375" c="-0.001007080078125"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ff3300" alpha="1.0" ratio="0.0"/>
+                                                            <GradientEntry color="#fcfc25" alpha="0.72156864" ratio="0.36862746"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.0" ratio="0.81960785"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 641 27[ 643 42 652 56| 655 61| 638 55| 633 52| 631 52| 632 61| 633 64[ 622 60 621 72| 619 71| 605 64| 521 16[ 497 1 470 0[ 470 10 479 21| 503 53| 496 52| 474 45| 460 40| 459 42| 470 49| 452 48[ 378 17 295 18| 277 18| 277 19| 340 40| 355 45| 280 54| 283 55| 198 61| 203 65| 225 72| 246 80| 68 79| 26 81| 0 82| 5 86| 39 96| 279 139| 313 147| 316 148| 302 151| 258 154| 177 157| 280 173| 259 187| 278 191| 351 192| 488 180| 533 169| 539 169[ 530 171 521 176[ 493 191 464 197| 469 200| 535 208| 594 207| 589 211| 585 215| 591 216| 617 205| 642 188| 657 178| 650 187| 650 188| 691 162[ 705 140 703 117| 701 104| 701 98| 699 97[ 679 62 651 32| 643 26| 641 27"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0">
+                                                            <matrix>
+                                                                 <Matrix tx="31.0" ty="6.65" a="0.049041748046875" d="0.013824462890625" b="0.0032958984375" c="-0.001007080078125"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ff3300" alpha="1.0" ratio="0.0"/>
+                                                            <GradientEntry color="#fcfc25" alpha="0.72156864" ratio="0.36862746"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.0" ratio="0.81960785"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 451 -21[ 467 15 486 34| 487 38| 448 26| 457 40| 401 30| 295 18| 277 18| 277 19| 285 22| 340 40| 355 45| 346 47| 340 49| 329 51| 280 54| 283 55| 198 61| 203 65| 225 72| 226 72| 225 72| 220 72| 177 64| 36 80| 26 81| 0 82| 5 86| 8 88| 39 96| 50 98| 272 138| 279 139| 287 140| 287 141| 267 140| 182 150| 138 144| 198 156| 177 157| 259 170[ 226 177 216 188| 259 189| 259 187| 266 189| 278 191| 351 192| 470 182| 444 199| 440 203| 527 207| 535 208| 563 208| 546 218| 542 220| 575 224| 630 205[ 637 198 639 197| 634 203| 630 205| 618 216| 619 218[ 663 211 687 167| 686 166| 690 163| 691 162[ 704 143 703 122| 703 117| 701 107| 701 104| 701 98| 699 97| 694 89| 651 32| 643 26| 641 27| 639 30| 645 49| 618 21| 624 49| 613 38| 618 68[ 594 38 550 21[ 478 -7 457 -19| 451 -21"/>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 313 147| 316 148| 314 149| 313 147"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0">
+                                                            <matrix>
+                                                                 <Matrix tx="28.25" ty="6.4" a="0.0514984130859375" d="0.0145111083984375" b="0.0034637451171875" c="-0.0010528564453125"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ff3300" alpha="1.0" ratio="0.0"/>
+                                                            <GradientEntry color="#fcfc25" alpha="0.72156864" ratio="0.36862746"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.0" ratio="0.81960785"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 448 -27[ 464 11 485 31| 486 35| 445 23| 454 37| 395 27[ 341 13 284 14| 265 14| 265 15| 273 18| 331 37| 346 43| 338 45| 331 46| 319 48| 268 51| 271 52| 182 59| 187 64| 210 70| 211 71| 205 71| 160 62| 12 79| 2 80| -26 81| -21 86| -17 87| 15 96| 26 98| 259 140| 267 141| 276 142| 276 143| 255 142| 165 153[ 136 144 119 146| 182 159| 160 160| 246 174[ 211 180 201 193| 246 194| 246 192| 254 194| 266 195| 343 196| 467 186| 440 204| 436 208| 527 213| 535 213| 565 214| 548 224| 543 226| 578 230| 636 210| 645 202| 640 208| 636 210| 623 222| 624 224[ 671 216 696 171| 695 170| 698 166| 699 165[ 713 145 712 123| 712 118| 710 107| 710 104| 710 98| 708 97| 703 88| 658 28| 649 23| 647 24| 645 27| 651 47| 623 17| 629 47| 618 35| 623 67[ 598 35 552 17[ 476 -12 454 -25| 448 -27"/>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 303 150| 306 150| 303 151| 303 150"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <RadialGradient focalPointRatio="0">
+                                                            <matrix>
+                                                                 <Matrix tx="31.0" ty="6.65" a="0.049041748046875" d="0.013824462890625" b="0.0032958984375" c="-0.001007080078125"/>
+                                                            </matrix>
+                                                            <GradientEntry color="#ff3300" alpha="1.0" ratio="0.0"/>
+                                                            <GradientEntry color="#fcfc25" alpha="0.72156864" ratio="0.36862746"/>
+                                                            <GradientEntry color="#ffffff" alpha="0.0" ratio="0.81960785"/>
+                                                       </RadialGradient>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 451 -21[ 467 15 486 34| 487 38| 448 26| 457 40| 401 30| 295 18| 277 18| 277 19| 285 22| 340 40| 355 45| 346 47| 340 49| 329 51| 280 54| 283 55| 198 61| 203 65| 225 72| 226 72| 225 72| 220 72| 177 64| 36 80| 26 81| 0 82| 5 86| 8 88| 39 96| 50 98| 272 138| 279 139| 287 140| 287 141| 267 140| 182 150| 138 144| 198 156| 177 157| 259 170[ 226 177 216 188| 259 189| 259 187| 266 189| 278 191| 351 192| 470 182| 444 199| 440 203| 527 207| 535 208| 563 208| 546 218| 542 220| 575 224| 630 205[ 637 198 639 197| 634 203| 630 205| 618 216| 619 218[ 663 211 687 167| 686 166| 690 163| 691 162[ 704 143 703 122| 703 117| 701 107| 701 104| 701 98| 699 97| 694 89| 651 32| 643 26| 641 27| 639 30| 645 49| 618 21| 624 49| 613 38| 618 68[ 594 38 550 21[ 478 -7 457 -19| 451 -21"/>
+                                                  <Edge fillStyle0="1" fillStyle1="0" strokeStyle="0" edges="! 313 147| 316 148| 314 149| 313 147"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

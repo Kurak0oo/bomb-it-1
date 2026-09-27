@@ -1,0 +1,38 @@
+; 88 1b 00 04 00 5f 70 61 72 65 6e 74 00 71 75 61 6c 69 74 79 4e 75 6d 00 00 68 69 67 68 00
+ConstantPool "_parent", "qualityNum", "", "high"
+; 96 02 00 08 00
+Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 4e
+GetMember
+; 96 05 00 07 01 00 00 00
+Push 1
+; 49
+Equals2
+; 12
+Not
+; 9d 02 00 13 00
+If loc004c
+; 07
+Stop
+; 96 09 00 08 02 07 13 00 00 00 08 03
+Push constant2, 19, constant3
+; 23
+SetProperty
+; 99 02 00 10 00
+Jump loc005c
+; 96 02 00 08 00
+loc004c:Push constant0
+; 1c
+GetVariable
+; 96 02 00 08 01
+Push constant1
+; 4e
+GetMember
+; 9f 01 00 00
+GotoFrame2 false, false
+; 00
+loc005c:

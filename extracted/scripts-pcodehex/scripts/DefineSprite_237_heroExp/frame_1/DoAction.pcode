@@ -1,0 +1,39 @@
+; 88 39 00 07 00 68 65 72 6f 00 68 65 72 6f 49 64 00 74 68 69 73 00 61 74 74 61 63 68 4d 6f 76 69 65 00 64 6f 77 6e 00 67 6f 74 6f 41 6e 64 53 74 6f 70 00 62 72 69 63 6b 45 78 70 00
+ConstantPool "hero", "heroId", "this", "attachMovie", "down", "gotoAndStop", "brickExp"
+; 96 0f 00 06 00 00 00 00 00 00 00 00 08 00 08 00 08 01
+Push 0.0, constant0, constant0, constant1
+; 1c
+GetVariable
+; 47
+Add2
+; 96 07 00 07 03 00 00 00 08 02
+Push 3, constant2
+; 1c
+GetVariable
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 96 09 00 08 04 07 01 00 00 00 08 00
+Push constant4, 1, constant0
+; 1c
+GetVariable
+; 96 02 00 08 05
+Push constant5
+; 52
+CallMethod
+; 17
+Pop
+; 96 10 00 07 01 00 00 00 08 06 08 06 07 03 00 00 00 08 02
+Push 1, constant6, constant6, 3, constant2
+; 1c
+GetVariable
+; 96 02 00 08 03
+Push constant3
+; 52
+CallMethod
+; 17
+Pop
+; 00

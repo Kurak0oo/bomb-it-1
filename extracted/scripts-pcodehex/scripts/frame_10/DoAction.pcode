@@ -1,0 +1,20 @@
+; 96 09 00 00 73 6f 75 6e 64 6f 6e 00
+Push "soundon"
+; 1c
+GetVariable
+; 12
+Not
+; 9d 02 00 28 00
+If loc003b
+; 96 18 00 06 00 00 00 00 00 00 00 00 00 62 67 4d 75 73 69 63 5f 73 6f 75 6e 64 00
+Push 0.0, "bgMusic_sound"
+; 1c
+GetVariable
+; 96 07 00 00 73 74 61 72 74 00
+Push "start"
+; 52
+CallMethod
+; 17
+Pop
+; 00
+loc003b:

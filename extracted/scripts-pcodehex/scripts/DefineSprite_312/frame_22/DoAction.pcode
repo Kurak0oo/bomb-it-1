@@ -1,0 +1,15 @@
+; 96 0f 00 06 00 00 00 00 00 00 00 00 00 74 68 69 73 00
+Push 0.0, "this"
+; 1c
+GetVariable
+; 96 09 00 00 5f 70 61 72 65 6e 74 00
+Push "_parent"
+; 4e
+GetMember
+; 96 11 00 00 72 65 6d 6f 76 65 4d 6f 76 69 65 43 6c 69 70 00
+Push "removeMovieClip"
+; 52
+CallMethod
+; 17
+Pop
+; 00

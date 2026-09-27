@@ -1,0 +1,546 @@
+<DOMSymbolItem xmlns="http://ns.adobe.com/xfl/2008/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Symbol 629" itemID="6ab69380-000001a9" lastModified="1790348247">
+     <timeline>
+          <DOMTimeline name="Symbol 629">
+               <layers>
+                    <DOMLayer name="Script Layer" color="#50f942">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <Actionscript>
+                                        <script>function submit_f()
+{
+   var _loc3_ = 1;
+   while(_loc3_ &lt;= _parent.totalPlayer)
+   {
+      _parent.highScore_arr.push([_parent["playerName" + _loc3_],this["totalScore" + _loc3_]]);
+      _loc3_ = _loc3_ + 1;
+   }
+   _parent.gameSave();
+}
+totalScore1 = _parent.heroObj1.totalScore;
+totalScore2 = _parent.heroObj2.totalScore;
+if(_parent.stageNum == _parent.totalStage + 1)
+{
+   gameover_welldone.gotoAndStop(_parent.varHard);
+   switch(_parent.varHard)
+   {
+      case "easy":
+         _parent.varHard = "normal";
+         break;
+      case "normal":
+         _parent.varHard = "hard";
+   }
+}
+else
+{
+   gameover_welldone.stop();
+}
+gotoAndStop(_parent.totalPlayer);
+</script>
+                                   </Actionscript>
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 2" color="#69bef8">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="42.4" fontRenderingMode="standard" width="666" height="258" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-277.55" ty="-63.35" a="0.9381866455078125" d="1.0"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>NAME</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="18.0" bitmapSize="360" letterSpacing="0" indent="0" leftMargin="0" lineSpacing="0" rightMargin="0" fillColor="#ffffff" face="Arial-Black"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 3" color="#44b0af">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="25.9" fontRenderingMode="standard" width="997" height="262" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-261.75" ty="-108.85"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>PLAYER1</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="18.0" bitmapSize="360" letterSpacing="0" indent="0" leftMargin="0" lineSpacing="0" rightMargin="0" fillColor="#ffffff" face="Arial-Black"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 4" color="#8a79b8">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 620" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="42.4" fontRenderingMode="standard" width="666" height="258" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-19.8" ty="-63.35" a="0.9381866455078125" d="1.0"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>NAME</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="18.0" bitmapSize="360" letterSpacing="0" indent="0" leftMargin="0" lineSpacing="0" rightMargin="0" fillColor="#ffffff" face="Arial-Black"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 5" color="#18d5e9">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="25.9" fontRenderingMode="standard" width="997" height="262" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-8.2" ty="-108.85"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>PLAYER2</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="18.0" bitmapSize="360" letterSpacing="0" indent="0" leftMargin="0" lineSpacing="0" rightMargin="0" fillColor="#ffffff" face="Arial-Black"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 6" color="#8ad8f4">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMShape isFloating="true">
+                                             <fills>
+                                                  <FillStyle index="1">
+                                                       <SolidColor color="#ffffff"/>
+                                                  </FillStyle>
+                                             </fills>
+                                             <strokes/>
+                                             <edges>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 1571 -169| 1571 -115| 1442 -115| 1442 -77| 1560 -77| 1560 -26| 1442 -26| 1442 23| 1574 23| 1574 79| 1366 79| 1366 -169| 1571 -169"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 1280 -162[ 1298 -157 1310 -139[ 1320 -124 1322 -100[ 1320 -79 1312 -64| 1289 -40| 1262 -30| 1281 -22| 1293 -8| 1304 7| 1342 79| 1256 79| 1215 4| 1200 -17| 1182 -22| 1174 -22| 1174 79| 1097 79| 1097 -169| 1226 -169| 1280 -162"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 1245 -94[ 1244 -106 1236 -113| 1209 -119| 1174 -119| 1174 -68| 1206 -68| 1227 -72| 1240 -80| 1245 -94"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 1022 -139[ 1055 -107 1055 -47[ 1055 -4 1041 25[ 1026 52 999 68[ 971 83 930 83[ 887 83 861 70[ 832 55 815 28[ 800 -1 800 -44[ 800 -106 833 -139[ 867 -173 927 -173[ 988 -173 1022 -139"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 729 -154[ 756 -136 770 -96| 701 -82| 694 -97| 678 -112| 658 -115[ 632 -116 618 -95[ 608 -79 608 -46[ 608 -5 621 11[ 632 25 654 25[ 676 25 688 13[ 699 0 705 -23| 772 -2[ 765 25 750 46[ 736 64 714 73| 659 83[ 618 83 593 71[ 568 59 549 30[ 531 1 531 -46[ 531 -107 563 -139[ 596 -173 656 -173[ 702 -173 729 -154"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 927 25[ 952 25 966 10[ 978 -7 978 -48[ 978 -84 965 -98[ 951 -115 927 -115[ 903 -115 890 -98[ 875 -83 875 -44[ 875 -7 890 10[ 903 25 927 25"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! 464 -156[ 489 -138 492 -100| 422 -95| 410 -119[ 400 -127 383 -126| 363 -121[ 357 -116 357 -107| 362 -96| 388 -88| 460 -66[ 482 -55 491 -38[ 501 -22 502 -2[ 501 22 489 42[ 476 62 452 72[ 428 83 393 83[ 328 83 305 58[ 280 34 276 -4| 350 -7[ 352 10 359 19[ 371 35 394 35[ 410 34 418 26[ 426 19 426 8[ 426 -1 418 -8[ 411 -17 380 -23[ 329 -34 308 -53[ 286 -72 286 -101[ 286 -120 297 -137[ 308 -154 330 -163[ 352 -174 392 -173[ 438 -173 464 -156"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -236 -169| -236 79| -313 79| -313 -169| -236 -169"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -198 -107| -198 -169| 35 -169| 35 -107| -44 -107| -44 79| -120 79| -120 -107| -198 -107"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -364 -169| -364 79| -427 79| -427 -110| -475 79| -531 79| -579 -110| -579 79| -642 79| -642 -169| -542 -169| -502 -18| -465 -169| -364 -169"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -712 -151[ -693 -133 -693 -107[ -693 -85 -706 -70[ -716 -59 -734 -53[ -706 -47 -693 -30[ -682 -16 -682 8[ -682 28 -691 43[ -699 58 -715 67[ -726 73 -744 76| -778 79| -909 79| -909 -169| -768 -169[ -732 -169 -712 -151"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -794 -25| -834 -25| -834 25| -794 25[ -775 25 -766 18[ -759 11 -758 0[ -759 -12 -766 -18| -794 -25"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -800 -119| -834 -119| -834 -72| -800 -72[ -782 -72 -775 -78[ -769 -84 -769 -95[ -769 -107 -775 -113| -800 -119"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -962 -169| -962 -22[ -962 0 -968 20[ -976 40 -990 54| -1020 74| -1074 83| -1113 80| -1148 70| -1176 49| -1191 20| -1198 -22| -1198 -169| -1123 -169| -1123 -18[ -1123 1 -1111 14[ -1100 25 -1081 25[ -1060 25 -1050 14[ -1038 2 -1038 -18| -1038 -169| -962 -169"/>
+                                                  <Edge fillStyle0="0" fillStyle1="1" strokeStyle="0" edges="! -1237 -2[ -1237 22 -1250 42[ -1263 62 -1287 72| -1346 83[ -1410 83 -1434 58[ -1459 34 -1461 -4| -1389 -7| -1380 19[ -1368 35 -1345 35[ -1329 34 -1320 26[ -1311 19 -1311 8[ -1311 -1 -1320 -8[ -1328 -17 -1359 -23[ -1408 -34 -1430 -53[ -1452 -72 -1452 -101[ -1452 -120 -1441 -137[ -1430 -154 -1407 -163[ -1386 -174 -1347 -173[ -1300 -173 -1275 -156[ -1250 -138 -1245 -100| -1317 -95[ -1321 -112 -1329 -119[ -1339 -127 -1354 -126| -1375 -121[ -1382 -116 -1382 -107| -1376 -96| -1351 -88[ -1300 -77 -1278 -66[ -1257 -55 -1246 -38[ -1237 -22 -1237 -2"/>
+                                             </edges>
+                                        </DOMShape>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 7" color="#f92da1">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMInputText fontRenderingMode="device" width="155.05" height="22.85" maxCharacters="11" variableName="_parent.playerName1">
+                                             <matrix>
+                                                  <Matrix tx="-171.9" ty="-60.6"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>wwwwwwwwwwww</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="left" rotation="true" indent="0.0" leftMargin="0.0" lineSpacing="0.0" rightMargin="0.0" autoKern="false" size="0.0" bitmapSize="0" face="ArialNarrow-Bold" fillColor="#ffffff" alpha="1.0"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMInputText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 8" color="#ac0af0">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMInputText fontRenderingMode="device" width="153.55" height="22.85" maxCharacters="11" variableName="_parent.playerName2">
+                                             <matrix>
+                                                  <Matrix tx="87.55" ty="-60.6"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>wwwwwwwwwwww</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="left" rotation="true" indent="0.0" leftMargin="0.0" lineSpacing="0.0" rightMargin="0.0" autoKern="false" size="0.0" bitmapSize="0" face="ArialNarrow-Bold" fillColor="#ffffff" alpha="1.0"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMInputText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 9" color="#b68b9b">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMInputText fontRenderingMode="device" width="161.95" height="22.85" maxCharacters="11" variableName="_parent.playerName1">
+                                             <matrix>
+                                                  <Matrix tx="-24.95" ty="-61.6"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>wwwwwwwwwwww</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="center" rotation="true" indent="0.0" leftMargin="0.0" lineSpacing="0.0" rightMargin="0.0" autoKern="false" size="0.0" bitmapSize="0" face="ArialNarrow-Bold" fillColor="#ffffff" alpha="1.0"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMInputText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMDynamicText fontRenderingMode="device" width="83.75" height="28.200000000000003" isSelectable="false" variableName="totalScore1">
+                                             <matrix>
+                                                  <Matrix tx="-118.65" ty="-110.25"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters/>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="center" rotation="true" indent="0.0" leftMargin="0.0" lineSpacing="0.0" rightMargin="0.0" autoKern="false" size="0.0" bitmapSize="0" face="Arial-Black" fillColor="#ffffff" alpha="1.0"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 10" color="#6b36e9">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMDynamicText fontRenderingMode="device" width="84.3" height="28.200000000000003" isSelectable="false" variableName="totalScore1">
+                                             <matrix>
+                                                  <Matrix tx="19.7" ty="-114.3"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters/>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="left" rotation="true" indent="0.0" leftMargin="0.0" lineSpacing="0.0" rightMargin="0.0" autoKern="false" size="0.0" bitmapSize="0" face="Arial-Black" fillColor="#ffffff" alpha="1.0"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMDynamicText fontRenderingMode="device" width="84.5" height="28.200000000000003" isSelectable="false" variableName="totalScore2">
+                                             <matrix>
+                                                  <Matrix tx="141.55" ty="-110.25"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters/>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="center" rotation="true" indent="0.0" leftMargin="0.0" lineSpacing="0.0" rightMargin="0.0" autoKern="false" size="0.0" bitmapSize="0" face="Arial-Black" fillColor="#ffffff" alpha="1.0"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMDynamicText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 11" color="#b30ae4">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 614" symbolType="button">
+                                             <matrix>
+                                                  <Matrix tx="-85.45" ty="-18.1" a="1.6832427978515625" d="1.019989013671875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                             <Actionscript>
+                                                  <script>on(release){
+   submit_f();
+   _parent.gotoAndStop("highscore");
+}
+</script>
+                                             </Actionscript>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 12" color="#c7f29b">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMStaticText left="11" fontRenderingMode="standard" width="1286" height="237" autoExpand="true" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="-62.85" ty="53.4"/>
+                                             </matrix>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>MORE GAMES</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs aliasText="false" rotation="true" size="16.0" bitmapSize="320" letterSpacing="0" indent="0" leftMargin="0" lineSpacing="0" rightMargin="0" fillColor="#ffffff" face="Arial-Black"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 13" color="#bb6bb5">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 612" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="0.0" a="0.05000000074505806" d="0.05000000074505806"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 14" color="#94fb0d">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 442" symbolType="button">
+                                             <matrix>
+                                                  <Matrix tx="-79.85" ty="48.1" a="1.81231689453125" d="1.1022186279296875"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                             <Actionscript>
+                                                  <script>on(release){
+   getURL(_root.localization_url1,"_blank");
+}
+</script>
+                                             </Actionscript>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 15" color="#f247aa">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 395" centerPoint3DX="172.75" centerPoint3DY="122.9">
+                                             <matrix>
+                                                  <Matrix tx="82.25" ty="110.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 16" color="#46f7ac">
+                         <frames>
+                              <DOMFrame index="0" duration="2" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 611" name="gameover_welldone" centerPoint3DX="249.55" centerPoint3DY="-145.85">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="-170.6"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 17" color="#10e3af">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 574" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 18" color="#cd739a">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 605" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="-95.35" ty="-49.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 19" color="#a7e655">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 574" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="260.2" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 20" color="#d68d79">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 605" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="56.05" ty="-48.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 605" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="163.35" ty="-48.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 21" color="#7d8ea6">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 604" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Layer 22" color="#23a6e8" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements/>
+                              </DOMFrame>
+                              <DOMFrame index="1" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Symbol 621" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="0.0" ty="0.0"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,145 @@
+ConstantPool "c1", "c2", "c3", "c4", "0", "t", "upDate", "t0", "pausing", "timerInterval", "timeStop", "timeup", "game", "gameover", "setInterval", "length", "charAt", "clearInterval"
+DefineFunction "timeInit", 0 {
+Push constant0, constant1, constant2, constant3, constant4
+StoreRegister 0
+SetVariable
+Push register0
+StoreRegister 0
+SetVariable
+Push register0
+StoreRegister 0
+SetVariable
+Push register0
+SetVariable
+Push constant5, 180
+SetVariable
+Push 0.0, constant6
+CallFunction
+Pop
+Push constant7
+GetTime
+Push 1000
+Divide
+SetVariable
+Push constant8, false
+SetVariable
+}
+DefineFunction "timePause", 0 {
+Push constant8
+GetVariable
+Not
+If loc0114
+Push constant8, false
+SetVariable
+Jump loc011c
+loc0114:Push constant8, true
+SetVariable
+}
+loc011c:DefineFunction2 "timeStart", 0, 3, true, false, true, false, true, false, true, false, false {
+Push constant9, 500
+DefineFunction2 "", 0, 3, true, false, true, false, true, false, true, false, false {
+GetTime
+Push 1000
+Divide
+StoreRegister 2
+Pop
+Push constant8
+GetVariable
+Push false
+Equals2
+Not
+If loc01d3
+Push constant5, constant5
+GetVariable
+Push register2, constant7
+GetVariable
+Subtract
+Subtract
+SetVariable
+Push constant5
+GetVariable
+Push 1
+Less2
+Not
+If loc01c3
+Push constant5, 0.0
+SetVariable
+Push 0.0, constant10
+CallFunction
+Pop
+Push constant11, 1, register1, constant12
+GetMember
+Push constant13
+CallMethod
+Pop
+loc01c3:Push 0.0, constant6
+CallFunction
+Pop
+loc01d3:Push constant7, register2
+SetVariable
+}
+Push 2, constant14
+CallFunction
+SetVariable
+}
+DefineFunction2 "upDate", 0, 3, false, false, true, false, true, false, true, false, false {
+Push constant5
+GetVariable
+ToInteger
+Push 60
+Modulo
+ToString
+StoreRegister 1
+Pop
+Push constant5
+GetVariable
+Push register1
+Subtract
+Push 60
+Divide
+ToInteger
+ToString
+StoreRegister 2
+Pop
+Push register1, constant15
+GetMember
+Push 2
+Less2
+Not
+If loc0256
+Push constant2, constant4
+SetVariable
+Push constant3, register1
+SetVariable
+Jump loc0284
+loc0256:Push constant2, 0.0, 1, register1, constant16
+CallMethod
+SetVariable
+Push constant3, 1, 1, register1, constant16
+CallMethod
+SetVariable
+loc0284:Push register2, constant15
+GetMember
+Push 2
+Less2
+Not
+If loc02b0
+Push constant0, constant4
+SetVariable
+Push constant1, register2
+SetVariable
+Jump loc02de
+loc02b0:Push constant0, 0.0, 1, register2, constant16
+CallMethod
+SetVariable
+Push constant1, 1, 1, register2, constant16
+CallMethod
+SetVariable
+}
+loc02de:DefineFunction "timeStop", 0 {
+Push constant9
+GetVariable
+Push 1, constant17
+CallFunction
+Pop
+}

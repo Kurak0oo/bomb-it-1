@@ -1,0 +1,186 @@
+ConstantPool "heroObj", "pan", "heroId", "gotoAndStop", "lifeMc", "txt", "life", "shield", "tool_mc", "_visible", "shoe", "glove", "pan_mask", "score", "totalBombMc", "totalBomb", "delayTime", "onEnterFrame"
+DefineFunction2 "init", 0, 6, true, false, true, false, true, false, false, true, false {
+Push 1
+StoreRegister 4
+Pop
+loc00af:Push register4, 4
+Greater
+Not
+Not
+If loc01f9
+Push register2, constant0, register4
+Add2
+GetMember
+StoreRegister 5
+Pop
+Push register1, constant1, register4
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register5, constant2
+GetMember
+Push 1, register3, constant3
+CallMethod
+Pop
+Push register3, constant4
+GetMember
+Push constant5, register5, constant6
+GetMember
+SetMember
+Push 4, 1, register3, constant7
+GetMember
+Push constant8
+GetMember
+Push constant3
+CallMethod
+Pop
+Push register3, constant7
+GetMember
+Push constant9, false
+SetMember
+Push 6, 1, register3, constant10
+GetMember
+Push constant8
+GetMember
+Push constant3
+CallMethod
+Pop
+Push register3, constant10
+GetMember
+Push constant9, false
+SetMember
+Push 2, 1, register3, constant11
+GetMember
+Push constant8
+GetMember
+Push constant3
+CallMethod
+Pop
+Push register3, constant11
+GetMember
+Push constant9, false
+SetMember
+Push register5, constant6
+GetMember
+Push 0.0
+Greater
+Not
+If loc01d0
+Push 1, 1, register3, constant12
+GetMember
+Push constant3
+CallMethod
+Pop
+Jump loc01e9
+loc01d0:Push 2, 1, register3, constant12
+GetMember
+Push constant3
+CallMethod
+Pop
+loc01e9:Push register4
+Increment
+StoreRegister 4
+Pop
+Jump loc00af
+}
+loc01f9:DefineFunction2 "upDate", 0, 6, true, false, true, false, true, false, false, true, false {
+Push 1
+StoreRegister 5
+Pop
+loc0217:Push register5, 4
+Greater
+Not
+Not
+If loc02c0
+Push register2, constant0, register5
+Add2
+GetMember
+StoreRegister 3
+Pop
+Push register1, constant1, register5
+Add2
+GetMember
+StoreRegister 4
+Pop
+Push register4, constant4
+GetMember
+Push constant5, register3, constant6
+GetMember
+SetMember
+Push register3, constant6
+GetMember
+Push 0.0
+Equals2
+Not
+If loc0290
+Push 2, 1, register4, constant12
+GetMember
+Push constant3
+CallMethod
+Pop
+loc0290:Push register4, constant13, register3, constant13
+GetMember
+SetMember
+Push register4, constant14
+GetMember
+Push constant5, register3, constant15
+GetMember
+SetMember
+Push register5
+Increment
+StoreRegister 5
+Pop
+Jump loc0217
+}
+loc02c0:DefineFunction2 "showMc", 3, 5, false, false, true, false, true, false, false, true, false, 3, "mcName", 4, "heroNum", 2, "value" {
+Push register1, constant1, register4
+Add2
+GetMember
+Push register3
+GetMember
+Push constant9, register2
+SetMember
+}
+DefineFunction2 "mcBlink", 2, 5, false, false, true, false, true, false, false, true, false, 3, "mcName", 4, "heroNum" {
+Push register1, constant1, register4
+Add2
+GetMember
+Push register3
+GetMember
+StoreRegister 2
+Pop
+Push register2, constant16, 35
+SetMember
+Push register2, constant17
+DefineFunction2 "", 0, 2, false, false, true, false, true, false, false, true, false {
+Push register1, constant16, register1, constant16
+GetMember
+Decrement
+StoreRegister 0
+SetMember
+Push register0, 0.0
+Greater
+Not
+Not
+If loc0390
+Push register1, constant17
+Delete
+Pop
+Jump loc03c9
+loc0390:Push register1, constant16
+GetMember
+Push 10
+Modulo
+Push 5
+Less2
+Not
+If loc03bf
+Push register1, constant9, true
+SetMember
+Jump loc03c9
+loc03bf:Push register1, constant9, false
+SetMember
+}
+loc03c9:SetMember
+}

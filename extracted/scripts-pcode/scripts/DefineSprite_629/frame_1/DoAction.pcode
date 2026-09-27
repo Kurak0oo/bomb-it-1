@@ -1,0 +1,102 @@
+ConstantPool "totalPlayer", "totalScore", "playerName", "highScore_arr", "push", "gameSave", "totalScore1", "_parent", "heroObj1", "totalScore2", "heroObj2", "stageNum", "totalStage", "varHard", "gameover_welldone", "gotoAndStop", "easy", "normal", "hard", "stop"
+DefineFunction2 "submit_f", 0, 4, true, false, true, false, true, false, false, true, false {
+Push 1
+StoreRegister 3
+Pop
+loc00e5:Push register3, register2, constant0
+GetMember
+Greater
+Not
+Not
+If loc013a
+Push register1, constant1, register3
+Add2
+GetMember
+Push register2, constant2, register3
+Add2
+GetMember
+Push 2
+InitArray
+Push 1, register2, constant3
+GetMember
+Push constant4
+CallMethod
+Pop
+Push register3
+Increment
+StoreRegister 3
+Pop
+Jump loc00e5
+loc013a:Push 0.0, register2, constant5
+CallMethod
+Pop
+}
+Push constant6, constant7
+GetVariable
+Push constant8
+GetMember
+Push constant1
+GetMember
+SetVariable
+Push constant9, constant7
+GetVariable
+Push constant10
+GetMember
+Push constant1
+GetMember
+SetVariable
+Push constant7
+GetVariable
+Push constant11
+GetMember
+Push constant7
+GetVariable
+Push constant12
+GetMember
+Push 1
+Add2
+Equals2
+Not
+If loc0214
+Push constant7
+GetVariable
+Push constant13
+GetMember
+Push 1, constant14
+GetVariable
+Push constant15
+CallMethod
+Pop
+Push constant7
+GetVariable
+Push constant13
+GetMember
+StoreRegister 0
+Push constant16
+StrictEquals
+If loc01e9
+Push register0, constant17
+StrictEquals
+If loc01fc
+Jump loc020f
+loc01e9:Push constant7
+GetVariable
+Push constant13, constant17
+SetMember
+Jump loc020f
+loc01fc:Push constant7
+GetVariable
+Push constant13, constant18
+SetMember
+Jump loc020f
+loc020f:Jump loc022a
+loc0214:Push 0.0, constant14
+GetVariable
+Push constant19
+CallMethod
+Pop
+loc022a:Push constant7
+GetVariable
+Push constant0
+GetMember
+GotoFrame2 false, false

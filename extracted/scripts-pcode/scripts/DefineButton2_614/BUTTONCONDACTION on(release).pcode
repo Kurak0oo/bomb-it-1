@@ -1,0 +1,8 @@
+Push 0.0, "submit_f"
+CallFunction
+Pop
+Push "highscore", 1, "_parent"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop

@@ -1,0 +1,12 @@
+Push 0.0, "hero"
+GetVariable
+Push "removeMovieClip"
+CallMethod
+Pop
+Push "heroId"
+GetVariable
+Push 1, "blackHero"
+GetVariable
+Push "gotoAndStop"
+CallMethod
+Pop
