@@ -179,6 +179,7 @@ func _command(id: int) -> PlayerCommands:
 	return fire
 
 func _input(event: InputEvent) -> void:
+	keyboard.observe(event)
 	if screen != "game" or paused:
 		return
 	for id in players:
@@ -189,6 +190,7 @@ func _input(event: InputEvent) -> void:
 			fire_inputs[id].set_source("keyboard", false)
 
 func _reset_input() -> void:
+	keyboard.cancel()
 	if is_instance_valid(touch):
 		touch.release_all()
 	for id in 2:

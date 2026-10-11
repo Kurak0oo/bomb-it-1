@@ -137,10 +137,34 @@ func run() -> void:
 	check(main.touch.bomb_held, "unrelated finger IDs do not release Bomb")
 	finger(false)
 	finger(false, false, 8, Vector2(182,325))
+	await run_ticks(main, 7) # Finish the movement already accepted by the simulation.
+	var resting_cell := actor.cell
+	key(true, KEY_D)
+	key(true, KEY_P)
+	key(false, KEY_P)
+	key(true, KEY_P)
+	key(false, KEY_P)
+	await run_ticks(main, 7)
+	check(actor.cell == resting_cell and not actor.moving, "held pre-pause direction must wait for release and a fresh press")
+	key(false, KEY_D)
+	key(true, KEY_D)
+	await run_ticks(main, 1)
+	check(actor.moving, "fresh movement press after release resumes control")
+	key(true, KEY_P)
+	key(false, KEY_P)
+	click(Vector2(260,250))
+	key(true)
+	key(false)
+	key(true)
+	key(false)
+	await process_frame
+	actor = main.session.state.heroes[0]
+	var spawn := actor.cell
+	await run_ticks(main, 7)
+	check(actor.cell == spawn and not actor.moving, "held direction from the previous match cannot move a new hero")
+	key(false, KEY_D)
 	main.queue_free()
 	await create_timer(1.0).timeout
 	if not failed:
 		print("INPUT_RENDER_OK")
 	quit(1 if failed else 0)
-
-

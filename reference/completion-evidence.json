@@ -1,0 +1,495 @@
+{
+  "review_baseline": "47be5ea18698ce94e94d39c91855022dbb37310a",
+  "implementation_commit": "610e3c0",
+  "date": "2026-10-11",
+  "release_complete": false,
+  "windows_fresh_import_checks": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 15.719
+    },
+    {
+      "name": "python_compile",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.14
+    },
+    {
+      "name": "tooling",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.328
+    },
+    {
+      "name": "reference_parse",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.313
+    },
+    {
+      "name": "sim",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.312
+    },
+    {
+      "name": "actors",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.297
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.047
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.047
+    },
+    {
+      "name": "campaign",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.062
+    },
+    {
+      "name": "special",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.297
+    },
+    {
+      "name": "soak",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.985
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.89
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.532
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.109
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.734
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.078
+    }
+  ],
+  "original_comparison": {
+    "passed": true,
+    "original_runtime": "Ruffle 0.7.1",
+    "rebuilt_runtime": "4.7.2-stable (official)",
+    "first_divergence": null,
+    "differences": []
+  },
+  "death_images": {
+    "passed": false,
+    "tolerance": 0,
+    "max_changed_fraction": 0.0,
+    "images": [
+      {
+        "name": "qa-frame-00.png",
+        "passed": false,
+        "changed_pixels": 1895,
+        "changed_fraction": 0.008613636363636363
+      },
+      {
+        "name": "qa-frame-04.png",
+        "passed": false,
+        "changed_pixels": 2025,
+        "changed_fraction": 0.009204545454545455
+      },
+      {
+        "name": "qa-frame-05.png",
+        "passed": false,
+        "changed_pixels": 2289,
+        "changed_fraction": 0.010404545454545455
+      },
+      {
+        "name": "qa-frame-10.png",
+        "passed": false,
+        "changed_pixels": 366,
+        "changed_fraction": 0.0016636363636363637
+      },
+      {
+        "name": "qa-frame-11.png",
+        "passed": false,
+        "changed_pixels": 425,
+        "changed_fraction": 0.001931818181818182
+      },
+      {
+        "name": "qa-frame-19.png",
+        "passed": false,
+        "changed_pixels": 317,
+        "changed_fraction": 0.001440909090909091
+      },
+      {
+        "name": "qa-frame-20.png",
+        "passed": false,
+        "changed_pixels": 314,
+        "changed_fraction": 0.0014272727272727273
+      },
+      {
+        "name": "qa-frame-34.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-frame-35.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-hero2-frame-00.png",
+        "passed": false,
+        "changed_pixels": 1908,
+        "changed_fraction": 0.008672727272727273
+      },
+      {
+        "name": "qa-hero2-frame-04.png",
+        "passed": false,
+        "changed_pixels": 2025,
+        "changed_fraction": 0.009204545454545455
+      },
+      {
+        "name": "qa-hero2-frame-05.png",
+        "passed": false,
+        "changed_pixels": 2289,
+        "changed_fraction": 0.010404545454545455
+      },
+      {
+        "name": "qa-hero2-frame-10.png",
+        "passed": false,
+        "changed_pixels": 366,
+        "changed_fraction": 0.0016636363636363637
+      },
+      {
+        "name": "qa-hero2-frame-11.png",
+        "passed": false,
+        "changed_pixels": 425,
+        "changed_fraction": 0.001931818181818182
+      },
+      {
+        "name": "qa-hero2-frame-19.png",
+        "passed": false,
+        "changed_pixels": 317,
+        "changed_fraction": 0.001440909090909091
+      },
+      {
+        "name": "qa-hero2-frame-20.png",
+        "passed": false,
+        "changed_pixels": 314,
+        "changed_fraction": 0.0014272727272727273
+      },
+      {
+        "name": "qa-hero2-frame-34.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-hero2-frame-35.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-hero3-frame-00.png",
+        "passed": false,
+        "changed_pixels": 1942,
+        "changed_fraction": 0.008827272727272727
+      },
+      {
+        "name": "qa-hero3-frame-04.png",
+        "passed": false,
+        "changed_pixels": 2038,
+        "changed_fraction": 0.009263636363636363
+      },
+      {
+        "name": "qa-hero3-frame-05.png",
+        "passed": false,
+        "changed_pixels": 2305,
+        "changed_fraction": 0.010477272727272727
+      },
+      {
+        "name": "qa-hero3-frame-10.png",
+        "passed": false,
+        "changed_pixels": 389,
+        "changed_fraction": 0.0017681818181818183
+      },
+      {
+        "name": "qa-hero3-frame-11.png",
+        "passed": false,
+        "changed_pixels": 450,
+        "changed_fraction": 0.0020454545454545456
+      },
+      {
+        "name": "qa-hero3-frame-19.png",
+        "passed": false,
+        "changed_pixels": 317,
+        "changed_fraction": 0.001440909090909091
+      },
+      {
+        "name": "qa-hero3-frame-20.png",
+        "passed": false,
+        "changed_pixels": 314,
+        "changed_fraction": 0.0014272727272727273
+      },
+      {
+        "name": "qa-hero3-frame-34.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-hero3-frame-35.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-hero4-frame-00.png",
+        "passed": false,
+        "changed_pixels": 1839,
+        "changed_fraction": 0.00835909090909091
+      },
+      {
+        "name": "qa-hero4-frame-04.png",
+        "passed": false,
+        "changed_pixels": 2038,
+        "changed_fraction": 0.009263636363636363
+      },
+      {
+        "name": "qa-hero4-frame-05.png",
+        "passed": false,
+        "changed_pixels": 2305,
+        "changed_fraction": 0.010477272727272727
+      },
+      {
+        "name": "qa-hero4-frame-10.png",
+        "passed": false,
+        "changed_pixels": 389,
+        "changed_fraction": 0.0017681818181818183
+      },
+      {
+        "name": "qa-hero4-frame-11.png",
+        "passed": false,
+        "changed_pixels": 450,
+        "changed_fraction": 0.0020454545454545456
+      },
+      {
+        "name": "qa-hero4-frame-19.png",
+        "passed": false,
+        "changed_pixels": 317,
+        "changed_fraction": 0.001440909090909091
+      },
+      {
+        "name": "qa-hero4-frame-20.png",
+        "passed": false,
+        "changed_pixels": 314,
+        "changed_fraction": 0.0014272727272727273
+      },
+      {
+        "name": "qa-hero4-frame-34.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-hero4-frame-35.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      }
+    ]
+  },
+  "original_metadata": {
+    "source": "original-swf-bytecode",
+    "runtime": "Ruffle 0.7.1",
+    "browser": "156.0.8078.4",
+    "fixture_sha256": "9ea218eb467f6d1a70b8f1a3f164365c1d2524cd906d17547e6c98d026cf154e",
+    "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
+    "fps": 35,
+    "tick_origin": "first onEnterFrame observation after fixture creation",
+    "caveat": "Ruffle executes the original bytecode; this is not Adobe Flash Player certification.",
+    "original_swf_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+    "harness_sha256": "0d678f1438207b846709414f9b98a65531355e4a1706555705a3dd7246b8133b",
+    "builder_sha256": "2193ff600b4a6ec7917fde70a2415d29a1d8b3c5a42af55153c000866f78512a",
+    "capture_sha256": "c19bbe31e2f799fabee344c6c41af672a9d65cbfcaa1d3c480742af529f6c754",
+    "ffdec_sha256": "1587e60b2ec2c0e4f5721fd5f2aaaf2379f6d416569de99054b5c5d1e9ba841c"
+  },
+  "scenario_ticks": {
+    "death": 40,
+    "death2": 40,
+    "death3": 40,
+    "death4": 40,
+    "explosion": 40,
+    "brick": 40
+  },
+  "linux_regression_checks": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 5.035
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.369
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.419
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.325
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.424
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.787
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.78
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.222
+    },
+    {
+      "name": "visual_compare",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.82
+    }
+  ],
+  "linux_renderer": {
+    "display": "X11",
+    "engine": "4.7.2-stable (official)",
+    "os": "Linux",
+    "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+  },
+  "review_fix_checks": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.031
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.047
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.859
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.5
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.484
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.719
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.859
+    }
+  ]
+}

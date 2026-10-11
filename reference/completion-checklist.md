@@ -25,12 +25,12 @@ seeded RNG backend and deterministic timer policy remain unchanged.
 | [#12 Endpoints](https://github.com/Kurak0oo/bomb-it-1/issues/12) | Pending pushed-bomb and grenade endpoint fixtures. |
 | [#13 Interactions](https://github.com/Kurak0oo/bomb-it-1/issues/13) | Pending mixed weapons, shields, surviving lives and ownership reference traces. |
 | [#14 Random replay](https://github.com/Kurak0oo/bomb-it-1/issues/14) | Pending strict bound/order recording and fail-closed replay. Current fallback is not a parity oracle. |
-| [#15 Input delivery](https://github.com/Kurak0oo/bomb-it-1/issues/15) | Implemented; rendered event tests cover brief keyboard/touch taps, ordered release/repress, held ordinary bombs, special release gating, simultaneous fingers, unrelated IDs, cancellation, hiding, disabling, pause and scene changes. Final review required. |
+| [#15 Input delivery](https://github.com/Kurak0oo/bomb-it-1/issues/15) | Implemented; rendered event tests cover brief keyboard/touch taps, ordered release/repress, held ordinary bombs, special release gating, simultaneous fingers, unrelated IDs, cancellation, hiding, disabling, pause and scene changes. Review's stale keyboard-direction finding is fixed and regression-tested. |
 | [#16 Safe areas](https://github.com/Kurak0oo/bomb-it-1/issues/16) | Partial preparation: layout no longer depends on drawing; resize cancels input. Actual safe-area layout and orientation matrix remain. |
 | [#17 Lifecycle](https://github.com/Kurak0oo/bomb-it-1/issues/17) | Partial: application background notification now pauses and clears fire; foreground waits for intentional resume. Native audio/focus/input matrix remains. |
 | [#18 Smoothness](https://github.com/Kurak0oo/bomb-it-1/issues/18) | Pending measured 35/60/120 Hz frame pacing, latency and sustained runs. Existing interpolation remains. |
 | [#19 Windows release](https://github.com/Kurak0oo/bomb-it-1/issues/19) | Pending standalone export and installation evidence. |
-| [#20 iOS build](https://github.com/Kurak0oo/bomb-it-1/issues/20) | Externally blocked: user has iPhones but no Mac/Xcode access. Signing and model/refresh inventory are unconfirmed. |
+| [#20 iOS build](https://github.com/Kurak0oo/bomb-it-1/issues/20) | Native build/install externally blocked: user has iPhones but no Mac/Xcode access. Export configuration remains pending; signing and model/refresh inventory are unconfirmed. |
 | [#21 Desktop acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/21) | Pending prerequisite fidelity and packaging work. |
 | [#22 iPhone acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/22) | Blocked by native build plus remaining phone work. Simulator/Windows results cannot satisfy it. |
 | [#23 Release evidence](https://github.com/Kurak0oo/bomb-it-1/issues/23) | Pending both integrated release gates; no completion claim. |
@@ -49,7 +49,7 @@ seeded RNG backend and deterministic timer policy remain unchanged.
 - `python tools/run_checks.py --visual` includes the new rendered checks through
   the approved public runner. Input tests deliver platform events through Godot's
   input/viewport boundary; gameplay remains in the fixed simulation callback.
-- `.artifacts/four-deaths/trace-comparison.json`: six scenarios, 40 updates each,
+- `.artifacts/completion-reference-final/trace-comparison.json`: six scenarios, 40 updates each,
   exact observation-field agreement. `death-comparison/report.json`: 28 differing
   images out of 36. Remaining differences are unresolved; they have not been
   waived as renderer-only. No tolerance or tick shifting was introduced.
@@ -57,10 +57,22 @@ seeded RNG backend and deterministic timer policy remain unchanged.
   Eight existing captures are unchanged. The death sheet and new feedback image
   were visually inspected before updating the Linux regression baselines. These
   baselines represent the port, separately from the original-bytecode comparison.
+- `.artifacts/completion-final-checks`: all 16 phases pass on a fresh Windows
+  project import, including nine tooling tests and the 21,600-tick soak.
+- `.artifacts/linux-completion-final`: fresh Linux import, rendered input and
+  exact comparison of all ten reviewed regression images pass.
+- Review found keyboard movement could survive cancellation. A rendered-input
+  regression failed before release gating was added to `KeyboardInput`; it now
+  passes for both pause/resume and a new match. Focused checks after that fix are
+  in `.artifacts/completion-review-fix`.
+- [Machine-readable evidence](completion-evidence.json) retains test results,
+  original-runtime hashes and exact image differences. Review is recorded in
+  [completion-review.md](completion-review.md).
 
 ## Device constraint
 
-The user has confirmed iPhone access and no Mac devices. Phone model, iOS version,
+The user reports a few phones, likely iPhone 12 or newer, and no Mac devices.
+Exact models, iOS versions,
 refresh mode and signing access must be recorded before the native matrix runs.
 No cloud Mac purchase, credential handling, signed build, installed-device pass,
 latency measurement or thermal test is implied by the Windows work.
