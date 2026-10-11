@@ -1,0 +1,12 @@
+{
+  "source": "unmodified-original-swf",
+  "source_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+  "runtime": "Ruffle 0.7.1",
+  "browser": "156.0.8078.4",
+  "fps": 35,
+  "capture_sha256": "a38270f99b7833e4020d7c181036fbce02370586559f580b503dda05f9a809f2",
+  "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
+  "renderer": "canvas",
+  "clock": "Playwright virtual clock; stopped root menu frames",
+  "caveat": "Original bytecode in Ruffle, not Adobe Flash Player certification. No port images used as source."
+}

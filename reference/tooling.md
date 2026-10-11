@@ -120,3 +120,25 @@ exit nonzero. Geometry is omitted to keep output useful.
 
 The optional CodeGraph database under `godot` currently reports no indexed code.
 Use normal source search in that case; these tools do not create an index.
+
+## Original menu artwork and playback
+
+Use the same Java/FFDec and browser prerequisites as the original-bytecode
+fixtures above. The menu exporter reads the source without modifying it:
+
+```powershell
+java --class-path '<ffdec-directory>/ffdec.jar;<ffdec-directory>/lib/*' tools/ExportMenuArt.java 'Bomb It 1.swf' godot/art/original/menus
+node tools/reference/capture_menus.mjs 'Bomb It 1.swf' .artifacts/original-menus
+python tools/run_checks.py --godot <godot-executable> --suite view --visual --output .artifacts/menu-checks
+python tools/compare_images.py reference/menu-capture/original reference/menu-capture/rebuilt --output .artifacts/menu-comparison
+```
+
+On Linux/macOS use `:` rather than `;` in the Java class path. The exporter keeps
+static display-list segments in their original order around button backgrounds;
+the PNGs and manifest are committed so normal builds need no Java or FFDec.
+The independent browser command uses the unchanged SWF and source button routes,
+not the extracted PNGs. It stores 11 source captures and provenance metadata.
+The runner's `--visual` phases include real menu input and 13 menu captures.
+The final comparator is diagnostic: it currently exits 1 because original and
+rebuilt raster images differ, without changing tolerances. See
+`menu-restoration.md` for the scope and intentional platform additions.

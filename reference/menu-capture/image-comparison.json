@@ -1,0 +1,73 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-menu-controls-hover.png",
+      "passed": false,
+      "changed_pixels": 133273,
+      "changed_fraction": 0.6057863636363636
+    },
+    {
+      "name": "qa-menu-controls-pressed.png",
+      "passed": false,
+      "changed_pixels": 133273,
+      "changed_fraction": 0.6057863636363636
+    },
+    {
+      "name": "qa-menu-controls.png",
+      "passed": false,
+      "changed_pixels": 133273,
+      "changed_fraction": 0.6057863636363636
+    },
+    {
+      "name": "qa-menu-players.png",
+      "passed": false,
+      "changed_pixels": 137560,
+      "changed_fraction": 0.6252727272727273
+    },
+    {
+      "name": "qa-menu-powerups-hover.png",
+      "passed": false,
+      "changed_pixels": 139378,
+      "changed_fraction": 0.6335363636363637
+    },
+    {
+      "name": "qa-menu-powerups-landscape.png",
+      "passed": false,
+      "changed_pixels": 513933,
+      "changed_fraction": 0.40151015625
+    },
+    {
+      "name": "qa-menu-powerups-pressed.png",
+      "passed": false,
+      "changed_pixels": 139355,
+      "changed_fraction": 0.6334318181818182
+    },
+    {
+      "name": "qa-menu-powerups.png",
+      "passed": false,
+      "changed_pixels": 139355,
+      "changed_fraction": 0.6334318181818182
+    },
+    {
+      "name": "qa-menu-title-hover.png",
+      "passed": false,
+      "changed_pixels": 133647,
+      "changed_fraction": 0.6074863636363637
+    },
+    {
+      "name": "qa-menu-title-pressed.png",
+      "passed": false,
+      "changed_pixels": 133639,
+      "changed_fraction": 0.60745
+    },
+    {
+      "name": "qa-menu-title.png",
+      "passed": false,
+      "changed_pixels": 133639,
+      "changed_fraction": 0.60745
+    }
+  ]
+}

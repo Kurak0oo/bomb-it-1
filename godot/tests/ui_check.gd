@@ -13,10 +13,13 @@ func run() -> void:
 	root.add_child(main)
 	main.audio.muted = true
 	await capture("menu")
-	for control in main.ui.get_children():
-		if control is Button and control.text == "1 PLAYER":
-			control.pressed.emit()
-			break
+	for point in [Vector2(477,100), Vector2(470,155)]:
+		for pressed in [true, false]:
+			var event := InputEventMouseButton.new()
+			event.position = main.position + point
+			event.button_index = MOUSE_BUTTON_LEFT
+			event.pressed = pressed
+			root.push_input(event, true)
 	check(main.screen == "select", "menu signal safely changes screens")
 	await capture("select")
 	main.session.start(42, 1, 1, 1)

@@ -50,6 +50,8 @@ func run() -> void:
 	root.add_child(main)
 	key(true)
 	key(false)
+	key(true)
+	key(false)
 	await process_frame
 	key(true)
 	key(false)
@@ -120,10 +122,12 @@ func run() -> void:
 	key(false)
 	key(true)
 	key(false)
+	key(true)
+	key(false)
 	await process_frame
 	check(main.screen == "game", "new match starts after an interruption")
 	await run_ticks(main, 2)
-	check(main.session.state.bombs.is_empty(), "scene changes and disabled controls cannot replay fire")
+	check(main.session.state.bombs.filter(func(bomb: BombState): return bomb.owner_id == 0).is_empty(), "scene changes and disabled controls cannot replay the human's fire")
 	actor = main.session.state.heroes[0]
 	actor.bomb_capacity = 3
 	actor.bombs_available = 3
@@ -153,6 +157,8 @@ func run() -> void:
 	key(true, KEY_P)
 	key(false, KEY_P)
 	click(Vector2(260,250))
+	key(true)
+	key(false)
 	key(true)
 	key(false)
 	key(true)

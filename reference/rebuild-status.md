@@ -51,10 +51,12 @@ The playable systems are implemented, but **exact equivalence is not established
    identical, so equal seeds are not asserted to produce the original SWF map.
 3. The timer is deterministic simulation time. The original polls a wall clock
    every 500 ms. Severe stalls can therefore change elapsed-time correspondence.
-4. Menu/select/help/HUD/results controls are rebuilt with Godot controls over
-   recovered art. They are not exact reproductions of all root-screen timelines,
-   typography, rollover states, score-counting animations, or original 5.5-second
-   outcome transitions. High scores are local, not a recreation of the old portal.
+4. Title, player count, controls help and the power-up guide now use original
+   root display-list artwork, lettering and button states, with keyboard/mouse/
+   touch navigation. Exact image comparison still finds differences; see
+   `menu-restoration.md`. Selection/HUD/results remain reconstructed controls,
+   including unfinished score-counting and original 5.5-second outcome transitions.
+   High scores are local, not a recreation of the old portal.
 5. Death, pickup and rocket compositions now replay recovered XFL placement,
    scale, rotation and opacity. The hero shadow uses the original embedded bitmap;
    the invented shield outline is removed (the source indicates possession in the

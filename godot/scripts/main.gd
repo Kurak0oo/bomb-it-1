@@ -25,6 +25,7 @@ var prefs := ConfigFile.new()
 var fire_inputs: Array[FireInput] = [FireInput.new(), FireInput.new()]
 var save_enabled := true
 var keyboard := KeyboardInput.new()
+var original_menu: OriginalMenu
 
 func _ready() -> void:
 	art = OriginalArt.new()
@@ -60,6 +61,7 @@ func _clear_screen() -> void:
 	ui.z_index = 3000
 	add_child(ui)
 	view = null
+	original_menu = null
 	touch = null
 	overlay = null
 	hud.clear()
@@ -74,16 +76,35 @@ func _background(path: String) -> void:
 	world.add_child(sprite)
 
 func _show_menu() -> void:
-	_clear_screen()
-	screen = "menu"
-	_background("res://art/original/menu.png")
-	# Buttons occupy the positions of the original menu artwork.
-	_button(ui, "1 PLAYER", Rect2(411,141,112,31), func(): players = 1; selection_slot = 0; _show_select())
-	_button(ui, "2 PLAYERS", Rect2(410,215,113,31), func(): players = 2; selection_slot = 0; _show_select())
-	_button(ui, "HOW TO PLAY", Rect2(361,270,161,31), _show_help)
-	_button(ui, "SOUND OFF" if audio.muted else "SOUND ON", Rect2(104,378,84,20), _toggle_sound)
-	_label(ui, "BEST  %06d" % high_score, Rect2(365,315,164,23), 15, Color("75255f"))
+	_show_original_menu("menu")
 	audio.play_music("406_Bombit_-_mainscreen.mp3")
+
+func _show_original_menu(page: String) -> void:
+	_clear_screen()
+	screen = page
+	original_menu = OriginalMenu.new()
+	original_menu.page = page
+	original_menu.muted = audio.muted
+	original_menu.touch_help = touch_enabled
+	original_menu.action_requested.connect(_menu_action)
+	ui.add_child(original_menu)
+
+func _menu_action(action: String) -> void:
+	match action:
+		"players": _show_players()
+		"one", "two":
+			players = 1 if action == "one" else 2
+			selection_slot = 0
+			_show_select()
+		"help": _show_help()
+		"powerups": _show_original_menu("powerups")
+		"back": _show_menu()
+		"sound": _toggle_sound()
+		"best": original_menu.show_notice("LOCAL BEST  %06d" % high_score)
+		"portal": original_menu.show_notice("Original portal link unavailable")
+
+func _show_players() -> void:
+	_show_original_menu("players")
 
 func _show_select() -> void:
 	_clear_screen()
@@ -103,7 +124,7 @@ func _show_select() -> void:
 	for level in 3:
 		var names := ["EASY", "NORMAL", "HARD"]
 		_button(ui, ("• " if difficulty == level else "") + names[level], Rect2(102+level*115,244,106,28), func(): difficulty = level; _show_select())
-	_button(ui, "BACK", Rect2(98,306,110,34), _show_menu)
+	_button(ui, "BACK", Rect2(98,306,110,34), _show_players)
 	_button(ui, "PLAYER 2 →" if players == 2 and selection_slot == 0 else "LET'S PLAY", Rect2(232,302,219,40), _start_game)
 
 func _choose_character(id: int) -> void:
@@ -116,14 +137,7 @@ func _choose_character(id: int) -> void:
 	_show_select()
 
 func _show_help() -> void:
-	_show_select()
-	screen = "help"
-	for child in ui.get_children():
-		child.queue_free()
-	_panel(ui, Rect2(48,35,454,330))
-	_label(ui, "HOW TO PLAY", Rect2(67,48,416,37), 26)
-	_label(ui, "Drop bombs, then get clear. Defeat the other robots!\nBreak scenery to uncover upgrades and special weapons.\n\n1P: Arrow keys or WASD · Space to bomb\n2P: P1 WASD + Space · P2 Arrows + Enter\nEsc / P pauses · M toggles sound\n\nTouch: left stick to move · right button to bomb\nRelease the Bomb button between special-weapon shots.", Rect2(69,100,415,190), 13)
-	_button(ui, "GOT IT", Rect2(170,309,210,34), _show_menu)
+	_show_original_menu("help")
 
 func _start_game() -> void:
 	if screen == "select" and players == 2 and selection_slot == 0:
@@ -276,8 +290,8 @@ func _toggle_pause() -> void:
 func _toggle_sound() -> void:
 	audio.muted = not audio.muted
 	_save_preferences()
-	if screen == "menu":
-		_show_menu()
+	if is_instance_valid(original_menu):
+		original_menu.set_muted(audio.muted)
 
 func _toggle_touch() -> void:
 	touch_enabled = not touch_enabled
@@ -301,14 +315,14 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			if screen == "game":
 				_toggle_pause()
 			elif event.keycode == KEY_ESCAPE and screen != "menu":
-				_show_menu()
+				if screen == "select":
+					_show_players()
+				else:
+					_show_menu()
 		elif event.keycode == KEY_M:
 			_toggle_sound()
 		elif event.keycode == KEY_ENTER:
-			if screen == "menu":
-				selection_slot = 0
-				_show_select()
-			elif screen == "select":
+			if screen == "select":
 				_start_game()
 			elif screen == "result":
 				if session.can_continue():

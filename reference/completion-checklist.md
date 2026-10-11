@@ -16,7 +16,7 @@ seeded RNG backend and deterministic timer policy remain unchanged.
 | [#3 Actor feedback](https://github.com/Kurak0oo/bomb-it-1/issues/3) | Partial: surviving-hit smoke, weapon indicator and rendered regressions. Nested idle clips and independent indicator/depth captures remain. |
 | [#4 Ordinary effects](https://github.com/Kurak0oo/bomb-it-1/issues/4) | Pending expanded source captures and boundary comparison. |
 | [#5 Special effects](https://github.com/Kurak0oo/bomb-it-1/issues/5) | Partial: impact-tick rocket smoke restored and rendered regression passes. Other effect comparisons remain. |
-| [#6 Menu/help](https://github.com/Kurak0oo/bomb-it-1/issues/6) | Pending original root sequence, states and typography. Existing reconstructed UI remains. |
+| [#6 Menu/help](https://github.com/Kurak0oo/bomb-it-1/issues/6) | Title/player count/controls/power-up slices #24–#26 implemented with source artwork and input checks. All 11 original-playback image pairs still differ; see [menu restoration](menu-restoration.md). Parent remains open for fidelity review. |
 | [#7 Selection](https://github.com/Kurak0oo/bomb-it-1/issues/7) | Pending original selection presentation. |
 | [#8 HUD/arena](https://github.com/Kurak0oo/bomb-it-1/issues/8) | Pending composition, depth and theme reference matrix. |
 | [#9 Outcomes](https://github.com/Kurak0oo/bomb-it-1/issues/9) | Pending original transitions, counting and score presentation. |

@@ -93,6 +93,7 @@ def main():
             phases += [("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
                        ("feedback_render", render + ["--script", "res://tests/feedback_render_check.gd"], "FEEDBACK_RENDER_OK"),
                        ("input_render", render + ["--script", "res://tests/input_render_check.gd"], "INPUT_RENDER_OK"),
+                       ("menu_render", render + ["--script", "res://tests/menu_render_check.gd"], "MENU_RENDER_OK"),
                        ("ui", render + ["--script", "res://tests/ui_check.gd"], "UI_OK"),
                        ("visual_timelines", render + ["--script", "res://tests/visual_timelines.gd"], "VISUAL_TIMELINES_OK")]
         if args.compare_baselines:
