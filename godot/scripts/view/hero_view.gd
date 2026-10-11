@@ -8,12 +8,14 @@ var shadow: Sprite2D
 var death: OriginalTimeline
 var burst: Sprite2D
 var smoke: Sprite2D
+var weapon_indicator: WeaponIndicator
 var death_age := -1
 var previous := Vector2.ZERO
 var current := Vector2.ZERO
 var frozen := false
 
 func _ready() -> void:
+	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	shadow = art.sprite(2)
 	add_child(shadow)
 	body = Sprite2D.new()
@@ -29,6 +31,9 @@ func _ready() -> void:
 	smoke.z_as_relative = false
 	smoke.z_index = 2500
 	add_child(smoke)
+	weapon_indicator = WeaponIndicator.new()
+	weapon_indicator.art = art
+	add_child(weapon_indicator)
 	current = actor.pixel_position()
 	previous = current
 	sync()
@@ -37,6 +42,7 @@ func capture() -> void:
 	previous = current
 
 func sync() -> void:
+	weapon_indicator.sync(actor)
 	current = actor.pixel_position()
 	z_index = OriginalArt.depth(actor.cell, -actor.id - 1)
 	if actor.alive:

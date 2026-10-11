@@ -43,7 +43,7 @@ func run() -> void:
 		for i in 5:
 			hero.advance_presentation()
 		check(not hero.body.visible and hero.death.layers[1].visible, "frame six swaps hero for silhouette")
-		check(hero.death.layers[1].texture == view.art.frame(236, character), "death silhouette matches character")
+		check(hero.death.layers[1].texture == view.art.frame(233 if character <= 2 else 235), "death silhouette matches source character body")
 		check(is_equal_approx(hero.death.layers[1].modulate.a, 0.19921875), "death silhouette uses source fade")
 		for i in 30:
 			hero.advance_presentation()

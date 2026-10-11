@@ -53,29 +53,38 @@ try {
   browser = await chromium.launch({ headless: true });
   const address = `http://127.0.0.1:${server.address().port}`;
   const all = {};
-  for (const scenario of ['death', 'explosion', 'brick']) {
+  for (const scenario of ['death', 'death2', 'death3', 'death4', 'explosion', 'brick']) {
     const page = await browser.newPage({ viewport: { width: 550, height: 400 }, deviceScaleFactor: 1 });
     const messages = [];
     page.on('console', message => messages.push(message.text()));
     page.on('pageerror', error => messages.push(String(error)));
     try {
+      // Advance browser time explicitly: a busy host must not let Ruffle run
+      // several Flash frames in one RAF callback before the pause microtask.
+      const epoch = new Date('2026-01-01T00:00:00Z');
+      await page.clock.install({ time: epoch });
+      await page.clock.pauseAt(epoch);
       await page.goto(address);
       await page.evaluate(scenario => window.boot(scenario), scenario);
       const rows = [];
       for (let tick = 0; tick < 40; tick++) {
-        await page.waitForFunction(n => window.samples.length > n, tick, { timeout: 15000 });
+        for (let step = 0; step < 20; step++) {
+          if (await page.evaluate(n => window.samples.length > n, tick)) break;
+          await page.clock.runFor(16);
+        }
         // The microtask pauses the runtime before another frame. No wall-clock sleeps.
         const observed = await page.evaluate(() => window.samples);
         if (observed.length !== tick + 1 || observed[tick].tick !== tick)
           throw new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
         rows.push(observed[tick]);
-        if (scenario === 'death' && [0,4,5,10,11,19,20,34,35].includes(tick)) {
+        if (scenario.startsWith('death') && [0,4,5,10,11,19,20,34,35].includes(tick)) {
           const folder = resolve(output, 'death');
           await mkdir(folder, { recursive: true });
           // Ruffle displays its own play overlay when suspended. Export only the
           // game's canvas, so runtime controls cannot contaminate reference art.
           const pixels = await page.locator('ruffle-player').locator('canvas').evaluate(canvas => canvas.toDataURL('image/png'));
-          await writeFile(resolve(folder, `qa-frame-${String(tick).padStart(2,'0')}.png`), Buffer.from(pixels.split(',')[1], 'base64'));
+          const prefix = scenario === 'death' ? '' : `hero${scenario.slice(5)}-`;
+          await writeFile(resolve(folder, `qa-${prefix}frame-${String(tick).padStart(2,'0')}.png`), Buffer.from(pixels.split(',')[1], 'base64'));
         }
         if (tick < 39) await page.evaluate(() => window.player.ruffle().resume());
       }

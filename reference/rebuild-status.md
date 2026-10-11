@@ -2,6 +2,8 @@
 
 This supersedes the implementation-status sections of `core-stabilization.md`.
 The callback-order caveats in that document still apply.
+The active completion tickets and evidence are tracked in
+[`completion-checklist.md`](completion-checklist.md). The release is not complete.
 
 ## Implemented
 
@@ -56,19 +58,22 @@ The playable systems are implemented, but **exact equivalence is not established
 5. Death, pickup and rocket compositions now replay recovered XFL placement,
    scale, rotation and opacity. The hero shadow uses the original embedded bitmap;
    the invented shield outline is removed (the source indicates possession in the
-   HUD). Remaining details include the floating equipped-weapon indicator,
-   surviving-hit smoke, nested idle clips, and reference playback comparison of
-   effect creation/removal boundaries. A rocket removed by impact within a tick
-   cannot currently emit its last smoke sample. Raster exports retain their source
+   HUD). The floating weapon indicator, surviving-hit smoke and final impact-tick
+   rocket smoke are now present. Death silhouettes composite body and eyes as
+   separate source shapes. Nested idle clips and reference playback comparison of
+   effect creation/removal boundaries remain incomplete. Raster exports retain their source
    resolution, so large windows cannot recover vector detail. See
    `visual-fidelity.md` for the completed animation pass.
 6. Special weapons follow source logic but still need reference traces for mixed
    weapon collisions, moving-bomb edge cases, multi-life AI scoring/shields, and
    overlap ownership. The tests validate the port, not an independent SWF oracle.
-7. Windows rendering and simulated multitouch were checked. Native desktop UI
-   automation could not connect to its helper. iPhone hardware latency, safe-area
+7. Windows rendering and event delivery through the rendered viewport were checked.
+   Brief taps and ordered fire transitions are buffered to the 35 Hz boundary;
+   cancellation, hidden/disabled controls, pause and scene changes discard pending
+   presses. Backgrounding pauses until intentional resume. iPhone hardware latency, safe-area
    insets, sustained frame pacing, native builds, signing, and store packaging
-   have not been verified. No release executable or iOS package is claimed.
+   have not been verified. The user has iPhones but no Mac; native iOS build/install
+   remains externally blocked. No release executable or iOS package is claimed.
 
 ## Validation performed
 

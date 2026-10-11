@@ -45,7 +45,7 @@ for body in doc.findall('.//x:DOMSymbolInstance[@name="body"]', ns):
                     'scale_x': float(matrix.get('a', 1))})
 manifest['grenade'] = grenade
 # XFL graphic matrices use twips, while exported SVGs already use pixels.
-for sid in [2,232,286]:
+for sid in [2,232,233,234,235,286,294,297]:
     source = ROOT / f'extracted/all/shapes/{sid}.svg'
     doc = ET.parse(source)
     svg_ns = {'s': 'http://www.w3.org/2000/svg'}
@@ -65,7 +65,7 @@ for sid in [2,232,286]:
     manifest[str(sid)] = {'offset': [-values[4], -values[5]], 'frames': 1, 'extension': extension}
 
 timelines = {}
-for sid in [237,305,313,326]:
+for sid in [237,299,305,313,326]:
     doc = ET.parse(ROOT / f'xfl/Bomb It 1/LIBRARY/Symbol {sid}.xml')
     tracks = []
     length = 0
@@ -98,4 +98,8 @@ audio.mkdir(exist_ok=True)
 for file in (ROOT / 'extracted/all/sounds').glob('*.mp3'):
     shutil.copy2(file, audio / file.name)
 shutil.copy2(ROOT / 'extracted/all/frames/4.png', OUT / 'menu.png')
+fonts = OUT / 'fonts'
+fonts.mkdir(exist_ok=True)
+for file in (ROOT / 'extracted/all/fonts').glob('*.ttf'):
+    shutil.copy2(file, fonts / file.name)
 print(f'Prepared {sum(manifest[str(i)]["frames"] for i in ids)} original sprite frames.')

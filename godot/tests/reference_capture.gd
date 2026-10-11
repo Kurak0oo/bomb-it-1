@@ -9,17 +9,19 @@ func run() -> void:
 	root.size = Vector2i(550,400)
 	RenderingServer.set_default_clear_color(Color.WHITE)
 	var scenarios := {}
-	for scenario in ["death", "explosion", "brick"]:
+	for scenario in ["death", "death2", "death3", "death4", "explosion", "brick"]:
+		var is_death: bool = scenario.begins_with("death")
 		var state := GameState.new()
 		var rows := PackedStringArray()
 		for y in 13:
 			rows.append("...............")
 		state.setup(rows)
 		var actor := state.heroes[0]
+		actor.character_id = int(scenario.trim_prefix("death")) if scenario in ["death2", "death3", "death4"] else 1
 		actor.cell = Vector2i(8,6)
 		actor.shield = 999
 		var hero: HeroView
-		if scenario == "death":
+		if is_death:
 			actor.alive = false
 			actor.death_position = Vector2(240,210)
 			hero = HeroView.new()
@@ -37,11 +39,11 @@ func run() -> void:
 			state.tick([])
 		var samples := []
 		for tick in 40:
-			if scenario == "death":
+			if is_death:
 				hero.advance_presentation()
 			else:
 				state.tick([])
-			var dying: bool = scenario == "death" and hero.visible
+			var dying: bool = is_death and hero.visible
 			samples.append({"tick":tick,
 				"deathFrame": hero.death_age + 1 if dying else 0,
 				"heroVisible": dying and hero.body.visible,
@@ -50,8 +52,9 @@ func run() -> void:
 				"armEnergy":state.cell_at(Vector2i(9,6)).energy,
 				"brickBlocking":state.cell_at(Vector2i(9,6)).kind != GameState.Kind.FLOOR,
 				"blastVisible":not state.explosions.is_empty()})
-			if scenario == "death" and tick in [0,4,5,10,11,19,20,34,35]:
-				await preload("res://tests/qa_capture.gd").capture(self, "frame-%02d" % tick)
+			if is_death and tick in [0,4,5,10,11,19,20,34,35]:
+				var prefix := "" if actor.character_id == 1 else "hero%d-" % actor.character_id
+				await preload("res://tests/qa_capture.gd").capture(self, prefix + "frame-%02d" % tick)
 		scenarios[scenario] = samples
 		if is_instance_valid(hero):
 			hero.free()

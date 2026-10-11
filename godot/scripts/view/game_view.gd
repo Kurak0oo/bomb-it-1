@@ -16,6 +16,8 @@ var _trails: Array[Dictionary] = []
 var _rocket_ages: Dictionary = {}
 var _presentation_tick := 0
 var _last_state_tick := 0
+var _last_event_tick := -1
+var _hit_smoke: Array[Dictionary] = []
 var _motion_positions: Dictionary = {}
 var frozen := false:
 	set(value):
@@ -87,6 +89,17 @@ func _set_motion(node: Node2D, at: Vector2) -> void:
 func sync_view() -> void:
 	_presentation_tick += maxi(0, state.tick_number - _last_state_tick)
 	_last_state_tick = state.tick_number
+	if _last_event_tick != state.tick_number:
+		_last_event_tick = state.tick_number
+		for event in state.presentation_events:
+			if event.kind == "surviving_hit":
+				var smoke := art.sprite(279, 20)
+				smoke.position += event.position
+				smoke.z_index = 2500
+				add_child(smoke)
+				_hit_smoke.append({"node":smoke, "born":_presentation_tick})
+			elif event.kind == "rocket_impact_smoke":
+				_spawn_rocket_smoke(event.position, SimRules.direction_index(event.direction))
 	for at in _brick_sprites:
 		_brick_sprites[at].visible = state.cell_at(at).kind != GameState.Kind.FLOOR
 	_prune(_pop_sprites, state.pops)
@@ -170,6 +183,14 @@ func advance_presentation() -> void:
 	_animate_transients()
 
 func _animate_transients() -> void:
+	for i in range(_hit_smoke.size() - 1, -1, -1):
+		var smoke: Dictionary = _hit_smoke[i]
+		var frame_number: int = 20 + _presentation_tick - smoke.born
+		if frame_number >= 36:
+			smoke.node.free()
+			_hit_smoke.remove_at(i)
+		else:
+			smoke.node.texture = art.frame(279, frame_number)
 	for i in range(_retiring_items.size() - 1, -1, -1):
 		if not _retiring_items[i].animate(_presentation_tick):
 			_retiring_items[i].free()
@@ -205,13 +226,7 @@ func _sync_specials() -> void:
 				group.add_child(rocket)
 			group.get_child(0).show_frame(direction, weapon.age)
 			if weapon.age > 0 and _rocket_ages.get(weapon, -1) != weapon.age:
-				var trail := OriginalTimeline.new()
-				trail.art = art
-				trail.symbol = 313
-				trail.position = weapon.position
-				trail.z_index = -45
-				add_child(trail)
-				_trails.append({"node":trail, "born":_presentation_tick, "direction":direction})
+				_spawn_rocket_smoke(weapon.position, direction)
 			_rocket_ages[weapon] = weapon.age
 			continue
 		if weapon.kind in ["ice", "fire"]:
@@ -251,6 +266,15 @@ func _sync_specials() -> void:
 		sprite.texture = art.frame(symbol, frame_number)
 		sprite.scale.x = scale_x
 		sprite.position = offset + art.offset(symbol) * Vector2(scale_x,1)
+
+func _spawn_rocket_smoke(at: Vector2, direction: int) -> void:
+	var trail := OriginalTimeline.new()
+	trail.art = art
+	trail.symbol = 313
+	trail.position = at
+	trail.z_index = -45
+	add_child(trail)
+	_trails.append({"node":trail, "born":_presentation_tick, "direction":direction})
 
 func _prune(sprites: Dictionary, active: Array) -> void:
 	for key in sprites.keys():

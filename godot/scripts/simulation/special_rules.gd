@@ -79,6 +79,8 @@ static func tick(state: GameState) -> void:
 					pulse(state, weapon.cell, weapon.owner_id)
 					hit = true
 				if hit:
+					# The original creates smoke before checking impact/removal.
+					state.presentation_events.append({"kind":"rocket_impact_smoke", "position":weapon.position, "direction":weapon.direction, "tick":state.tick_number})
 					state.specials.erase(weapon)
 			"mine", "gas":
 				var hit := false

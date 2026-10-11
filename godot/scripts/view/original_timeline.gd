@@ -12,6 +12,11 @@ func _ready() -> void:
 		sprite.centered = false
 		add_child(sprite)
 		layers.append(sprite)
+		# Symbol 236 draws body and eyes at separate Flash display-list depths.
+		# Keeping them separate preserves overlap when the parent alpha fades.
+		if track.any(func(placement): return placement != null and placement.symbol == 236):
+			var eyes := art.sprite(234)
+			sprite.add_child(eyes)
 	show_frame(0)
 
 func show_frame(index: int, child_age: int = 0, variant: int = 1) -> void:
@@ -25,7 +30,11 @@ func show_frame(index: int, child_age: int = 0, variant: int = 1) -> void:
 			continue
 		var child: int = placement.symbol
 		var number := 1
-		if child in [236, 293]:
+		if child == 236:
+			child = 233 if variant <= 2 else 235
+			var eyes: Sprite2D = sprite.get_child(0)
+			eyes.position = art.offset(234) - art.offset(child)
+		elif child == 293:
 			number = variant
 		elif child == 304:
 			number = child_age % 8 + 1

@@ -36,6 +36,7 @@ var items_enabled := false
 var tick_number := 0
 # Ephemeral presentation events. Cleared once per authoritative simulation tick.
 var events: Array[String] = []
+var presentation_events: Array[Dictionary] = []
 var specials: Array[SpecialState] = []
 var special_choices: Array = []
 var brick_styles: Array = []
@@ -82,6 +83,7 @@ func setup(rows: PackedStringArray) -> void:
 	items_enabled = false
 	tick_number = 0
 	events.clear()
+	presentation_events.clear()
 	specials.clear()
 	cells = []
 	bombs = []
@@ -125,6 +127,7 @@ func cell_at(at: Vector2i) -> CellState:
 func tick(commands: Array[PlayerCommands]) -> void:
 	tick_number += 1
 	events.clear()
+	presentation_events.clear()
 	for actor in heroes:
 		var command := commands[actor.id] if actor.id < commands.size() else PlayerCommands.new()
 		_tick_hero(actor, command)
@@ -348,6 +351,7 @@ func _tick_damage(hero: HeroState) -> void:
 		hero.lives -= 1
 		if hero.controller == HeroState.Controller.AI and hero.lives > 0:
 			hero.shield = 60
+			presentation_events.append({"kind":"surviving_hit", "position":hero.pixel_position(), "actor_id":hero.id, "tick":tick_number})
 			return
 		hero.death_position = hero.pixel_position()
 		hero.alive = false

@@ -49,6 +49,7 @@ def main():
         data["original_swf_sha256"] = hashlib.sha256((ROOT / "Bomb It 1.swf").read_bytes()).hexdigest()
         data["harness_sha256"] = hashlib.sha256((ROOT / "tools/reference/scenario.as").read_bytes()).hexdigest()
         data["builder_sha256"] = hashlib.sha256((ROOT / "tools/reference/BuildReference.java").read_bytes()).hexdigest()
+        data["capture_sha256"] = hashlib.sha256((ROOT / "tools/reference/capture.mjs").read_bytes()).hexdigest()
         data["ffdec_sha256"] = hashlib.sha256((args.ffdec / "ffdec.jar").read_bytes()).hexdigest()
         original.write_text(json.dumps(data, indent=2), encoding="utf-8")
         codes = []
@@ -60,7 +61,7 @@ def main():
         if any(code not in [0,1] for code in codes):
             return 2
         images = json.loads((output / "death-comparison/report.json").read_text())
-        if len(images["images"]) != 9 or any("error" in row for row in images["images"]):
+        if len(images["images"]) != 36 or any("error" in row for row in images["images"]):
             raise ValueError("Incomplete or incompatible reference images")
         print("Reference capture complete. Differences are diagnostic; gameplay was not changed.")
         return 1 if args.require_parity and any(codes) else 0

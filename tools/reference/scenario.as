@@ -24,10 +24,11 @@ while (y < h) {
     }
     y++;
 }
-var actor = brickArea.attachMovie("hero1", "hero1", 500, {_x:240,_y:210,heroNum:1,heroId:1,life:1,varShield:0,totalBomb:0});
+var character = scenario == "death2" ? 2 : scenario == "death3" ? 3 : scenario == "death4" ? 4 : 1;
+var actor = brickArea.attachMovie("hero" + character, "hero1", 500, {_x:240,_y:210,heroNum:1,heroId:character,life:1,varShield:0,totalBomb:0});
 actor.gotoAndStop("down");
 actor.body.stop();
-if (scenario == "death") {
+if (scenario.substr(0, 5) == "death") {
     hurtHero(actor);
     actor.removeMovieClip();
 } else {

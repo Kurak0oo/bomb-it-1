@@ -1,6 +1,9 @@
 class_name MobileInput
 extends Control
 
+signal fire_changed(pressed: bool)
+signal input_cancelled
+
 var direction := Vector2i.ZERO
 var bomb_held := false
 var _stick_id := -1
@@ -8,31 +11,48 @@ var _bomb_id := -1
 var _stick := Vector2.ZERO
 var _bomb := Vector2.ZERO
 var _offset := Vector2.ZERO
-var enabled := true
+var enabled := true:
+	set(value):
+		enabled = value
+		if not enabled:
+			_cancel()
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	visibility_changed.connect(func():
+		if not is_visible_in_tree():
+			_cancel())
+	_layout()
+	get_viewport().size_changed.connect(_layout)
+
+func _cancel() -> void:
+	release_all()
+	input_cancelled.emit()
 
 func release_all() -> void:
 	_stick_id = -1
 	_bomb_id = -1
 	direction = Vector2i.ZERO
-	bomb_held = false
+	_set_bomb(false)
 	_offset = Vector2.ZERO
 	queue_redraw()
 
 func _input(event: InputEvent) -> void:
-	if not visible or not enabled:
+	if not is_visible_in_tree() or not enabled:
 		return
 	if event is InputEventScreenTouch:
+		if event.canceled:
+			if event.index == _stick_id or event.index == _bomb_id:
+				_cancel()
+			return
 		var point: Vector2 = event.position - global_position
-		if event.pressed:
+		if event.pressed and not event.canceled:
 			if _stick_id < 0 and point.distance_to(_stick) < 65:
 				_stick_id = event.index
 				_move(point)
 			elif _bomb_id < 0 and point.distance_to(_bomb) < 42:
 				_bomb_id = event.index
-				bomb_held = true
+				_set_bomb(true)
 		else:
 			if event.index == _stick_id:
 				_stick_id = -1
@@ -40,10 +60,15 @@ func _input(event: InputEvent) -> void:
 				_offset = Vector2.ZERO
 			if event.index == _bomb_id:
 				_bomb_id = -1
-				bomb_held = false
+				_set_bomb(false)
 	elif event is InputEventScreenDrag and event.index == _stick_id:
 		_move(event.position - global_position)
 	queue_redraw()
+
+func _set_bomb(pressed: bool) -> void:
+	if bomb_held != pressed:
+		bomb_held = pressed
+		fire_changed.emit(pressed)
 
 func _move(point: Vector2) -> void:
 	_offset = (point - _stick).limit_length(34)
@@ -54,10 +79,16 @@ func _move(point: Vector2) -> void:
 		else:
 			direction = Vector2i.DOWN if _offset.y > 0 else Vector2i.UP
 
-func _draw() -> void:
+func _layout() -> void:
+	if not is_inside_tree():
+		return
+	_cancel()
 	var extra := maxf(0, (get_viewport_rect().size.x - 550) / 2)
 	_stick = Vector2(-minf(extra / 2, 65), 315) if extra > 80 else Vector2(150,325)
 	_bomb = Vector2(550 + minf(extra / 2, 65), 315) if extra > 80 else Vector2(495,325)
+	queue_redraw()
+
+func _draw() -> void:
 	draw_circle(_stick, 48, Color(0.12,0.1,0.25,0.55))
 	draw_arc(_stick, 48, 0, TAU, 48, Color(1,1,1,0.7), 2, true)
 	draw_circle(_stick + _offset, 21, Color(1,0.35,0.67,0.85))

@@ -19,7 +19,8 @@ Use `--suite sim` (or another named suite) for a focused iteration. `--project`
 can point to a fresh project copy without an import cache. `--timeout` sets the
 per-phase limit. The PowerShell wrapper retains `-Godot` and `-Visual` support.
 
-`--visual` adds rendered UI and animation checks. Every run writes screenshots
+`--visual` adds rendered UI, death compositing, hit/weapon feedback, actual input
+delivery and animation checks. Every run writes screenshots
 to a new capture directory, printed by the runner, with engine/renderer metadata.
 Tests ignore saved game preferences. Screenshot write failures are failures, and
 button bounds are checked across screens after layout has settled.
@@ -77,21 +78,25 @@ with a small fixed fixture. Original `hurtHero`, `bombExp`, and `brickBreak` exe
 in Ruffle 0.7.1; their bodies are not translated from the Godot port or rewritten
 as test expectations. The SWF stays version 7 at 35 fps.
 
-Fixtures: one character death; a level-one explosion on an empty board; the same
+Fixtures: all four character deaths; a level-one explosion on an empty board; the same
 explosion with a brick in its right arm. AI, map generation and player input are
 excluded. Random item appearance is outside the sampled state. The observer uses
 Flash `trace`, available in SWF 7, and pauses Ruffle after each observed tick.
 Death images export the game canvas, excluding Ruffle's pause controls.
 
+The browser uses a paused Playwright virtual clock, advanced in bounded steps;
+busy-host scheduling cannot silently add Flash updates. Each observation must
+still be exactly the next tick; skipped ticks fail the harness.
+
 Tick zero is the first update after fixture creation. The original and rebuilt
-fixtures each record 40 updates. Nine death images cover the hero/silhouette swap,
+fixtures each record 40 updates. Thirty-six death images cover the hero/silhouette swap,
 fade and removal boundaries. Traces include death frame/visibility, center and arm
 energy, brick blocking, and explosion visibility. The comparator requires identical
 scenario sets, contiguous ticks, and matching observation fields. It never shifts
 ticks to manufacture agreement. It reports the first divergent tick and every
 field difference.
 
-Metadata includes SWF/fixture/harness hashes, Ruffle package integrity, Chromium
+Metadata includes SWF/fixture/ActionScript/browser-harness hashes, Ruffle package integrity, Chromium
 version and Godot version. This is **original bytecode running in Ruffle**, not a
 claim of Adobe Flash Player equivalence. The controlled fixtures do not establish
 full-match callback ordering, RNG parity, damage coordinates or native phone behavior.

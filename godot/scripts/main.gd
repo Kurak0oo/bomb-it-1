@@ -22,7 +22,7 @@ var players := 1
 var high_score := 0
 var touch_enabled := false
 var prefs := ConfigFile.new()
-var previous_fire: Array[bool] = [false,false]
+var fire_inputs: Array[FireInput] = [FireInput.new(), FireInput.new()]
 var save_enabled := true
 var keyboard := KeyboardInput.new()
 
@@ -47,6 +47,7 @@ func _resize() -> void:
 		touch.queue_redraw()
 
 func _clear_screen() -> void:
+	_reset_input()
 	if is_instance_valid(world):
 		remove_child(world)
 		world.queue_free()
@@ -64,7 +65,6 @@ func _clear_screen() -> void:
 	hud.clear()
 	hud_scores.clear()
 	paused = false
-	previous_fire = [false,false]
 
 func _background(path: String) -> void:
 	var sprite := Sprite2D.new()
@@ -161,6 +161,8 @@ func _show_round() -> void:
 	_button(ui, "Ⅱ", Rect2(46,363,36,17), _toggle_pause)
 	_button(ui, "TOUCH", Rect2(4,382,78,15), _toggle_touch)
 	touch = MobileInput.new()
+	touch.fire_changed.connect(func(held: bool): fire_inputs[0].set_source("touch", held))
+	touch.input_cancelled.connect(_reset_input)
 	touch.visible = touch_enabled
 	ui.add_child(touch)
 	_update_hud()
@@ -168,14 +170,30 @@ func _show_round() -> void:
 
 func _command(id: int) -> PlayerCommands:
 	var command := keyboard.poll(id, players)
+	fire_inputs[id].set_source("keyboard", command.bomb_requested)
 	if id == 0 and touch_enabled:
 		if touch.direction != Vector2i.ZERO:
 			command.direction = touch.direction
-		command.bomb_requested = command.bomb_requested or touch.bomb_held
-	command.bomb_pressed = command.bomb_pressed or (command.bomb_requested and not previous_fire[id])
-	command.bomb_released = command.bomb_released or (not command.bomb_requested and previous_fire[id])
-	previous_fire[id] = command.bomb_requested
-	return command
+	var fire := fire_inputs[id].poll()
+	fire.direction = command.direction
+	return fire
+
+func _input(event: InputEvent) -> void:
+	if screen != "game" or paused:
+		return
+	for id in players:
+		var action := "p%d_bomb" % (id + 1)
+		if event.is_action_pressed(action):
+			fire_inputs[id].set_source("keyboard", true)
+		elif event.is_action_released(action):
+			fire_inputs[id].set_source("keyboard", false)
+
+func _reset_input() -> void:
+	if is_instance_valid(touch):
+		touch.release_all()
+	for id in 2:
+		fire_inputs[id].set_source("keyboard", Input.is_action_pressed("p%d_bomb" % (id + 1)))
+		fire_inputs[id].cancel()
 
 func _physics_process(_delta: float) -> void:
 	if screen == "result":
@@ -208,7 +226,7 @@ func _update_hud() -> void:
 func _show_result() -> void:
 	screen = "result"
 	view.frozen = true
-	touch.release_all()
+	_reset_input()
 	touch.enabled = false
 	var win := session.result.ends_with("win")
 	audio.play_music("405_Bombit_-_level_complete.mp3" if win else "407_Bombit_-_mission_failed.mp3", false)
@@ -238,7 +256,7 @@ func _toggle_pause() -> void:
 	paused = not paused
 	view.frozen = paused
 	audio.music.stream_paused = paused
-	touch.release_all()
+	_reset_input()
 	touch.enabled = not paused
 	if not paused:
 		if is_instance_valid(overlay):
@@ -261,7 +279,7 @@ func _toggle_sound() -> void:
 
 func _toggle_touch() -> void:
 	touch_enabled = not touch_enabled
-	touch.release_all()
+	_reset_input()
 	touch.visible = touch_enabled
 
 func _save_preferences() -> void:
@@ -272,7 +290,7 @@ func _save_preferences() -> void:
 	prefs.save("user://preferences.cfg")
 
 func _notification(what: int) -> void:
-	if what == NOTIFICATION_APPLICATION_FOCUS_OUT and screen == "game" and not paused:
+	if what in [NOTIFICATION_APPLICATION_FOCUS_OUT, NOTIFICATION_APPLICATION_PAUSED] and screen == "game" and not paused:
 		_toggle_pause()
 
 func _unhandled_key_input(event: InputEvent) -> void:

@@ -406,10 +406,50 @@
     "frames": 1,
     "extension": "svg"
   },
+  "233": {
+    "offset": [
+      -19.2,
+      -56.35
+    ],
+    "frames": 1,
+    "extension": "svg"
+  },
+  "234": {
+    "offset": [
+      23.95,
+      31.65
+    ],
+    "frames": 1,
+    "extension": "svg"
+  },
+  "235": {
+    "offset": [
+      -19.0,
+      -53.6
+    ],
+    "frames": 1,
+    "extension": "svg"
+  },
   "286": {
     "offset": [
       -4.6,
       4.95
+    ],
+    "frames": 1,
+    "extension": "svg"
+  },
+  "294": {
+    "offset": [
+      11.75,
+      -38.0
+    ],
+    "frames": 1,
+    "extension": "svg"
+  },
+  "297": {
+    "offset": [
+      11.15,
+      -38.4
     ],
     "frames": 1,
     "extension": "svg"
@@ -977,6 +1017,25 @@
           null,
           null,
           null
+        ]
+      ]
+    },
+    "299": {
+      "length": 1,
+      "tracks": [
+        [
+          {
+            "symbol": 293,
+            "matrix": [
+              0.5714263916015625,
+              0.0,
+              0.0,
+              0.5703582763671875,
+              3.2,
+              -35.45
+            ],
+            "alpha": 1
+          }
         ]
       ]
     },

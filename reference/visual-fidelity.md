@@ -10,6 +10,16 @@ data while movement interpolates at the display rate.
   and removes itself on frame 36. Its XFL provides the silhouette fade and shadow.
   `hurtHero` separately attaches Sprite 279 smoke above the scenery. `HeroView`
   composes these parts, including the correct silhouette for each character.
+  Symbol 236's body (233/235) and eyes (234) now draw separately: flattening them
+  into one PNG incorrectly kept the eyes white during the silhouette fade.
+  `HeroView` explicitly uses the same linear filtering as its normal `GameView`
+  parent, so standalone reference/contact-sheet fixtures exercise gameplay rendering.
+- **Surviving hits:** `hurtHero` starts Symbol 279 at frame 20 for surviving AI
+  damage. A presentation event now starts that smoke and removes it at frame 36;
+  armor absorption and invulnerability retain their existing gameplay behavior.
+- **Equipped weapon:** Symbol 299's nested item placement, multiplication signs
+  and recovered count font now accompany the actor while charges remain.
+  Original-runtime comparison of text rasterization/depth is still outstanding.
 - **Pickups:** Sprite 326 contains an 80-frame idle loop and a removal label at
   frame 81; frame 101 removes the clip. Nested Sprite 293 chooses the item. The
   view preserves each pickup's own phase and replays source transforms and alpha,
@@ -18,6 +28,8 @@ data while movement interpolates at the display rate.
   Sprite 304 exhaust. Sprite 313 places Sprite 312 smoke in each direction;
   Sprite 312's frame 22 removes its parent. Trail nodes outlive the projectile
   and expire independently. Repeated view synchronization cannot duplicate them.
+  Impact now carries a final smoke-position event before removing the projectile,
+  following `putSpecial`'s creation-before-collision order.
 - **Gas:** Sprite 315 stops at frame 101. The view clamps at that frame instead
   of restarting its first 80 frames.
 - **Shadows:** Shape 2 embeds the original robot-shadow PNG. The extraction tool

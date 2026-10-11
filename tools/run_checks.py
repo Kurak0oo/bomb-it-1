@@ -90,7 +90,10 @@ def main():
         if args.visual:
             print(f"Captures: {captures}", flush=True)
             render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
-            phases += [("ui", render + ["--script", "res://tests/ui_check.gd"], "UI_OK"),
+            phases += [("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
+                       ("feedback_render", render + ["--script", "res://tests/feedback_render_check.gd"], "FEEDBACK_RENDER_OK"),
+                       ("input_render", render + ["--script", "res://tests/input_render_check.gd"], "INPUT_RENDER_OK"),
+                       ("ui", render + ["--script", "res://tests/ui_check.gd"], "UI_OK"),
                        ("visual_timelines", render + ["--script", "res://tests/visual_timelines.gd"], "VISUAL_TIMELINES_OK")]
         if args.compare_baselines:
             phases.append(("visual_compare", [sys.executable, str(ROOT / "tools/compare_images.py"),
