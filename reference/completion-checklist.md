@@ -4,8 +4,10 @@ Spec: [#1](https://github.com/Kurak0oo/bomb-it-1/issues/1). All 22 implementatio
 tickets are published with native blocking relationships. This is a progress
 ledger, not a release or exact-parity certification.
 
-Review baseline: `47be5ea18698ce94e94d39c91855022dbb37310a`, captured before this
-implementation. Earlier game changes are excluded. The accepted 35 Hz gameplay,
+Initial visual/input pass review baseline: `47be5ea18698ce94e94d39c91855022dbb37310a`.
+The menu/help follow-up uses `0d3b2d18b67db1dcffc5c8468c110e0976748c25`; see
+[menu restoration](menu-restoration.md) and [review](menu-review.md).
+Earlier game changes are excluded from each pass. The accepted 35 Hz gameplay,
 seeded RNG backend and deterministic timer policy remain unchanged.
 
 ## Tickets
@@ -35,7 +37,7 @@ seeded RNG backend and deterministic timer policy remain unchanged.
 | [#22 iPhone acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/22) | Blocked by native build plus remaining phone work. Simulator/Windows results cannot satisfy it. |
 | [#23 Release evidence](https://github.com/Kurak0oo/bomb-it-1/issues/23) | Pending both integrated release gates; no completion claim. |
 
-## Evidence for the current changes
+## Evidence for the initial visual/input pass
 
 - Source: Sprite 564 `hurtHero` (surviving hit starts smoke at frame 20),
   `putSpecial` rocket branch (smoke precedes impact/removal), pickup branches
