@@ -15,10 +15,22 @@ window/size/viewport_height=400
 window/size/window_width_override=1100
 window/size/window_height_override=800
 window/stretch/mode="canvas_items"
-window/stretch/aspect="keep"
+window/stretch/aspect="expand"
+window/handheld/orientation=0
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.105, 0.071, 0.14, 1)
+
+[physics]
+
+common/physics_ticks_per_second=35
+common/physics_interpolation=false
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+pointing/emulate_mouse_from_touch=true
