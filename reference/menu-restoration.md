@@ -44,7 +44,9 @@ under #7–#9.
 - Tab/arrows choose a button; Enter/Space activate on release. M toggles sound.
   Mouse and touch use the same source button states. Echo, orphan releases,
   double-click/double-tap follow-ups and touch-emulated mouse events cannot skip
-  screens. Focus loss and touch cancellation discard pending activation.
+  screens. An explicit keyboard/mouse/touch owner prevents another device from
+  stealing or completing a held press. Focus loss and touch cancellation discard
+  pending activation.
 - Touch hit regions are 44 logical pixels high, including Back and sound, and
   do not overlap. Artwork retains its original dimensions. The 550×400 stage
   stays centered and aspect-preserved in an enlarged landscape viewport.
@@ -99,7 +101,9 @@ composition, button states, touch instructions and saved-best presentation.
 
 Red failures were observed before implementing title/player-count routing,
 help/guide routing and double-click/double-tap suppression; those cases pass
-after implementation. Existing rendered input tests now follow the extra title
+after implementation. Review exposed cross-device capture theft; its mixed-input
+rendered regression failed before exclusive press ownership was added. Existing
+rendered input tests now follow the extra title
 screen. One existing assertion incorrectly counted AI-owned bombs as replayed
 human input; it now checks human ownership without changing game behavior.
 

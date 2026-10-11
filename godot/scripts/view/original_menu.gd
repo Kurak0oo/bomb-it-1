@@ -5,6 +5,8 @@ extends Control
 
 signal action_requested(action: String)
 
+enum PressOwner { NONE, KEYBOARD, MOUSE, TOUCH }
+
 const DIRECTORY := "res://art/original/menus/"
 const ACTIONS := {439: "players", 440: "help", 441: "best", 442: "portal", 443: "portal", 462: "one", 463: "two", 473: "powerups", 460: "sound"}
 var page := "menu"
@@ -16,6 +18,7 @@ var hovered := -1
 var captured := -1
 var finger := -1
 var pressed_key := 0
+var press_owner := PressOwner.NONE
 var leaving := false
 var notice: Label
 
@@ -101,6 +104,7 @@ func _activate(index: int) -> void:
 	action_requested.emit(action)
 
 func _cancel_press() -> void:
+	press_owner = PressOwner.NONE
 	captured = -1
 	finger = -1
 	pressed_key = 0
@@ -123,22 +127,26 @@ func _input(event: InputEvent) -> void:
 		_refresh()
 		return
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		if finger != -1:
+		get_viewport().set_input_as_handled()
+		if press_owner not in [PressOwner.NONE, PressOwner.MOUSE]:
 			return
 		var hit := _hit(get_global_transform_with_canvas().affine_inverse() * event.position)
-		get_viewport().set_input_as_handled()
 		if event.double_click:
 			_cancel_press()
 			return
 		if event.pressed:
-			captured = hit
-		else:
+			if press_owner == PressOwner.NONE:
+				press_owner = PressOwner.MOUSE
+				captured = hit
+		elif press_owner == PressOwner.MOUSE:
 			var chosen := captured if hit == captured else -1
 			_cancel_press()
 			_activate(chosen)
 		_refresh()
 	elif event is InputEventScreenTouch:
 		get_viewport().set_input_as_handled()
+		if press_owner not in [PressOwner.NONE, PressOwner.TOUCH] or (finger != -1 and event.index != finger):
+			return
 		if event.double_tap:
 			_cancel_press()
 			return
@@ -148,6 +156,7 @@ func _input(event: InputEvent) -> void:
 			return
 		var hit := _hit(get_global_transform_with_canvas().affine_inverse() * event.position)
 		if event.pressed and finger == -1:
+			press_owner = PressOwner.TOUCH
 			finger = event.index
 			captured = hit
 		elif not event.pressed and event.index == finger:
@@ -163,10 +172,11 @@ func _key_input(event: InputEventKey) -> void:
 	if event.echo:
 		return
 	if event.keycode in [KEY_ENTER, KEY_SPACE]:
-		if event.pressed and pressed_key == 0:
+		if event.pressed and press_owner == PressOwner.NONE:
+			press_owner = PressOwner.KEYBOARD
 			pressed_key = event.keycode
 			captured = focus
-		elif not event.pressed and pressed_key == event.keycode:
+		elif not event.pressed and press_owner == PressOwner.KEYBOARD and pressed_key == event.keycode:
 			var chosen := captured
 			_cancel_press()
 			_activate(chosen)
