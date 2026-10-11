@@ -9,8 +9,8 @@ func _init() -> void:
 func run() -> void:
 	main = load("res://scenes/main.tscn").instantiate()
 	main.save_enabled = false
-	root.add_child(main)
 	main.set_physics_process(false)
+	root.add_child(main)
 	main.audio.muted = true
 	await capture("menu")
 	for control in main.ui.get_children():
@@ -90,18 +90,29 @@ func run() -> void:
 	main._start_game()
 	check(main.session.state.heroes[0].character_id == 3 and main.session.state.heroes[1].character_id == 4, "both selected characters enter game")
 	main.set_physics_process(false)
-	main.free()
-	# Give the audio mixing thread time to release the last playback resource.
-	await create_timer(0.15).timeout
+	# Let the final screen enter a frame before retiring its audio players.
+	await process_frame
+	main.queue_free()
+	await process_frame
+	await process_frame
+	# Linux's Dummy audio driver retires stopped MP3 playbacks asynchronously.
+	# Keep the tree alive for its cleanup; exit errors remain fatal in the runner.
+	await create_timer(1.0).timeout
 	if not failed:
 		print("UI_OK")
 	quit(1 if failed else 0)
 
 func capture(name_text: String) -> void:
-	await process_frame
-	await RenderingServer.frame_post_draw
-	var picture := root.get_texture().get_image()
-	picture.save_png(ProjectSettings.globalize_path("res://../reference/qa-" + name_text + ".png"))
+	await preload("res://tests/qa_capture.gd").capture(self, name_text)
+	check_layout(main.ui)
+
+func check_layout(parent: Node) -> void:
+	for child in parent.get_children():
+		if child is Button:
+			var rectangle: Rect2 = child.get_global_rect()
+			rectangle.position -= main.global_position
+			check(Rect2(Vector2.ZERO, Vector2(550,400)).encloses(rectangle), "button fits: " + child.text)
+		check_layout(child)
 
 func check(condition: bool, message: String) -> void:
 	if not condition:

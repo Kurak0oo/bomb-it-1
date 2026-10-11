@@ -75,6 +75,4 @@ func label(value: String, at: Vector2) -> void:
 	page.add_child(text)
 
 func capture(name_text: String) -> void:
-	await process_frame
-	await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png(ProjectSettings.globalize_path("res://../reference/qa-" + name_text + ".png"))
+	await preload("res://tests/qa_capture.gd").capture(self, name_text)

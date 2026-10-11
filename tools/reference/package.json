@@ -1,0 +1,9 @@
+{
+  "name": "bomb-it-reference-capture",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ruffle-rs/ruffle": "0.7.1",
+    "playwright": "1.64.0"
+  }
+}

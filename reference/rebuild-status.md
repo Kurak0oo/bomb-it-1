@@ -40,6 +40,9 @@ The playable systems are implemented, but **exact equivalence is not established
 1. Flash's ordering of parent/child `onEnterFrame` callbacks and newly created
    clips still needs trace comparison. Movement-start, damage versus growth/expiry,
    grenade endpoint, and animation transition ticks remain parity-sensitive.
+   Controlled Ruffle captures now agree with the port's 40-update death, level-one
+   explosion-energy and brick-blocking traces. This narrows the uncertainty for
+   those fixtures; it does not establish full-match or Adobe Flash Player parity.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
    Its seeded backend is Godot's RNG, not Flash's unrecovered generator. Stage
    setup/audio random calls and cross-stage random-state continuation are not yet
@@ -81,3 +84,4 @@ The animation suite also checks pickup phase/removal, all four death variants,
 idempotent synchronization, rocket trail cleanup, interpolation, and end-of-round
 animation without state advancement. UI checks verify HUD button bounds. Rendered
 death/effect contact sheets are saved alongside the game screenshots.
+CI and original-bytecode capture commands are documented in `tooling.md`.

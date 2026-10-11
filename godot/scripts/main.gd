@@ -28,7 +28,8 @@ var keyboard := KeyboardInput.new()
 
 func _ready() -> void:
 	art = OriginalArt.new()
-	prefs.load("user://preferences.cfg")
+	if save_enabled:
+		prefs.load("user://preferences.cfg")
 	high_score = prefs.get_value("game", "high_score", 0)
 	audio = GameAudio.new()
 	add_child(audio)

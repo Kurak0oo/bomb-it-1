@@ -45,9 +45,12 @@ godot --path godot --script res://tests/visual_timelines.gd
 ```
 
 The UI harness uses a real renderer, exercises the game flow, and saves screenshots
-under `reference/qa-*.png`. It disables preference writes. The soak test exercises
+under `.artifacts`. It ignores saved preferences. The soak test exercises
 21,600 ticks across 18 seeded matches and checks inventory and explosion energy.
 `tools/run_checks.ps1 -Godot <executable> -Visual` runs all of these checks.
+The runner handles imports, verifies the pinned engine, and records phase logs.
+See [tooling](reference/tooling.md) for CI, reviewed screenshot baselines, symbol
+inspection, and original-SWF reference capture.
 
 See [the rebuild status](reference/rebuild-status.md) for source evidence,
 implementation scope, and the remaining fidelity work. This is a playable rebuild,

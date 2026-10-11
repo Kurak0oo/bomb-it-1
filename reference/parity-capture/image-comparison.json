@@ -1,0 +1,61 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-frame-00.png",
+      "passed": false,
+      "changed_pixels": 270,
+      "changed_fraction": 0.0012272727272727272
+    },
+    {
+      "name": "qa-frame-04.png",
+      "passed": false,
+      "changed_pixels": 1105,
+      "changed_fraction": 0.0050227272727272725
+    },
+    {
+      "name": "qa-frame-05.png",
+      "passed": false,
+      "changed_pixels": 1150,
+      "changed_fraction": 0.005227272727272727
+    },
+    {
+      "name": "qa-frame-10.png",
+      "passed": false,
+      "changed_pixels": 450,
+      "changed_fraction": 0.0020454545454545456
+    },
+    {
+      "name": "qa-frame-11.png",
+      "passed": false,
+      "changed_pixels": 439,
+      "changed_fraction": 0.0019954545454545455
+    },
+    {
+      "name": "qa-frame-19.png",
+      "passed": false,
+      "changed_pixels": 260,
+      "changed_fraction": 0.0011818181818181819
+    },
+    {
+      "name": "qa-frame-20.png",
+      "passed": false,
+      "changed_pixels": 273,
+      "changed_fraction": 0.001240909090909091
+    },
+    {
+      "name": "qa-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    }
+  ]
+}

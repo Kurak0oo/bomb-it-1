@@ -1,0 +1,11 @@
+.git
+.artifacts
+.scratch
+godot/.godot
+godot/.codegraph
+tools/reference/node_modules
+**/__pycache__
+extracted
+*.swf
+*.torrent
+*.sqlite
