@@ -22,6 +22,9 @@ Resolution: `KeyboardInput` now gates previously held directions until release,
 including releases between ticks or while paused. The rendered-input regression
 failed before this fix and passes afterward; it checks pause/resume, a fresh
 press after release, and carrying a held direction across a new match.
+The independent Spec reviewer verified the resolution in `b6dab8a` and found no
+further actionable issue. The final Linux run after that fix passes all rendered
+checks and exact comparison of all ten regression images.
 
 Recorded partial requirements remain: 28/36 unresolved independent death image
 differences, nested idle and indicator/depth comparison, broader special-effect

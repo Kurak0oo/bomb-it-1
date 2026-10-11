@@ -61,6 +61,8 @@ seeded RNG backend and deterministic timer policy remain unchanged.
   project import, including nine tooling tests and the 21,600-tick soak.
 - `.artifacts/linux-completion-final`: fresh Linux import, rendered input and
   exact comparison of all ten reviewed regression images pass.
+- `.artifacts/linux-completion-reviewed`: the same focused Linux gate passes
+  after the keyboard-cancellation review fix, including the extended input test.
 - Review found keyboard movement could survive cancellation. A rendered-input
   regression failed before release gating was added to `KeyboardInput`; it now
   passes for both pause/resume and a new match. Focused checks after that fix are
@@ -72,7 +74,7 @@ seeded RNG backend and deterministic timer policy remain unchanged.
 ## Device constraint
 
 The user reports a few phones, likely iPhone 12 or newer, and no Mac devices.
-Exact models, iOS versions,
-refresh mode and signing access must be recorded before the native matrix runs.
+Exact models, iOS versions, refresh modes and signing access must be recorded
+before the native matrix runs.
 No cloud Mac purchase, credential handling, signed build, installed-device pass,
 latency measurement or thermal test is implied by the Windows work.

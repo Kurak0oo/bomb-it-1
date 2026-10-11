@@ -491,5 +491,77 @@
       "timeout": false,
       "seconds": 1.859
     }
-  ]
+  ],
+  "review_fix_commit": "b6dab8a",
+  "linux_reviewed_checks": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 5.034
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.521
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.52
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.623
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.427
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 5.538
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.678
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.323
+    },
+    {
+      "name": "visual_compare",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.274
+    }
+  ],
+  "review": {
+    "standards_findings": 0,
+    "spec_actionable_findings": 1,
+    "spec_resolved": 1,
+    "deferred_requirements_remain": true
+  }
 }
