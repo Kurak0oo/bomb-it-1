@@ -22,3 +22,5 @@ The regression was replayed against the actual pre-#29 simulation files at `7728
 Reproduce source observation with `python tools/capture_core_reference.py --profile push-v1 --ffdec <FFDEC_HOME> --godot <Godot-4.7.2> --require-parity`. The public sim runner uses the preserved source reference without a browser dependency.
 
 Retained limits: original bytecode is executed by Ruffle 0.7.1, not certified Adobe Flash. The fresh full core comparison retains six CORE-01 one-twip observations; full motion retains 72 grenade endpoint fields for #31. This audit changes neither #32/#33 accounting/local timing nor INTERACT-06's explicitly retained balanced cleanup deviation. Shared visual baselines are unchanged.
+
+Latest integration `e7e85e3` was merged cleanly at `d246693`. All ten post-merge tooling/simulation phases pass, including the exact expiry and push gates. The ticket diff contains no production script changes.

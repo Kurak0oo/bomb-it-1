@@ -1,0 +1,82 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 25.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.172,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 11.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.407,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\sim.log"
+  },
+  {
+    "name": "bomb_expiry",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\bomb_expiry.log"
+  },
+  {
+    "name": "push_motion",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\post-merge\\push_motion.log"
+  }
+]
