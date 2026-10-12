@@ -22,8 +22,10 @@ A supplemental source-only depth capture records input tick 8 / initial tick 7 a
 
 ## Checks and remaining limits
 
-All 22 full headless phases pass, including source gates, original human/AI command controls, push/expiry, simulation, timeline, campaign, pacing and the 21,600-tick active soak. Full motion is now exact (72 → 0 fields); interaction differences fall 132 → 106. Every non-grenade core/motion/interaction row is identical to the #29 control capture. CORE-01 retains six one-twip observations; #32 accounting, #33 gas/ice timing, and INTERACT-06 balanced-cleanup/source-runtime uncertainty remain unchanged.
+All 22 full headless phases pass, including source gates, original human/AI command controls, push/expiry, simulation, timeline, campaign, pacing and the 21,600-tick active soak (511 bombs / 149 specials; earlier impacts change subsequent play while seed/policy remain unchanged). Full motion is now exact (72 → 0 fields); interaction differences fall 132 → 106. Every non-grenade core/motion/interaction row is identical to the #29 control capture. CORE-01 retains six one-twip observations; #32 accounting, #33 gas/ice timing, and INTERACT-06 balanced-cleanup/source-runtime uncertainty remain unchanged.
 
 One repeated browser capture rejected an extra sampled tick. Its failure log is retained; rerunning the identical source fixture passed, without accepting or shifting observations. Ruffle 0.7.1 executes source bytecode independently but does not certify Adobe Flash callback behavior.
 
 Reproduce with `python tools/capture_core_reference.py --profile grenade-v1 --ffdec <FFDEC_HOME> --godot <Godot-4.7.2> --require-parity` and the same command using `grenadescore-v1`. The public runner's `--suite special` uses the preserved captures without browser dependencies. [Evidence](issue-31-evidence) retains original/rebuilt rows, pre/post comparisons, red logs, native captures, control comparisons and runner results.
+
+Integration `4f27cc5` merged cleanly at `7b071f5`. All sixteen post-merge tooling/special/source/simulation/pacing phases pass. No shared baseline is modified.
