@@ -45,3 +45,5 @@ All 26 headless phases pass, including 45 tooling tests, source accounting/order
 Reproduce with `python tools/capture_core_reference.py --profile contact-v1 --ffdec <FFDEC_HOME> --godot <Godot-4.7.2> --timeout 600 --require-parity`, and similarly `icewalk-v1`. `dispatch-v1` deliberately reports retained diagnostic differences. The public runner's `--suite special` verifies both passing source profiles without browser dependencies. [Evidence](issue-33-evidence) retains original/rebuilt captures, exact before/after comparisons, red logs, controls, raw uncertainties and runner results.
 
 A fresh complete source repeat reproduces every one of the 2,675 contact rows unchanged and passes strict parity. Eight carried-forward source controls also reproduce their corresponding #13 fields.
+
+Collector reliability is isolated in commit `d48a749`; mechanics/source evidence is `b3323b6`. Integration `423b60e` merged cleanly at `1a9ac7d`. All 21 focused post-merge phases pass, including both contact gates, human/AI ordering, accounting, expiry/push/grenade controls, tooling and active soak.
