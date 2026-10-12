@@ -51,12 +51,16 @@ The playable systems are implemented, but **exact equivalence is not established
    their newly observed allowance fields. The [grenade endpoint correction](issue-31.md)
    now makes the full motion profile agree and matches all 17,792 new endpoint/accounting
    fields. [Shield-hit credit and removed-owner refunds](issue-32.md) now match
-   24,816 independent accounting fields. The nested interaction profile retains
-   47 differences: 33 gas/ice timing fields and 14 residual-energy observations.
+   24,816 independent accounting fields. [Gas/ice contact and movement](issue-33.md)
+   now match 143,568 independent fields. The nested interaction profile retains
+   only 14 residual-energy observations.
    Earlier death, level-one explosion-energy and brick-blocking
    traces agree. These fixtures do not establish full-match or Adobe Flash Player
    parity, and uncertain residual pulse energy is not reproduced as invisible danger.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
+   [Strict recording/replay](issue-14.md) validates call order, bounds, results,
+   exhaustion and complete consumption, including in a release runtime. Controlled
+   source recordings agree on 45 boards, 45 drops and 505 shuffle controls.
    Its seeded backend is Godot's RNG, not Flash's unrecovered generator. Stage
    setup/audio random calls and cross-stage random-state continuation are not yet
    identical, so equal seeds are not asserted to produce the original SWF map.
@@ -93,8 +97,12 @@ The playable systems are implemented, but **exact equivalence is not established
    `visual-fidelity.md` for the completed animation pass.
 6. Independent nested original-bytecode fixtures now cover mixed weapon collisions,
    moving-bomb boundaries, multi-life AI scoring, shields and ownership. They
-   expose specific callback and accounting differences tracked in #29–#33;
+   support the bounded callback and accounting corrections in #29–#33;
    passing port regressions alone is not evidence of original equivalence.
+   [Audio controls](issue-10.md) verify cue multiplicity, gain, overlap, mute,
+   pause and music transitions. Retries restart the same track; stage changes
+   advance the playlist. Ten normal-close probes retire audio cleanly. Adobe Flash
+   mixer equivalence and exact cross-engine PCM remain unclaimed.
 7. Windows rendering and event delivery through the rendered viewport were checked.
    Brief taps and ordered fire transitions are buffered to the 35 Hz boundary;
    cancellation, hidden/disabled controls, pause and scene changes discard pending
