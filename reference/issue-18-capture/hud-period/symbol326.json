@@ -1,0 +1,83 @@
+{
+  "symbol": 326,
+  "linkage": "tool",
+  "labels": [],
+  "scripts": [
+    {
+      "frame": 80,
+      "source": "gotoAndPlay(1);"
+    }
+  ],
+  "layers": [
+    {
+      "name": "Layer 3",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 1,
+          "symbol": 293,
+          "name": "tool_mc",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "15.0",
+            "ty": "-1.7"
+          },
+          "color": {}
+        },
+        {
+          "frame": 80,
+          "duration": 1,
+          "symbol": 293,
+          "name": "tool_mc",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "15.0",
+            "ty": "-1.7"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 4",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 1,
+          "symbol": 232,
+          "name": null,
+          "kind": "graphic",
+          "matrix": {
+            "tx": "15.0",
+            "ty": "19.0",
+            "a": "0.05000000074505806",
+            "d": "0.05000000074505806"
+          },
+          "color": {
+            "alphaMultiplier": "0.69921875"
+          }
+        },
+        {
+          "frame": 80,
+          "duration": 1,
+          "symbol": 232,
+          "name": null,
+          "kind": "graphic",
+          "matrix": {
+            "tx": "15.0",
+            "ty": "19.0",
+            "a": "0.05000000074505806",
+            "d": "0.05000000074505806"
+          },
+          "color": {
+            "alphaMultiplier": "0.69921875"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    232,
+    293
+  ]
+}

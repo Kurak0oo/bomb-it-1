@@ -91,8 +91,9 @@ func sync(session: GameSession) -> void:
 		for entry in [["shield",4],["shoe",6],["glove",2]]:
 			# Hidden icons have no script side effects. Sample the absolute source
 			# phase when visible again instead of recomposing invisible layers.
+			# Symbol 326 frame 80 jumps to 1: 79 displayed updates per loop.
 			if panel[entry[0]].visible:
-				panel[entry[0]].show_frame(session.state.tick_number % 80, session.state.tick_number, entry[1])
+				panel[entry[0]].show_frame(session.state.tick_number % 79, session.state.tick_number, entry[1])
 		var values := {"life":hero.lives,"totalBomb":hero.bomb_capacity,"bomb":hero.bomb_level,"shoe":hero.speed_level}
 		if not previous[id].is_empty():
 			for key in values:
