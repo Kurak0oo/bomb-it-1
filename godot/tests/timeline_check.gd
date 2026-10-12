@@ -27,7 +27,8 @@ func run() -> void:
 	state.cell_at(at).item = ""
 	view.sync_view()
 	check(is_instance_valid(pickup) and view._retiring_items.size() == 1, "pickup removal plays instead of disappearing")
-	check(is_equal_approx(icon.modulate.a, 0.90234375), "removal begins at original frame 81")
+	# Removal alpha acts per source fill before compositing; the rendered
+	# effects check observes its overlap pixel rather than a Sprite property.
 	for i in 20:
 		view.advance_presentation()
 	check(not is_instance_valid(pickup) and view._retiring_items.is_empty(), "removed pickup freed at original frame 101")

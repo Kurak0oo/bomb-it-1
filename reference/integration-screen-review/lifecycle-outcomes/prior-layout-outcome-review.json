@@ -1,0 +1,22 @@
+{
+  "revision": "833bf0d",
+  "capture_directory": ".artifacts\\integration-layout-outcomes\\captures\\ca532a7a2277",
+  "reviewed_port_images": 92,
+  "unchanged_existing": 44,
+  "reviewed_changed_existing": [
+    "qa-touch.png"
+  ],
+  "reviewed_new": 47,
+  "deferred": [
+    "qa-result.png"
+  ],
+  "reason": "ui_check allows automatic result wall-time advance; snapshot is an uncontrolled banner frame. #17 assigned deterministic capture fix. Do not copy this sample into baseline.",
+  "visual_review": [
+    "layouts-review.png",
+    "outcomes-review.png",
+    "scores-review.png",
+    "buttons-review.png",
+    "other-review.png"
+  ],
+  "scope": "Port regression review only; no new original-rendering or phone-hardware parity claim."
+}

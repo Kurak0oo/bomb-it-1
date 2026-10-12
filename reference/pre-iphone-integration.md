@@ -31,8 +31,8 @@ partially implemented or externally blocked tickets stay open.
 |---|---|---|
 | #2 Four death animations | None | Integrated in 65692e0; [source fixes and per-sample attribution](issue-02.md). Actual source/port images still differ in 32/40 samples; renderer controls are separate evidence |
 | #3 Actor feedback | None | Integrated in 0dc29e1; [acceptance evidence](issue-03.md), 259 observations match and 56 exact image differences remain unwaived |
-| #4 Ordinary effects | None | Implementer active |
-| #5 Special-weapon presentation | #3, integrated | Pending |
+| #4 Ordinary effects | None | Integrated in d90a0cf; [305 lifecycle observations and source-backed fade fixes](issue-04.md). Actual exact images still differ in 94/134 samples |
+| #5 Special-weapon presentation | #3, integrated | Implementer active |
 | #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
 | #7 Difficulty/character selection | #6, integrated | Integrated in c036f3f; [acceptance evidence](issue-07.md), exact image and animation-phase parity remain unverified |
 | #8 HUD/arena composition | None | Integrated in 3b91c43; [acceptance evidence](issue-08.md), font substitution and exact pixel differences retained |

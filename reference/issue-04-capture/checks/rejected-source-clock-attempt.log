@@ -1,0 +1,8 @@
+file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue04/tools/reference/capture_effects.mjs:77
+          throw new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
+                ^
+
+Error: Capture skipped a tick: expected -1, received [{"tick":-1,"values":[0,256,1]},{"tick":0,"values":[0,256,5]}]
+    at file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue04/tools/reference/capture_effects.mjs:77:17
+
+Node.js v22.14.0
