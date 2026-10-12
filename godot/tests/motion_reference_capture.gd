@@ -5,7 +5,8 @@ func _init() -> void:
 	call_deferred("run")
 
 func run() -> void:
-	var path := "res://tests/fixtures/motion_scenarios.json"
+	var push_profile := OS.get_cmdline_user_args().has("--push-profile")
+	var path := "res://tests/fixtures/push_scenarios.json" if push_profile else "res://tests/fixtures/motion_scenarios.json"
 	var config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path))
 	var scenarios := {}
 	for fixture in config.scenarios:
@@ -103,14 +104,32 @@ func run() -> void:
 				"grenadeRootYTwips":roundi(grenade.position.y*20) if has_grenade else -1,
 				"specialCount":actor.special_count,"fireReady":actor.fire_ready,
 				"energies":energies,"occupancy":occupancy,"bricks":bricks})
+			if push_profile:
+				samples[-1]["bombsAvailable"] = actor.bombs_available
 		scenarios[fixture.name] = samples
-	var file := FileAccess.open(OS.get_environment("BOMB_IT_CORE_TRACE"),FileAccess.WRITE)
-	if file == null:
-		push_error("Cannot write motion reference capture")
-		quit(1)
-		return
-	file.store_string(JSON.stringify({"source":"godot-rebuild","runtime":Engine.get_version_info().string,
-		"profile":config.profile,"fps":int(config.fps),"tick_origin":config.tick_origin,
-		"configuration_sha256":FileAccess.get_file_as_string(path).replace("\r\n", "\n").sha256_text(),"scenarios":scenarios},"  "))
+	var capture := {"source":"godot-rebuild","runtime":Engine.get_version_info().string,
+        "profile":config.profile,"fps":int(config.fps),"tick_origin":config.tick_origin,
+        "configuration_sha256":FileAccess.get_file_as_string(path).replace("\r\n", "\n").sha256_text(),"scenarios":scenarios}
+	var output := OS.get_environment("BOMB_IT_CORE_TRACE")
+	if output != "":
+		var file := FileAccess.open(output,FileAccess.WRITE)
+		if file == null:
+			push_error("Cannot write motion reference capture")
+			quit(1)
+			return
+		file.store_string(JSON.stringify(capture,"  "))
+	if OS.get_cmdline_user_args().has("--verify-reference"):
+		var reference: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://tests/fixtures/push_original.json"))
+		if not push_profile or reference.configuration_sha256 != capture.configuration_sha256 or reference.source != "original-swf-bytecode":
+			push_error("Incompatible independent push reference")
+			quit(1)
+			return
+		for name in scenarios:
+			for tick in scenarios[name].size():
+				for field in scenarios[name][tick]:
+					if scenarios[name][tick][field] != reference.scenarios[name][tick][field]:
+						print("FAIL: %s tick %d %s: source=%s rebuild=%s" % [name,tick,field,reference.scenarios[name][tick][field],scenarios[name][tick][field]])
+						quit(1)
+						return
 	print("CORE_REFERENCE_CAPTURE_OK")
 	quit()

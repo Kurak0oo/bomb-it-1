@@ -1,0 +1,122 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.047,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 11.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\sim.log"
+  },
+  {
+    "name": "bomb_expiry",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\bomb_expiry.log"
+  },
+  {
+    "name": "push_motion",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\push_motion.log"
+  },
+  {
+    "name": "actors",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\actors.log"
+  },
+  {
+    "name": "ai_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\ai_order.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.39,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\command_order.log"
+  },
+  {
+    "name": "soak",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.375,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue30\\.artifacts\\issue30\\green\\soak.log"
+  }
+]

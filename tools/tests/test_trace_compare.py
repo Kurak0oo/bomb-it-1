@@ -9,6 +9,32 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_push_capture_reports_half_step_and_rejects_tick_shift(self):
+        run, report = self.compare_real(evidence_name="issue-30-evidence")
+        self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+        def half_step(original, rebuilt):
+            rebuilt["scenarios"]["push_corridor"][0]["bombPixelXTwips"] += 300
+        run, report = self.compare_real(half_step, "issue-30-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"push_corridor", "tick":0,
+                         "field":"bombPixelXTwips", "original":4800, "rebuilt":5100})
+        def tick(original, rebuilt):
+            rebuilt["scenarios"]["push_alignment"][1]["tick"] = 2
+        run, report = self.compare_real(tick, "issue-30-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 1", run.stderr)
+
+    def test_push_capture_requires_all_cases_and_original_scope(self):
+        def missing(original, rebuilt):
+            for capture in (original, rebuilt):
+                capture["scenarios"].pop("push_alignment")
+        run, report = self.compare_real(missing, "issue-30-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        def scope(original, rebuilt):
+            original["execution_scope"] = "controlled-root"
+        run, report = self.compare_real(scope, "issue-30-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+
     def test_expiry_capture_parity_and_exact_perturbations(self):
         run, report = self.compare_real(evidence_name="issue-29-evidence")
         self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
