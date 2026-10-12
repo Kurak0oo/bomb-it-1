@@ -33,5 +33,9 @@ func _init() -> void:
 						quit(1)
 						return
 			total_ticks += 1
+	if planted == 0 or fired == 0:
+		push_error("Soak did not exercise bombs and specials: bombs=%d specials=%d" % [planted, fired])
+		quit(1)
+		return
 	print("SOAK_OK ticks=%d bombs=%d specials=%d seconds=%.3f" % [total_ticks,planted,fired,(Time.get_ticks_usec()-start)/1000000.0])
 	quit(0)

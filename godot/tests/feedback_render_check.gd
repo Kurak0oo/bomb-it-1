@@ -63,6 +63,7 @@ func run() -> void:
 	rocket.position = Vector2(450,180)
 	rocket.just_placed = false
 	state.specials.append(rocket)
+	state.register_callback(rocket)
 	view = GameView.new()
 	view.state = state
 	view.frozen = true

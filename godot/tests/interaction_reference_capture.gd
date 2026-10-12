@@ -10,6 +10,7 @@ func install_bomb(state: GameState, spec: Dictionary, deferred: bool) -> void:
 	bomb.fuse = spec.fuse
 	bomb.just_placed = deferred
 	state.bombs.append(bomb)
+	state.register_callback(bomb)
 	state.cell_at(at).bomb = bomb
 	state.heroes[bomb.owner_id].bombs_available -= 1
 

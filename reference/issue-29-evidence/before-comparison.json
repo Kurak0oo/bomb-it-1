@@ -1,0 +1,653 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "ordinary_hold",
+    "tick": 60,
+    "field": "bombs",
+    "original": "8,6,1,60;",
+    "rebuilt": ""
+  },
+  "scenario_first_divergences": {
+    "ordinary_hold": {
+      "scenario": "ordinary_hold",
+      "tick": 60,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    "newborn_fuse_release": null,
+    "newborn_energy_hold_release": {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 1,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    "newborn_energy_tap": null,
+    "growth_into_newborn": {
+      "scenario": "growth_into_newborn",
+      "tick": 1,
+      "field": "bombs",
+      "original": "8,6,1,59;",
+      "rebuilt": ""
+    },
+    "birth_during_growth": null,
+    "existing_chain_ab": null,
+    "existing_chain_ba": null,
+    "rocket_before_newborn": {
+      "scenario": "rocket_before_newborn",
+      "tick": 8,
+      "field": "bombs",
+      "original": "8,6,1,59;",
+      "rebuilt": ""
+    },
+    "bomb_before_rocket": null,
+    "fire_before_newborn": null
+  },
+  "differences": [
+    {
+      "scenario": "ordinary_hold",
+      "tick": 60,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 60,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 61,
+      "field": "energies",
+      "original": "8,5,1,1;7,6,1,1;8,6,2,1;9,6,1,1;8,7,1,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,1,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "energies",
+      "original": "8,5,2,1;7,6,2,1;8,6,3,1;9,6,2,1;8,7,2,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,2,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 63,
+      "field": "energies",
+      "original": "8,5,3,1;7,6,3,1;8,6,4,1;9,6,3,1;8,7,3,1;",
+      "rebuilt": "8,5,2,1;7,6,2,1;8,6,2,1;9,6,2,1;8,7,2,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "energies",
+      "original": "8,5,4,1;7,6,4,1;8,6,5,1;9,6,4,1;8,7,4,1;",
+      "rebuilt": "8,5,2,1;7,6,2,1;8,6,3,1;9,6,2,1;8,7,2,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 65,
+      "field": "energies",
+      "original": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;",
+      "rebuilt": "8,5,3,1;7,6,3,1;8,6,3,1;9,6,3,1;8,7,3,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "energies",
+      "original": "8,5,6,1;7,6,6,1;8,6,7,1;9,6,6,1;8,7,6,1;",
+      "rebuilt": "8,5,3,1;7,6,3,1;8,6,4,1;9,6,3,1;8,7,3,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 67,
+      "field": "energies",
+      "original": "8,5,7,1;7,6,7,1;8,6,8,1;9,6,7,1;8,7,7,1;",
+      "rebuilt": "8,5,4,1;7,6,4,1;8,6,4,1;9,6,4,1;8,7,4,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "energies",
+      "original": "8,5,8,1;7,6,8,1;8,6,9,1;9,6,8,1;8,7,8,1;",
+      "rebuilt": "8,5,4,1;7,6,4,1;8,6,5,1;9,6,4,1;8,7,4,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 69,
+      "field": "energies",
+      "original": "8,5,9,1;7,6,9,1;8,6,10,1;9,6,9,1;8,7,9,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 70,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 70,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 70,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 71,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 72,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 72,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 72,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 73,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 74,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 74,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 74,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 75,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 76,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 76,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 76,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 77,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 78,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 78,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 78,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 79,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 1,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 1,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 2,
+      "field": "energies",
+      "original": "8,5,1,1;7,6,1,1;8,6,3,1;9,6,1,1;8,7,1,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,2,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 3,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 3,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 3,
+      "field": "energies",
+      "original": "8,5,2,1;7,6,2,1;8,6,4,1;9,6,2,1;8,7,2,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,3,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 4,
+      "field": "energies",
+      "original": "8,5,3,1;7,6,3,1;8,6,5,1;9,6,3,1;8,7,3,1;",
+      "rebuilt": "8,5,2,1;7,6,2,1;8,6,3,1;9,6,2,1;8,7,2,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 5,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 5,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 5,
+      "field": "energies",
+      "original": "8,5,4,1;7,6,4,1;8,6,6,1;9,6,4,1;8,7,4,1;",
+      "rebuilt": "8,5,2,1;7,6,2,1;8,6,4,1;9,6,2,1;8,7,2,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 6,
+      "field": "energies",
+      "original": "8,5,5,1;7,6,5,1;8,6,7,1;9,6,5,1;8,7,5,1;",
+      "rebuilt": "8,5,3,1;7,6,3,1;8,6,4,1;9,6,3,1;8,7,3,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 7,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 7,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 7,
+      "field": "energies",
+      "original": "8,5,6,1;7,6,6,1;8,6,8,1;9,6,6,1;8,7,6,1;",
+      "rebuilt": "8,5,3,1;7,6,3,1;8,6,5,1;9,6,3,1;8,7,3,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 8,
+      "field": "energies",
+      "original": "8,5,7,1;7,6,7,1;8,6,9,1;9,6,7,1;8,7,7,1;",
+      "rebuilt": "8,5,4,1;7,6,4,1;8,6,5,1;9,6,4,1;8,7,4,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 9,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 9,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 9,
+      "field": "energies",
+      "original": "8,5,8,1;7,6,8,1;8,6,9,1;9,6,8,1;8,7,8,1;",
+      "rebuilt": "8,5,4,1;7,6,4,1;8,6,5,1;9,6,4,1;8,7,4,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 10,
+      "field": "energies",
+      "original": "8,5,9,1;7,6,9,1;8,6,10,1;9,6,9,1;8,7,9,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 11,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 11,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 11,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 12,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 13,
+      "field": "bombs",
+      "original": "8,6,1,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 13,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 13,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,6,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 14,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,11,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 15,
+      "field": "energies",
+      "original": "8,5,10,1;7,6,10,1;8,6,10,1;9,6,10,1;8,7,10,1;",
+      "rebuilt": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 16,
+      "field": "energies",
+      "original": "8,5,9,1;7,6,9,1;8,6,9,1;9,6,9,1;8,7,9,1;",
+      "rebuilt": "8,5,4,1;7,6,4,1;8,6,4,1;9,6,4,1;8,7,4,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 17,
+      "field": "energies",
+      "original": "8,5,8,1;7,6,8,1;8,6,8,1;9,6,8,1;8,7,8,1;",
+      "rebuilt": "8,5,4,1;7,6,4,1;8,6,4,1;9,6,4,1;8,7,4,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 18,
+      "field": "energies",
+      "original": "8,5,7,1;7,6,7,1;8,6,7,1;9,6,7,1;8,7,7,1;",
+      "rebuilt": "8,5,3,1;7,6,3,1;8,6,3,1;9,6,3,1;8,7,3,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 19,
+      "field": "energies",
+      "original": "8,5,6,1;7,6,6,1;8,6,6,1;9,6,6,1;8,7,6,1;",
+      "rebuilt": "8,5,3,1;7,6,3,1;8,6,3,1;9,6,3,1;8,7,3,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 20,
+      "field": "energies",
+      "original": "8,5,5,1;7,6,5,1;8,6,5,1;9,6,5,1;8,7,5,1;",
+      "rebuilt": "8,5,2,1;7,6,2,1;8,6,2,1;9,6,2,1;8,7,2,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 21,
+      "field": "energies",
+      "original": "8,5,4,1;7,6,4,1;8,6,4,1;9,6,4,1;8,7,4,1;",
+      "rebuilt": "8,5,2,1;7,6,2,1;8,6,2,1;9,6,2,1;8,7,2,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 22,
+      "field": "energies",
+      "original": "8,5,3,1;7,6,3,1;8,6,3,1;9,6,3,1;8,7,3,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,1,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 23,
+      "field": "energies",
+      "original": "8,5,2,1;7,6,2,1;8,6,2,1;9,6,2,1;8,7,2,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,1,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "newborn_energy_hold_release",
+      "tick": 24,
+      "field": "energies",
+      "original": "8,5,1,1;7,6,1,1;8,6,1,1;9,6,1,1;8,7,1,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "growth_into_newborn",
+      "tick": 1,
+      "field": "bombs",
+      "original": "8,6,1,59;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "growth_into_newborn",
+      "tick": 1,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "growth_into_newborn",
+      "tick": 1,
+      "field": "energies",
+      "original": "7,5,1,2;6,6,1,2;7,6,1,2;8,6,1,2;7,7,1,2;",
+      "rebuilt": "7,5,1,2;6,6,1,2;7,6,1,2;8,6,2,1;7,7,1,2;"
+    },
+    {
+      "scenario": "growth_into_newborn",
+      "tick": 2,
+      "field": "energies",
+      "original": "7,5,1,2;6,6,1,2;7,6,1,2;8,6,2,1;7,7,1,2;",
+      "rebuilt": "7,5,1,2;8,5,1,1;6,6,1,2;7,6,2,1;8,6,2,1;9,6,1,1;7,7,1,2;8,7,1,1;"
+    },
+    {
+      "scenario": "growth_into_newborn",
+      "tick": 12,
+      "field": "energies",
+      "original": "8,5,1,1;7,6,1,1;8,6,1,1;9,6,1,1;8,7,1,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_before_newborn",
+      "tick": 8,
+      "field": "bombs",
+      "original": "8,6,1,59;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_before_newborn",
+      "tick": 8,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "rocket_before_newborn",
+      "tick": 8,
+      "field": "energies",
+      "original": "8,6,1,2;",
+      "rebuilt": "8,6,2,1;"
+    },
+    {
+      "scenario": "rocket_before_newborn",
+      "tick": 9,
+      "field": "energies",
+      "original": "8,6,2,1;",
+      "rebuilt": "8,5,1,1;7,6,1,1;8,6,2,1;9,6,1,1;8,7,1,1;"
+    },
+    {
+      "scenario": "rocket_before_newborn",
+      "tick": 19,
+      "field": "energies",
+      "original": "8,5,1,1;7,6,1,1;8,6,1,1;9,6,1,1;8,7,1,1;",
+      "rebuilt": ""
+    }
+  ]
+}

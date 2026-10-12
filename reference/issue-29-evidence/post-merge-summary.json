@@ -1,0 +1,74 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 21.828,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\import.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\sim.log"
+  },
+  {
+    "name": "bomb_expiry",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.516,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\bomb_expiry.log"
+  },
+  {
+    "name": "actors",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\actors.log"
+  },
+  {
+    "name": "ai_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\ai_order.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\command_order.log"
+  },
+  {
+    "name": "soak",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.203,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\soak.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.266,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\post-merge\\timeline.log"
+  }
+]

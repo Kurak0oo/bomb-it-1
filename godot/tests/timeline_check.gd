@@ -53,6 +53,7 @@ func run() -> void:
 	rocket.direction = Vector2i.RIGHT
 	rocket.age = 1
 	state.specials.append(rocket)
+	state.register_callback(rocket)
 	view.sync_view()
 	check(view._trails.size() == 1, "rocket emits original smoke timeline")
 	view.sync_view()
