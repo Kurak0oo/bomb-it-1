@@ -16,6 +16,12 @@ before desktop acceptance. They do not change the 35 Hz rate, numerical balance,
 seeded RNG or deterministic timer policy. CORE-01's one-twip Ruffle quantization
 difference remains unverified against Adobe Flash and is not a correction target.
 
+The nested interaction fixtures in #13 reproduce the earlier timing findings and
+add real parent score/life/refund observations. Bounded follow-ups #30–#33 cover
+push lifecycle, grenade endpoints, hit/refund accounting and local special-effect
+callback eligibility. INTERACT-06's residual pulse energy remains an explicit
+source/runtime uncertainty; the rebuild retains balanced cleanup.
+
 The task graph is the tracker’s native blocking graph, captured on 2026-10-12.
 Implementation occurs in ticket worktrees, merged into this branch by a merger
 agent. Only demonstrated acceptance permits a closing reference in the draft PR;
@@ -34,16 +40,20 @@ partially implemented or externally blocked tickets stay open.
 | #10 Original audio | #3, integrated | Pending |
 | #11 Movement/damage/firing traces | None | Integrated in 6d28b66; [independent evidence](issue-11.md), 69 field differences explicitly retained |
 | #12 Pushing/grenade traces | #11, integrated | Integrated in a712245; [15-scenario evidence](issue-12.md), 309 field differences retained as MOTION-01–04 |
-| #13 Interaction/ownership traces | #11, integrated | Implementer active |
+| #13 Interaction/ownership traces | #11, integrated | Integrated in ca793d7; [17-scenario nested-source evidence](issue-13.md), 134 differences retained and earlier timing controls reproduced |
 | #14 Strict random replay | None | Pending |
 | #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
 | #17 Interruptions/resume | #15, implemented | Implementer active |
 | #18 Smooth rendering | #17 | Pending |
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
-| #21 Integrated desktop acceptance | #2–#19, #28–#29 | Pending integration and packaging |
-| #28 Movement/special-fire ordering | #11, integrated | Pending separately reviewed CORE-03 correction |
+| #21 Integrated desktop acceptance | #2–#19, #28–#33 | Pending integration and packaging |
+| #28 Movement/special-fire ordering | #11, integrated | Implementer active on separately reviewed CORE-03 correction |
 | #29 Bomb expiry/held-fire ordering | #11–#13 | Pending separately reviewed CORE-02 correction |
+| #30 Push callback lifecycle | #12–#13, #29 | Pending MOTION-01/03 correction |
+| #31 Grenade endpoint | #12–#13 | Pending MOTION-04 correction, including chain accounting |
+| #32 Hit/refund accounting | #13, #29 | Pending INTERACT-01/02 correction |
+| #33 Special contact/callback eligibility | #13, #29 | Pending INTERACT-03/04/05 correction; residual-energy uncertainty excluded |
 
 ## Acceptance boundaries
 
