@@ -1,0 +1,8 @@
+file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue13/tools/reference/capture_core.mjs:96
+        if (error) throw new Error(error);
+                         ^
+
+Error: Error: Invalid integer hero1Life: undefined
+    at file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue13/tools/reference/capture_core.mjs:96:26
+
+Node.js v22.14.0

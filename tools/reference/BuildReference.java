@@ -52,7 +52,7 @@ class BuildReference {
         }
         for (var tag : remove) swf.removeTag(tag);
         swf.addTag(originalFunctions);
-        if (args.length == 4) {
+        if (args.length >= 4) {
             if (frameTwo == null) throw new IllegalStateException("Missing Sprite 564 frame 2 actions");
             var prelude = new DoActionTag(swf);
             prelude.setActions(new ActionScript2Parser(swf, prelude).actionsFromString(Files.readString(Path.of(args[3])), "UTF-8"));
@@ -69,6 +69,26 @@ class BuildReference {
             System.out.println("Preserved complete original frame 2 polling/release bytecode: " + sourceBytes.length + " bytes, SHA-256 " + sourceHash);
         }
         swf.addTag(script);
+        if (args.length == 5 && args[4].equals("--nested")) {
+            // Retain real _parent writes for life, score and bomb-refund observations.
+            var actions = new ArrayList<Tag>();
+            for (var tag : swf.getTags()) if (tag instanceof DoActionTag) actions.add(tag);
+            var oldGameTags = new ArrayList<Tag>();
+            for (var tag : game.getTags()) oldGameTags.add(tag);
+            for (var tag : oldGameTags) game.removeTag(tag);
+            for (var tag : actions) { swf.removeTag(tag); game.addTag(tag); }
+            game.addTag(new ShowFrameTag(swf));
+            game.frameCount = 1;
+            var exports = new ExportAssetsTag(swf);
+            exports.tags = List.of(564);
+            exports.names = List.of("fixtureGame");
+            swf.addTag(exports);
+            var rootSetup = new DoActionTag(swf);
+            rootSetup.setActions(new ActionScript2Parser(swf, rootSetup).actionsFromString(
+                "stop(); attachMovie(\"fixtureGame\", \"game\", 1);", "UTF-8"));
+            swf.addTag(rootSetup);
+            System.out.println("Preserved original Sprite 564 scope with real root parent ledger");
+        }
         swf.addTag(new ShowFrameTag(swf));
         swf.frameCount = 1;
         swf.frameRate = 35;

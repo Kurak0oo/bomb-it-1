@@ -156,6 +156,67 @@ class ReferenceComparison(unittest.TestCase):
                 self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
                 self.assertIsNone(report)
 
+    def test_interaction_original_requires_real_parent_scope(self):
+        def perturb(original, rebuilt):
+            original["execution_scope"] = "controlled-root"
+        run, report = self.compare_real(perturb, "issue-13-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("real root parent", run.stderr)
+        self.assertIsNone(report)
+
+    def test_interaction_capture_requires_bytecode_provenance(self):
+        changes = [lambda c: c.pop("original_swf_sha256"),
+                   lambda c: c["preserved_bytecode"].update(preserved_sha256="0"*64)]
+        for change in changes:
+            def perturb(original, rebuilt):
+                change(original)
+            run, report = self.compare_real(perturb, "issue-13-evidence")
+            self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+            self.assertIn("provenance", run.stderr)
+            self.assertIsNone(report)
+
+    def test_interaction_captures_report_damage_refund_and_overlap_boundaries(self):
+        run, report = self.compare_real(evidence_name="issue-13-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        first = report["scenario_first_divergences"]
+        self.assertEqual(first["shield_bomb"], {"scenario":"shield_bomb", "tick":1,
+                         "field":"hero1Score", "original":1000, "rebuilt":0})
+        self.assertEqual(first["dead_owner_refund"]["tick"], 4)
+        for name in ("overlap_ab", "overlap_ba", "ai_three_hits", "human_multi_life", "self_damage"):
+            self.assertIsNone(first[name])
+
+    def test_interaction_real_field_and_tick_perturbations_are_detected(self):
+        def field(original, rebuilt):
+            rebuilt["scenarios"]["overlap_ba"][1]["hero1Score"] -= 1000
+        run, report = self.compare_real(field, "issue-13-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertIn({"scenario":"overlap_ba", "tick":1, "field":"hero1Score",
+                       "original":1000, "rebuilt":0}, report["differences"])
+        def tick(original, rebuilt):
+            rebuilt["scenarios"]["ai_three_hits"][66]["tick"] += 1
+        run, report = self.compare_real(tick, "issue-13-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 66", run.stderr)
+        self.assertIsNone(report)
+
+    def test_interaction_captures_reject_shared_truncation_and_malformed_ownership(self):
+        changes = {
+            "scenario": lambda c: c["scenarios"].pop("dead_owner_refund"),
+            "row": lambda c: c["scenarios"]["shield_bomb"].pop(),
+            "field": lambda c: c["scenarios"]["shield_bomb"][0].pop("hero1Score"),
+            "owners": lambda c: c["scenarios"]["shield_bomb"][0].update(owners="undefined"),
+            "energy": lambda c: c["scenarios"]["shield_bomb"][0].update(energies="7,6,1;"),
+            "alive": lambda c: c["scenarios"]["shield_bomb"][0].update(hero1Alive=1),
+        }
+        for name, change in changes.items():
+            with self.subTest(name=name):
+                def perturb(original, rebuilt):
+                    change(original)
+                    change(rebuilt)
+                run, report = self.compare_real(perturb, "issue-13-evidence")
+                self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+                self.assertIsNone(report)
+
     def test_port_generated_reference_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
