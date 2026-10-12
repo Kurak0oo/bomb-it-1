@@ -29,3 +29,18 @@ Frame columns are preallocated before warmup; observer input records and applica
 A fixed-state diagnostic outside measured frame collection found HUD synchronization at a median 135.67 microseconds per call before this change and 33.005 after (ten batches of 100 calls, same Windows host). Four portrait textures are retained after initialization and invisible status icons skip redundant composition. Revealing an icon still samples the absolute original source phase; the rendered HUD check compares it with a continuously visible icon at the same tick. No gameplay, RNG, timer or 35 Hz constants changed. Source icon timelines only compose visual layers, so omitted hidden composition has no script side effects.
 
 The public report command was developed red/green against known literal intervals/input timestamps, and rejects feedback timestamps preceding simulation delivery. Schedule invariance, the non-empty weapon scenarios, and HUD rendered behavior pass. Final integrated reports and host details will be recorded below after the synchronized run.
+
+## Retained desktop run
+
+[Raw samples, summaries and replay checkpoints](issue-18-capture/) are from revision `298bd073627ff01fb8efeb583a94154a9c5d3b72` (this implementation plus integration `e12f8b0`, including #4 pickup art), Godot 4.7.2, Windows 11 build 26200, Ryzen 7 5800H, RTX 3080 Laptop GPU. The monitor reports 165.019 Hz; actual scanout timing was not measured. Each process warmed for three seconds and measured 48 seconds. An earlier briefly contended attempt was stopped/discarded; retained samples ran after the other capture process stopped.
+
+| Requested cap | Submissions | Submission p99 / max | Dispatch → simulation p95 | Dispatch → feedback submission p95 | Static-memory change |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 60 Hz | 2,880 | 31.717 / 53.918 ms | 44.180 ms | 296.471 ms | +3.65% |
+| 120 Hz | 5,498 | 17.481 / 52.798 ms | 31.205 ms | 326.377 ms | +3.77% |
+
+Both reports mark all activity coverage true, including the six pickup trail and original score screen. Feedback samples include observed source waits of up to 11 additional accepted ticks; 45/40 inputs respectively remained unobserved or were superseded, and are retained rather than silently dropped from the record. Feedback percentiles summarize observed endpoints only. Static memory includes cache warmup across newly visited scenes and the bounded observer; this short run cannot establish a leak or sustained stability. The engine cap did not produce uniformly spaced submission callbacks, particularly at 120 Hz; no physical deadline or latency target is marked passed.
+
+The included AI behavior is the pre-#29 revision, whose source correction is in progress. These reports establish active controlled human/weapon/pickup loads, not representative corrected AI activity. #21 must rerun the same public command on the final integrated candidate and perform its longer desktop sequence; #22 owns physical phone evidence. No iPhone, thermal, physical touch, or photon measurement was performed here.
+
+Validated: four scenarios × five schedules, all authoritative checkpoints equal; active placement/explosion and six weapon assertions; rendered HUD absolute-phase reveal; six Python public-command tests. The injected display-dependent timer defect fails the checker as intended. Shared regression images are owned by integration; this optimization expects no visible image changes.
