@@ -28,11 +28,14 @@ var safe_area_provider := Callable()
 var _last_safe_area := Rect2()
 var _focus_lost := false
 var _backgrounded := false
+var _interrupted_audio := false
+var _closing := false
 var _held_keys: Dictionary = {}
 var _cancelled_keys: Dictionary = {}
 var _skip_presentation_delta := false
 
 func _ready() -> void:
+	get_tree().auto_accept_quit = false
 	art = OriginalArt.new()
 	if save_enabled:
 		prefs.load("user://preferences.cfg")
@@ -113,6 +116,7 @@ func _clear_screen() -> void:
 	original_hud = null
 	original_results = null
 	paused = false
+	_interrupted_audio = false
 	audio.suspended = _away()
 	_resize()
 
@@ -125,7 +129,10 @@ func _background(path: String) -> void:
 
 func _show_menu() -> void:
 	_show_original_menu("menu")
-	audio.play_music("406_Bombit_-_mainscreen.mp3")
+	# Original root frame 3 creates this sound only once; returning from help
+	# or selection keeps the existing menu instance playing.
+	if audio.music.stream == null or audio.music.stream.resource_path != GameAudio.PATH+"406_Bombit_-_mainscreen.mp3":
+		audio.play_music("406_Bombit_-_mainscreen.mp3")
 
 func _show_original_menu(page: String) -> void:
 	_clear_screen()
@@ -179,6 +186,7 @@ func _show_help() -> void:
 	_show_original_menu("help")
 
 func _start_game() -> void:
+	audio.new_campaign()
 	session.start(int(Time.get_unix_time_from_system()), difficulty, selected_character, players, selected_second_character)
 	_show_round()
 
@@ -209,7 +217,7 @@ func _show_round() -> void:
 	touch.visibility_changed.connect(_resize)
 	_resize()
 	_update_hud()
-	audio.play_music(["401_Bombit_-_level_1.mp3","402_Bombit_-_level_2.mp3","403_Bombit_-_level_3.mp3","404_Bombit_-_level_4.mp3"][(session.stage-1)%4])
+	audio.play_round_music()
 
 func _command(id: int) -> PlayerCommands:
 	var command := keyboard.poll(id, players)
@@ -273,7 +281,7 @@ func _physics_process(_delta: float) -> void:
 		commands.append(_command(1))
 	session.tick(commands)
 	view.sync_view()
-	audio.events(session.state.events)
+	audio.events(session.state.audio_cues)
 	_update_hud()
 	if session.result != "":
 		_show_result()
@@ -291,7 +299,7 @@ func _show_result() -> void:
 	_reset_input()
 	touch.enabled = false
 	var win := session.result.ends_with("win")
-	audio.play_music("405_Bombit_-_level_complete.mp3" if win else "407_Bombit_-_mission_failed.mp3", false)
+	audio.play_music("405_Bombit_-_level_complete.mp3" if win else "407_Bombit_-_mission_failed.mp3")
 	for id in players:
 		high_score = maxi(high_score, session.totals[id])
 	_save_preferences()
@@ -340,7 +348,8 @@ func _toggle_pause() -> void:
 func _set_paused(value: bool) -> void:
 	paused = value
 	view.frozen = paused or screen == "result"
-	audio.suspended = paused
+	if not paused:_interrupted_audio = false
+	audio.suspended = _away() or _interrupted_audio
 	_reset_input()
 	touch.enabled = not paused and screen == "game"
 	if is_instance_valid(original_results):
@@ -383,6 +392,10 @@ func _save_preferences() -> void:
 
 func _notification(what: int) -> void:
 	if not is_instance_valid(audio):return
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		_close_application()
+		return
+	if _closing:return
 	match what:
 		NOTIFICATION_APPLICATION_FOCUS_OUT:_focus_lost = true
 		NOTIFICATION_APPLICATION_PAUSED:_backgrounded = true
@@ -391,15 +404,24 @@ func _notification(what: int) -> void:
 		_:return
 	_reset_input()
 	if _away() and screen in ["game","result"]:
+		_interrupted_audio = true
 		_set_paused(true)
 	# Idle menus return immediately; an interrupted match/outcome stays paused.
 	if is_instance_valid(original_menu):
 		original_menu.process_mode = Node.PROCESS_MODE_DISABLED if _away() else Node.PROCESS_MODE_INHERIT
-	audio.suspended = _away() or paused
+	audio.suspended = _away() or _interrupted_audio
 	_skip_presentation_delta = true
 
 func _away() -> bool:
 	return _focus_lost or _backgrounded
+
+func _close_application() -> void:
+	if _closing:return
+	_closing = true
+	_reset_input()
+	process_mode = Node.PROCESS_MODE_DISABLED
+	await audio.retire()
+	get_tree().quit()
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if screen == "result" and event is InputEventKey:

@@ -52,7 +52,8 @@ class BuildReference {
         }
         for (var tag : remove) swf.removeTag(tag);
         swf.addTag(originalFunctions);
-        if (args.length >= 4) {
+        boolean nestedOnly = args.length == 4 && args[3].equals("--nested-only");
+        if (args.length >= 4 && !nestedOnly) {
             if (frameTwo == null) throw new IllegalStateException("Missing Sprite 564 frame 2 actions");
             var prelude = new DoActionTag(swf);
             prelude.setActions(new ActionScript2Parser(swf, prelude).actionsFromString(Files.readString(Path.of(args[3])), "UTF-8"));
@@ -69,7 +70,7 @@ class BuildReference {
             System.out.println("Preserved complete original frame 2 polling/release bytecode: " + sourceBytes.length + " bytes, SHA-256 " + sourceHash);
         }
         swf.addTag(script);
-        if (args.length == 5 && args[4].equals("--nested")) {
+        if (nestedOnly || (args.length == 5 && args[4].equals("--nested"))) {
             // Retain real _parent writes for life, score and bomb-refund observations.
             var actions = new ArrayList<Tag>();
             for (var tag : swf.getTags()) if (tag instanceof DoActionTag) actions.add(tag);
@@ -93,6 +94,16 @@ class BuildReference {
         swf.frameCount = 1;
         swf.frameRate = 35;
         try (var stream = new FileOutputStream(args[1])) { swf.saveTo(stream); }
+        var reloaded = new SWF(new FileInputStream(args[1]), false);
+        Iterable<Tag> checkTags = (nestedOnly || (args.length == 5 && args[4].equals("--nested")))
+            ? ((DefineSpriteTag) reloaded.getCharacters(false).get(564)).getTags() : reloaded.getTags();
+        byte[] copied = null;
+        for (var tag : checkTags) if (tag instanceof DoActionTag action) { copied = action.getActionBytes().getRangeData(); break; }
+        byte[] prefix = Arrays.copyOf(original.getActionBytes().getRangeData(), (int) end);
+        if (copied == null || !Arrays.equals(prefix, copied)) throw new IllegalStateException("Function bytecode changed after save");
+        String functionHash = HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(prefix));
+        Files.writeString(Path.of(args[1]+".functions.json"), "{\"sprite\":564,\"frame\":1,\"prefix_bytes\":"+end
+            +",\"original_sha256\":\""+functionHash+"\",\"reloaded_sha256\":\""+functionHash+"\"}\n");
         System.out.println("Preserved " + functions.size() + " original function bodies (" + end + " bytes), and all character definitions.");
         System.exit(0);
     }

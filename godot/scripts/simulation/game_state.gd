@@ -36,6 +36,7 @@ var items_enabled := false
 var tick_number := 0
 # Ephemeral presentation events. Cleared once per authoritative simulation tick.
 var events: Array[String] = []
+var audio_cues: Array[String] = []
 var presentation_events: Array[Dictionary] = []
 var specials: Array[SpecialState] = []
 var special_choices: Array = []
@@ -85,6 +86,7 @@ func setup(rows: PackedStringArray) -> void:
 	items_enabled = false
 	tick_number = 0
 	events.clear()
+	audio_cues.clear()
 	presentation_events.clear()
 	specials.clear()
 	_callbacks.clear()
@@ -127,6 +129,7 @@ func cell_at(at: Vector2i) -> CellState:
 func tick(commands: Array[PlayerCommands]) -> void:
 	tick_number += 1
 	events.clear()
+	audio_cues.clear()
 	presentation_events.clear()
 	var can_act: Array[bool] = []
 	for actor in heroes:
@@ -252,6 +255,7 @@ func _place_bomb(hero: HeroState, at: Vector2i) -> bool:
 	register_callback(bomb)
 	hero.bombs_available -= 1
 	events.append("place")
+	audio_cues.append("place")
 	return true
 
 
@@ -363,6 +367,7 @@ func _explode(bomb: BombState) -> void:
 	explosions.append(blast)
 	register_callback(blast)
 	events.append("explode")
+	audio_cues.append("explode")
 
 
 func _tick_damage(hero: HeroState) -> void:
@@ -399,6 +404,7 @@ func _push_bomb(bomb: BombState, dir: Vector2i) -> bool:
 	bomb.slide_direction = dir
 	bomb.slide_ticks = 2
 	events.append("push")
+	audio_cues.append("push")
 	return true
 
 
@@ -427,6 +433,7 @@ func _collect_item(hero: HeroState) -> void:
 	hero.score += 100
 	hero.destruction_score += 100
 	events.append("pickup")
+	audio_cues.append("pickup")
 
 
 func _tick_pops() -> void:

@@ -1,0 +1,144 @@
+{
+  "runtime": "Ruffle 0.7.1",
+  "browser": "156.0.8078.4",
+  "fixture_sha256": "21f2af09980398a3728a366ea9debf5b352cbf74743da8167080bc7beba03faa",
+  "raw_sha256": "1cb8d6b94aec3c0780247dfb1d6201e05e482769d5b61c5b0f734d5333a078ad",
+  "overlap": {
+    "alignment": "Only leading/trailing exact zero samples removed; no time shifting or tolerance.",
+    "single_frames": 15908,
+    "double_frames": 15908,
+    "single_peak": 1.0000001192092896,
+    "double_peak": 2.000000238418579,
+    "max_double_minus_twice_single": 0.0,
+    "passed": true
+  },
+  "scenarios": {
+    "single": {
+      "trace": [
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 1.0000001192092896
+    },
+    "double": {
+      "trace": [
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 2.000000238418579
+    },
+    "overlap": {
+      "trace": [
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO|-1|start|putBomb.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 2.133667230606079
+    },
+    "bombs": {
+      "trace": [
+        "AUDIO|-1|start|putBomb.wav",
+        "AUDIO|-1|start|putBomb.wav",
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 2.590698719024658
+    },
+    "push": {
+      "trace": [
+        "AUDIO|-1|start|putBomb.wav",
+        "AUDIO|-1|start|pushBomb.mp3",
+        "AUDIO|14|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 1.278991937637329
+    },
+    "pickup": {
+      "trace": [
+        "AUDIO|4|start|tool.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 0.3524780571460724
+    },
+    "muted": {
+      "trace": [
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 0
+    },
+    "rocket-wall": {
+      "trace": [
+        "AUDIO|-1|start|rocket.mp3",
+        "AUDIO|3|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 1.2221070528030396
+    },
+    "rocket-brick": {
+      "trace": [
+        "AUDIO|-1|start|rocket.mp3",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 0.6628418564796448
+    },
+    "mine": {
+      "trace": [
+        "AUDIO|-1|start|bibi.wav",
+        "AUDIO|-1|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 1.1167908906936646
+    },
+    "grenade": {
+      "trace": [
+        "AUDIO|-1|start|grenade.mp3",
+        "AUDIO|16|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 1.0010377168655396
+    },
+    "gas": {
+      "trace": [
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 0.7308350205421448
+    },
+    "ice": {
+      "trace": [
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 0.9048768281936646
+    },
+    "fire-brick": {
+      "trace": [
+        "AUDIO|2|start|exp.wav",
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 1.571930170059204
+    },
+    "fire": {
+      "trace": [
+        "AUDIO_DONE"
+      ],
+      "errors": [],
+      "peak": 0.9181519746780396
+    }
+  }
+}
