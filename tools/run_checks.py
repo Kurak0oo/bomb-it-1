@@ -85,14 +85,18 @@ def main():
             phases.append(("reference_parse", command + ["--check-only", "--script", "res://tests/reference_capture.gd"], None))
             phases.append(("core_reference_parse", command + ["--check-only", "--script", "res://tests/core_reference_capture.gd"], None))
             phases.append(("motion_reference_parse", command + ["--check-only", "--script", "res://tests/motion_reference_capture.gd"], None))
+            phases.append(("interaction_reference_parse", command + ["--check-only", "--script", "res://tests/interaction_reference_capture.gd"], None))
         for suite in args.suite or SUITES:
             if suite == "tooling":
                 continue
             phases.append((suite, command + ["--script", f"res://tests/{suite}_check.gd"], suite.upper() + "_OK"))
+            if suite == "special":
+                phases.append(("command_order", command + ["--script", "res://tests/order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
         if args.visual:
             print(f"Captures: {captures}", flush=True)
             render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
-            phases += [("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
+            phases += [("interruption_render", render + ["--script", "res://tests/interruption_render_check.gd"], "INTERRUPTION_RENDER_OK"),
+                       ("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
                        ("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),
                        ("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
                        ("effects_render", render + ["--script", "res://tests/effects_render_check.gd"], "EFFECTS_RENDER_OK"),

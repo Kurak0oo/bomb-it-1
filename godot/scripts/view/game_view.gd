@@ -21,6 +21,8 @@ var _hit_smoke: Array[Dictionary] = []
 var _motion_positions: Dictionary = {}
 var frozen := false:
 	set(value):
+		# Resume at the last accepted position, never at a pre-pause endpoint.
+		if frozen != value:capture_positions()
 		frozen = value
 		for hero in _hero_sprites.values():
 			hero.frozen = value

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 20.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.61,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 12.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.453,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.36,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.453,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.468,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\sim.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.454,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue17\\.artifacts\\issue17-post-merge\\view.log"
+  }
+]

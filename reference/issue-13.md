@@ -1,0 +1,57 @@
+# #13 — Mixed weapons, shields and ownership
+
+The `interaction-v1` profile captures 17 independent scenarios, 784 fixed updates and 43 fields per update (33,712 compared fields). It retains 134 field differences. No production mechanics, RNG, timers or accepted 35 Hz rule changed.
+
+## Independent execution and setup invariants
+
+The builder's optional `--nested` mode executes the preserved 16 frame-1 functions (21,432 bytes) and complete frame-2 polling/release action block (5,624 bytes) inside original Sprite 564, attached beneath a real root. Frame-2 source and preserved SHA-256 both equal `b68c1872f3a1a9967dee94c3bae9d50ca9c52aab0caa357ea5d78de993e62a9b`. Original special, damage, explosion, refund, ownership and nested timeline callbacks execute unchanged. Root life/score/bomb tables receive the source's actual `_parent` writes; the observer does not calculate expected awards or refunds. Original UI calls resolve against an absent HUD, outside the observed mechanics.
+
+The [shared configuration](../godot/tests/fixtures/interaction_scenarios.json) describes controlled actor/board/weapon state and timed bomb installation. Source setup calls original `putBomb`/`putSpecial`. Rebuild setup creates matching public BombState objects and calls public `SpecialRules.place`; subsequent behavior is observed after `GameState.tick`. This adapter tests interactions from controlled state, not normal placement input. Initial bomb/special callbacks are eligible on tick 0 in both runtimes. Event bombs installed during parent polling first age the following update; the rebuild marks those event objects newly placed. No samples are shifted or trimmed.
+
+There are two humans and two AI actors; actor 4 stays alive as a sentinel. All actors are held inert with a moving flag and no displacement, suppressing autonomous decisions while retaining original damage/timer polling. Timed shields protect non-victims. Source root and actor bomb allowances begin at four, matching rebuild capacity and allowance. In `dead_owner_refund`, both sides record allowance three at tick 0 after one placement, remove the owner at tick 1 with two lives remaining and allowance three, and explode its separate fuse-five bomb at tick 4. Only the post-death refund differs. Live-owner refunds agree in the other fixtures.
+
+The previous core/motion profiles retain their compatible default controlled-root mode. Their root-relocated functions cannot establish parent-table score, life or refund behavior. New `--nested` control runs reproduce **every** retained original and rebuilt observation from #11 and #12: 252 core ticks and 480 motion ticks, including CORE-02/03 and MOTION-01/02/03/04. These controls establish unchanged timing findings, not additional accounting coverage; accounting is measured by this profile's initialized root tables. [Control evidence](issue-13-evidence/repeat-and-scope-controls.json) and full [core](issue-13-evidence/core-nested/comparison.json)/[motion](issue-13-evidence/motion-nested/comparison.json) reports are retained.
+
+## Observations and bounded follow-up work
+
+| Finding | First independent observation and bounded scope |
+|---|---|
+| **INTERACT-01 — shield-hit credit** | `shield_bomb` tick 1: source credits attacker 1,000; rebuild credits zero. Both consume armor, retain the victim's life and grant 60 shield ticks. Source frame-2 lines 173–181 credit before `hurtHero`; rebuild returns on armor before credit. Correct hit accounting without changing shield duration or damage. |
+| **INTERACT-02 — dead-owner refund** | `dead_owner_refund` tick 4: source root allowance stays three; rebuild becomes four. Source `bombExp` frame-1 lines 767–768 obtains the owner through the live display clip before updating its root table. Correct only refunds after owner removal; preserve live-owner refunds and bomb capacity. |
+| **INTERACT-03 — gas contact timer** | `gas_contact` tick 0: source slow timer is 599; rebuild 600, remaining one apart through tick 31. Source child sets 600 before parent polling decrements it (frame-1 line 541; frame-2 lines 184–186). Bound any correction to contact/timer order, not movement speed or all callback phases. |
+| **INTERACT-04 — new ice-cell callback** | `ice_contact` tick 3: source stop timer remains zero; rebuild already sets 300. Source-created ice cell's callback first freezes on tick 4; the two then agree. Source frame-1 lines 597–613 installs that child callback. Correct activation eligibility for newly created ice cells; this inert fixture does not certify later stop countdown while walking. |
+| **INTERACT-05 — rocket/mine dispatch order** | `rocket_mine_wall` tick 8: source has removed the mine and records energy two owned by actor 2; rebuild still has the mine and records energy one owned by actor 1. Tick 9 agrees on both energy and owner. A mine created before the rocket observes the rocket's pulse in the same source child dispatch. Bound a correction to this demonstrated dependent special callback order; do not infer a blanket reversal of all update phases. |
+| **INTERACT-06 — overlapping pulse cleanup uncertainty** | The same case records source energy one at tick 19 through the last observed tick 31, while rebuild clears it. Original `addBrickExp` frame-1 lines 279–293 uses the same clip name/depth for the same cell, increments energy per call, and installs one decrement callback on each created clip. Ruffle replacement/removed-clip dispatch leaves a residual count in this run. This is a named source/runtime uncertainty, **not** proof of permanent danger in Adobe Flash. Retain rebuild cleanup pending independent evidence/product decision; no proposed regression to invisible danger. |
+| **MOTION-04 consequence — grenade chain/accounting** | `grenade_bomb` tick 17: source grenade detonates, chains the bomb, refunds actor 2, credits 1,000 and reduces victim life to two; rebuild does these at tick 18. Initial children are installed before tick 0 here; #12 places the grenade during tick 0, hence its corresponding endpoint is 18/19. This is the same nested final-frame boundary, not a second grenade fix. |
+
+Eleven scenarios match all 43 fields at every tick: rocket/bomb, bomb/gas, fire/bomb, fire ownership, fire/ice, three successive AI hits, human multi-life removal, self-damage, both bomb-overlap creation orders, and mine damage. AI lives fall on ticks 1, 66 and 130, with alternating owners credited 2,000/1,000 in total; the third hit removes the AI. A human with three lives is removed on the first damaging hit with two lives left, matching the source. Self-damage gives no score. Reversing overlapping bomb creation order reverses credited owner; both runtimes match. Fire replacing a bomb owner's local energy credits the fire owner. Single mine damage and pulse expiry agree, so INTERACT-06 is not a general pulse-duration mismatch.
+
+Minimal proposed correction groups, for root-owned tickets:
+
+- Existing **#28** remains move-before-special ordering (CORE-03); this work adds no scope.
+- Existing **#29** may include only established bomb-expiry/chain-before-parent consequences (CORE-02, MOTION-02). It must preserve mixed live-owner accounting and overlap controls here.
+- **Push callback lifecycle**, depending on #12/#13 and reviewed alongside #29: MOTION-01 newly pushed activation and MOTION-03 completed-cell visibility before parent movement. Do not fold grenade/special behavior into it.
+- **Grenade endpoint**, depending on #12/#13: MOTION-04, including the refund/score/damage consequences above; preserve charge/target rejection and pulse cell sets.
+- **Hit/refund accounting**, depending on #13: INTERACT-01/02 only; preserve exact multi-life, self-credit, live-refund and overlap controls.
+- **Special callback eligibility/contact order**, depending on #13: separately test INTERACT-03/04/05 and their local consequences. Do not adopt INTERACT-06 residual energy as an expectation to reproduce.
+
+## Evidence, validation and reproduction
+
+[Original trace](issue-13-evidence/original-trace.json), [rebuilt trace](issue-13-evidence/rebuilt-trace.json) and [comparison](issue-13-evidence/comparison.json) retain exact observations, per-scenario first differences and all 134 differences. Independent repeat execution produced identical observations in both runtimes. Source provenance records runtime/browser, original and fixture SWFs, unchanged bytecode, FFDec, builder, source fixture, collector, prelude and normalized configuration hashes.
+
+```powershell
+python tools/capture_core_reference.py --profile interaction-v1 --ffdec C:/Users/Eiji/AppData/Local/FFDec --godot C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64_console.exe --output .artifacts/interaction-reference
+python tools/capture_core_reference.py --profile core-v1 --nested --ffdec C:/Users/Eiji/AppData/Local/FFDec --godot C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64_console.exe --output .artifacts/core-nested
+python tools/compare_traces.py reference/issue-13-evidence/original-trace.json reference/issue-13-evidence/rebuilt-trace.json --output .artifacts/interaction-comparison.json
+python tools/run_checks.py --godot C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64_console.exe --suite tooling --suite sim --suite special
+```
+
+Interaction always uses nested mode. Capture exits zero for successful collection with diagnostic differences, one with `--require-parity`, two on malformed captures/harness failure. Comparison returns one for these retained differences. Strict validation requires all named scenarios and contiguous ticks, exact fields/types, valid energy/owner/bomb/projectile serialization, compatible configuration and tick origin, real parent scope and bytecode provenance. Public command tests mutate actual captured score/tick fields and reject shared truncated/malformed captures. Parent-scope capture failed red with undefined life before nested execution; scope/provenance rejection tests each failed red before validation was added. All nine focused runner phases pass, including 18 trace-comparison tests within tooling. No rendered baseline changed.
+
+## Limits and review
+
+Ruffle 0.7.1 executes original bytecode; these runs do not certify Adobe Flash. This is representative interaction coverage, not all pairwise weapons, native keyboard/AI behavior, full rounds, animation, sound or randomized drops. Empty controlled maps and inert actors exclude pickup/drop behavior. Multi-life and refund observations include actual root accounting, while UI calls are not measured. Stationary ice contact establishes activation timing only; gas observations cover 32 updates, not the eventual expiry. Source residual energy is observed only through tick 31. Between-update interpolation is outside scope. Exact parity is not claimed and the 134 differences are not accepted as a passing equality baseline.
+
+Review against starting integration `a712245` confirms changes are limited to reference/capture tooling, fixture adapters, command tests and evidence. Production simulation is unchanged. Root owns correction tickets and global completion bookkeeping.
+
+Ticket implementation commit `aef1cab` was merged with integration `65692e0` in `2ecf6f5`. All nine focused phases pass again in [post-merge checks](issue-13-evidence/post-merge-checks/summary.json). A new public rebuild capture is identical to the retained rebuild trace and still reports the same 134 differences. Worktree-generated import metadata was restored; no shared visual baseline changed.

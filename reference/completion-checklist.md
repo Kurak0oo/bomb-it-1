@@ -25,7 +25,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 | Original map generation | Recovered algorithm and seeded connectivity regressions | Strict bound/order replay across setup, drops, retry and stage continuation (#14) | Godot seeded RNG and deterministic timer remain explicit policies |
 | AI and actor behavior | Four actors, difficulty regressions; 259 actor-presentation observations agree (#3) | Mixed interactions and full-match callback evidence (#13, #21) | Named fixtures do not establish every AI/game interaction |
 | Items and special weapons | Existing item/weapon regressions and final rocket-smoke fix | Complete effect lifetimes and independent collision/ownership evidence (#4–#5, #12–#13) | Existing port tests are not an independent oracle |
-| Visual timelines, depth and audio | #3 placement/timing/depth; #8 five-theme composition and source depth audit | Death difference isolation, ordinary/special effects and audio audit (#2, #4–#5, #10) | Exact image differences remain; HUD level/timer font substitution is documented |
+| Visual timelines, depth and audio | #2 death corrections and component attribution; #3 placement/timing/depth; #8 five-theme composition and source depth audit | Ordinary/special effects and audio audit (#4–#5, #10) | Exact image differences remain; HUD level/timer font substitution is documented |
 | Game flow | Original menu/help (#6), independent 2P selection (#7), HUD counters/status (#8), twelve-route outcome matrix and source win timing (#9) | Integrated desktop flow (#21), broader independent outcome playback | Local high scores; source/port images and selection animation phases differ |
 | Smooth display and phone experience | Rendered input delivery/cancellation (#15) | Safe areas, lifecycle, schedule invariance, packaging and desktop acceptance (#16–#21) | No Mac/Xcode; native signing/install and real-iPhone performance remain unverified (#20, #22) |
 
@@ -33,7 +33,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 
 | Ticket | Status and remaining evidence |
 |---|---|
-| [#2 Deaths](https://github.com/Kurak0oo/bomb-it-1/issues/2) | Partial: all four source-bytecode death fixtures and separate eye/body compositing. Timing traces agree; 28/36 reference images still differ. |
+| [#2 Deaths](https://github.com/Kurak0oo/bomb-it-1/issues/2) | Integrated: source alpha/shadow fixes, all four creation/removal boundaries and per-sample component/compositor attribution. Actual source/port comparison still differs in 32/40 images (35,236 pixels), separately from 360 exact source-input controls. No tolerance or tick changes. See [death evidence](issue-02.md). |
 | [#3 Actor feedback](https://github.com/Kurak0oo/bomb-it-1/issues/3) | Integrated: required placement/depth/timing/visibility fixtures pass; 259 independent observations agree. All 56 exact pixel differences remain unwaived. See [actor evidence](issue-03.md). |
 | [#4 Ordinary effects](https://github.com/Kurak0oo/bomb-it-1/issues/4) | Pending expanded source captures and boundary comparison. |
 | [#5 Special effects](https://github.com/Kurak0oo/bomb-it-1/issues/5) | Partial: impact-tick rocket smoke restored and rendered regression passes. Other effect comparisons remain. |
@@ -44,19 +44,23 @@ are separate claims. Passing a port regression does not certify the entire area.
 | [#10 Audio](https://github.com/Kurak0oo/bomb-it-1/issues/10) | Pending independent cue/ordering comparison. Existing recovered samples remain. |
 | [#11 Core traces](https://github.com/Kurak0oo/bomb-it-1/issues/11) | Integrated: original frame-2 callback, ten scenarios / 252 ticks / 20 fields, strict malformed/perturbation checks. 69 differences remain explicit; CORE-02/03 have separate correction tickets. See [core evidence](issue-11.md). |
 | [#12 Endpoints](https://github.com/Kurak0oo/bomb-it-1/issues/12) | Integrated: 15 independent scenarios / 480 ticks / 26 fields, strict validation and per-scenario first divergences. 309 differences remain as MOTION-01–04; no speculative gameplay changes. See [motion evidence](issue-12.md). |
-| [#13 Interactions](https://github.com/Kurak0oo/bomb-it-1/issues/13) | Pending mixed weapons, shields, surviving lives and ownership reference traces. |
+| [#13 Interactions](https://github.com/Kurak0oo/bomb-it-1/issues/13) | Integrated: 17 scenarios / 784 ticks / 43 fields with original parent accounting; 134 differences retained. Nested controls reproduce prior core/motion findings. Corrections #30–#33 are separately identified; residual pulse energy remains uncertain. See [interaction evidence](issue-13.md). |
 | [#14 Random replay](https://github.com/Kurak0oo/bomb-it-1/issues/14) | Pending strict bound/order recording and fail-closed replay. Current fallback is not a parity oracle. |
 | [#15 Input delivery](https://github.com/Kurak0oo/bomb-it-1/issues/15) | Implemented; rendered event tests cover brief keyboard/touch taps, ordered release/repress, held ordinary bombs, special release gating, simultaneous fingers, unrelated IDs, cancellation, hiding, disabling, pause and scene changes. Review's stale keyboard-direction finding is fixed and regression-tested. |
 | [#16 Safe areas](https://github.com/Kurak0oo/bomb-it-1/issues/16) | Integrated: complete 550×400 content, safe side gutters or bottom dock, window/stretch conversion and transformed input. Nine desktop synthetic layouts and before-draw/resize checks pass; actual phone insets/comfort remain #22. See [layout evidence](issue-16.md). |
-| [#17 Lifecycle](https://github.com/Kurak0oo/bomb-it-1/issues/17) | Partial: application background notification now pauses and clears fire; foreground waits for intentional resume. Native audio/focus/input matrix remains. |
+| [#17 Lifecycle](https://github.com/Kurak0oo/bomb-it-1/issues/17) | Integrated: overlapping focus/background suspension, deliberate match/outcome resume, cleared stale input, stable interpolation and persisted mute preference. Eleven rendered phases pass; Dummy-driver/synthetic desktop evidence does not certify native iPhone behavior. See [interruption evidence](issue-17.md). |
 | [#18 Smoothness](https://github.com/Kurak0oo/bomb-it-1/issues/18) | Pending measured 35/60/120 Hz frame pacing, latency and sustained runs. Existing interpolation remains. |
 | [#19 Windows release](https://github.com/Kurak0oo/bomb-it-1/issues/19) | Pending standalone export and installation evidence. |
 | [#20 iOS build](https://github.com/Kurak0oo/bomb-it-1/issues/20) | Native build/install externally blocked: user has iPhones but no Mac/Xcode access. Export configuration remains pending; signing and model/refresh inventory are unconfirmed. |
 | [#21 Desktop acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/21) | Pending prerequisite fidelity and packaging work. |
 | [#22 iPhone acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/22) | Blocked by native build plus remaining phone work. Simulator/Windows results cannot satisfy it. |
 | [#23 Release evidence](https://github.com/Kurak0oo/bomb-it-1/issues/23) | Pending both integrated release gates; no completion claim. |
-| [#28 Move/special ordering](https://github.com/Kurak0oo/bomb-it-1/issues/28) | Pending source-backed CORE-03 correction, separately from visual work. |
+| [#28 Move/special ordering](https://github.com/Kurak0oo/bomb-it-1/issues/28) | Integrated: direction/movement precedes fire; all 28 independent cases / 4,704 fields match. Existing core differences fall from 69 to 37 (CORE-01/02); motion and interaction rows remain unchanged. See [ordering evidence](issue-28.md). |
 | [#29 Bomb expiry/refire](https://github.com/Kurak0oo/bomb-it-1/issues/29) | Pending source-backed CORE-02 correction after pushed-bomb and interaction evidence. |
+| [#30 Push lifecycle](https://github.com/Kurak0oo/bomb-it-1/issues/30) | Pending source-backed activation and completed-cell visibility correction. |
+| [#31 Grenade endpoint](https://github.com/Kurak0oo/bomb-it-1/issues/31) | Pending source final-frame boundary correction, including refund/score/damage consequences. |
+| [#32 Hit/refund accounting](https://github.com/Kurak0oo/bomb-it-1/issues/32) | Pending shield-hit credit and removed-owner refund correction. |
+| [#33 Special callback order](https://github.com/Kurak0oo/bomb-it-1/issues/33) | Pending gas timer, new ice-cell eligibility and dependent rocket/mine dispatch corrections; balanced cleanup retained. |
 
 ## Evidence for the initial visual/input pass
 

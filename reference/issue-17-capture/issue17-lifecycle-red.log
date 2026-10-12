@@ -1,0 +1,33 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: focus return cannot resume a still-backgrounded app
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/interruption_render_check.gd:12)
+       [1] run (res://tests/interruption_render_check.gd:76)
+ERROR: foreground notification does not dismiss the pause
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/interruption_render_check.gd:12)
+       [1] run (res://tests/interruption_render_check.gd:78)
+ERROR: idle menu audio suspends on focus loss
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/interruption_render_check.gd:12)
+       [1] run (res://tests/interruption_render_check.gd:87)
+ERROR: backgrounding freezes outcome presentation time
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/interruption_render_check.gd:12)
+       [1] run (res://tests/interruption_render_check.gd:105)
+ERROR: return preserves the interrupted outcome
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/interruption_render_check.gd:12)
+       [1] run (res://tests/interruption_render_check.gd:109)
+ERROR: outcome resumes without a background-time backlog
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/interruption_render_check.gd:12)
+       [1] run (res://tests/interruption_render_check.gd:113)

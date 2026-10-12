@@ -1,0 +1,26 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.641,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-red\\import.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-red\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-red\\command_order.log"
+  }
+]
