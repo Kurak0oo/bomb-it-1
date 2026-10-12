@@ -91,3 +91,7 @@ retained; the integration revision and image ID above identify the captured buil
 This checkpoint includes the independently verified AI repair, expiry scheduling,
 push acceptance and HUD loop correction. Full desktop acceptance and remaining
 special-effect work are still pending.
+
+Fresh [CI run 38246634284](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38246634284)
+at `4f27cc5` passes both headless and rendered jobs and reproduces all 97 images
+exactly. Its [job record](integration-screen-review/ordinary-effects/ci.json) is retained.
