@@ -120,7 +120,8 @@ The playable systems are implemented, but **exact equivalence is not established
    actual executable smoke and saved-setting reload. [Integrated desktop
    acceptance](issue-21.md) now retains full checks, 108 exact regression images,
    sustained 60/120-cap observations and the freshly rebuilt executable. Final
-   Standards/Spec review remains pending; no installed iOS package is claimed.
+   [Standards/Spec review](pre-iphone-review.md) is complete with all findings
+   resolved; no installed iOS package is claimed.
 
 ## Validation performed
 
