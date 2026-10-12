@@ -177,6 +177,12 @@ func sync_view() -> void:
 	_sync_specials()
 	_animate_transients()
 
+func present_timeout_loss() -> void:
+	for hero in _hero_sprites.values():
+		if hero.actor.controller == HeroState.Controller.HUMAN:
+			hero.present_timeout_death()
+			_target_sprites[hero.actor.id].visible = false
+
 func advance_presentation() -> void:
 	_presentation_tick += 1
 	for hero in _hero_sprites.values():
