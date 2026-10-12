@@ -19,11 +19,11 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / ".artifacts/core-reference")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--require-parity", action="store_true", help="Fail on observed differences as well as harness errors")
-    parser.add_argument("--profile", choices=["core-v1", "motion-v1", "interaction-v1", "order-v1"], default="core-v1")
+    parser.add_argument("--profile", choices=["core-v1", "motion-v1", "interaction-v1", "order-v1", "ai_order-v1"], default="core-v1")
     parser.add_argument("--nested", action="store_true", help="Execute preserved callbacks inside original Sprite 564 with a real root parent")
     args = parser.parse_args()
     stem = args.profile.removesuffix("-v1")
-    nested = args.nested or stem in ("interaction", "order")
+    nested = args.nested or stem in ("interaction", "order", "ai_order")
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     (output / "rebuilt").mkdir(exist_ok=True)
@@ -53,6 +53,8 @@ def main():
             ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original"), str(ROOT / f"godot/tests/fixtures/{stem}_scenarios.json")], "Captured original"),
             ("import", [godot, "--headless", "--path", str(ROOT / "godot"), "--editor", "--import", "--quit"], None),
             ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{stem}_reference_capture.gd"], "CORE_REFERENCE_CAPTURE_OK")]
+        if stem == "ai_order":
+            commands.insert(1,("controlled_random", ["java", "--class-path", classpath, str(ROOT / "tools/reference/ForceAiDecisions.java"), str(output / "fixture.swf")], "Adapted only RandomNumber"))
         for name, command, marker in commands:
             phase = run_phase(name, command, output, args.timeout, env, marker)
             phases.append(phase)
@@ -68,6 +70,10 @@ def main():
             data[label + "_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
         data["execution_scope"] = "original-sprite-564-with-root-parent" if nested else "controlled-root"
         data["preserved_bytecode"] = json.loads((output / "fixture.swf.bytecode.json").read_text(encoding="utf-8"))
+        if stem == "ai_order":
+            data["original_polling_bytecode"] = data.pop("preserved_bytecode")
+            data["controlled_random"] = json.loads((output / "fixture.swf.random.json").read_text(encoding="utf-8"))
+            data["random_adapter_sha256"] = hashlib.sha256((ROOT / "tools/reference/ForceAiDecisions.java").read_bytes()).hexdigest()
         original.write_text(json.dumps(data, indent=2), encoding="utf-8")
         result = subprocess.run([sys.executable, str(ROOT / "tools/compare_traces.py"), str(original),
                                  str(output / "rebuilt/trace.json"), "--output", str(output / "trace-comparison.json")],

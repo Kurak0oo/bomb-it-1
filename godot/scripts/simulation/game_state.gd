@@ -165,7 +165,7 @@ func _tick_hero(hero: HeroState, commands: PlayerCommands) -> void:
 		return
 	# Original human polling turns/starts movement before attempting fire.
 	# Specials reject moving actors; ordinary bombs still use the current cell.
-	if commands.direction != Vector2i.ZERO:
+	if hero.controller == HeroState.Controller.HUMAN and commands.direction != Vector2i.ZERO:
 		_try_move(hero, commands.direction)
 	if commands.bomb_requested or hero.prev_fire:
 		hero.prev_fire = false
@@ -173,6 +173,9 @@ func _tick_hero(hero: HeroState, commands: PlayerCommands) -> void:
 			SpecialRules.place(self, hero)
 		else:
 			_place_bomb(hero, hero.cell)
+	# The original AI branch fires before starting its chosen escape step.
+	if hero.controller == HeroState.Controller.AI and commands.direction != Vector2i.ZERO:
+		_try_move(hero, commands.direction)
 
 
 func _try_move(hero: HeroState, dir: Vector2i) -> void:
