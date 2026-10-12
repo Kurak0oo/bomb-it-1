@@ -1,0 +1,17 @@
+{
+  "scenario": "mid-sequence-gap",
+  "attempt": 1,
+  "message": "Error: Capture skipped a tick: expected 1, received [{\"tick\":0},{\"tick\":2}]",
+  "batch": {
+    "expected_tick": 1,
+    "observed": [
+      {
+        "tick": 0
+      },
+      {
+        "tick": 2
+      }
+    ],
+    "attempt": 1
+  }
+}
