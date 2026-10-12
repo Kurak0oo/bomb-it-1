@@ -6,14 +6,14 @@
     {
       "name": "qa-score-1p.png",
       "passed": false,
-      "changed_pixels": 134965,
-      "changed_fraction": 0.6134772727272727
+      "changed_pixels": 141820,
+      "changed_fraction": 0.6446363636363637
     },
     {
       "name": "qa-score-2p.png",
       "passed": false,
-      "changed_pixels": 135910,
-      "changed_fraction": 0.6177727272727273
+      "changed_pixels": 147970,
+      "changed_fraction": 0.6725909090909091
     }
   ]
 }

@@ -145,3 +145,10 @@ their backplates; Godot uses source textures for normal, hover and pressed state
 [Recursive final-logo inventory](issue-09-capture/final-logo-inventory.json) records
 the static source subtree, including its sole release script. Platform replay/menu
 buttons retain their existing added presentation.
+
+[Source up/over/down extraction](issue-09-capture/button-source-states.png) and
+[rendered button feedback](issue-09-capture/button-feedback.png) were visually
+inspected. Final button follow-up passed campaign and all nine rendered phases
+(`issue09-feedback-final`, capture `6dbf518d05df`), including the static-logo check.
+The updated exact score comparison still fails without tolerance; refreshed images
+and difference masks are retained separately.

@@ -35,6 +35,7 @@ func button_feedback(main: Node2D, point: Vector2, rectangle: Rect2i, name: Stri
 	await preload("res://tests/qa_capture.gd").capture(self,"result-button-%s-down" % name)
 	check(up.get_data() != over.get_data(),"source result button hover changes artwork: "+name)
 	check(over.get_data() != down.get_data(),"source result button press restores source down artwork: "+name)
+	await pointer_state(main,Vector2(540,5))
 	var release := InputEventMouseButton.new()
 	release.position = main.position + Vector2(540,5)
 	release.button_index = MOUSE_BUTTON_LEFT
