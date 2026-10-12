@@ -7,6 +7,12 @@ var music: AudioStreamPlayer
 var voices: Array[AudioStreamPlayer] = []
 var streams: Dictionary = {}
 var voice_index := 0
+# Platform suspension is independent of the player's saved mute preference.
+var suspended := false:
+	set(value):
+		suspended = value
+		if music != null:music.stream_paused = value
+		for voice in voices:voice.stream_paused = value
 var muted := false:
 	set(value):
 		muted = value
@@ -29,11 +35,11 @@ func _ready() -> void:
 
 func play_music(file: String, loop: bool = true) -> void:
 	music.stop()
-	music.stream_paused = false
 	var stream: AudioStreamMP3 = load(PATH + file)
 	stream.loop = loop
 	music.stream = stream
 	music.play()
+	music.stream_paused = suspended
 
 func events(names: Array[String]) -> void:
 	var played: Dictionary = {}
@@ -44,6 +50,7 @@ func events(names: Array[String]) -> void:
 			voice_index += 1
 			voice.stream = streams[event]
 			voice.play()
+			voice.stream_paused = suspended
 
 func _exit_tree() -> void:
 	music.stop()
