@@ -1,0 +1,20 @@
+[
+  {
+    "scenario": "startup-double",
+    "attempt": 1,
+    "artifact": "startup-double-rejected-attempt-1.json",
+    "retry": true
+  },
+  {
+    "scenario": "startup-double",
+    "attempt": 2,
+    "artifact": "startup-double-rejected-attempt-2.json",
+    "retry": true
+  },
+  {
+    "scenario": "startup-double",
+    "attempt": 3,
+    "artifact": "startup-double-rejected-attempt-3.json",
+    "retry": false
+  }
+]

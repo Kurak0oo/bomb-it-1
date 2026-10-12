@@ -1,0 +1,17 @@
+{
+  "scenario": "startup-double",
+  "attempt": 2,
+  "message": "Error: Capture skipped a tick: expected 0, received [{\"tick\":0},{\"tick\":1}]",
+  "batch": {
+    "expected_tick": 0,
+    "observed": [
+      {
+        "tick": 0
+      },
+      {
+        "tick": 1
+      }
+    ],
+    "attempt": 2
+  }
+}

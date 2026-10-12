@@ -9,6 +9,46 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_contact_profiles_preserve_expiry_and_moving_freeze_boundaries(self):
+        for evidence in ("issue-33-evidence", "issue-33-evidence/icewalk"):
+            run, report = self.compare_real(evidence_name=evidence)
+            self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+        def expire(original, rebuilt):
+            rebuilt["scenarios"]["gas_contact"][599]["hero3Slow"] = 1
+        run, report = self.compare_real(expire, "issue-33-evidence")
+        self.assertEqual(run.returncode, 1)
+        self.assertEqual(report["first_divergence"], {"scenario":"gas_contact", "tick":599, "field":"hero3Slow", "original":0, "rebuilt":1})
+        def last_child(original, rebuilt):
+            rebuilt["scenarios"]["ice_stationary_8"][50]["hero1Stop"] = 298
+        run, report = self.compare_real(last_child, "issue-33-evidence")
+        self.assertEqual(run.returncode, 1)
+        self.assertEqual(report["first_divergence"]["tick"], 50)
+        def resume(original, rebuilt):
+            rebuilt["scenarios"]["ice_depart_during_freeze"][308]["probeMoving"] = False
+        run, report = self.compare_real(resume, "issue-33-evidence/icewalk")
+        self.assertEqual(run.returncode, 1)
+        self.assertEqual(report["first_divergence"]["field"], "probeMoving")
+
+    def test_contact_missing_fields_and_shifted_birth_tick_are_rejected(self):
+        def missing(original, rebuilt):
+            for capture in (original, rebuilt):
+                capture["scenarios"]["ice_stationary_6"][4].pop("hero1Stop")
+        run, report = self.compare_real(missing, "issue-33-evidence")
+        self.assertEqual(run.returncode, 2)
+        def shift(original, rebuilt):
+            rebuilt["scenarios"]["ice_stationary_6"][4]["tick"] = 5
+        run, report = self.compare_real(shift, "issue-33-evidence")
+        self.assertEqual(run.returncode, 2)
+        self.assertIn("out-of-order tick 4",run.stderr)
+
+    def test_both_dispatch_orders_keep_cleanup_uncertainty_visible(self):
+        run, report = self.compare_real(evidence_name="issue-33-evidence/dispatch")
+        self.assertEqual(run.returncode, 1)
+        self.assertEqual(len(report["differences"]), 28)
+        for name in ("rocket_mine_wall", "rocket_mine_reversed"):
+            self.assertEqual(report["scenario_first_divergences"][name]["tick"],18)
+            self.assertEqual(report["scenario_first_divergences"][name]["field"],"energies")
+
     def test_accounting_capture_reports_credit_and_removed_owner_refund(self):
         run, report = self.compare_real(evidence_name="issue-32-evidence")
         self.assertEqual(run.returncode, 0, run.stdout + run.stderr)

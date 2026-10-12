@@ -1,0 +1,16 @@
+{
+  "original_repeat_identical": true,
+  "cases": 14,
+  "ticks": 2675,
+  "fields": 48,
+  "previous_source_rows_identical": {
+    "gas_contact": 32,
+    "rocket_bomb": 32,
+    "bomb_gas": 32,
+    "fire_bomb": 64,
+    "fire_owner": 64,
+    "fire_ice": 64,
+    "mine_damage": 32,
+    "rocket_mine_original": 18
+  }
+}

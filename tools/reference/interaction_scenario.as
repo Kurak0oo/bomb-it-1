@@ -51,6 +51,13 @@ for (var i=0;i<fixture.weapons.length;i++) {
     if (!putSpecial(hero)) trace("CORE_ERROR|Fixture special rejected");
     hero.x=oldX;hero.y=oldY;hero.moving=true;
 }
+// Optional human input probes retain original polling and movement callbacks.
+var directionInput=-1;
+p1={key0:37,key1:38,key2:39,key3:40,fireKey:32};
+if (fixture.controlled_actor != undefined) {
+    brickArea["hero"+fixture.controlled_actor].moving=false;
+    Key={isDown:function(code){return directionInput>=0 && code==p1["key"+directionInput];},getCode:function(){return 32;}};
+}
 var tick=-1;
 this.onEnterFrame=function() {
     tick++;
@@ -58,6 +65,7 @@ this.onEnterFrame=function() {
     for (var i=0;i<fixture.events.length;i++) {
         if (fixture.events[i].tick==tick) installBomb(fixture.events[i]);
     }
+    directionInput=fixture.commands[tick][0];
     originalPoll.call(this);
     var result="CORE_SAMPLE|"+tick;
     for (var n=1;n<=4;n++) {
@@ -91,6 +99,11 @@ this.onEnterFrame=function() {
             if (mc._name.indexOf("iceArea")==0) counts.iceArea++;
         }
     }
+    var probe="";
+    if(configuration.profile == "contact-v1" || configuration.profile == "icewalk-v1") {
+        var target=brickArea["hero"+fixture.probe_actor];
+        probe="|"+target.x+"|"+target.y+"|"+Math.round(target._x*20)+"|"+Math.round(target._y*20)+"|"+target.moving;
+    }
     trace(result+"|"+energies+"|"+owners+"|"+bombs+"|"+rockets
-        +"|"+counts.rocket+"|"+counts.mine+"|"+counts.gasBomb+"|"+counts.grenade+"|"+counts.fireArea+"|"+counts.iceArea);
+        +"|"+counts.rocket+"|"+counts.mine+"|"+counts.gasBomb+"|"+counts.grenade+"|"+counts.fireArea+"|"+counts.iceArea+probe);
 };

@@ -1,0 +1,8 @@
+[
+  {
+    "scenario": "mid-sequence-gap",
+    "attempt": 1,
+    "artifact": "mid-sequence-gap-rejected-attempt-1.json",
+    "retry": false
+  }
+]

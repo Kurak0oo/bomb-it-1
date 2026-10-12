@@ -1,0 +1,18 @@
+{
+  "profile": "collector-fault-v1",
+  "fps": 35,
+  "tick_origin": "synthetic-harness-fault",
+  "fields": {
+    "tick": "int"
+  },
+  "scenarios": [
+    {
+      "name": "startup-double",
+      "commands": [
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

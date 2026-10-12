@@ -3,10 +3,26 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { chromium } from 'playwright';
+
 
 const here = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
+// Replay the exact batch diagnostic used by the live collector. Only the known
+// initial two-frame dispatch may restart; later gaps never become retries.
+function auditBatch({expected_tick: tick, observed, attempt}) {
+  if (!Number.isInteger(tick) || tick < 0 || !Number.isInteger(attempt) || attempt < 1 || attempt > 3 || !Array.isArray(observed))
+    return {decision:'reject'};
+  const contiguous = observed.every((row,index) => row && row.tick === index);
+  if (contiguous && observed.length === tick+1) return {decision:'accept'};
+  if (tick === 0 && contiguous && observed.length === 2 && attempt < 3) return {decision:'retry-startup'};
+  return {decision:'reject'};
+}
+if (args[0] === '--audit-sample-batch') {
+  const report = auditBatch(JSON.parse(await readFile(resolve(args[1]),'utf8')));
+  console.log(JSON.stringify(report));
+  process.exit(report.decision === 'accept' ? 0 : report.decision === 'retry-startup' ? 3 : 2);
+}
+const { chromium } = await import('playwright');
 if (args.length !== 2 && args.length !== 3) throw new Error('Usage: node capture_core.mjs <fixture.swf> <output-directory> [configuration.json]');
 const swf = await readFile(resolve(args[0]));
 const output = resolve(args[1]);
@@ -71,8 +87,11 @@ try {
   browser = await chromium.launch({ headless: true });
   const address = `http://127.0.0.1:${server.address().port}`;
   const all = {};
+  const rejected = [];
   for (const fixture of config.scenarios) {
     const scenario=fixture.name;
+    for (let attempt=1; attempt<=3; attempt++) {
+    let accepted=false;
     const page = await browser.newPage({ viewport: { width: 550, height: 400 }, deviceScaleFactor: 1 });
     const messages = [];
     page.on('console', message => messages.push(message.text()));
@@ -95,20 +114,37 @@ try {
         const error = await page.evaluate(() => window.captureError);
         if (error) throw new Error(error);
         const observed = await page.evaluate(() => window.samples);
-        if (observed.length !== tick + 1 || observed[tick].tick !== tick)
-          throw new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
+        const diagnostic = {expected_tick:tick, observed, attempt};
+        const decision = auditBatch(diagnostic).decision;
+        if (decision !== 'accept') {
+          const error = new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
+          error.retryStartup = decision === 'retry-startup';
+          error.diagnostic = diagnostic;
+          throw error;
+        }
         rows.push(observed[tick]);
         if (tick < fixture.commands.length-1) await page.evaluate(() => window.player.ruffle().resume());
       }
       all[scenario] = rows;
+      accepted=true;
+    } catch (error) {
+      const artifact = `${scenario}-rejected-attempt-${attempt}.json`;
+      await writeFile(resolve(output, artifact), JSON.stringify({scenario,attempt,message:String(error),batch:error.diagnostic ?? null},null,2));
+      rejected.push({scenario,attempt,artifact,retry:!!error.retryStartup});
+      await writeFile(resolve(output,'rejected-attempts.json'),JSON.stringify(rejected,null,2));
+      if (!error.retryStartup) throw error;
     } finally {
-      await writeFile(resolve(output, `${scenario}.log`), messages.join('\n'));
+      await writeFile(resolve(output, `${scenario}-attempt-${attempt}.log`), messages.join('\n'));
+      if (accepted) await writeFile(resolve(output, `${scenario}.log`), messages.join('\n'));
       await page.close();
+    }
+    if (accepted) break;
     }
   }
   const ruffle = JSON.parse(await readFile(resolve(here, 'node_modules/@ruffle-rs/ruffle/package.json')));
   const lock = JSON.parse(await readFile(resolve(here, 'package-lock.json')));
   await writeFile(resolve(output, 'trace.json'), JSON.stringify({
+    rejected_startup_attempts: rejected,
     source: 'original-swf-bytecode', runtime: `Ruffle ${ruffle.version}`, browser: browser.version(),
     fixture_sha256: createHash('sha256').update(swf).digest('hex'),
     ruffle_integrity: lock.packages['node_modules/@ruffle-rs/ruffle'].integrity,

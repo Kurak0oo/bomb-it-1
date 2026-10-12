@@ -1,0 +1,1 @@
+stop();var n=-1;this.onEnterFrame=function(){trace("CORE_SAMPLE|0");trace("CORE_SAMPLE|1");};

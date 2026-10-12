@@ -123,16 +123,10 @@ static func _tick_ray(state: GameState, weapon: SpecialState) -> void:
 				cell.energy_owner = weapon.owner_id
 			else:
 				cell.kind = GameState.Kind.BRICK
+				state.register_callback(IceContactState.new(at))
 		else:
 			weapon.age = 12
 			weapon.growth_stopped = true
-	if weapon.kind == "ice":
-		for i in weapon.painted.size():
-			if weapon.age - weapon.born[i] >= 40:
-				continue
-			for hero in state.heroes:
-				if hero.alive and hero.pixel_position().distance_squared_to(Vector2(weapon.painted[i]) * 30) < 100:
-					hero.stop_ticks = 300
 	if weapon.age > 48:
 		for at in weapon.painted:
 			var cell := state.cell_at(at)

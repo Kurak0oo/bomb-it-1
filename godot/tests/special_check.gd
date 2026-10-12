@@ -43,7 +43,7 @@ func _init() -> void:
 	state.tick([held])
 	state.heroes[1].cell = hero.cell
 	state.tick([])
-	check(state.heroes[1].slow_ticks == 600, "gas applies original slow duration")
+	check(state.heroes[1].slow_ticks == 599, "gas sets 600 before the same parent tick decrements it")
 
 	for kind in ["ice", "fire"]:
 		state = fresh()
