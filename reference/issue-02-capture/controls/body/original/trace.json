@@ -1,0 +1,2424 @@
+{
+  "source": "original-swf-bytecode",
+  "runtime": "Ruffle 0.7.1",
+  "browser": "156.0.8078.4",
+  "fixture_sha256": "b9010c4982b3968614c157956d9c8cef3b2c1d5cea23c9e87c85090ade1834c9",
+  "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
+  "fps": 35,
+  "tick_origin": "first onEnterFrame observation after fixture creation",
+  "caveat": "Ruffle executes the original bytecode; this is not Adobe Flash Player certification.",
+  "scenarios": {
+    "death": [
+      {
+        "tick": 0,
+        "deathFrame": 2,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 1,
+        "deathFrame": 3,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 2,
+        "deathFrame": 4,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 3,
+        "deathFrame": 5,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 4,
+        "deathFrame": 6,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 5,
+        "deathFrame": 7,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 6,
+        "deathFrame": 8,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 7,
+        "deathFrame": 9,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 8,
+        "deathFrame": 10,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 9,
+        "deathFrame": 11,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 10,
+        "deathFrame": 12,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 11,
+        "deathFrame": 13,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 12,
+        "deathFrame": 14,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 13,
+        "deathFrame": 15,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 14,
+        "deathFrame": 16,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 15,
+        "deathFrame": 17,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 16,
+        "deathFrame": 18,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 17,
+        "deathFrame": 19,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 18,
+        "deathFrame": 20,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 19,
+        "deathFrame": 21,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 20,
+        "deathFrame": 22,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 21,
+        "deathFrame": 23,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 22,
+        "deathFrame": 24,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 23,
+        "deathFrame": 25,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 24,
+        "deathFrame": 26,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 25,
+        "deathFrame": 27,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 26,
+        "deathFrame": 28,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 27,
+        "deathFrame": 29,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 28,
+        "deathFrame": 30,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 29,
+        "deathFrame": 31,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 30,
+        "deathFrame": 32,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 31,
+        "deathFrame": 33,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 32,
+        "deathFrame": 34,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 33,
+        "deathFrame": 35,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 34,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 35,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 36,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 37,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 38,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 39,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      }
+    ],
+    "death2": [
+      {
+        "tick": 0,
+        "deathFrame": 2,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 1,
+        "deathFrame": 3,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 2,
+        "deathFrame": 4,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 3,
+        "deathFrame": 5,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 4,
+        "deathFrame": 6,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 5,
+        "deathFrame": 7,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 6,
+        "deathFrame": 8,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 7,
+        "deathFrame": 9,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 8,
+        "deathFrame": 10,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 9,
+        "deathFrame": 11,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 10,
+        "deathFrame": 12,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 11,
+        "deathFrame": 13,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 12,
+        "deathFrame": 14,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 13,
+        "deathFrame": 15,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 14,
+        "deathFrame": 16,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 15,
+        "deathFrame": 17,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 16,
+        "deathFrame": 18,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 17,
+        "deathFrame": 19,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 18,
+        "deathFrame": 20,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 19,
+        "deathFrame": 21,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 20,
+        "deathFrame": 22,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 21,
+        "deathFrame": 23,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 22,
+        "deathFrame": 24,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 23,
+        "deathFrame": 25,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 24,
+        "deathFrame": 26,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 25,
+        "deathFrame": 27,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 26,
+        "deathFrame": 28,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 27,
+        "deathFrame": 29,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 28,
+        "deathFrame": 30,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 29,
+        "deathFrame": 31,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 30,
+        "deathFrame": 32,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 31,
+        "deathFrame": 33,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 32,
+        "deathFrame": 34,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 33,
+        "deathFrame": 35,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 34,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 35,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 36,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 37,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 38,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 39,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      }
+    ],
+    "death3": [
+      {
+        "tick": 0,
+        "deathFrame": 2,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 1,
+        "deathFrame": 3,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 2,
+        "deathFrame": 4,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 3,
+        "deathFrame": 5,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 4,
+        "deathFrame": 6,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 5,
+        "deathFrame": 7,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 6,
+        "deathFrame": 8,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 7,
+        "deathFrame": 9,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 8,
+        "deathFrame": 10,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 9,
+        "deathFrame": 11,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 10,
+        "deathFrame": 12,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 11,
+        "deathFrame": 13,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 12,
+        "deathFrame": 14,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 13,
+        "deathFrame": 15,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 14,
+        "deathFrame": 16,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 15,
+        "deathFrame": 17,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 16,
+        "deathFrame": 18,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 17,
+        "deathFrame": 19,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 18,
+        "deathFrame": 20,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 19,
+        "deathFrame": 21,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 20,
+        "deathFrame": 22,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 21,
+        "deathFrame": 23,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 22,
+        "deathFrame": 24,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 23,
+        "deathFrame": 25,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 24,
+        "deathFrame": 26,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 25,
+        "deathFrame": 27,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 26,
+        "deathFrame": 28,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 27,
+        "deathFrame": 29,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 28,
+        "deathFrame": 30,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 29,
+        "deathFrame": 31,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 30,
+        "deathFrame": 32,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 31,
+        "deathFrame": 33,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 32,
+        "deathFrame": 34,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 33,
+        "deathFrame": 35,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 34,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 35,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 36,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 37,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 38,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 39,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      }
+    ],
+    "death4": [
+      {
+        "tick": 0,
+        "deathFrame": 2,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 1,
+        "deathFrame": 3,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 2,
+        "deathFrame": 4,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 3,
+        "deathFrame": 5,
+        "heroVisible": true,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 4,
+        "deathFrame": 6,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 5,
+        "deathFrame": 7,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 6,
+        "deathFrame": 8,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 7,
+        "deathFrame": 9,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 8,
+        "deathFrame": 10,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 9,
+        "deathFrame": 11,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 10,
+        "deathFrame": 12,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 11,
+        "deathFrame": 13,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 12,
+        "deathFrame": 14,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 13,
+        "deathFrame": 15,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 14,
+        "deathFrame": 16,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 15,
+        "deathFrame": 17,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 16,
+        "deathFrame": 18,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 17,
+        "deathFrame": 19,
+        "heroVisible": false,
+        "silhouetteVisible": true,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 18,
+        "deathFrame": 20,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 19,
+        "deathFrame": 21,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 20,
+        "deathFrame": 22,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 21,
+        "deathFrame": 23,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 22,
+        "deathFrame": 24,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 23,
+        "deathFrame": 25,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 24,
+        "deathFrame": 26,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 25,
+        "deathFrame": 27,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 26,
+        "deathFrame": 28,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 27,
+        "deathFrame": 29,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 28,
+        "deathFrame": 30,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 29,
+        "deathFrame": 31,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 30,
+        "deathFrame": 32,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 31,
+        "deathFrame": 33,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 32,
+        "deathFrame": 34,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 33,
+        "deathFrame": 35,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 34,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 35,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 36,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 37,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 38,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 39,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      }
+    ],
+    "explosion": [
+      {
+        "tick": 0,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 1,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 2,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 3,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 4,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 5,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 6,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 7,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 8,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 9,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 10,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 11,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 12,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 13,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 14,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 15,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 16,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 17,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 18,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 19,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 20,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 21,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 22,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 23,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 24,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 25,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 26,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 27,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 28,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 29,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 30,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 31,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 32,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 33,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 34,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 35,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 36,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 37,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 38,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 39,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      }
+    ],
+    "brick": [
+      {
+        "tick": 0,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 1,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 2,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 3,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 4,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 5,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 6,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 7,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 8,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 9,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 1,
+        "armEnergy": 1,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 10,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 11,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 12,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 13,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 14,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": true
+      },
+      {
+        "tick": 15,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 16,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 17,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 18,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 19,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 20,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 21,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 22,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 23,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 24,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 25,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 26,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 27,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 28,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 29,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 30,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 31,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 32,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 33,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 34,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 35,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 36,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 37,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 38,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      },
+      {
+        "tick": 39,
+        "deathFrame": 0,
+        "heroVisible": false,
+        "silhouetteVisible": false,
+        "centerEnergy": 0,
+        "armEnergy": 0,
+        "brickBlocking": false,
+        "blastVisible": false
+      }
+    ]
+  }
+}

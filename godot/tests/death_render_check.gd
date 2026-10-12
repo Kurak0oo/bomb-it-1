@@ -24,6 +24,23 @@ func run() -> void:
 	var passed := eye.r > 0.74 and eye.r < 0.82 and absf(eye.r - eye.g) < 0.01
 	if not passed:
 		push_error("Death eye must composite over faded silhouette: " + str(eye))
+	# Independent original capture: fully covered black silhouette at frame six
+	# is (205,205,205), and frame seven is (175,175,175), over white.
+	for sample in [[5,205], [6,175]]:
+		actor.death_ticks = sample[0]
+		# New view starts each observation at its literal source frame.
+		hero.free()
+		hero = HeroView.new()
+		hero.actor = actor
+		hero.art = OriginalArt.new()
+		hero.frozen = true
+		root.add_child(hero)
+		await process_frame
+		await RenderingServer.frame_post_draw
+		var value := root.get_texture().get_image().get_pixel(254, 188).r8
+		if value != sample[1]:
+			passed = false
+			push_error("Death silhouette alpha: expected %d, got %d" % [sample[1], value])
 	hero.free()
 	if passed:
 		print("DEATH_RENDER_OK")

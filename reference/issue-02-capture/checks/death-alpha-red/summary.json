@@ -1,0 +1,34 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-red\\import.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-red\\timeline.log"
+  },
+  {
+    "name": "selection_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.937,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-red\\selection_render.log"
+  },
+  {
+    "name": "death_render",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 3.719,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-red\\death_render.log"
+  }
+]

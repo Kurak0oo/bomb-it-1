@@ -1,0 +1,34 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.468,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-before\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.079,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-before\\original.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 18.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-before\\import.log"
+  },
+  {
+    "name": "rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.062,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-before\\rebuilt.log"
+  }
+]

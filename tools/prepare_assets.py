@@ -62,6 +62,14 @@ for sid in [2,232,233,234,235,286,294,297]:
         extension = 'png'
     else:
         shutil.copy2(source, target / '1.svg')
+        if sid == 232:
+            # FFDec's SVG formatter rounds gradient matrices to four places.
+            # Preserve the full original fixed-point matrix from its XFL.
+            gradient = ET.parse(ROOT / 'xfl/Bomb It 1/LIBRARY/Symbol 232.xml').find('.//x:RadialGradient/x:matrix/x:Matrix', ns)
+            gradient_values = [float(gradient.get(k, default)) / 20 for k, default in [('a',1),('b',0),('c',0),('d',1),('tx',0),('ty',0)]]
+            content = (target / '1.svg').read_text()
+            content = re.sub(r'gradientTransform="[^"]+"', 'gradientTransform="matrix(' + ', '.join(map(str, gradient_values)) + ')"', content)
+            (target / '1.svg').write_text(content)
     manifest[str(sid)] = {'offset': [-values[4], -values[5]], 'frames': 1, 'extension': extension}
 
 timelines = {}

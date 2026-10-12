@@ -1,0 +1,42 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-burst-black\\fixture.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-burst-black\\import.log"
+  },
+  {
+    "name": "burst-black-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-burst-black\\burst-black-isolate.log"
+  },
+  {
+    "name": "burst-black-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.828,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-burst-black\\burst-black-original.log"
+  },
+  {
+    "name": "burst-black-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.937,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-burst-black\\burst-black-rebuilt.log"
+  }
+]
