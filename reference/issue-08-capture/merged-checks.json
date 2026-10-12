@@ -1,0 +1,42 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 19.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-merged\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-merged\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-merged\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-merged\\reference_parse.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.141,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-merged\\view.log"
+  }
+]
