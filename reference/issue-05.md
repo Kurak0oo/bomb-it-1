@@ -14,6 +14,8 @@ The grenade depth transition now occurs at age 8, corresponding to source body f
 
 Source `gameover` sets `pausing` and removes the parent game callback without stopping child movie timelines. Outcome presentation now completes fire, ice, pulse/brick bursts and mine/gas timelines, and continues the rocket/grenade nested loops. It does not advance movement/collision callbacks or emit new rocket smoke. Rendered checks verify unchanged game tick, weapon age and pulse energy, then repeat effect creation/outcome/scene teardown over three rounds. Every round returns to the same empty rendered scene.
 
+An additional [original grenade loop control](issue-05-capture/outcome-loop-control/report.json) retains all four directions at creation and after 19 timeline updates: each image repeats exactly when its gameplay callback is absent. Mine's source stop frame 60 is invisible, as is gas's stop frame 101; those outcome boundaries are explicitly checked.
+
 ## Exact pixels remain diagnostic
 
 There are **141 original/current image pairs; 121 still differ exactly**. This ticket does not claim cross-runtime pixel parity. No comparison tolerance, masks, baseline replacement or art darkening is introduced. The table and [all-image counts](issue-05-capture/actual-counts.csv) retain those failures rather than converting them into passes.
@@ -43,3 +45,5 @@ python tools/analyze_special_effects.py <before-capture> <current-capture> --out
 Use the session's exclusive wrapper for native rendered commands. `--require-parity` makes the capture command fail on exact pixel/presence differences; harness errors always fail. [Retained evidence](issue-05-capture/) includes original/current images and traces, previous static images, exact difference reports, red/green logs and Linux/native output. An initial capture fixture failed to select JSON numeric capture ticks; the corrected complete run uses explicit numeric conversion, without changing any simulation tick.
 
 Five new regression images require root review: `special-fire-parent-retired`, `special-ice-parent-retired`, `special-outcome-finished`, `special-rocket-impact` and `special-grenade-depth`. Existing shared baselines and the raw timeline contact sheet are untouched. Expected gameplay-image changes are the final ice-shadow boundary, ray children surviving controller retirement, grenade overlap at body frame 9, and effects completing during result presentation.
+
+Post-merge validation includes integration `5366c86` (#31 endpoint) and the subsequent docs-only `6452f97`. View, timeline, special, tooling, grenade endpoint/accounting and all **14 native rendered phases** pass. All five special-effect PNGs are byte-identical to the pre-merge run. [Post-merge logs](issue-05-capture/checks/post-merge/) retain those results; production was reviewed against the integration tip, with no gameplay or asset changes in this slice.
