@@ -1,0 +1,82 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: schedule invariance: ordinary at 60 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: ordinary at 120 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: ordinary at 60 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: ordinary at 120 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: rocket-grenade at 60 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: rocket-grenade at 120 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: rocket-grenade at 60 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: rocket-grenade at 120 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: mine-gas at 60 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: mine-gas at 120 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: mine-gas at 60 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: mine-gas at 120 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: fire-ice at 60 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: fire-ice at 120 Hz stalls=false
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: fire-ice at 60 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
+ERROR: schedule invariance: fire-ice at 120 Hz stalls=true
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/pacing_check.gd:33)
+       [1] run (res://tests/pacing_check.gd:153)
