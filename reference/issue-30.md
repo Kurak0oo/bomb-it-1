@@ -24,3 +24,5 @@ Reproduce source observation with `python tools/capture_core_reference.py --prof
 Retained limits: original bytecode is executed by Ruffle 0.7.1, not certified Adobe Flash. The fresh full core comparison retains six CORE-01 one-twip observations; full motion retains 72 grenade endpoint fields for #31. This audit changes neither #32/#33 accounting/local timing nor INTERACT-06's explicitly retained balanced cleanup deviation. Shared visual baselines are unchanged.
 
 Latest integration `e7e85e3` was merged cleanly at `d246693`. All ten post-merge tooling/simulation phases pass, including the exact expiry and push gates. The ticket diff contains no production script changes.
+
+Before integration merge, `f9f2538` (#18 performance runner/HUD animation correction) was synchronized at `4c68b3f`. All twelve combined tooling, simulation, expiry, push and pacing phases pass; both runner additions are retained.
