@@ -6,7 +6,9 @@ func _init() -> void:
 
 func run() -> void:
 	var push_profile := OS.get_cmdline_user_args().has("--push-profile")
-	var path := "res://tests/fixtures/push_scenarios.json" if push_profile else "res://tests/fixtures/motion_scenarios.json"
+	var grenade_profile := OS.get_cmdline_user_args().has("--grenade-profile")
+	var stem := "push" if push_profile else "grenade" if grenade_profile else "motion"
+	var path := "res://tests/fixtures/%s_scenarios.json" % stem
 	var config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path))
 	var scenarios := {}
 	for fixture in config.scenarios:
@@ -48,6 +50,9 @@ func run() -> void:
 		actor.shield = 999
 		actor.special_weapon = fixture.weapon
 		actor.special_count = 3 if fixture.weapon == "grenade" else 0
+		if fixture.get("initial_grenade",false):
+			if SpecialRules.place(state,actor):
+				state.specials.back().just_placed = false
 		if fixture.energy != null:
 			SpecialRules.pulse(state, Vector2i(fixture.energy[0],fixture.energy[1]),0)
 		var was_fire := false
@@ -104,7 +109,7 @@ func run() -> void:
 				"grenadeRootYTwips":roundi(grenade.position.y*20) if has_grenade else -1,
 				"specialCount":actor.special_count,"fireReady":actor.fire_ready,
 				"energies":energies,"occupancy":occupancy,"bricks":bricks})
-			if push_profile:
+			if push_profile or grenade_profile:
 				samples[-1]["bombsAvailable"] = actor.bombs_available
 		scenarios[fixture.name] = samples
 	var capture := {"source":"godot-rebuild","runtime":Engine.get_version_info().string,
@@ -119,8 +124,8 @@ func run() -> void:
 			return
 		file.store_string(JSON.stringify(capture,"  "))
 	if OS.get_cmdline_user_args().has("--verify-reference"):
-		var reference: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://tests/fixtures/push_original.json"))
-		if not push_profile or reference.configuration_sha256 != capture.configuration_sha256 or reference.source != "original-swf-bytecode":
+		var reference: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://tests/fixtures/%s_original.json" % stem))
+		if stem == "motion" or reference.configuration_sha256 != capture.configuration_sha256 or reference.source != "original-swf-bytecode":
 			push_error("Incompatible independent push reference")
 			quit(1)
 			return

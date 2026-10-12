@@ -12,7 +12,7 @@ func _init() -> void:
 	held.bomb_requested = true
 	state.tick([held])
 	check(state.specials.size() == 1 and hero.special_count == 1, "grenade consumes charge")
-	for i in 18:
+	for i in 17:
 		state.tick([held])
 	check(state.cell_at(Vector2i(5,3)).energy == 0, "grenade remains airborne before frame 19")
 	state.tick([held])
