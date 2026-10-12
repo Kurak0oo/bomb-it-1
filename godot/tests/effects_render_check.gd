@@ -85,13 +85,27 @@ func run() -> void:
 		hero.visible = false
 	await process_frame
 	await RenderingServer.frame_post_draw
-	# Literal original-runtime interior pixel at flame1 tick16, retained capture.
+	# Compare the gameplay render to an isolated source-alpha render on this
+	# backend. Source flame1 tick16 stores alpha 48/256 (retained original trace).
+	# Windows and llvmpipe differ by one red quantum for the same texture/alpha;
+	# strict original-image comparisons remain in capture_effects.py.
 	var faded := root.get_texture().get_image().get_pixel(247,187)
-	if [faded.r8,faded.g8,faded.b8] != [252,219,234]:
-		passed = false
-		push_error("Source flame fade pixel must be (252,219,234): " + str(faded))
 	await preload("res://tests/qa_capture.gd").capture(self,"ordinary-flame-fade")
 	view.free()
+	var source_control := Sprite2D.new()
+	source_control.centered = false
+	source_control.texture = load("res://art/original/273/1.png")
+	source_control.position = Vector2(240,180)
+	source_control.modulate.a = 48.0/256.0
+	root.add_child(source_control)
+	await process_frame
+	await RenderingServer.frame_post_draw
+	var expected := root.get_texture().get_image().get_pixel(247,187)
+	print("EFFECTS_RENDER_PIXELS pickup=%s flame=%s source_alpha_control=%s" % [life_fade,faded,expected])
+	if faded != expected:
+		passed = false
+		push_error("Flame must render with source alpha 48/256: actual=%s control=%s" % [faded,expected])
+	source_control.free()
 	if passed:
 		print("EFFECTS_RENDER_OK")
 	quit(0 if passed else 1)
