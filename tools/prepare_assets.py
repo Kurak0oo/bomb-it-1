@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'godot/art/original'
 OUT.mkdir(parents=True, exist_ok=True)
 bounds = json.loads((ROOT / 'reference/sprite-bounds.json').read_text())
-ids = [11,20,23,24,33,42,45,46,55,64,67,68,77,86,89,90,195,231,236,237,248,273,279,293,304,305,306,307,308,309,310,312,315,317,319,325,371]
+ids = [11,20,23,24,33,42,45,46,55,64,67,68,77,86,89,90,195,200,209,231,236,237,248,273,279,293,304,305,306,307,308,309,310,312,315,317,319,325,371]
 manifest = {}
 for sid in ids:
     source = next(p for p in (ROOT / 'extracted/all/sprites').iterdir() if int(p.name.split('_')[1]) == sid)
@@ -65,7 +65,7 @@ for sid in [2,232,233,234,235,286,294,297]:
     manifest[str(sid)] = {'offset': [-values[4], -values[5]], 'frames': 1, 'extension': extension}
 
 timelines = {}
-for sid in [237,299,305,313,326]:
+for sid in [210,237,299,305,313,326]:
     doc = ET.parse(ROOT / f'xfl/Bomb It 1/LIBRARY/Symbol {sid}.xml')
     tracks = []
     length = 0

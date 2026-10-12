@@ -1,0 +1,1844 @@
+{
+  "source": "original-swf-bytecode",
+  "runtime": "Ruffle 0.7.1",
+  "browser": "156.0.8078.4",
+  "fixture_sha256": "8fb916012c751d200aa1d8605ecc2c1b1d58db055396ea7484fb0f9b84658108",
+  "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
+  "fps": 35,
+  "tick_origin": "first onEnterFrame observation after fixture creation",
+  "caveat": "Original hurtHero bytecode and original clip timelines; pointer lifetime callback copied from source setup. Not Adobe Flash Player certification.",
+  "scenarios": {
+    "pointer": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -886,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -883,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -879,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -872,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -866,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -861,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -855,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -851,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -847,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -843,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -840,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -837,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -835,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -833,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -832,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 18,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -832,
+        "life": 0
+      },
+      {
+        "tick": 19,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -833,
+        "life": 0
+      },
+      {
+        "tick": 20,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -834,
+        "life": 0
+      },
+      {
+        "tick": 21,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -836,
+        "life": 0
+      },
+      {
+        "tick": 22,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -839,
+        "life": 0
+      },
+      {
+        "tick": 23,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -841,
+        "life": 0
+      },
+      {
+        "tick": 24,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -845,
+        "life": 0
+      },
+      {
+        "tick": 25,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -848,
+        "life": 0
+      },
+      {
+        "tick": 26,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -852,
+        "life": 0
+      },
+      {
+        "tick": 27,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -857,
+        "life": 0
+      },
+      {
+        "tick": 28,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -862,
+        "life": 0
+      },
+      {
+        "tick": 29,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -867,
+        "life": 0
+      },
+      {
+        "tick": 30,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -873,
+        "life": 0
+      },
+      {
+        "tick": 31,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -879,
+        "life": 0
+      },
+      {
+        "tick": 32,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -885,
+        "life": 0
+      },
+      {
+        "tick": 33,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -891,
+        "life": 0
+      },
+      {
+        "tick": 34,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -896,
+        "life": 0
+      },
+      {
+        "tick": 35,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -901,
+        "life": 0
+      },
+      {
+        "tick": 36,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -906,
+        "life": 0
+      },
+      {
+        "tick": 37,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -910,
+        "life": 0
+      },
+      {
+        "tick": 38,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -913,
+        "life": 0
+      },
+      {
+        "tick": 39,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -917,
+        "life": 0
+      },
+      {
+        "tick": 40,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -919,
+        "life": 0
+      },
+      {
+        "tick": 41,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -922,
+        "life": 0
+      },
+      {
+        "tick": 42,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -924,
+        "life": 0
+      },
+      {
+        "tick": 43,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -925,
+        "life": 0
+      },
+      {
+        "tick": 44,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -926,
+        "life": 0
+      },
+      {
+        "tick": 45,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -927,
+        "life": 0
+      },
+      {
+        "tick": 46,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -927,
+        "life": 0
+      },
+      {
+        "tick": 47,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -927,
+        "life": 0
+      },
+      {
+        "tick": 48,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -926,
+        "life": 0
+      },
+      {
+        "tick": 49,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -925,
+        "life": 0
+      },
+      {
+        "tick": 50,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -924,
+        "life": 0
+      },
+      {
+        "tick": 51,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -922,
+        "life": 0
+      },
+      {
+        "tick": 52,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -919,
+        "life": 0
+      },
+      {
+        "tick": 53,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -916,
+        "life": 0
+      },
+      {
+        "tick": 54,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -913,
+        "life": 0
+      },
+      {
+        "tick": 55,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -910,
+        "life": 0
+      },
+      {
+        "tick": 56,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -905,
+        "life": 0
+      },
+      {
+        "tick": 57,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -901,
+        "life": 0
+      },
+      {
+        "tick": 58,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -896,
+        "life": 0
+      },
+      {
+        "tick": 59,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -890,
+        "life": 0
+      },
+      {
+        "tick": 60,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -886,
+        "life": 0
+      },
+      {
+        "tick": 61,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -883,
+        "life": 0
+      },
+      {
+        "tick": 62,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -879,
+        "life": 0
+      },
+      {
+        "tick": 63,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -872,
+        "life": 0
+      },
+      {
+        "tick": 64,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -866,
+        "life": 0
+      },
+      {
+        "tick": 65,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -861,
+        "life": 0
+      },
+      {
+        "tick": 66,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -855,
+        "life": 0
+      },
+      {
+        "tick": 67,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -851,
+        "life": 0
+      },
+      {
+        "tick": 68,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -847,
+        "life": 0
+      },
+      {
+        "tick": 69,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -843,
+        "life": 0
+      },
+      {
+        "tick": 70,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -840,
+        "life": 0
+      },
+      {
+        "tick": 71,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -837,
+        "life": 0
+      },
+      {
+        "tick": 72,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -835,
+        "life": 0
+      },
+      {
+        "tick": 73,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -833,
+        "life": 0
+      },
+      {
+        "tick": 74,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -832,
+        "life": 0
+      },
+      {
+        "tick": 75,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 76,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 77,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 78,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -832,
+        "life": 0
+      },
+      {
+        "tick": 79,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -833,
+        "life": 0
+      },
+      {
+        "tick": 80,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -834,
+        "life": 0
+      },
+      {
+        "tick": 81,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -836,
+        "life": 0
+      },
+      {
+        "tick": 82,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -839,
+        "life": 0
+      },
+      {
+        "tick": 83,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -841,
+        "life": 0
+      },
+      {
+        "tick": 84,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -845,
+        "life": 0
+      },
+      {
+        "tick": 85,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -848,
+        "life": 0
+      },
+      {
+        "tick": 86,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -852,
+        "life": 0
+      },
+      {
+        "tick": 87,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -857,
+        "life": 0
+      },
+      {
+        "tick": 88,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -862,
+        "life": 0
+      },
+      {
+        "tick": 89,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -867,
+        "life": 0
+      },
+      {
+        "tick": 90,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -873,
+        "life": 0
+      },
+      {
+        "tick": 91,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -879,
+        "life": 0
+      },
+      {
+        "tick": 92,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -885,
+        "life": 0
+      },
+      {
+        "tick": 93,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -891,
+        "life": 0
+      },
+      {
+        "tick": 94,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -896,
+        "life": 0
+      },
+      {
+        "tick": 95,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -901,
+        "life": 0
+      },
+      {
+        "tick": 96,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -906,
+        "life": 0
+      },
+      {
+        "tick": 97,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -910,
+        "life": 0
+      },
+      {
+        "tick": 98,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -913,
+        "life": 0
+      },
+      {
+        "tick": 99,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -917,
+        "life": 0
+      },
+      {
+        "tick": 100,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -919,
+        "life": 0
+      },
+      {
+        "tick": 101,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -922,
+        "life": 0
+      },
+      {
+        "tick": 102,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -924,
+        "life": 0
+      },
+      {
+        "tick": 103,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -925,
+        "life": 0
+      },
+      {
+        "tick": 104,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -926,
+        "life": 0
+      },
+      {
+        "tick": 105,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -927,
+        "life": 0
+      },
+      {
+        "tick": 106,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -927,
+        "life": 0
+      },
+      {
+        "tick": 107,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -927,
+        "life": 0
+      },
+      {
+        "tick": 108,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -926,
+        "life": 0
+      },
+      {
+        "tick": 109,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -925,
+        "life": 0
+      },
+      {
+        "tick": 110,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -924,
+        "life": 0
+      },
+      {
+        "tick": 111,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -922,
+        "life": 0
+      },
+      {
+        "tick": 112,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -919,
+        "life": 0
+      },
+      {
+        "tick": 113,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -916,
+        "life": 0
+      },
+      {
+        "tick": 114,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -913,
+        "life": 0
+      },
+      {
+        "tick": 115,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -910,
+        "life": 0
+      },
+      {
+        "tick": 116,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -905,
+        "life": 0
+      },
+      {
+        "tick": 117,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -901,
+        "life": 0
+      },
+      {
+        "tick": 118,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -896,
+        "life": 0
+      },
+      {
+        "tick": 119,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -890,
+        "life": 0
+      },
+      {
+        "tick": 120,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -886,
+        "life": 0
+      },
+      {
+        "tick": 121,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -883,
+        "life": 0
+      },
+      {
+        "tick": 122,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -879,
+        "life": 0
+      },
+      {
+        "tick": 123,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -872,
+        "life": 0
+      },
+      {
+        "tick": 124,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -866,
+        "life": 0
+      },
+      {
+        "tick": 125,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -861,
+        "life": 0
+      },
+      {
+        "tick": 126,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -855,
+        "life": 0
+      },
+      {
+        "tick": 127,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -851,
+        "life": 0
+      },
+      {
+        "tick": 128,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -847,
+        "life": 0
+      },
+      {
+        "tick": 129,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -843,
+        "life": 0
+      },
+      {
+        "tick": 130,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -840,
+        "life": 0
+      },
+      {
+        "tick": 131,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -837,
+        "life": 0
+      },
+      {
+        "tick": 132,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -835,
+        "life": 0
+      },
+      {
+        "tick": 133,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -833,
+        "life": 0
+      },
+      {
+        "tick": 134,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -832,
+        "life": 0
+      },
+      {
+        "tick": 135,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 136,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 137,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -831,
+        "life": 0
+      },
+      {
+        "tick": 138,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -832,
+        "life": 0
+      },
+      {
+        "tick": 139,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -833,
+        "life": 0
+      },
+      {
+        "tick": 140,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -834,
+        "life": 0
+      },
+      {
+        "tick": 141,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -836,
+        "life": 0
+      },
+      {
+        "tick": 142,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -839,
+        "life": 0
+      },
+      {
+        "tick": 143,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -841,
+        "life": 0
+      },
+      {
+        "tick": 144,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -845,
+        "life": 0
+      },
+      {
+        "tick": 145,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -848,
+        "life": 0
+      },
+      {
+        "tick": 146,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -852,
+        "life": 0
+      },
+      {
+        "tick": 147,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -857,
+        "life": 0
+      },
+      {
+        "tick": 148,
+        "bodyFrame": 1,
+        "pointerVisible": true,
+        "pointerLabelTwips": -862,
+        "life": 0
+      },
+      {
+        "tick": 149,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 150,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
+    ],
+    "idle": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
+    ],
+    "walk": [
+      {
+        "tick": 0,
+        "bodyFrame": 2,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 3,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 4,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 5,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 6,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 7,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 8,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 9,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 10,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 11,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 12,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 2,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 3,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 4,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 5,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 6,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 7,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
+    ],
+    "weapons": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
+    ],
+    "depth": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
+    ],
+    "hit": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 1
+      }
+    ],
+    "counts": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
+    ]
+  },
+  "original_swf_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+  "harness_sha256": "72e588a6d431131abbf95ca39ee13af8ec99732026c9ffd755d1f20223a21485",
+  "builder_sha256": "011d0973afdd2b4c9dedd4896095518b1209b7d3263b9951ae56ce7c8ec7f900",
+  "capture_sha256": "4eece25f877b331e8cd8dcd0fe1d22b891ff7c15ea6a65ba206b6ef49aea1016",
+  "ffdec_sha256": "1587e60b2ec2c0e4f5721fd5f2aaaf2379f6d416569de99054b5c5d1e9ba841c"
+}

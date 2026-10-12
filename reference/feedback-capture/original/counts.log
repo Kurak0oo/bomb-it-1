@@ -1,0 +1,9 @@
+%cINFO%c web/src/lib.rs:1416%c Ruffle WASM module has been initialized color: whitesmoke; background: #444 color: gray; font-style: italic color: inherit
+%cNew Ruffle instance created (Version: 0.7.1 | WebAssembly extensions: ON | Used renderer: canvas) background: #37528C; color: #FFAD33
+Loading SWF file /fixture.swf
+COUNT_METRICS|1|9|22|Arial Black|15
+COUNT_METRICS|2|9|22|Arial Black|15
+COUNT_METRICS|10|18|22|Arial Black|15
+COUNT_METRICS|11|18|22|Arial Black|15
+COUNT_METRICS|12|18|22|Arial Black|15
+COUNT_METRICS|20|18|22|Arial Black|15
