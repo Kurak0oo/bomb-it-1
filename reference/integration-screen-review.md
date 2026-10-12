@@ -31,3 +31,34 @@ Original-runtime captures remain separate. Their known pixel differences are not
 waived by accepting these port regressions. The current result image still shows
 the old result panel; #9 replaces it in a later reviewed batch. Remaining effects,
 safe-area layout and final desktop acceptance are also outstanding.
+
+## Outcomes, layouts, deaths and lifecycle checkpoint
+
+The next reviewed batch uses integration `d008b249`, Docker image `c0fdbd77c5de`
+and capture ID `19ef7c074164` in the same pinned Linux renderer. Import, view,
+timeline and all eleven rendered behavior phases pass. Comparison against the
+46-image baseline reports 41 unchanged, five changed and 48 new captures. The
+[phase results](integration-screen-review/lifecycle-outcomes/checks.json),
+[original comparison](integration-screen-review/lifecycle-outcomes/before-baseline-review.json)
+and [review record](integration-screen-review/lifecycle-outcomes/review.json)
+retain the evidence.
+
+The earlier `833bf0d` batch supplied 92 reviewed candidates: complete synthetic
+safe-area layouts, twelve outcome routes, twelve score routes, result button
+states and timeout death boundaries. Its uncontrolled `qa-result` animation
+sample was rejected. #17 now fixes that capture at source frame 70; the settled
+banner is centered and complete. Of those 92 candidates, 87 reproduce exactly.
+The five changed candidates contain the #2 source alpha/shadow corrections in
+death sheets, pickup shadows, HUD status and timeout deaths. The integration
+owner inspected each difference image, the corrected result and the new complete
+two-player interruption pause surface before accepting the 94-image baseline.
+
+The Linux run also exposed and verified a test-helper correction: stop automatic
+physics at its boundary before awaiting a display frame. Strict tick counts and
+a forced 100 ms stall pass without changing the production timer. See
+[lifecycle evidence](issue-17.md).
+
+These files capture the current port presentation at zero tolerance. Their
+acceptance does not waive original-runtime pixel differences or certify physical
+iPhone layout, timing or performance. Subsequent CI checks reproduction; effect
+work and final desktop acceptance still remain.

@@ -1,0 +1,22 @@
+{
+  "revision": "d008b249a361ddc2d37858c9df8c9c3a67e7ac50",
+  "image": "c0fdbd77c5de",
+  "capture_id": "19ef7c074164",
+  "images": 94,
+  "unchanged_previous_baselines": 41,
+  "changed_previous_baselines": 5,
+  "new_baselines": 48,
+  "unchanged_prior_reviewed_candidates": 87,
+  "reviewed_changes": [
+    "qa-death-timelines.png",
+    "qa-effect-timelines.png",
+    "qa-hud-status.png",
+    "qa-timeout-death-1p-tick10.png",
+    "qa-timeout-death-2p-tick10.png"
+  ],
+  "reviewed_new": [
+    "qa-result.png",
+    "qa-interruption-paused-2p.png"
+  ],
+  "scope": "Exact port regression baselines only; independent original comparisons remain separate."
+}
