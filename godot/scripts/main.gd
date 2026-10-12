@@ -23,6 +23,9 @@ var fire_inputs: Array[FireInput] = [FireInput.new(), FireInput.new()]
 var save_enabled := true
 var keyboard := KeyboardInput.new()
 var original_menu: OriginalMenu
+# Optional platform adapter returning a physical display-space safe rectangle.
+var safe_area_provider := Callable()
+var _last_safe_area := Rect2()
 
 func _ready() -> void:
 	art = OriginalArt.new()
@@ -40,9 +43,42 @@ func _ready() -> void:
 	_show_menu()
 
 func _resize() -> void:
-	position = (get_viewport_rect().size - Vector2(550,400)) / 2
-	if is_instance_valid(touch):
-		touch.queue_redraw()
+	if not is_inside_tree():return
+	_reset_input()
+	var safe := _safe_viewport_rect()
+	_last_safe_area = safe
+	var area := safe
+	var active := is_instance_valid(touch) and touch.is_inside_tree() and touch.is_visible_in_tree()
+	if active:
+		# Reserve complete hit circles, including a five-pixel gap to the game.
+		# Prefer whichever arrangement preserves the larger 550x400 surface.
+		var side_scale := minf(safe.size.y/400.0,(safe.size.x-280.0)/550.0)
+		var dock_scale := minf((safe.size.y-140.0)/400.0,safe.size.x/550.0)
+		if side_scale >= dock_scale:
+			area = Rect2(safe.position+Vector2(140,0),safe.size-Vector2(280,0))
+		else:
+			area.size.y -= 140
+		var y := safe.end.y-70
+		touch.configure(Vector2(safe.position.x+70,y),Vector2(safe.end.x-70,y))
+	var factor := minf(1.0,minf(area.size.x/550.0,area.size.y/400.0))
+	scale = Vector2.ONE * factor
+	position = area.position+(area.size-Vector2(550,400)*factor)/2
+
+func _safe_viewport_rect() -> Rect2:
+	var viewport := get_viewport_rect()
+	var physical: Rect2
+	if safe_area_provider.is_valid():
+		physical = safe_area_provider.call()
+	elif OS.get_name() in ["Android","iOS"]:
+		physical = Rect2(DisplayServer.get_display_safe_area())
+	else:
+		# Desktop usable-screen bounds include taskbars and are not phone insets.
+		return viewport
+	if not physical.has_area():return viewport
+	# Viewport screen coordinates are relative to the containing native window.
+	physical.position -= Vector2(get_window().position)
+	var safe := (get_viewport().get_screen_transform().affine_inverse() * physical).intersection(viewport)
+	return safe if safe.has_area() else viewport
 
 func _clear_screen() -> void:
 	_reset_input()
@@ -64,6 +100,7 @@ func _clear_screen() -> void:
 	original_hud = null
 	original_results = null
 	paused = false
+	_resize()
 
 func _background(path: String) -> void:
 	var sprite := Sprite2D.new()
@@ -148,10 +185,14 @@ func _show_round() -> void:
 	_button(ui, "Ⅱ", Rect2(46,363,36,17), _toggle_pause)
 	_button(ui, "TOUCH", Rect2(4,382,78,15), _toggle_touch)
 	touch = MobileInput.new()
+	touch.set_as_top_level(true)
+	touch.z_index = 3000
 	touch.fire_changed.connect(func(held: bool): fire_inputs[0].set_source("touch", held))
 	touch.input_cancelled.connect(_reset_input)
 	touch.visible = touch_enabled
 	ui.add_child(touch)
+	touch.visibility_changed.connect(_resize)
+	_resize()
 	_update_hud()
 	audio.play_music(["401_Bombit_-_level_1.mp3","402_Bombit_-_level_2.mp3","403_Bombit_-_level_3.mp3","404_Bombit_-_level_4.mp3"][(session.stage-1)%4])
 
@@ -230,6 +271,8 @@ func _show_result() -> void:
 	ui.add_child(original_results)
 
 func _process(delta: float) -> void:
+	if _safe_viewport_rect() != _last_safe_area:
+		_resize()
 	if screen == "result" and is_instance_valid(original_results):
 		original_results.advance(delta)
 

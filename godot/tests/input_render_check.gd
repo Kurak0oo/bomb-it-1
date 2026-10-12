@@ -1,6 +1,7 @@
 extends SceneTree
 
 var failed := false
+var main: Node2D
 
 func _init() -> void:
 	call_deferred("run")
@@ -13,10 +14,10 @@ func key(pressed: bool, code: Key = KEY_ENTER) -> void:
 	Input.parse_input_event(event)
 	Input.flush_buffered_events()
 
-func finger(pressed: bool, cancelled: bool = false, id: int = 1, point: Vector2 = Vector2(495,325)) -> void:
+func finger(pressed: bool, cancelled: bool = false, id: int = 1, point: Vector2 = Vector2.INF) -> void:
 	var event := InputEventScreenTouch.new()
 	event.index = id
-	event.position = point
+	event.position = main.touch.get_global_transform_with_canvas() * main.touch._bomb if point == Vector2.INF else point
 	event.pressed = pressed
 	event.canceled = cancelled
 	root.push_input(event, true)
@@ -25,7 +26,7 @@ func click(point: Vector2) -> void:
 	for pressed in [true, false]:
 		var event := InputEventMouseButton.new()
 		event.button_index = MOUSE_BUTTON_LEFT
-		event.position = point
+		event.position = main.get_global_transform_with_canvas() * point
 		event.pressed = pressed
 		root.push_input(event, true)
 
@@ -44,7 +45,7 @@ func run_ticks(main: Node, count: int) -> void:
 
 func run() -> void:
 	root.size = Vector2i(550,400)
-	var main: Node = load("res://scenes/main.tscn").instantiate()
+	main = load("res://scenes/main.tscn").instantiate()
 	main.save_enabled = false
 	main.set_physics_process(false)
 	root.add_child(main)
@@ -138,14 +139,14 @@ func run() -> void:
 	actor.bombs_available = 3
 	for x in range(3,8):
 		main.session.state.cell_at(Vector2i(x,3)).kind = GameState.Kind.FLOOR
-	finger(true, false, 8, Vector2(182,325))
+	finger(true, false, 8, main.touch.get_global_transform_with_canvas() * (main.touch._stick+Vector2(32,0)))
 	finger(true)
 	await run_ticks(main, 16)
 	check(actor.cell.x > 3 and main.session.state.bombs.size() >= 2, "distinct fingers move and place ordinary held bombs together")
 	finger(false, false, 9) # An unrelated finger cannot release the captured one.
 	check(main.touch.bomb_held, "unrelated finger IDs do not release Bomb")
 	finger(false)
-	finger(false, false, 8, Vector2(182,325))
+	finger(false, false, 8, main.touch.get_global_transform_with_canvas() * (main.touch._stick+Vector2(32,0)))
 	await run_ticks(main, 7) # Finish the movement already accepted by the simulation.
 	var resting_cell := actor.cell
 	key(true, KEY_D)

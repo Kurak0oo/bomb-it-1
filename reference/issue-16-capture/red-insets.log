@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: complete 550x400 game fits safe area
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/layout_render_check.gd:7)
+       [1] inspect_layout (res://tests/layout_render_check.gd:18)
+       [2] run (res://tests/layout_render_check.gd:43)
+       [3] capture (res://tests/qa_capture.gd:23)
+ERROR: all touch targets fit safe area
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/layout_render_check.gd:7)
+       [1] inspect_layout (res://tests/layout_render_check.gd:19)
+       [2] run (res://tests/layout_render_check.gd:43)
+       [3] capture (res://tests/qa_capture.gd:23)

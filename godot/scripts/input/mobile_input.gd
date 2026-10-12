@@ -22,8 +22,6 @@ func _ready() -> void:
 	visibility_changed.connect(func():
 		if not is_visible_in_tree():
 			_cancel())
-	_layout()
-	get_viewport().size_changed.connect(_layout)
 
 func _cancel() -> void:
 	release_all()
@@ -45,7 +43,7 @@ func _input(event: InputEvent) -> void:
 			if event.index == _stick_id or event.index == _bomb_id:
 				_cancel()
 			return
-		var point: Vector2 = event.position - global_position
+		var point: Vector2 = get_global_transform_with_canvas().affine_inverse() * event.position
 		if event.pressed and not event.canceled:
 			if _stick_id < 0 and point.distance_to(_stick) < 65:
 				_stick_id = event.index
@@ -62,7 +60,7 @@ func _input(event: InputEvent) -> void:
 				_bomb_id = -1
 				_set_bomb(false)
 	elif event is InputEventScreenDrag and event.index == _stick_id:
-		_move(event.position - global_position)
+		_move(get_global_transform_with_canvas().affine_inverse() * event.position)
 	queue_redraw()
 
 func _set_bomb(pressed: bool) -> void:
@@ -79,13 +77,11 @@ func _move(point: Vector2) -> void:
 		else:
 			direction = Vector2i.DOWN if _offset.y > 0 else Vector2i.UP
 
-func _layout() -> void:
-	if not is_inside_tree():
-		return
+func configure(stick: Vector2, bomb: Vector2) -> void:
+	if _stick == stick and _bomb == bomb:return
 	_cancel()
-	var extra := maxf(0, (get_viewport_rect().size.x - 550) / 2)
-	_stick = Vector2(-minf(extra / 2, 65), 315) if extra > 80 else Vector2(150,325)
-	_bomb = Vector2(550 + minf(extra / 2, 65), 315) if extra > 80 else Vector2(495,325)
+	_stick = stick
+	_bomb = bomb
 	queue_redraw()
 
 func _draw() -> void:

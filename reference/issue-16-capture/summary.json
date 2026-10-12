@@ -1,0 +1,98 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.61,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\import.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\sim.log"
+  },
+  {
+    "name": "layout_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.625,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\layout_render.log"
+  },
+  {
+    "name": "selection_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.703,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\selection_render.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.938,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\death_render.log"
+  },
+  {
+    "name": "result_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\result_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.453,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.359,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.969,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.453,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.125,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue16\\.artifacts\\issue16-physical-input\\visual_timelines.log"
+  }
+]
