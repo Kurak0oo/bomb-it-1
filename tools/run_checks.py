@@ -90,6 +90,8 @@ def main():
             if suite == "tooling":
                 continue
             phases.append((suite, command + ["--script", f"res://tests/{suite}_check.gd"], suite.upper() + "_OK"))
+            if suite == "special":
+                phases.append(("command_order", command + ["--script", "res://tests/order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
         if args.visual:
             print(f"Captures: {captures}", flush=True)
             render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
