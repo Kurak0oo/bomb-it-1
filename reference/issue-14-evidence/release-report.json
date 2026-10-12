@@ -1,34 +1,35 @@
 {
+  "engine": "4.7.2.stable.official.ed1daf0bf",
   "phases": [
     {
       "name": "import",
       "passed": true,
       "exit_code": 0,
       "timeout": false,
-      "seconds": 5.797,
-      "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-release\\import.log"
+      "seconds": 5.563,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-release-final\\import.log"
     },
     {
       "name": "export",
       "passed": true,
       "exit_code": 0,
       "timeout": false,
-      "seconds": 4.734,
-      "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-release\\export.log"
+      "seconds": 4.156,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-release-final\\export.log"
     },
     {
       "name": "release",
       "passed": true,
       "exit_code": 0,
       "timeout": false,
-      "seconds": 0.407,
-      "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-release\\release.log"
+      "seconds": 0.422,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-release-final\\release.log"
     }
   ],
   "passed": true,
   "source_sha256": "9e582cdbef2c12d96351919a6b2b91759fff784393091e68871b23dd990ec7ec",
   "checks_sha256": "77da52d6ab24591c7618cd04e4be1bed047ee4dbf551674493f6c29e6804e3de",
   "template_sha256": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562",
-  "executable_sha256": "29e61b27b584f3631d13cf1e25d65b22720272609fcc9afd385f35639e3c5d6b",
+  "executable_sha256": "94f3be41b4a636fe78e896e0f6997aeba9fab07a0a9c54ea63ad3287606c8b76",
   "scope": "standalone actual release-runtime RNG checks; not a playable game package or device pass"
 }

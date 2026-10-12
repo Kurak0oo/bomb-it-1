@@ -4,40 +4,88 @@
     "passed": true,
     "exit_code": 0,
     "timeout": false,
-    "seconds": 6.594,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\import.log"
+    "seconds": 26.078,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.516,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 18.562,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\tooling.log"
+  },
+  {
+    "name": "performance_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.329,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\performance_parse.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.421,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.329,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\interaction_reference_parse.log"
   },
   {
     "name": "rng",
     "passed": true,
     "exit_code": 0,
     "timeout": false,
-    "seconds": 0.422,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\rng.log"
+    "seconds": 0.421,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\rng.log"
   },
   {
     "name": "rng_reference",
     "passed": true,
     "exit_code": 0,
     "timeout": false,
-    "seconds": 0.781,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\rng_reference.log"
+    "seconds": 0.797,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\rng_reference.log"
   },
   {
     "name": "rng_compare",
     "passed": true,
     "exit_code": 0,
     "timeout": false,
-    "seconds": 0.188,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\rng_compare.log"
-  },
-  {
-    "name": "pacing",
-    "passed": true,
-    "exit_code": 0,
-    "timeout": false,
-    "seconds": 11.531,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\pacing.log"
+    "seconds": 0.172,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\rng_compare.log"
   },
   {
     "name": "campaign",
@@ -45,7 +93,7 @@
     "exit_code": 0,
     "timeout": false,
     "seconds": 1.25,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\campaign.log"
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\campaign.log"
   },
   {
     "name": "accounting_session",
@@ -53,6 +101,14 @@
     "exit_code": 0,
     "timeout": false,
     "seconds": 0.422,
-    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\accounting_session.log"
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\accounting_session.log"
+  },
+  {
+    "name": "pacing",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 9.656,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-synced\\pacing.log"
   }
 ]
