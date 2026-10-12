@@ -13,6 +13,9 @@ var _special_sprites: Dictionary = {}
 var _target_sprites: Dictionary = {}
 var _retiring_items: Array[PickupView] = []
 var _trails: Array[Dictionary] = []
+var _effect_clips: Array[Dictionary] = []
+var _effect_counts: Dictionary = {}
+var _special_birth: Dictionary = {}
 var _rocket_ages: Dictionary = {}
 var _presentation_tick := 0
 var _last_state_tick := 0
@@ -195,9 +198,35 @@ func advance_presentation() -> void:
 	_presentation_tick += 1
 	for hero in _hero_sprites.values():
 		hero.advance_presentation()
+	for pop in _pop_sprites:
+		var frame_number: int = 12-pop.ticks+_presentation_tick-_last_state_tick
+		_pop_sprites[pop].texture = art.frame(248,frame_number)
+		_pop_sprites[pop].visible = frame_number < 11
+	# gameover pauses source movement/collision callbacks, but not clip timelines.
+	for weapon in _special_sprites:
+		var group: Node2D = _special_sprites[weapon]
+		var age: int = _presentation_tick-_special_birth[weapon]
+		if weapon.kind == "rocket":
+			group.get_child(0).show_frame(SimRules.direction_index(weapon.direction),age)
+		else:
+			var sprite: Sprite2D = group.get_child(0)
+			if weapon.kind == "grenade":
+				var direction := SimRules.direction_index(weapon.direction)
+				sprite.texture = art.frame(art.manifest.grenade[direction].symbol,age%19+1)
+			else:
+				sprite.texture = art.frame(306 if weapon.kind == "mine" else 315,age+1)
 	_animate_transients()
 
 func _animate_transients() -> void:
+	for i in range(_effect_clips.size()-1,-1,-1):
+		var effect: Dictionary = _effect_clips[i]
+		var age: int = _presentation_tick-effect.born
+		# Source fire/ice clips remove at frame40; brickExp at frame11.
+		if age >= (10 if effect.kind == "pulse" else 39):
+			effect.node.free()
+			_effect_clips.remove_at(i)
+		else:
+			effect.node.texture = art.frame({"pulse":248,"ice":325,"fire":319}[effect.kind],age+1)
 	for i in range(_hit_smoke.size() - 1, -1, -1):
 		var smoke: Dictionary = _hit_smoke[i]
 		var frame_number: int = 20 + _presentation_tick - smoke.born
@@ -221,15 +250,33 @@ func _animate_transients() -> void:
 
 func _sync_specials() -> void:
 	_prune(_special_sprites, state.specials)
+	for weapon in _special_birth.keys():
+		if not state.specials.has(weapon): _special_birth.erase(weapon)
+	for weapon in _effect_counts.keys():
+		if not state.specials.has(weapon):
+			_effect_counts.erase(weapon)
 	for weapon in _rocket_ages.keys():
 		if not state.specials.has(weapon):
 			_rocket_ages.erase(weapon)
 	for weapon in state.specials:
+		if weapon.kind in ["ice","fire","pulse"]:
+			# These are independent clips in source brickArea, not children of
+			# the controller. Its removal must not truncate their final frames.
+			var count: int = _effect_counts.get(weapon,0)
+			if weapon.kind == "pulse":
+				if count == 0: _spawn_effect("pulse",weapon.cell,weapon.age)
+				_effect_counts[weapon] = 1
+			else:
+				for n in range(count,weapon.painted.size()):
+					_spawn_effect(weapon.kind,weapon.painted[n],weapon.age-weapon.born[n])
+				_effect_counts[weapon] = weapon.painted.size()
+			continue
 		if not _special_sprites.has(weapon):
 			var group := Node2D.new()
 			add_child(group)
 			_special_sprites[weapon] = group
 		var group: Node2D = _special_sprites[weapon]
+		_special_birth[weapon] = _presentation_tick-weapon.age
 		group.z_index = OriginalArt.depth(weapon.cell, -5)
 		if weapon.kind == "rocket":
 			_set_motion(group, weapon.position)
@@ -244,19 +291,6 @@ func _sync_specials() -> void:
 				_spawn_rocket_smoke(weapon.position, direction)
 			_rocket_ages[weapon] = weapon.age
 			continue
-		if weapon.kind in ["ice", "fire"]:
-			for n in range(group.get_child_count(), weapon.painted.size()):
-				var sprite := art.sprite(325 if weapon.kind == "ice" else 319)
-				sprite.position += Vector2(weapon.painted[n]) * 30
-				sprite.z_index = OriginalArt.depth(weapon.painted[n], 0 if weapon.kind == "ice" else -7)
-				sprite.z_as_relative = false
-				group.add_child(sprite)
-			for n in group.get_child_count():
-				var sprite: Sprite2D = group.get_child(n)
-				var age: int = weapon.age - weapon.born[n]
-				sprite.texture = art.frame(325 if weapon.kind == "ice" else 319, age + 1)
-				sprite.visible = age < 40
-			continue
 		var symbol: int = {"rocket":305,"mine":306,"grenade":310,"gas":315,"pulse":248}[weapon.kind]
 		var frame_number := weapon.age + 1
 		_set_motion(group, weapon.position)
@@ -270,7 +304,7 @@ func _sync_specials() -> void:
 			symbol = data.symbol
 			offset = Vector2(data.x, data.y)
 			scale_x = data.scale_x
-			group.z_index = OriginalArt.depth(weapon.cell if weapon.age >= 9 else weapon.origin, -5)
+			group.z_index = OriginalArt.depth(weapon.cell if weapon.age >= 8 else weapon.origin, -5)
 		elif weapon.kind == "mine":
 			frame_number = mini(frame_number, 60)
 		elif weapon.kind == "gas":
@@ -281,6 +315,13 @@ func _sync_specials() -> void:
 		sprite.texture = art.frame(symbol, frame_number)
 		sprite.scale.x = scale_x
 		sprite.position = offset + art.offset(symbol) * Vector2(scale_x,1)
+
+func _spawn_effect(kind: String, at: Vector2i, age: int) -> void:
+	var node := art.sprite({"pulse":248,"ice":325,"fire":319}[kind])
+	node.position += Vector2(at)*30
+	node.z_index = OriginalArt.depth(at,0 if kind == "ice" else -7 if kind == "fire" else -5)
+	add_child(node)
+	_effect_clips.append({"node":node,"kind":kind,"born":_presentation_tick-age})
 
 func _spawn_rocket_smoke(at: Vector2, direction: int) -> void:
 	var trail := OriginalTimeline.new()

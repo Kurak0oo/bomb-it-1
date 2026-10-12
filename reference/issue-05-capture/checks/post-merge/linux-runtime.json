@@ -1,0 +1,7 @@
+{
+  "display": "X11",
+  "engine": "4.7.2-stable (official)",
+  "os": "Linux",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "image_id": "sha256:d374afe5f4c403019ab18e3838a35eef2e95c74b98b76f69c0dfaf370e5bd742"
+}

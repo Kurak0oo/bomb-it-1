@@ -95,3 +95,22 @@ special-effect work are still pending.
 Fresh [CI run 38246634284](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38246634284)
 at `4f27cc5` passes both headless and rendered jobs and reproduces all 97 images
 exactly. Its [job record](integration-screen-review/ordinary-effects/ci.json) is retained.
+
+## Grenade and special-effect checkpoint
+
+Integration `2b312f61` (image `fa58456ad742`, capture `14aa05b0ad4c`) passes import,
+view, timeline and all fourteen rendered phases. All 97 previous images reproduce
+exactly. The integration owner inspected eleven new captures: airborne grenade,
+five-cell impact and complete removal for both creation paths; fire and ice clips
+surviving their controller; completed outcome effects; final rocket smoke; and
+grenade depth. They are added at zero tolerance, bringing the baseline to 108.
+[Phase results](integration-screen-review/specials-grenade/checks.json),
+[comparison before review](integration-screen-review/specials-grenade/before-baseline-review.json)
+and [review record](integration-screen-review/specials-grenade/review.json) retain
+the evidence. Comparison after adding the reviewed images passes; independent CI
+reproduction remains the next check.
+
+This checkpoint also includes the first standalone Windows packaging tools.
+Original-runtime pixel differences remain strict and separate. Audio, random
+replay, the remaining bounded source corrections and final desktop acceptance
+are still outstanding.

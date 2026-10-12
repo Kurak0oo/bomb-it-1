@@ -1,0 +1,146 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.344,
+    "log": "/artifacts/import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.52,
+    "log": "/artifacts/view.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.52,
+    "log": "/artifacts/timeline.log"
+  },
+  {
+    "name": "grenade_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.875,
+    "log": "/artifacts/grenade_render.log"
+  },
+  {
+    "name": "interruption_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.486,
+    "log": "/artifacts/interruption_render.log"
+  },
+  {
+    "name": "layout_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.978,
+    "log": "/artifacts/layout_render.log"
+  },
+  {
+    "name": "selection_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.726,
+    "log": "/artifacts/selection_render.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.272,
+    "log": "/artifacts/death_render.log"
+  },
+  {
+    "name": "effects_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.171,
+    "log": "/artifacts/effects_render.log"
+  },
+  {
+    "name": "special_effects_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.827,
+    "log": "/artifacts/special_effects_render.log"
+  },
+  {
+    "name": "result_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.991,
+    "log": "/artifacts/result_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.235,
+    "log": "/artifacts/hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.825,
+    "log": "/artifacts/feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.28,
+    "log": "/artifacts/input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.378,
+    "log": "/artifacts/menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.129,
+    "log": "/artifacts/ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.121,
+    "log": "/artifacts/visual_timelines.log"
+  },
+  {
+    "name": "visual_compare",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 4.028,
+    "log": "/artifacts/visual_compare.log"
+  }
+]

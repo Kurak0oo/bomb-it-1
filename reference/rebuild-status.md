@@ -48,7 +48,11 @@ The playable systems are implemented, but **exact equivalence is not established
    discrepancy remains unproven as a port defect. [Pushing and grenade traces](issue-12.md)
    and [nested interaction traces](issue-13.md) now establish separate bounded
    corrections #30–#33; [all seven push cases now agree](issue-30.md), including
-   their newly observed allowance fields. Earlier death, level-one explosion-energy and brick-blocking
+   their newly observed allowance fields. The [grenade endpoint correction](issue-31.md)
+   now makes the full motion profile agree and matches all 17,792 new endpoint/accounting
+   fields. The nested interaction profile retains 106 differences, including the
+   pending accounting/contact corrections and residual-energy uncertainty.
+   Earlier death, level-one explosion-energy and brick-blocking
    traces agree. These fixtures do not establish full-match or Adobe Flash Player
    parity, and uncertain residual pulse energy is not reproduced as invisible danger.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
@@ -78,7 +82,9 @@ The playable systems are implemented, but **exact equivalence is not established
    still differ in 32 of 40 samples. [Ordinary effects](issue-04.md) now match
    305 lifecycle observations, with corrected pickup loop and fill-composited
    fade, flame alpha and brick disappearance. Actual images still differ in
-   94 of 134 samples; special-effect auditing remains in progress. The startup pointer,
+   94 of 134 samples. [Special effects](issue-05.md) match 447 presence and 28 smoke
+   observations, with independent fire/ice lifetimes and outcome completion;
+   121 of 141 exact image pairs still differ. The startup pointer,
    equipped-counter layout and nested actor phases now have 259 agreeing original
    observations; [actor feedback](issue-03.md) retains all 56 exact image differences.
    Raster exports retain their source
@@ -99,7 +105,9 @@ The playable systems are implemented, but **exact equivalence is not established
    presentation. iPhone hardware
    latency, actual safe-area insets, sustained frame pacing, native builds, signing, and store packaging
    have not been verified. The user has iPhones but no Mac; native iOS build/install
-   remains externally blocked. No release executable or iOS package is claimed.
+   remains externally blocked. A [portable Windows release](issue-19.md) now passes
+   actual executable smoke and saved-setting reload. Final integrated desktop
+   acceptance remains pending; no installed iOS package is claimed.
 
 ## Validation performed
 

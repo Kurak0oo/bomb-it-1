@@ -1,0 +1,21 @@
+{
+  "revision": "2b312f619896648ac73c5cddca66e4dba60d9e11",
+  "image": "fa58456ad742",
+  "capture_id": "14aa05b0ad4c",
+  "unchanged": 97,
+  "new": [
+    "qa-grenade-initial-before.png",
+    "qa-grenade-initial-cleared.png",
+    "qa-grenade-initial-endpoint.png",
+    "qa-grenade-input-before.png",
+    "qa-grenade-input-cleared.png",
+    "qa-grenade-input-endpoint.png",
+    "qa-special-fire-parent-retired.png",
+    "qa-special-grenade-depth.png",
+    "qa-special-ice-parent-retired.png",
+    "qa-special-outcome-finished.png",
+    "qa-special-rocket-impact.png"
+  ],
+  "images": 108,
+  "scope": "Reviewed all eleven new port captures: both grenade creation paths show flight, five-cell impact and complete cleanup; independent fire/ice final clips persist then clear; rocket final smoke and grenade depth are present. Original-runtime comparisons remain separate and strict."
+}

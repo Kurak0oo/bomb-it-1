@@ -7,7 +7,8 @@ import { chromium } from 'playwright';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
-if (args.length !== 2) throw new Error('Usage: node capture_effects.mjs <fixture.swf> <output-directory>');
+if (args.length < 2 || args.length > 3) throw new Error('Usage: node capture_effects.mjs <fixture.swf> <output-directory> [scenario-profile.json]');
+const profile = args[2] ? JSON.parse(await readFile(resolve(args[2]))) : null;
 const swf = await readFile(resolve(args[0]));
 const output = resolve(args[1]);
 await mkdir(output, { recursive: true });
@@ -51,7 +52,7 @@ try {
   browser = await chromium.launch({ headless: true });
   const address = `http://127.0.0.1:${server.address().port}`;
   const all = {};
-  for (const scenario of ['bomb','flame1','flame2','flame3','flame4','brick','pickups']) {
+  for (const scenario of profile ? Object.keys(profile.scenarios) : ['bomb','flame1','flame2','flame3','flame4','brick','pickups']) {
     const page = await browser.newPage({ viewport: { width: 550, height: 400 }, deviceScaleFactor: 1 });
     const messages = [];
     page.on('console', message => messages.push(message.text()));
@@ -65,7 +66,8 @@ try {
       await page.goto(address);
       await page.evaluate(scenario => window.boot(scenario), scenario);
       const rows = [];
-      const end = scenario === 'pickups' ? 107 : scenario === 'bomb' ? 81 : 22;
+      const end = profile ? profile.scenarios[scenario].end : scenario === 'pickups' ? 107 : scenario === 'bomb' ? 81 : 22;
+      const selected = profile ? profile.scenarios[scenario].captures : scenario === 'pickups' ? [-1,0,5,19,39,59,77,78,79,80,84,85,86,94,103,104,105,106] : scenario === 'bomb' ? [-1,0,19,38,39,40,58,59,60,61,62,71,72,73,74,75,76,77,78,79,80] : [-1,0,1,2,4,8,9,10,11,12,13,14,15,16,17,18,19,20,21];
       for (let tick = -1; tick < end; tick++) {
         for (let step = 0; step < 20; step++) {
           if (await page.evaluate(n => window.samples.length > n + 1, tick)) break;
@@ -76,7 +78,7 @@ try {
         if (observed.length !== tick + 2 || observed[tick+1].tick !== tick)
           throw new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
         rows.push(observed[tick+1]);
-        if ((scenario === 'pickups' ? [-1,0,5,19,39,59,77,78,79,80,84,85,86,94,103,104,105,106] : scenario === 'bomb' ? [-1,0,19,38,39,40,58,59,60,61,62,71,72,73,74,75,76,77,78,79,80] : [-1,0,1,2,4,8,9,10,11,12,13,14,15,16,17,18,19,20,21]).includes(tick)) {
+        if (selected.includes(tick)) {
           const folder = resolve(output, 'images');
           await mkdir(folder, { recursive: true });
           // Ruffle displays its own play overlay when suspended. Export only the
@@ -100,7 +102,7 @@ try {
     fixture_sha256: createHash('sha256').update(swf).digest('hex'),
     ruffle_integrity: lock.packages['node_modules/@ruffle-rs/ruffle'].integrity,
     fps:35, tick_origin:'tick -1 is creation; tick 0 is first onEnterFrame observation',
-    caveat:'Original putBomb/bombExp bytecode and original clip timelines; pickup removal is a fixture command at tick85. Not Adobe Flash Player certification.',
+    caveat:profile?.description ?? 'Original putBomb/bombExp bytecode and original clip timelines; pickup removal is a fixture command at tick85. Not Adobe Flash Player certification.',
     scenarios: all
   }, null, 2));
   console.log(`Captured original effects: ${output}`);
