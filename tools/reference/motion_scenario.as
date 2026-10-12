@@ -35,6 +35,7 @@ var actor = brickArea.attachMovie("hero1", "hero1", calDepth(fixture.cell[0],fix
      totalBomb:3,bombLevel:1,puttAble:true,prevFire:false,pushBombAble:true,totalSpecial:0});
 actor.gotoAndStop(fixture.facing+1);
 actor.body.stop();
+if(configuration.profile == "push-v1") _parent.heroObj1={life:3,totalBomb:3,score:0,killScore:0,totalScore:0};
 if (fixture.weapon == "grenade") {
     actor.totalSpecial=3;
     actor.specialToolName="手榴弹";
@@ -102,5 +103,6 @@ this.onEnterFrame = function() {
         +"|"+hasGrenade+"|"+(hasGrenade ? fixture.cell[0] : -1)+"|"+(hasGrenade ? fixture.cell[1] : -1)
         +"|"+(hasGrenade ? grenade.x : -1)+"|"+(hasGrenade ? grenade.y : -1)+"|"+(hasGrenade ? grenade.body._currentframe : 0)
         +"|"+(hasGrenade ? Math.round(grenade._x*20) : -1)+"|"+(hasGrenade ? Math.round(grenade._y*20) : -1)
-        +"|"+actor.totalSpecial+"|"+actor.puttAble+"|"+energies+"|"+occupancy+"|"+bricks);
+        +"|"+actor.totalSpecial+"|"+actor.puttAble+"|"+energies+"|"+occupancy+"|"+bricks
+        +(configuration.profile == "push-v1" ? "|"+actor.totalBomb : ""));
 };

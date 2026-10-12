@@ -1,0 +1,1118 @@
+{
+  "profile": "push-v1",
+  "fps": 35,
+  "tick_origin": "after-first-fixed-update-from-controlled-setup",
+  "fields": {
+    "tick": "int",
+    "heroCellX": "int",
+    "heroCellY": "int",
+    "heroMoving": "bool",
+    "bombActive": "bool",
+    "bombCellX": "int",
+    "bombCellY": "int",
+    "reservationX": "int",
+    "reservationY": "int",
+    "bombPixelXTwips": "int",
+    "bombPixelYTwips": "int",
+    "bombFuse": "int",
+    "slideRemaining": "int",
+    "grenadeActive": "bool",
+    "grenadeOriginX": "int",
+    "grenadeOriginY": "int",
+    "grenadeTargetX": "int",
+    "grenadeTargetY": "int",
+    "grenadeFrame": "int",
+    "grenadeRootXTwips": "int",
+    "grenadeRootYTwips": "int",
+    "specialCount": "int",
+    "fireReady": "bool",
+    "energies": "str",
+    "occupancy": "str",
+    "bricks": "str",
+    "bombsAvailable": "int"
+  },
+  "serialized_fields": {
+    "energies": "(?:\\d+,\\d+,\\d+;)*",
+    "occupancy": "(?:\\d+,\\d+;)*",
+    "bricks": "(?:\\d+,\\d+;)*"
+  },
+  "scenarios": [
+    {
+      "name": "push_corridor",
+      "cell": [
+        7,
+        6
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 60,
+      "prepush": false,
+      "walls": [
+        [
+          12,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": null,
+      "commands": [
+        [
+          2,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "push_short_fuse",
+      "cell": [
+        7,
+        6
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 2,
+      "prepush": false,
+      "walls": [
+        [
+          12,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": null,
+      "commands": [
+        [
+          2,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "push_expiring_fuse",
+      "cell": [
+        7,
+        6
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 1,
+      "prepush": false,
+      "walls": [
+        [
+          12,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": null,
+      "commands": [
+        [
+          2,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "push_energy_source",
+      "cell": [
+        7,
+        6
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 60,
+      "prepush": false,
+      "walls": [
+        [
+          12,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": [
+        8,
+        6
+      ],
+      "commands": [
+        [
+          2,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "push_energy_reserved",
+      "cell": [
+        7,
+        6
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 60,
+      "prepush": false,
+      "walls": [
+        [
+          12,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": [
+        9,
+        6
+      ],
+      "commands": [
+        [
+          2,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "push_blocked",
+      "cell": [
+        7,
+        6
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 60,
+      "prepush": false,
+      "walls": [
+        [
+          9,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": null,
+      "commands": [
+        [
+          2,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "push_alignment",
+      "cell": [
+        9,
+        5
+      ],
+      "facing": 2,
+      "weapon": "",
+      "bomb": [
+        8,
+        6
+      ],
+      "fuse": 60,
+      "prepush": true,
+      "walls": [
+        [
+          12,
+          6
+        ]
+      ],
+      "bricks": [],
+      "energy": null,
+      "commands": [
+        [
+          3,
+          false
+        ],
+        [
+          3,
+          false
+        ],
+        [
+          3,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    }
+  ]
+}
