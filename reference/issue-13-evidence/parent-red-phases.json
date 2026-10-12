@@ -1,0 +1,18 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.375,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\parent-red\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 2.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\parent-red\\original.log"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.813,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\fixture.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.062,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\import.log"
+  },
+  {
+    "name": "body-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.86,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\body-isolate.log"
+  },
+  {
+    "name": "body-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.89,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\body-original.log"
+  },
+  {
+    "name": "body-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.485,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\body-rebuilt.log"
+  },
+  {
+    "name": "burst-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.718,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\burst-isolate.log"
+  },
+  {
+    "name": "burst-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 11.797,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\burst-original.log"
+  },
+  {
+    "name": "burst-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.672,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\burst-rebuilt.log"
+  },
+  {
+    "name": "silhouette-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.687,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\silhouette-isolate.log"
+  },
+  {
+    "name": "silhouette-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.781,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\silhouette-original.log"
+  },
+  {
+    "name": "silhouette-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.125,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\silhouette-rebuilt.log"
+  },
+  {
+    "name": "eyes-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.625,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\eyes-isolate.log"
+  },
+  {
+    "name": "eyes-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.375,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\eyes-original.log"
+  },
+  {
+    "name": "eyes-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.219,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\eyes-rebuilt.log"
+  },
+  {
+    "name": "shadow-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.578,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\shadow-isolate.log"
+  },
+  {
+    "name": "shadow-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.688,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\shadow-original.log"
+  },
+  {
+    "name": "shadow-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\shadow-rebuilt.log"
+  },
+  {
+    "name": "smoke-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.609,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\smoke-isolate.log"
+  },
+  {
+    "name": "smoke-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.734,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\smoke-original.log"
+  },
+  {
+    "name": "smoke-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\smoke-rebuilt.log"
+  },
+  {
+    "name": "eyes-black-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.359,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\eyes-black-isolate.log"
+  },
+  {
+    "name": "eyes-black-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.969,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\eyes-black-original.log"
+  },
+  {
+    "name": "eyes-black-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.047,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\eyes-black-rebuilt.log"
+  },
+  {
+    "name": "smoke-black-isolate",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.547,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\smoke-black-isolate.log"
+  },
+  {
+    "name": "smoke-black-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\smoke-black-original.log"
+  },
+  {
+    "name": "smoke-black-rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\smoke-black-rebuilt.log"
+  },
+  {
+    "name": "source-inputs",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.844,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\source-inputs.log"
+  },
+  {
+    "name": "jpeg-build",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.109,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\jpeg-build.log"
+  },
+  {
+    "name": "jpeg-decode",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.11,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\jpeg-decode.log"
+  },
+  {
+    "name": "source-replay",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.609,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\source-replay.log"
+  },
+  {
+    "name": "composite-original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 9.969,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\composite-original.log"
+  },
+  {
+    "name": "composite-attribution",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-complete-controls-final\\composite-attribution.log"
+  }
+]

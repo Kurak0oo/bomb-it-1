@@ -1,0 +1,223 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1895,
+      "changed_fraction": 0.008613636363636363
+    },
+    {
+      "name": "qa-frame-04.png",
+      "passed": false,
+      "changed_pixels": 2025,
+      "changed_fraction": 0.009204545454545455
+    },
+    {
+      "name": "qa-frame-05.png",
+      "passed": false,
+      "changed_pixels": 2289,
+      "changed_fraction": 0.010404545454545455
+    },
+    {
+      "name": "qa-frame-10.png",
+      "passed": false,
+      "changed_pixels": 366,
+      "changed_fraction": 0.0016636363636363637
+    },
+    {
+      "name": "qa-frame-11.png",
+      "passed": false,
+      "changed_pixels": 425,
+      "changed_fraction": 0.001931818181818182
+    },
+    {
+      "name": "qa-frame-19.png",
+      "passed": false,
+      "changed_pixels": 317,
+      "changed_fraction": 0.001440909090909091
+    },
+    {
+      "name": "qa-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1908,
+      "changed_fraction": 0.008672727272727273
+    },
+    {
+      "name": "qa-hero2-frame-04.png",
+      "passed": false,
+      "changed_pixels": 2025,
+      "changed_fraction": 0.009204545454545455
+    },
+    {
+      "name": "qa-hero2-frame-05.png",
+      "passed": false,
+      "changed_pixels": 2289,
+      "changed_fraction": 0.010404545454545455
+    },
+    {
+      "name": "qa-hero2-frame-10.png",
+      "passed": false,
+      "changed_pixels": 366,
+      "changed_fraction": 0.0016636363636363637
+    },
+    {
+      "name": "qa-hero2-frame-11.png",
+      "passed": false,
+      "changed_pixels": 425,
+      "changed_fraction": 0.001931818181818182
+    },
+    {
+      "name": "qa-hero2-frame-19.png",
+      "passed": false,
+      "changed_pixels": 317,
+      "changed_fraction": 0.001440909090909091
+    },
+    {
+      "name": "qa-hero2-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-hero2-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1942,
+      "changed_fraction": 0.008827272727272727
+    },
+    {
+      "name": "qa-hero3-frame-04.png",
+      "passed": false,
+      "changed_pixels": 2038,
+      "changed_fraction": 0.009263636363636363
+    },
+    {
+      "name": "qa-hero3-frame-05.png",
+      "passed": false,
+      "changed_pixels": 2305,
+      "changed_fraction": 0.010477272727272727
+    },
+    {
+      "name": "qa-hero3-frame-10.png",
+      "passed": false,
+      "changed_pixels": 389,
+      "changed_fraction": 0.0017681818181818183
+    },
+    {
+      "name": "qa-hero3-frame-11.png",
+      "passed": false,
+      "changed_pixels": 450,
+      "changed_fraction": 0.0020454545454545456
+    },
+    {
+      "name": "qa-hero3-frame-19.png",
+      "passed": false,
+      "changed_pixels": 317,
+      "changed_fraction": 0.001440909090909091
+    },
+    {
+      "name": "qa-hero3-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-hero3-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1839,
+      "changed_fraction": 0.00835909090909091
+    },
+    {
+      "name": "qa-hero4-frame-04.png",
+      "passed": false,
+      "changed_pixels": 2038,
+      "changed_fraction": 0.009263636363636363
+    },
+    {
+      "name": "qa-hero4-frame-05.png",
+      "passed": false,
+      "changed_pixels": 2305,
+      "changed_fraction": 0.010477272727272727
+    },
+    {
+      "name": "qa-hero4-frame-10.png",
+      "passed": false,
+      "changed_pixels": 389,
+      "changed_fraction": 0.0017681818181818183
+    },
+    {
+      "name": "qa-hero4-frame-11.png",
+      "passed": false,
+      "changed_pixels": 450,
+      "changed_fraction": 0.0020454545454545456
+    },
+    {
+      "name": "qa-hero4-frame-19.png",
+      "passed": false,
+      "changed_pixels": 317,
+      "changed_fraction": 0.001440909090909091
+    },
+    {
+      "name": "qa-hero4-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-hero4-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    }
+  ]
+}

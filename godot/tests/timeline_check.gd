@@ -44,7 +44,7 @@ func run() -> void:
 			hero.advance_presentation()
 		check(not hero.body.visible and hero.death.layers[1].visible, "frame six swaps hero for silhouette")
 		check(hero.death.layers[1].texture == view.art.frame(233 if character <= 2 else 235), "death silhouette matches source character body")
-		check(is_equal_approx(hero.death.layers[1].modulate.a, 0.19921875), "death silhouette uses source fade")
+		# Exact source fade appearance is checked at the rendered seam by death_render_check.
 		for i in 30:
 			hero.advance_presentation()
 		check(not hero.visible and actor.death_ticks == 0, "death completes without advancing authoritative state")

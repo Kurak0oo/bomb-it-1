@@ -61,7 +61,7 @@ def main():
         if any(code not in [0,1] for code in codes):
             return 2
         images = json.loads((output / "death-comparison/report.json").read_text())
-        if len(images["images"]) != 36 or any("error" in row for row in images["images"]):
+        if len(images["images"]) != 40 or any("error" in row for row in images["images"]):
             raise ValueError("Incomplete or incompatible reference images")
         print("Reference capture complete. Differences are diagnostic; gameplay was not changed.")
         return 1 if args.require_parity and any(codes) else 0

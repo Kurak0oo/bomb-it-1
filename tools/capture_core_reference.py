@@ -19,9 +19,11 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / ".artifacts/core-reference")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--require-parity", action="store_true", help="Fail on observed differences as well as harness errors")
-    parser.add_argument("--profile", choices=["core-v1", "motion-v1"], default="core-v1")
+    parser.add_argument("--profile", choices=["core-v1", "motion-v1", "interaction-v1"], default="core-v1")
+    parser.add_argument("--nested", action="store_true", help="Execute preserved callbacks inside original Sprite 564 with a real root parent")
     args = parser.parse_args()
-    stem = "core" if args.profile == "core-v1" else "motion"
+    stem = args.profile.removesuffix("-v1")
+    nested = args.nested or stem == "interaction"
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     (output / "rebuilt").mkdir(exist_ok=True)
@@ -41,12 +43,13 @@ def main():
         # Its original callbacks survive; the fixture installs actors afterward.
         prelude = output / "prelude.as"
         prelude.write_text("var configuration = " + re.sub(r'"([A-Za-z_][A-Za-z_0-9]*)":', r'\1:', json.dumps(config, ensure_ascii=False)) + ";\n" +
+            ('scenario=_parent.scenario;\n' if nested else '') +
             'game=this; w=0; h=0; brickStyle=[]; bgMusic_sound=new Sound(this);\n'
             'createEmptyMovieClip("bgArea",1); createEmptyMovieClip("brickArea",2);\n', encoding="utf-8")
         classpath = os.pathsep.join([str(args.ffdec / "ffdec.jar"), str(args.ffdec / "lib/*")])
         commands = [
             ("fixture", ["java", "--class-path", classpath, str(ROOT / "tools/reference/BuildReference.java"),
-                         str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / f"tools/reference/{stem}_scenario.as"), str(prelude)], "Preserved complete original frame 2"),
+                         str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / f"tools/reference/{stem}_scenario.as"), str(prelude)] + (["--nested"] if nested else []), "Preserved complete original frame 2"),
             ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original"), str(ROOT / f"godot/tests/fixtures/{stem}_scenarios.json")], "Captured original"),
             ("import", [godot, "--headless", "--path", str(ROOT / "godot"), "--editor", "--import", "--quit"], None),
             ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{stem}_reference_capture.gd"], "CORE_REFERENCE_CAPTURE_OK")]
@@ -63,6 +66,7 @@ def main():
             "ffdec": args.ffdec / "ffdec.jar", "prelude": prelude,
         }.items():
             data[label + "_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        data["execution_scope"] = "original-sprite-564-with-root-parent" if nested else "controlled-root"
         data["preserved_bytecode"] = json.loads((output / "fixture.swf.bytecode.json").read_text(encoding="utf-8"))
         original.write_text(json.dumps(data, indent=2), encoding="utf-8")
         result = subprocess.run([sys.executable, str(ROOT / "tools/compare_traces.py"), str(original),

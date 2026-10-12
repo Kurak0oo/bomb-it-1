@@ -43,6 +43,7 @@ if (scenario.substr(0, 5) == "death") {
     bombExp(bgArea.bg6_8);
 }
 tick = -1;
+trace("REFERENCE_CREATED");
 this.onEnterFrame = function() {
     tick++;
     var dying = brickArea.heroExp1;

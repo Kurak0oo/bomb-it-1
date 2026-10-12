@@ -1,0 +1,8 @@
+file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue02/tools/reference/capture.mjs:78
+          throw new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
+                ^
+
+Error: Capture skipped a tick: expected 0, received [{"tick":0,"deathFrame":0,"heroVisible":false,"silhouetteVisible":false,"centerEnergy":1,"armEnergy":1,"brickBlocking":false,"blastVisible":true},{"tick":1,"deathFrame":0,"heroVisible":false,"silhouetteVisible":false,"centerEnergy":1,"armEnergy":1,"brickBlocking":false,"blastVisible":true}]
+    at file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue02/tools/reference/capture.mjs:78:17
+
+Node.js v22.14.0

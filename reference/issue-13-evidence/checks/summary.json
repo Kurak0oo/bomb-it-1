@@ -1,0 +1,74 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.157,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.265,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 9.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\sim.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\checks\\special.log"
+  }
+]

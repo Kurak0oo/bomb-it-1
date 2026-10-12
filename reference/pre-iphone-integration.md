@@ -23,9 +23,9 @@ partially implemented or externally blocked tickets stay open.
 
 | Ticket | Blocked by | Current disposition |
 |---|---|---|
-| #2 Four death animations | None | Implementer active; correct or independently explain remaining original-image differences |
+| #2 Four death animations | None | Integrated in 65692e0; [source fixes and per-sample attribution](issue-02.md). Actual source/port images still differ in 32/40 samples; renderer controls are separate evidence |
 | #3 Actor feedback | None | Integrated in 0dc29e1; [acceptance evidence](issue-03.md), 259 observations match and 56 exact image differences remain unwaived |
-| #4 Ordinary effects | None | Pending |
+| #4 Ordinary effects | None | Implementer active |
 | #5 Special-weapon presentation | #3, integrated | Pending |
 | #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
 | #7 Difficulty/character selection | #6, integrated | Integrated in c036f3f; [acceptance evidence](issue-07.md), exact image and animation-phase parity remain unverified |
@@ -36,8 +36,8 @@ partially implemented or externally blocked tickets stay open.
 | #12 Pushing/grenade traces | #11, integrated | Integrated in a712245; [15-scenario evidence](issue-12.md), 309 field differences retained as MOTION-01–04 |
 | #13 Interaction/ownership traces | #11, integrated | Implementer active |
 | #14 Strict random replay | None | Pending |
-| #16 Safe-area landscape layout | None | Implementer active |
-| #17 Interruptions/resume | #15, implemented | Pending remaining verification |
+| #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
+| #17 Interruptions/resume | #15, implemented | Implementer active |
 | #18 Smooth rendering | #17 | Pending |
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
