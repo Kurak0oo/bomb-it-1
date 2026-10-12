@@ -209,6 +209,8 @@ func _show_result() -> void:
 		return
 	screen = "result"
 	view.frozen = true
+	if session.result == "timeup_lose":
+		view.present_timeout_loss()
 	_reset_input()
 	touch.enabled = false
 	var win := session.result.ends_with("win")

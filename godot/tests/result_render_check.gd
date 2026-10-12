@@ -68,6 +68,24 @@ func run() -> void:
 			var totals: Array = main.session.totals.duplicate()
 			var tick: int = main.session.state.tick_number
 			var stage: int = main.session.stage
+			if outcome == "timeup_lose":
+				var living: Array = []
+				for child in main.view.get_children():
+					if child is HeroView and child.actor.id < humans:
+						living.append(child)
+						check(child.actor.alive and child.death.visible and not child.smoke.visible,"time-up loss replaces surviving human with heroExp alone")
+				await preload("res://tests/qa_capture.gd").capture(self,"timeout-death-%dp-start" % humans)
+				for i in 10:main._physics_process(1.0/35)
+				for child in living:
+					var age: int = child.death_age
+					main._show_result()
+					check(child.death_age == age,"repeated result cannot restart time-up death")
+				await preload("res://tests/qa_capture.gd").capture(self,"timeout-death-%dp-tick10" % humans)
+				for i in 25:main._physics_process(1.0/35)
+				for child in living:
+					check(not child.visible and child.actor.alive,"time-up death retires without changing authoritative alive state")
+				check(main.session.state.tick_number == tick and main.session.totals == totals,"time-up death presentation cannot tick or award")
+				await preload("res://tests/qa_capture.gd").capture(self,"timeout-death-%dp-retired" % humans)
 			main._process(5.499)
 			check(main.original_results.phase == "outcome", "source 5500ms deadline not rounded down: %dP %s" % [humans,outcome])
 			await preload("res://tests/qa_capture.gd").capture(self,"outcome-%dp-%s" % [humans,outcome])

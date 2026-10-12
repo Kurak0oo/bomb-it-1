@@ -46,6 +46,14 @@ first continuation request, so repeated mouse releases/callbacks cannot rebuild
 or advance the new round. Source outcome music stops on the score sheet; the final
 score page returns to the original main-screen track.
 
+On a time-up loss, Sprite 564 replaces each surviving human clip with `heroExp`
+at the same depth (source `gameover`, line 111). Unlike `hurtHero`, this route does
+not attach the separate Sprite 279 smoke. `HeroView.present_timeout_death()` latches
+that presentation once and retires it after the existing 35-tick death timeline;
+weapon/pointer/target visuals are hidden. Authoritative `HeroState.alive`, lives,
+and scores remain session-owned and unchanged by this hook. Death geometry itself
+uses the existing renderer and remains within issue 2's independent parity audit.
+
 `ExportResultsArt.java` extracts static source display lists at 2x and dynamic-field
 geometry directly from SWF tags. `prepare_results.py` also reads Symbol 563's XFL
 matrices and records the preserved SWF hash. Filtering is explicitly linear;
@@ -65,6 +73,9 @@ The approved public runner's campaign/rendered seams have red/green evidence:
 - Exact 5.499/5.5-second and frame-70 skip boundaries are checked. Result display
   leaves simulation tick and awarded totals unchanged. A fresh main scene reloads
   the persisted best score from the runner's isolated `user://` directory.
+- Time-up loss was red for missing hero replacement/retirement, then green for
+  1P/2P. Captures show start, tick 10 and retirement; repeated result callbacks do
+  not restart it, and authoritative alive/tick/score values remain unchanged.
 - The 100-second source-win fixture yields score 3,110 / total 4,110 in both versions.
 
 Reproduction (native visual runs use the integration exclusive wrapper):
@@ -102,3 +113,14 @@ independent full-match scoring or callback-order proof. Elapsed presentation tim
 under severe rendering stalls and physical iPhone interaction remain outside these
 controlled captures. Shared Linux regression baselines are integration-owned;
 `qa-result.png` now captures the outcome phase rather than an immediate generic dialog.
+
+## Review against starting revision
+
+Reviewed the change from `3b91c43` for score-award ownership, once-only transitions,
+source field/player mappings, frame indexing, terminal routing, and interaction
+with merged issue 7 selection. The rendered banner check caught a frame-index
+error before handoff. Review also caught an unconditional weapon visibility override
+in the timeout hook; the final hook only hides the indicator on that special route.
+No gameplay timing, damage, RNG or award amounts were retuned. Integration merges
+retain the independent selection/menu changes. Shared Linux baselines remain owned
+by integration; exact original image comparison remains diagnostic and failing.
