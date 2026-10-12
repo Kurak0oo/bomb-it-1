@@ -1,0 +1,74 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.203,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.047,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\view.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.891,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\death_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.937,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.735,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.047,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.656,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue08\\.artifacts\\issue08-reviewed\\visual_timelines.log"
+  }
+]
