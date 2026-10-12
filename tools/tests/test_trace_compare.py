@@ -217,6 +217,25 @@ class ReferenceComparison(unittest.TestCase):
                 self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
                 self.assertIsNone(report)
 
+    def test_order_profile_matches_all_original_weapon_command_paths(self):
+        run, report = self.compare_real(evidence_name="issue-28-evidence")
+        self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+        self.assertTrue(report["passed"])
+        self.assertIsNone(report["first_divergence"])
+
+    def test_order_profile_detects_actual_charge_and_tick_changes(self):
+        def field(original, rebuilt):
+            rebuilt["scenarios"]["mine_move_hold"][6]["specialCount"] += 1
+        run, report = self.compare_real(field, "issue-28-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"mine_move_hold", "tick":6,
+                         "field":"specialCount", "original":2, "rebuilt":3})
+        def tick(original, rebuilt):
+            rebuilt["scenarios"]["fire_blocked"][0]["tick"] = 1
+        run, report = self.compare_real(tick, "issue-28-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 0", run.stderr)
+
     def test_port_generated_reference_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
