@@ -1,0 +1,122 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 20.922,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.156,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\reference_parse.log"
+  },
+  {
+    "name": "campaign",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.156,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\campaign.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.407,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\sim.log"
+  },
+  {
+    "name": "selection_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.906,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\selection_render.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\death_render.log"
+  },
+  {
+    "name": "result_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.359,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\result_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.688,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.718,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.438,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.016,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.609,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.187,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-handoff\\visual_timelines.log"
+  }
+]

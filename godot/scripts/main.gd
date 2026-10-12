@@ -9,6 +9,7 @@ var overlay: Control
 var view: GameView
 var touch: MobileInput
 var original_hud: OriginalHud
+var original_results: OriginalResults
 var screen := "menu"
 var paused := false
 var difficulty := 1
@@ -61,6 +62,7 @@ func _clear_screen() -> void:
 	touch = null
 	overlay = null
 	original_hud = null
+	original_results = null
 	paused = false
 
 func _background(path: String) -> void:
@@ -203,8 +205,12 @@ func _update_hud() -> void:
 	original_hud.sync(session)
 
 func _show_result() -> void:
+	if screen == "result":
+		return
 	screen = "result"
 	view.frozen = true
+	if session.result == "timeup_lose":
+		view.present_timeout_loss()
 	_reset_input()
 	touch.enabled = false
 	var win := session.result.ends_with("win")
@@ -212,22 +218,36 @@ func _show_result() -> void:
 	for id in players:
 		high_score = maxi(high_score, session.totals[id])
 	_save_preferences()
-	overlay = Control.new()
-	ui.add_child(overlay)
-	_panel(overlay, Rect2(127,95,352,229))
-	var title := "STAGE CLEAR!" if win else "TRY AGAIN!" if session.can_continue() else "GAME OVER"
-	if win and session.stage == session.total_stages:
-		title = "YOU WIN!"
-	if session.result.begins_with("timeup"):
-		title = "TIME UP · " + ("YOU WIN" if win else "ROUND LOST")
-	_label(overlay, title, Rect2(135,110,336,34), 23)
-	var score_text := "SCORE  %06d\nBEST  %06d" % [session.totals[0],high_score] if players == 1 else "P1  %06d   P2  %06d\nBEST  %06d" % [session.totals[0],session.totals[1],high_score]
-	_label(overlay, score_text, Rect2(144,160,318,55), 17)
-	if session.can_continue():
-		_button(overlay, "NEXT STAGE" if win else "RETRY", Rect2(163,226,278,35), func(): session.next_round(); _show_round())
-	else:
-		_button(overlay, "PLAY AGAIN", Rect2(163,226,278,35), _start_game)
-	_button(overlay, "MAIN MENU", Rect2(192,275,220,28), _show_menu)
+	original_results = OriginalResults.new()
+	original_results.session = session
+	original_results.saved_names = {0:prefs.get_value("game","player_name1",""),1:prefs.get_value("game","player_name2","")}
+	original_results.scores_shown.connect(func(terminal: bool):
+		if terminal:
+			audio.play_music("406_Bombit_-_mainscreen.mp3")
+		else:
+			audio.music.stop())
+	original_results.action_requested.connect(_result_action)
+	ui.add_child(original_results)
+
+func _process(delta: float) -> void:
+	if screen == "result" and is_instance_valid(original_results):
+		original_results.advance(delta)
+
+func _result_action(action: String) -> void:
+	if screen != "result":
+		return
+	match action:
+		"continue":
+			if original_results.phase == "scores" and session.can_continue():
+				session.next_round()
+				_show_round()
+		"replay": _start_game()
+		"menu": _show_menu()
+		"save":
+			for id in original_results.names:
+				prefs.set_value("game","player_name%d" % (id+1),original_results.names[id].text)
+			_save_preferences()
+			original_results.notice.text = "Saved locally · best %d" % high_score
 
 func _toggle_pause() -> void:
 	if screen != "game":
@@ -273,6 +293,11 @@ func _notification(what: int) -> void:
 		_toggle_pause()
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if screen == "result" and event is InputEventKey:
+		if not event.pressed:
+			original_results.confirm()
+		get_viewport().set_input_as_handled()
+		return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode in [KEY_ESCAPE, KEY_P]:
 			if screen == "game":
@@ -281,13 +306,6 @@ func _unhandled_key_input(event: InputEvent) -> void:
 				_show_menu()
 		elif event.keycode == KEY_M:
 			_toggle_sound()
-		elif event.keycode == KEY_ENTER:
-			if screen == "result":
-				if session.can_continue():
-					session.next_round()
-					_show_round()
-				else:
-					_start_game()
 
 func _bind_key(action: String, code: int) -> void:
 	if not InputMap.has_action(action):

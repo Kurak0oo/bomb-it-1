@@ -10,6 +10,12 @@ implemented, with evidence in the earlier completion/menu reviews. #22 (native
 iPhone acceptance) and #23 (final release sign-off) are outside this pass. The
 parent spec remains open until those later gates are satisfied.
 
+Independent #11 traces exposed two concrete ordering defects. The parent spec's
+source-backed correction process adds #28 and #29 as separate, bounded tasks
+before desktop acceptance. They do not change the 35 Hz rate, numerical balance,
+seeded RNG or deterministic timer policy. CORE-01's one-twip Ruffle quantization
+difference remains unverified against Adobe Flash and is not a correction target.
+
 The task graph is the tracker’s native blocking graph, captured on 2026-10-12.
 Implementation occurs in ticket worktrees, merged into this branch by a merger
 agent. Only demonstrated acceptance permits a closing reference in the draft PR;
@@ -24,18 +30,20 @@ partially implemented or externally blocked tickets stay open.
 | #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
 | #7 Difficulty/character selection | #6, integrated | Integrated in c036f3f; [acceptance evidence](issue-07.md), exact image and animation-phase parity remain unverified |
 | #8 HUD/arena composition | None | Integrated in 3b91c43; [acceptance evidence](issue-08.md), font substitution and exact pixel differences retained |
-| #9 Scores/outcome transitions | #6, integrated | Implementer active |
+| #9 Scores/outcome transitions | #6, integrated | Integrated in f26207e; [source timing, button states and twelve-route evidence](issue-09.md) |
 | #10 Original audio | #3, integrated | Pending |
-| #11 Movement/damage/firing traces | None | Implementer active; preserve original frame-2 polling/damage callback |
-| #12 Pushing/grenade traces | #11 | Pending |
-| #13 Interaction/ownership traces | #11 | Pending |
+| #11 Movement/damage/firing traces | None | Integrated in 6d28b66; [independent evidence](issue-11.md), 69 field differences explicitly retained |
+| #12 Pushing/grenade traces | #11, integrated | Implementer active |
+| #13 Interaction/ownership traces | #11, integrated | Pending |
 | #14 Strict random replay | None | Pending |
-| #16 Safe-area landscape layout | None | Pending |
+| #16 Safe-area landscape layout | None | Implementer active |
 | #17 Interruptions/resume | #15, implemented | Pending remaining verification |
 | #18 Smooth rendering | #17 | Pending |
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
-| #21 Integrated desktop acceptance | #2–#19 | Pending integration and packaging |
+| #21 Integrated desktop acceptance | #2–#19, #28–#29 | Pending integration and packaging |
+| #28 Movement/special-fire ordering | #11, integrated | Pending separately reviewed CORE-03 correction |
+| #29 Bomb expiry/held-fire ordering | #11–#13 | Pending separately reviewed CORE-02 correction |
 
 ## Acceptance boundaries
 

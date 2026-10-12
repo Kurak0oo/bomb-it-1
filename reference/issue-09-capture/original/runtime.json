@@ -1,0 +1,16 @@
+{
+  "source": "original-gameover-bytecode-with-controlled-fixture",
+  "fixture_sha256": "da793c66359a7310a0937af9eeb0bcba7fbada25bcc669157cbabf18ebdc4657",
+  "original_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+  "builder_sha256": "9f6d0cc3d1dd2ef6ff6afb9d66448018d4704cd7b0ef7823a1648c6274d858ca",
+  "root_setup_sha256": "6959e41e445f57853a7ca70fa207f40827e131bc07c74066730274ca1ad80f9a",
+  "game_setup_sha256": "8bc14c85a3de4cebde830be544f8ece97ada58910687d21ee276949c30639523",
+  "runtime": "Ruffle 0.7.1",
+  "browser": "156.0.8078.4",
+  "fps": 35,
+  "capture_sha256": "67a5ac8daab4fdac0ce674213bd11b2f8ab5bb057c924178c8b88ec427c56077",
+  "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
+  "renderer": "canvas",
+  "clock": "Playwright virtual clock; source 5500ms gameover interval and Sprite603 field binding",
+  "caveat": "Original bytecode in Ruffle, not Adobe Flash Player certification. No port images used as source."
+}
