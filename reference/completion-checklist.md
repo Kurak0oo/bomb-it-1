@@ -10,17 +10,36 @@ The menu/help follow-up uses `0d3b2d18b67db1dcffc5c8468c110e0976748c25`; see
 Earlier game changes are excluded from each pass. The accepted 35 Hz gameplay,
 seeded RNG backend and deterministic timer policy remain unchanged.
 
+The active pre-iPhone integration pass uses baseline `f79737253316dc3d805dd56af1d2eea95a66033d`.
+Its task graph and current frontier are in [pre-iPhone integration](pre-iphone-integration.md).
+
+## Eight-area completion matrix
+
+Implementation, independently verified fixtures, deviations and external blockers
+are separate claims. Passing a port regression does not certify the entire area.
+
+| Original plan area | Verified evidence | Remaining implementation or verification | Deviations / external limits |
+|---|---|---|---|
+| Fixed core and four actors | Explicit 35 Hz, pure state and ownership regressions | Broader independent integration traces (#11–#13) | Accepted rules are preserved; no full-match equivalence claim |
+| Core mechanics verification | Original-bytecode death, level-one blast and brick fixtures | Movement, damage coordinates, firing, pushing and grenade boundaries (#11–#12) | Ruffle evidence is not Adobe Flash Player certification |
+| Original map generation | Recovered algorithm and seeded connectivity regressions | Strict bound/order replay across setup, drops, retry and stage continuation (#14) | Godot seeded RNG and deterministic timer remain explicit policies |
+| AI and actor behavior | Four actors, difficulty regressions; 259 actor-presentation observations agree (#3) | Mixed interactions and full-match callback evidence (#13, #21) | Named fixtures do not establish every AI/game interaction |
+| Items and special weapons | Existing item/weapon regressions and final rocket-smoke fix | Complete effect lifetimes and independent collision/ownership evidence (#4–#5, #12–#13) | Existing port tests are not an independent oracle |
+| Visual timelines, depth and audio | #3 placement/timing/depth; #8 five-theme composition and source depth audit | Death difference isolation, ordinary/special effects and audio audit (#2, #4–#5, #10) | Exact image differences remain; HUD level/timer font substitution is documented |
+| Game flow | Original menu/help (#6), independent 2P selection (#7), HUD counters/status (#8) | Original outcomes/score presentation (#9), integrated desktop flow (#21) | Local high scores; source/port images and selection animation phases differ |
+| Smooth display and phone experience | Rendered input delivery/cancellation (#15) | Safe areas, lifecycle, schedule invariance, packaging and desktop acceptance (#16–#21) | No Mac/Xcode; native signing/install and real-iPhone performance remain unverified (#20, #22) |
+
 ## Tickets
 
 | Ticket | Status and remaining evidence |
 |---|---|
 | [#2 Deaths](https://github.com/Kurak0oo/bomb-it-1/issues/2) | Partial: all four source-bytecode death fixtures and separate eye/body compositing. Timing traces agree; 28/36 reference images still differ. |
-| [#3 Actor feedback](https://github.com/Kurak0oo/bomb-it-1/issues/3) | Partial: surviving-hit smoke, weapon indicator and rendered regressions. Nested idle clips and independent indicator/depth captures remain. |
+| [#3 Actor feedback](https://github.com/Kurak0oo/bomb-it-1/issues/3) | Integrated: required placement/depth/timing/visibility fixtures pass; 259 independent observations agree. All 56 exact pixel differences remain unwaived. See [actor evidence](issue-03.md). |
 | [#4 Ordinary effects](https://github.com/Kurak0oo/bomb-it-1/issues/4) | Pending expanded source captures and boundary comparison. |
 | [#5 Special effects](https://github.com/Kurak0oo/bomb-it-1/issues/5) | Partial: impact-tick rocket smoke restored and rendered regression passes. Other effect comparisons remain. |
-| [#6 Menu/help](https://github.com/Kurak0oo/bomb-it-1/issues/6) | Title/player count/controls/power-up slices #24–#26 implemented with source artwork and input checks. All 11 original-playback image pairs still differ; see [menu restoration](menu-restoration.md). Parent remains open for fidelity review. |
-| [#7 Selection](https://github.com/Kurak0oo/bomb-it-1/issues/7) | Pending original selection presentation. |
-| [#8 HUD/arena](https://github.com/Kurak0oo/bomb-it-1/issues/8) | Pending composition, depth and theme reference matrix. |
+| [#6 Menu/help](https://github.com/Kurak0oo/bomb-it-1/issues/6) | Integrated acceptance audit: original title/player/help/power-up artwork and input checks pass; 11 source captures reproduce exactly, while all 11 source/port pairs still differ. See [menu evidence](issue-06.md). |
+| [#7 Selection](https://github.com/Kurak0oo/bomb-it-1/issues/7) | Integrated: original difficulty/selection art and independent 2P confirmation; merged rendered checks pass. Six source/port pairs differ and are not tick-aligned animation claims. See [selection evidence](issue-07.md). |
+| [#8 HUD/arena](https://github.com/Kurak0oo/bomb-it-1/issues/8) | Integrated: original panels/icons/counters/status, five-theme native/enlarged and controlled-depth captures. Exact pixels and source level/timer font remain documented differences. See [HUD evidence](issue-08.md). |
 | [#9 Outcomes](https://github.com/Kurak0oo/bomb-it-1/issues/9) | Pending original transitions, counting and score presentation. |
 | [#10 Audio](https://github.com/Kurak0oo/bomb-it-1/issues/10) | Pending independent cue/ordering comparison. Existing recovered samples remain. |
 | [#11 Core traces](https://github.com/Kurak0oo/bomb-it-1/issues/11) | Pending movement, damage-coordinate and fire-input bytecode fixtures. |
