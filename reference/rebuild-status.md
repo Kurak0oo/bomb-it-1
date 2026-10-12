@@ -106,7 +106,9 @@ The playable systems are implemented, but **exact equivalence is not established
    presentation. iPhone hardware
    latency, actual safe-area insets, sustained frame pacing, native builds, signing, and store packaging
    have not been verified. The user has iPhones but no Mac; native iOS build/install
-   remains externally blocked. A [portable Windows release](issue-19.md) now passes
+   remains externally blocked. [iPhone export configuration and preflight](issue-20.md)
+   are implemented, with real signing/install explicitly unverified.
+   A [portable Windows release](issue-19.md) now passes
    actual executable smoke and saved-setting reload. Final integrated desktop
    acceptance remains pending; no installed iOS package is claimed.
 
