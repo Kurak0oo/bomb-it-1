@@ -96,6 +96,10 @@ on fast hosts. Exact requested/accepted counts and the strict two-tick timer
 assertion remain enforced. The original Linux repro now passes with boundaries
 1,2,1,2,2,2,2 and six total two-player fixture ticks. Red, diagnostic and green
 logs are retained in `issue-17-capture/linux-boundary-fix`.
+After synchronization with integration `fcbd85f`, Linux (same pinned image with
+the updated GameState and test bind-mounted) and Windows both pass the original
+full interruption scenario and the added bounded stall. Both report the same
+exact tick boundaries and six total two-player fixture ticks.
 
 ## Limits
 
