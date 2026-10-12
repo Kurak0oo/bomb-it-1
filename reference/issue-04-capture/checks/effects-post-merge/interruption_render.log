@@ -1,0 +1,5 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+INTERRUPTION_TRACE {"outcome_paused_elapsed":2.03057971428571,"passed":true,"paused_tick":1,"physics_hz":35,"reloaded_muted":false,"tick_boundaries":[{"accepted":1,"requested":1,"timer_ticks":1},{"accepted":2,"requested":2,"timer_ticks":2},{"accepted":1,"requested":1,"timer_ticks":1},{"accepted":2,"requested":2,"timer_ticks":2},{"accepted":2,"requested":2,"timer_ticks":2},{"accepted":2,"requested":2,"timer_ticks":2},{"accepted":2,"requested":2,"timer_ticks":2}],"two_player_accepted_ticks":6}
+INTERRUPTION_RENDER_OK
