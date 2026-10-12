@@ -23,8 +23,8 @@ partially implemented or externally blocked tickets stay open.
 | #5 Special-weapon presentation | #3 | Pending |
 | #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
 | #7 Difficulty/character selection | #6, integrated | Implementer active |
-| #8 HUD/arena composition | None | Implementer active |
-| #9 Scores/outcome transitions | #6 | Pending |
+| #8 HUD/arena composition | None | Integrated in 3b91c43; [acceptance evidence](issue-08.md), font substitution and exact pixel differences retained |
+| #9 Scores/outcome transitions | #6, integrated | Implementer active |
 | #10 Original audio | #3 | Pending |
 | #11 Movement/damage/firing traces | None | Pending |
 | #12 Pushing/grenade traces | #11 | Pending |
