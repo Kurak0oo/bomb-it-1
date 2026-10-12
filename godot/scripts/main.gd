@@ -8,10 +8,7 @@ var ui: Control
 var overlay: Control
 var view: GameView
 var touch: MobileInput
-var hud: Array[Label] = []
-var hud_scores: Array[Label] = []
-var timer_label: Label
-var stage_label: Label
+var original_hud: OriginalHud
 var screen := "menu"
 var paused := false
 var difficulty := 1
@@ -64,8 +61,7 @@ func _clear_screen() -> void:
 	original_menu = null
 	touch = null
 	overlay = null
-	hud.clear()
-	hud_scores.clear()
+	original_hud = null
 	paused = false
 
 func _background(path: String) -> void:
@@ -156,21 +152,11 @@ func _show_round() -> void:
 	view.state = session.state
 	view.position = SimRules.GAME_ORIGIN
 	world.add_child(view)
-	for id in 4:
-		var y := 7 + id * 68
-		var panel := _panel(ui, Rect2(7,y,72,65))
-		panel.modulate = Color("ffd5eb")
-		var portrait := art.sprite([90,68,46,24][session.state.heroes[id].character_id - 1], 4)
-		portrait.position = Vector2(12,y+27) + art.offset([90,68,46,24][session.state.heroes[id].character_id - 1]) * 0.7
-		portrait.scale = Vector2(0.7,0.7)
-		ui.add_child(portrait)
-		var label := _label(ui, "", Rect2(37,y+2,39,43), 9, Color("572047"))
-		label.add_theme_constant_override("line_spacing", -4)
-		hud.append(label)
-		hud_scores.append(_label(ui, "", Rect2(9,y+44,68,18), 11, Color("9a2464")))
-	_panel(ui, Rect2(4,299,78,59))
-	stage_label = _label(ui, "", Rect2(7,304,72,18), 11)
-	timer_label = _label(ui, "", Rect2(7,326,72,25), 19)
+	original_hud = OriginalHud.new()
+	original_hud.art = art
+	# The HUD backdrop is behind the arena; counters remain in its left gutter.
+	world.add_child(original_hud)
+	world.move_child(original_hud, 1)
 	_button(ui, "SND", Rect2(4,363,39,17), _toggle_sound)
 	_button(ui, "Ⅱ", Rect2(46,363,36,17), _toggle_pause)
 	_button(ui, "TOUCH", Rect2(4,382,78,15), _toggle_touch)
@@ -229,15 +215,7 @@ func _physics_process(_delta: float) -> void:
 		_show_result()
 
 func _update_hud() -> void:
-	for id in 4:
-		var hero := session.state.heroes[id]
-		var name_text := "P%d" % (id+1) if id < players else "CPU %d" % id
-		var effect := "%s %d" % [hero.special_weapon.left(3).to_upper(), hero.special_count] if hero.special_count > 0 else "SHIELD" if hero.armor else "FIRE %d" % hero.bomb_level
-		hud[id].text = "%s%s\nLIFE %d\nBOMB %d\n%s" % [name_text, "" if hero.alive else " ×", maxi(hero.lives,0), hero.bombs_available, effect]
-		hud_scores[id].text = "%06d" % (session.totals[id]+(hero.score if session.result == "" else 0))
-	stage_label.text = "LEVEL %02d" % session.stage
-	var seconds := ceili(session.remaining_ticks / 35.0)
-	timer_label.text = "%02d:%02d" % [seconds / 60, seconds % 60]
+	original_hud.sync(session)
 
 func _show_result() -> void:
 	screen = "result"
