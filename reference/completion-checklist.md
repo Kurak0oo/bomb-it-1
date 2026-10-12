@@ -1,7 +1,7 @@
 # Game completion checklist
 
-Spec: [#1](https://github.com/Kurak0oo/bomb-it-1/issues/1). All 22 implementation
-tickets are published with native blocking relationships. This is a progress
+Spec: [#1](https://github.com/Kurak0oo/bomb-it-1/issues/1). Implementation and
+source-backed correction tickets have native blocking relationships. This is a progress
 ledger, not a release or exact-parity certification.
 
 Initial visual/input pass review baseline: `47be5ea18698ce94e94d39c91855022dbb37310a`.
@@ -42,7 +42,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 | [#8 HUD/arena](https://github.com/Kurak0oo/bomb-it-1/issues/8) | Integrated: original panels/icons/counters/status, five-theme native/enlarged and controlled-depth captures. Exact pixels and source level/timer font remain documented differences. See [HUD evidence](issue-08.md). |
 | [#9 Outcomes](https://github.com/Kurak0oo/bomb-it-1/issues/9) | Pending original transitions, counting and score presentation. |
 | [#10 Audio](https://github.com/Kurak0oo/bomb-it-1/issues/10) | Pending independent cue/ordering comparison. Existing recovered samples remain. |
-| [#11 Core traces](https://github.com/Kurak0oo/bomb-it-1/issues/11) | Pending movement, damage-coordinate and fire-input bytecode fixtures. |
+| [#11 Core traces](https://github.com/Kurak0oo/bomb-it-1/issues/11) | Integrated: original frame-2 callback, ten scenarios / 252 ticks / 20 fields, strict malformed/perturbation checks. 69 differences remain explicit; CORE-02/03 have separate correction tickets. See [core evidence](issue-11.md). |
 | [#12 Endpoints](https://github.com/Kurak0oo/bomb-it-1/issues/12) | Pending pushed-bomb and grenade endpoint fixtures. |
 | [#13 Interactions](https://github.com/Kurak0oo/bomb-it-1/issues/13) | Pending mixed weapons, shields, surviving lives and ownership reference traces. |
 | [#14 Random replay](https://github.com/Kurak0oo/bomb-it-1/issues/14) | Pending strict bound/order recording and fail-closed replay. Current fallback is not a parity oracle. |
@@ -55,6 +55,8 @@ are separate claims. Passing a port regression does not certify the entire area.
 | [#21 Desktop acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/21) | Pending prerequisite fidelity and packaging work. |
 | [#22 iPhone acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/22) | Blocked by native build plus remaining phone work. Simulator/Windows results cannot satisfy it. |
 | [#23 Release evidence](https://github.com/Kurak0oo/bomb-it-1/issues/23) | Pending both integrated release gates; no completion claim. |
+| [#28 Move/special ordering](https://github.com/Kurak0oo/bomb-it-1/issues/28) | Pending source-backed CORE-03 correction, separately from visual work. |
+| [#29 Bomb expiry/refire](https://github.com/Kurak0oo/bomb-it-1/issues/29) | Pending source-backed CORE-02 correction after pushed-bomb and interaction evidence. |
 
 ## Evidence for the initial visual/input pass
 
