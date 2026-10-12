@@ -43,8 +43,8 @@ partially implemented or externally blocked tickets stay open.
 | #13 Interaction/ownership traces | #11, integrated | Integrated in ca793d7; [17-scenario nested-source evidence](issue-13.md), 134 differences retained and earlier timing controls reproduced |
 | #14 Strict random replay | None | Pending |
 | #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
-| #17 Interruptions/resume | #15, implemented | Implementer active |
-| #18 Smooth rendering | #17 | Pending |
+| #17 Interruptions/resume | #15, implemented | Integrated in 51e5b7d; [rendered interruption, stale input, audio suspension and interpolation evidence](issue-17.md) |
+| #18 Smooth rendering | #17, integrated | Implementer active |
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
 | #21 Integrated desktop acceptance | #2–#19, #28–#33 | Pending integration and packaging |
