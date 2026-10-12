@@ -1,0 +1,15 @@
+test_rendered_capture_rejects_unpinned_engine_before_capture (tools.tests.test_commands.Commands.test_rendered_capture_rejects_unpinned_engine_before_capture) ... 
+  test_rendered_capture_rejects_unpinned_engine_before_capture (tools.tests.test_commands.Commands.test_rendered_capture_rejects_unpinned_engine_before_capture) (command='capture_death_controls.py') ... FAIL
+
+======================================================================
+FAIL: test_rendered_capture_rejects_unpinned_engine_before_capture (tools.tests.test_commands.Commands.test_rendered_capture_rejects_unpinned_engine_before_capture) (command='capture_death_controls.py')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Eiji\Github\bomb-it-worktrees\review-fixes\tools\tests\test_commands.py", line 23, in test_rendered_capture_rejects_unpinned_engine_before_capture
+    self.assertIn("Expected Godot 4.7.2", result.stderr)
+AssertionError: 'Expected Godot 4.7.2' not found in 'Failed control phase fixture\n'
+
+----------------------------------------------------------------------
+Ran 1 test in 1.520s
+
+FAILED (failures=1)

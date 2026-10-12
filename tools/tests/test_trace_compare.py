@@ -9,6 +9,21 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_non_string_profiles_report_incompatible_capture(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for profile in [[], {}]:
+                with self.subTest(profile=profile):
+                    for name, source in [("original", "original-swf-bytecode"), ("rebuilt", "godot-rebuild")]:
+                        (root / f"{name}.json").write_text(json.dumps({"source": source,
+                            "runtime": "fixture", "profile": profile}))
+                    run = subprocess.run([sys.executable, str(ROOT / "tools/compare_traces.py"),
+                                          str(root / "original.json"), str(root / "rebuilt.json"),
+                                          "--output", str(root / "report.json")], capture_output=True, text=True)
+                    self.assertEqual(run.returncode, 2)
+                    self.assertIn("Unknown or incompatible capture profile", run.stderr)
+                    self.assertFalse((root / "report.json").exists())
+
     def test_contact_profiles_preserve_expiry_and_moving_freeze_boundaries(self):
         for evidence in ("issue-33-evidence", "issue-33-evidence/icewalk"):
             run, report = self.compare_real(evidence_name=evidence)

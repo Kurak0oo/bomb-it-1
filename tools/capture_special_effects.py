@@ -8,7 +8,7 @@ import shutil
 import subprocess
 import sys
 
-from run_checks import ROOT, run_phase
+from run_checks import ENGINE_VERSION, ROOT, run_phase
 
 
 def main():
@@ -23,6 +23,13 @@ def main():
     godot = shutil.which(args.godot)
     if not godot:
         parser.error('Godot executable not found')
+    try:
+        version = subprocess.run([godot, '--version'], capture_output=True, text=True,
+                                 timeout=180, check=True).stdout.strip()
+        if not version.startswith(ENGINE_VERSION + '.'):
+            parser.error(f'Expected Godot {ENGINE_VERSION}, found {version}')
+    except (OSError, subprocess.SubprocessError) as error:
+        parser.error(f'Cannot verify Godot version: {error}')
     profile = ROOT / 'godot/tests/fixtures/special_effect_scenarios.json'
     env = os.environ.copy()
     env['BOMB_IT_QA_DIR'] = str(output / 'rebuilt/images')
