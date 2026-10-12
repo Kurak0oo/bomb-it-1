@@ -1,0 +1,2445 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "shield_bomb",
+    "tick": 1,
+    "field": "hero1KillScore",
+    "original": 1000,
+    "rebuilt": 0
+  },
+  "scenario_first_divergences": {
+    "shield_bomb": {
+      "scenario": "shield_bomb",
+      "tick": 1,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    "ai_three_hits": null,
+    "human_multi_life": null,
+    "self_damage": null,
+    "dead_owner_refund": {
+      "scenario": "dead_owner_refund",
+      "tick": 4,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    "overlap_ab": null,
+    "overlap_ba": null,
+    "grenade_bomb": null,
+    "self_shield": null,
+    "human_shield": {
+      "scenario": "human_shield",
+      "tick": 1,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    "shield_invulnerability_boundary": {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 1,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    }
+  },
+  "differences": [
+    {
+      "scenario": "shield_bomb",
+      "tick": 1,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 1,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 2,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 2,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 3,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 3,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 4,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 4,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 5,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 5,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 6,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 6,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 7,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 7,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 8,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 8,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 9,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 9,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 10,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 10,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 11,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 11,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 12,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 12,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 13,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 13,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 14,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 14,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 15,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 15,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 16,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 16,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 17,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 17,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 18,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 18,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 19,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 19,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 20,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 20,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 21,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 21,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 22,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 22,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 23,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 23,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 24,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 24,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 25,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 25,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 26,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 26,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 27,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 27,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 28,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 28,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 29,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 29,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 30,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 30,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 31,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_bomb",
+      "tick": 31,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 4,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 5,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 6,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 7,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 8,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 9,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 10,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 11,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 12,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 13,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 14,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 15,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 16,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 17,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 18,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 19,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 20,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 21,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 22,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 23,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 24,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 25,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 26,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 27,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 28,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 29,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 30,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "dead_owner_refund",
+      "tick": 31,
+      "field": "hero1Bombs",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 1,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 1,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 2,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 2,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 3,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 3,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 4,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 4,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 5,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 5,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 6,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 6,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 7,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 7,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 8,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 8,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 9,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 9,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 10,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 10,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 11,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 11,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 12,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 12,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 13,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 13,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 14,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 14,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 15,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 15,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 16,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 16,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 17,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 17,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 18,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 18,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 19,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 19,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 20,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 20,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 21,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 21,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 22,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 22,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 23,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 23,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 24,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 24,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 25,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 25,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 26,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 26,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 27,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 27,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 28,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 28,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 29,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 29,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 30,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 30,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 31,
+      "field": "hero2KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "human_shield",
+      "tick": 31,
+      "field": "hero2Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 1,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 1,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 2,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 2,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 3,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 3,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 4,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 4,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 5,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 5,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 6,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 6,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 7,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 7,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 8,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 8,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 9,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 9,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 10,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 10,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 11,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 11,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 12,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 12,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 13,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 13,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 14,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 14,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 15,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 15,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 16,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 16,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 17,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 17,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 18,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 18,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 19,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 19,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 20,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 20,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 21,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 21,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 22,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 22,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 23,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 23,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 24,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 24,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 25,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 25,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 26,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 26,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 27,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 27,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 28,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 28,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 29,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 29,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 30,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 30,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 31,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 31,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 32,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 32,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 33,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 33,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 34,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 34,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 35,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 35,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 36,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 36,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 37,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 37,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 38,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 38,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 39,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 39,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 40,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 40,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 41,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 41,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 42,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 42,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 43,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 43,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 44,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 44,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 45,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 45,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 46,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 46,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 47,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 47,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 48,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 48,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 49,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 49,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 50,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 50,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 51,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 51,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 52,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 52,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 53,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 53,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 54,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 54,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 55,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 55,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 56,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 56,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 57,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 57,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 58,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 58,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 59,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 59,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 60,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 60,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 61,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 61,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 62,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 62,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 63,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 63,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 64,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 64,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 65,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 65,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 66,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 66,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 67,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 67,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 68,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 68,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 69,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 69,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 70,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 70,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 71,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 71,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 72,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 72,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 73,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 73,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 74,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 74,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 75,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 75,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 76,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 76,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 77,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 77,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 78,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 78,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 79,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 79,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 80,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 80,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 81,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 81,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 82,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 82,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 83,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 83,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 84,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 84,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 85,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 85,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 86,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 86,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 87,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 87,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 88,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 88,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 89,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 89,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 90,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 90,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 91,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 91,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 92,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 92,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 93,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 93,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 94,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 94,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 95,
+      "field": "hero1KillScore",
+      "original": 1000,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "shield_invulnerability_boundary",
+      "tick": 95,
+      "field": "hero1Score",
+      "original": 1000,
+      "rebuilt": 0
+    }
+  ]
+}
