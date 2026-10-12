@@ -94,6 +94,15 @@ func run() -> void:
 	if main.screen == "select":
 		check(main.selected_character == 1, "new player-count selection resets to source first character")
 		await capture("selection-1p")
+		var still: PackedByteArray = root.get_texture().get_image().get_data()
+		main.original_menu.set_process(true)
+		await create_timer(0.12).timeout
+		main.original_menu.set_process(false)
+		await RenderingServer.frame_post_draw
+		check(root.get_texture().get_image().get_data() != still, "selected pointer and eyes animate without gameplay input")
+		# Re-enter a fresh timeline for deterministic regression screenshots.
+		press(KEY_ESCAPE)
+		click(Vector2(477,135))
 		press(KEY_RIGHT)
 		await capture("selection-1p-changed")
 		press(KEY_ESCAPE)
