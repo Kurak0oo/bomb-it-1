@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "package_sha256": "6c59683a16d4594f4cff074153c1416211c97efd06435d473c9b1b15edc94930",
+  "package": {
+    "revision": "b9970e8bf4514c0334087f462131cf7c0541d852",
+    "production_source_sha256": "7a7ee81d9aa9511256aae99a2524813b5ed223b43df1acc141f58ae452d5e472",
+    "instrumentation_sha256": "1e06833c310e17c0aa84f197d69e94b601542ba49668cd1b6653bd0ba65574d5",
+    "project_source_sha256": "681db9463aec743eee2d2d560012c70fb4b057dc37b453cdfef2b3fda9775bbf",
+    "source_tree_dirty": false,
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "engine_sha256": "c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643",
+    "template_version": "4.7.2.stable",
+    "template_sha256": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562",
+    "platform": "Windows",
+    "architecture": "x86_64",
+    "configuration": "release",
+    "export_preset_sha256": "b3875cfa49637264d5822177f1ece704899a4ceac88b14d1472c325cbfb09e51",
+    "packager_sha256": "88a17300f17947354b23bad81d8f46f719df20af43b7a68276ba05836291e532",
+    "smoke_driver_sha256": "e8222e7ade2f974be43419ef8a8665e1aa308000dfe2cf767544fd2b357c6c54",
+    "signed": false,
+    "embedded_pck": true,
+    "files": {
+      "BombIt.exe": {
+        "sha256": "a1cfa28eff02306bc43269d30ab6cf9985b13152c5edb6afe044359caaad1f87",
+        "bytes": 116243048
+      },
+      "README.txt": {
+        "sha256": "dc9dc5cd9487fd5aef9e332d87f7a0c61852eabb9affa2cd0ba1d0769fb7f37c",
+        "bytes": 663
+      }
+    }
+  },
+  "normal_title_route_then_opt_in_smoke": true,
+  "reports": [
+    {
+      "accepted_ticks": 29,
+      "checks": [
+        {
+          "message": "actual exported release contains no editor/debug build",
+          "passed": true
+        },
+        {
+          "message": "export retains 35 Hz simulation",
+          "passed": true
+        },
+        {
+          "message": "normal startup reaches original title screen",
+          "passed": true
+        },
+        {
+          "message": "rendered capture saved: play-menu",
+          "passed": true
+        },
+        {
+          "message": "fresh isolated profile begins unmuted",
+          "passed": true
+        },
+        {
+          "message": "real menu input toggles sound and saves preference",
+          "passed": true
+        },
+        {
+          "message": "original menu route reaches character selection",
+          "passed": true
+        },
+        {
+          "message": "selection release starts a real match",
+          "passed": true
+        },
+        {
+          "message": "automatic simulation advances accepted ticks",
+          "passed": true
+        },
+        {
+          "message": "automatic simulation advances accepted ticks",
+          "passed": true
+        },
+        {
+          "message": "keyboard movement changes the human's arena cell",
+          "passed": true
+        },
+        {
+          "message": "automatic simulation advances accepted ticks",
+          "passed": true
+        },
+        {
+          "message": "keyboard fire places a human-owned bomb",
+          "passed": true
+        },
+        {
+          "message": "rendered capture saved: play-match",
+          "passed": true
+        },
+        {
+          "message": "Escape pauses the exported match",
+          "passed": true
+        },
+        {
+          "message": "paused match consumes no simulation ticks",
+          "passed": true
+        },
+        {
+          "message": "rendered capture saved: play-paused",
+          "passed": true
+        },
+        {
+          "message": "rendered Resume button resumes the match",
+          "passed": true
+        },
+        {
+          "message": "automatic simulation advances accepted ticks",
+          "passed": true
+        }
+      ],
+      "debug_build": false,
+      "editor": false,
+      "engine": "4.7.2-stable (official)",
+      "executable": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/application/BombIt.exe",
+      "initial_cell": [
+        3,
+        3
+      ],
+      "moved_cell": [
+        5,
+        3
+      ],
+      "passed": true,
+      "phase": "play",
+      "user_data_dir": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/user-data/Godot/app_userdata/Bomb It 1"
+    },
+    {
+      "checks": [
+        {
+          "message": "actual exported release contains no editor/debug build",
+          "passed": true
+        },
+        {
+          "message": "export retains 35 Hz simulation",
+          "passed": true
+        },
+        {
+          "message": "normal startup reaches original title screen",
+          "passed": true
+        },
+        {
+          "message": "rendered capture saved: reload-menu",
+          "passed": true
+        },
+        {
+          "message": "second process restores the saved mute preference",
+          "passed": true
+        }
+      ],
+      "debug_build": false,
+      "editor": false,
+      "engine": "4.7.2-stable (official)",
+      "executable": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/application/BombIt.exe",
+      "passed": true,
+      "phase": "reload",
+      "user_data_dir": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/user-data/Godot/app_userdata/Bomb It 1"
+    }
+  ],
+  "boundary": "Same release executable, real rendered input and automatic 35 Hz updates; isolated preferences, two smoke processes"
+}

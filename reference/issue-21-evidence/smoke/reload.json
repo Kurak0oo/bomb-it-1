@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "message": "actual exported release contains no editor/debug build",
+      "passed": true
+    },
+    {
+      "message": "export retains 35 Hz simulation",
+      "passed": true
+    },
+    {
+      "message": "normal startup reaches original title screen",
+      "passed": true
+    },
+    {
+      "message": "rendered capture saved: reload-menu",
+      "passed": true
+    },
+    {
+      "message": "second process restores the saved mute preference",
+      "passed": true
+    }
+  ],
+  "debug_build": false,
+  "editor": false,
+  "engine": "4.7.2-stable (official)",
+  "executable": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/application/BombIt.exe",
+  "passed": true,
+  "phase": "reload",
+  "user_data_dir": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/user-data/Godot/app_userdata/Bomb It 1"
+}

@@ -25,7 +25,7 @@ The source SWF SHA-256 remains `a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949
 | Ordinary effects | 305 | 94 / 134 |
 | Special effects | 447 | 121 / 141 |
 
-These reproduce the established renderer/font/compositor differences in [#2](issue-02.md), [#3](issue-03.md), [#4](issue-04.md) and [#5](issue-05.md), including independent geometry/bitmap/fill controls. The special-effect check also compares the separate impact-smoke count. Ruffle execution is not Adobe Flash Player certification.
+These reproduce the retained strict mismatches in [#2](issue-02.md), [#3](issue-03.md), [#4](issue-04.md) and [#5](issue-05.md). Independent source-input/component controls are separate evidence; explanations and remaining uncertainties are recorded in those tickets. They do not establish a complete cause for every differing pixel, particularly the 121/141 special-effect images. The special-effect check also compares the separate impact-smoke count. Ruffle execution is not Adobe Flash Player certification.
 
 ## Reproduction
 
@@ -54,10 +54,25 @@ The deterministic schedule gate separately matches all authoritative checkpoints
 | 60 | 180.003 / 10,800 | 18.616 / 58.668 ms | 33.551 ms | 184.332 ms | +4.20% |
 | 120 | 180.006 / 21,575 | 10.044 / 48.863 ms | 33.405 ms | 176.665 ms | +3.89% |
 
-[Raw samples, complete reports and per-cycle analysis](issue-21-evidence/performance/) retain all endpoints and workload activity. Both runs observe every required weapon, six pickups and scores across three complete workload cycles and a partial fourth. Exactly 157/350 and 174/365 injected inputs respectively have no observed feedback endpoint; superseded, blocked and scene-ended observations remain in the denominator and records. Percentiles describe observed endpoints only, including legitimate source action waits (up to roughly 318 ms here). No feedback was borrowed from later inputs.
+[Raw samples, complete reports and per-cycle analysis](issue-21-evidence/performance/) retain all endpoints and workload activity. Both runs observe every required weapon, six pickups and scores. Each measured window includes two complete workload cycles plus portions of the first and fourth cycles; the first ordinary phase partly falls inside warmup. Exactly 157/350 and 174/365 injected inputs respectively have no observed feedback endpoint; superseded, blocked and scene-ended observations remain in the denominator and records. Percentiles describe observed endpoints only, including legitimate source action waits (up to roughly 318 ms here). No feedback was borrowed from later inputs.
 
 Submission intervals exceed the exact requested interval on 49.60% / 50.48% of samples, including small scheduler jitter; the maxima above show larger stalls. Thus uniform frame deadlines are not established. No physical touch, input-to-photon, scanout, mobile thermal or phone performance target is marked passed.
 
 Static allocations grow from 56,571,783 to 58,948,295 bytes at 60 and 57,873,699 to 60,123,612 at 120; peaks are 60,379,132 / 61,278,243. This includes first-use assets, scene allocations and retained observer records. The same ordinary phase's last-two-second median changes from cycle 2 to cycle 4 by +0.40% / +0.51%; the phase records expose continuing small growth rather than claiming a flat plateau or proving no leak. These are Godot static allocations, not process working set or GPU memory. [Analysis command](issue-21-evidence/analyze_cycles.py) reconstructs phase timestamps from measured intervals and verifies the final timestamp within one microsecond.
 
-Final package fingerprints and normal-close results follow after export. The earlier #19 ZIP is historical and is not the integrated candidate.
+## Actual portable release and close
+
+The final ZIP was exported from clean committed `b9970e8bf4514c0334087f462131cf7c0541d852` (`source_tree_dirty: false`), with official pinned 4.7.2 Windows release templates. Later changes in this ticket only record evidence. It contains `BombIt.exe`, `README.txt` and `package.json`; the PCK is embedded, and no editor/project override is needed. The package is unsigned.
+
+- ZIP: `bomb-it-windows-x64-b9970e8bf451.zip`, 43,654,901 bytes; SHA-256 `6c59683a16d4594f4cff074153c1416211c97efd06435d473c9b1b15edc94930`.
+- Executable SHA-256: `a1cfa28eff02306bc43269d30ab6cf9985b13152c5edb6afe044359caaad1f87`.
+- Complete exported-project source SHA-256: `681db9463aec743eee2d2d560012c70fb4b057dc37b453cdfef2b3fda9775bbf`.
+- Persistent root location: `.artifacts/release/desktop-b9970e8bf451/package/bomb-it-windows-x64-b9970e8bf451.zip`. [Release index](issue-21-evidence/release-index.json) records copied-file hashes and verifies the copied ZIP against the build manifest. Smoke, close, performance/raw/cycle, native and reference evidence are copied alongside it before worktree cleanup.
+
+[Actual release smoke](issue-21-evidence/smoke/smoke.json) reports `editor=false`, `debug_build=false`, and 35 Hz in two processes. The rendered original menu route starts a match; keyboard input moves the human from (3,3) to (5,3), places its bomb, pauses with no accepted updates, and resumes through the visible button. The second process restores the saved mute preference. Four screenshots and the isolated preference file are retained; the match and pause images were visually inspected. Package extraction and startup use the same executable verified by SHA-256, without an editor, source `--path`, or test-script override. The explicitly opted-in smoke hook runs after normal startup and is separate from ordinary close.
+
+Normal and repeated `WM_CLOSE` requests to the package's own visible window pass with [Dummy](issue-21-evidence/close-dummy/report.json) and [WASAPI](issue-21-evidence/close-wasapi/report.json): exit zero, no stdout/stderr warnings/errors, 0.281 / 0.187 seconds. Fresh isolated user-data roots prevent altering the player's preferences. These cover ordinary packaged title startup with active menu music; the full integrated native audio checks and retained #10 close matrix cover playing, pause, background and mute behavior separately.
+
+The forced `--quit-after 120` diagnostic was also rerun against this exact executable with isolated APPDATA/XDG paths. It still exits zero while reporting two leaked ObjectDB instances and one resource in use. [Exact command and complete stdout/stderr](issue-21-evidence/abrupt/report.json) are retained. That engine-forced termination bypasses normal close notification; it remains an explicit limitation, not a passing close result. No production sleep was added here.
+
+The earlier #19 ZIP is historical. This candidate's desktop evidence is ready for root's final Standards/Spec review; any subsequent production fix requires appropriate revalidation and a rebuilt/re-smoked package. No signed install, physical iPhone test or final release approval is claimed.

@@ -1,0 +1,11 @@
+import json,os,subprocess
+from pathlib import Path
+root=Path(__file__).resolve().parents[1]
+output=root/'abrupt'; output.mkdir(exist_ok=True)
+engine=root/'smoke/588fa1047dd3/application/BombIt.exe'
+env=os.environ.copy();env['APPDATA']=str(output/'user-data');env['XDG_DATA_HOME']=env['APPDATA']
+command=[str(engine),'--audio-driver','Dummy','--quit-after','120']
+with (output/'stdout.log').open('w') as log:
+ p=subprocess.run(command,env=env,cwd=engine.parent,stdout=log,stderr=subprocess.STDOUT,timeout=30)
+report={'command':command,'exit_code':p.returncode,'normal_window_close':False,'stdout':(output/'stdout.log').read_text()}
+(output/'report.json').write_text(json.dumps(report,indent=2));print(json.dumps(report))

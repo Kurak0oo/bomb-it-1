@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\smoke\\588fa1047dd3\\application\\BombIt.exe",
+    "--audio-driver",
+    "WASAPI"
+  ],
+  "pid": 44180,
+  "window": 6688948,
+  "normal_WM_CLOSE_posted": true,
+  "exit_code": 0,
+  "repeated_close_posted": [
+    true,
+    true
+  ],
+  "close_seconds": 0.187,
+  "mode": "normal",
+  "stdout_has_error": false,
+  "package_sha256": "a1cfa28eff02306bc43269d30ab6cf9985b13152c5edb6afe044359caaad1f87",
+  "isolated_user_root": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\close-wasapi\\user-data"
+}
