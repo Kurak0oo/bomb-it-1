@@ -1,0 +1,787 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-fire-frame--1.png",
+      "passed": false,
+      "changed_pixels": 38,
+      "changed_fraction": 0.00017272727272727272
+    },
+    {
+      "name": "qa-fire-frame-00.png",
+      "passed": false,
+      "changed_pixels": 388,
+      "changed_fraction": 0.0017636363636363637
+    },
+    {
+      "name": "qa-fire-frame-01.png",
+      "passed": false,
+      "changed_pixels": 901,
+      "changed_fraction": 0.004095454545454545
+    },
+    {
+      "name": "qa-fire-frame-06.png",
+      "passed": false,
+      "changed_pixels": 1372,
+      "changed_fraction": 0.006236363636363636
+    },
+    {
+      "name": "qa-fire-frame-07.png",
+      "passed": false,
+      "changed_pixels": 1246,
+      "changed_fraction": 0.005663636363636364
+    },
+    {
+      "name": "qa-fire-frame-08.png",
+      "passed": false,
+      "changed_pixels": 1246,
+      "changed_fraction": 0.005663636363636364
+    },
+    {
+      "name": "qa-fire-frame-18.png",
+      "passed": false,
+      "changed_pixels": 1372,
+      "changed_fraction": 0.006236363636363636
+    },
+    {
+      "name": "qa-fire-frame-28.png",
+      "passed": false,
+      "changed_pixels": 1535,
+      "changed_fraction": 0.006977272727272727
+    },
+    {
+      "name": "qa-fire-frame-36.png",
+      "passed": false,
+      "changed_pixels": 120,
+      "changed_fraction": 0.0005454545454545455
+    },
+    {
+      "name": "qa-fire-frame-37.png",
+      "passed": false,
+      "changed_pixels": 41,
+      "changed_fraction": 0.00018636363636363636
+    },
+    {
+      "name": "qa-fire-frame-38.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-fire-frame-39.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-fire-frame-40.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-gas-frame--1.png",
+      "passed": false,
+      "changed_pixels": 706,
+      "changed_fraction": 0.0032090909090909093
+    },
+    {
+      "name": "qa-gas-frame-00.png",
+      "passed": false,
+      "changed_pixels": 722,
+      "changed_fraction": 0.0032818181818181818
+    },
+    {
+      "name": "qa-gas-frame-01.png",
+      "passed": false,
+      "changed_pixels": 714,
+      "changed_fraction": 0.0032454545454545453
+    },
+    {
+      "name": "qa-gas-frame-100.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-gas-frame-101.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-gas-frame-102.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-gas-frame-39.png",
+      "passed": false,
+      "changed_pixels": 707,
+      "changed_fraction": 0.003213636363636364
+    },
+    {
+      "name": "qa-gas-frame-78.png",
+      "passed": false,
+      "changed_pixels": 706,
+      "changed_fraction": 0.0032090909090909093
+    },
+    {
+      "name": "qa-gas-frame-79.png",
+      "passed": false,
+      "changed_pixels": 746,
+      "changed_fraction": 0.0033909090909090907
+    },
+    {
+      "name": "qa-gas-frame-80.png",
+      "passed": false,
+      "changed_pixels": 761,
+      "changed_fraction": 0.003459090909090909
+    },
+    {
+      "name": "qa-gas-frame-89.png",
+      "passed": false,
+      "changed_pixels": 647,
+      "changed_fraction": 0.002940909090909091
+    },
+    {
+      "name": "qa-gas-frame-98.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-gas-frame-99.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-grenade-0-frame--1.png",
+      "passed": false,
+      "changed_pixels": 290,
+      "changed_fraction": 0.0013181818181818182
+    },
+    {
+      "name": "qa-grenade-0-frame-00.png",
+      "passed": false,
+      "changed_pixels": 288,
+      "changed_fraction": 0.001309090909090909
+    },
+    {
+      "name": "qa-grenade-0-frame-01.png",
+      "passed": false,
+      "changed_pixels": 282,
+      "changed_fraction": 0.0012818181818181817
+    },
+    {
+      "name": "qa-grenade-0-frame-06.png",
+      "passed": false,
+      "changed_pixels": 284,
+      "changed_fraction": 0.0012909090909090908
+    },
+    {
+      "name": "qa-grenade-0-frame-07.png",
+      "passed": false,
+      "changed_pixels": 291,
+      "changed_fraction": 0.0013227272727272727
+    },
+    {
+      "name": "qa-grenade-0-frame-08.png",
+      "passed": false,
+      "changed_pixels": 289,
+      "changed_fraction": 0.0013136363636363636
+    },
+    {
+      "name": "qa-grenade-0-frame-16.png",
+      "passed": false,
+      "changed_pixels": 295,
+      "changed_fraction": 0.001340909090909091
+    },
+    {
+      "name": "qa-grenade-0-frame-17.png",
+      "passed": false,
+      "changed_pixels": 292,
+      "changed_fraction": 0.0013272727272727273
+    },
+    {
+      "name": "qa-grenade-1-frame--1.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-1-frame-00.png",
+      "passed": false,
+      "changed_pixels": 290,
+      "changed_fraction": 0.0013181818181818182
+    },
+    {
+      "name": "qa-grenade-1-frame-01.png",
+      "passed": false,
+      "changed_pixels": 269,
+      "changed_fraction": 0.0012227272727272727
+    },
+    {
+      "name": "qa-grenade-1-frame-06.png",
+      "passed": false,
+      "changed_pixels": 288,
+      "changed_fraction": 0.001309090909090909
+    },
+    {
+      "name": "qa-grenade-1-frame-07.png",
+      "passed": false,
+      "changed_pixels": 295,
+      "changed_fraction": 0.001340909090909091
+    },
+    {
+      "name": "qa-grenade-1-frame-08.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-1-frame-16.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-1-frame-17.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-2-frame--1.png",
+      "passed": false,
+      "changed_pixels": 290,
+      "changed_fraction": 0.0013181818181818182
+    },
+    {
+      "name": "qa-grenade-2-frame-00.png",
+      "passed": false,
+      "changed_pixels": 288,
+      "changed_fraction": 0.001309090909090909
+    },
+    {
+      "name": "qa-grenade-2-frame-01.png",
+      "passed": false,
+      "changed_pixels": 282,
+      "changed_fraction": 0.0012818181818181817
+    },
+    {
+      "name": "qa-grenade-2-frame-06.png",
+      "passed": false,
+      "changed_pixels": 285,
+      "changed_fraction": 0.0012954545454545454
+    },
+    {
+      "name": "qa-grenade-2-frame-07.png",
+      "passed": false,
+      "changed_pixels": 292,
+      "changed_fraction": 0.0013272727272727273
+    },
+    {
+      "name": "qa-grenade-2-frame-08.png",
+      "passed": false,
+      "changed_pixels": 290,
+      "changed_fraction": 0.0013181818181818182
+    },
+    {
+      "name": "qa-grenade-2-frame-16.png",
+      "passed": false,
+      "changed_pixels": 295,
+      "changed_fraction": 0.001340909090909091
+    },
+    {
+      "name": "qa-grenade-2-frame-17.png",
+      "passed": false,
+      "changed_pixels": 292,
+      "changed_fraction": 0.0013272727272727273
+    },
+    {
+      "name": "qa-grenade-3-frame--1.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-3-frame-00.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-3-frame-01.png",
+      "passed": false,
+      "changed_pixels": 285,
+      "changed_fraction": 0.0012954545454545454
+    },
+    {
+      "name": "qa-grenade-3-frame-06.png",
+      "passed": false,
+      "changed_pixels": 295,
+      "changed_fraction": 0.001340909090909091
+    },
+    {
+      "name": "qa-grenade-3-frame-07.png",
+      "passed": false,
+      "changed_pixels": 297,
+      "changed_fraction": 0.00135
+    },
+    {
+      "name": "qa-grenade-3-frame-08.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-grenade-3-frame-16.png",
+      "passed": false,
+      "changed_pixels": 290,
+      "changed_fraction": 0.0013181818181818182
+    },
+    {
+      "name": "qa-grenade-3-frame-17.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-ice-frame--1.png",
+      "passed": false,
+      "changed_pixels": 293,
+      "changed_fraction": 0.0013318181818181818
+    },
+    {
+      "name": "qa-ice-frame-00.png",
+      "passed": false,
+      "changed_pixels": 686,
+      "changed_fraction": 0.003118181818181818
+    },
+    {
+      "name": "qa-ice-frame-01.png",
+      "passed": false,
+      "changed_pixels": 998,
+      "changed_fraction": 0.004536363636363636
+    },
+    {
+      "name": "qa-ice-frame-06.png",
+      "passed": false,
+      "changed_pixels": 1200,
+      "changed_fraction": 0.005454545454545455
+    },
+    {
+      "name": "qa-ice-frame-07.png",
+      "passed": false,
+      "changed_pixels": 1200,
+      "changed_fraction": 0.005454545454545455
+    },
+    {
+      "name": "qa-ice-frame-08.png",
+      "passed": false,
+      "changed_pixels": 1200,
+      "changed_fraction": 0.005454545454545455
+    },
+    {
+      "name": "qa-ice-frame-18.png",
+      "passed": false,
+      "changed_pixels": 1200,
+      "changed_fraction": 0.005454545454545455
+    },
+    {
+      "name": "qa-ice-frame-28.png",
+      "passed": false,
+      "changed_pixels": 1200,
+      "changed_fraction": 0.005454545454545455
+    },
+    {
+      "name": "qa-ice-frame-36.png",
+      "passed": false,
+      "changed_pixels": 1206,
+      "changed_fraction": 0.0054818181818181815
+    },
+    {
+      "name": "qa-ice-frame-37.png",
+      "passed": false,
+      "changed_pixels": 216,
+      "changed_fraction": 0.0009818181818181818
+    },
+    {
+      "name": "qa-ice-frame-38.png",
+      "passed": false,
+      "changed_pixels": 219,
+      "changed_fraction": 0.0009954545454545455
+    },
+    {
+      "name": "qa-ice-frame-39.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-ice-frame-40.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-mine-frame--1.png",
+      "passed": false,
+      "changed_pixels": 481,
+      "changed_fraction": 0.0021863636363636365
+    },
+    {
+      "name": "qa-mine-frame-00.png",
+      "passed": false,
+      "changed_pixels": 481,
+      "changed_fraction": 0.0021863636363636365
+    },
+    {
+      "name": "qa-mine-frame-01.png",
+      "passed": false,
+      "changed_pixels": 481,
+      "changed_fraction": 0.0021863636363636365
+    },
+    {
+      "name": "qa-mine-frame-14.png",
+      "passed": false,
+      "changed_pixels": 481,
+      "changed_fraction": 0.0021863636363636365
+    },
+    {
+      "name": "qa-mine-frame-29.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-mine-frame-44.png",
+      "passed": false,
+      "changed_pixels": 481,
+      "changed_fraction": 0.0021863636363636365
+    },
+    {
+      "name": "qa-mine-frame-57.png",
+      "passed": false,
+      "changed_pixels": 481,
+      "changed_fraction": 0.0021863636363636365
+    },
+    {
+      "name": "qa-mine-frame-58.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-mine-frame-59.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-mine-frame-60.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-mine-frame-61.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-rocket-0-frame--1.png",
+      "passed": false,
+      "changed_pixels": 585,
+      "changed_fraction": 0.002659090909090909
+    },
+    {
+      "name": "qa-rocket-0-frame-00.png",
+      "passed": false,
+      "changed_pixels": 585,
+      "changed_fraction": 0.002659090909090909
+    },
+    {
+      "name": "qa-rocket-0-frame-01.png",
+      "passed": false,
+      "changed_pixels": 606,
+      "changed_fraction": 0.0027545454545454544
+    },
+    {
+      "name": "qa-rocket-0-frame-06.png",
+      "passed": false,
+      "changed_pixels": 606,
+      "changed_fraction": 0.0027545454545454544
+    },
+    {
+      "name": "qa-rocket-0-frame-07.png",
+      "passed": false,
+      "changed_pixels": 585,
+      "changed_fraction": 0.002659090909090909
+    },
+    {
+      "name": "qa-rocket-0-frame-08.png",
+      "passed": false,
+      "changed_pixels": 585,
+      "changed_fraction": 0.002659090909090909
+    },
+    {
+      "name": "qa-rocket-0-frame-16.png",
+      "passed": false,
+      "changed_pixels": 585,
+      "changed_fraction": 0.002659090909090909
+    },
+    {
+      "name": "qa-rocket-0-frame-17.png",
+      "passed": false,
+      "changed_pixels": 606,
+      "changed_fraction": 0.0027545454545454544
+    },
+    {
+      "name": "qa-rocket-0-frame-18.png",
+      "passed": false,
+      "changed_pixels": 606,
+      "changed_fraction": 0.0027545454545454544
+    },
+    {
+      "name": "qa-rocket-0-frame-19.png",
+      "passed": false,
+      "changed_pixels": 629,
+      "changed_fraction": 0.0028590909090909092
+    },
+    {
+      "name": "qa-rocket-0-frame-20.png",
+      "passed": false,
+      "changed_pixels": 629,
+      "changed_fraction": 0.0028590909090909092
+    },
+    {
+      "name": "qa-rocket-0-frame-21.png",
+      "passed": false,
+      "changed_pixels": 606,
+      "changed_fraction": 0.0027545454545454544
+    },
+    {
+      "name": "qa-rocket-1-frame--1.png",
+      "passed": false,
+      "changed_pixels": 581,
+      "changed_fraction": 0.002640909090909091
+    },
+    {
+      "name": "qa-rocket-1-frame-00.png",
+      "passed": false,
+      "changed_pixels": 581,
+      "changed_fraction": 0.002640909090909091
+    },
+    {
+      "name": "qa-rocket-1-frame-01.png",
+      "passed": false,
+      "changed_pixels": 599,
+      "changed_fraction": 0.002722727272727273
+    },
+    {
+      "name": "qa-rocket-1-frame-06.png",
+      "passed": false,
+      "changed_pixels": 599,
+      "changed_fraction": 0.002722727272727273
+    },
+    {
+      "name": "qa-rocket-1-frame-07.png",
+      "passed": false,
+      "changed_pixels": 581,
+      "changed_fraction": 0.002640909090909091
+    },
+    {
+      "name": "qa-rocket-1-frame-08.png",
+      "passed": false,
+      "changed_pixels": 581,
+      "changed_fraction": 0.002640909090909091
+    },
+    {
+      "name": "qa-rocket-1-frame-16.png",
+      "passed": false,
+      "changed_pixels": 581,
+      "changed_fraction": 0.002640909090909091
+    },
+    {
+      "name": "qa-rocket-1-frame-17.png",
+      "passed": false,
+      "changed_pixels": 599,
+      "changed_fraction": 0.002722727272727273
+    },
+    {
+      "name": "qa-rocket-1-frame-18.png",
+      "passed": false,
+      "changed_pixels": 599,
+      "changed_fraction": 0.002722727272727273
+    },
+    {
+      "name": "qa-rocket-1-frame-19.png",
+      "passed": false,
+      "changed_pixels": 615,
+      "changed_fraction": 0.0027954545454545454
+    },
+    {
+      "name": "qa-rocket-1-frame-20.png",
+      "passed": false,
+      "changed_pixels": 615,
+      "changed_fraction": 0.0027954545454545454
+    },
+    {
+      "name": "qa-rocket-1-frame-21.png",
+      "passed": false,
+      "changed_pixels": 599,
+      "changed_fraction": 0.002722727272727273
+    },
+    {
+      "name": "qa-rocket-2-frame--1.png",
+      "passed": false,
+      "changed_pixels": 587,
+      "changed_fraction": 0.0026681818181818182
+    },
+    {
+      "name": "qa-rocket-2-frame-00.png",
+      "passed": false,
+      "changed_pixels": 587,
+      "changed_fraction": 0.0026681818181818182
+    },
+    {
+      "name": "qa-rocket-2-frame-01.png",
+      "passed": false,
+      "changed_pixels": 598,
+      "changed_fraction": 0.0027181818181818184
+    },
+    {
+      "name": "qa-rocket-2-frame-06.png",
+      "passed": false,
+      "changed_pixels": 598,
+      "changed_fraction": 0.0027181818181818184
+    },
+    {
+      "name": "qa-rocket-2-frame-07.png",
+      "passed": false,
+      "changed_pixels": 587,
+      "changed_fraction": 0.0026681818181818182
+    },
+    {
+      "name": "qa-rocket-2-frame-08.png",
+      "passed": false,
+      "changed_pixels": 587,
+      "changed_fraction": 0.0026681818181818182
+    },
+    {
+      "name": "qa-rocket-2-frame-16.png",
+      "passed": false,
+      "changed_pixels": 587,
+      "changed_fraction": 0.0026681818181818182
+    },
+    {
+      "name": "qa-rocket-2-frame-17.png",
+      "passed": false,
+      "changed_pixels": 598,
+      "changed_fraction": 0.0027181818181818184
+    },
+    {
+      "name": "qa-rocket-2-frame-18.png",
+      "passed": false,
+      "changed_pixels": 598,
+      "changed_fraction": 0.0027181818181818184
+    },
+    {
+      "name": "qa-rocket-2-frame-19.png",
+      "passed": false,
+      "changed_pixels": 621,
+      "changed_fraction": 0.0028227272727272728
+    },
+    {
+      "name": "qa-rocket-2-frame-20.png",
+      "passed": false,
+      "changed_pixels": 621,
+      "changed_fraction": 0.0028227272727272728
+    },
+    {
+      "name": "qa-rocket-2-frame-21.png",
+      "passed": false,
+      "changed_pixels": 598,
+      "changed_fraction": 0.0027181818181818184
+    },
+    {
+      "name": "qa-rocket-3-frame--1.png",
+      "passed": false,
+      "changed_pixels": 582,
+      "changed_fraction": 0.0026454545454545455
+    },
+    {
+      "name": "qa-rocket-3-frame-00.png",
+      "passed": false,
+      "changed_pixels": 582,
+      "changed_fraction": 0.0026454545454545455
+    },
+    {
+      "name": "qa-rocket-3-frame-01.png",
+      "passed": false,
+      "changed_pixels": 595,
+      "changed_fraction": 0.0027045454545454547
+    },
+    {
+      "name": "qa-rocket-3-frame-06.png",
+      "passed": false,
+      "changed_pixels": 595,
+      "changed_fraction": 0.0027045454545454547
+    },
+    {
+      "name": "qa-rocket-3-frame-07.png",
+      "passed": false,
+      "changed_pixels": 582,
+      "changed_fraction": 0.0026454545454545455
+    },
+    {
+      "name": "qa-rocket-3-frame-08.png",
+      "passed": false,
+      "changed_pixels": 582,
+      "changed_fraction": 0.0026454545454545455
+    },
+    {
+      "name": "qa-rocket-3-frame-16.png",
+      "passed": false,
+      "changed_pixels": 582,
+      "changed_fraction": 0.0026454545454545455
+    },
+    {
+      "name": "qa-rocket-3-frame-17.png",
+      "passed": false,
+      "changed_pixels": 595,
+      "changed_fraction": 0.0027045454545454547
+    },
+    {
+      "name": "qa-rocket-3-frame-18.png",
+      "passed": false,
+      "changed_pixels": 595,
+      "changed_fraction": 0.0027045454545454547
+    },
+    {
+      "name": "qa-rocket-3-frame-19.png",
+      "passed": false,
+      "changed_pixels": 619,
+      "changed_fraction": 0.0028136363636363636
+    },
+    {
+      "name": "qa-rocket-3-frame-20.png",
+      "passed": false,
+      "changed_pixels": 619,
+      "changed_fraction": 0.0028136363636363636
+    },
+    {
+      "name": "qa-rocket-3-frame-21.png",
+      "passed": false,
+      "changed_pixels": 595,
+      "changed_fraction": 0.0027045454545454547
+    }
+  ]
+}
