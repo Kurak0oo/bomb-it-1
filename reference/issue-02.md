@@ -68,3 +68,5 @@ Adobe Flash Player certification and renderer-wide pixel parity are not claimed.
 | frame-20 | 314 → 314 | 314 → 314 | 314 → 314 | 314 → 314 | shadow, smoke |
 | frame-34 | 0 → 0 | 0 → 0 | 0 → 0 | 0 → 0 | removed; exact |
 | frame-35 | 0 → 0 | 0 → 0 | 0 → 0 | 0 → 0 | removed; exact |
+
+Post-merge validation on bf717f2, including integration 833bf0d: timeline, view, simulation and tooling suites plus all ten rendered phases pass. Exact logs and runner results are retained in [checks/death-after-sync](issue-02-capture/checks/death-after-sync/). The timeout-death presentation hook from ticket #9 is preserved.
