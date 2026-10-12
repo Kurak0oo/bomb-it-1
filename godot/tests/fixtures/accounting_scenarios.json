@@ -1,0 +1,2853 @@
+{
+  "profile": "accounting-v1",
+  "fps": 35,
+  "tick_origin": "after-first-fixed-update-from-controlled-setup",
+  "fields": {
+    "tick": "int",
+    "hero1Alive": "bool",
+    "hero1Life": "int",
+    "hero1Armor": "bool",
+    "hero1Shield": "int",
+    "hero1Slow": "int",
+    "hero1Stop": "int",
+    "hero1Bombs": "int",
+    "hero1Score": "int",
+    "hero1KillScore": "int",
+    "hero2Alive": "bool",
+    "hero2Life": "int",
+    "hero2Armor": "bool",
+    "hero2Shield": "int",
+    "hero2Slow": "int",
+    "hero2Stop": "int",
+    "hero2Bombs": "int",
+    "hero2Score": "int",
+    "hero2KillScore": "int",
+    "hero3Alive": "bool",
+    "hero3Life": "int",
+    "hero3Armor": "bool",
+    "hero3Shield": "int",
+    "hero3Slow": "int",
+    "hero3Stop": "int",
+    "hero3Bombs": "int",
+    "hero3Score": "int",
+    "hero3KillScore": "int",
+    "hero4Alive": "bool",
+    "hero4Life": "int",
+    "hero4Armor": "bool",
+    "hero4Shield": "int",
+    "hero4Slow": "int",
+    "hero4Stop": "int",
+    "hero4Bombs": "int",
+    "hero4Score": "int",
+    "hero4KillScore": "int",
+    "energies": "str",
+    "owners": "str",
+    "bombs": "str",
+    "rockets": "str",
+    "rocketCount": "int",
+    "mineCount": "int",
+    "gasCount": "int",
+    "grenadeCount": "int",
+    "fireCount": "int",
+    "iceCount": "int"
+  },
+  "serialized_fields": {
+    "energies": "(?:\\d+,\\d+,\\d+,\\d+;)*",
+    "owners": "(?:\\d+,\\d+,\\d+;)*",
+    "bombs": "(?:\\d+,\\d+,\\d+,\\d+;)*",
+    "rockets": "(?:\\d+,-?\\d+,-?\\d+;)*"
+  },
+  "scenarios": [
+    {
+      "name": "shield_bomb",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": true
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_three_hits",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [
+        {
+          "owner": 2,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1,
+          "tick": 64
+        },
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1,
+          "tick": 128
+        }
+      ],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "human_multi_life",
+      "actors": [
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 2,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "self_damage",
+      "actors": [
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "dead_owner_refund",
+      "actors": [
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            3,
+            3
+          ],
+          "fuse": 5
+        },
+        {
+          "owner": 2,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "overlap_ab",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        },
+        {
+          "owner": 2,
+          "cell": [
+            9,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "overlap_ba",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 2,
+          "cell": [
+            9,
+            6
+          ],
+          "fuse": 1
+        },
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "grenade_bomb",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            7,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 2,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 999
+        }
+      ],
+      "weapons": [
+        {
+          "kind": "grenade",
+          "owner": 1,
+          "cell": [
+            5,
+            6
+          ],
+          "face": 2
+        }
+      ],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "self_shield",
+      "actors": [
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": true
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "human_shield",
+      "actors": [
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": true
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 2,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "shield_invulnerability_boundary",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 0,
+          "armor": true
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [
+        {
+          "owner": 1,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1
+        }
+      ],
+      "weapons": [],
+      "events": [
+        {
+          "owner": 2,
+          "cell": [
+            7,
+            6
+          ],
+          "fuse": 1,
+          "tick": 58
+        }
+      ],
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    }
+  ]
+}

@@ -9,6 +9,34 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_accounting_capture_reports_credit_and_removed_owner_refund(self):
+        run, report = self.compare_real(evidence_name="issue-32-evidence")
+        self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+        def credit(original, rebuilt):
+            rebuilt["scenarios"]["shield_bomb"][1]["hero1KillScore"] = 0
+        run, report = self.compare_real(credit, "issue-32-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"shield_bomb", "tick":1,
+                         "field":"hero1KillScore", "original":1000, "rebuilt":0})
+        def refund(original, rebuilt):
+            rebuilt["scenarios"]["dead_owner_refund"][4]["hero1Bombs"] = 4
+        run, report = self.compare_real(refund, "issue-32-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"dead_owner_refund", "tick":4,
+                         "field":"hero1Bombs", "original":3, "rebuilt":4})
+
+    def test_accounting_capture_rejects_missing_score_and_shifted_immunity_tick(self):
+        def missing(original, rebuilt):
+            for capture in (original, rebuilt):
+                capture["scenarios"]["shield_bomb"][1].pop("hero1KillScore")
+        run, report = self.compare_real(missing, "issue-32-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        def shift(original, rebuilt):
+            rebuilt["scenarios"]["shield_invulnerability_boundary"][62]["tick"] = 63
+        run, report = self.compare_real(shift, "issue-32-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 62", run.stderr)
+
     def test_grenade_endpoint_and_accounting_captures_are_exact(self):
         for evidence in ("issue-31-evidence", "issue-31-evidence/accounting"):
             run, report = self.compare_real(evidence_name=evidence)
