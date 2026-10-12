@@ -48,7 +48,11 @@ The playable systems are implemented, but **exact equivalence is not established
    discrepancy remains unproven as a port defect. [Pushing and grenade traces](issue-12.md)
    and [nested interaction traces](issue-13.md) now establish separate bounded
    corrections #30–#33; [all seven push cases now agree](issue-30.md), including
-   their newly observed allowance fields. Earlier death, level-one explosion-energy and brick-blocking
+   their newly observed allowance fields. The [grenade endpoint correction](issue-31.md)
+   now makes the full motion profile agree and matches all 17,792 new endpoint/accounting
+   fields. The nested interaction profile retains 106 differences, including the
+   pending accounting/contact corrections and residual-energy uncertainty.
+   Earlier death, level-one explosion-energy and brick-blocking
    traces agree. These fixtures do not establish full-match or Adobe Flash Player
    parity, and uncertain residual pulse energy is not reproduced as invisible danger.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.

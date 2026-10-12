@@ -51,8 +51,8 @@ partially implemented or externally blocked tickets stay open.
 | #28 Movement/special-fire ordering | #11, integrated | Integrated in fcbd85f; [28 exact command-boundary cases](issue-28.md), remaining CORE-01/02 differences preserved |
 | #29 Bomb expiry/held-fire ordering | #11–#13, integrated | Integrated in 822b806; [4,840 exact expiry fields](issue-29.md), with separate [AI ordering repair](issue-28-ai.md) and active soak |
 | #30 Push callback lifecycle | #12–#13, #29 integrated | Integrated in f27fc93; [7 cases / 6,048 exact fields](issue-30.md), with no additional production change |
-| #31 Grenade endpoint | #12–#13 | Implementer active on MOTION-04 correction, including chain accounting |
-| #32 Hit/refund accounting | #13, #29 | Pending INTERACT-01/02 correction |
+| #31 Grenade endpoint | #12–#13 | Integrated in 5366c86; [18 endpoint cases and real-parent chain accounting](issue-31.md), all 17,792 fields exact; full motion profile now agrees |
+| #32 Hit/refund accounting | #13, #29 | Implementer active on INTERACT-01/02 correction |
 | #33 Special contact/callback eligibility | #13, #29 | Pending INTERACT-03/04/05 correction; residual-energy uncertainty excluded |
 
 ## Acceptance boundaries
