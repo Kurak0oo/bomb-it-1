@@ -22,11 +22,11 @@ partially implemented or externally blocked tickets stay open.
 | #4 Ordinary effects | None | Pending |
 | #5 Special-weapon presentation | #3 | Pending |
 | #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
-| #7 Difficulty/character selection | #6, integrated | Implementer active |
+| #7 Difficulty/character selection | #6, integrated | Integrated in c036f3f; [acceptance evidence](issue-07.md), exact image and animation-phase parity remain unverified |
 | #8 HUD/arena composition | None | Integrated in 3b91c43; [acceptance evidence](issue-08.md), font substitution and exact pixel differences retained |
 | #9 Scores/outcome transitions | #6, integrated | Implementer active |
 | #10 Original audio | #3 | Pending |
-| #11 Movement/damage/firing traces | None | Pending |
+| #11 Movement/damage/firing traces | None | Implementer active; preserve original frame-2 polling/damage callback |
 | #12 Pushing/grenade traces | #11 | Pending |
 | #13 Interaction/ownership traces | #11 | Pending |
 | #14 Strict random replay | None | Pending |
