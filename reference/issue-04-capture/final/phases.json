@@ -1,0 +1,74 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.766,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 11.438,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\original.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.343,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\import.log"
+  },
+  {
+    "name": "rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 9.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\rebuilt.log"
+  },
+  {
+    "name": "source-inputs",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\source-inputs.log"
+  },
+  {
+    "name": "jpeg-build",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.281,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\jpeg-build.log"
+  },
+  {
+    "name": "jpeg-decode",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.109,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\jpeg-decode.log"
+  },
+  {
+    "name": "source-replay",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\source-replay.log"
+  },
+  {
+    "name": "source-replay-compare",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.578,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-fixed\\source-replay-compare.log"
+  }
+]

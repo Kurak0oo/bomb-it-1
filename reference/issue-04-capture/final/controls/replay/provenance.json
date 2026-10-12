@@ -1,0 +1,5 @@
+{
+  "browser": "156.0.8078.4",
+  "inputs": "Original SWF drawing inputs, source SVG paths, original observation trace; no port images or assets",
+  "renderer": "Canvas2D original geometry and pinned Ruffle bitmap decode behavior"
+}

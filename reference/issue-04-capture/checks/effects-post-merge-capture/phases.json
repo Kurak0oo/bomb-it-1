@@ -1,0 +1,42 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.578,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-post-merge-capture\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 5.922,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-post-merge-capture\\original.log"
+  },
+  {
+    "name": "original-restart-1",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 11.797,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-post-merge-capture\\original-restart-1.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-post-merge-capture\\import.log"
+  },
+  {
+    "name": "rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 9.718,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-post-merge-capture\\rebuilt.log"
+  }
+]
