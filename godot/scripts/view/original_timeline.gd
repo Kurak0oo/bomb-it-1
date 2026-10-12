@@ -36,6 +36,10 @@ func show_frame(index: int, child_age: int = 0, variant: int = 1) -> void:
 			eyes.position = art.offset(234) - art.offset(child)
 		elif child == 293:
 			number = variant
+		elif child == 209:
+			number = variant
+		elif child == 200:
+			number = (variant - 1) % 4 + 1
 		elif child == 304:
 			number = child_age % 8 + 1
 		elif child == 312:

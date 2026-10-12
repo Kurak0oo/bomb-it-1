@@ -17,16 +17,16 @@ partially implemented or externally blocked tickets stay open.
 
 | Ticket | Blocked by | Current disposition |
 |---|---|---|
-| #2 Four death animations | None | Pending remaining original-image diagnosis |
-| #3 Actor feedback | None | Implementer active; source and independent capture audit |
+| #2 Four death animations | None | Implementer active; correct or independently explain remaining original-image differences |
+| #3 Actor feedback | None | Integrated in 0dc29e1; [acceptance evidence](issue-03.md), 259 observations match and 56 exact image differences remain unwaived |
 | #4 Ordinary effects | None | Pending |
-| #5 Special-weapon presentation | #3 | Pending |
+| #5 Special-weapon presentation | #3, integrated | Pending |
 | #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
-| #7 Difficulty/character selection | #6, integrated | Implementer active |
-| #8 HUD/arena composition | None | Implementer active |
-| #9 Scores/outcome transitions | #6 | Pending |
-| #10 Original audio | #3 | Pending |
-| #11 Movement/damage/firing traces | None | Pending |
+| #7 Difficulty/character selection | #6, integrated | Integrated in c036f3f; [acceptance evidence](issue-07.md), exact image and animation-phase parity remain unverified |
+| #8 HUD/arena composition | None | Integrated in 3b91c43; [acceptance evidence](issue-08.md), font substitution and exact pixel differences retained |
+| #9 Scores/outcome transitions | #6, integrated | Implementer active |
+| #10 Original audio | #3, integrated | Pending |
+| #11 Movement/damage/firing traces | None | Implementer active; preserve original frame-2 polling/damage callback |
 | #12 Pushing/grenade traces | #11 | Pending |
 | #13 Interaction/ownership traces | #11 | Pending |
 | #14 Strict random replay | None | Pending |

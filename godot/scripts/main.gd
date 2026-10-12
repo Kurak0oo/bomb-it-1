@@ -15,7 +15,6 @@ var paused := false
 var difficulty := 1
 var selected_character := 1
 var selected_second_character := 2
-var selection_slot := 0
 var players := 1
 var high_score := 0
 var touch_enabled := false
@@ -92,11 +91,19 @@ func _menu_action(action: String) -> void:
 		"players": _show_players()
 		"one", "two":
 			players = 1 if action == "one" else 2
-			selection_slot = 0
+			selected_character = 1
+			selected_second_character = 2
+			_show_original_menu("difficulty")
+		"easy", "normal", "hard":
+			difficulty = ["easy", "normal", "hard"].find(action)
 			_show_select()
 		"help": _show_help()
 		"powerups": _show_original_menu("powerups")
-		"back": _show_menu()
+		"back":
+			if screen == "select": _show_original_menu("difficulty")
+			elif screen == "difficulty": _show_players()
+			else: _show_menu()
+		"start": _start_game()
 		"sound": _toggle_sound()
 		"best": original_menu.show_notice("LOCAL BEST  %06d" % high_score)
 		"portal": original_menu.show_notice("Original portal link unavailable")
@@ -107,41 +114,19 @@ func _show_players() -> void:
 func _show_select() -> void:
 	_clear_screen()
 	screen = "select"
-	_background("res://art/original/menu.png")
-	_panel(ui, Rect2(62,65,426,300))
-	_label(ui, "CHOOSE YOUR ROBOT" if players == 1 else "PLAYER %d · CHOOSE ROBOT" % (selection_slot + 1), Rect2(80,78,390,35), 23)
-	for id in 4:
-		var x := 100 + id * 92
-		var preview := art.sprite([90,68,46,24][id], 4)
-		preview.position += Vector2(x + 14,161)
-		preview.scale = Vector2(1.5,1.5)
-		ui.add_child(preview)
-		var choice := selected_character if selection_slot == 0 else selected_second_character
-		var choose := _button(ui, "P%d" % (selection_slot + 1) if choice == id + 1 else str(id + 1), Rect2(x-7,199,65,28), func(): _choose_character(id + 1))
-		choose.disabled = selection_slot == 1 and id + 1 == selected_character
-	for level in 3:
-		var names := ["EASY", "NORMAL", "HARD"]
-		_button(ui, ("• " if difficulty == level else "") + names[level], Rect2(102+level*115,244,106,28), func(): difficulty = level; _show_select())
-	_button(ui, "BACK", Rect2(98,306,110,34), _show_players)
-	_button(ui, "PLAYER 2 →" if players == 2 and selection_slot == 0 else "LET'S PLAY", Rect2(232,302,219,40), _start_game)
-
-func _choose_character(id: int) -> void:
-	if selection_slot == 0:
-		selected_character = id
-		if selected_second_character == id:
-			selected_second_character = id % 4 + 1
-	else:
-		selected_second_character = id
-	_show_select()
+	var selection := OriginalSelection.new()
+	selection.players = players
+	selection.choices = [selected_character, selected_second_character]
+	selection.muted = audio.muted
+	selection.choices_changed.connect(func(first: int, second: int): selected_character = first; selected_second_character = second)
+	selection.action_requested.connect(_menu_action)
+	original_menu = selection
+	ui.add_child(selection)
 
 func _show_help() -> void:
 	_show_original_menu("help")
 
 func _start_game() -> void:
-	if screen == "select" and players == 2 and selection_slot == 0:
-		selection_slot = 1
-		_show_select()
-		return
 	session.start(int(Time.get_unix_time_from_system()), difficulty, selected_character, players, selected_second_character)
 	_show_round()
 
@@ -316,15 +301,9 @@ func _unhandled_key_input(event: InputEvent) -> void:
 			if screen == "game":
 				_toggle_pause()
 			elif event.keycode == KEY_ESCAPE and screen != "menu":
-				if screen == "select":
-					_show_players()
-				else:
-					_show_menu()
+				_show_menu()
 		elif event.keycode == KEY_M:
 			_toggle_sound()
-		elif event.keycode == KEY_ENTER:
-			if screen == "select":
-				_start_game()
 
 func _bind_key(action: String, code: int) -> void:
 	if not InputMap.has_action(action):

@@ -56,6 +56,9 @@ func run() -> void:
 	key(true)
 	key(false)
 	await process_frame
+	key(true)
+	key(false)
+	await process_frame
 	check(main.screen == "game", "keyboard menu navigation starts game")
 	main.touch_enabled = true
 	main.touch.visible = true
@@ -124,6 +127,8 @@ func run() -> void:
 	key(false)
 	key(true)
 	key(false)
+	key(true)
+	key(false)
 	await process_frame
 	check(main.screen == "game", "new match starts after an interruption")
 	await run_ticks(main, 2)
@@ -157,6 +162,8 @@ func run() -> void:
 	key(true, KEY_P)
 	key(false, KEY_P)
 	click(Vector2(260,250))
+	key(true)
+	key(false)
 	key(true)
 	key(false)
 	key(true)

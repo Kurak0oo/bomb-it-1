@@ -53,6 +53,7 @@ func _ready() -> void:
 		var hero := HeroView.new()
 		hero.art = art
 		hero.actor = actor
+		hero.pointer_enabled = state.generated and actor.controller == HeroState.Controller.HUMAN
 		add_child(hero)
 		_hero_sprites[actor.id] = hero
 		var target := art.sprite(317)
@@ -166,7 +167,7 @@ func sync_view() -> void:
 				_item_sprites[at] = sprite
 			_item_sprites[at].animate(_presentation_tick)
 	for hero in _hero_sprites.values():
-		hero.sync()
+		hero.sync(state.tick_number)
 	for actor in state.heroes:
 		var target: Sprite2D = _target_sprites[actor.id]
 		var at := actor.cell + SimRules.direction(actor.facing) * 2

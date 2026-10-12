@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: P1 skips robot already held by P2
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/selection_render_check.gd:20)
+       [1] run (res://tests/selection_render_check.gd:50)
+ERROR: confirmed P1 cannot move and waits for P2
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/selection_render_check.gd:20)
+       [1] run (res://tests/selection_render_check.gd:53)
+ERROR: independent second confirmation starts existing GameSession
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/selection_render_check.gd:20)
+       [1] run (res://tests/selection_render_check.gd:56)

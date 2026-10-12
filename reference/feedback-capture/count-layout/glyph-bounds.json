@@ -1,0 +1,257 @@
+{
+  "note": "Diagnostic bright glyph bounds (luminance >200), not a parity tolerance or comparison mask. Full-frame captures remain in the exact comparator.",
+  "rows": [
+    {
+      "capture": "source",
+      "count": 1,
+      "crop_origin": [
+        82,
+        48
+      ],
+      "bright_glyph_bounds": [
+        4,
+        11,
+        7,
+        22
+      ]
+    },
+    {
+      "capture": "source",
+      "count": 2,
+      "crop_origin": [
+        142,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        9,
+        22
+      ]
+    },
+    {
+      "capture": "source",
+      "count": 10,
+      "crop_origin": [
+        202,
+        48
+      ],
+      "bright_glyph_bounds": [
+        4,
+        11,
+        18,
+        22
+      ]
+    },
+    {
+      "capture": "source",
+      "count": 11,
+      "crop_origin": [
+        262,
+        48
+      ],
+      "bright_glyph_bounds": [
+        4,
+        11,
+        16,
+        22
+      ]
+    },
+    {
+      "capture": "source",
+      "count": 12,
+      "crop_origin": [
+        322,
+        48
+      ],
+      "bright_glyph_bounds": [
+        4,
+        11,
+        18,
+        22
+      ]
+    },
+    {
+      "capture": "source",
+      "count": 20,
+      "crop_origin": [
+        382,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        18,
+        22
+      ]
+    },
+    {
+      "capture": "before",
+      "count": 1,
+      "crop_origin": [
+        82,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        9,
+        22
+      ]
+    },
+    {
+      "capture": "before",
+      "count": 2,
+      "crop_origin": [
+        142,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        11,
+        22
+      ]
+    },
+    {
+      "capture": "before",
+      "count": 10,
+      "crop_origin": [
+        202,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        19,
+        22
+      ]
+    },
+    {
+      "capture": "before",
+      "count": 11,
+      "crop_origin": [
+        262,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        17,
+        22
+      ]
+    },
+    {
+      "capture": "before",
+      "count": 12,
+      "crop_origin": [
+        322,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        19,
+        22
+      ]
+    },
+    {
+      "capture": "before",
+      "count": 20,
+      "crop_origin": [
+        382,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        22,
+        22
+      ]
+    },
+    {
+      "capture": "after",
+      "count": 1,
+      "crop_origin": [
+        82,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        9,
+        22
+      ]
+    },
+    {
+      "capture": "after",
+      "count": 2,
+      "crop_origin": [
+        142,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        11,
+        22
+      ]
+    },
+    {
+      "capture": "after",
+      "count": 10,
+      "crop_origin": [
+        202,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        20,
+        22
+      ]
+    },
+    {
+      "capture": "after",
+      "count": 11,
+      "crop_origin": [
+        262,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        18,
+        22
+      ]
+    },
+    {
+      "capture": "after",
+      "count": 12,
+      "crop_origin": [
+        322,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        20,
+        22
+      ]
+    },
+    {
+      "capture": "after",
+      "count": 20,
+      "crop_origin": [
+        382,
+        48
+      ],
+      "bright_glyph_bounds": [
+        3,
+        11,
+        20,
+        22
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.046,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\view.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.047,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\death_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.078,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.266,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.609,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.282,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-advance-green\\visual_timelines.log"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.266,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.047,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\view.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.14,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\timeline.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.016,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\death_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.094,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.265,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.157,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.281,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-merged\\visual_timelines.log"
+  }
+]
