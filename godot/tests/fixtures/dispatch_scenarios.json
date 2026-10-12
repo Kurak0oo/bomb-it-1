@@ -1,0 +1,456 @@
+{
+  "profile": "dispatch-v1",
+  "fps": 35,
+  "tick_origin": "after-first-fixed-update-from-controlled-setup",
+  "fields": {
+    "tick": "int",
+    "hero1Alive": "bool",
+    "hero1Life": "int",
+    "hero1Armor": "bool",
+    "hero1Shield": "int",
+    "hero1Slow": "int",
+    "hero1Stop": "int",
+    "hero1Bombs": "int",
+    "hero1Score": "int",
+    "hero2Alive": "bool",
+    "hero2Life": "int",
+    "hero2Armor": "bool",
+    "hero2Shield": "int",
+    "hero2Slow": "int",
+    "hero2Stop": "int",
+    "hero2Bombs": "int",
+    "hero2Score": "int",
+    "hero3Alive": "bool",
+    "hero3Life": "int",
+    "hero3Armor": "bool",
+    "hero3Shield": "int",
+    "hero3Slow": "int",
+    "hero3Stop": "int",
+    "hero3Bombs": "int",
+    "hero3Score": "int",
+    "hero4Alive": "bool",
+    "hero4Life": "int",
+    "hero4Armor": "bool",
+    "hero4Shield": "int",
+    "hero4Slow": "int",
+    "hero4Stop": "int",
+    "hero4Bombs": "int",
+    "hero4Score": "int",
+    "energies": "str",
+    "owners": "str",
+    "bombs": "str",
+    "rockets": "str",
+    "rocketCount": "int",
+    "mineCount": "int",
+    "gasCount": "int",
+    "grenadeCount": "int",
+    "fireCount": "int",
+    "iceCount": "int"
+  },
+  "serialized_fields": {
+    "energies": "(?:\\d+,\\d+,\\d+,\\d+;)*",
+    "owners": "(?:\\d+,\\d+,\\d+;)*",
+    "bombs": "(?:\\d+,\\d+,\\d+,\\d+;)*",
+    "rockets": "(?:\\d+,-?\\d+,-?\\d+;)*"
+  },
+  "scenarios": [
+    {
+      "name": "rocket_mine_wall",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [],
+      "weapons": [
+        {
+          "kind": "mine",
+          "owner": 2,
+          "cell": [
+            6,
+            6
+          ],
+          "face": 2
+        },
+        {
+          "kind": "rocket",
+          "owner": 1,
+          "cell": [
+            5,
+            6
+          ],
+          "face": 2
+        }
+      ],
+      "events": [],
+      "walls": [
+        [
+          7,
+          6
+        ]
+      ],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "rocket_mine_reversed",
+      "actors": [
+        {
+          "cell": [
+            2,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            2
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            8,
+            6
+          ],
+          "life": 3,
+          "shield": 999,
+          "armor": false
+        },
+        {
+          "cell": [
+            12,
+            10
+          ],
+          "life": 1,
+          "shield": 999,
+          "armor": false
+        }
+      ],
+      "bombs": [],
+      "weapons": [
+        {
+          "kind": "rocket",
+          "owner": 1,
+          "cell": [
+            5,
+            6
+          ],
+          "face": 2
+        },
+        {
+          "kind": "mine",
+          "owner": 2,
+          "cell": [
+            6,
+            6
+          ],
+          "face": 2
+        }
+      ],
+      "events": [],
+      "walls": [
+        [
+          7,
+          6
+        ]
+      ],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    }
+  ]
+}

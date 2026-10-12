@@ -1,0 +1,210 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 18.828,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\tooling.log"
+  },
+  {
+    "name": "performance_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\performance_parse.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.437,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.438,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\sim.log"
+  },
+  {
+    "name": "bomb_expiry",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.516,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\bomb_expiry.log"
+  },
+  {
+    "name": "push_motion",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.531,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\push_motion.log"
+  },
+  {
+    "name": "actors",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\actors.log"
+  },
+  {
+    "name": "ai_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\ai_order.log"
+  },
+  {
+    "name": "hit_accounting",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.593,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\hit_accounting.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.625,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\view.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.36,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\timeline.log"
+  },
+  {
+    "name": "campaign",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\campaign.log"
+  },
+  {
+    "name": "accounting_session",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\accounting_session.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\special.log"
+  },
+  {
+    "name": "special_contact",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\special_contact.log"
+  },
+  {
+    "name": "ice_movement",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.531,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\ice_movement.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\command_order.log"
+  },
+  {
+    "name": "grenade_endpoint",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.516,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\grenade_endpoint.log"
+  },
+  {
+    "name": "grenade_accounting",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.437,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\grenade_accounting.log"
+  },
+  {
+    "name": "soak",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\soak.log"
+  },
+  {
+    "name": "pacing",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 9.672,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue33\\.artifacts\\issue33\\full-headless\\pacing.log"
+  }
+]

@@ -137,6 +137,8 @@ def main():
             if suite == "campaign":
                 phases.append(("accounting_session", command + ["--script", "res://tests/accounting_session_check.gd"], "ACCOUNTING_SESSION_OK"))
             if suite == "special":
+                phases.append(("special_contact", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--contact-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
+                phases.append(("ice_movement", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--icewalk-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
                 phases.append(("command_order", command + ["--script", "res://tests/order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
                 phases.append(("grenade_endpoint", command + ["--script", "res://tests/motion_reference_capture.gd", "--", "--grenade-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
                 phases.append(("grenade_accounting", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--grenade-account", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))

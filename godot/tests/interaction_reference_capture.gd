@@ -17,7 +17,10 @@ func install_bomb(state: GameState, spec: Dictionary, deferred: bool) -> void:
 func run() -> void:
 	var grenade_profile := OS.get_cmdline_user_args().has("--grenade-account")
 	var accounting_profile := OS.get_cmdline_user_args().has("--accounting-profile")
-	var stem := "grenadescore" if grenade_profile else "accounting" if accounting_profile else "interaction"
+	var icewalk_profile := OS.get_cmdline_user_args().has("--icewalk-profile")
+	var dispatch_profile := OS.get_cmdline_user_args().has("--dispatch-profile")
+	var contact_profile := icewalk_profile or OS.get_cmdline_user_args().has("--contact-profile")
+	var stem := "dispatch" if dispatch_profile else "icewalk" if icewalk_profile else "contact" if contact_profile else "grenadescore" if grenade_profile else "accounting" if accounting_profile else "interaction"
 	var path := "res://tests/fixtures/%s_scenarios.json" % stem
 	var config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path))
 	var scenarios := {}
@@ -61,12 +64,21 @@ func run() -> void:
 			state.specials.back().just_placed = false
 			actor.cell = old_cell
 			actor.moving = true
+		if fixture.has("controlled_actor"):
+			state.heroes[int(fixture.controlled_actor)-1].moving = false
 		var samples := []
 		for tick in fixture.commands.size():
 			for event in fixture.events:
 				if event.tick == tick:
 					install_bomb(state,event,true)
-			state.tick([])
+			var commands: Array[PlayerCommands] = []
+			if fixture.has("controlled_actor"):
+				for i in 4:
+					commands.append(PlayerCommands.new())
+				var dir := int(fixture.commands[tick][0])
+				if dir >= 0:
+					commands[int(fixture.controlled_actor)-1].direction = SimRules.direction(dir)
+			state.tick(commands)
 			var row := {"tick":tick,"energies":"","owners":"","bombs":"","rockets":"",
 				"rocketCount":0,"mineCount":0,"gasCount":0,"grenadeCount":0,"fireCount":0,"iceCount":0}
 			for i in 4:
@@ -96,6 +108,13 @@ func run() -> void:
 					row[weapon.kind+"Count"] += 1
 				if weapon.kind == "rocket":
 					row.rockets += "%d,%d,%d;" % [weapon.owner_id+1,roundi(weapon.position.x*20),roundi(weapon.position.y*20)]
+			if contact_profile:
+				var probe: HeroState = state.heroes[int(fixture.probe_actor)-1]
+				row.probeCellX = probe.cell.x
+				row.probeCellY = probe.cell.y
+				row.probeXTwips = roundi(probe.pixel_position().x*20)
+				row.probeYTwips = roundi(probe.pixel_position().y*20)
+				row.probeMoving = probe.moving
 			samples.append(row)
 		scenarios[fixture.name] = samples
 	var capture := {"source":"godot-rebuild","runtime":Engine.get_version_info().string,
@@ -112,7 +131,7 @@ func run() -> void:
 	if OS.get_cmdline_user_args().has("--verify-reference"):
 		var reference: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://tests/fixtures/%s_original.json" % stem))
 		if stem == "interaction" or reference.configuration_sha256 != capture.configuration_sha256 or reference.source != "original-swf-bytecode":
-			push_error("Incompatible independent accounting reference")
+			push_error("Incompatible independent interaction reference")
 			quit(1)
 			return
 		for name in scenarios:

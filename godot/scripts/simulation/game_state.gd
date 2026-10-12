@@ -120,8 +120,8 @@ func cell_at(at: Vector2i) -> CellState:
 	return _cell(at)
 
 
-# Preserve hero movement/timer updates, then dispatch the existing child snapshot
-# before applying commands. Creation order governs bomb/energy visibility; a
+# Prepare hero movement, then dispatch the existing child snapshot before parent
+# timer/command polling. Creation order governs bomb/energy visibility; a
 # callback created during this tick cannot run until the next update.
 # Damage/accounting remains a separate, unchanged pass.
 func tick(commands: Array[PlayerCommands]) -> void:
@@ -129,12 +129,21 @@ func tick(commands: Array[PlayerCommands]) -> void:
 	events.clear()
 	presentation_events.clear()
 	var can_act: Array[bool] = []
+	var contact_positions: Array[Vector2] = []
 	for actor in heroes:
 		var command := commands[actor.id] if actor.id < commands.size() else PlayerCommands.new()
+		# Ice children were created after the actors and observe pre-move positions.
+		contact_positions.append(actor.pixel_position())
 		can_act.append(_tick_hero(actor, command))
-	_tick_callbacks()
+	_tick_callbacks(contact_positions)
 	for actor in heroes:
+		# Gas children set 600 before original parent polling decrements it.
+		if actor.slow_ticks > 0:
+			actor.slow_ticks -= 1
 		if can_act[actor.id]:
+			if actor.stop_ticks > 0:
+				actor.stop_ticks -= 1
+				continue
 			var command := commands[actor.id] if actor.id < commands.size() else PlayerCommands.new()
 			_apply_hero_commands(actor, command)
 	for actor in heroes:
@@ -151,11 +160,14 @@ func register_callback(effect: RefCounted) -> void:
 	_callbacks.append(effect)
 
 
-func _tick_callbacks() -> void:
+func _tick_callbacks(contact_positions: Array[Vector2]) -> void:
 	var snapshot := _callbacks.duplicate()
 	snapshot.reverse()
 	for effect in snapshot:
-		if effect is BombState and bombs.has(effect):
+		if effect is IceContactState:
+			if not effect.tick(heroes, contact_positions):
+				_callbacks.erase(effect)
+		elif effect is BombState and bombs.has(effect):
 			_tick_bomb(effect)
 		elif effect is ExplosionState and explosions.has(effect):
 			_tick_explosion(effect)
@@ -168,8 +180,6 @@ func _tick_callbacks() -> void:
 func _tick_hero(hero: HeroState, commands: PlayerCommands) -> bool:
 	if commands.bomb_released:
 		hero.fire_ready = true
-	if hero.slow_ticks > 0:
-		hero.slow_ticks -= 1
 	hero.shielded_this_tick = hero.shield > 0
 	if hero.shielded_this_tick:
 		hero.shield -= 1
@@ -186,9 +196,6 @@ func _tick_hero(hero: HeroState, commands: PlayerCommands) -> bool:
 		hero.cell += hero.direction
 		hero.moving = false
 		_collect_item(hero)
-	if hero.stop_ticks > 0:
-		hero.stop_ticks -= 1
-		return false
 	return true
 
 

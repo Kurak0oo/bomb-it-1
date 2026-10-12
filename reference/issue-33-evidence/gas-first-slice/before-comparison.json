@@ -1,0 +1,4223 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "gas_contact",
+    "tick": 0,
+    "field": "hero3Slow",
+    "original": 599,
+    "rebuilt": 600
+  },
+  "scenario_first_divergences": {
+    "gas_contact": {
+      "scenario": "gas_contact",
+      "tick": 0,
+      "field": "hero3Slow",
+      "original": 599,
+      "rebuilt": 600
+    }
+  },
+  "differences": [
+    {
+      "scenario": "gas_contact",
+      "tick": 0,
+      "field": "hero3Slow",
+      "original": 599,
+      "rebuilt": 600
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 1,
+      "field": "hero3Slow",
+      "original": 598,
+      "rebuilt": 599
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 2,
+      "field": "hero3Slow",
+      "original": 597,
+      "rebuilt": 598
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 3,
+      "field": "hero3Slow",
+      "original": 596,
+      "rebuilt": 597
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 4,
+      "field": "hero3Slow",
+      "original": 595,
+      "rebuilt": 596
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 5,
+      "field": "hero3Slow",
+      "original": 594,
+      "rebuilt": 595
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 6,
+      "field": "hero3Slow",
+      "original": 593,
+      "rebuilt": 594
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 7,
+      "field": "hero3Slow",
+      "original": 592,
+      "rebuilt": 593
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 8,
+      "field": "hero3Slow",
+      "original": 591,
+      "rebuilt": 592
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 9,
+      "field": "hero3Slow",
+      "original": 590,
+      "rebuilt": 591
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 10,
+      "field": "hero3Slow",
+      "original": 589,
+      "rebuilt": 590
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 11,
+      "field": "hero3Slow",
+      "original": 588,
+      "rebuilt": 589
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 12,
+      "field": "hero3Slow",
+      "original": 587,
+      "rebuilt": 588
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 13,
+      "field": "hero3Slow",
+      "original": 586,
+      "rebuilt": 587
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 14,
+      "field": "hero3Slow",
+      "original": 585,
+      "rebuilt": 586
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 15,
+      "field": "hero3Slow",
+      "original": 584,
+      "rebuilt": 585
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 16,
+      "field": "hero3Slow",
+      "original": 583,
+      "rebuilt": 584
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 17,
+      "field": "hero3Slow",
+      "original": 582,
+      "rebuilt": 583
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 18,
+      "field": "hero3Slow",
+      "original": 581,
+      "rebuilt": 582
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 19,
+      "field": "hero3Slow",
+      "original": 580,
+      "rebuilt": 581
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 20,
+      "field": "hero3Slow",
+      "original": 579,
+      "rebuilt": 580
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 21,
+      "field": "hero3Slow",
+      "original": 578,
+      "rebuilt": 579
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 22,
+      "field": "hero3Slow",
+      "original": 577,
+      "rebuilt": 578
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 23,
+      "field": "hero3Slow",
+      "original": 576,
+      "rebuilt": 577
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 24,
+      "field": "hero3Slow",
+      "original": 575,
+      "rebuilt": 576
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 25,
+      "field": "hero3Slow",
+      "original": 574,
+      "rebuilt": 575
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 26,
+      "field": "hero3Slow",
+      "original": 573,
+      "rebuilt": 574
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 27,
+      "field": "hero3Slow",
+      "original": 572,
+      "rebuilt": 573
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 28,
+      "field": "hero3Slow",
+      "original": 571,
+      "rebuilt": 572
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 29,
+      "field": "hero3Slow",
+      "original": 570,
+      "rebuilt": 571
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 30,
+      "field": "hero3Slow",
+      "original": 569,
+      "rebuilt": 570
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 31,
+      "field": "hero3Slow",
+      "original": 568,
+      "rebuilt": 569
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 32,
+      "field": "hero3Slow",
+      "original": 567,
+      "rebuilt": 568
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 33,
+      "field": "hero3Slow",
+      "original": 566,
+      "rebuilt": 567
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 34,
+      "field": "hero3Slow",
+      "original": 565,
+      "rebuilt": 566
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 35,
+      "field": "hero3Slow",
+      "original": 564,
+      "rebuilt": 565
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 36,
+      "field": "hero3Slow",
+      "original": 563,
+      "rebuilt": 564
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 37,
+      "field": "hero3Slow",
+      "original": 562,
+      "rebuilt": 563
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 38,
+      "field": "hero3Slow",
+      "original": 561,
+      "rebuilt": 562
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 39,
+      "field": "hero3Slow",
+      "original": 560,
+      "rebuilt": 561
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 40,
+      "field": "hero3Slow",
+      "original": 559,
+      "rebuilt": 560
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 41,
+      "field": "hero3Slow",
+      "original": 558,
+      "rebuilt": 559
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 42,
+      "field": "hero3Slow",
+      "original": 557,
+      "rebuilt": 558
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 43,
+      "field": "hero3Slow",
+      "original": 556,
+      "rebuilt": 557
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 44,
+      "field": "hero3Slow",
+      "original": 555,
+      "rebuilt": 556
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 45,
+      "field": "hero3Slow",
+      "original": 554,
+      "rebuilt": 555
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 46,
+      "field": "hero3Slow",
+      "original": 553,
+      "rebuilt": 554
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 47,
+      "field": "hero3Slow",
+      "original": 552,
+      "rebuilt": 553
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 48,
+      "field": "hero3Slow",
+      "original": 551,
+      "rebuilt": 552
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 49,
+      "field": "hero3Slow",
+      "original": 550,
+      "rebuilt": 551
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 50,
+      "field": "hero3Slow",
+      "original": 549,
+      "rebuilt": 550
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 51,
+      "field": "hero3Slow",
+      "original": 548,
+      "rebuilt": 549
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 52,
+      "field": "hero3Slow",
+      "original": 547,
+      "rebuilt": 548
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 53,
+      "field": "hero3Slow",
+      "original": 546,
+      "rebuilt": 547
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 54,
+      "field": "hero3Slow",
+      "original": 545,
+      "rebuilt": 546
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 55,
+      "field": "hero3Slow",
+      "original": 544,
+      "rebuilt": 545
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 56,
+      "field": "hero3Slow",
+      "original": 543,
+      "rebuilt": 544
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 57,
+      "field": "hero3Slow",
+      "original": 542,
+      "rebuilt": 543
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 58,
+      "field": "hero3Slow",
+      "original": 541,
+      "rebuilt": 542
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 59,
+      "field": "hero3Slow",
+      "original": 540,
+      "rebuilt": 541
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 60,
+      "field": "hero3Slow",
+      "original": 539,
+      "rebuilt": 540
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 61,
+      "field": "hero3Slow",
+      "original": 538,
+      "rebuilt": 539
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 62,
+      "field": "hero3Slow",
+      "original": 537,
+      "rebuilt": 538
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 63,
+      "field": "hero3Slow",
+      "original": 536,
+      "rebuilt": 537
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 64,
+      "field": "hero3Slow",
+      "original": 535,
+      "rebuilt": 536
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 65,
+      "field": "hero3Slow",
+      "original": 534,
+      "rebuilt": 535
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 66,
+      "field": "hero3Slow",
+      "original": 533,
+      "rebuilt": 534
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 67,
+      "field": "hero3Slow",
+      "original": 532,
+      "rebuilt": 533
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 68,
+      "field": "hero3Slow",
+      "original": 531,
+      "rebuilt": 532
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 69,
+      "field": "hero3Slow",
+      "original": 530,
+      "rebuilt": 531
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 70,
+      "field": "hero3Slow",
+      "original": 529,
+      "rebuilt": 530
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 71,
+      "field": "hero3Slow",
+      "original": 528,
+      "rebuilt": 529
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 72,
+      "field": "hero3Slow",
+      "original": 527,
+      "rebuilt": 528
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 73,
+      "field": "hero3Slow",
+      "original": 526,
+      "rebuilt": 527
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 74,
+      "field": "hero3Slow",
+      "original": 525,
+      "rebuilt": 526
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 75,
+      "field": "hero3Slow",
+      "original": 524,
+      "rebuilt": 525
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 76,
+      "field": "hero3Slow",
+      "original": 523,
+      "rebuilt": 524
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 77,
+      "field": "hero3Slow",
+      "original": 522,
+      "rebuilt": 523
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 78,
+      "field": "hero3Slow",
+      "original": 521,
+      "rebuilt": 522
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 79,
+      "field": "hero3Slow",
+      "original": 520,
+      "rebuilt": 521
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 80,
+      "field": "hero3Slow",
+      "original": 519,
+      "rebuilt": 520
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 81,
+      "field": "hero3Slow",
+      "original": 518,
+      "rebuilt": 519
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 82,
+      "field": "hero3Slow",
+      "original": 517,
+      "rebuilt": 518
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 83,
+      "field": "hero3Slow",
+      "original": 516,
+      "rebuilt": 517
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 84,
+      "field": "hero3Slow",
+      "original": 515,
+      "rebuilt": 516
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 85,
+      "field": "hero3Slow",
+      "original": 514,
+      "rebuilt": 515
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 86,
+      "field": "hero3Slow",
+      "original": 513,
+      "rebuilt": 514
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 87,
+      "field": "hero3Slow",
+      "original": 512,
+      "rebuilt": 513
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 88,
+      "field": "hero3Slow",
+      "original": 511,
+      "rebuilt": 512
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 89,
+      "field": "hero3Slow",
+      "original": 510,
+      "rebuilt": 511
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 90,
+      "field": "hero3Slow",
+      "original": 509,
+      "rebuilt": 510
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 91,
+      "field": "hero3Slow",
+      "original": 508,
+      "rebuilt": 509
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 92,
+      "field": "hero3Slow",
+      "original": 507,
+      "rebuilt": 508
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 93,
+      "field": "hero3Slow",
+      "original": 506,
+      "rebuilt": 507
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 94,
+      "field": "hero3Slow",
+      "original": 505,
+      "rebuilt": 506
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 95,
+      "field": "hero3Slow",
+      "original": 504,
+      "rebuilt": 505
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 96,
+      "field": "hero3Slow",
+      "original": 503,
+      "rebuilt": 504
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 97,
+      "field": "hero3Slow",
+      "original": 502,
+      "rebuilt": 503
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 98,
+      "field": "hero3Slow",
+      "original": 501,
+      "rebuilt": 502
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 99,
+      "field": "hero3Slow",
+      "original": 500,
+      "rebuilt": 501
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 100,
+      "field": "hero3Slow",
+      "original": 499,
+      "rebuilt": 500
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 101,
+      "field": "hero3Slow",
+      "original": 498,
+      "rebuilt": 499
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 102,
+      "field": "hero3Slow",
+      "original": 497,
+      "rebuilt": 498
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 103,
+      "field": "hero3Slow",
+      "original": 496,
+      "rebuilt": 497
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 104,
+      "field": "hero3Slow",
+      "original": 495,
+      "rebuilt": 496
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 105,
+      "field": "hero3Slow",
+      "original": 494,
+      "rebuilt": 495
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 106,
+      "field": "hero3Slow",
+      "original": 493,
+      "rebuilt": 494
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 107,
+      "field": "hero3Slow",
+      "original": 492,
+      "rebuilt": 493
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 108,
+      "field": "hero3Slow",
+      "original": 491,
+      "rebuilt": 492
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 109,
+      "field": "hero3Slow",
+      "original": 490,
+      "rebuilt": 491
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 110,
+      "field": "hero3Slow",
+      "original": 489,
+      "rebuilt": 490
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 111,
+      "field": "hero3Slow",
+      "original": 488,
+      "rebuilt": 489
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 112,
+      "field": "hero3Slow",
+      "original": 487,
+      "rebuilt": 488
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 113,
+      "field": "hero3Slow",
+      "original": 486,
+      "rebuilt": 487
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 114,
+      "field": "hero3Slow",
+      "original": 485,
+      "rebuilt": 486
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 115,
+      "field": "hero3Slow",
+      "original": 484,
+      "rebuilt": 485
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 116,
+      "field": "hero3Slow",
+      "original": 483,
+      "rebuilt": 484
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 117,
+      "field": "hero3Slow",
+      "original": 482,
+      "rebuilt": 483
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 118,
+      "field": "hero3Slow",
+      "original": 481,
+      "rebuilt": 482
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 119,
+      "field": "hero3Slow",
+      "original": 480,
+      "rebuilt": 481
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 120,
+      "field": "hero3Slow",
+      "original": 479,
+      "rebuilt": 480
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 121,
+      "field": "hero3Slow",
+      "original": 478,
+      "rebuilt": 479
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 122,
+      "field": "hero3Slow",
+      "original": 477,
+      "rebuilt": 478
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 123,
+      "field": "hero3Slow",
+      "original": 476,
+      "rebuilt": 477
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 124,
+      "field": "hero3Slow",
+      "original": 475,
+      "rebuilt": 476
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 125,
+      "field": "hero3Slow",
+      "original": 474,
+      "rebuilt": 475
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 126,
+      "field": "hero3Slow",
+      "original": 473,
+      "rebuilt": 474
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 127,
+      "field": "hero3Slow",
+      "original": 472,
+      "rebuilt": 473
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 128,
+      "field": "hero3Slow",
+      "original": 471,
+      "rebuilt": 472
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 129,
+      "field": "hero3Slow",
+      "original": 470,
+      "rebuilt": 471
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 130,
+      "field": "hero3Slow",
+      "original": 469,
+      "rebuilt": 470
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 131,
+      "field": "hero3Slow",
+      "original": 468,
+      "rebuilt": 469
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 132,
+      "field": "hero3Slow",
+      "original": 467,
+      "rebuilt": 468
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 133,
+      "field": "hero3Slow",
+      "original": 466,
+      "rebuilt": 467
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 134,
+      "field": "hero3Slow",
+      "original": 465,
+      "rebuilt": 466
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 135,
+      "field": "hero3Slow",
+      "original": 464,
+      "rebuilt": 465
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 136,
+      "field": "hero3Slow",
+      "original": 463,
+      "rebuilt": 464
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 137,
+      "field": "hero3Slow",
+      "original": 462,
+      "rebuilt": 463
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 138,
+      "field": "hero3Slow",
+      "original": 461,
+      "rebuilt": 462
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 139,
+      "field": "hero3Slow",
+      "original": 460,
+      "rebuilt": 461
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 140,
+      "field": "hero3Slow",
+      "original": 459,
+      "rebuilt": 460
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 141,
+      "field": "hero3Slow",
+      "original": 458,
+      "rebuilt": 459
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 142,
+      "field": "hero3Slow",
+      "original": 457,
+      "rebuilt": 458
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 143,
+      "field": "hero3Slow",
+      "original": 456,
+      "rebuilt": 457
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 144,
+      "field": "hero3Slow",
+      "original": 455,
+      "rebuilt": 456
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 145,
+      "field": "hero3Slow",
+      "original": 454,
+      "rebuilt": 455
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 146,
+      "field": "hero3Slow",
+      "original": 453,
+      "rebuilt": 454
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 147,
+      "field": "hero3Slow",
+      "original": 452,
+      "rebuilt": 453
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 148,
+      "field": "hero3Slow",
+      "original": 451,
+      "rebuilt": 452
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 149,
+      "field": "hero3Slow",
+      "original": 450,
+      "rebuilt": 451
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 150,
+      "field": "hero3Slow",
+      "original": 449,
+      "rebuilt": 450
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 151,
+      "field": "hero3Slow",
+      "original": 448,
+      "rebuilt": 449
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 152,
+      "field": "hero3Slow",
+      "original": 447,
+      "rebuilt": 448
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 153,
+      "field": "hero3Slow",
+      "original": 446,
+      "rebuilt": 447
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 154,
+      "field": "hero3Slow",
+      "original": 445,
+      "rebuilt": 446
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 155,
+      "field": "hero3Slow",
+      "original": 444,
+      "rebuilt": 445
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 156,
+      "field": "hero3Slow",
+      "original": 443,
+      "rebuilt": 444
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 157,
+      "field": "hero3Slow",
+      "original": 442,
+      "rebuilt": 443
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 158,
+      "field": "hero3Slow",
+      "original": 441,
+      "rebuilt": 442
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 159,
+      "field": "hero3Slow",
+      "original": 440,
+      "rebuilt": 441
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 160,
+      "field": "hero3Slow",
+      "original": 439,
+      "rebuilt": 440
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 161,
+      "field": "hero3Slow",
+      "original": 438,
+      "rebuilt": 439
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 162,
+      "field": "hero3Slow",
+      "original": 437,
+      "rebuilt": 438
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 163,
+      "field": "hero3Slow",
+      "original": 436,
+      "rebuilt": 437
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 164,
+      "field": "hero3Slow",
+      "original": 435,
+      "rebuilt": 436
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 165,
+      "field": "hero3Slow",
+      "original": 434,
+      "rebuilt": 435
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 166,
+      "field": "hero3Slow",
+      "original": 433,
+      "rebuilt": 434
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 167,
+      "field": "hero3Slow",
+      "original": 432,
+      "rebuilt": 433
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 168,
+      "field": "hero3Slow",
+      "original": 431,
+      "rebuilt": 432
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 169,
+      "field": "hero3Slow",
+      "original": 430,
+      "rebuilt": 431
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 170,
+      "field": "hero3Slow",
+      "original": 429,
+      "rebuilt": 430
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 171,
+      "field": "hero3Slow",
+      "original": 428,
+      "rebuilt": 429
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 172,
+      "field": "hero3Slow",
+      "original": 427,
+      "rebuilt": 428
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 173,
+      "field": "hero3Slow",
+      "original": 426,
+      "rebuilt": 427
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 174,
+      "field": "hero3Slow",
+      "original": 425,
+      "rebuilt": 426
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 175,
+      "field": "hero3Slow",
+      "original": 424,
+      "rebuilt": 425
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 176,
+      "field": "hero3Slow",
+      "original": 423,
+      "rebuilt": 424
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 177,
+      "field": "hero3Slow",
+      "original": 422,
+      "rebuilt": 423
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 178,
+      "field": "hero3Slow",
+      "original": 421,
+      "rebuilt": 422
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 179,
+      "field": "hero3Slow",
+      "original": 420,
+      "rebuilt": 421
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 180,
+      "field": "hero3Slow",
+      "original": 419,
+      "rebuilt": 420
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 181,
+      "field": "hero3Slow",
+      "original": 418,
+      "rebuilt": 419
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 182,
+      "field": "hero3Slow",
+      "original": 417,
+      "rebuilt": 418
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 183,
+      "field": "hero3Slow",
+      "original": 416,
+      "rebuilt": 417
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 184,
+      "field": "hero3Slow",
+      "original": 415,
+      "rebuilt": 416
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 185,
+      "field": "hero3Slow",
+      "original": 414,
+      "rebuilt": 415
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 186,
+      "field": "hero3Slow",
+      "original": 413,
+      "rebuilt": 414
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 187,
+      "field": "hero3Slow",
+      "original": 412,
+      "rebuilt": 413
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 188,
+      "field": "hero3Slow",
+      "original": 411,
+      "rebuilt": 412
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 189,
+      "field": "hero3Slow",
+      "original": 410,
+      "rebuilt": 411
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 190,
+      "field": "hero3Slow",
+      "original": 409,
+      "rebuilt": 410
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 191,
+      "field": "hero3Slow",
+      "original": 408,
+      "rebuilt": 409
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 192,
+      "field": "hero3Slow",
+      "original": 407,
+      "rebuilt": 408
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 193,
+      "field": "hero3Slow",
+      "original": 406,
+      "rebuilt": 407
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 194,
+      "field": "hero3Slow",
+      "original": 405,
+      "rebuilt": 406
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 195,
+      "field": "hero3Slow",
+      "original": 404,
+      "rebuilt": 405
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 196,
+      "field": "hero3Slow",
+      "original": 403,
+      "rebuilt": 404
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 197,
+      "field": "hero3Slow",
+      "original": 402,
+      "rebuilt": 403
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 198,
+      "field": "hero3Slow",
+      "original": 401,
+      "rebuilt": 402
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 199,
+      "field": "hero3Slow",
+      "original": 400,
+      "rebuilt": 401
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 200,
+      "field": "hero3Slow",
+      "original": 399,
+      "rebuilt": 400
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 201,
+      "field": "hero3Slow",
+      "original": 398,
+      "rebuilt": 399
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 202,
+      "field": "hero3Slow",
+      "original": 397,
+      "rebuilt": 398
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 203,
+      "field": "hero3Slow",
+      "original": 396,
+      "rebuilt": 397
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 204,
+      "field": "hero3Slow",
+      "original": 395,
+      "rebuilt": 396
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 205,
+      "field": "hero3Slow",
+      "original": 394,
+      "rebuilt": 395
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 206,
+      "field": "hero3Slow",
+      "original": 393,
+      "rebuilt": 394
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 207,
+      "field": "hero3Slow",
+      "original": 392,
+      "rebuilt": 393
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 208,
+      "field": "hero3Slow",
+      "original": 391,
+      "rebuilt": 392
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 209,
+      "field": "hero3Slow",
+      "original": 390,
+      "rebuilt": 391
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 210,
+      "field": "hero3Slow",
+      "original": 389,
+      "rebuilt": 390
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 211,
+      "field": "hero3Slow",
+      "original": 388,
+      "rebuilt": 389
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 212,
+      "field": "hero3Slow",
+      "original": 387,
+      "rebuilt": 388
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 213,
+      "field": "hero3Slow",
+      "original": 386,
+      "rebuilt": 387
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 214,
+      "field": "hero3Slow",
+      "original": 385,
+      "rebuilt": 386
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 215,
+      "field": "hero3Slow",
+      "original": 384,
+      "rebuilt": 385
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 216,
+      "field": "hero3Slow",
+      "original": 383,
+      "rebuilt": 384
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 217,
+      "field": "hero3Slow",
+      "original": 382,
+      "rebuilt": 383
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 218,
+      "field": "hero3Slow",
+      "original": 381,
+      "rebuilt": 382
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 219,
+      "field": "hero3Slow",
+      "original": 380,
+      "rebuilt": 381
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 220,
+      "field": "hero3Slow",
+      "original": 379,
+      "rebuilt": 380
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 221,
+      "field": "hero3Slow",
+      "original": 378,
+      "rebuilt": 379
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 222,
+      "field": "hero3Slow",
+      "original": 377,
+      "rebuilt": 378
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 223,
+      "field": "hero3Slow",
+      "original": 376,
+      "rebuilt": 377
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 224,
+      "field": "hero3Slow",
+      "original": 375,
+      "rebuilt": 376
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 225,
+      "field": "hero3Slow",
+      "original": 374,
+      "rebuilt": 375
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 226,
+      "field": "hero3Slow",
+      "original": 373,
+      "rebuilt": 374
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 227,
+      "field": "hero3Slow",
+      "original": 372,
+      "rebuilt": 373
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 228,
+      "field": "hero3Slow",
+      "original": 371,
+      "rebuilt": 372
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 229,
+      "field": "hero3Slow",
+      "original": 370,
+      "rebuilt": 371
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 230,
+      "field": "hero3Slow",
+      "original": 369,
+      "rebuilt": 370
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 231,
+      "field": "hero3Slow",
+      "original": 368,
+      "rebuilt": 369
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 232,
+      "field": "hero3Slow",
+      "original": 367,
+      "rebuilt": 368
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 233,
+      "field": "hero3Slow",
+      "original": 366,
+      "rebuilt": 367
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 234,
+      "field": "hero3Slow",
+      "original": 365,
+      "rebuilt": 366
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 235,
+      "field": "hero3Slow",
+      "original": 364,
+      "rebuilt": 365
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 236,
+      "field": "hero3Slow",
+      "original": 363,
+      "rebuilt": 364
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 237,
+      "field": "hero3Slow",
+      "original": 362,
+      "rebuilt": 363
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 238,
+      "field": "hero3Slow",
+      "original": 361,
+      "rebuilt": 362
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 239,
+      "field": "hero3Slow",
+      "original": 360,
+      "rebuilt": 361
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 240,
+      "field": "hero3Slow",
+      "original": 359,
+      "rebuilt": 360
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 241,
+      "field": "hero3Slow",
+      "original": 358,
+      "rebuilt": 359
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 242,
+      "field": "hero3Slow",
+      "original": 357,
+      "rebuilt": 358
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 243,
+      "field": "hero3Slow",
+      "original": 356,
+      "rebuilt": 357
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 244,
+      "field": "hero3Slow",
+      "original": 355,
+      "rebuilt": 356
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 245,
+      "field": "hero3Slow",
+      "original": 354,
+      "rebuilt": 355
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 246,
+      "field": "hero3Slow",
+      "original": 353,
+      "rebuilt": 354
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 247,
+      "field": "hero3Slow",
+      "original": 352,
+      "rebuilt": 353
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 248,
+      "field": "hero3Slow",
+      "original": 351,
+      "rebuilt": 352
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 249,
+      "field": "hero3Slow",
+      "original": 350,
+      "rebuilt": 351
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 250,
+      "field": "hero3Slow",
+      "original": 349,
+      "rebuilt": 350
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 251,
+      "field": "hero3Slow",
+      "original": 348,
+      "rebuilt": 349
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 252,
+      "field": "hero3Slow",
+      "original": 347,
+      "rebuilt": 348
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 253,
+      "field": "hero3Slow",
+      "original": 346,
+      "rebuilt": 347
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 254,
+      "field": "hero3Slow",
+      "original": 345,
+      "rebuilt": 346
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 255,
+      "field": "hero3Slow",
+      "original": 344,
+      "rebuilt": 345
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 256,
+      "field": "hero3Slow",
+      "original": 343,
+      "rebuilt": 344
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 257,
+      "field": "hero3Slow",
+      "original": 342,
+      "rebuilt": 343
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 258,
+      "field": "hero3Slow",
+      "original": 341,
+      "rebuilt": 342
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 259,
+      "field": "hero3Slow",
+      "original": 340,
+      "rebuilt": 341
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 260,
+      "field": "hero3Slow",
+      "original": 339,
+      "rebuilt": 340
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 261,
+      "field": "hero3Slow",
+      "original": 338,
+      "rebuilt": 339
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 262,
+      "field": "hero3Slow",
+      "original": 337,
+      "rebuilt": 338
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 263,
+      "field": "hero3Slow",
+      "original": 336,
+      "rebuilt": 337
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 264,
+      "field": "hero3Slow",
+      "original": 335,
+      "rebuilt": 336
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 265,
+      "field": "hero3Slow",
+      "original": 334,
+      "rebuilt": 335
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 266,
+      "field": "hero3Slow",
+      "original": 333,
+      "rebuilt": 334
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 267,
+      "field": "hero3Slow",
+      "original": 332,
+      "rebuilt": 333
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 268,
+      "field": "hero3Slow",
+      "original": 331,
+      "rebuilt": 332
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 269,
+      "field": "hero3Slow",
+      "original": 330,
+      "rebuilt": 331
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 270,
+      "field": "hero3Slow",
+      "original": 329,
+      "rebuilt": 330
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 271,
+      "field": "hero3Slow",
+      "original": 328,
+      "rebuilt": 329
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 272,
+      "field": "hero3Slow",
+      "original": 327,
+      "rebuilt": 328
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 273,
+      "field": "hero3Slow",
+      "original": 326,
+      "rebuilt": 327
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 274,
+      "field": "hero3Slow",
+      "original": 325,
+      "rebuilt": 326
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 275,
+      "field": "hero3Slow",
+      "original": 324,
+      "rebuilt": 325
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 276,
+      "field": "hero3Slow",
+      "original": 323,
+      "rebuilt": 324
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 277,
+      "field": "hero3Slow",
+      "original": 322,
+      "rebuilt": 323
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 278,
+      "field": "hero3Slow",
+      "original": 321,
+      "rebuilt": 322
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 279,
+      "field": "hero3Slow",
+      "original": 320,
+      "rebuilt": 321
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 280,
+      "field": "hero3Slow",
+      "original": 319,
+      "rebuilt": 320
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 281,
+      "field": "hero3Slow",
+      "original": 318,
+      "rebuilt": 319
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 282,
+      "field": "hero3Slow",
+      "original": 317,
+      "rebuilt": 318
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 283,
+      "field": "hero3Slow",
+      "original": 316,
+      "rebuilt": 317
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 284,
+      "field": "hero3Slow",
+      "original": 315,
+      "rebuilt": 316
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 285,
+      "field": "hero3Slow",
+      "original": 314,
+      "rebuilt": 315
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 286,
+      "field": "hero3Slow",
+      "original": 313,
+      "rebuilt": 314
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 287,
+      "field": "hero3Slow",
+      "original": 312,
+      "rebuilt": 313
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 288,
+      "field": "hero3Slow",
+      "original": 311,
+      "rebuilt": 312
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 289,
+      "field": "hero3Slow",
+      "original": 310,
+      "rebuilt": 311
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 290,
+      "field": "hero3Slow",
+      "original": 309,
+      "rebuilt": 310
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 291,
+      "field": "hero3Slow",
+      "original": 308,
+      "rebuilt": 309
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 292,
+      "field": "hero3Slow",
+      "original": 307,
+      "rebuilt": 308
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 293,
+      "field": "hero3Slow",
+      "original": 306,
+      "rebuilt": 307
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 294,
+      "field": "hero3Slow",
+      "original": 305,
+      "rebuilt": 306
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 295,
+      "field": "hero3Slow",
+      "original": 304,
+      "rebuilt": 305
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 296,
+      "field": "hero3Slow",
+      "original": 303,
+      "rebuilt": 304
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 297,
+      "field": "hero3Slow",
+      "original": 302,
+      "rebuilt": 303
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 298,
+      "field": "hero3Slow",
+      "original": 301,
+      "rebuilt": 302
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 299,
+      "field": "hero3Slow",
+      "original": 300,
+      "rebuilt": 301
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 300,
+      "field": "hero3Slow",
+      "original": 299,
+      "rebuilt": 300
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 301,
+      "field": "hero3Slow",
+      "original": 298,
+      "rebuilt": 299
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 302,
+      "field": "hero3Slow",
+      "original": 297,
+      "rebuilt": 298
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 303,
+      "field": "hero3Slow",
+      "original": 296,
+      "rebuilt": 297
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 304,
+      "field": "hero3Slow",
+      "original": 295,
+      "rebuilt": 296
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 305,
+      "field": "hero3Slow",
+      "original": 294,
+      "rebuilt": 295
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 306,
+      "field": "hero3Slow",
+      "original": 293,
+      "rebuilt": 294
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 307,
+      "field": "hero3Slow",
+      "original": 292,
+      "rebuilt": 293
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 308,
+      "field": "hero3Slow",
+      "original": 291,
+      "rebuilt": 292
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 309,
+      "field": "hero3Slow",
+      "original": 290,
+      "rebuilt": 291
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 310,
+      "field": "hero3Slow",
+      "original": 289,
+      "rebuilt": 290
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 311,
+      "field": "hero3Slow",
+      "original": 288,
+      "rebuilt": 289
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 312,
+      "field": "hero3Slow",
+      "original": 287,
+      "rebuilt": 288
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 313,
+      "field": "hero3Slow",
+      "original": 286,
+      "rebuilt": 287
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 314,
+      "field": "hero3Slow",
+      "original": 285,
+      "rebuilt": 286
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 315,
+      "field": "hero3Slow",
+      "original": 284,
+      "rebuilt": 285
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 316,
+      "field": "hero3Slow",
+      "original": 283,
+      "rebuilt": 284
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 317,
+      "field": "hero3Slow",
+      "original": 282,
+      "rebuilt": 283
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 318,
+      "field": "hero3Slow",
+      "original": 281,
+      "rebuilt": 282
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 319,
+      "field": "hero3Slow",
+      "original": 280,
+      "rebuilt": 281
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 320,
+      "field": "hero3Slow",
+      "original": 279,
+      "rebuilt": 280
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 321,
+      "field": "hero3Slow",
+      "original": 278,
+      "rebuilt": 279
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 322,
+      "field": "hero3Slow",
+      "original": 277,
+      "rebuilt": 278
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 323,
+      "field": "hero3Slow",
+      "original": 276,
+      "rebuilt": 277
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 324,
+      "field": "hero3Slow",
+      "original": 275,
+      "rebuilt": 276
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 325,
+      "field": "hero3Slow",
+      "original": 274,
+      "rebuilt": 275
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 326,
+      "field": "hero3Slow",
+      "original": 273,
+      "rebuilt": 274
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 327,
+      "field": "hero3Slow",
+      "original": 272,
+      "rebuilt": 273
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 328,
+      "field": "hero3Slow",
+      "original": 271,
+      "rebuilt": 272
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 329,
+      "field": "hero3Slow",
+      "original": 270,
+      "rebuilt": 271
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 330,
+      "field": "hero3Slow",
+      "original": 269,
+      "rebuilt": 270
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 331,
+      "field": "hero3Slow",
+      "original": 268,
+      "rebuilt": 269
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 332,
+      "field": "hero3Slow",
+      "original": 267,
+      "rebuilt": 268
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 333,
+      "field": "hero3Slow",
+      "original": 266,
+      "rebuilt": 267
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 334,
+      "field": "hero3Slow",
+      "original": 265,
+      "rebuilt": 266
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 335,
+      "field": "hero3Slow",
+      "original": 264,
+      "rebuilt": 265
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 336,
+      "field": "hero3Slow",
+      "original": 263,
+      "rebuilt": 264
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 337,
+      "field": "hero3Slow",
+      "original": 262,
+      "rebuilt": 263
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 338,
+      "field": "hero3Slow",
+      "original": 261,
+      "rebuilt": 262
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 339,
+      "field": "hero3Slow",
+      "original": 260,
+      "rebuilt": 261
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 340,
+      "field": "hero3Slow",
+      "original": 259,
+      "rebuilt": 260
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 341,
+      "field": "hero3Slow",
+      "original": 258,
+      "rebuilt": 259
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 342,
+      "field": "hero3Slow",
+      "original": 257,
+      "rebuilt": 258
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 343,
+      "field": "hero3Slow",
+      "original": 256,
+      "rebuilt": 257
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 344,
+      "field": "hero3Slow",
+      "original": 255,
+      "rebuilt": 256
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 345,
+      "field": "hero3Slow",
+      "original": 254,
+      "rebuilt": 255
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 346,
+      "field": "hero3Slow",
+      "original": 253,
+      "rebuilt": 254
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 347,
+      "field": "hero3Slow",
+      "original": 252,
+      "rebuilt": 253
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 348,
+      "field": "hero3Slow",
+      "original": 251,
+      "rebuilt": 252
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 349,
+      "field": "hero3Slow",
+      "original": 250,
+      "rebuilt": 251
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 350,
+      "field": "hero3Slow",
+      "original": 249,
+      "rebuilt": 250
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 351,
+      "field": "hero3Slow",
+      "original": 248,
+      "rebuilt": 249
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 352,
+      "field": "hero3Slow",
+      "original": 247,
+      "rebuilt": 248
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 353,
+      "field": "hero3Slow",
+      "original": 246,
+      "rebuilt": 247
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 354,
+      "field": "hero3Slow",
+      "original": 245,
+      "rebuilt": 246
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 355,
+      "field": "hero3Slow",
+      "original": 244,
+      "rebuilt": 245
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 356,
+      "field": "hero3Slow",
+      "original": 243,
+      "rebuilt": 244
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 357,
+      "field": "hero3Slow",
+      "original": 242,
+      "rebuilt": 243
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 358,
+      "field": "hero3Slow",
+      "original": 241,
+      "rebuilt": 242
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 359,
+      "field": "hero3Slow",
+      "original": 240,
+      "rebuilt": 241
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 360,
+      "field": "hero3Slow",
+      "original": 239,
+      "rebuilt": 240
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 361,
+      "field": "hero3Slow",
+      "original": 238,
+      "rebuilt": 239
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 362,
+      "field": "hero3Slow",
+      "original": 237,
+      "rebuilt": 238
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 363,
+      "field": "hero3Slow",
+      "original": 236,
+      "rebuilt": 237
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 364,
+      "field": "hero3Slow",
+      "original": 235,
+      "rebuilt": 236
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 365,
+      "field": "hero3Slow",
+      "original": 234,
+      "rebuilt": 235
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 366,
+      "field": "hero3Slow",
+      "original": 233,
+      "rebuilt": 234
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 367,
+      "field": "hero3Slow",
+      "original": 232,
+      "rebuilt": 233
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 368,
+      "field": "hero3Slow",
+      "original": 231,
+      "rebuilt": 232
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 369,
+      "field": "hero3Slow",
+      "original": 230,
+      "rebuilt": 231
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 370,
+      "field": "hero3Slow",
+      "original": 229,
+      "rebuilt": 230
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 371,
+      "field": "hero3Slow",
+      "original": 228,
+      "rebuilt": 229
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 372,
+      "field": "hero3Slow",
+      "original": 227,
+      "rebuilt": 228
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 373,
+      "field": "hero3Slow",
+      "original": 226,
+      "rebuilt": 227
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 374,
+      "field": "hero3Slow",
+      "original": 225,
+      "rebuilt": 226
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 375,
+      "field": "hero3Slow",
+      "original": 224,
+      "rebuilt": 225
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 376,
+      "field": "hero3Slow",
+      "original": 223,
+      "rebuilt": 224
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 377,
+      "field": "hero3Slow",
+      "original": 222,
+      "rebuilt": 223
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 378,
+      "field": "hero3Slow",
+      "original": 221,
+      "rebuilt": 222
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 379,
+      "field": "hero3Slow",
+      "original": 220,
+      "rebuilt": 221
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 380,
+      "field": "hero3Slow",
+      "original": 219,
+      "rebuilt": 220
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 381,
+      "field": "hero3Slow",
+      "original": 218,
+      "rebuilt": 219
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 382,
+      "field": "hero3Slow",
+      "original": 217,
+      "rebuilt": 218
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 383,
+      "field": "hero3Slow",
+      "original": 216,
+      "rebuilt": 217
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 384,
+      "field": "hero3Slow",
+      "original": 215,
+      "rebuilt": 216
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 385,
+      "field": "hero3Slow",
+      "original": 214,
+      "rebuilt": 215
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 386,
+      "field": "hero3Slow",
+      "original": 213,
+      "rebuilt": 214
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 387,
+      "field": "hero3Slow",
+      "original": 212,
+      "rebuilt": 213
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 388,
+      "field": "hero3Slow",
+      "original": 211,
+      "rebuilt": 212
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 389,
+      "field": "hero3Slow",
+      "original": 210,
+      "rebuilt": 211
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 390,
+      "field": "hero3Slow",
+      "original": 209,
+      "rebuilt": 210
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 391,
+      "field": "hero3Slow",
+      "original": 208,
+      "rebuilt": 209
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 392,
+      "field": "hero3Slow",
+      "original": 207,
+      "rebuilt": 208
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 393,
+      "field": "hero3Slow",
+      "original": 206,
+      "rebuilt": 207
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 394,
+      "field": "hero3Slow",
+      "original": 205,
+      "rebuilt": 206
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 395,
+      "field": "hero3Slow",
+      "original": 204,
+      "rebuilt": 205
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 396,
+      "field": "hero3Slow",
+      "original": 203,
+      "rebuilt": 204
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 397,
+      "field": "hero3Slow",
+      "original": 202,
+      "rebuilt": 203
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 398,
+      "field": "hero3Slow",
+      "original": 201,
+      "rebuilt": 202
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 399,
+      "field": "hero3Slow",
+      "original": 200,
+      "rebuilt": 201
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 400,
+      "field": "hero3Slow",
+      "original": 199,
+      "rebuilt": 200
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 401,
+      "field": "hero3Slow",
+      "original": 198,
+      "rebuilt": 199
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 402,
+      "field": "hero3Slow",
+      "original": 197,
+      "rebuilt": 198
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 403,
+      "field": "hero3Slow",
+      "original": 196,
+      "rebuilt": 197
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 404,
+      "field": "hero3Slow",
+      "original": 195,
+      "rebuilt": 196
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 405,
+      "field": "hero3Slow",
+      "original": 194,
+      "rebuilt": 195
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 406,
+      "field": "hero3Slow",
+      "original": 193,
+      "rebuilt": 194
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 407,
+      "field": "hero3Slow",
+      "original": 192,
+      "rebuilt": 193
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 408,
+      "field": "hero3Slow",
+      "original": 191,
+      "rebuilt": 192
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 409,
+      "field": "hero3Slow",
+      "original": 190,
+      "rebuilt": 191
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 410,
+      "field": "hero3Slow",
+      "original": 189,
+      "rebuilt": 190
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 411,
+      "field": "hero3Slow",
+      "original": 188,
+      "rebuilt": 189
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 412,
+      "field": "hero3Slow",
+      "original": 187,
+      "rebuilt": 188
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 413,
+      "field": "hero3Slow",
+      "original": 186,
+      "rebuilt": 187
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 414,
+      "field": "hero3Slow",
+      "original": 185,
+      "rebuilt": 186
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 415,
+      "field": "hero3Slow",
+      "original": 184,
+      "rebuilt": 185
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 416,
+      "field": "hero3Slow",
+      "original": 183,
+      "rebuilt": 184
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 417,
+      "field": "hero3Slow",
+      "original": 182,
+      "rebuilt": 183
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 418,
+      "field": "hero3Slow",
+      "original": 181,
+      "rebuilt": 182
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 419,
+      "field": "hero3Slow",
+      "original": 180,
+      "rebuilt": 181
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 420,
+      "field": "hero3Slow",
+      "original": 179,
+      "rebuilt": 180
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 421,
+      "field": "hero3Slow",
+      "original": 178,
+      "rebuilt": 179
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 422,
+      "field": "hero3Slow",
+      "original": 177,
+      "rebuilt": 178
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 423,
+      "field": "hero3Slow",
+      "original": 176,
+      "rebuilt": 177
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 424,
+      "field": "hero3Slow",
+      "original": 175,
+      "rebuilt": 176
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 425,
+      "field": "hero3Slow",
+      "original": 174,
+      "rebuilt": 175
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 426,
+      "field": "hero3Slow",
+      "original": 173,
+      "rebuilt": 174
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 427,
+      "field": "hero3Slow",
+      "original": 172,
+      "rebuilt": 173
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 428,
+      "field": "hero3Slow",
+      "original": 171,
+      "rebuilt": 172
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 429,
+      "field": "hero3Slow",
+      "original": 170,
+      "rebuilt": 171
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 430,
+      "field": "hero3Slow",
+      "original": 169,
+      "rebuilt": 170
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 431,
+      "field": "hero3Slow",
+      "original": 168,
+      "rebuilt": 169
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 432,
+      "field": "hero3Slow",
+      "original": 167,
+      "rebuilt": 168
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 433,
+      "field": "hero3Slow",
+      "original": 166,
+      "rebuilt": 167
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 434,
+      "field": "hero3Slow",
+      "original": 165,
+      "rebuilt": 166
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 435,
+      "field": "hero3Slow",
+      "original": 164,
+      "rebuilt": 165
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 436,
+      "field": "hero3Slow",
+      "original": 163,
+      "rebuilt": 164
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 437,
+      "field": "hero3Slow",
+      "original": 162,
+      "rebuilt": 163
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 438,
+      "field": "hero3Slow",
+      "original": 161,
+      "rebuilt": 162
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 439,
+      "field": "hero3Slow",
+      "original": 160,
+      "rebuilt": 161
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 440,
+      "field": "hero3Slow",
+      "original": 159,
+      "rebuilt": 160
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 441,
+      "field": "hero3Slow",
+      "original": 158,
+      "rebuilt": 159
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 442,
+      "field": "hero3Slow",
+      "original": 157,
+      "rebuilt": 158
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 443,
+      "field": "hero3Slow",
+      "original": 156,
+      "rebuilt": 157
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 444,
+      "field": "hero3Slow",
+      "original": 155,
+      "rebuilt": 156
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 445,
+      "field": "hero3Slow",
+      "original": 154,
+      "rebuilt": 155
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 446,
+      "field": "hero3Slow",
+      "original": 153,
+      "rebuilt": 154
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 447,
+      "field": "hero3Slow",
+      "original": 152,
+      "rebuilt": 153
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 448,
+      "field": "hero3Slow",
+      "original": 151,
+      "rebuilt": 152
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 449,
+      "field": "hero3Slow",
+      "original": 150,
+      "rebuilt": 151
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 450,
+      "field": "hero3Slow",
+      "original": 149,
+      "rebuilt": 150
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 451,
+      "field": "hero3Slow",
+      "original": 148,
+      "rebuilt": 149
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 452,
+      "field": "hero3Slow",
+      "original": 147,
+      "rebuilt": 148
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 453,
+      "field": "hero3Slow",
+      "original": 146,
+      "rebuilt": 147
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 454,
+      "field": "hero3Slow",
+      "original": 145,
+      "rebuilt": 146
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 455,
+      "field": "hero3Slow",
+      "original": 144,
+      "rebuilt": 145
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 456,
+      "field": "hero3Slow",
+      "original": 143,
+      "rebuilt": 144
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 457,
+      "field": "hero3Slow",
+      "original": 142,
+      "rebuilt": 143
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 458,
+      "field": "hero3Slow",
+      "original": 141,
+      "rebuilt": 142
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 459,
+      "field": "hero3Slow",
+      "original": 140,
+      "rebuilt": 141
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 460,
+      "field": "hero3Slow",
+      "original": 139,
+      "rebuilt": 140
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 461,
+      "field": "hero3Slow",
+      "original": 138,
+      "rebuilt": 139
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 462,
+      "field": "hero3Slow",
+      "original": 137,
+      "rebuilt": 138
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 463,
+      "field": "hero3Slow",
+      "original": 136,
+      "rebuilt": 137
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 464,
+      "field": "hero3Slow",
+      "original": 135,
+      "rebuilt": 136
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 465,
+      "field": "hero3Slow",
+      "original": 134,
+      "rebuilt": 135
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 466,
+      "field": "hero3Slow",
+      "original": 133,
+      "rebuilt": 134
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 467,
+      "field": "hero3Slow",
+      "original": 132,
+      "rebuilt": 133
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 468,
+      "field": "hero3Slow",
+      "original": 131,
+      "rebuilt": 132
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 469,
+      "field": "hero3Slow",
+      "original": 130,
+      "rebuilt": 131
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 470,
+      "field": "hero3Slow",
+      "original": 129,
+      "rebuilt": 130
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 471,
+      "field": "hero3Slow",
+      "original": 128,
+      "rebuilt": 129
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 472,
+      "field": "hero3Slow",
+      "original": 127,
+      "rebuilt": 128
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 473,
+      "field": "hero3Slow",
+      "original": 126,
+      "rebuilt": 127
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 474,
+      "field": "hero3Slow",
+      "original": 125,
+      "rebuilt": 126
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 475,
+      "field": "hero3Slow",
+      "original": 124,
+      "rebuilt": 125
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 476,
+      "field": "hero3Slow",
+      "original": 123,
+      "rebuilt": 124
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 477,
+      "field": "hero3Slow",
+      "original": 122,
+      "rebuilt": 123
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 478,
+      "field": "hero3Slow",
+      "original": 121,
+      "rebuilt": 122
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 479,
+      "field": "hero3Slow",
+      "original": 120,
+      "rebuilt": 121
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 480,
+      "field": "hero3Slow",
+      "original": 119,
+      "rebuilt": 120
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 481,
+      "field": "hero3Slow",
+      "original": 118,
+      "rebuilt": 119
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 482,
+      "field": "hero3Slow",
+      "original": 117,
+      "rebuilt": 118
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 483,
+      "field": "hero3Slow",
+      "original": 116,
+      "rebuilt": 117
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 484,
+      "field": "hero3Slow",
+      "original": 115,
+      "rebuilt": 116
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 485,
+      "field": "hero3Slow",
+      "original": 114,
+      "rebuilt": 115
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 486,
+      "field": "hero3Slow",
+      "original": 113,
+      "rebuilt": 114
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 487,
+      "field": "hero3Slow",
+      "original": 112,
+      "rebuilt": 113
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 488,
+      "field": "hero3Slow",
+      "original": 111,
+      "rebuilt": 112
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 489,
+      "field": "hero3Slow",
+      "original": 110,
+      "rebuilt": 111
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 490,
+      "field": "hero3Slow",
+      "original": 109,
+      "rebuilt": 110
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 491,
+      "field": "hero3Slow",
+      "original": 108,
+      "rebuilt": 109
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 492,
+      "field": "hero3Slow",
+      "original": 107,
+      "rebuilt": 108
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 493,
+      "field": "hero3Slow",
+      "original": 106,
+      "rebuilt": 107
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 494,
+      "field": "hero3Slow",
+      "original": 105,
+      "rebuilt": 106
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 495,
+      "field": "hero3Slow",
+      "original": 104,
+      "rebuilt": 105
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 496,
+      "field": "hero3Slow",
+      "original": 103,
+      "rebuilt": 104
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 497,
+      "field": "hero3Slow",
+      "original": 102,
+      "rebuilt": 103
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 498,
+      "field": "hero3Slow",
+      "original": 101,
+      "rebuilt": 102
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 499,
+      "field": "hero3Slow",
+      "original": 100,
+      "rebuilt": 101
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 500,
+      "field": "hero3Slow",
+      "original": 99,
+      "rebuilt": 100
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 501,
+      "field": "hero3Slow",
+      "original": 98,
+      "rebuilt": 99
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 502,
+      "field": "hero3Slow",
+      "original": 97,
+      "rebuilt": 98
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 503,
+      "field": "hero3Slow",
+      "original": 96,
+      "rebuilt": 97
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 504,
+      "field": "hero3Slow",
+      "original": 95,
+      "rebuilt": 96
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 505,
+      "field": "hero3Slow",
+      "original": 94,
+      "rebuilt": 95
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 506,
+      "field": "hero3Slow",
+      "original": 93,
+      "rebuilt": 94
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 507,
+      "field": "hero3Slow",
+      "original": 92,
+      "rebuilt": 93
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 508,
+      "field": "hero3Slow",
+      "original": 91,
+      "rebuilt": 92
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 509,
+      "field": "hero3Slow",
+      "original": 90,
+      "rebuilt": 91
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 510,
+      "field": "hero3Slow",
+      "original": 89,
+      "rebuilt": 90
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 511,
+      "field": "hero3Slow",
+      "original": 88,
+      "rebuilt": 89
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 512,
+      "field": "hero3Slow",
+      "original": 87,
+      "rebuilt": 88
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 513,
+      "field": "hero3Slow",
+      "original": 86,
+      "rebuilt": 87
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 514,
+      "field": "hero3Slow",
+      "original": 85,
+      "rebuilt": 86
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 515,
+      "field": "hero3Slow",
+      "original": 84,
+      "rebuilt": 85
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 516,
+      "field": "hero3Slow",
+      "original": 83,
+      "rebuilt": 84
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 517,
+      "field": "hero3Slow",
+      "original": 82,
+      "rebuilt": 83
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 518,
+      "field": "hero3Slow",
+      "original": 81,
+      "rebuilt": 82
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 519,
+      "field": "hero3Slow",
+      "original": 80,
+      "rebuilt": 81
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 520,
+      "field": "hero3Slow",
+      "original": 79,
+      "rebuilt": 80
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 521,
+      "field": "hero3Slow",
+      "original": 78,
+      "rebuilt": 79
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 522,
+      "field": "hero3Slow",
+      "original": 77,
+      "rebuilt": 78
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 523,
+      "field": "hero3Slow",
+      "original": 76,
+      "rebuilt": 77
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 524,
+      "field": "hero3Slow",
+      "original": 75,
+      "rebuilt": 76
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 525,
+      "field": "hero3Slow",
+      "original": 74,
+      "rebuilt": 75
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 526,
+      "field": "hero3Slow",
+      "original": 73,
+      "rebuilt": 74
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 527,
+      "field": "hero3Slow",
+      "original": 72,
+      "rebuilt": 73
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 528,
+      "field": "hero3Slow",
+      "original": 71,
+      "rebuilt": 72
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 529,
+      "field": "hero3Slow",
+      "original": 70,
+      "rebuilt": 71
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 530,
+      "field": "hero3Slow",
+      "original": 69,
+      "rebuilt": 70
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 531,
+      "field": "hero3Slow",
+      "original": 68,
+      "rebuilt": 69
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 532,
+      "field": "hero3Slow",
+      "original": 67,
+      "rebuilt": 68
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 533,
+      "field": "hero3Slow",
+      "original": 66,
+      "rebuilt": 67
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 534,
+      "field": "hero3Slow",
+      "original": 65,
+      "rebuilt": 66
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 535,
+      "field": "hero3Slow",
+      "original": 64,
+      "rebuilt": 65
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 536,
+      "field": "hero3Slow",
+      "original": 63,
+      "rebuilt": 64
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 537,
+      "field": "hero3Slow",
+      "original": 62,
+      "rebuilt": 63
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 538,
+      "field": "hero3Slow",
+      "original": 61,
+      "rebuilt": 62
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 539,
+      "field": "hero3Slow",
+      "original": 60,
+      "rebuilt": 61
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 540,
+      "field": "hero3Slow",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 541,
+      "field": "hero3Slow",
+      "original": 58,
+      "rebuilt": 59
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 542,
+      "field": "hero3Slow",
+      "original": 57,
+      "rebuilt": 58
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 543,
+      "field": "hero3Slow",
+      "original": 56,
+      "rebuilt": 57
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 544,
+      "field": "hero3Slow",
+      "original": 55,
+      "rebuilt": 56
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 545,
+      "field": "hero3Slow",
+      "original": 54,
+      "rebuilt": 55
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 546,
+      "field": "hero3Slow",
+      "original": 53,
+      "rebuilt": 54
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 547,
+      "field": "hero3Slow",
+      "original": 52,
+      "rebuilt": 53
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 548,
+      "field": "hero3Slow",
+      "original": 51,
+      "rebuilt": 52
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 549,
+      "field": "hero3Slow",
+      "original": 50,
+      "rebuilt": 51
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 550,
+      "field": "hero3Slow",
+      "original": 49,
+      "rebuilt": 50
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 551,
+      "field": "hero3Slow",
+      "original": 48,
+      "rebuilt": 49
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 552,
+      "field": "hero3Slow",
+      "original": 47,
+      "rebuilt": 48
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 553,
+      "field": "hero3Slow",
+      "original": 46,
+      "rebuilt": 47
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 554,
+      "field": "hero3Slow",
+      "original": 45,
+      "rebuilt": 46
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 555,
+      "field": "hero3Slow",
+      "original": 44,
+      "rebuilt": 45
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 556,
+      "field": "hero3Slow",
+      "original": 43,
+      "rebuilt": 44
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 557,
+      "field": "hero3Slow",
+      "original": 42,
+      "rebuilt": 43
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 558,
+      "field": "hero3Slow",
+      "original": 41,
+      "rebuilt": 42
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 559,
+      "field": "hero3Slow",
+      "original": 40,
+      "rebuilt": 41
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 560,
+      "field": "hero3Slow",
+      "original": 39,
+      "rebuilt": 40
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 561,
+      "field": "hero3Slow",
+      "original": 38,
+      "rebuilt": 39
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 562,
+      "field": "hero3Slow",
+      "original": 37,
+      "rebuilt": 38
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 563,
+      "field": "hero3Slow",
+      "original": 36,
+      "rebuilt": 37
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 564,
+      "field": "hero3Slow",
+      "original": 35,
+      "rebuilt": 36
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 565,
+      "field": "hero3Slow",
+      "original": 34,
+      "rebuilt": 35
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 566,
+      "field": "hero3Slow",
+      "original": 33,
+      "rebuilt": 34
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 567,
+      "field": "hero3Slow",
+      "original": 32,
+      "rebuilt": 33
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 568,
+      "field": "hero3Slow",
+      "original": 31,
+      "rebuilt": 32
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 569,
+      "field": "hero3Slow",
+      "original": 30,
+      "rebuilt": 31
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 570,
+      "field": "hero3Slow",
+      "original": 29,
+      "rebuilt": 30
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 571,
+      "field": "hero3Slow",
+      "original": 28,
+      "rebuilt": 29
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 572,
+      "field": "hero3Slow",
+      "original": 27,
+      "rebuilt": 28
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 573,
+      "field": "hero3Slow",
+      "original": 26,
+      "rebuilt": 27
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 574,
+      "field": "hero3Slow",
+      "original": 25,
+      "rebuilt": 26
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 575,
+      "field": "hero3Slow",
+      "original": 24,
+      "rebuilt": 25
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 576,
+      "field": "hero3Slow",
+      "original": 23,
+      "rebuilt": 24
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 577,
+      "field": "hero3Slow",
+      "original": 22,
+      "rebuilt": 23
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 578,
+      "field": "hero3Slow",
+      "original": 21,
+      "rebuilt": 22
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 579,
+      "field": "hero3Slow",
+      "original": 20,
+      "rebuilt": 21
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 580,
+      "field": "hero3Slow",
+      "original": 19,
+      "rebuilt": 20
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 581,
+      "field": "hero3Slow",
+      "original": 18,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 582,
+      "field": "hero3Slow",
+      "original": 17,
+      "rebuilt": 18
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 583,
+      "field": "hero3Slow",
+      "original": 16,
+      "rebuilt": 17
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 584,
+      "field": "hero3Slow",
+      "original": 15,
+      "rebuilt": 16
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 585,
+      "field": "hero3Slow",
+      "original": 14,
+      "rebuilt": 15
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 586,
+      "field": "hero3Slow",
+      "original": 13,
+      "rebuilt": 14
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 587,
+      "field": "hero3Slow",
+      "original": 12,
+      "rebuilt": 13
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 588,
+      "field": "hero3Slow",
+      "original": 11,
+      "rebuilt": 12
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 589,
+      "field": "hero3Slow",
+      "original": 10,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 590,
+      "field": "hero3Slow",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 591,
+      "field": "hero3Slow",
+      "original": 8,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 592,
+      "field": "hero3Slow",
+      "original": 7,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 593,
+      "field": "hero3Slow",
+      "original": 6,
+      "rebuilt": 7
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 594,
+      "field": "hero3Slow",
+      "original": 5,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 595,
+      "field": "hero3Slow",
+      "original": 4,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 596,
+      "field": "hero3Slow",
+      "original": 3,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 597,
+      "field": "hero3Slow",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 598,
+      "field": "hero3Slow",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 599,
+      "field": "hero3Slow",
+      "original": 0,
+      "rebuilt": 1
+    }
+  ]
+}
