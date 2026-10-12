@@ -14,7 +14,7 @@ def compare(original, rebuilt):
         if not isinstance(capture.get("runtime"), str) or not capture["runtime"]:
             raise ValueError("Capture runtime is required")
     if any("profile" in capture or "configuration_sha256" in capture for capture in (original, rebuilt)):
-        if original.get("profile") not in ("core-v1", "motion-v1", "interaction-v1", "order-v1", "expiry-v1", "ai_order-v1", "push-v1") or original.get("profile") != rebuilt.get("profile"):
+        if original.get("profile") not in ("core-v1", "motion-v1", "interaction-v1", "order-v1", "expiry-v1", "ai_order-v1", "push-v1", "grenade-v1", "grenadescore-v1") or original.get("profile") != rebuilt.get("profile"):
             raise ValueError("Unknown or incompatible capture profile")
         from core_trace_schema import validate
         validate(original)

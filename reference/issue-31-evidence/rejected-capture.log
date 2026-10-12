@@ -1,0 +1,8 @@
+file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue31/tools/reference/capture_core.mjs:99
+          throw new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
+                ^
+
+Error: Capture skipped a tick: expected 0, received [{"tick":0,"heroCellX":8,"heroCellY":6,"heroMoving":false,"bombActive":false,"bombCellX":-1,"bombCellY":-1,"reservationX":-1,"reservationY":-1,"bombPixelXTwips":-1,"bombPixelYTwips":-1,"bombFuse":-1,"slideRemaining":0,"grenadeActive":true,"grenadeOriginX":8,"grenadeOriginY":6,"grenadeTargetX":8,"grenadeTargetY":8,"grenadeFrame":1,"grenadeRootXTwips":4800,"grenadeRootYTwips":3600,"specialCount":2,"fireReady":false,"energies":"","occupancy":"","bricks":"","bombsAvailable":3},{"tick":1,"heroCellX":8,"heroCellY":6,"heroMoving":false,"bombActive":false,"bombCellX":-1,"bombCellY":-1,"reservationX":-1,"reservationY":-1,"bombPixelXTwips":-1,"bombPixelYTwips":-1,"bombFuse":-1,"slideRemaining":0,"grenadeActive":true,"grenadeOriginX":8,"grenadeOriginY":6,"grenadeTargetX":8,"grenadeTargetY":8,"grenadeFrame":2,"grenadeRootXTwips":4800,"grenadeRootYTwips":3600,"specialCount":2,"fireReady":true,"energies":"","occupancy":"","bricks":"","bombsAvailable":3}]
+    at file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue31/tools/reference/capture_core.mjs:99:17
+
+Node.js v22.14.0

@@ -9,6 +9,31 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_grenade_endpoint_and_accounting_captures_are_exact(self):
+        for evidence in ("issue-31-evidence", "issue-31-evidence/accounting"):
+            run, report = self.compare_real(evidence_name=evidence)
+            self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+        def endpoint(original, rebuilt):
+            rebuilt["scenarios"]["grenade_right"][18]["grenadeActive"] = True
+        run, report = self.compare_real(endpoint, "issue-31-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"grenade_right", "tick":18,
+                         "field":"grenadeActive", "original":False, "rebuilt":True})
+        def refund(original, rebuilt):
+            rebuilt["scenarios"]["grenade_bomb"][17]["hero2Bombs"] -= 1
+        run, report = self.compare_real(refund, "issue-31-evidence/accounting")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"grenade_bomb", "tick":17,
+                         "field":"hero2Bombs", "original":4, "rebuilt":3})
+
+    def test_grenade_capture_rejects_shifted_initial_endpoint(self):
+        def shift(original, rebuilt):
+            for capture in (original, rebuilt):
+                capture["scenarios"]["initial_grenade_down"][17]["tick"] = 18
+        run, report = self.compare_real(shift, "issue-31-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 17", run.stderr)
+
     def test_push_capture_reports_half_step_and_rejects_tick_shift(self):
         run, report = self.compare_real(evidence_name="issue-30-evidence")
         self.assertEqual(run.returncode, 0, run.stdout + run.stderr)

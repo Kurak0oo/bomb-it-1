@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": null,
+  "scenario_first_divergences": {
+    "grenade_bomb": null
+  },
+  "differences": []
+}

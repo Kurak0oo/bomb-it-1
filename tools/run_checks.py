@@ -125,10 +125,13 @@ def main():
                 phases.append(("ai_order", command + ["--script", "res://tests/ai_order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
             if suite == "special":
                 phases.append(("command_order", command + ["--script", "res://tests/order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
+                phases.append(("grenade_endpoint", command + ["--script", "res://tests/motion_reference_capture.gd", "--", "--grenade-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
+                phases.append(("grenade_accounting", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--grenade-account", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
         render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
         if args.visual:
             print(f"Captures: {captures}", flush=True)
-            phases += [("interruption_render", render + ["--script", "res://tests/interruption_render_check.gd"], "INTERRUPTION_RENDER_OK"),
+            phases += [("grenade_render", render + ["--script", "res://tests/grenade_render_check.gd"], "GRENADE_RENDER_OK"),
+                       ("interruption_render", render + ["--script", "res://tests/interruption_render_check.gd"], "INTERRUPTION_RENDER_OK"),
                        ("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
                        ("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),
                        ("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
