@@ -91,6 +91,7 @@ def main():
             print(f"Captures: {captures}", flush=True)
             render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
             phases += [("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
+                       ("hud_render", render + ["--script", "res://tests/hud_render_check.gd"], "HUD_RENDER_OK"),
                        ("feedback_render", render + ["--script", "res://tests/feedback_render_check.gd"], "FEEDBACK_RENDER_OK"),
                        ("input_render", render + ["--script", "res://tests/input_render_check.gd"], "INPUT_RENDER_OK"),
                        ("menu_render", render + ["--script", "res://tests/menu_render_check.gd"], "MENU_RENDER_OK"),

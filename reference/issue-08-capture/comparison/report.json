@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-hud.png",
+      "passed": false,
+      "changed_pixels": 24174,
+      "changed_fraction": 0.7630681818181818
+    }
+  ]
+}
