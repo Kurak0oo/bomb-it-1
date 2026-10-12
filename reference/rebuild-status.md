@@ -43,10 +43,12 @@ The playable systems are implemented, but **exact equivalence is not established
    growth/expiry, and firing through the preserved parent/child callbacks.
    [Core traces](issue-11.md) initially retained 69 field differences across 252
    ticks. The independently verified [movement/fire correction](issue-28.md)
-   reduces that count to 37; bomb expiry/refire remains #29. A one-twip movement
+   and [expiry/refire correction](issue-29.md) reduce that count to six. The
+   [AI branch](issue-28-ai.md) retains source fire-before-move ordering. A one-twip movement
    discrepancy remains unproven as a port defect. [Pushing and grenade traces](issue-12.md)
    and [nested interaction traces](issue-13.md) now establish separate bounded
-   corrections #30–#33. Earlier death, level-one explosion-energy and brick-blocking
+   corrections #30–#33; all seven existing push cases now agree after #29, with
+   #30's acceptance audit pending. Earlier death, level-one explosion-energy and brick-blocking
    traces agree. These fixtures do not establish full-match or Adobe Flash Player
    parity, and uncertain residual pulse energy is not reproduced as invisible danger.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
