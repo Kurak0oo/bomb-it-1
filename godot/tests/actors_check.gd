@@ -27,7 +27,7 @@ func _init() -> void:
 	state.bombs[2].fuse = 1
 	state.tick([])
 	for id in 4:
-		check(state.heroes[id].bombs_available == (1 if id == 2 else 0), "refund goes to owner even after death")
+		check(state.heroes[id].bombs_available == 0, "removed owner is not refunded and other inventories are unchanged")
 	state.tick(commands)
 	check(state.bombs.size() == 3, "dead actor cannot place")
 

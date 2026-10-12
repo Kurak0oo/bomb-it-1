@@ -1,0 +1,380 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "rocket_mine_wall",
+    "tick": 18,
+    "field": "energies",
+    "original": "6,6,1,2;",
+    "rebuilt": ""
+  },
+  "scenario_first_divergences": {
+    "rocket_bomb": null,
+    "rocket_mine_wall": {
+      "scenario": "rocket_mine_wall",
+      "tick": 18,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    "bomb_gas": null,
+    "fire_bomb": null,
+    "fire_owner": null,
+    "fire_ice": null,
+    "ice_contact": {
+      "scenario": "ice_contact",
+      "tick": 3,
+      "field": "hero3Stop",
+      "original": 0,
+      "rebuilt": 300
+    },
+    "gas_contact": {
+      "scenario": "gas_contact",
+      "tick": 0,
+      "field": "hero3Slow",
+      "original": 599,
+      "rebuilt": 600
+    },
+    "shield_bomb": null,
+    "ai_three_hits": null,
+    "human_multi_life": null,
+    "self_damage": null,
+    "dead_owner_refund": null,
+    "overlap_ab": null,
+    "overlap_ba": null,
+    "mine_damage": null,
+    "grenade_bomb": null
+  },
+  "differences": [
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 18,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 19,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 20,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 21,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 22,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 23,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 24,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 25,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 26,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 27,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 28,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 29,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 30,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 31,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ice_contact",
+      "tick": 3,
+      "field": "hero3Stop",
+      "original": 0,
+      "rebuilt": 300
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 0,
+      "field": "hero3Slow",
+      "original": 599,
+      "rebuilt": 600
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 1,
+      "field": "hero3Slow",
+      "original": 598,
+      "rebuilt": 599
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 2,
+      "field": "hero3Slow",
+      "original": 597,
+      "rebuilt": 598
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 3,
+      "field": "hero3Slow",
+      "original": 596,
+      "rebuilt": 597
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 4,
+      "field": "hero3Slow",
+      "original": 595,
+      "rebuilt": 596
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 5,
+      "field": "hero3Slow",
+      "original": 594,
+      "rebuilt": 595
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 6,
+      "field": "hero3Slow",
+      "original": 593,
+      "rebuilt": 594
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 7,
+      "field": "hero3Slow",
+      "original": 592,
+      "rebuilt": 593
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 8,
+      "field": "hero3Slow",
+      "original": 591,
+      "rebuilt": 592
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 9,
+      "field": "hero3Slow",
+      "original": 590,
+      "rebuilt": 591
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 10,
+      "field": "hero3Slow",
+      "original": 589,
+      "rebuilt": 590
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 11,
+      "field": "hero3Slow",
+      "original": 588,
+      "rebuilt": 589
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 12,
+      "field": "hero3Slow",
+      "original": 587,
+      "rebuilt": 588
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 13,
+      "field": "hero3Slow",
+      "original": 586,
+      "rebuilt": 587
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 14,
+      "field": "hero3Slow",
+      "original": 585,
+      "rebuilt": 586
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 15,
+      "field": "hero3Slow",
+      "original": 584,
+      "rebuilt": 585
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 16,
+      "field": "hero3Slow",
+      "original": 583,
+      "rebuilt": 584
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 17,
+      "field": "hero3Slow",
+      "original": 582,
+      "rebuilt": 583
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 18,
+      "field": "hero3Slow",
+      "original": 581,
+      "rebuilt": 582
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 19,
+      "field": "hero3Slow",
+      "original": 580,
+      "rebuilt": 581
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 20,
+      "field": "hero3Slow",
+      "original": 579,
+      "rebuilt": 580
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 21,
+      "field": "hero3Slow",
+      "original": 578,
+      "rebuilt": 579
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 22,
+      "field": "hero3Slow",
+      "original": 577,
+      "rebuilt": 578
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 23,
+      "field": "hero3Slow",
+      "original": 576,
+      "rebuilt": 577
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 24,
+      "field": "hero3Slow",
+      "original": 575,
+      "rebuilt": 576
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 25,
+      "field": "hero3Slow",
+      "original": 574,
+      "rebuilt": 575
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 26,
+      "field": "hero3Slow",
+      "original": 573,
+      "rebuilt": 574
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 27,
+      "field": "hero3Slow",
+      "original": 572,
+      "rebuilt": 573
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 28,
+      "field": "hero3Slow",
+      "original": 571,
+      "rebuilt": 572
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 29,
+      "field": "hero3Slow",
+      "original": 570,
+      "rebuilt": 571
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 30,
+      "field": "hero3Slow",
+      "original": 569,
+      "rebuilt": 570
+    },
+    {
+      "scenario": "gas_contact",
+      "tick": 31,
+      "field": "hero3Slow",
+      "original": 568,
+      "rebuilt": 569
+    }
+  ]
+}
