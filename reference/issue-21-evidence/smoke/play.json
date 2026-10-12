@@ -1,0 +1,96 @@
+{
+  "accepted_ticks": 29,
+  "checks": [
+    {
+      "message": "actual exported release contains no editor/debug build",
+      "passed": true
+    },
+    {
+      "message": "export retains 35 Hz simulation",
+      "passed": true
+    },
+    {
+      "message": "normal startup reaches original title screen",
+      "passed": true
+    },
+    {
+      "message": "rendered capture saved: play-menu",
+      "passed": true
+    },
+    {
+      "message": "fresh isolated profile begins unmuted",
+      "passed": true
+    },
+    {
+      "message": "real menu input toggles sound and saves preference",
+      "passed": true
+    },
+    {
+      "message": "original menu route reaches character selection",
+      "passed": true
+    },
+    {
+      "message": "selection release starts a real match",
+      "passed": true
+    },
+    {
+      "message": "automatic simulation advances accepted ticks",
+      "passed": true
+    },
+    {
+      "message": "automatic simulation advances accepted ticks",
+      "passed": true
+    },
+    {
+      "message": "keyboard movement changes the human's arena cell",
+      "passed": true
+    },
+    {
+      "message": "automatic simulation advances accepted ticks",
+      "passed": true
+    },
+    {
+      "message": "keyboard fire places a human-owned bomb",
+      "passed": true
+    },
+    {
+      "message": "rendered capture saved: play-match",
+      "passed": true
+    },
+    {
+      "message": "Escape pauses the exported match",
+      "passed": true
+    },
+    {
+      "message": "paused match consumes no simulation ticks",
+      "passed": true
+    },
+    {
+      "message": "rendered capture saved: play-paused",
+      "passed": true
+    },
+    {
+      "message": "rendered Resume button resumes the match",
+      "passed": true
+    },
+    {
+      "message": "automatic simulation advances accepted ticks",
+      "passed": true
+    }
+  ],
+  "debug_build": false,
+  "editor": false,
+  "engine": "4.7.2-stable (official)",
+  "executable": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/application/BombIt.exe",
+  "initial_cell": [
+    3,
+    3
+  ],
+  "moved_cell": [
+    5,
+    3
+  ],
+  "passed": true,
+  "phase": "play",
+  "user_data_dir": "C:/Users/Eiji/Github/bomb-it-worktrees/issue21/.artifacts/issue21/smoke/588fa1047dd3/user-data/Godot/app_userdata/Bomb It 1"
+}

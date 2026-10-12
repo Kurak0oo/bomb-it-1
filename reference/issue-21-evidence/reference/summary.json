@@ -1,0 +1,284 @@
+{
+  "revision": "af67fc49510de6ac9e9473c70b4fcb464305080a",
+  "production_source_sha256": "7a7ee81d9aa9511256aae99a2524813b5ed223b43df1acc141f58ae452d5e472",
+  "instrumentation_sha256": "1e06833c310e17c0aa84f197d69e94b601542ba49668cd1b6653bd0ba65574d5",
+  "original_swf_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+  "captures": {
+    "core": {
+      "retained": "reference/issue-13-evidence/core-nested/original-trace.json",
+      "retained_sha256": "dd3ea4c5effc67714058fc4c8a338790f7845769a263e0e65705fc928cf2e263",
+      "phase": {
+        "name": "core",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.422,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\core\\core.log"
+      },
+      "exact_passed": false,
+      "differences": 6,
+      "observations": 252,
+      "source_configuration_sha256": "5f37b8298e538278738d1e7ebc5bd8f2969337849ac517bb69b2bb0152f66efb"
+    },
+    "motion": {
+      "retained": "reference/issue-13-evidence/motion-nested/original-trace.json",
+      "retained_sha256": "4dac5c678d2dfd3064ca065d3411b0a644e3bca3c6b5530d275354ede1b72138",
+      "phase": {
+        "name": "motion",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.516,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\motion\\motion.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 480,
+      "source_configuration_sha256": "e11a47cbab7e8c498432f83a1bc341a110784dcfe4283434455c8b76c6729f54"
+    },
+    "interaction": {
+      "retained": "reference/issue-13-evidence/original-trace.json",
+      "retained_sha256": "46c4b6ef13809307ef772f4ef95b66bd6b26b2649440d954d03a3bb02c6e233a",
+      "phase": {
+        "name": "interaction",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.609,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\interaction\\interaction.log"
+      },
+      "exact_passed": false,
+      "differences": 14,
+      "observations": 784,
+      "source_configuration_sha256": "0b37c5fb4127e4a2fd3d1d6730bee84c8ab1dcb9c8dbe1f3305a989aa5faa702"
+    },
+    "dispatch": {
+      "retained": "reference/issue-33-evidence/dispatch/original-trace.json",
+      "retained_sha256": "42fed274b3ad5c151f2c98d0e9374edc0b4cf8275b2b7b738c0c9e0e3337f2e1",
+      "phase": {
+        "name": "dispatch",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.406,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\dispatch\\dispatch.log"
+      },
+      "exact_passed": false,
+      "differences": 28,
+      "observations": 64,
+      "source_configuration_sha256": "f3974e3f1b5a86830540878d1d1f0293fd280d97d925b7cde84d2ddaae4bd77d"
+    },
+    "order": {
+      "retained": "godot/tests/fixtures/order_original.json",
+      "retained_sha256": "b4b37f0d1295312e239c10a275ddf8813e266509e49ebc05cbef09fe0d257ffe",
+      "phase": {
+        "name": "order",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.516,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\order\\order.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 392,
+      "source_configuration_sha256": "31f1ca473dbb28d634957a75cd1e2c3fe5957bba4d89ac4625f8eb9632a17c45"
+    },
+    "expiry": {
+      "retained": "godot/tests/fixtures/expiry_original.json",
+      "retained_sha256": "99a3e2b959b22234ddd8645aa81e1d21a9e20ba391fd651a47dce7f6963740d3",
+      "phase": {
+        "name": "expiry",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.516,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\expiry\\expiry.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 440,
+      "source_configuration_sha256": "71b19cdb9235a8a6aaf6804accfea8420f94dc7a50ce1aeecfd9f2aecbb00466"
+    },
+    "ai_order": {
+      "retained": "godot/tests/fixtures/ai_order_original.json",
+      "retained_sha256": "f1d5ec5a9c4331fddfd7b9672f7ae39370cc93fa09d7fa02134800e98ac909d2",
+      "phase": {
+        "name": "ai_order",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.406,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\ai_order\\ai_order.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 42,
+      "source_configuration_sha256": "781e7d390330bad5b8e749de95e0144943d13e7af9e00c2110d5763f80ee028a"
+    },
+    "push": {
+      "retained": "godot/tests/fixtures/push_original.json",
+      "retained_sha256": "f67a46b99b76b589eddc5652bfdf0cd29cc42b5005e270a55ad20e63ab94942e",
+      "phase": {
+        "name": "push",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.422,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\push\\push.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 224,
+      "source_configuration_sha256": "15359f2c4220ae4e359781a55f4d28e816d572582551568be959c2d4dbd4e49e"
+    },
+    "grenade": {
+      "retained": "godot/tests/fixtures/grenade_original.json",
+      "retained_sha256": "1067588e80e81bb2441be2bee306540c6835041ff98da01526e16ffba3247a87",
+      "phase": {
+        "name": "grenade",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.516,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\grenade\\grenade.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 608,
+      "source_configuration_sha256": "e26dff764220b62a90d04a4bc47949342971f98dff6ef444d062daac94ae5f98"
+    },
+    "grenadescore": {
+      "retained": "godot/tests/fixtures/grenadescore_original.json",
+      "retained_sha256": "b480778d80cbc62e2f656a0ef493222d19f081754d30e459c74adc2d727afee9",
+      "phase": {
+        "name": "grenadescore",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.422,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\grenadescore\\grenadescore.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 32,
+      "source_configuration_sha256": "b04f3d94c2e1ce4a5e9a3ad26bb396a06726782467cdc2cf2200a000213b34c5"
+    },
+    "accounting": {
+      "retained": "godot/tests/fixtures/accounting_original.json",
+      "retained_sha256": "b69ff355ffe9ec449e6d3cbca53db1d9fc57649facbd605c3a6c7ff27a1cc3c3",
+      "phase": {
+        "name": "accounting",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.5,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\accounting\\accounting.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 528,
+      "source_configuration_sha256": "9deda86affa326e6b7103a246d8f235ef5fcc07724cb091cda096b3e77142908"
+    },
+    "contact": {
+      "retained": "godot/tests/fixtures/contact_original.json",
+      "retained_sha256": "8adb06bf1a8fb3c4a672064b46f3ce2b76164bd2111e9b27cb6847b57f7db6b3",
+      "phase": {
+        "name": "contact",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 1.078,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\contact\\contact.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 2675,
+      "source_configuration_sha256": "0041eb723a1616fe7174e19e37539be300fa8881b15f92a20eb35c718a2e6b4e"
+    },
+    "icewalk": {
+      "retained": "godot/tests/fixtures/icewalk_original.json",
+      "retained_sha256": "bfb9a40098454b8eaddd5df836565b1e6e65d5528120124d666128f76f637e6f",
+      "phase": {
+        "name": "icewalk",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 0.422,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\icewalk\\icewalk.log"
+      },
+      "exact_passed": true,
+      "differences": 0,
+      "observations": 316,
+      "source_configuration_sha256": "c4a419d2b34742534a0d7a4cbb39f16794dba729d37f297d4bb34f72bed8d66d"
+    },
+    "death": {
+      "retained": "reference/issue-02-capture/final/original",
+      "retained_sha256": "bc79e1c451ea388d8e06c55f0cc2953c96551130871f28f5eebf6ba47a834fd4",
+      "phase": {
+        "name": "death",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 9.25,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\death\\death.log"
+      },
+      "trace_passed": true,
+      "observations": 240,
+      "image_count": 40,
+      "exact_images_passed": false,
+      "different_images": 32
+    },
+    "feedback": {
+      "retained": "reference/feedback-capture/original",
+      "retained_sha256": "a54fe277d97f5f8aa166497bb210a45e3328350d01dd185e39c723e547bd37a2",
+      "phase": {
+        "name": "feedback",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 3.625,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\feedback\\feedback.log"
+      },
+      "trace_passed": true,
+      "observations": 259,
+      "image_count": 56,
+      "exact_images_passed": false,
+      "different_images": 56
+    },
+    "effects": {
+      "retained": "reference/issue-04-capture/final/original",
+      "retained_sha256": "2e47a376d1cbb5aabc3e9d423f0b0e5c5167fdb18826db8d29dbcacab1813f15",
+      "phase": {
+        "name": "effects",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 10.016,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\effects\\effects.log"
+      },
+      "trace_passed": true,
+      "observations": 305,
+      "image_count": 134,
+      "exact_images_passed": false,
+      "different_images": 94
+    },
+    "special_effects": {
+      "retained": "reference/issue-05-capture/final/original",
+      "retained_sha256": "d37eba3a146322b11f709e0303f0f02f27ca5b77b4a2bab9f8df8f6fd9841b1a",
+      "phase": {
+        "name": "special_effects",
+        "passed": true,
+        "exit_code": 0,
+        "timeout": false,
+        "seconds": 13.953,
+        "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\reference\\special_effects\\special_effects.log"
+      },
+      "trace_passed": true,
+      "observations": 447,
+      "image_count": 141,
+      "exact_images_passed": false,
+      "different_images": 121
+    }
+  }
+}

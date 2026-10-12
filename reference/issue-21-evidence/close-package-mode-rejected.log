@@ -1,0 +1,4 @@
+usage: probe_audio_close.py [-h] (--godot GODOT | --package PACKAGE) --output
+                            OUTPUT [--driver {Dummy,WASAPI}]
+                            [--mode {normal,menu,playing,paused,background,muted}]
+probe_audio_close.py: error: Packaged close uses normal startup; fixture modes require --godot

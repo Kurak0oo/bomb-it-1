@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": null,
+  "scenario_first_divergences": {
+    "gas_contact": null,
+    "ice_stationary_6": null,
+    "ice_stationary_7": null,
+    "ice_stationary_8": null,
+    "ice_approach": null,
+    "ice_depart": null,
+    "rocket_bomb": null,
+    "bomb_gas": null,
+    "fire_bomb": null,
+    "fire_owner": null,
+    "fire_ice": null,
+    "mine_damage": null,
+    "rocket_mine_original": null,
+    "rocket_mine_reversed": null
+  },
+  "differences": []
+}
