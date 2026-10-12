@@ -41,13 +41,14 @@ The playable systems are implemented, but **exact equivalence is not established
 
 1. Independent original-bytecode fixtures cover movement, damage around blast
    growth/expiry, and firing through the preserved parent/child callbacks.
-   [Core traces](issue-11.md) retain 69 field differences across 252 ticks:
-   movement/special-fire ordering and bomb expiry/refire have separate correction
-   tickets (#28/#29); a one-twip movement-coordinate discrepancy remains unproven
-   as a port defect. Earlier 40-update death, level-one explosion-energy and
-   brick-blocking traces agree. Pushing, grenade endpoints and mixed interactions
-   still need completion; these fixtures do not establish full-match or Adobe
-   Flash Player parity.
+   [Core traces](issue-11.md) initially retained 69 field differences across 252
+   ticks. The independently verified [movement/fire correction](issue-28.md)
+   reduces that count to 37; bomb expiry/refire remains #29. A one-twip movement
+   discrepancy remains unproven as a port defect. [Pushing and grenade traces](issue-12.md)
+   and [nested interaction traces](issue-13.md) now establish separate bounded
+   corrections #30–#33. Earlier death, level-one explosion-energy and brick-blocking
+   traces agree. These fixtures do not establish full-match or Adobe Flash Player
+   parity, and uncertain residual pulse energy is not reproduced as invisible danger.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
    Its seeded backend is Godot's RNG, not Flash's unrecovered generator. Stage
    setup/audio random calls and cross-stage random-state continuation are not yet
@@ -70,21 +71,26 @@ The playable systems are implemented, but **exact equivalence is not established
    the invented shield outline is removed (the source indicates possession in the
    HUD). The floating weapon indicator, surviving-hit smoke and final impact-tick
    rocket smoke are now present. Death silhouettes composite body and eyes as
-   separate source shapes. Nested idle clips and reference playback comparison of
-   effect creation/removal boundaries remain incomplete. The startup pointer,
+   separate source shapes. [Death comparisons](issue-02.md) cover all four robots
+   and attribute remaining component/compositor differences; actual Godot images
+   still differ in 32 of 40 samples. Ordinary and special effect boundary audits
+   remain in progress. The startup pointer,
    equipped-counter layout and nested actor phases now have 259 agreeing original
    observations; [actor feedback](issue-03.md) retains all 56 exact image differences.
    Raster exports retain their source
    resolution, so large windows cannot recover vector detail. See
    `visual-fidelity.md` for the completed animation pass.
-6. Special weapons follow source logic but still need reference traces for mixed
-   weapon collisions, moving-bomb edge cases, multi-life AI scoring/shields, and
-   overlap ownership. The tests validate the port, not an independent SWF oracle.
+6. Independent nested original-bytecode fixtures now cover mixed weapon collisions,
+   moving-bomb boundaries, multi-life AI scoring, shields and ownership. They
+   expose specific callback and accounting differences tracked in #29–#33;
+   passing port regressions alone is not evidence of original equivalence.
 7. Windows rendering and event delivery through the rendered viewport were checked.
    Brief taps and ordered fire transitions are buffered to the 35 Hz boundary;
    cancellation, hidden/disabled controls, pause and scene changes discard pending
-   presses. Backgrounding pauses until intentional resume. iPhone hardware latency, safe-area
-   insets, sustained frame pacing, native builds, signing, and store packaging
+   presses. [Lifecycle checks](issue-17.md) cover overlapping interruptions and
+   deliberate match/outcome resume. [Safe-area layouts](issue-16.md) preserve the
+   complete game image across nine synthetic desktop layouts. iPhone hardware
+   latency, actual safe-area insets, sustained frame pacing, native builds, signing, and store packaging
    have not been verified. The user has iPhones but no Mac; native iOS build/install
    remains externally blocked. No release executable or iOS package is claimed.
 
