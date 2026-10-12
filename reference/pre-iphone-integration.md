@@ -21,8 +21,8 @@ partially implemented or externally blocked tickets stay open.
 | #3 Actor feedback | None | Implementer active; source and independent capture audit |
 | #4 Ordinary effects | None | Pending |
 | #5 Special-weapon presentation | #3 | Pending |
-| #6 Original menus/help | None | Acceptance audit active; #24–#26 already implemented |
-| #7 Difficulty/character selection | #6 | Pending |
+| #6 Original menus/help | None | Integrated in cac441d; [acceptance evidence](issue-06.md), exact cross-runtime pixels remain unverified |
+| #7 Difficulty/character selection | #6, integrated | Implementer active |
 | #8 HUD/arena composition | None | Implementer active |
 | #9 Scores/outcome transitions | #6 | Pending |
 | #10 Original audio | #3 | Pending |
