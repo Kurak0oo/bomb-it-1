@@ -62,3 +62,10 @@ These files capture the current port presentation at zero tolerance. Their
 acceptance does not waive original-runtime pixel differences or certify physical
 iPhone layout, timing or performance. Subsequent CI checks reproduction; effect
 work and final desktop acceptance still remain.
+
+Fresh [CI run 38241510869](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38241510869)
+at `bef7a92` passes both jobs and reproduces all 94 images exactly. The
+[job record](integration-screen-review/lifecycle-outcomes/ci.json) is retained.
+This checkpoint is not final acceptance: later #29 regression work identified an
+AI command-ordering defect introduced by #28, requiring independent source coverage
+and an active-bomb soak assertion before completion.
