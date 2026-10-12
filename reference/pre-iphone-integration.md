@@ -37,23 +37,23 @@ partially implemented or externally blocked tickets stay open.
 | #7 Difficulty/character selection | #6, integrated | Integrated in c036f3f; [acceptance evidence](issue-07.md), exact image and animation-phase parity remain unverified |
 | #8 HUD/arena composition | None | Integrated in 3b91c43; [acceptance evidence](issue-08.md), font substitution and exact pixel differences retained |
 | #9 Scores/outcome transitions | #6, integrated | Integrated in f26207e; [source timing, button states and twelve-route evidence](issue-09.md) |
-| #10 Original audio | #3, integrated | Implementer active |
+| #10 Original audio | #3, integrated | Integrated in b0f8545; [cue multiplicity, source music transitions and clean normal-close evidence](issue-10.md). Mixer/runtime limits remain explicit |
 | #11 Movement/damage/firing traces | None | Integrated in 6d28b66; [independent evidence](issue-11.md), 69 field differences explicitly retained |
 | #12 Pushing/grenade traces | #11, integrated | Integrated in a712245; [15-scenario evidence](issue-12.md), 309 field differences retained as MOTION-01–04 |
 | #13 Interaction/ownership traces | #11, integrated | Integrated in ca793d7; [17-scenario nested-source evidence](issue-13.md), 134 differences retained and earlier timing controls reproduced |
-| #14 Strict random replay | None | Implementer active |
+| #14 Strict random replay | None | Integrated in af67fc4; [45 boards, 45 drops, 505 shuffle controls and release-runtime strict guards](issue-14.md). Whole-session random-stream differences remain explicit |
 | #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
 | #17 Interruptions/resume | #15, implemented | Integrated in 51e5b7d; [rendered interruption, stale input, audio suspension and interpolation evidence](issue-17.md) |
 | #18 Smooth rendering | #17, integrated | Integrated in f9f2538; [schedule invariance, frame/input reporting and measured HUD improvement](issue-18.md). Final candidate performance remains #21 |
 | #19 Windows package | None | Integrated in cd86b58; [committed release ZIP and two-process executable smoke](issue-19.md); final candidate rebuilt under #21 |
 | #20 iPhone build/install | External Apple environment | Partial configuration integrated in c2383e0; [iPhone preset, public readiness checks and reproducible handoff](issue-20.md). Genuine identity/toolchain and signed device gate remain open |
-| #21 Integrated desktop acceptance | #2–#19, #28–#33 | Pending integration and packaging |
+| #21 Integrated desktop acceptance | #2–#19, #28–#33 integrated | Active on the combined candidate af67fc4; final rendered, sustained performance and executable checks pending |
 | #28 Movement/special-fire ordering | #11, integrated | Integrated in fcbd85f; [28 exact command-boundary cases](issue-28.md), remaining CORE-01/02 differences preserved |
 | #29 Bomb expiry/held-fire ordering | #11–#13, integrated | Integrated in 822b806; [4,840 exact expiry fields](issue-29.md), with separate [AI ordering repair](issue-28-ai.md) and active soak |
 | #30 Push callback lifecycle | #12–#13, #29 integrated | Integrated in f27fc93; [7 cases / 6,048 exact fields](issue-30.md), with no additional production change |
 | #31 Grenade endpoint | #12–#13 | Integrated in 5366c86; [18 endpoint cases and real-parent chain accounting](issue-31.md), all 17,792 fields exact; full motion profile now agrees |
 | #32 Hit/refund accounting | #13, #29 | Integrated in 66ee589; [24,816 exact accounting fields and retry/progression controls](issue-32.md); shield credit and removed-owner refunds corrected |
-| #33 Special contact/callback eligibility | #13, #29 | Implementer active on INTERACT-03/04/05 correction; residual-energy uncertainty excluded |
+| #33 Special contact/callback eligibility | #13, #29 | Integrated in 20dfd97; [143,568 exact gas/ice contact and movement fields](issue-33.md). Full interactions retain only 14 residual-energy uncertainties; balanced cleanup preserved |
 
 ## Acceptance boundaries
 
