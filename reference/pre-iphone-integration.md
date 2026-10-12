@@ -47,7 +47,7 @@ partially implemented or externally blocked tickets stay open.
 | #18 Smooth rendering | #17, integrated | Integrated in f9f2538; [schedule invariance, frame/input reporting and measured HUD improvement](issue-18.md). Final candidate performance remains #21 |
 | #19 Windows package | None | Integrated in cd86b58; [committed release ZIP and two-process executable smoke](issue-19.md); final candidate rebuilt under #21 |
 | #20 iPhone build/install | External Apple environment | Partial configuration integrated in c2383e0; [iPhone preset, public readiness checks and reproducible handoff](issue-20.md). Genuine identity/toolchain and signed device gate remain open |
-| #21 Integrated desktop acceptance | #2–#19, #28–#33 integrated | Active on the combined candidate af67fc4; final rendered, sustained performance and executable checks pending |
+| #21 Integrated desktop acceptance | #2–#19, #28–#33 integrated | Integrated in 041e2ab; [full checks, 108 exact images, sustained 60/120 samples and actual release evidence](issue-21.md). Final Standards/Spec review pending |
 | #28 Movement/special-fire ordering | #11, integrated | Integrated in fcbd85f; [28 exact command-boundary cases](issue-28.md), remaining CORE-01/02 differences preserved |
 | #29 Bomb expiry/held-fire ordering | #11–#13, integrated | Integrated in 822b806; [4,840 exact expiry fields](issue-29.md), with separate [AI ordering repair](issue-28-ai.md) and active soak |
 | #30 Push callback lifecycle | #12–#13, #29 integrated | Integrated in f27fc93; [7 cases / 6,048 exact fields](issue-30.md), with no additional production change |
