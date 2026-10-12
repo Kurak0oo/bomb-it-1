@@ -1,0 +1,90 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.296,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\import.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\timeline.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\view.log"
+  },
+  {
+    "name": "selection_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.281,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\selection_render.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 7.469,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\death_render.log"
+  },
+  {
+    "name": "hud_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.672,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\hud_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.75,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.094,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.453,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.937,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue02\\.artifacts\\death-alpha-green-final\\visual_timelines.log"
+  }
+]

@@ -1,0 +1,247 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-creation.png",
+      "passed": false,
+      "changed_pixels": 1895,
+      "changed_fraction": 0.008613636363636363
+    },
+    {
+      "name": "qa-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1895,
+      "changed_fraction": 0.008613636363636363
+    },
+    {
+      "name": "qa-frame-04.png",
+      "passed": false,
+      "changed_pixels": 1633,
+      "changed_fraction": 0.007422727272727273
+    },
+    {
+      "name": "qa-frame-05.png",
+      "passed": false,
+      "changed_pixels": 1920,
+      "changed_fraction": 0.008727272727272728
+    },
+    {
+      "name": "qa-frame-10.png",
+      "passed": false,
+      "changed_pixels": 371,
+      "changed_fraction": 0.0016863636363636364
+    },
+    {
+      "name": "qa-frame-11.png",
+      "passed": false,
+      "changed_pixels": 428,
+      "changed_fraction": 0.0019454545454545454
+    },
+    {
+      "name": "qa-frame-19.png",
+      "passed": false,
+      "changed_pixels": 316,
+      "changed_fraction": 0.0014363636363636364
+    },
+    {
+      "name": "qa-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-creation.png",
+      "passed": false,
+      "changed_pixels": 1908,
+      "changed_fraction": 0.008672727272727273
+    },
+    {
+      "name": "qa-hero2-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1908,
+      "changed_fraction": 0.008672727272727273
+    },
+    {
+      "name": "qa-hero2-frame-04.png",
+      "passed": false,
+      "changed_pixels": 1633,
+      "changed_fraction": 0.007422727272727273
+    },
+    {
+      "name": "qa-hero2-frame-05.png",
+      "passed": false,
+      "changed_pixels": 1920,
+      "changed_fraction": 0.008727272727272728
+    },
+    {
+      "name": "qa-hero2-frame-10.png",
+      "passed": false,
+      "changed_pixels": 371,
+      "changed_fraction": 0.0016863636363636364
+    },
+    {
+      "name": "qa-hero2-frame-11.png",
+      "passed": false,
+      "changed_pixels": 428,
+      "changed_fraction": 0.0019454545454545454
+    },
+    {
+      "name": "qa-hero2-frame-19.png",
+      "passed": false,
+      "changed_pixels": 316,
+      "changed_fraction": 0.0014363636363636364
+    },
+    {
+      "name": "qa-hero2-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-hero2-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-creation.png",
+      "passed": false,
+      "changed_pixels": 1942,
+      "changed_fraction": 0.008827272727272727
+    },
+    {
+      "name": "qa-hero3-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1942,
+      "changed_fraction": 0.008827272727272727
+    },
+    {
+      "name": "qa-hero3-frame-04.png",
+      "passed": false,
+      "changed_pixels": 1644,
+      "changed_fraction": 0.007472727272727272
+    },
+    {
+      "name": "qa-hero3-frame-05.png",
+      "passed": false,
+      "changed_pixels": 1931,
+      "changed_fraction": 0.008777272727272727
+    },
+    {
+      "name": "qa-hero3-frame-10.png",
+      "passed": false,
+      "changed_pixels": 393,
+      "changed_fraction": 0.0017863636363636363
+    },
+    {
+      "name": "qa-hero3-frame-11.png",
+      "passed": false,
+      "changed_pixels": 454,
+      "changed_fraction": 0.002063636363636364
+    },
+    {
+      "name": "qa-hero3-frame-19.png",
+      "passed": false,
+      "changed_pixels": 316,
+      "changed_fraction": 0.0014363636363636364
+    },
+    {
+      "name": "qa-hero3-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-hero3-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-creation.png",
+      "passed": false,
+      "changed_pixels": 1839,
+      "changed_fraction": 0.00835909090909091
+    },
+    {
+      "name": "qa-hero4-frame-00.png",
+      "passed": false,
+      "changed_pixels": 1839,
+      "changed_fraction": 0.00835909090909091
+    },
+    {
+      "name": "qa-hero4-frame-04.png",
+      "passed": false,
+      "changed_pixels": 1644,
+      "changed_fraction": 0.007472727272727272
+    },
+    {
+      "name": "qa-hero4-frame-05.png",
+      "passed": false,
+      "changed_pixels": 1931,
+      "changed_fraction": 0.008777272727272727
+    },
+    {
+      "name": "qa-hero4-frame-10.png",
+      "passed": false,
+      "changed_pixels": 393,
+      "changed_fraction": 0.0017863636363636363
+    },
+    {
+      "name": "qa-hero4-frame-11.png",
+      "passed": false,
+      "changed_pixels": 454,
+      "changed_fraction": 0.002063636363636364
+    },
+    {
+      "name": "qa-hero4-frame-19.png",
+      "passed": false,
+      "changed_pixels": 316,
+      "changed_fraction": 0.0014363636363636364
+    },
+    {
+      "name": "qa-hero4-frame-20.png",
+      "passed": false,
+      "changed_pixels": 314,
+      "changed_fraction": 0.0014272727272727273
+    },
+    {
+      "name": "qa-hero4-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    }
+  ]
+}

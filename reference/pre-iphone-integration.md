@@ -33,11 +33,11 @@ partially implemented or externally blocked tickets stay open.
 | #9 Scores/outcome transitions | #6, integrated | Integrated in f26207e; [source timing, button states and twelve-route evidence](issue-09.md) |
 | #10 Original audio | #3, integrated | Pending |
 | #11 Movement/damage/firing traces | None | Integrated in 6d28b66; [independent evidence](issue-11.md), 69 field differences explicitly retained |
-| #12 Pushing/grenade traces | #11, integrated | Implementer active |
-| #13 Interaction/ownership traces | #11, integrated | Pending |
+| #12 Pushing/grenade traces | #11, integrated | Integrated in a712245; [15-scenario evidence](issue-12.md), 309 field differences retained as MOTION-01–04 |
+| #13 Interaction/ownership traces | #11, integrated | Implementer active |
 | #14 Strict random replay | None | Pending |
-| #16 Safe-area landscape layout | None | Implementer active |
-| #17 Interruptions/resume | #15, implemented | Pending remaining verification |
+| #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
+| #17 Interruptions/resume | #15, implemented | Implementer active |
 | #18 Smooth rendering | #17 | Pending |
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
