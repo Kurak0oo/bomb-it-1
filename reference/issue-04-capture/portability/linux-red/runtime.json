@@ -1,0 +1,6 @@
+{
+  "display": "X11",
+  "engine": "4.7.2-stable (official)",
+  "os": "Linux",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+}
