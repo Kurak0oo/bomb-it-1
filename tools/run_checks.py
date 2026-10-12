@@ -18,7 +18,17 @@ ENGINE_VERSION = (ROOT / "tools/godot-version.txt").read_text().strip()
 
 def build_metadata(project):
     root = project.parent
-    revision = subprocess.run(["git", "rev-parse", "HEAD"], cwd=root, capture_output=True, text=True).stdout.strip()
+    # Exported/source-only CI trees may have neither Git nor its repository data.
+    # Source fingerprints remain available; absence must not invent a revision.
+    revision = "unknown"
+    try:
+        result = subprocess.run(["git", "rev-parse", "--verify", "HEAD"], cwd=root,
+                                capture_output=True, text=True, timeout=5)
+        candidate = result.stdout.strip()
+        if result.returncode == 0 and re.fullmatch(r"[0-9a-f]{40}|[0-9a-f]{64}", candidate):
+            revision = candidate
+    except (OSError, subprocess.TimeoutExpired):
+        pass
     sources = sorted(project.glob("scripts/**/*.gd")) + [project / "project.godot"] + sorted(project.glob("scenes/*.tscn"))
     instrumentation = [project / "tests/pacing_check.gd", project / "tests/performance_capture.gd",
                        ROOT / "tools/run_checks.py", ROOT / "tools/performance_report.py"]
