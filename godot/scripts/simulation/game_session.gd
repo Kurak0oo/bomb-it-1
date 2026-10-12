@@ -14,8 +14,10 @@ var result := ""
 var totals: Array[int] = [0,0,0,0]
 var lives: Array[int] = [3,1,1,1]
 var run_seed := 1
+var _random_factory: Callable
 
-func start(seed_value: int, level: int, selected: int, players: int, second: int = 0) -> void:
+func start(seed_value: int, level: int, selected: int, players: int, second: int = 0, random_factory: Callable = Callable()) -> void:
+	_random_factory = random_factory
 	run_seed = seed_value
 	difficulty = level
 	character = selected
@@ -30,7 +32,8 @@ func start(seed_value: int, level: int, selected: int, players: int, second: int
 func _new_round(retry: bool = false) -> void:
 	var previous := state
 	state = GameState.new()
-	state.setup_round(run_seed, character, humans, difficulty, character2)
+	var random_source: OriginalRng = _random_factory.call(run_seed) if _random_factory.is_valid() else null
+	state.setup_round(run_seed, character, humans, difficulty, character2, random_source)
 	if retry and previous != null:
 		state.rng = previous.rng
 		state.scene_style = previous.scene_style

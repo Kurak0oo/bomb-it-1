@@ -44,12 +44,12 @@ var brick_styles: Array = []
 var _callbacks: Array[RefCounted] = []
 
 
-func setup_round(seed_value: int, selected_character: int = 1, humans: int = 1, level: int = 1, second_character: int = 0) -> void:
+func setup_round(seed_value: int, selected_character: int = 1, humans: int = 1, level: int = 1, second_character: int = 0, random_source: OriginalRng = null) -> void:
 	var rows := PackedStringArray()
 	for y in SimRules.ROWS:
 		rows.append("...............")
 	setup(rows)
-	rng = OriginalRng.new(seed_value)
+	rng = random_source if random_source != null else OriginalRng.new(seed_value)
 	difficulty = level
 	generated = true
 	items_enabled = true

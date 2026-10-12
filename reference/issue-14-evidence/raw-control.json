@@ -1,0 +1,2029 @@
+{
+  "scope": "unadapted original Sprite564 full frame1/2 timeline, then100 native shuffles per5runs",
+  "runtime": "Ruffle 0.7.1",
+  "browser": "156.0.8078.4",
+  "raw_capture_sha256": "9650d35b8f8209246a1023eae168995180cc59788bb8c2ba84fd42dff2b873cd",
+  "fixture_sha256": "0598d547dfa44eabcde54fb0f8d7f3c00e2f80a29b5ee430507cd1fa64a56d64",
+  "bytecode_audit": {
+    "sprite": 564,
+    "sites": 0,
+    "frames": [
+      {
+        "frame": 1,
+        "original_sha256": "d33fd976a76c1d51d7e31d2ed3c4da5012f5f87191cf605c745c362de152aa22",
+        "adapted_sha256": "d33fd976a76c1d51d7e31d2ed3c4da5012f5f87191cf605c745c362de152aa22",
+        "random_addresses": []
+      },
+      {
+        "frame": 2,
+        "original_sha256": "b68c1872f3a1a9967dee94c3bae9d50ca9c52aab0caa357ea5d78de993e62a9b",
+        "adapted_sha256": "b68c1872f3a1a9967dee94c3bae9d50ca9c52aab0caa357ea5d78de993e62a9b",
+        "random_addresses": []
+      }
+    ]
+  },
+  "permutation_checks": 500,
+  "all_preserved": true,
+  "observations": [
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|0|1,2,3,4|2,3,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|1|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|2|4,3,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|3|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|4|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|5|2,3,4,1|4,1,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|6|4,1,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|7|1,2,4,3|2,3,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|8|2,3,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|9|1,3,2,4|2,1,3,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|10|2,1,3,4|3,1,2,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|11|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|12|1,3,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|13|1,2,4,3|2,4,1,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|14|2,4,1,3|2,3,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|15|2,3,4,1|3,1,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|16|3,1,4,2|3,1,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|17|3,1,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|18|1,2,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|19|1,2,4,3|1,4,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|20|1,4,2,3|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|21|1,2,4,3|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|22|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|23|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|24|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|25|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|26|4,2,3,1|2,3,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|27|2,3,4,1|3,4,1,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|28|3,4,1,2|4,1,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|29|4,1,3,2|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|30|3,4,2,1|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|31|4,3,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|32|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|33|2,4,3,1|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|34|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|35|3,2,4,1|3,1,2,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|36|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|37|1,3,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|38|3,4,1,2|3,1,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|39|3,1,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|40|3,4,1,2|1,3,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|41|1,3,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|42|3,4,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|43|4,3,1,2|1,4,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|44|1,4,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|45|3,1,4,2|1,4,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|46|1,4,2,3|4,1,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|47|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|48|4,2,3,1|4,1,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|49|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|50|4,2,3,1|3,2,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|51|3,2,1,4|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|52|1,2,4,3|4,1,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|53|4,1,3,2|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|54|4,3,2,1|4,1,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|55|4,1,3,2|1,2,3,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|56|1,2,3,4|1,4,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|57|1,4,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|58|1,2,4,3|1,2,3,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|59|1,2,3,4|2,3,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|60|2,3,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|61|2,4,3,1|2,4,1,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|62|2,4,1,3|1,4,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|63|1,4,3,2|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|64|4,2,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|65|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|66|4,2,3,1|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|67|3,4,2,1|2,1,3,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|68|2,1,3,4|2,1,3,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|69|2,1,3,4|3,2,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|70|3,2,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|71|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|72|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|73|2,4,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|74|4,3,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|75|4,3,1,2|3,2,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|76|3,2,4,1|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|77|3,4,2,1|3,4,1,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|78|3,4,1,2|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|79|3,4,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|80|4,1,2,3|4,3,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|81|4,3,2,1|2,4,1,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|82|2,4,1,3|4,1,2,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|83|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|84|2,4,3,1|4,1,3,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|85|4,1,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|86|3,1,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|87|3,4,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|88|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|89|3,2,4,1|2,3,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|90|2,3,1,4|2,3,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|91|2,3,1,4|3,2,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|92|3,2,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|93|1,3,2,4|3,2,1,4"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|94|3,2,1,4|2,1,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|95|2,1,4,3|2,1,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|96|2,1,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|97|1,2,4,3|4,2,1,3"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|98|4,2,1,3|2,4,3,1"
+    },
+    {
+      "scenario": "0",
+      "observation": "RNG_SHUFFLE|99|2,4,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|0|1,2,3,4|2,3,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|1|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|2|4,3,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|3|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|4|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|5|2,3,4,1|4,1,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|6|4,1,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|7|1,2,4,3|2,3,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|8|2,3,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|9|1,3,2,4|2,1,3,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|10|2,1,3,4|3,1,2,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|11|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|12|1,3,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|13|1,2,4,3|2,4,1,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|14|2,4,1,3|2,3,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|15|2,3,4,1|3,1,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|16|3,1,4,2|3,1,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|17|3,1,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|18|1,2,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|19|1,2,4,3|1,4,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|20|1,4,2,3|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|21|1,2,4,3|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|22|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|23|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|24|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|25|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|26|4,2,3,1|2,3,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|27|2,3,4,1|3,4,1,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|28|3,4,1,2|4,1,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|29|4,1,3,2|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|30|3,4,2,1|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|31|4,3,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|32|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|33|2,4,3,1|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|34|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|35|3,2,4,1|3,1,2,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|36|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|37|1,3,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|38|3,4,1,2|3,1,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|39|3,1,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|40|3,4,1,2|1,3,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|41|1,3,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|42|3,4,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|43|4,3,1,2|1,4,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|44|1,4,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|45|3,1,4,2|1,4,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|46|1,4,2,3|4,1,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|47|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|48|4,2,3,1|4,1,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|49|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|50|4,2,3,1|3,2,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|51|3,2,1,4|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|52|1,2,4,3|4,1,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|53|4,1,3,2|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|54|4,3,2,1|4,1,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|55|4,1,3,2|1,2,3,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|56|1,2,3,4|1,4,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|57|1,4,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|58|1,2,4,3|1,2,3,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|59|1,2,3,4|2,3,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|60|2,3,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|61|2,4,3,1|2,4,1,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|62|2,4,1,3|1,4,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|63|1,4,3,2|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|64|4,2,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|65|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|66|4,2,3,1|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|67|3,4,2,1|2,1,3,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|68|2,1,3,4|2,1,3,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|69|2,1,3,4|3,2,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|70|3,2,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|71|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|72|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|73|2,4,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|74|4,3,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|75|4,3,1,2|3,2,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|76|3,2,4,1|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|77|3,4,2,1|3,4,1,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|78|3,4,1,2|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|79|3,4,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|80|4,1,2,3|4,3,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|81|4,3,2,1|2,4,1,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|82|2,4,1,3|4,1,2,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|83|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|84|2,4,3,1|4,1,3,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|85|4,1,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|86|3,1,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|87|3,4,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|88|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|89|3,2,4,1|2,3,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|90|2,3,1,4|2,3,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|91|2,3,1,4|3,2,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|92|3,2,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|93|1,3,2,4|3,2,1,4"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|94|3,2,1,4|2,1,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|95|2,1,4,3|2,1,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|96|2,1,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|97|1,2,4,3|4,2,1,3"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|98|4,2,1,3|2,4,3,1"
+    },
+    {
+      "scenario": "1",
+      "observation": "RNG_SHUFFLE|99|2,4,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|0|1,2,3,4|1,4,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|1|1,4,2,3|1,3,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|2|1,3,2,4|1,4,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|3|1,4,3,2|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|4|4,1,2,3|1,2,4,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|5|1,2,4,3|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|6|2,1,3,4|1,2,4,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|7|1,2,4,3|1,4,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|8|1,4,2,3|4,3,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|9|4,3,2,1|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|10|2,3,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|11|2,3,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|12|2,3,4,1|4,2,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|13|4,2,3,1|2,4,1,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|14|2,4,1,3|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|15|4,1,2,3|1,4,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|16|1,4,3,2|1,3,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|17|1,3,2,4|2,4,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|18|2,4,3,1|3,4,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|19|3,4,2,1|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|20|2,3,4,1|3,4,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|21|3,4,1,2|3,2,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|22|3,2,1,4|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|23|2,1,3,4|3,2,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|24|3,2,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|25|1,3,2,4|3,1,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|26|3,1,2,4|3,2,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|27|3,2,1,4|3,4,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|28|3,4,1,2|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|29|4,1,2,3|1,4,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|30|1,4,3,2|1,4,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|31|1,4,3,2|3,4,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|32|3,4,1,2|3,1,4,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|33|3,1,4,2|4,3,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|34|4,3,2,1|2,4,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|35|2,4,3,1|3,4,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|36|3,4,1,2|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|37|4,1,3,2|4,2,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|38|4,2,3,1|4,3,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|39|4,3,1,2|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|40|4,1,3,2|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|41|4,1,3,2|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|42|4,1,3,2|1,3,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|43|1,3,2,4|3,1,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|44|3,1,2,4|1,4,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|45|1,4,3,2|4,3,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|46|4,3,2,1|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|47|4,1,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|48|3,1,4,2|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|49|4,1,2,3|4,2,1,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|50|4,2,1,3|2,4,1,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|51|2,4,1,3|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|52|4,1,2,3|1,2,4,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|53|1,2,4,3|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|54|2,1,3,4|1,3,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|55|1,3,2,4|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|56|2,3,4,1|3,2,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|57|3,2,4,1|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|58|4,1,3,2|3,2,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|59|3,2,4,1|3,1,4,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|60|3,1,4,2|1,4,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|61|1,4,2,3|1,4,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|62|1,4,2,3|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|63|4,1,2,3|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|64|2,3,4,1|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|65|2,1,3,4|1,4,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|66|1,4,3,2|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|67|4,1,2,3|4,2,1,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|68|4,2,1,3|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|69|2,1,3,4|3,1,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|70|3,1,2,4|3,2,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|71|3,2,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|72|4,3,2,1|3,1,4,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|73|3,1,4,2|4,1,3,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|74|4,1,3,2|3,2,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|75|3,2,1,4|3,1,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|76|3,1,2,4|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|77|2,1,3,4|2,4,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|78|2,4,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|79|3,2,4,1|2,4,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|80|2,4,3,1|3,2,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|81|3,2,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|82|1,3,2,4|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|83|2,1,3,4|1,2,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|84|1,2,3,4|2,3,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|85|2,3,1,4|2,1,3,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|86|2,1,3,4|3,4,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|87|3,4,2,1|3,2,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|88|3,2,1,4|2,3,1,4"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|89|2,3,1,4|3,4,2,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|90|3,4,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|91|4,2,3,1|4,1,2,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|92|4,1,2,3|4,3,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|93|4,3,1,2|3,1,4,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|94|3,1,4,2|3,2,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|95|3,2,4,1|3,4,1,2"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|96|3,4,1,2|4,2,1,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|97|4,2,1,3|2,4,1,3"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|98|2,4,1,3|2,3,4,1"
+    },
+    {
+      "scenario": "2",
+      "observation": "RNG_SHUFFLE|99|2,3,4,1|3,2,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|0|1,2,3,4|2,3,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|1|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|2|4,3,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|3|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|4|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|5|2,3,4,1|4,1,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|6|4,1,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|7|1,2,4,3|2,3,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|8|2,3,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|9|1,3,2,4|2,1,3,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|10|2,1,3,4|3,1,2,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|11|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|12|1,3,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|13|1,2,4,3|2,4,1,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|14|2,4,1,3|2,3,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|15|2,3,4,1|3,1,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|16|3,1,4,2|3,1,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|17|3,1,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|18|1,2,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|19|1,2,4,3|1,4,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|20|1,4,2,3|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|21|1,2,4,3|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|22|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|23|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|24|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|25|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|26|4,2,3,1|2,3,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|27|2,3,4,1|3,4,1,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|28|3,4,1,2|4,1,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|29|4,1,3,2|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|30|3,4,2,1|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|31|4,3,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|32|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|33|2,4,3,1|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|34|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|35|3,2,4,1|3,1,2,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|36|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|37|1,3,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|38|3,4,1,2|3,1,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|39|3,1,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|40|3,4,1,2|1,3,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|41|1,3,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|42|3,4,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|43|4,3,1,2|1,4,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|44|1,4,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|45|3,1,4,2|1,4,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|46|1,4,2,3|4,1,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|47|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|48|4,2,3,1|4,1,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|49|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|50|4,2,3,1|3,2,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|51|3,2,1,4|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|52|1,2,4,3|4,1,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|53|4,1,3,2|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|54|4,3,2,1|4,1,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|55|4,1,3,2|1,2,3,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|56|1,2,3,4|1,4,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|57|1,4,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|58|1,2,4,3|1,2,3,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|59|1,2,3,4|2,3,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|60|2,3,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|61|2,4,3,1|2,4,1,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|62|2,4,1,3|1,4,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|63|1,4,3,2|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|64|4,2,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|65|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|66|4,2,3,1|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|67|3,4,2,1|2,1,3,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|68|2,1,3,4|2,1,3,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|69|2,1,3,4|3,2,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|70|3,2,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|71|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|72|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|73|2,4,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|74|4,3,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|75|4,3,1,2|3,2,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|76|3,2,4,1|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|77|3,4,2,1|3,4,1,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|78|3,4,1,2|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|79|3,4,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|80|4,1,2,3|4,3,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|81|4,3,2,1|2,4,1,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|82|2,4,1,3|4,1,2,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|83|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|84|2,4,3,1|4,1,3,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|85|4,1,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|86|3,1,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|87|3,4,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|88|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|89|3,2,4,1|2,3,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|90|2,3,1,4|2,3,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|91|2,3,1,4|3,2,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|92|3,2,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|93|1,3,2,4|3,2,1,4"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|94|3,2,1,4|2,1,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|95|2,1,4,3|2,1,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|96|2,1,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|97|1,2,4,3|4,2,1,3"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|98|4,2,1,3|2,4,3,1"
+    },
+    {
+      "scenario": "3",
+      "observation": "RNG_SHUFFLE|99|2,4,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|0|1,2,3,4|2,3,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|1|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|2|4,3,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|3|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|4|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|5|2,3,4,1|4,1,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|6|4,1,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|7|1,2,4,3|2,3,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|8|2,3,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|9|1,3,2,4|2,1,3,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|10|2,1,3,4|3,1,2,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|11|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|12|1,3,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|13|1,2,4,3|2,4,1,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|14|2,4,1,3|2,3,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|15|2,3,4,1|3,1,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|16|3,1,4,2|3,1,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|17|3,1,4,2|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|18|1,2,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|19|1,2,4,3|1,4,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|20|1,4,2,3|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|21|1,2,4,3|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|22|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|23|3,2,4,1|2,3,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|24|2,3,4,1|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|25|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|26|4,2,3,1|2,3,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|27|2,3,4,1|3,4,1,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|28|3,4,1,2|4,1,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|29|4,1,3,2|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|30|3,4,2,1|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|31|4,3,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|32|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|33|2,4,3,1|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|34|4,2,3,1|3,2,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|35|3,2,4,1|3,1,2,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|36|3,1,2,4|1,3,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|37|1,3,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|38|3,4,1,2|3,1,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|39|3,1,4,2|3,4,1,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|40|3,4,1,2|1,3,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|41|1,3,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|42|3,4,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|43|4,3,1,2|1,4,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|44|1,4,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|45|3,1,4,2|1,4,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|46|1,4,2,3|4,1,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|47|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|48|4,2,3,1|4,1,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|49|4,1,2,3|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|50|4,2,3,1|3,2,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|51|3,2,1,4|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|52|1,2,4,3|4,1,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|53|4,1,3,2|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|54|4,3,2,1|4,1,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|55|4,1,3,2|1,2,3,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|56|1,2,3,4|1,4,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|57|1,4,3,2|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|58|1,2,4,3|1,2,3,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|59|1,2,3,4|2,3,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|60|2,3,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|61|2,4,3,1|2,4,1,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|62|2,4,1,3|1,4,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|63|1,4,3,2|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|64|4,2,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|65|4,3,2,1|4,2,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|66|4,2,3,1|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|67|3,4,2,1|2,1,3,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|68|2,1,3,4|2,1,3,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|69|2,1,3,4|3,2,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|70|3,2,1,4|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|71|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|72|2,4,3,1|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|73|2,4,3,1|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|74|4,3,2,1|4,3,1,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|75|4,3,1,2|3,2,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|76|3,2,4,1|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|77|3,4,2,1|3,4,1,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|78|3,4,1,2|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|79|3,4,2,1|4,1,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|80|4,1,2,3|4,3,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|81|4,3,2,1|2,4,1,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|82|2,4,1,3|4,1,2,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|83|4,1,2,3|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|84|2,4,3,1|4,1,3,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|85|4,1,3,2|3,1,4,2"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|86|3,1,4,2|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|87|3,4,2,1|3,4,2,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|88|3,4,2,1|3,2,4,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|89|3,2,4,1|2,3,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|90|2,3,1,4|2,3,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|91|2,3,1,4|3,2,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|92|3,2,1,4|1,3,2,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|93|1,3,2,4|3,2,1,4"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|94|3,2,1,4|2,1,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|95|2,1,4,3|2,1,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|96|2,1,4,3|1,2,4,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|97|1,2,4,3|4,2,1,3"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|98|4,2,1,3|2,4,3,1"
+    },
+    {
+      "scenario": "4",
+      "observation": "RNG_SHUFFLE|99|2,4,3,1|3,2,4,1"
+    }
+  ]
+}

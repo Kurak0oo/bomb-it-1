@@ -1,0 +1,58 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.594,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\import.log"
+  },
+  {
+    "name": "rng",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\rng.log"
+  },
+  {
+    "name": "rng_reference",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.781,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\rng_reference.log"
+  },
+  {
+    "name": "rng_compare",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.188,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\rng_compare.log"
+  },
+  {
+    "name": "pacing",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 11.531,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\pacing.log"
+  },
+  {
+    "name": "campaign",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\campaign.log"
+  },
+  {
+    "name": "accounting_session",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue14\\.artifacts\\issue14-runner\\accounting_session.log"
+  }
+]

@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+FAIL: invalid result, order or record is rejected before replay
+FAIL: invalid result, order or record is rejected before replay
+FAIL: invalid result, order or record is rejected before replay
+FAIL: invalid result, order or record is rejected before replay
+FAIL: changed requested bound fails closed
+SCRIPT ERROR: Out of bounds get index '1' (on base: 'Array')
+   at: OriginalRng.next (res://scripts/simulation/original_rng.gd:37)
+   GDScript backtrace (most recent call first):
+       [0] next (res://scripts/simulation/original_rng.gd:37)
+       [1] _init (res://tests/rng_check.gd:35)
+FAIL: extra call cannot fall back to seeded randomness
+FAIL: unconsumed records prevent successful completion
