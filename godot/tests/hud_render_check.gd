@@ -56,6 +56,21 @@ func run() -> void:
 	var eliminated := await snapshot()
 	check(changed(shield, eliminated, Rect2i(17,21,35,32)) > 50, "zero lives dims the original portrait panel")
 	await preload("res://tests/qa_capture.gd").capture(self, "hud-status")
+	# Revealing a previously hidden icon samples the same absolute source phase
+	# as an icon which remained visible throughout those accepted ticks.
+	hero.armor = true
+	for tick in range(1,138):
+		main.session.state.tick_number = tick
+		main._update_hud()
+	var continuously_visible := await snapshot()
+	hero.armor = false
+	for tick in range(1,138):
+		main.session.state.tick_number = tick
+		main._update_hud()
+	hero.armor = true
+	main._update_hud()
+	var revealed := await snapshot()
+	check(changed(continuously_visible, revealed, Rect2i(67,23,15,16)) == 0, "revealed HUD icon retains the absolute source timeline phase")
 	# Source-style fixtures preserve all five floor/brick/center families. Seed
 	# search selects generated themes; it does not claim Flash RNG seed parity.
 	for theme in 5:
