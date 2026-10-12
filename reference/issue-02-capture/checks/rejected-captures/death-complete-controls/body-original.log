@@ -1,0 +1,8 @@
+file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue02/tools/reference/capture.mjs:80
+        throw new Error('Did not isolate the original creation frame');
+              ^
+
+Error: Did not isolate the original creation frame
+    at file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue02/tools/reference/capture.mjs:80:15
+
+Node.js v22.14.0

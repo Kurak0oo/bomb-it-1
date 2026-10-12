@@ -1,0 +1,5 @@
+{
+  "original_swf_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+  "isolation_builder_sha256": "b96416fe2868a77516b386dacd4fdf89da70be630ec978975b70bdac5f486903",
+  "control": "Only unrelated drawing definitions are empty; original bytecode, clip timelines, transforms and alpha are retained."
+}

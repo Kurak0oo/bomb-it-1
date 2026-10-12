@@ -50,3 +50,7 @@ func show_frame(index: int, child_age: int = 0, variant: int = 1) -> void:
 		sprite.transform = basis
 		sprite.texture = art.frame(child, number)
 		sprite.modulate.a = placement.alpha
+		if placement.symbol == 236:
+			# SWF CXFORM transforms the opaque vector fill's 8-bit alpha.
+			# Quantize before GPU blending, as the original solid shapes do.
+			sprite.modulate.a = floorf(255.0 * placement.alpha) / 255.0

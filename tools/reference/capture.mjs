@@ -14,7 +14,13 @@ await mkdir(output, { recursive: true });
 const html = `<!doctype html><style>html,body{margin:0;background:#fff}ruffle-player{width:550px;height:400px;display:block}</style>
 <script src="/ruffle/ruffle.js"></script><script>
 window.samples=[];
+window.created=false;
 window.referenceSample = message => {
+  if (message === 'REFERENCE_CREATED') {
+    window.created=true;
+    queueMicrotask(() => window.player.ruffle().suspend());
+    return;
+  }
   if (!message.startsWith('REFERENCE_SAMPLE|')) return;
   const p = message.split('|');
   window.samples.push({tick:Number(p[1]),deathFrame:Number(p[2]),heroVisible:p[3]==='true',
@@ -27,7 +33,7 @@ window.boot = async scenario => {
   document.body.appendChild(window.player);
   await window.player.ruffle().load({url:'/fixture.swf',parameters:{scenario},
     allowScriptAccess:false,autoplay:'on',unmuteOverlay:'hidden',
-    backgroundColor:'#ffffff',quality:'high',preferredRenderer:'canvas',
+    backgroundColor:'${process.env.BOMB_IT_REFERENCE_BACKGROUND ?? '#ffffff'}',quality:'high',preferredRenderer:'canvas',
     warnOnUnsupportedContent:false});
   window.player.ruffle().traceObserver = window.referenceSample;
   window.player.ruffle().resume();
@@ -66,6 +72,19 @@ try {
       await page.clock.pauseAt(epoch);
       await page.goto(address);
       await page.evaluate(scenario => window.boot(scenario), scenario);
+      for (let step = 0; step < 20; step++) {
+        if (await page.evaluate(() => window.created)) break;
+        await page.clock.runFor(16);
+      }
+      if (!await page.evaluate(() => window.created && window.samples.length === 0))
+        throw new Error('Did not isolate the original creation frame');
+      if (scenario.startsWith('death')) {
+        const folder = resolve(output, 'death'); await mkdir(folder, { recursive: true });
+        const pixels = await page.locator('ruffle-player').locator('canvas').evaluate(canvas => canvas.toDataURL('image/png'));
+        const prefix = scenario === 'death' ? '' : `hero${scenario.slice(5)}-`;
+        await writeFile(resolve(folder, `qa-${prefix}creation.png`), Buffer.from(pixels.split(',')[1], 'base64'));
+      }
+      await page.evaluate(() => window.player.ruffle().resume());
       const rows = [];
       for (let tick = 0; tick < 40; tick++) {
         for (let step = 0; step < 20; step++) {

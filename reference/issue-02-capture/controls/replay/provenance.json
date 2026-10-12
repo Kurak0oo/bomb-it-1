@@ -1,0 +1,6 @@
+{
+  "browser": "156.0.8078.4",
+  "inputs": "Raw SWF bitmaps and JPEG channels, recovered SVG paths, original display-list matrices and alpha; no port assets or screenshots",
+  "renderer": "Canvas2D paths and patterns; pinned Ruffle bitmap-decoding behavior",
+  "fps": 35
+}
