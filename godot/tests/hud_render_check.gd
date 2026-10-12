@@ -56,6 +56,36 @@ func run() -> void:
 	var eliminated := await snapshot()
 	check(changed(shield, eliminated, Rect2i(17,21,35,32)) > 50, "zero lives dims the original portrait panel")
 	await preload("res://tests/qa_capture.gd").capture(self, "hud-status")
+	# Symbol 326 frame 80 immediately jumps to 1, a 79-update display period.
+	hero.glove = true
+	hero.speed_level = SimRules.FRAMES_PER_TILE-1
+	main.session.state.tick_number = 0
+	main._update_hud()
+	main.session.state.tick_number = 1
+	main._update_hud()
+	var icons_age_one := await snapshot()
+	main.session.state.tick_number = 80
+	main._update_hud()
+	var icons_age_eighty := await snapshot()
+	if OS.get_environment("BOMB_IT_HUD_PERIOD_DIR") != "":
+		icons_age_one.save_png(OS.get_environment("BOMB_IT_HUD_PERIOD_DIR")+"/age1.png")
+		icons_age_eighty.save_png(OS.get_environment("BOMB_IT_HUD_PERIOD_DIR")+"/age80.png")
+	check(changed(icons_age_one, icons_age_eighty, Rect2i(65,29,19,30)) == 0, "HUD shield, shoe and glove repeat after 79 source display updates")
+	# Revealing a previously hidden icon samples the same absolute source phase
+	# as an icon which remained visible throughout those accepted ticks.
+	hero.armor = true
+	for tick in range(1,138):
+		main.session.state.tick_number = tick
+		main._update_hud()
+	var continuously_visible := await snapshot()
+	hero.armor = false
+	for tick in range(1,138):
+		main.session.state.tick_number = tick
+		main._update_hud()
+	hero.armor = true
+	main._update_hud()
+	var revealed := await snapshot()
+	check(changed(continuously_visible, revealed, Rect2i(67,23,15,16)) == 0, "revealed HUD icon retains the absolute source timeline phase")
 	# Source-style fixtures preserve all five floor/brick/center families. Seed
 	# search selects generated themes; it does not claim Flash RNG seed parity.
 	for theme in 5:

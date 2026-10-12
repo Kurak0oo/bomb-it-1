@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import re
 
-CONFIGS = {name + "-v1": Path(__file__).resolve().parents[1] / f"godot/tests/fixtures/{name}_scenarios.json" for name in ["core", "motion", "interaction", "order", "expiry", "ai_order"]}
+CONFIGS = {name + "-v1": Path(__file__).resolve().parents[1] / f"godot/tests/fixtures/{name}_scenarios.json" for name in ["core", "motion", "interaction", "order", "expiry", "ai_order", "push", "grenade", "grenadescore"]}
 
 
 def validate(capture):
@@ -15,7 +15,7 @@ def validate(capture):
             raise ValueError(f"{capture['profile']}: incompatible {key}")
     if capture.get("configuration_sha256") != hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest():
         raise ValueError(f"{capture['profile']}: incompatible configuration")
-    if capture["profile"] in ("interaction-v1", "expiry-v1") and capture.get("source") == "original-swf-bytecode":
+    if capture["profile"] in ("interaction-v1", "expiry-v1", "push-v1", "grenade-v1", "grenadescore-v1") and capture.get("source") == "original-swf-bytecode":
         if capture.get("execution_scope") != "original-sprite-564-with-root-parent":
             raise ValueError(f"{capture['profile']}: requires original Sprite 564 with real root parent")
         for key in ("original_swf_sha256", "fixture_sha256", "harness_sha256", "builder_sha256", "capture_sha256", "ffdec_sha256", "prelude_sha256"):

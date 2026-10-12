@@ -44,14 +44,14 @@ partially implemented or externally blocked tickets stay open.
 | #14 Strict random replay | None | Pending |
 | #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
 | #17 Interruptions/resume | #15, implemented | Integrated in 51e5b7d; [rendered interruption, stale input, audio suspension and interpolation evidence](issue-17.md) |
-| #18 Smooth rendering | #17, integrated | Implementer active |
-| #19 Windows package | None | Pending |
+| #18 Smooth rendering | #17, integrated | Integrated in f9f2538; [schedule invariance, frame/input reporting and measured HUD improvement](issue-18.md). Final candidate performance remains #21 |
+| #19 Windows package | None | Implementer active |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
 | #21 Integrated desktop acceptance | #2–#19, #28–#33 | Pending integration and packaging |
 | #28 Movement/special-fire ordering | #11, integrated | Integrated in fcbd85f; [28 exact command-boundary cases](issue-28.md), remaining CORE-01/02 differences preserved |
 | #29 Bomb expiry/held-fire ordering | #11–#13, integrated | Integrated in 822b806; [4,840 exact expiry fields](issue-29.md), with separate [AI ordering repair](issue-28-ai.md) and active soak |
-| #30 Push callback lifecycle | #12–#13, #29 integrated | Acceptance audit active; #29 naturally resolves all seven existing push cases |
-| #31 Grenade endpoint | #12–#13 | Pending MOTION-04 correction, including chain accounting |
+| #30 Push callback lifecycle | #12–#13, #29 integrated | Integrated in f27fc93; [7 cases / 6,048 exact fields](issue-30.md), with no additional production change |
+| #31 Grenade endpoint | #12–#13 | Implementer active on MOTION-04 correction, including chain accounting |
 | #32 Hit/refund accounting | #13, #29 | Pending INTERACT-01/02 correction |
 | #33 Special contact/callback eligibility | #13, #29 | Pending INTERACT-03/04/05 correction; residual-energy uncertainty excluded |
 

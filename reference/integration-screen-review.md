@@ -69,3 +69,29 @@ at `bef7a92` passes both jobs and reproduces all 94 images exactly. The
 This checkpoint is not final acceptance: later #29 regression work identified an
 AI command-ordering defect introduced by #28, requiring independent source coverage
 and an active-bomb soak assertion before completion.
+
+## Ordinary effects and scheduling checkpoint
+
+Integration `581395fe` (image `a6211dc5d5fb`, capture `258423e93aef`) passes import,
+view, timeline and all twelve rendered behavior phases. All 94 previous images
+reproduce exactly. Three new inspected images cover the six normal pickups'
+79-update loop, overlapping-fill removal fade and final flame fade. They are
+added at zero tolerance, bringing the baseline to 97 images. [Results and exact
+comparison](integration-screen-review/ordinary-effects/checks.json) and the
+[review record](integration-screen-review/ordinary-effects/review.json) retain
+this checkpoint.
+
+The flame assertion now renders an independent source-alpha control on the same
+backend: both Linux and Windows detect the old fade and accept the corrected
+48/256 alpha. Original-runtime comparisons remain separate and retain their
+pixel differences. The clean container also verifies the report runner without
+Git: revision is explicitly unknown inside the image, with both code fingerprints
+retained; the integration revision and image ID above identify the captured build.
+
+This checkpoint includes the independently verified AI repair, expiry scheduling,
+push acceptance and HUD loop correction. Full desktop acceptance and remaining
+special-effect work are still pending.
+
+Fresh [CI run 38246634284](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38246634284)
+at `4f27cc5` passes both headless and rendered jobs and reproduces all 97 images
+exactly. Its [job record](integration-screen-review/ordinary-effects/ci.json) is retained.

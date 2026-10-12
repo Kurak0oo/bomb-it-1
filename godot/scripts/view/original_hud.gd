@@ -10,9 +10,11 @@ var previous: Array[Dictionary] = []
 var blinks: Array[Dictionary] = []
 var stage_label: Label
 var timer_digits: Array[Label] = []
+var portraits: Array[Texture2D] = []
 
 func _ready() -> void:
 	texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
+	for number in range(1,5):portraits.append(load("res://art/original/hud/portrait-%d.png" % number))
 	var background := Sprite2D.new()
 	background.centered = false
 	background.texture = load("res://art/original/hud/background.png")
@@ -77,17 +79,21 @@ func sync(session: GameSession) -> void:
 	for id in 4:
 		var hero := session.state.heroes[id]
 		var panel: Dictionary = panels[id]
-		panel.portrait.texture = load("res://art/original/hud/portrait-%d.png" % hero.character_id)
+		panel.portrait.texture = portraits[hero.character_id-1]
 		panel.life.text = str(maxi(hero.lives,0))
 		panel.totalBomb.text = str(hero.bombs_available)
 		panel.score.text = str(hero.score)
 		panel.mask.visible = hero.lives <= 0
 		panel.bomb.texture = art.frame(371,session.state.tick_number % 40 + 1)
-		for entry in [["shield",4],["shoe",6],["glove",2]]:
-			panel[entry[0]].show_frame(session.state.tick_number % 80, session.state.tick_number, entry[1])
 		panel.shield.visible = hero.armor
 		panel.glove.visible = hero.glove
 		panel.shoe.visible = hero.speed_level < SimRules.FRAMES_PER_TILE
+		for entry in [["shield",4],["shoe",6],["glove",2]]:
+			# Hidden icons have no script side effects. Sample the absolute source
+			# phase when visible again instead of recomposing invisible layers.
+			# Symbol 326 frame 80 jumps to 1: 79 displayed updates per loop.
+			if panel[entry[0]].visible:
+				panel[entry[0]].show_frame(session.state.tick_number % 79, session.state.tick_number, entry[1])
 		var values := {"life":hero.lives,"totalBomb":hero.bomb_capacity,"bomb":hero.bomb_level,"shoe":hero.speed_level}
 		if not previous[id].is_empty():
 			for key in values:

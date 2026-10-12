@@ -19,11 +19,12 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / ".artifacts/core-reference")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--require-parity", action="store_true", help="Fail on observed differences as well as harness errors")
-    parser.add_argument("--profile", choices=["core-v1", "motion-v1", "interaction-v1", "order-v1", "expiry-v1", "ai_order-v1"], default="core-v1")
+    parser.add_argument("--profile", choices=["core-v1", "motion-v1", "interaction-v1", "order-v1", "expiry-v1", "ai_order-v1", "push-v1", "grenade-v1", "grenadescore-v1"], default="core-v1")
     parser.add_argument("--nested", action="store_true", help="Execute preserved callbacks inside original Sprite 564 with a real root parent")
     args = parser.parse_args()
     stem = args.profile.removesuffix("-v1")
-    nested = args.nested or stem in ("interaction", "order", "expiry", "ai_order")
+    driver = "motion" if stem in ("push", "grenade") else "interaction" if stem == "grenadescore" else stem
+    nested = args.nested or stem in ("interaction", "order", "expiry", "ai_order", "push", "grenade", "grenadescore")
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     (output / "rebuilt").mkdir(exist_ok=True)
@@ -49,10 +50,10 @@ def main():
         classpath = os.pathsep.join([str(args.ffdec / "ffdec.jar"), str(args.ffdec / "lib/*")])
         commands = [
             ("fixture", ["java", "--class-path", classpath, str(ROOT / "tools/reference/BuildReference.java"),
-                         str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / f"tools/reference/{stem}_scenario.as"), str(prelude)] + (["--nested"] if nested else []), "Preserved complete original frame 2"),
+                         str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / f"tools/reference/{driver}_scenario.as"), str(prelude)] + (["--nested"] if nested else []), "Preserved complete original frame 2"),
             ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original"), str(ROOT / f"godot/tests/fixtures/{stem}_scenarios.json")], "Captured original"),
             ("import", [godot, "--headless", "--path", str(ROOT / "godot"), "--editor", "--import", "--quit"], None),
-            ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{stem}_reference_capture.gd"], "CORE_REFERENCE_CAPTURE_OK")]
+            ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{driver}_reference_capture.gd"] + (["--", "--push-profile"] if stem == "push" else ["--", "--grenade-profile"] if stem == "grenade" else ["--", "--grenade-account"] if stem == "grenadescore" else []), "CORE_REFERENCE_CAPTURE_OK")]
         if stem == "ai_order":
             commands.insert(1,("controlled_random", ["java", "--class-path", classpath, str(ROOT / "tools/reference/ForceAiDecisions.java"), str(output / "fixture.swf")], "Adapted only RandomNumber"))
         for name, command, marker in commands:
@@ -63,7 +64,7 @@ def main():
         original = output / "original/trace.json"
         data = json.loads(original.read_text(encoding="utf-8"))
         for label, path in {
-            "original_swf": ROOT / "Bomb It 1.swf", "harness": ROOT / f"tools/reference/{stem}_scenario.as",
+            "original_swf": ROOT / "Bomb It 1.swf", "harness": ROOT / f"tools/reference/{driver}_scenario.as",
             "builder": ROOT / "tools/reference/BuildReference.java", "capture": ROOT / "tools/reference/capture_core.mjs",
             "ffdec": args.ffdec / "ffdec.jar", "prelude": prelude,
         }.items():

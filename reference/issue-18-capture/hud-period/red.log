@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: HUD shield, shoe and glove repeat after 79 source display updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/hud_render_check.gd:24)
+       [1] run (res://tests/hud_render_check.gd:73)
+       [2] snapshot (res://tests/hud_render_check.gd:11)

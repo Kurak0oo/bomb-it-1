@@ -1,6 +1,7 @@
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -43,10 +44,41 @@ class Commands(unittest.TestCase):
             summary = json.loads((root / "output/summary.json").read_text())
             return result, summary
 
+    def test_runner_accepts_source_copy_without_git_metadata_or_binary(self):
+        with tempfile.TemporaryDirectory(prefix="bomb it source copy ") as directory:
+            root = Path(directory)
+            for name in ["tools/run_checks.py", "tools/performance_report.py", "tools/godot-version.txt",
+                         "godot/project.godot", "godot/tests/pacing_check.gd", "godot/tests/performance_capture.gd"]:
+                destination = root / name
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / name, destination)
+            fake = root / "fake.py"
+            fake.write_text("import sys\n"
+                            "if '--version' in sys.argv: print('4.7.2.stable.fixture')\n"
+                            "else: print('SIM_OK'); print('CORE_REFERENCE_CAPTURE_OK')\n", encoding="utf-8")
+            executable = root / ("engine.cmd" if os.name == "nt" else "engine")
+            executable.write_text(f'@"{sys.executable}" "{fake}" %*\n' if os.name == "nt" else
+                                  f'#!/bin/sh\nexec "{sys.executable}" "{fake}" "$@"\n', encoding="utf-8")
+            executable.chmod(0o755)
+            for no_git in [False, True]:
+                with self.subTest(no_git=no_git):
+                    env = os.environ.copy()
+                    if no_git:
+                        env["PATH"] = str(root)
+                    output = root / ("without-git" if no_git else "without-repository")
+                    run = subprocess.run([sys.executable, str(root / "tools/run_checks.py"),
+                                          "--godot", str(executable), "--suite", "sim", "--output", str(output)],
+                                         env=env, capture_output=True, text=True, timeout=20)
+                    self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+                    metadata = json.loads((output / "build.json").read_text())
+                    self.assertEqual(metadata["revision"], "unknown")
+                    for field in ["production_source_sha256", "instrumentation_sha256"]:
+                        self.assertRegex(metadata[field], r"^[0-9a-f]{64}$")
+
     def test_runner_imports_before_selected_suite(self):
         result, summary = self.check_runner("print('SIM_OK'); print('CORE_REFERENCE_CAPTURE_OK')")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertEqual([phase["name"] for phase in summary], ["import", "sim", "bomb_expiry"])
+        self.assertEqual([phase["name"] for phase in summary], ["import", "sim", "bomb_expiry", "push_motion"])
 
     def test_runner_rejects_engine_error_even_with_zero_exit(self):
         result, summary = self.check_runner("print('SCRIPT ERROR: fixture'); print('SIM_OK')")

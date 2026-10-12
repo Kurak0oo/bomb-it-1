@@ -57,8 +57,9 @@ static func tick_weapon(state: GameState, weapon: SpecialState) -> void:
 				state.cell_at(weapon.cell).energy -= 1
 				state.specials.erase(weapon)
 		"grenade":
-			# Nested grenade body symbols 307/308/309 have 19 timeline frames.
-			if weapon.age >= 19:
+			# Body starts at frame 1; its original callback sees final frame 19
+			# after 18 advances (parent-born tick 18 / preinstalled tick 17).
+			if weapon.age >= 18:
 				pulse(state, weapon.cell, weapon.owner_id)
 				for i in 4:
 					pulse(state, weapon.cell + SimRules.direction(i), weapon.owner_id)
