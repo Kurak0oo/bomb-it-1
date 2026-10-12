@@ -62,3 +62,16 @@ Use the session `exclusive.py` wrapper for native rendered runs. `--replay` addi
 Evidence is in [issue-04-capture](issue-04-capture/): `before`, `final`, source `controls`, exact reports, raw drawing inputs, provenance, traces and red/green logs. The initial baseline capture had a creation filename formatting mismatch; its completed images were relabelled consistently and re-compared without changing pixels or observations. The final public command succeeds without that harness defect. Reviewed against the starting revision: production changes are limited to source-backed presentation and reproducible recovered art preparation.
 
 Post-merge validation includes integration `01660d5`: timeline, view, simulation and tooling pass, as do all **12** integrated rendered phases. The repeated source capture again matches all 305 observations. All 134 current port captures exactly match the retained final port captures, and all 134 repeated original captures exactly match their retained source counterparts. [Post-merge logs](issue-04-capture/checks/effects-post-merge/) and [exact regression comparison](issue-04-capture/checks/effects-post-merge-regression/report.json) are retained. One source-clock restart was rejected and logged before the successful complete recapture; no samples were reused from that failed attempt.
+
+## Linux regression assertion correction
+
+Integration's pinned Linux image `7fba1b96af93` exposed a test portability defect: the corrected flame pixel is `(251,219,234)` on Mesa llvmpipe, versus `(252,219,234)` on Windows/NVIDIA. The hardcoded original RGB assertion incorrectly treated those backend results as identical. The source comparison remains strict and failed where pixels differ.
+
+The rendered regression now compares that gameplay pixel **exactly** with an isolated rendering of recovered center-flame texture `273/1.png`, at original placement `(240,180)` and source-recorded alpha **48/256**. That expectation comes from original `flame1` tick 16 in the retained trace, independently of simulation alpha or view calculations. The control uses the current backend, with no OS branch, tolerance, modified artwork or production change. Shared Linux baselines remain root-owned.
+
+| Backend | Old alpha / expected failure | Corrected alpha / passing control | Pickup overlap |
+| --- | --- | --- | --- |
+| Windows NVIDIA | (251,217,232) | (252,219,234) | (199,237,246) |
+| Linux Mesa llvmpipe | (251,217,232) | (251,219,234) | (199,237,246) |
+
+Both red runs temporarily restore only `group.modulate.a = blast.alpha / 100`; both green runs use unchanged production code. Logs print actual and control colours, and [portability evidence](issue-04-capture/portability/) retains all four screenshot sets, runtime metadata and literal pixel readings. The pickup assertion is unchanged and passes on both backends. Linux runs import the project before executing `effects_render_check.gd` in the pinned image; native runs use the session's exclusive wrapper. The test-only correction was reviewed against integration `e12f8b0`.
