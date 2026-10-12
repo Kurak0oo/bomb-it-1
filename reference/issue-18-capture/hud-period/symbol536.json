@@ -1,0 +1,166 @@
+{
+  "symbol": 536,
+  "linkage": null,
+  "labels": [],
+  "scripts": [],
+  "layers": [
+    {
+      "name": "Layer 1",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 533,
+          "name": "pan_mask",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "-24.75",
+            "ty": "15.45",
+            "a": "0.96038818359375",
+            "d": "0.96038818359375"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 2",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 326,
+          "name": "glove",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "26.4",
+            "ty": "6.4",
+            "a": "0.3149871826171875",
+            "d": "0.3149871826171875"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 3",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 326,
+          "name": "shoe",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "26.4",
+            "ty": "-4.55",
+            "a": "0.3149871826171875",
+            "d": "0.3149871826171875"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 4",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 326,
+          "name": "shield",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "26.4",
+            "ty": "-15.5",
+            "a": "0.3149871826171875",
+            "d": "0.3149871826171875"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 5",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 371,
+          "name": "bomb",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "26.3",
+            "ty": "-26.95",
+            "a": "0.333343505859375",
+            "d": "0.3339385986328125"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 6",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 531,
+          "name": "totalBombMc",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "18.5",
+            "ty": "-26.3"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 7",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 4,
+          "symbol": 531,
+          "name": "lifeMc",
+          "kind": "movie clip",
+          "matrix": {
+            "tx": "-24.25",
+            "ty": "19.9"
+          },
+          "color": {}
+        }
+      ]
+    },
+    {
+      "name": "Layer 9",
+      "placements": [
+        {
+          "frame": 1,
+          "duration": 1,
+          "symbol": 528,
+          "name": null,
+          "kind": "graphic",
+          "matrix": {
+            "tx": "0.0",
+            "ty": "0.0",
+            "a": "0.05000000074505806",
+            "d": "0.05000000074505806"
+          },
+          "color": {}
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    22,
+    44,
+    326,
+    371,
+    528,
+    531,
+    533,
+    534
+  ]
+}
