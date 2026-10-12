@@ -10,6 +10,7 @@ func run() -> void:
 	main = load("res://scenes/main.tscn").instantiate()
 	main.save_enabled = false
 	main.set_physics_process(false)
+	main.set_process(false)
 	root.add_child(main)
 	main.audio.muted = true
 	await capture("menu")
@@ -55,10 +56,13 @@ func run() -> void:
 	main.session.state.heroes[3].alive = false
 	main._physics_process(1.0/35)
 	check(main.screen == "result", "winning round displays result")
-	await capture("result")
+	# Symbol 563 frame 70: banner bounce finished, source skip listener ready.
+	# Explicit presentation time keeps this snapshot independent of host speed.
 	tick = main.session.state.tick_number
-	for i in 36:
+	for i in 69:
 		main._physics_process(1.0/35)
+	main.original_results.advance(69.0/35.0+0.00001)
+	await capture("result")
 	check(main.session.state.tick_number == tick, "result animation leaves simulation stopped")
 	check(not main.view._hero_sprites[1].visible, "death finishes behind result overlay")
 	main.session.next_round()

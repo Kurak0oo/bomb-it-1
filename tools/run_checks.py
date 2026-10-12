@@ -93,7 +93,8 @@ def main():
         if args.visual:
             print(f"Captures: {captures}", flush=True)
             render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
-            phases += [("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
+            phases += [("interruption_render", render + ["--script", "res://tests/interruption_render_check.gd"], "INTERRUPTION_RENDER_OK"),
+                       ("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
                        ("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),
                        ("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
                        ("result_render", render + ["--script", "res://tests/result_render_check.gd"], "RESULT_RENDER_OK"),
