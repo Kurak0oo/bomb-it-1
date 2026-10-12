@@ -1,0 +1,691 @@
+{
+  "target_hz": 120,
+  "measured_endpoint_seconds": 180.006067,
+  "reconstruction": "first measured submission plus subsequent intervals; verified against final timestamp within one microsecond",
+  "memory_scope": "Godot static allocation, including caches and observer records; not process working set or GPU memory",
+  "phases": [
+    {
+      "accepted_ticks": 284,
+      "events": {
+        "explode": 36,
+        "pickup": 1,
+        "place": 40
+      },
+      "peak_bombs": 4,
+      "peak_specials": 0,
+      "scenario": "ordinary",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 59.382,
+      "start_us": 1975224,
+      "serial": 0,
+      "cycle": 1,
+      "measured_frames": 361,
+      "partial_measurement": true,
+      "memory_first_bytes": 57873699.0,
+      "memory_last_bytes": 57631015.0,
+      "memory_peak_bytes": 57914311.0,
+      "settled_last_two_seconds_median_bytes": 57665515.0,
+      "submission_max_ms": 10.295,
+      "submission_mean_ms": 8.336116343490305,
+      "input_count": 8,
+      "unobserved_feedback": 5
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 42,
+        "grenade": 9,
+        "place": 4,
+        "rocket": 11
+      },
+      "peak_bombs": 2,
+      "peak_specials": 6,
+      "scenario": "rocket-grenade",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 18.244,
+      "start_us": 10072644,
+      "serial": 1,
+      "cycle": 1,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 58574960.0,
+      "memory_last_bytes": 58532234.0,
+      "memory_peak_bytes": 58655770.0,
+      "settled_last_two_seconds_median_bytes": 58476814.0,
+      "submission_max_ms": 29.545,
+      "submission_mean_ms": 8.338422916666667,
+      "input_count": 23,
+      "unobserved_feedback": 5
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 5,
+        "gas": 3,
+        "mine": 2,
+        "place": 7
+      },
+      "peak_bombs": 2,
+      "peak_specials": 5,
+      "scenario": "mine-gas",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 20.023,
+      "start_us": 18078667,
+      "serial": 2,
+      "cycle": 1,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 58853857.0,
+      "memory_last_bytes": 58498516.0,
+      "memory_peak_bytes": 58853985.0,
+      "settled_last_two_seconds_median_bytes": 58392744.0,
+      "submission_max_ms": 32.596,
+      "submission_mean_ms": 8.341638541666667,
+      "input_count": 23,
+      "unobserved_feedback": 15
+    },
+    {
+      "accepted_ticks": 281,
+      "events": {
+        "explode": 4,
+        "fire": 6,
+        "ice": 1,
+        "place": 4
+      },
+      "peak_bombs": 2,
+      "peak_specials": 2,
+      "scenario": "fire-ice",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 19.385,
+      "start_us": 26086602,
+      "serial": 3,
+      "cycle": 1,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 58826719.0,
+      "memory_last_bytes": 58410840.0,
+      "memory_peak_bytes": 58826719.0,
+      "settled_last_two_seconds_median_bytes": 58410520.0,
+      "submission_max_ms": 32.201,
+      "submission_mean_ms": 8.341477083333332,
+      "input_count": 23,
+      "unobserved_feedback": 11
+    },
+    {
+      "accepted_ticks": 36,
+      "events": {
+        "place": 2
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "outcome",
+      "screens": [
+        "game",
+        "result:outcome",
+        "result:scores"
+      ],
+      "setup_cpu_ms": 18.644,
+      "start_us": 34095331,
+      "serial": 4,
+      "cycle": 1,
+      "measured_frames": 959,
+      "partial_measurement": false,
+      "memory_first_bytes": 58683146.0,
+      "memory_last_bytes": 58791394.0,
+      "memory_peak_bytes": 58827434.0,
+      "settled_last_two_seconds_median_bytes": 58791394.0,
+      "submission_max_ms": 32.804,
+      "submission_mean_ms": 8.345164754953077,
+      "input_count": 3,
+      "unobserved_feedback": 1
+    },
+    {
+      "accepted_ticks": 281,
+      "events": {
+        "explode": 1,
+        "pickup": 6,
+        "place": 3
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "pickups",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 17.854,
+      "start_us": 42114654,
+      "serial": 5,
+      "cycle": 1,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 59640387.0,
+      "memory_last_bytes": 59436940.0,
+      "memory_peak_bytes": 59681984.0,
+      "settled_last_two_seconds_median_bytes": 59436940.0,
+      "submission_max_ms": 48.863,
+      "submission_mean_ms": 8.358579166666667,
+      "input_count": 0,
+      "unobserved_feedback": 0
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 37,
+        "mine": 1,
+        "pickup": 2,
+        "place": 40
+      },
+      "peak_bombs": 4,
+      "peak_specials": 1,
+      "scenario": "ordinary",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 17.638,
+      "start_us": 50122495,
+      "serial": 6,
+      "cycle": 2,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 59842985.0,
+      "memory_last_bytes": 59663870.0,
+      "memory_peak_bytes": 61115818.0,
+      "settled_last_two_seconds_median_bytes": 59620382.0,
+      "submission_max_ms": 30.183,
+      "submission_mean_ms": 8.340866666666667,
+      "input_count": 23,
+      "unobserved_feedback": 11
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 42,
+        "grenade": 9,
+        "place": 4,
+        "rocket": 11
+      },
+      "peak_bombs": 2,
+      "peak_specials": 6,
+      "scenario": "rocket-grenade",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 20.23,
+      "start_us": 58127247,
+      "serial": 7,
+      "cycle": 2,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60114949.0,
+      "memory_last_bytes": 59944192.0,
+      "memory_peak_bytes": 60115077.0,
+      "settled_last_two_seconds_median_bytes": 59875984.0,
+      "submission_max_ms": 30.912,
+      "submission_mean_ms": 8.340047916666666,
+      "input_count": 23,
+      "unobserved_feedback": 5
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 5,
+        "gas": 3,
+        "mine": 2,
+        "place": 7
+      },
+      "peak_bombs": 2,
+      "peak_specials": 5,
+      "scenario": "mine-gas",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 20.075,
+      "start_us": 66135350,
+      "serial": 8,
+      "cycle": 2,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60291138.0,
+      "memory_last_bytes": 59895335.0,
+      "memory_peak_bytes": 60333022.0,
+      "settled_last_two_seconds_median_bytes": 59789443.0,
+      "submission_max_ms": 32.668,
+      "submission_mean_ms": 8.341767708333334,
+      "input_count": 23,
+      "unobserved_feedback": 15
+    },
+    {
+      "accepted_ticks": 281,
+      "events": {
+        "explode": 4,
+        "fire": 6,
+        "ice": 1,
+        "place": 4
+      },
+      "peak_bombs": 2,
+      "peak_specials": 2,
+      "scenario": "fire-ice",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 18.693,
+      "start_us": 74143472,
+      "serial": 9,
+      "cycle": 2,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60233324.0,
+      "memory_last_bytes": 59761970.0,
+      "memory_peak_bytes": 60233324.0,
+      "settled_last_two_seconds_median_bytes": 59761554.0,
+      "submission_max_ms": 30.648,
+      "submission_mean_ms": 8.339717708333334,
+      "input_count": 23,
+      "unobserved_feedback": 11
+    },
+    {
+      "accepted_ticks": 36,
+      "events": {
+        "place": 2
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "outcome",
+      "screens": [
+        "game",
+        "result:outcome",
+        "result:scores"
+      ],
+      "setup_cpu_ms": 18.907,
+      "start_us": 82150459,
+      "serial": 10,
+      "cycle": 2,
+      "measured_frames": 959,
+      "partial_measurement": false,
+      "memory_first_bytes": 60002669.0,
+      "memory_last_bytes": 59587026.0,
+      "memory_peak_bytes": 60002797.0,
+      "settled_last_two_seconds_median_bytes": 59587026.0,
+      "submission_max_ms": 31.827,
+      "submission_mean_ms": 8.344054223149113,
+      "input_count": 3,
+      "unobserved_feedback": 1
+    },
+    {
+      "accepted_ticks": 281,
+      "events": {
+        "explode": 1,
+        "pickup": 6,
+        "place": 3
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "pickups",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 17.528,
+      "start_us": 90168231,
+      "serial": 11,
+      "cycle": 2,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60029737.0,
+      "memory_last_bytes": 59588996.0,
+      "memory_peak_bytes": 60029865.0,
+      "settled_last_two_seconds_median_bytes": 59586956.0,
+      "submission_max_ms": 48.094,
+      "submission_mean_ms": 8.357704166666666,
+      "input_count": 0,
+      "unobserved_feedback": 0
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 37,
+        "pickup": 2,
+        "place": 41
+      },
+      "peak_bombs": 5,
+      "peak_specials": 0,
+      "scenario": "ordinary",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 16.903,
+      "start_us": 98175818,
+      "serial": 12,
+      "cycle": 3,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60012530.0,
+      "memory_last_bytes": 59808847.0,
+      "memory_peak_bytes": 61278243.0,
+      "settled_last_two_seconds_median_bytes": 59807179.0,
+      "submission_max_ms": 29.635,
+      "submission_mean_ms": 8.338605208333334,
+      "input_count": 23,
+      "unobserved_feedback": 11
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 44,
+        "grenade": 9,
+        "place": 4,
+        "rocket": 11
+      },
+      "peak_bombs": 2,
+      "peak_specials": 7,
+      "scenario": "rocket-grenade",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 20.594,
+      "start_us": 106181301,
+      "serial": 13,
+      "cycle": 3,
+      "measured_frames": 959,
+      "partial_measurement": false,
+      "memory_first_bytes": 60250790.0,
+      "memory_last_bytes": 60155936.0,
+      "memory_peak_bytes": 60264312.0,
+      "settled_last_two_seconds_median_bytes": 60058828.0,
+      "submission_max_ms": 34.287,
+      "submission_mean_ms": 8.343455683003128,
+      "input_count": 23,
+      "unobserved_feedback": 6
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 5,
+        "gas": 3,
+        "mine": 2,
+        "place": 7
+      },
+      "peak_bombs": 2,
+      "peak_specials": 5,
+      "scenario": "mine-gas",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 17.656,
+      "start_us": 114182428,
+      "serial": 14,
+      "cycle": 3,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60418883.0,
+      "memory_last_bytes": 60021108.0,
+      "memory_peak_bytes": 60460771.0,
+      "settled_last_two_seconds_median_bytes": 59914716.0,
+      "submission_max_ms": 31.382,
+      "submission_mean_ms": 8.342646875,
+      "input_count": 23,
+      "unobserved_feedback": 15
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 5,
+        "fire": 3,
+        "ice": 1,
+        "place": 6
+      },
+      "peak_bombs": 2,
+      "peak_specials": 2,
+      "scenario": "fire-ice",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 21.678,
+      "start_us": 122188202,
+      "serial": 15,
+      "cycle": 3,
+      "measured_frames": 959,
+      "partial_measurement": false,
+      "memory_first_bytes": 60376418.0,
+      "memory_last_bytes": 59982583.0,
+      "memory_peak_bytes": 60376546.0,
+      "settled_last_two_seconds_median_bytes": 59941839.0,
+      "submission_max_ms": 32.767,
+      "submission_mean_ms": 8.342861313868614,
+      "input_count": 23,
+      "unobserved_feedback": 14
+    },
+    {
+      "accepted_ticks": 36,
+      "events": {
+        "place": 2
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "outcome",
+      "screens": [
+        "game",
+        "result:outcome",
+        "result:scores"
+      ],
+      "setup_cpu_ms": 16.444,
+      "start_us": 130190101,
+      "serial": 16,
+      "cycle": 3,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60223528.0,
+      "memory_last_bytes": 59742662.0,
+      "memory_peak_bytes": 60223528.0,
+      "settled_last_two_seconds_median_bytes": 59742662.0,
+      "submission_max_ms": 27.182,
+      "submission_mean_ms": 8.33706875,
+      "input_count": 3,
+      "unobserved_feedback": 1
+    },
+    {
+      "accepted_ticks": 281,
+      "events": {
+        "explode": 1,
+        "pickup": 6,
+        "place": 3
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "pickups",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 16.851,
+      "start_us": 138210524,
+      "serial": 17,
+      "cycle": 3,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60173795.0,
+      "memory_last_bytes": 59744016.0,
+      "memory_peak_bytes": 60173923.0,
+      "settled_last_two_seconds_median_bytes": 59744016.0,
+      "submission_max_ms": 46.165,
+      "submission_mean_ms": 8.356458333333334,
+      "input_count": 0,
+      "unobserved_feedback": 0
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 34,
+        "place": 36
+      },
+      "peak_bombs": 4,
+      "peak_specials": 0,
+      "scenario": "ordinary",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 15.741,
+      "start_us": 146216183,
+      "serial": 18,
+      "cycle": 4,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60150313.0,
+      "memory_last_bytes": 60562062.0,
+      "memory_peak_bytes": 61143054.0,
+      "settled_last_two_seconds_median_bytes": 59925962.0,
+      "submission_max_ms": 26.583,
+      "submission_mean_ms": 8.336767708333333,
+      "input_count": 23,
+      "unobserved_feedback": 12
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 41,
+        "grenade": 9,
+        "place": 4,
+        "rocket": 11
+      },
+      "peak_bombs": 2,
+      "peak_specials": 6,
+      "scenario": "rocket-grenade",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 16.827,
+      "start_us": 154218960,
+      "serial": 19,
+      "cycle": 4,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60896465.0,
+      "memory_last_bytes": 60248272.0,
+      "memory_peak_bytes": 60896593.0,
+      "settled_last_two_seconds_median_bytes": 60206512.0,
+      "submission_max_ms": 27.651,
+      "submission_mean_ms": 8.336436458333333,
+      "input_count": 23,
+      "unobserved_feedback": 6
+    },
+    {
+      "accepted_ticks": 280,
+      "events": {
+        "explode": 5,
+        "gas": 3,
+        "mine": 2,
+        "place": 7
+      },
+      "peak_bombs": 2,
+      "peak_specials": 5,
+      "scenario": "mine-gas",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 18.912,
+      "start_us": 162223187,
+      "serial": 20,
+      "cycle": 4,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60566050.0,
+      "memory_last_bytes": 60168675.0,
+      "memory_peak_bytes": 60607962.0,
+      "settled_last_two_seconds_median_bytes": 60098371.0,
+      "submission_max_ms": 31.337,
+      "submission_mean_ms": 8.340322916666667,
+      "input_count": 23,
+      "unobserved_feedback": 15
+    },
+    {
+      "accepted_ticks": 281,
+      "events": {
+        "explode": 5,
+        "fire": 3,
+        "ice": 1,
+        "place": 6
+      },
+      "peak_bombs": 2,
+      "peak_specials": 2,
+      "scenario": "fire-ice",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 17.317,
+      "start_us": 170229956,
+      "serial": 21,
+      "cycle": 4,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60506240.0,
+      "memory_last_bytes": 60118750.0,
+      "memory_peak_bytes": 60506368.0,
+      "settled_last_two_seconds_median_bytes": 60078006.0,
+      "submission_max_ms": 29.627,
+      "submission_mean_ms": 8.3384875,
+      "input_count": 23,
+      "unobserved_feedback": 14
+    },
+    {
+      "accepted_ticks": 36,
+      "events": {
+        "place": 2
+      },
+      "peak_bombs": 2,
+      "peak_specials": 0,
+      "scenario": "outcome",
+      "screens": [
+        "game",
+        "result:outcome",
+        "result:scores"
+      ],
+      "setup_cpu_ms": 16.139,
+      "start_us": 178235693,
+      "serial": 22,
+      "cycle": 4,
+      "measured_frames": 960,
+      "partial_measurement": false,
+      "memory_first_bytes": 60347389.0,
+      "memory_last_bytes": 59896174.0,
+      "memory_peak_bytes": 60347517.0,
+      "settled_last_two_seconds_median_bytes": 59896174.0,
+      "submission_max_ms": 29.065,
+      "submission_mean_ms": 8.338921875,
+      "input_count": 3,
+      "unobserved_feedback": 0
+    },
+    {
+      "accepted_ticks": 29,
+      "events": {
+        "pickup": 4,
+        "place": 1
+      },
+      "peak_bombs": 1,
+      "peak_specials": 0,
+      "scenario": "pickups",
+      "screens": [
+        "game"
+      ],
+      "setup_cpu_ms": 17.047,
+      "start_us": 186256652,
+      "serial": 23,
+      "cycle": 4,
+      "measured_frames": 98,
+      "partial_measurement": true,
+      "memory_first_bytes": 60356950.0,
+      "memory_last_bytes": 60123612.0,
+      "memory_peak_bytes": 60357078.0,
+      "settled_last_two_seconds_median_bytes": 60007856.0,
+      "submission_max_ms": 47.503,
+      "submission_mean_ms": 8.569295918367347,
+      "input_count": 0,
+      "unobserved_feedback": 0
+    }
+  ]
+}

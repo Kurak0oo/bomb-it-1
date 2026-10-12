@@ -1,0 +1,561 @@
+{
+  "components_equal": true,
+  "full_session_equal": false,
+  "snapshots_compared": 45,
+  "drops_compared": 45,
+  "shuffle_controls_compared": 505,
+  "differences": [],
+  "session_policy": [
+    {
+      "theme": "0",
+      "phase": "initial",
+      "source_calls": 476,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 6,
+      "original": {
+        "phase": "initial",
+        "order": 6,
+        "site": "f1:21285",
+        "bound": 4,
+        "result": 2
+      },
+      "rebuilt": {
+        "bound": 5,
+        "order": 6,
+        "phase": "initial",
+        "result": 1,
+        "seed": "72"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "0",
+      "phase": "retry",
+      "source_calls": 225,
+      "rebuilt_calls": 703,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "retry",
+        "order": 501,
+        "site": "f2:1691",
+        "bound": 100,
+        "result": 13
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 465,
+        "phase": "retry",
+        "result": 2,
+        "seed": "73"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "0",
+      "phase": "stage2",
+      "source_calls": 472,
+      "rebuilt_calls": 475,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage2",
+        "order": 726,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 0
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1168,
+        "phase": "stage2",
+        "result": 5,
+        "seed": "74"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "0",
+      "phase": "stage3",
+      "source_calls": 467,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage3",
+        "order": 1198,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 0
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1643,
+        "phase": "stage3",
+        "result": 2,
+        "seed": "75"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "0",
+      "phase": "stage4",
+      "source_calls": 467,
+      "rebuilt_calls": 471,
+      "first_bound_divergence": 7,
+      "original": {
+        "phase": "stage4",
+        "order": 1672,
+        "site": "f1:21285",
+        "bound": 6,
+        "result": 5
+      },
+      "rebuilt": {
+        "bound": 3,
+        "order": 2115,
+        "phase": "stage4",
+        "result": 1,
+        "seed": "76"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "1",
+      "phase": "initial",
+      "source_calls": 484,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 6,
+      "original": {
+        "phase": "initial",
+        "order": 6,
+        "site": "f1:21285",
+        "bound": 4,
+        "result": 3
+      },
+      "rebuilt": {
+        "bound": 5,
+        "order": 6,
+        "phase": "initial",
+        "result": 1,
+        "seed": "72"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "1",
+      "phase": "retry",
+      "source_calls": 216,
+      "rebuilt_calls": 703,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "retry",
+        "order": 509,
+        "site": "f2:1691",
+        "bound": 100,
+        "result": 61
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 465,
+        "phase": "retry",
+        "result": 2,
+        "seed": "73"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "1",
+      "phase": "stage2",
+      "source_calls": 476,
+      "rebuilt_calls": 475,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage2",
+        "order": 725,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 1
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1168,
+        "phase": "stage2",
+        "result": 5,
+        "seed": "74"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "1",
+      "phase": "stage3",
+      "source_calls": 457,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage3",
+        "order": 1201,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 1
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1643,
+        "phase": "stage3",
+        "result": 2,
+        "seed": "75"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "1",
+      "phase": "stage4",
+      "source_calls": 476,
+      "rebuilt_calls": 471,
+      "first_bound_divergence": 247,
+      "original": {
+        "phase": "stage4",
+        "order": 1905,
+        "site": "f2:1691",
+        "bound": 100,
+        "result": 83
+      },
+      "rebuilt": {
+        "bound": 2,
+        "order": 2355,
+        "phase": "stage4",
+        "result": 1,
+        "seed": "76"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "2",
+      "phase": "initial",
+      "source_calls": 488,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 6,
+      "original": {
+        "phase": "initial",
+        "order": 6,
+        "site": "f1:21285",
+        "bound": 4,
+        "result": 2
+      },
+      "rebuilt": {
+        "bound": 5,
+        "order": 6,
+        "phase": "initial",
+        "result": 1,
+        "seed": "72"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "2",
+      "phase": "retry",
+      "source_calls": 215,
+      "rebuilt_calls": 703,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "retry",
+        "order": 513,
+        "site": "f2:1691",
+        "bound": 100,
+        "result": 83
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 465,
+        "phase": "retry",
+        "result": 2,
+        "seed": "73"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "2",
+      "phase": "stage2",
+      "source_calls": 468,
+      "rebuilt_calls": 475,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage2",
+        "order": 728,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 2
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1168,
+        "phase": "stage2",
+        "result": 5,
+        "seed": "74"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "2",
+      "phase": "stage3",
+      "source_calls": 465,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage3",
+        "order": 1196,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 2
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1643,
+        "phase": "stage3",
+        "result": 2,
+        "seed": "75"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "2",
+      "phase": "stage4",
+      "source_calls": 467,
+      "rebuilt_calls": 471,
+      "first_bound_divergence": 7,
+      "original": {
+        "phase": "stage4",
+        "order": 1668,
+        "site": "f1:21285",
+        "bound": 4,
+        "result": 0
+      },
+      "rebuilt": {
+        "bound": 3,
+        "order": 2115,
+        "phase": "stage4",
+        "result": 1,
+        "seed": "76"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "3",
+      "phase": "initial",
+      "source_calls": 480,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 6,
+      "original": {
+        "phase": "initial",
+        "order": 6,
+        "site": "f1:21285",
+        "bound": 4,
+        "result": 0
+      },
+      "rebuilt": {
+        "bound": 5,
+        "order": 6,
+        "phase": "initial",
+        "result": 1,
+        "seed": "72"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "3",
+      "phase": "retry",
+      "source_calls": 218,
+      "rebuilt_calls": 703,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "retry",
+        "order": 505,
+        "site": "f2:1691",
+        "bound": 100,
+        "result": 79
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 465,
+        "phase": "retry",
+        "result": 2,
+        "seed": "73"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "3",
+      "phase": "stage2",
+      "source_calls": 467,
+      "rebuilt_calls": 475,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage2",
+        "order": 723,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 3
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1168,
+        "phase": "stage2",
+        "result": 5,
+        "seed": "74"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "3",
+      "phase": "stage3",
+      "source_calls": 448,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage3",
+        "order": 1190,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 3
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1643,
+        "phase": "stage3",
+        "result": 2,
+        "seed": "75"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "3",
+      "phase": "stage4",
+      "source_calls": 470,
+      "rebuilt_calls": 471,
+      "first_bound_divergence": 7,
+      "original": {
+        "phase": "stage4",
+        "order": 1645,
+        "site": "f1:21285",
+        "bound": 7,
+        "result": 4
+      },
+      "rebuilt": {
+        "bound": 3,
+        "order": 2115,
+        "phase": "stage4",
+        "result": 1,
+        "seed": "76"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "4",
+      "phase": "initial",
+      "source_calls": 480,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 6,
+      "original": {
+        "phase": "initial",
+        "order": 6,
+        "site": "f1:21285",
+        "bound": 4,
+        "result": 0
+      },
+      "rebuilt": {
+        "bound": 5,
+        "order": 6,
+        "phase": "initial",
+        "result": 1,
+        "seed": "72"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "4",
+      "phase": "retry",
+      "source_calls": 218,
+      "rebuilt_calls": 703,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "retry",
+        "order": 505,
+        "site": "f2:1691",
+        "bound": 100,
+        "result": 79
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 465,
+        "phase": "retry",
+        "result": 2,
+        "seed": "73"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "4",
+      "phase": "stage2",
+      "source_calls": 467,
+      "rebuilt_calls": 475,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage2",
+        "order": 723,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 4
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1168,
+        "phase": "stage2",
+        "result": 5,
+        "seed": "74"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "4",
+      "phase": "stage3",
+      "source_calls": 448,
+      "rebuilt_calls": 465,
+      "first_bound_divergence": 0,
+      "original": {
+        "phase": "stage3",
+        "order": 1190,
+        "site": "f1:22882",
+        "bound": 5,
+        "result": 4
+      },
+      "rebuilt": {
+        "bound": 6,
+        "order": 1643,
+        "phase": "stage3",
+        "result": 2,
+        "seed": "75"
+      },
+      "calls_and_results_equal": false
+    },
+    {
+      "theme": "4",
+      "phase": "stage4",
+      "source_calls": 470,
+      "rebuilt_calls": 471,
+      "first_bound_divergence": 7,
+      "original": {
+        "phase": "stage4",
+        "order": 1645,
+        "site": "f1:21285",
+        "bound": 6,
+        "result": 5
+      },
+      "rebuilt": {
+        "bound": 3,
+        "order": 2115,
+        "phase": "stage4",
+        "result": 1,
+        "seed": "76"
+      },
+      "calls_and_results_equal": false
+    }
+  ],
+  "policy": "Components consume recorded original results. Full session is separately observed normal seeded play; Flash PRNG/equal-seed equivalence is not claimed. Source music calls remain in the full stream. Retry discarded setup and fresh per-round seeds remain unchanged."
+}

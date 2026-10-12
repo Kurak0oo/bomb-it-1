@@ -1,0 +1,137 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "rocket_mine_wall",
+    "tick": 18,
+    "field": "energies",
+    "original": "6,6,1,2;",
+    "rebuilt": ""
+  },
+  "scenario_first_divergences": {
+    "rocket_bomb": null,
+    "rocket_mine_wall": {
+      "scenario": "rocket_mine_wall",
+      "tick": 18,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    "bomb_gas": null,
+    "fire_bomb": null,
+    "fire_owner": null,
+    "fire_ice": null,
+    "ice_contact": null,
+    "gas_contact": null,
+    "shield_bomb": null,
+    "ai_three_hits": null,
+    "human_multi_life": null,
+    "self_damage": null,
+    "dead_owner_refund": null,
+    "overlap_ab": null,
+    "overlap_ba": null,
+    "mine_damage": null,
+    "grenade_bomb": null
+  },
+  "differences": [
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 18,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 19,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 20,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 21,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 22,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 23,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 24,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 25,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 26,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 27,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 28,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 29,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 30,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "rocket_mine_wall",
+      "tick": 31,
+      "field": "energies",
+      "original": "6,6,1,2;",
+      "rebuilt": ""
+    }
+  ]
+}

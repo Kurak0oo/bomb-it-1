@@ -1,0 +1,50 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 20.641,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\performance\\import.log"
+  },
+  {
+    "name": "pacing",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 10.046,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\performance\\pacing.log"
+  },
+  {
+    "name": "performance_capture_60",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 188.61,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\performance\\performance_capture_60.log"
+  },
+  {
+    "name": "performance_report_60",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.14,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\performance\\performance_report_60.log"
+  },
+  {
+    "name": "performance_capture_120",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 188.391,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\performance\\performance_capture_120.log"
+  },
+  {
+    "name": "performance_report_120",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.141,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\performance\\performance_report_120.log"
+  }
+]
