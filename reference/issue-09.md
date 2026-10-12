@@ -89,6 +89,7 @@ python tools/compare_images.py reference/issue-09-capture/original/scores refere
 ```
 
 Retained evidence: [12-case score/final matrix](issue-09-capture/matrix.png),
+[time-up death start/tick-10/retirement](issue-09-capture/timeout-death.png),
 [original trace](issue-09-capture/original/trace.json), source/runtime/script hashes,
 source/rebuilt score images, exact diagnostic comparison, red logs and green logs.
 The comparison intentionally exits 1; original and rebuilt images remain separate.
@@ -124,3 +125,8 @@ in the timeout hook; the final hook only hides the indicator on that special rou
 No gameplay timing, damage, RNG or award amounts were retuned. Integration merges
 retain the independent selection/menu changes. Shared Linux baselines remain owned
 by integration; exact original image comparison remains diagnostic and failing.
+
+Final post-merge public-runner result: campaign, simulation, tooling and all nine
+rendered phases passed (`issue09-handoff`, capture run `98b760d889f5`). The timeout
+contact sheet was visually inspected: one/two human replacements, no separate
+smoke column, and both disappear at retirement.
