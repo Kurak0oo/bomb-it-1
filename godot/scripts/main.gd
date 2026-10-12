@@ -46,6 +46,10 @@ func _ready() -> void:
 	get_viewport().size_changed.connect(_resize)
 	_resize()
 	_show_menu()
+	if "--package-smoke" in OS.get_cmdline_user_args():
+		var smoke = load("res://scripts/platform/package_smoke.gd").new()
+		smoke.main = self
+		get_tree().root.add_child.call_deferred(smoke)
 
 func _resize() -> void:
 	if not is_inside_tree():return
