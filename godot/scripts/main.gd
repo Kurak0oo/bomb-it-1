@@ -9,6 +9,7 @@ var overlay: Control
 var view: GameView
 var touch: MobileInput
 var original_hud: OriginalHud
+var original_results: OriginalResults
 var screen := "menu"
 var paused := false
 var difficulty := 1
@@ -22,6 +23,9 @@ var fire_inputs: Array[FireInput] = [FireInput.new(), FireInput.new()]
 var save_enabled := true
 var keyboard := KeyboardInput.new()
 var original_menu: OriginalMenu
+# Optional platform adapter returning a physical display-space safe rectangle.
+var safe_area_provider := Callable()
+var _last_safe_area := Rect2()
 
 func _ready() -> void:
 	art = OriginalArt.new()
@@ -39,9 +43,42 @@ func _ready() -> void:
 	_show_menu()
 
 func _resize() -> void:
-	position = (get_viewport_rect().size - Vector2(550,400)) / 2
-	if is_instance_valid(touch):
-		touch.queue_redraw()
+	if not is_inside_tree():return
+	_reset_input()
+	var safe := _safe_viewport_rect()
+	_last_safe_area = safe
+	var area := safe
+	var active := is_instance_valid(touch) and touch.is_inside_tree() and touch.is_visible_in_tree()
+	if active:
+		# Reserve complete hit circles, including a five-pixel gap to the game.
+		# Prefer whichever arrangement preserves the larger 550x400 surface.
+		var side_scale := minf(safe.size.y/400.0,(safe.size.x-280.0)/550.0)
+		var dock_scale := minf((safe.size.y-140.0)/400.0,safe.size.x/550.0)
+		if side_scale >= dock_scale:
+			area = Rect2(safe.position+Vector2(140,0),safe.size-Vector2(280,0))
+		else:
+			area.size.y -= 140
+		var y := safe.end.y-70
+		touch.configure(Vector2(safe.position.x+70,y),Vector2(safe.end.x-70,y))
+	var factor := minf(1.0,minf(area.size.x/550.0,area.size.y/400.0))
+	scale = Vector2.ONE * factor
+	position = area.position+(area.size-Vector2(550,400)*factor)/2
+
+func _safe_viewport_rect() -> Rect2:
+	var viewport := get_viewport_rect()
+	var physical: Rect2
+	if safe_area_provider.is_valid():
+		physical = safe_area_provider.call()
+	elif OS.get_name() in ["Android","iOS"]:
+		physical = Rect2(DisplayServer.get_display_safe_area())
+	else:
+		# Desktop usable-screen bounds include taskbars and are not phone insets.
+		return viewport
+	if not physical.has_area():return viewport
+	# Viewport screen coordinates are relative to the containing native window.
+	physical.position -= Vector2(get_window().position)
+	var safe := (get_viewport().get_screen_transform().affine_inverse() * physical).intersection(viewport)
+	return safe if safe.has_area() else viewport
 
 func _clear_screen() -> void:
 	_reset_input()
@@ -61,7 +98,9 @@ func _clear_screen() -> void:
 	touch = null
 	overlay = null
 	original_hud = null
+	original_results = null
 	paused = false
+	_resize()
 
 func _background(path: String) -> void:
 	var sprite := Sprite2D.new()
@@ -146,10 +185,14 @@ func _show_round() -> void:
 	_button(ui, "Ⅱ", Rect2(46,363,36,17), _toggle_pause)
 	_button(ui, "TOUCH", Rect2(4,382,78,15), _toggle_touch)
 	touch = MobileInput.new()
+	touch.set_as_top_level(true)
+	touch.z_index = 3000
 	touch.fire_changed.connect(func(held: bool): fire_inputs[0].set_source("touch", held))
 	touch.input_cancelled.connect(_reset_input)
 	touch.visible = touch_enabled
 	ui.add_child(touch)
+	touch.visibility_changed.connect(_resize)
+	_resize()
 	_update_hud()
 	audio.play_music(["401_Bombit_-_level_1.mp3","402_Bombit_-_level_2.mp3","403_Bombit_-_level_3.mp3","404_Bombit_-_level_4.mp3"][(session.stage-1)%4])
 
@@ -203,8 +246,12 @@ func _update_hud() -> void:
 	original_hud.sync(session)
 
 func _show_result() -> void:
+	if screen == "result":
+		return
 	screen = "result"
 	view.frozen = true
+	if session.result == "timeup_lose":
+		view.present_timeout_loss()
 	_reset_input()
 	touch.enabled = false
 	var win := session.result.ends_with("win")
@@ -212,22 +259,38 @@ func _show_result() -> void:
 	for id in players:
 		high_score = maxi(high_score, session.totals[id])
 	_save_preferences()
-	overlay = Control.new()
-	ui.add_child(overlay)
-	_panel(overlay, Rect2(127,95,352,229))
-	var title := "STAGE CLEAR!" if win else "TRY AGAIN!" if session.can_continue() else "GAME OVER"
-	if win and session.stage == session.total_stages:
-		title = "YOU WIN!"
-	if session.result.begins_with("timeup"):
-		title = "TIME UP · " + ("YOU WIN" if win else "ROUND LOST")
-	_label(overlay, title, Rect2(135,110,336,34), 23)
-	var score_text := "SCORE  %06d\nBEST  %06d" % [session.totals[0],high_score] if players == 1 else "P1  %06d   P2  %06d\nBEST  %06d" % [session.totals[0],session.totals[1],high_score]
-	_label(overlay, score_text, Rect2(144,160,318,55), 17)
-	if session.can_continue():
-		_button(overlay, "NEXT STAGE" if win else "RETRY", Rect2(163,226,278,35), func(): session.next_round(); _show_round())
-	else:
-		_button(overlay, "PLAY AGAIN", Rect2(163,226,278,35), _start_game)
-	_button(overlay, "MAIN MENU", Rect2(192,275,220,28), _show_menu)
+	original_results = OriginalResults.new()
+	original_results.session = session
+	original_results.saved_names = {0:prefs.get_value("game","player_name1",""),1:prefs.get_value("game","player_name2","")}
+	original_results.scores_shown.connect(func(terminal: bool):
+		if terminal:
+			audio.play_music("406_Bombit_-_mainscreen.mp3")
+		else:
+			audio.music.stop())
+	original_results.action_requested.connect(_result_action)
+	ui.add_child(original_results)
+
+func _process(delta: float) -> void:
+	if _safe_viewport_rect() != _last_safe_area:
+		_resize()
+	if screen == "result" and is_instance_valid(original_results):
+		original_results.advance(delta)
+
+func _result_action(action: String) -> void:
+	if screen != "result":
+		return
+	match action:
+		"continue":
+			if original_results.phase == "scores" and session.can_continue():
+				session.next_round()
+				_show_round()
+		"replay": _start_game()
+		"menu": _show_menu()
+		"save":
+			for id in original_results.names:
+				prefs.set_value("game","player_name%d" % (id+1),original_results.names[id].text)
+			_save_preferences()
+			original_results.notice.text = "Saved locally · best %d" % high_score
 
 func _toggle_pause() -> void:
 	if screen != "game":
@@ -273,6 +336,11 @@ func _notification(what: int) -> void:
 		_toggle_pause()
 
 func _unhandled_key_input(event: InputEvent) -> void:
+	if screen == "result" and event is InputEventKey:
+		if not event.pressed:
+			original_results.confirm()
+		get_viewport().set_input_as_handled()
+		return
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode in [KEY_ESCAPE, KEY_P]:
 			if screen == "game":
@@ -281,13 +349,6 @@ func _unhandled_key_input(event: InputEvent) -> void:
 				_show_menu()
 		elif event.keycode == KEY_M:
 			_toggle_sound()
-		elif event.keycode == KEY_ENTER:
-			if screen == "result":
-				if session.can_continue():
-					session.next_round()
-					_show_round()
-				else:
-					_start_game()
 
 func _bind_key(action: String, code: int) -> void:
 	if not InputMap.has_action(action):

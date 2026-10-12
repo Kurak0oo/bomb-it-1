@@ -83,6 +83,8 @@ def main():
             phases.append(("python_compile", [sys.executable, "-m", "compileall", "-q", "tools"], None))
             phases.append(("tooling", [sys.executable, "-m", "unittest", "discover", "-s", "tools/tests", "-v"], None))
             phases.append(("reference_parse", command + ["--check-only", "--script", "res://tests/reference_capture.gd"], None))
+            phases.append(("core_reference_parse", command + ["--check-only", "--script", "res://tests/core_reference_capture.gd"], None))
+            phases.append(("motion_reference_parse", command + ["--check-only", "--script", "res://tests/motion_reference_capture.gd"], None))
         for suite in args.suite or SUITES:
             if suite == "tooling":
                 continue
@@ -90,8 +92,10 @@ def main():
         if args.visual:
             print(f"Captures: {captures}", flush=True)
             render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
-            phases += [("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),
+            phases += [("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
+                       ("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),
                        ("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
+                       ("result_render", render + ["--script", "res://tests/result_render_check.gd"], "RESULT_RENDER_OK"),
                        ("hud_render", render + ["--script", "res://tests/hud_render_check.gd"], "HUD_RENDER_OK"),
                        ("feedback_render", render + ["--script", "res://tests/feedback_render_check.gd"], "FEEDBACK_RENDER_OK"),
                        ("input_render", render + ["--script", "res://tests/input_render_check.gd"], "INPUT_RENDER_OK"),

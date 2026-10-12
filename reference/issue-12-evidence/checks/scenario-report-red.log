@@ -1,0 +1,25 @@
+test_core_profile_rejects_truncated_observations (test_trace_compare.ReferenceComparison.test_core_profile_rejects_truncated_observations) ... ok
+test_malformed_json_is_rejected (test_trace_compare.ReferenceComparison.test_malformed_json_is_rejected) ... ok
+test_motion_capture_reports_first_divergence_for_each_scenario (test_trace_compare.ReferenceComparison.test_motion_capture_reports_first_divergence_for_each_scenario) ... ERROR
+test_motion_profile_rejects_incomplete_capture (test_trace_compare.ReferenceComparison.test_motion_profile_rejects_incomplete_capture) ... ok
+test_port_generated_reference_is_rejected (test_trace_compare.ReferenceComparison.test_port_generated_reference_is_rejected) ... ok
+test_real_capture_field_perturbation_reports_exact_location (test_trace_compare.ReferenceComparison.test_real_capture_field_perturbation_reports_exact_location) ... ok
+test_real_capture_one_tick_perturbation_is_rejected (test_trace_compare.ReferenceComparison.test_real_capture_one_tick_perturbation_is_rejected) ... ok
+test_real_captures_fail_closed_when_both_are_incomplete_or_malformed (test_trace_compare.ReferenceComparison.test_real_captures_fail_closed_when_both_are_incomplete_or_malformed) ... ok
+test_real_captures_retain_the_observed_differences (test_trace_compare.ReferenceComparison.test_real_captures_retain_the_observed_differences) ... ok
+test_real_movement_completion_delayed_one_tick_is_detected (test_trace_compare.ReferenceComparison.test_real_movement_completion_delayed_one_tick_is_detected) ... ok
+test_reports_first_divergent_tick_and_field (test_trace_compare.ReferenceComparison.test_reports_first_divergent_tick_and_field) ... ok
+
+======================================================================
+ERROR: test_motion_capture_reports_first_divergence_for_each_scenario (test_trace_compare.ReferenceComparison.test_motion_capture_reports_first_divergence_for_each_scenario)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Eiji\Github\bomb-it-worktrees\issue12\tools\tests\test_trace_compare.py", line 120, in test_motion_capture_reports_first_divergence_for_each_scenario
+    first = report["scenario_first_divergences"]
+            ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'scenario_first_divergences'
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.701s
+
+FAILED (errors=1)

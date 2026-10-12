@@ -281,6 +281,7 @@ func _break_brick(cell: CellState, at: Vector2i, owner: int = 0) -> void:
 	pops.append(Pop.new(at))
 	if items_enabled:
 		heroes[owner].score += [5,10,15][difficulty]
+		heroes[owner].destruction_score += [5,10,15][difficulty]
 		if rng.next(100) < 65:
 			if rng.next(100) < 80:
 				var roll := rng.next(100)
@@ -348,6 +349,7 @@ func _tick_damage(hero: HeroState) -> void:
 			return
 		if cell.energy_owner >= 0 and cell.energy_owner != hero.id:
 			heroes[cell.energy_owner].score += 1000
+			heroes[cell.energy_owner].kill_score += 1000
 		hero.lives -= 1
 		if hero.controller == HeroState.Controller.AI and hero.lives > 0:
 			hero.shield = 60
@@ -396,6 +398,7 @@ func _collect_item(hero: HeroState) -> void:
 			hero.speed_level = maxi(hero.speed_level - 1, 3)
 	cell.item = ""
 	hero.score += 100
+	hero.destruction_score += 100
 	events.append("pickup")
 
 

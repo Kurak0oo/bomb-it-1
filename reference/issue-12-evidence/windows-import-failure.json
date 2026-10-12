@@ -1,0 +1,10 @@
+[
+  {
+    "name": "import",
+    "passed": false,
+    "exit_code": 3221225477,
+    "timeout": false,
+    "seconds": 19.547,
+    "log": "import.log"
+  }
+]

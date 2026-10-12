@@ -1,0 +1,39 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: source result button hover changes artwork: continue
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/result_render_check.gd:8)
+       [1] button_feedback (res://tests/result_render_check.gd:36)
+       [2] capture (res://tests/qa_capture.gd:23)
+ERROR: source result button press restores source down artwork: continue
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/result_render_check.gd:8)
+       [1] button_feedback (res://tests/result_render_check.gd:37)
+       [2] capture (res://tests/qa_capture.gd:23)
+ERROR: source result button hover changes artwork: submit
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/result_render_check.gd:8)
+       [1] button_feedback (res://tests/result_render_check.gd:36)
+       [2] capture (res://tests/qa_capture.gd:23)
+ERROR: source result button press restores source down artwork: submit
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/result_render_check.gd:8)
+       [1] button_feedback (res://tests/result_render_check.gd:37)
+       [2] capture (res://tests/qa_capture.gd:23)
+ERROR: source result button hover changes artwork: portal
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/result_render_check.gd:8)
+       [1] button_feedback (res://tests/result_render_check.gd:36)
+       [2] capture (res://tests/qa_capture.gd:23)
+ERROR: source result button press restores source down artwork: portal
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/result_render_check.gd:8)
+       [1] button_feedback (res://tests/result_render_check.gd:37)
+       [2] capture (res://tests/qa_capture.gd:23)

@@ -9,6 +9,153 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_core_profile_rejects_truncated_observations(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name, source in [("original", "original-swf-bytecode"), ("rebuilt", "godot-rebuild")]:
+                (root / f"{name}.json").write_text(json.dumps({
+                    "source": source, "runtime": "fixture", "profile": "core-v1", "fps": 35,
+                    "tick_origin": "after-first-fixed-update-from-controlled-setup",
+                    "scenarios": {"move_tap": [{"tick": 0}]}}))
+            run = subprocess.run([sys.executable, str(ROOT / "tools/compare_traces.py"),
+                                  str(root / "original.json"), str(root / "rebuilt.json"),
+                                  "--output", str(root / "report.json")], capture_output=True, text=True)
+            self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+
+    def test_malformed_json_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for payload in [
+                '{"source":"original-swf-bytecode","source":"original-swf-bytecode","runtime":"fixture","scenarios":{"x":[{"tick":0,"energy":0}]}}',
+                '{"source":"original-swf-bytecode","runtime":"fixture","scenarios":{"x":[{"tick":0,"energy":NaN}]}}',
+            ]:
+                with self.subTest(payload=payload):
+                    (root / "original.json").write_text(payload)
+                    (root / "rebuilt.json").write_text(payload.replace("original-swf-bytecode", "godot-rebuild"))
+                    run = subprocess.run([sys.executable, str(ROOT / "tools/compare_traces.py"),
+                                          str(root / "original.json"), str(root / "rebuilt.json"),
+                                          "--output", str(root / "report.json")], capture_output=True, text=True)
+                    self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+
+    def compare_real(self, mutate=None, evidence_name="issue-11-evidence"):
+        evidence = ROOT / "reference" / evidence_name
+        original = json.loads((evidence / "original-trace.json").read_text(encoding="utf-8"))
+        rebuilt = json.loads((evidence / "rebuilt-trace.json").read_text(encoding="utf-8"))
+        if mutate:
+            mutate(original, rebuilt)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name, data in [("original", original), ("rebuilt", rebuilt)]:
+                (root / f"{name}.json").write_text(json.dumps(data), encoding="utf-8")
+            run = subprocess.run([sys.executable, str(ROOT / "tools/compare_traces.py"),
+                                  str(root / "original.json"), str(root / "rebuilt.json"),
+                                  "--output", str(root / "report.json")], capture_output=True, text=True)
+            report = json.loads((root / "report.json").read_text()) if (root / "report.json").exists() else None
+            return run, report
+
+    def test_real_captures_retain_the_observed_differences(self):
+        run, report = self.compare_real()
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"move_tap", "tick":1,
+                         "field":"pixelXTwips", "original":4899, "rebuilt":4900})
+
+    def test_real_capture_field_perturbation_reports_exact_location(self):
+        def perturb(original, rebuilt):
+            rebuilt["scenarios"]["move_tap"][0]["shieldTicks"] += 1
+        run, report = self.compare_real(perturb)
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"move_tap", "tick":0,
+                         "field":"shieldTicks", "original":998, "rebuilt":999})
+
+    def test_real_movement_completion_delayed_one_tick_is_detected(self):
+        def perturb(original, rebuilt):
+            rows = rebuilt["scenarios"]["move_tap"]
+            rows[6] = dict(rows[5], tick=6)
+        run, report = self.compare_real(perturb)
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertIn({"scenario":"move_tap", "tick":6, "field":"moving",
+                       "original":False, "rebuilt":True}, report["differences"])
+        self.assertIn({"scenario":"move_tap", "tick":6, "field":"moveRemaining",
+                       "original":0, "rebuilt":1}, report["differences"])
+
+    def test_real_capture_one_tick_perturbation_is_rejected(self):
+        def perturb(original, rebuilt):
+            rebuilt["scenarios"]["move_tap"][6]["tick"] += 1
+        run, report = self.compare_real(perturb)
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 6", run.stderr)
+        self.assertIsNone(report)
+
+    def test_real_captures_fail_closed_when_both_are_incomplete_or_malformed(self):
+        changes = {
+            "scenario": lambda c: c["scenarios"].pop("damage_growth"),
+            "row": lambda c: c["scenarios"]["move_tap"].pop(),
+            "field": lambda c: c["scenarios"]["move_tap"][0].pop("moving"),
+            "boolean": lambda c: c["scenarios"]["move_tap"][0].update(moving=1),
+            "bombs": lambda c: c["scenarios"]["move_tap"][0].update(bombs="undefined"),
+            "profile": lambda c: c.pop("profile"),
+            "origin": lambda c: c.update(tick_origin="before-update"),
+            "configuration": lambda c: c.update(configuration_sha256="unknown"),
+        }
+        for name, change in changes.items():
+            with self.subTest(name=name):
+                def perturb(original, rebuilt):
+                    change(original)
+                    change(rebuilt)
+                run, report = self.compare_real(perturb)
+                self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+                self.assertIsNone(report)
+
+    def test_motion_profile_rejects_incomplete_capture(self):
+        def perturb(original, rebuilt):
+            for capture in (original, rebuilt):
+                capture["profile"] = "motion-v1"
+        run, report = self.compare_real(perturb)
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("motion-v1: incompatible configuration", run.stderr)
+
+    def test_motion_capture_reports_first_divergence_for_each_scenario(self):
+        run, report = self.compare_real(evidence_name="issue-12-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        first = report["scenario_first_divergences"]
+        self.assertEqual(first["push_corridor"], {"scenario":"push_corridor", "tick":0,
+                         "field":"bombFuse", "original":59, "rebuilt":60})
+        self.assertEqual(first["grenade_right"]["tick"], 18)
+        self.assertEqual(first["grenade_right"]["field"], "energies")
+        self.assertIsNone(first["push_blocked"])
+        self.assertIsNone(first["grenade_edge"])
+
+    def test_motion_real_field_and_tick_perturbations_are_detected(self):
+        def field(original, rebuilt):
+            rebuilt["scenarios"]["grenade_right"][0]["grenadeTargetX"] += 1
+        run, report = self.compare_real(field, "issue-12-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertIn({"scenario":"grenade_right", "tick":0, "field":"grenadeTargetX",
+                       "original":10, "rebuilt":11}, report["differences"])
+        def tick(original, rebuilt):
+            rebuilt["scenarios"]["push_alignment"][1]["tick"] += 1
+        run, report = self.compare_real(tick, "issue-12-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 1", run.stderr)
+        self.assertIsNone(report)
+
+    def test_motion_captures_reject_shared_truncation_and_malformed_cells(self):
+        changes = {
+            "scenario": lambda c: c["scenarios"].pop("push_alignment"),
+            "row": lambda c: c["scenarios"]["grenade_right"].pop(),
+            "field": lambda c: c["scenarios"]["grenade_right"][0].pop("grenadeFrame"),
+            "cells": lambda c: c["scenarios"]["grenade_right"][0].update(energies="undefined"),
+            "activity": lambda c: c["scenarios"]["grenade_right"][0].update(grenadeActive=1),
+        }
+        for name, change in changes.items():
+            with self.subTest(name=name):
+                def perturb(original, rebuilt):
+                    change(original)
+                    change(rebuilt)
+                run, report = self.compare_real(perturb, "issue-12-evidence")
+                self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+                self.assertIsNone(report)
+
     def test_port_generated_reference_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
