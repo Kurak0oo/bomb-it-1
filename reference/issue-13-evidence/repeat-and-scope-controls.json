@@ -1,0 +1,26 @@
+{
+  "core": {
+    "original_observations_equal_previous": true,
+    "rebuilt_observations_equal_previous": true
+  },
+  "motion": {
+    "original_observations_equal_previous": true,
+    "rebuilt_observations_equal_previous": true
+  },
+  "repeat": {
+    "original_observations_equal": true,
+    "rebuilt_observations_equal": true
+  },
+  "interaction": {
+    "scenarios": 17,
+    "ticks": 784,
+    "fields_per_tick": 43,
+    "differences": 134
+  },
+  "post_merge": {
+    "integration": "65692e0",
+    "merge": "2ecf6f5",
+    "rebuilt_capture_equal": true,
+    "differences": 134
+  }
+}

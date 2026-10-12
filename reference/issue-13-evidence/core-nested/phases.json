@@ -1,0 +1,34 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.125,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\core-nested\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 13.14,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\core-nested\\original.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.813,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\core-nested\\import.log"
+  },
+  {
+    "name": "rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\core-nested\\rebuilt.log"
+  }
+]

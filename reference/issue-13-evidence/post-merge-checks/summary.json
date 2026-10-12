@@ -1,0 +1,74 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 24.015,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.235,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 14.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.437,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\sim.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue13\\.artifacts\\issue13\\post-merge-checks\\special.log"
+  }
+]

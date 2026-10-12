@@ -85,6 +85,7 @@ def main():
             phases.append(("reference_parse", command + ["--check-only", "--script", "res://tests/reference_capture.gd"], None))
             phases.append(("core_reference_parse", command + ["--check-only", "--script", "res://tests/core_reference_capture.gd"], None))
             phases.append(("motion_reference_parse", command + ["--check-only", "--script", "res://tests/motion_reference_capture.gd"], None))
+            phases.append(("interaction_reference_parse", command + ["--check-only", "--script", "res://tests/interaction_reference_capture.gd"], None))
         for suite in args.suite or SUITES:
             if suite == "tooling":
                 continue
