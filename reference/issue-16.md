@@ -76,6 +76,9 @@ Reviewed against the starting revision for full-content bounds, retained origina
 art, OS/window/stretch coordinate ownership, input reset on resize, before-draw
 initialization, and scene/touch-toggle lifecycle. Review strengthened the initial
 window-local test fixtures to absolute display coordinates and exposed the missing
-native-window-origin subtraction before handoff. Native screenshots and the
+native-window-origin subtraction before handoff. Desktop Godot screenshots and the
 narrow/asymmetric contact sheet were visually inspected; no real-device acceptance
 is inferred from them.
+
+After merging integration (including issue 12), tooling, source-capture parse
+checks and simulation passed again; retained in `post-merge-summary.json`.
