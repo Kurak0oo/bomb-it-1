@@ -12,7 +12,7 @@ import time
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-SUITES = ("sim", "actors", "view", "timeline", "campaign", "special", "audio", "soak", "pacing")
+SUITES = ("sim", "actors", "view", "timeline", "campaign", "special", "audio", "soak", "pacing", "rng")
 ENGINE_VERSION = (ROOT / "tools/godot-version.txt").read_text().strip()
 
 
@@ -98,6 +98,8 @@ def main():
     captures = output / "captures" / uuid.uuid4().hex[:12]
     env["BOMB_IT_QA_DIR"] = str(captures)
     env["BOMB_IT_PACING_REPORT"] = str(output / "pacing.json")
+    env["BOMB_IT_RNG_REFERENCE"] = str(args.project / "tests/fixtures/rng_original.json")
+    env["BOMB_IT_RNG_REBUILT"] = str(output / "rng-rebuilt.json")
     # Isolate Godot's user:// data from the player's saved preferences.
     env["APPDATA"] = str(output / "user-data")
     env["XDG_DATA_HOME"] = str(output / "user-data")
@@ -136,6 +138,9 @@ def main():
                 phases.append(("hit_accounting", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--accounting-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
             if suite == "campaign":
                 phases.append(("accounting_session", command + ["--script", "res://tests/accounting_session_check.gd"], "ACCOUNTING_SESSION_OK"))
+            if suite == "rng":
+                phases.append(("rng_reference", command + ["--script", "res://tests/rng_reference_capture.gd"], "RNG_REFERENCE_CAPTURE_OK"))
+                phases.append(("rng_compare", [sys.executable,str(ROOT / "tools/compare_rng.py"),env["BOMB_IT_RNG_REFERENCE"],env["BOMB_IT_RNG_REBUILT"],"--output",str(output / "rng-comparison.json")], "RNG_COMPONENTS_OK"))
             if suite == "special":
                 phases.append(("special_contact", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--contact-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
                 phases.append(("ice_movement", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--icewalk-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
