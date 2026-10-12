@@ -13,6 +13,34 @@ func click(main: Node2D, point: Vector2) -> void:
 		event.button_index = MOUSE_BUTTON_LEFT
 		event.pressed = pressed
 		root.push_input(event,true)
+func pointer_state(main: Node2D, point: Vector2, down: bool = false) -> Image:
+	var motion := InputEventMouseMotion.new()
+	motion.position = main.position + point
+	root.push_input(motion,true)
+	if down:
+		var press := InputEventMouseButton.new()
+		press.position = motion.position
+		press.button_index = MOUSE_BUTTON_LEFT
+		press.pressed = true
+		root.push_input(press,true)
+	await process_frame
+	await RenderingServer.frame_post_draw
+	return root.get_texture().get_image()
+
+func button_feedback(main: Node2D, point: Vector2, rectangle: Rect2i, name: String) -> void:
+	var up := (await pointer_state(main,Vector2(540,5))).get_region(rectangle)
+	var over := (await pointer_state(main,point)).get_region(rectangle)
+	await preload("res://tests/qa_capture.gd").capture(self,"result-button-%s-over" % name)
+	var down := (await pointer_state(main,point,true)).get_region(rectangle)
+	await preload("res://tests/qa_capture.gd").capture(self,"result-button-%s-down" % name)
+	check(up.get_data() != over.get_data(),"source result button hover changes artwork: "+name)
+	check(over.get_data() != down.get_data(),"source result button press restores source down artwork: "+name)
+	var release := InputEventMouseButton.new()
+	release.position = main.position + Vector2(540,5)
+	release.button_index = MOUSE_BUTTON_LEFT
+	release.pressed = false
+	root.push_input(release,true)
+
 func run() -> void:
 	root.size = Vector2i(550,400)
 	var main = load("res://scenes/main.tscn").instantiate()
@@ -49,6 +77,7 @@ func run() -> void:
 	root.push_input(released,true)
 	check(main.original_results.phase == "scores","source key-up skip becomes available at banner frame70")
 	check(main.session.totals[0] == total,"skipping outcome never awards twice")
+	await button_feedback(main,Vector2(278,362),Rect2i(201,344,154,40),"continue")
 	for humans in [1,2]:
 		for outcome in ["win","lose","timeup_win","timeup_lose","exhausted","complete"]:
 			main.players = humans
@@ -99,6 +128,13 @@ func run() -> void:
 			check(main.session.totals == totals and main.session.state.tick_number == tick,"result display is read-only: %dP %s" % [humans,outcome])
 			await process_frame
 			if terminal:
+				if humans == 1 and outcome == "exhausted":
+					await button_feedback(main,Vector2(278,208),Rect2i(184,187,188,40),"submit")
+					await button_feedback(main,Vector2(280,275),Rect2i(190,253,200,44),"portal")
+					var logo_start := (await pointer_state(main,Vector2(540,5))).get_region(Rect2i(180,330,185,32))
+					main._process(2.0)
+					var logo_later := (await pointer_state(main,Vector2(540,5))).get_region(Rect2i(180,330,185,32))
+					check(logo_start.get_data() == logo_later.get_data(),"source one-frame final logo remains stable over time")
 				main.session.next_round()
 				check(main.session.stage == stage and main.session.result != "", "terminal campaigns cannot continue")
 				click(main,Vector2(200,379))

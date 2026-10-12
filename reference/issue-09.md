@@ -105,8 +105,15 @@ matrix coverage, not a full independent original-playback matrix.
 Exact pixel parity is unverified: Ruffle device-font rendering differs from the
 recovered embedded Arial Black used by Godot, and FFDec 2x extraction/sampling also
 differs. Every differing pixel is retained, with no tolerance or blanket renderer
-exception. Static score-button artwork has working release targets; source hover/
-pressed raster parity and the final logo's nested animation are not established.
+exception. Result buttons 566/614/442 now use the source up/over/down artwork with original
+placement matrices and display-list order; source down matches up, while hover
+adds the green outline. Rendered pointer tests exercise all three buttons. Exact
+pixel comparison of the screen as a whole retains the font/sampling limitations.
+
+The final logo does **not** have an animation: recursive inventory of Sprite 395,
+394, 391, 389, 390 and 393 finds only one-frame symbols and one portal-release
+callback. The prior uncertainty is resolved by this source inventory, with a
+rendered stability check over two elapsed seconds; no movement was invented.
 
 The accepted campaign award/revival policies remain unchanged, including the
 existing revival deduction at next-round creation. This ticket does not claim an
@@ -130,3 +137,11 @@ Final post-merge public-runner result: campaign, simulation, tooling and all nin
 rendered phases passed (`issue09-handoff`, capture run `98b760d889f5`). The timeout
 contact sheet was visually inspected: one/two human replacements, no separate
 smoke column, and both disappear at retirement.
+
+Source button feedback follow-up: the rendered seam failed for all three missing
+hover/press changes before implementation. The exporter now splits each result
+display list around button placements, preserving source labels/decorations above
+their backplates; Godot uses source textures for normal, hover and pressed states.
+[Recursive final-logo inventory](issue-09-capture/final-logo-inventory.json) records
+the static source subtree, including its sole release script. Platform replay/menu
+buttons retain their existing added presentation.

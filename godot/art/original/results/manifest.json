@@ -1,13 +1,31 @@
 {
   "scores1": {
-    "bounds": [
-      -275.0,
-      -200.0,
-      550.0,
-      400.0
-    ],
     "buttons": [
       {
+        "matrix": [
+          1.3583526611328125,
+          0.0,
+          0.0,
+          1.0,
+          -70.05,
+          146.8
+        ],
+        "symbol": 566,
+        "bounds": [
+          -2.0,
+          -1.95,
+          108.8,
+          35.55
+        ]
+      }
+    ],
+    "layers": [
+      {
+        "image": "scores-1-layer-0.png",
+        "kind": "static"
+      },
+      {
+        "kind": "button",
         "bounds": [
           -2.0,
           -1.95,
@@ -23,86 +41,114 @@
           -70.05,
           146.8
         ]
+      },
+      {
+        "image": "scores-1-layer-1.png",
+        "kind": "static"
       }
+    ],
+    "bounds": [
+      -275.0,
+      -200.0,
+      550.0,
+      400.0
     ],
     "fields": [
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "killScore1",
         "rect": [
           39.35,
           -117.4,
           84.3,
           32.2
         ],
-        "name": "killScore1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "timeScore1",
         "rect": [
           39.35,
           -37.95,
           84.3,
           32.2
         ],
-        "name": "timeScore1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "score1",
         "rect": [
           40.0,
           42.75,
           84.3,
           32.2
         ],
-        "name": "score1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "bonus1",
         "rect": [
           39.35,
           -1.65,
           84.3,
           32.2
         ],
-        "name": "bonus1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "destruction1",
         "rect": [
           39.35,
           -79.4,
           84.3,
           32.2
         ],
-        "name": "destruction1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "totalScore1",
         "rect": [
           40.0,
           81.1,
           84.3,
           32.2
         ],
-        "name": "totalScore1"
+        "align": 2,
+        "size": 20.0
       }
     ]
   },
   "scores2": {
-    "bounds": [
-      -275.0,
-      -200.0,
-      550.0,
-      400.0
-    ],
     "buttons": [
       {
+        "matrix": [
+          1.3583526611328125,
+          0.0,
+          0.0,
+          1.0,
+          -70.05,
+          146.8
+        ],
+        "symbol": 566,
+        "bounds": [
+          -2.0,
+          -1.95,
+          108.8,
+          35.55
+        ]
+      }
+    ],
+    "layers": [
+      {
+        "image": "scores-2-layer-0.png",
+        "kind": "static"
+      },
+      {
+        "kind": "button",
         "bounds": [
           -2.0,
           -1.95,
@@ -118,152 +164,197 @@
           -70.05,
           146.8
         ]
+      },
+      {
+        "image": "scores-2-layer-1.png",
+        "kind": "static"
       }
+    ],
+    "bounds": [
+      -275.0,
+      -200.0,
+      550.0,
+      400.0
     ],
     "fields": [
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "killScore2",
         "rect": [
           112.94999999999999,
           -93.05,
           84.3,
           32.2
         ],
-        "name": "killScore2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "timeScore2",
         "rect": [
           112.94999999999999,
           -30.4,
           84.3,
           32.2
         ],
-        "name": "timeScore2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "bonus2",
         "rect": [
           112.94999999999999,
           0.3500000000000001,
           84.3,
           32.2
         ],
-        "name": "bonus2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "score2",
         "rect": [
           112.94999999999999,
           44.8,
           84.3,
           32.2
         ],
-        "name": "score2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "killScore1",
         "rect": [
           -44.15,
           -93.05,
           84.3,
           32.2
         ],
-        "name": "killScore1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "timeScore1",
         "rect": [
           -44.15,
           -30.4,
           84.3,
           32.2
         ],
-        "name": "timeScore1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "bonus1",
         "rect": [
           -44.15,
           0.3500000000000001,
           84.3,
           32.2
         ],
-        "name": "bonus1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "score1",
         "rect": [
           -44.15,
           44.8,
           84.3,
           32.2
         ],
-        "name": "score1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "destruction2",
         "rect": [
           112.94999999999999,
           -60.75,
           84.3,
           32.2
         ],
-        "name": "destruction2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "destruction1",
         "rect": [
           -44.15,
           -60.75,
           84.3,
           32.2
         ],
-        "name": "destruction1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "totalScore2",
         "rect": [
           113.55000000000001,
           77.65,
           84.3,
           32.2
         ],
-        "name": "totalScore2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "totalScore1",
         "rect": [
           -43.550000000000004,
           77.65,
           84.3,
           32.2
         ],
-        "name": "totalScore1"
+        "align": 2,
+        "size": 20.0
       }
     ]
   },
   "final1": {
-    "bounds": [
-      -259.75,
-      -194.6,
-      519.5,
-      346.85
-    ],
     "buttons": [
       {
+        "matrix": [
+          1.81231689453125,
+          0.0,
+          0.0,
+          1.1022186279296875,
+          -79.85,
+          48.1
+        ],
+        "symbol": 442,
+        "bounds": [
+          -2.0,
+          -1.95,
+          108.8,
+          35.55
+        ]
+      },
+      {
+        "matrix": [
+          1.6832427978515625,
+          0.0,
+          0.0,
+          1.019989013671875,
+          -85.45,
+          -18.1
+        ],
+        "symbol": 614,
+        "bounds": [
+          -2.0,
+          -1.95,
+          108.8,
+          35.55
+        ]
+      }
+    ],
+    "layers": [
+      {
+        "image": "final-1-layer-0.png",
+        "kind": "static"
+      },
+      {
+        "kind": "button",
         "bounds": [
           -2.0,
           -1.95,
@@ -281,6 +372,11 @@
         ]
       },
       {
+        "image": "final-1-layer-1.png",
+        "kind": "static"
+      },
+      {
+        "kind": "button",
         "bounds": [
           -2.0,
           -1.95,
@@ -296,42 +392,87 @@
           -85.45,
           -18.1
         ]
+      },
+      {
+        "image": "final-1-layer-2.png",
+        "kind": "static"
       }
+    ],
+    "bounds": [
+      -259.75,
+      -194.6,
+      519.5,
+      346.85
     ],
     "fields": [
       {
-        "size": 20.0,
-        "align": 0,
+        "name": "totalScore1",
         "rect": [
           17.7,
           -116.3,
           88.3,
           32.2
         ],
-        "name": "totalScore1"
+        "align": 0,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "_parent.playerName1",
         "rect": [
           -26.95,
           -63.6,
           165.95,
           26.85
         ],
-        "name": "_parent.playerName1"
+        "align": 2,
+        "size": 20.0
       }
     ]
   },
   "final2": {
-    "bounds": [
-      -259.75,
-      -194.6,
-      519.5,
-      346.85
-    ],
     "buttons": [
       {
+        "matrix": [
+          1.81231689453125,
+          0.0,
+          0.0,
+          1.1022186279296875,
+          -79.85,
+          48.1
+        ],
+        "symbol": 442,
+        "bounds": [
+          -2.0,
+          -1.95,
+          108.8,
+          35.55
+        ]
+      },
+      {
+        "matrix": [
+          1.6832427978515625,
+          0.0,
+          0.0,
+          1.019989013671875,
+          -85.45,
+          -18.1
+        ],
+        "symbol": 614,
+        "bounds": [
+          -2.0,
+          -1.95,
+          108.8,
+          35.55
+        ]
+      }
+    ],
+    "layers": [
+      {
+        "image": "final-2-layer-0.png",
+        "kind": "static"
+      },
+      {
+        "kind": "button",
         "bounds": [
           -2.0,
           -1.95,
@@ -349,6 +490,11 @@
         ]
       },
       {
+        "image": "final-2-layer-1.png",
+        "kind": "static"
+      },
+      {
+        "kind": "button",
         "bounds": [
           -2.0,
           -1.95,
@@ -364,52 +510,62 @@
           -85.45,
           -18.1
         ]
+      },
+      {
+        "image": "final-2-layer-2.png",
+        "kind": "static"
       }
+    ],
+    "bounds": [
+      -259.75,
+      -194.6,
+      519.5,
+      346.85
     ],
     "fields": [
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "totalScore2",
         "rect": [
           139.54999999999998,
           -112.25,
           88.5,
           32.2
         ],
-        "name": "totalScore2"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 2,
+        "name": "totalScore1",
         "rect": [
           -120.64999999999999,
           -112.25,
           87.75,
           32.2
         ],
-        "name": "totalScore1"
+        "align": 2,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 0,
+        "name": "_parent.playerName2",
         "rect": [
           85.55,
           -62.6,
           157.55,
           26.85
         ],
-        "name": "_parent.playerName2"
+        "align": 0,
+        "size": 20.0
       },
       {
-        "size": 20.0,
-        "align": 0,
+        "name": "_parent.playerName1",
         "rect": [
           -173.9,
           -62.6,
           159.05,
           26.85
         ],
-        "name": "_parent.playerName1"
+        "align": 0,
+        "size": 20.0
       }
     ]
   },

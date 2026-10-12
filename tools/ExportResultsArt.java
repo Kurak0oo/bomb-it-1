@@ -11,7 +11,7 @@ import com.jpexs.decompiler.flash.exporters.commonshape.Matrix;
 
 /** Source-only outcome and score artwork, with original dynamic-field geometry. */
 class ExportResultsArt {
- static Path out; static SWF swf;
+ static Path out; static SWF swf; static Set<Integer> exportedButtons=new HashSet<>();
  static String json(Object v) {
   if(v instanceof Map<?,?> m) {var rows=new ArrayList<String>();for(var e:m.entrySet())rows.add(json(e.getKey().toString())+":"+json(e.getValue()));return "{"+String.join(",",rows)+"}";}
   if(v instanceof List<?> a)return "["+String.join(",",a.stream().map(ExportResultsArt::json).toList())+"]";
@@ -39,8 +39,20 @@ class ExportResultsArt {
   }
   // Full source stage bounds in the sprite's root placement coordinates.
   RECT bounds=symbol==603?new RECT(-5500,5500,-4000,4000):sprite.getRect();
-  render(t,index,bounds,name);frame.layers=original;
-  return Map.of("fields",fields,"buttons",buttons,"bounds",List.of(bounds.Xmin/20.0,bounds.Ymin/20.0,bounds.getWidth()/20.0,bounds.getHeight()/20.0));
+  render(t,index,bounds,name);
+  var clean=new TreeMap<>(frame.layers);var segment=new TreeMap<Integer,DepthState>();
+  var layers=new ArrayList<Map<String,Object>>();int sequence=0;
+  for(var entry:clean.entrySet()) {
+   var state=entry.getValue();
+   if(!(state.getCharacter() instanceof ButtonTag button) || state.characterId==565) {segment.put(entry.getKey(),state);continue;}
+   if(!segment.isEmpty()) {String file=name.replace(".png","-layer-"+(sequence++)+".png");frame.layers=segment;render(t,index,bounds,file);layers.add(Map.of("kind","static","image",file));segment=new TreeMap<>();}
+   var m=new Matrix(state.matrix);var b=button.getRect();
+   layers.add(Map.of("kind","button","symbol",state.characterId,"matrix",List.of(m.scaleX,m.rotateSkew0,m.rotateSkew1,m.scaleY,m.translateX/20,m.translateY/20),"bounds",List.of(b.Xmin/20.0,b.Ymin/20.0,b.getWidth()/20.0,b.getHeight()/20.0)));
+   if(exportedButtons.add(state.characterId))for(int f=0;f<3;f++)render(button.getTimeline(),f,b,"button-"+state.characterId+"-"+f+".png");
+  }
+  if(!segment.isEmpty()) {String file=name.replace(".png","-layer-"+(sequence++)+".png");frame.layers=segment;render(t,index,bounds,file);layers.add(Map.of("kind","static","image",file));}
+  frame.layers=original;
+  return Map.of("fields",fields,"buttons",buttons,"layers",layers,"bounds",List.of(bounds.Xmin/20.0,bounds.Ymin/20.0,bounds.getWidth()/20.0,bounds.getHeight()/20.0));
  }
  public static void main(String[] args)throws Exception {
   out=Path.of(args[1]);Files.createDirectories(out);swf=new SWF(new FileInputStream(args[0]),false);

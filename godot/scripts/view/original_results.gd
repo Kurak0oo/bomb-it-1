@@ -61,22 +61,19 @@ func _show_scores() -> void:
 		content.remove_child(child)
 		child.queue_free()
 	if phase == "scores":
-		_image("scores-%d.png" % session.humans,Vector2.ZERO)
 		var layout: Dictionary = manifest["scores%d" % session.humans]
+		_sheet(layout,Vector2(275,200))
 		_fields(layout,Vector2(275,200))
 		var b: Array = manifest.symbol579.bounds
 		_image("579-%d.png" % (2 if session.result.ends_with("win") else 1),Vector2(278,362.35)+Vector2(b[0],b[1]))
-		_target(Rect2(201,344,154,40),confirm)
 	else:
 		_image("final-background.png",Vector2.ZERO)
 		var layout: Dictionary = manifest["final%d" % session.humans]
 		var b: Array = layout.bounds
-		_image("final-%d.png" % session.humans,Vector2(275,209.2)+Vector2(b[0],b[1]))
+		_sheet(layout,Vector2(275,209.2))
 		_fields(layout,Vector2(275,209.2))
 		b = manifest.symbol611.bounds
 		_image("611-%d.png" % (session.difficulty+2 if session.result.ends_with("win") and session.stage == session.total_stages else 1),Vector2(275,38.6)+Vector2(b[0],b[1]))
-		_target(Rect2(184,187,188,40),func():action_requested.emit("save"))
-		_target(Rect2(190,253,200,44),func():notice.text = "Original portal unavailable")
 		notice = _text("Scores are saved locally",Rect2(100,301,350,20),12)
 		for entry in [["PLAY AGAIN",Rect2(135,365,140,28),"replay"],["MAIN MENU",Rect2(285,365,140,28),"menu"]]:
 			var button := Button.new()
@@ -97,6 +94,25 @@ func _show_scores() -> void:
 					leaving = true
 					action_requested.emit(entry[2]))
 			content.add_child(button)
+
+func _sheet(layout: Dictionary, origin: Vector2) -> void:
+	var bounds: Array = layout.bounds
+	for layer in layout.layers:
+		if layer.kind == "static":
+			_image(layer.image,origin+Vector2(bounds[0],bounds[1]))
+			continue
+		var m: Array = layer.matrix
+		var b: Array = layer.bounds
+		var placement := Transform2D(Vector2(m[0],m[1]),Vector2(m[2],m[3]),origin+Vector2(m[4],m[5]))
+		var rectangle := placement * Rect2(b[0],b[1],b[2],b[3])
+		var callback := confirm if int(layer.symbol) == 566 else func():
+			if int(layer.symbol) == 614:action_requested.emit("save")
+			else:notice.text = "Original portal unavailable"
+		var button := _target(rectangle,callback)
+		for state in [["normal",0],["hover",1],["pressed",2],["hover_pressed",2]]:
+			var style := StyleBoxTexture.new()
+			style.texture = load(DIRECTORY+"button-%d-%d.png" % [int(layer.symbol),state[1]])
+			button.add_theme_stylebox_override(state[0],style)
 
 func _fields(layout: Dictionary, origin: Vector2) -> void:
 	for field in layout.fields:
@@ -144,7 +160,7 @@ func _text(value: String, rectangle: Rect2, font_size: int) -> Label:
 	content.add_child(label)
 	return label
 
-func _target(rectangle: Rect2, callback: Callable) -> void:
+func _target(rectangle: Rect2, callback: Callable) -> Button:
 	var button := Button.new()
 	button.position = rectangle.position
 	button.size = rectangle.size
@@ -153,3 +169,4 @@ func _target(rectangle: Rect2, callback: Callable) -> void:
 		button.add_theme_stylebox_override(style,StyleBoxEmpty.new())
 	button.pressed.connect(callback)
 	content.add_child(button)
+	return button

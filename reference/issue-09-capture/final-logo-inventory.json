@@ -1,0 +1,52 @@
+{
+  "source": "original XFL exported from Bomb It 1.swf",
+  "placement": "629 frame1/2:395 at82.25,110.2",
+  "subtree": [
+    {
+      "symbol": 395,
+      "frame_count": 1,
+      "children": [
+        394
+      ],
+      "scripts": [
+        "on(release){\n   getURL(_root.localization_url1,\"_blank\");\n}"
+      ]
+    },
+    {
+      "symbol": 394,
+      "frame_count": 1,
+      "children": [
+        389,
+        391,
+        393
+      ],
+      "scripts": []
+    },
+    {
+      "symbol": 389,
+      "frame_count": 1,
+      "children": [],
+      "scripts": []
+    },
+    {
+      "symbol": 391,
+      "frame_count": 1,
+      "children": [
+        390
+      ],
+      "scripts": []
+    },
+    {
+      "symbol": 390,
+      "frame_count": 1,
+      "children": [],
+      "scripts": []
+    },
+    {
+      "symbol": 393,
+      "frame_count": 1,
+      "children": [],
+      "scripts": []
+    }
+  ]
+}
