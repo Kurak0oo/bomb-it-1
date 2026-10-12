@@ -79,6 +79,28 @@ settled outcome. A second independent UI run produced an identical SHA-256 for
 `qa-result.png`; both hashes are retained. Final synchronization also includes
 integration `1dda2fe` (completion-ledger documentation only).
 
+### Linux catch-up correction
+
+Integration `c920e44` exposed a test-controller defect on Linux llvmpipe: the
+`ticks()` helper waited for a rendered frame while application physics remained
+enabled. Several normal catch-up ticks could run before it disabled physics.
+The minimized boundary probe requested two ticks but observed six accepted ticks
+and six timer decrements, then seven/seven on the next request. Resume itself
+left tick zero and automatic fixture physics disabled. This was not an extra
+timer decrement or a production lifecycle change.
+
+The helper now stops at the physics-frame boundary before awaiting presentation.
+It still executes the actual application physics callback; no production clock
+or simulation method changes. A forced 100 ms display stall reproduces catch-up
+on fast hosts. Exact requested/accepted counts and the strict two-tick timer
+assertion remain enforced. The original Linux repro now passes with boundaries
+1,2,1,2,2,2,2 and six total two-player fixture ticks. Red, diagnostic and green
+logs are retained in `issue-17-capture/linux-boundary-fix`.
+After synchronization with integration `fcbd85f`, Linux (same pinned image with
+the updated GameState and test bind-mounted) and Windows both pass the original
+full interruption scenario and the added bounded stall. Both report the same
+exact tick boundaries and six total two-player fixture ticks.
+
 ## Limits
 
 These are Windows desktop synthetic lifecycle notifications and rendered input,

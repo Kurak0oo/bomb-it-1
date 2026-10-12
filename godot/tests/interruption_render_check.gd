@@ -2,6 +2,7 @@ extends SceneTree
 
 var failed := false
 var main: Node2D
+var tick_observations: Array = []
 
 func _init() -> void:call_deferred("run")
 
@@ -34,12 +35,18 @@ func finger(id: int, point: Vector2, pressed: bool) -> void:
 	root.push_input(event,true)
 
 func ticks(count: int) -> void:
+	var start_tick: int = main.session.state.tick_number
+	var start_remaining: int = main.session.remaining_ticks
 	var target: int = main.session.state.tick_number + count
 	main.set_physics_process(true)
 	while main.session.state.tick_number < target:
 		await physics_frame
-		await process_frame
+	# physics_frame precedes Node physics callbacks. Stop here before another
+	# callback, including catch-up callbacks sharing the same display frame.
 	main.set_physics_process(false)
+	tick_observations.append({"requested":count,"accepted":main.session.state.tick_number-start_tick,"timer_ticks":start_remaining-main.session.remaining_ticks})
+	check(main.session.state.tick_number == target,"render scheduling cannot make the fixture accept extra physics ticks")
+	await process_frame
 
 func run() -> void:
 	root.size = Vector2i(550,400)
@@ -168,6 +175,9 @@ func run() -> void:
 	root.propagate_notification(Node.NOTIFICATION_APPLICATION_RESUMED)
 	root.propagate_notification(Node.NOTIFICATION_APPLICATION_FOCUS_IN)
 	click(Vector2(280,205))
+	check(main.session.state.tick_number == 0 and not main.is_physics_processing(),"Resume itself cannot advance or re-enable fixture physics")
+	# Force multiple physics callbacks into one display frame even on fast hosts.
+	OS.delay_msec(100)
 	await ticks(2)
 	for id in 2:
 		check(not main.session.state.heroes[id].moving and main.session.state.heroes[id].special_count == 5,"held movement and fire never replay for player %d" % (id+1))
@@ -225,7 +235,7 @@ func run() -> void:
 	root.add_child(main)
 	main.set_physics_process(false)
 	check(main.audio.muted == not expected_mute,"both mute values persist across application instances")
-	print("INTERRUPTION_TRACE ",JSON.stringify({"passed":not failed,"paused_tick":tick,"outcome_paused_elapsed":elapsed,"two_player_accepted_ticks":accepted_ticks,"physics_hz":Engine.physics_ticks_per_second,"reloaded_muted":main.audio.muted}))
+	print("INTERRUPTION_TRACE ",JSON.stringify({"passed":not failed,"paused_tick":tick,"outcome_paused_elapsed":elapsed,"two_player_accepted_ticks":accepted_ticks,"physics_hz":Engine.physics_ticks_per_second,"reloaded_muted":main.audio.muted,"tick_boundaries":tick_observations}))
 	main.queue_free()
 	await process_frame
 	await create_timer(1.0).timeout

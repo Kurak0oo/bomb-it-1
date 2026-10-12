@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": null,
+  "scenario_first_divergences": {
+    "bomb": null,
+    "flame1": null,
+    "flame2": null,
+    "flame3": null,
+    "flame4": null,
+    "brick": null,
+    "pickups": null
+  },
+  "differences": [],
+  "creation_differences": []
+}

@@ -1,0 +1,26 @@
+{
+  "conclusion": "success",
+  "headSha": "bef7a92f35557143b5616a103d57f242961b3207",
+  "jobs": [
+    {
+      "completedAt": "2026-10-12T11:17:31Z",
+      "conclusion": "success",
+      "databaseId": 114784974205,
+      "name": "checks (rendered)",
+      "startedAt": "2026-10-12T11:15:46Z",
+      "status": "completed",
+      "url": "https://github.com/Kurak0oo/bomb-it-1/actions/runs/38241510869/job/114784974205"
+    },
+    {
+      "completedAt": "2026-10-12T11:16:27Z",
+      "conclusion": "success",
+      "databaseId": 114784974295,
+      "name": "checks (headless)",
+      "startedAt": "2026-10-12T11:15:46Z",
+      "status": "completed",
+      "url": "https://github.com/Kurak0oo/bomb-it-1/actions/runs/38241510869/job/114784974295"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/Kurak0oo/bomb-it-1/actions/runs/38241510869"
+}
