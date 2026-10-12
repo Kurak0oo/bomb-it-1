@@ -73,8 +73,10 @@ The playable systems are implemented, but **exact equivalence is not established
    rocket smoke are now present. Death silhouettes composite body and eyes as
    separate source shapes. [Death comparisons](issue-02.md) cover all four robots
    and attribute remaining component/compositor differences; actual Godot images
-   still differ in 32 of 40 samples. Ordinary and special effect boundary audits
-   remain in progress. The startup pointer,
+   still differ in 32 of 40 samples. [Ordinary effects](issue-04.md) now match
+   305 lifecycle observations, with corrected pickup loop and fill-composited
+   fade, flame alpha and brick disappearance. Actual images still differ in
+   94 of 134 samples; special-effect auditing remains in progress. The startup pointer,
    equipped-counter layout and nested actor phases now have 259 agreeing original
    observations; [actor feedback](issue-03.md) retains all 56 exact image differences.
    Raster exports retain their source
