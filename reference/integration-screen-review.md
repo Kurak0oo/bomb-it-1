@@ -114,3 +114,7 @@ This checkpoint also includes the first standalone Windows packaging tools.
 Original-runtime pixel differences remain strict and separate. Audio, random
 replay, the remaining bounded source corrections and final desktop acceptance
 are still outstanding.
+
+Fresh [CI run 38248697898](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38248697898)
+at `69e8694` passes both jobs and reproduces all 108 images exactly. Its
+[job record](integration-screen-review/specials-grenade/ci.json) is retained.
