@@ -47,3 +47,5 @@ Red/green records for mute, pause, cue emission, overlap, retry/outcome music, m
 - [x] Missing/incorrect cues, mute, ordinary pause and saved preferences verified.
 - [x] Presentation random selection is isolated from accepted gameplay state/RNG.
 - [x] Source controls and bounded limitations retained; production diff reviewed against the starting integration.
+
+Final synchronization is `f8d5a07`, containing integration `423b60e` (#32 accounting and #20 configuration). The public runner passes audio, simulation, bomb expiry/push motion, special/command order/grenade endpoint/accounting, campaign/accounting-session and tooling checks. Windows audio/interruption checks pass; pinned Linux image `0b22bba7bb7e` passes headless audio plus rendered audio/interruption, including the corrected same-track retry and next-stage transition. [Final run metadata](issue-10-capture/final.json) and logs are retained. Review confirms no asset/import metadata or shared baseline edits.
