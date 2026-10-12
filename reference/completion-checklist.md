@@ -44,7 +44,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 | [#10 Audio](https://github.com/Kurak0oo/bomb-it-1/issues/10) | Pending independent cue/ordering comparison. Existing recovered samples remain. |
 | [#11 Core traces](https://github.com/Kurak0oo/bomb-it-1/issues/11) | Integrated: original frame-2 callback, ten scenarios / 252 ticks / 20 fields, strict malformed/perturbation checks. 69 differences remain explicit; CORE-02/03 have separate correction tickets. See [core evidence](issue-11.md). |
 | [#12 Endpoints](https://github.com/Kurak0oo/bomb-it-1/issues/12) | Integrated: 15 independent scenarios / 480 ticks / 26 fields, strict validation and per-scenario first divergences. 309 differences remain as MOTION-01–04; no speculative gameplay changes. See [motion evidence](issue-12.md). |
-| [#13 Interactions](https://github.com/Kurak0oo/bomb-it-1/issues/13) | Pending mixed weapons, shields, surviving lives and ownership reference traces. |
+| [#13 Interactions](https://github.com/Kurak0oo/bomb-it-1/issues/13) | Integrated: 17 scenarios / 784 ticks / 43 fields with original parent accounting; 134 differences retained. Nested controls reproduce prior core/motion findings. Corrections #30–#33 are separately identified; residual pulse energy remains uncertain. See [interaction evidence](issue-13.md). |
 | [#14 Random replay](https://github.com/Kurak0oo/bomb-it-1/issues/14) | Pending strict bound/order recording and fail-closed replay. Current fallback is not a parity oracle. |
 | [#15 Input delivery](https://github.com/Kurak0oo/bomb-it-1/issues/15) | Implemented; rendered event tests cover brief keyboard/touch taps, ordered release/repress, held ordinary bombs, special release gating, simultaneous fingers, unrelated IDs, cancellation, hiding, disabling, pause and scene changes. Review's stale keyboard-direction finding is fixed and regression-tested. |
 | [#16 Safe areas](https://github.com/Kurak0oo/bomb-it-1/issues/16) | Integrated: complete 550×400 content, safe side gutters or bottom dock, window/stretch conversion and transformed input. Nine desktop synthetic layouts and before-draw/resize checks pass; actual phone insets/comfort remain #22. See [layout evidence](issue-16.md). |
@@ -57,6 +57,10 @@ are separate claims. Passing a port regression does not certify the entire area.
 | [#23 Release evidence](https://github.com/Kurak0oo/bomb-it-1/issues/23) | Pending both integrated release gates; no completion claim. |
 | [#28 Move/special ordering](https://github.com/Kurak0oo/bomb-it-1/issues/28) | Pending source-backed CORE-03 correction, separately from visual work. |
 | [#29 Bomb expiry/refire](https://github.com/Kurak0oo/bomb-it-1/issues/29) | Pending source-backed CORE-02 correction after pushed-bomb and interaction evidence. |
+| [#30 Push lifecycle](https://github.com/Kurak0oo/bomb-it-1/issues/30) | Pending source-backed activation and completed-cell visibility correction. |
+| [#31 Grenade endpoint](https://github.com/Kurak0oo/bomb-it-1/issues/31) | Pending source final-frame boundary correction, including refund/score/damage consequences. |
+| [#32 Hit/refund accounting](https://github.com/Kurak0oo/bomb-it-1/issues/32) | Pending shield-hit credit and removed-owner refund correction. |
+| [#33 Special callback order](https://github.com/Kurak0oo/bomb-it-1/issues/33) | Pending gas timer, new ice-cell eligibility and dependent rocket/mine dispatch corrections; balanced cleanup retained. |
 
 ## Evidence for the initial visual/input pass
 
