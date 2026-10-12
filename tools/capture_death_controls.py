@@ -4,10 +4,11 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 
-from run_checks import ROOT, run_phase
+from run_checks import ENGINE_VERSION, ROOT, run_phase
 from compare_images import compare
 
 
@@ -20,6 +21,17 @@ def main():
     parser.add_argument("--parts", nargs="+", default=["body", "burst", "silhouette", "eyes", "shadow", "smoke", "eyes-black", "smoke-black", "burst-black"])
     parser.add_argument("--replay", action="store_true", help="Independently replay original drawing inputs (requires Rust wasm32-wasip1 target)")
     args = parser.parse_args()
+    godot = shutil.which(args.godot)
+    if not godot:
+        parser.error("Godot executable not found")
+    try:
+        version = subprocess.run([godot, "--version"], capture_output=True, text=True,
+                                 timeout=args.timeout, check=True).stdout.strip()
+        if not version.startswith(ENGINE_VERSION + "."):
+            parser.error(f"Expected Godot {ENGINE_VERSION}, found {version}")
+    except (OSError, subprocess.SubprocessError) as error:
+        parser.error(f"Cannot verify Godot version: {error}")
+    args.godot = godot
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     env = os.environ.copy()

@@ -1,21 +1,21 @@
 """Strict contracts for controlled core, motion and interaction observations."""
 import hashlib
 import json
-from pathlib import Path
 import re
 
-CONFIGS = {name + "-v1": Path(__file__).resolve().parents[1] / f"godot/tests/fixtures/{name}_scenarios.json" for name in ["core", "motion", "interaction", "order", "expiry", "ai_order", "push", "grenade", "grenadescore", "accounting", "contact", "icewalk", "dispatch"]}
+from reference_profiles import PROFILES
 
 
 def validate(capture):
-    path = CONFIGS[capture["profile"]]
+    profile = PROFILES[capture["profile"]]
+    path = profile.config
     config = json.loads(path.read_text(encoding="utf-8"))
     for key in ("profile", "fps", "tick_origin"):
         if type(capture.get(key)) is not type(config[key]) or capture[key] != config[key]:
             raise ValueError(f"{capture['profile']}: incompatible {key}")
     if capture.get("configuration_sha256") != hashlib.sha256(path.read_text(encoding="utf-8").encode("utf-8")).hexdigest():
         raise ValueError(f"{capture['profile']}: incompatible configuration")
-    if capture["profile"] in ("interaction-v1", "expiry-v1", "push-v1", "grenade-v1", "grenadescore-v1", "accounting-v1", "contact-v1", "icewalk-v1", "dispatch-v1") and capture.get("source") == "original-swf-bytecode":
+    if profile.require_polling_provenance and capture.get("source") == "original-swf-bytecode":
         if capture.get("execution_scope") != "original-sprite-564-with-root-parent":
             raise ValueError(f"{capture['profile']}: requires original Sprite 564 with real root parent")
         for key in ("original_swf_sha256", "fixture_sha256", "harness_sha256", "builder_sha256", "capture_sha256", "ffdec_sha256", "prelude_sha256"):

@@ -10,6 +10,7 @@ import subprocess
 import sys
 
 from run_checks import ENGINE_VERSION, ROOT, run_phase
+from reference_profiles import PROFILES
 
 
 def main():
@@ -19,12 +20,13 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / ".artifacts/core-reference")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--require-parity", action="store_true", help="Fail on observed differences as well as harness errors")
-    parser.add_argument("--profile", choices=["core-v1", "motion-v1", "interaction-v1", "order-v1", "expiry-v1", "ai_order-v1", "push-v1", "grenade-v1", "grenadescore-v1", "accounting-v1", "contact-v1", "icewalk-v1", "dispatch-v1"], default="core-v1")
+    parser.add_argument("--profile", choices=PROFILES, default="core-v1")
     parser.add_argument("--nested", action="store_true", help="Execute preserved callbacks inside original Sprite 564 with a real root parent")
     args = parser.parse_args()
-    stem = args.profile.removesuffix("-v1")
-    driver = "motion" if stem in ("push", "grenade") else "interaction" if stem in ("grenadescore", "accounting", "contact", "icewalk", "dispatch") else stem
-    nested = args.nested or stem in ("interaction", "order", "expiry", "ai_order", "push", "grenade", "grenadescore", "accounting", "contact", "icewalk", "dispatch")
+    profile = PROFILES[args.profile]
+    stem = profile.stem
+    driver = profile.driver
+    nested = args.nested or profile.nested
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     (output / "rebuilt").mkdir(exist_ok=True)
@@ -39,7 +41,7 @@ def main():
                                  timeout=args.timeout, check=True).stdout.strip()
         if not version.startswith(ENGINE_VERSION + "."):
             raise ValueError(f"Expected Godot {ENGINE_VERSION}, found {version}")
-        config = json.loads((ROOT / f"godot/tests/fixtures/{stem}_scenarios.json").read_text(encoding="utf-8"))
+        config = json.loads(profile.config.read_text(encoding="utf-8"))
         # Execute the whole unchanged frame-2 tag on an empty controlled stage.
         # Its original callbacks survive; the fixture installs actors afterward.
         prelude = output / "prelude.as"
@@ -51,9 +53,9 @@ def main():
         commands = [
             ("fixture", ["java", "--class-path", classpath, str(ROOT / "tools/reference/BuildReference.java"),
                          str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / f"tools/reference/{driver}_scenario.as"), str(prelude)] + (["--nested"] if nested else []), "Preserved complete original frame 2"),
-            ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original"), str(ROOT / f"godot/tests/fixtures/{stem}_scenarios.json")], "Captured original"),
+            ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original"), str(profile.config)], "Captured original"),
             ("import", [godot, "--headless", "--path", str(ROOT / "godot"), "--editor", "--import", "--quit"], None),
-            ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{driver}_reference_capture.gd"] + (["--", "--push-profile"] if stem == "push" else ["--", "--grenade-profile"] if stem == "grenade" else ["--", "--grenade-account"] if stem == "grenadescore" else ["--", "--accounting-profile"] if stem == "accounting" else ["--", "--contact-profile"] if stem == "contact" else ["--", "--icewalk-profile"] if stem == "icewalk" else ["--", "--dispatch-profile"] if stem == "dispatch" else []), "CORE_REFERENCE_CAPTURE_OK")]
+            ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{driver}_reference_capture.gd"] + (["--", profile.argument] if profile.argument else []), "CORE_REFERENCE_CAPTURE_OK")]
         if stem == "ai_order":
             commands.insert(1,("controlled_random", ["java", "--class-path", classpath, str(ROOT / "tools/reference/ForceAiDecisions.java"), str(output / "fixture.swf")], "Adapted only RandomNumber"))
         for name, command, marker in commands:

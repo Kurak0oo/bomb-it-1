@@ -1,0 +1,6 @@
+test_special_effect_capture_rejects_unpinned_engine_before_capture (tools.tests.test_commands.Commands.test_special_effect_capture_rejects_unpinned_engine_before_capture) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.135s
+
+OK

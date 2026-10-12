@@ -1,0 +1,24 @@
+test_non_string_profiles_report_incompatible_capture (tools.tests.test_trace_compare.ReferenceComparison.test_non_string_profiles_report_incompatible_capture) ... 
+  test_non_string_profiles_report_incompatible_capture (tools.tests.test_trace_compare.ReferenceComparison.test_non_string_profiles_report_incompatible_capture) (profile=[]) ... FAIL
+  test_non_string_profiles_report_incompatible_capture (tools.tests.test_trace_compare.ReferenceComparison.test_non_string_profiles_report_incompatible_capture) (profile={}) ... FAIL
+
+======================================================================
+FAIL: test_non_string_profiles_report_incompatible_capture (tools.tests.test_trace_compare.ReferenceComparison.test_non_string_profiles_report_incompatible_capture) (profile=[])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Eiji\Github\bomb-it-worktrees\review-fixes\tools\tests\test_trace_compare.py", line 24, in test_non_string_profiles_report_incompatible_capture
+    self.assertIn("Unknown or incompatible capture profile", run.stderr)
+AssertionError: 'Unknown or incompatible capture profile' not found in "Invalid capture: unhashable type: 'list'\n"
+
+======================================================================
+FAIL: test_non_string_profiles_report_incompatible_capture (tools.tests.test_trace_compare.ReferenceComparison.test_non_string_profiles_report_incompatible_capture) (profile={})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Eiji\Github\bomb-it-worktrees\review-fixes\tools\tests\test_trace_compare.py", line 24, in test_non_string_profiles_report_incompatible_capture
+    self.assertIn("Unknown or incompatible capture profile", run.stderr)
+AssertionError: 'Unknown or incompatible capture profile' not found in "Invalid capture: unhashable type: 'dict'\n"
+
+----------------------------------------------------------------------
+Ran 1 test in 0.248s
+
+FAILED (failures=2)

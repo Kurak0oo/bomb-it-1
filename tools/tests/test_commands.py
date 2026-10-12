@@ -11,6 +11,19 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class Commands(unittest.TestCase):
+    def test_rendered_capture_rejects_unpinned_engine_before_capture(self):
+        for command in ["capture_special_effects.py", "capture_death_controls.py"]:
+            with self.subTest(command=command), tempfile.TemporaryDirectory(prefix="bomb it engine pin ") as directory:
+                output = Path(directory) / "output"
+                result = subprocess.run([
+                    sys.executable, str(ROOT / "tools" / command),
+                    "--godot", sys.executable, "--ffdec", str(Path(directory) / "unused-ffdec"),
+                    "--output", str(output)], capture_output=True, text=True, timeout=20)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("Expected Godot 4.7.2", result.stderr)
+                self.assertFalse(output.exists() and any(output.iterdir()),
+                                 "Unsupported engines must not start fixture/browser/import/capture phases")
+
     def test_symbol_reports_original_removal_script_and_dependencies(self):
         result = subprocess.run([sys.executable, str(ROOT / "tools/inspect_symbol.py"),
                                  "237", "--frames", "6", "36", "--json"], capture_output=True, text=True)

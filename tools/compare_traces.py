@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 import sys
+from reference_profiles import PROFILES
 
 
 def compare(original, rebuilt):
@@ -14,7 +15,7 @@ def compare(original, rebuilt):
         if not isinstance(capture.get("runtime"), str) or not capture["runtime"]:
             raise ValueError("Capture runtime is required")
     if any("profile" in capture or "configuration_sha256" in capture for capture in (original, rebuilt)):
-        if original.get("profile") not in ("core-v1", "motion-v1", "interaction-v1", "order-v1", "expiry-v1", "ai_order-v1", "push-v1", "grenade-v1", "grenadescore-v1", "accounting-v1", "contact-v1", "icewalk-v1", "dispatch-v1") or original.get("profile") != rebuilt.get("profile"):
+        if not isinstance(original.get("profile"), str) or original["profile"] not in PROFILES or original["profile"] != rebuilt.get("profile"):
             raise ValueError("Unknown or incompatible capture profile")
         from core_trace_schema import validate
         validate(original)

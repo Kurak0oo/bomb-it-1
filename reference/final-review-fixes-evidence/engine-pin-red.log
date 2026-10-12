@@ -1,0 +1,14 @@
+test_special_effect_capture_rejects_unpinned_engine_before_capture (tools.tests.test_commands.Commands.test_special_effect_capture_rejects_unpinned_engine_before_capture) ... FAIL
+
+======================================================================
+FAIL: test_special_effect_capture_rejects_unpinned_engine_before_capture (tools.tests.test_commands.Commands.test_special_effect_capture_rejects_unpinned_engine_before_capture)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Eiji\Github\bomb-it-worktrees\review-fixes\tools\tests\test_commands.py", line 22, in test_special_effect_capture_rejects_unpinned_engine_before_capture
+    self.assertIn("Expected Godot 4.7.2", result.stderr)
+AssertionError: 'Expected Godot 4.7.2' not found in ''
+
+----------------------------------------------------------------------
+Ran 1 test in 1.505s
+
+FAILED (failures=1)
