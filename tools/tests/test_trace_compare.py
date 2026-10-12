@@ -9,6 +9,27 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class ReferenceComparison(unittest.TestCase):
+    def test_expiry_capture_parity_and_exact_perturbations(self):
+        run, report = self.compare_real(evidence_name="issue-29-evidence")
+        self.assertEqual(run.returncode, 0, run.stdout + run.stderr)
+        def field(original, rebuilt):
+            rebuilt["scenarios"]["ordinary_hold"][60]["bombsAvailable"] += 1
+        run, report = self.compare_real(field, "issue-29-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertEqual(report["first_divergence"], {"scenario":"ordinary_hold", "tick":60,
+                         "field":"bombsAvailable", "original":2, "rebuilt":3})
+        def tick(original, rebuilt):
+            rebuilt["scenarios"]["ordinary_hold"][60]["tick"] = 61
+        run, report = self.compare_real(tick, "issue-29-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 60", run.stderr)
+
+    def test_expiry_rejects_missing_source_provenance(self):
+        def perturb(original, rebuilt):
+            original.pop("preserved_bytecode")
+        run, report = self.compare_real(perturb, "issue-29-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+
     def test_core_profile_rejects_truncated_observations(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

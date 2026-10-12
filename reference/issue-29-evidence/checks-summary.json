@@ -1,0 +1,138 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.953,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.204,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 10.797,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.407,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\sim.log"
+  },
+  {
+    "name": "bomb_expiry",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\bomb_expiry.log"
+  },
+  {
+    "name": "actors",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\actors.log"
+  },
+  {
+    "name": "ai_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.407,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\ai_order.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.14,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\view.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.157,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\timeline.log"
+  },
+  {
+    "name": "campaign",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.234,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\campaign.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\command_order.log"
+  },
+  {
+    "name": "soak",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.688,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\final-headless\\soak.log"
+  }
+]

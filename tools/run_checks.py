@@ -90,6 +90,8 @@ def main():
             if suite == "tooling":
                 continue
             phases.append((suite, command + ["--script", f"res://tests/{suite}_check.gd"], suite.upper() + "_OK"))
+            if suite == "sim":
+                phases.append(("bomb_expiry", command + ["--script", "res://tests/expiry_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
             if suite == "actors":
                 phases.append(("ai_order", command + ["--script", "res://tests/ai_order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
             if suite == "special":
