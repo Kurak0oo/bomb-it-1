@@ -36,8 +36,8 @@ partially implemented or externally blocked tickets stay open.
 | #12 Pushing/grenade traces | #11, integrated | Integrated in a712245; [15-scenario evidence](issue-12.md), 309 field differences retained as MOTION-01–04 |
 | #13 Interaction/ownership traces | #11, integrated | Implementer active |
 | #14 Strict random replay | None | Pending |
-| #16 Safe-area landscape layout | None | Implementer active |
-| #17 Interruptions/resume | #15, implemented | Pending remaining verification |
+| #16 Safe-area landscape layout | None | Integrated in 200706f; [physical-to-logical input and nine-layout evidence](issue-16.md), native device acceptance remains separate |
+| #17 Interruptions/resume | #15, implemented | Implementer active |
 | #18 Smooth rendering | #17 | Pending |
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
