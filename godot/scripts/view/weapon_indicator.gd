@@ -13,6 +13,10 @@ func _ready() -> void:
 		add_child(art.sprite(297 if white else 294))
 		var label := Label.new()
 		label.position = Vector2(23.7,-46.3) if white else Vector2(24.3,-45.9)
+		# Symbol 299 uses a device TextField. Its observed baseline is five pixels
+		# below Godot Label's top-aligned baseline with the recovered font (see
+		# reference/issue-03.md and the independent weapon-count captures).
+		label.position.y += 5
 		label.size = Vector2(20.2,21.15)
 		label.add_theme_font_override("font", load("res://art/original/fonts/295_Arial Black.ttf"))
 		label.add_theme_font_size_override("font_size", 15)

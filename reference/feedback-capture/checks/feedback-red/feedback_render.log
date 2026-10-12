@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: human startup pointer must bob while the actor is idle
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/feedback_render_check.gd:24)
+       [1] run (res://tests/feedback_render_check.gd:96)
+       [2] snapshot (res://tests/feedback_render_check.gd:11)
+ERROR: startup pointer must retire on update 150
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/feedback_render_check.gd:24)
+       [1] run (res://tests/feedback_render_check.gd:104)
+       [2] snapshot (res://tests/feedback_render_check.gd:11)

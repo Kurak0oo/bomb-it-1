@@ -9,6 +9,10 @@ var death: OriginalTimeline
 var burst: Sprite2D
 var smoke: Sprite2D
 var weapon_indicator: WeaponIndicator
+var player_pointer: OriginalTimeline
+var pointer_enabled := false
+var pointer_replaced := false
+var pointer_age := 0
 var death_age := -1
 var previous := Vector2.ZERO
 var current := Vector2.ZERO
@@ -34,6 +38,10 @@ func _ready() -> void:
 	weapon_indicator = WeaponIndicator.new()
 	weapon_indicator.art = art
 	add_child(weapon_indicator)
+	player_pointer = OriginalTimeline.new()
+	player_pointer.art = art
+	player_pointer.symbol = 210
+	add_child(player_pointer)
 	current = actor.pixel_position()
 	previous = current
 	sync()
@@ -41,7 +49,15 @@ func _ready() -> void:
 func capture() -> void:
 	previous = current
 
-func sync() -> void:
+func sync(round_tick: int = -1) -> void:
+	if round_tick >= 0:
+		pointer_age = round_tick
+	# Both dynamic clips occupy source depth 0. Equipping permanently replaces
+	# the startup pointer, even when the weapon is exhausted before tick 150.
+	pointer_replaced = pointer_replaced or actor.special_count > 0
+	player_pointer.visible = pointer_enabled and not pointer_replaced and actor.alive and pointer_age < 150
+	if player_pointer.visible:
+		player_pointer.show_frame(pointer_age % 60, 0, actor.character_id + actor.id * 4)
 	weapon_indicator.sync(actor)
 	current = actor.pixel_position()
 	z_index = OriginalArt.depth(actor.cell, -actor.id - 1)

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 8.797,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.141,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\view.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.062,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\death_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.532,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.093,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.703,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.141,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-green\\visual_timelines.log"
+  }
+]

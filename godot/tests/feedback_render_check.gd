@@ -78,6 +78,59 @@ func run() -> void:
 	var retired := await snapshot()
 	check(changed(impact, retired, Rect2i(435,160,60,55)) > 5, "impact-tick rocket smoke must outlive the removed rocket and burst")
 	view.free()
+	# Original frame-2 setup attaches the human's nested, bobbing 1P pointer.
+	state.setup(rows)
+	state.generated = true
+	actor = state.heroes[0]
+	actor.cell = Vector2i(8,7)
+	actor.shield = 0
+	var second := state.heroes[1]
+	second.controller = HeroState.Controller.HUMAN
+	second.cell = Vector2i(11,7)
+	second.shield = 0
+	view = GameView.new()
+	view.state = state
+	view.frozen = true
+	root.add_child(view)
+	var pointer_start := await snapshot()
+	for tick in 16:
+		state.tick([])
+		view.sync_view()
+	var pointer_bob := await snapshot()
+	check(changed(pointer_start, pointer_bob, Rect2i(240,140,30,33)) > 20, "human startup pointer must bob while the actor is idle")
+	check(changed(pointer_start, pointer_bob, Rect2i(330,140,30,33)) > 20, "second human must have an independently colored 2P pointer")
+	second.special_weapon = "rocket"
+	second.special_count = 2
+	view.sync_view()
+	second.special_count = 0
+	view.sync_view()
+	var replaced_pointer := await snapshot()
+	check(changed(pointer_bob, replaced_pointer, Rect2i(330,140,30,20)) > 20, "equipping must replace the startup pointer even after charges are exhausted")
+	view.sync_view()
+	check(changed(replaced_pointer, await snapshot(), Rect2i(330,140,30,20)) == 0, "repeated synchronization must not revive or advance the pointer")
+	for tick in 133:
+		state.tick([])
+		view.sync_view()
+	var pointer_last := await snapshot()
+	state.tick([])
+	view.sync_view()
+	var pointer_gone := await snapshot()
+	check(changed(pointer_last, pointer_gone, Rect2i(240,140,30,33)) > 20, "startup pointer must retire on update 150")
+	view.free()
+	# The original Symbol 299 count glyph ends at y=70 for this registration.
+	# This catches Label/TextField baseline differences independently of the art.
+	RenderingServer.set_default_clear_color(Color.WHITE)
+	var blank := await snapshot()
+	var indicator := WeaponIndicator.new()
+	indicator.art = OriginalArt.new()
+	indicator.position = Vector2(60,100)
+	root.add_child(indicator)
+	actor.special_weapon = "rocket"
+	actor.special_count = 1
+	indicator.sync(actor)
+	var count_image := await snapshot()
+	check(changed(blank, count_image, Rect2i(84,68,12,3)) > 0, "equipped count must use the source TextField baseline")
+	indicator.free()
 	if not failed:
 		print("FEEDBACK_RENDER_OK")
 	quit(1 if failed else 0)

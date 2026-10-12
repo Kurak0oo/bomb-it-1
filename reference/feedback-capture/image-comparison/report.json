@@ -1,0 +1,295 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-depth-frame-00.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-02.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-05.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-11.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-14.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-15.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-16.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-depth-frame-17.png",
+      "passed": false,
+      "changed_pixels": 11000,
+      "changed_fraction": 0.05
+    },
+    {
+      "name": "qa-hit-frame-00.png",
+      "passed": false,
+      "changed_pixels": 5708,
+      "changed_fraction": 0.025945454545454546
+    },
+    {
+      "name": "qa-hit-frame-02.png",
+      "passed": false,
+      "changed_pixels": 5744,
+      "changed_fraction": 0.026109090909090908
+    },
+    {
+      "name": "qa-hit-frame-05.png",
+      "passed": false,
+      "changed_pixels": 5747,
+      "changed_fraction": 0.026122727272727273
+    },
+    {
+      "name": "qa-hit-frame-11.png",
+      "passed": false,
+      "changed_pixels": 5885,
+      "changed_fraction": 0.02675
+    },
+    {
+      "name": "qa-hit-frame-14.png",
+      "passed": false,
+      "changed_pixels": 5758,
+      "changed_fraction": 0.02617272727272727
+    },
+    {
+      "name": "qa-hit-frame-15.png",
+      "passed": false,
+      "changed_pixels": 5758,
+      "changed_fraction": 0.02617272727272727
+    },
+    {
+      "name": "qa-hit-frame-16.png",
+      "passed": false,
+      "changed_pixels": 5758,
+      "changed_fraction": 0.02617272727272727
+    },
+    {
+      "name": "qa-hit-frame-17.png",
+      "passed": false,
+      "changed_pixels": 5758,
+      "changed_fraction": 0.02617272727272727
+    },
+    {
+      "name": "qa-idle-frame-00.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-02.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-05.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-11.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-14.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-15.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-16.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-idle-frame-17.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-pointer-frame-00.png",
+      "passed": false,
+      "changed_pixels": 12198,
+      "changed_fraction": 0.05544545454545455
+    },
+    {
+      "name": "qa-pointer-frame-148.png",
+      "passed": false,
+      "changed_pixels": 12121,
+      "changed_fraction": 0.055095454545454545
+    },
+    {
+      "name": "qa-pointer-frame-149.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-pointer-frame-15.png",
+      "passed": false,
+      "changed_pixels": 12380,
+      "changed_fraction": 0.05627272727272727
+    },
+    {
+      "name": "qa-pointer-frame-150.png",
+      "passed": false,
+      "changed_pixels": 9264,
+      "changed_fraction": 0.04210909090909091
+    },
+    {
+      "name": "qa-pointer-frame-29.png",
+      "passed": false,
+      "changed_pixels": 12283,
+      "changed_fraction": 0.055831818181818184
+    },
+    {
+      "name": "qa-pointer-frame-45.png",
+      "passed": false,
+      "changed_pixels": 12097,
+      "changed_fraction": 0.05498636363636364
+    },
+    {
+      "name": "qa-pointer-frame-59.png",
+      "passed": false,
+      "changed_pixels": 12225,
+      "changed_fraction": 0.055568181818181815
+    },
+    {
+      "name": "qa-walk-frame-00.png",
+      "passed": false,
+      "changed_pixels": 17856,
+      "changed_fraction": 0.08116363636363637
+    },
+    {
+      "name": "qa-walk-frame-02.png",
+      "passed": false,
+      "changed_pixels": 17941,
+      "changed_fraction": 0.08155
+    },
+    {
+      "name": "qa-walk-frame-05.png",
+      "passed": false,
+      "changed_pixels": 17856,
+      "changed_fraction": 0.08116363636363637
+    },
+    {
+      "name": "qa-walk-frame-11.png",
+      "passed": false,
+      "changed_pixels": 17856,
+      "changed_fraction": 0.08116363636363637
+    },
+    {
+      "name": "qa-walk-frame-14.png",
+      "passed": false,
+      "changed_pixels": 17941,
+      "changed_fraction": 0.08155
+    },
+    {
+      "name": "qa-walk-frame-15.png",
+      "passed": false,
+      "changed_pixels": 17941,
+      "changed_fraction": 0.08155
+    },
+    {
+      "name": "qa-walk-frame-16.png",
+      "passed": false,
+      "changed_pixels": 17941,
+      "changed_fraction": 0.08155
+    },
+    {
+      "name": "qa-walk-frame-17.png",
+      "passed": false,
+      "changed_pixels": 17856,
+      "changed_fraction": 0.08116363636363637
+    },
+    {
+      "name": "qa-weapons-frame-00.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-02.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-05.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-11.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-14.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-15.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-16.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    },
+    {
+      "name": "qa-weapons-frame-17.png",
+      "passed": false,
+      "changed_pixels": 9116,
+      "changed_fraction": 0.04143636363636364
+    }
+  ]
+}
