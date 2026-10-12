@@ -1,0 +1,82 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 17.828,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.187,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 10.266,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.329,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\interaction_reference_parse.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\sim.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.422,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\post-merge-retry\\command_order.log"
+  }
+]
