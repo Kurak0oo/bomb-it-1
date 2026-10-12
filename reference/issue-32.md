@@ -27,3 +27,5 @@ All 24 full headless phases pass, including 38 tooling tests, source ordering/ex
 INTERACT-06 deliberately retains balanced cleanup. Source clip identity/replacement is known, but Ruffle removed-clip dispatch is not independently established as Adobe Flash behavior; permanent invisible energy is not introduced. Ruffle 0.7.1 execution is independent source evidence, not certification of Flash runtime parity. No rendered geometry or image baseline changes are part of this correction.
 
 Reproduce with `python tools/capture_core_reference.py --profile accounting-v1 --ffdec <FFDEC_HOME> --godot <Godot-4.7.2> --require-parity`. The public runner's `--suite actors --suite campaign` uses retained source rows without browser dependencies. [Evidence](issue-32-evidence) contains source/rebuilt captures, red logs, comparisons and full runner results.
+
+Integration `69e8694` merged cleanly at `e0162db`. All 21 focused post-merge phases pass (tooling, actor/source accounting, campaign/session transitions, simulation/expiry/push, special/human command order/grenade and active soak). No shared baseline is modified.

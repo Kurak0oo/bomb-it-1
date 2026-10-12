@@ -1,0 +1,170 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 26.171,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.219,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 14.984,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\tooling.log"
+  },
+  {
+    "name": "performance_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\performance_parse.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\core_reference_parse.log"
+  },
+  {
+    "name": "motion_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\motion_reference_parse.log"
+  },
+  {
+    "name": "interaction_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\interaction_reference_parse.log"
+  },
+  {
+    "name": "actors",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.328,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\actors.log"
+  },
+  {
+    "name": "ai_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.407,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\ai_order.log"
+  },
+  {
+    "name": "hit_accounting",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\hit_accounting.log"
+  },
+  {
+    "name": "campaign",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.156,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\campaign.log"
+  },
+  {
+    "name": "accounting_session",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\accounting_session.log"
+  },
+  {
+    "name": "sim",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\sim.log"
+  },
+  {
+    "name": "bomb_expiry",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\bomb_expiry.log"
+  },
+  {
+    "name": "push_motion",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.407,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\push_motion.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\command_order.log"
+  },
+  {
+    "name": "grenade_endpoint",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\grenade_endpoint.log"
+  },
+  {
+    "name": "grenade_accounting",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\grenade_accounting.log"
+  },
+  {
+    "name": "soak",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.594,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue32\\.artifacts\\issue32\\post-merge\\soak.log"
+  }
+]
