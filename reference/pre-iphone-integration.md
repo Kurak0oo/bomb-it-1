@@ -48,8 +48,8 @@ partially implemented or externally blocked tickets stay open.
 | #19 Windows package | None | Pending |
 | #20 iPhone build/install | External Apple environment | Configuration can proceed; native build/install blocked |
 | #21 Integrated desktop acceptance | #2–#19, #28–#33 | Pending integration and packaging |
-| #28 Movement/special-fire ordering | #11, integrated | Implementer active on separately reviewed CORE-03 correction |
-| #29 Bomb expiry/held-fire ordering | #11–#13 | Pending separately reviewed CORE-02 correction |
+| #28 Movement/special-fire ordering | #11, integrated | Integrated in fcbd85f; [28 exact command-boundary cases](issue-28.md), remaining CORE-01/02 differences preserved |
+| #29 Bomb expiry/held-fire ordering | #11–#13, integrated | Implementer active on separately reviewed CORE-02 correction |
 | #30 Push callback lifecycle | #12–#13, #29 | Pending MOTION-01/03 correction |
 | #31 Grenade endpoint | #12–#13 | Pending MOTION-04 correction, including chain accounting |
 | #32 Hit/refund accounting | #13, #29 | Pending INTERACT-01/02 correction |
