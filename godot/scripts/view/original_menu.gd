@@ -8,7 +8,7 @@ signal action_requested(action: String)
 enum PressOwner { NONE, KEYBOARD, MOUSE, TOUCH }
 
 const DIRECTORY := "res://art/original/menus/"
-const ACTIONS := {439: "players", 440: "help", 441: "best", 442: "portal", 443: "portal", 462: "one", 463: "two", 473: "powerups", 460: "sound"}
+const ACTIONS := {439: "players", 440: "help", 441: "best", 442: "portal", 443: "portal", 462: "one", 463: "two", 473: "powerups", 460: "sound", 469: "easy", 466: "normal", 467: "hard"}
 var page := "menu"
 var muted := false
 var touch_help := false
@@ -21,6 +21,7 @@ var pressed_key := 0
 var press_owner := PressOwner.NONE
 var leaving := false
 var notice: Label
+var visuals: Array[Dictionary] = []
 
 func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -45,6 +46,9 @@ func _ready() -> void:
 		var textures: Array[Texture2D] = []
 		for frame in int(layer.frames):
 			textures.append(load(DIRECTORY + "%d-%d.png" % [symbol, frame]))
+		if layer.kind == "visual":
+			visuals.append({"symbol": symbol, "sprite": sprite, "textures": textures})
+			continue
 		# Expand the original 35.55px backplates to 44px targets without overlap.
 		var target := transform_source * bounds
 		target = target.grow_individual(0, maxf(0, (44-target.size.y)/2), 0, maxf(0, (44-target.size.y)/2))
@@ -55,6 +59,9 @@ func _ready() -> void:
 		buttons.append({"label": back, "target": Rect2(434,356,108,44), "action": "back"})
 	if page == "help":
 		_text("Touch: left stick + Bomb · Release between special shots" if touch_help else "Also: WASD in 1P · Esc pauses · M toggles sound", Rect2(15,357,515,16), 11)
+	if page == "difficulty":
+		buttons.sort_custom(func(a: Dictionary, b: Dictionary): return a.target.position.y < b.target.position.y)
+		focus = 1 # Normal by default; arrows follow the visible vertical order.
 	notice = _text("", Rect2(190,376,239,23), 11)
 	_refresh()
 

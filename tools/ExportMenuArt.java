@@ -53,8 +53,8 @@ class ExportMenuArt {
         var swf = new SWF(new FileInputStream(args[0]), false);
         var timeline = swf.getTimeline();
         var screens = new LinkedHashMap<String,Object>();
-        var names = List.of("menu", "players", "help", "powerups");
-        var numbers = List.of(3, 4, 6, 7);
+        var names = List.of("menu", "players", "difficulty", "help", "powerups", "select");
+        var numbers = List.of(3, 4, 5, 6, 7, 8);
         var exported = new HashSet<Integer>();
         for (int n=0; n<names.size(); n++) {
             String name = names.get(n);
@@ -67,7 +67,7 @@ class ExportMenuArt {
             for (var entry : original.entrySet()) {
                 var state = entry.getValue();
                 var character = state.getCharacter();
-                boolean interactive = character instanceof ButtonTag || state.characterId == 455 || state.characterId == 460;
+                boolean interactive = character instanceof ButtonTag || state.characterId == 455 || state.characterId == 460 || state.characterId == 509 || state.characterId == 519;
                 if (!interactive) { segment.put(entry.getKey(), state); continue; }
                 if (!segment.isEmpty()) {
                     String image = name + "-layer-" + sequence++ + ".png";
@@ -85,8 +85,8 @@ class ExportMenuArt {
                 } else {
                     var sprite = (DefineSpriteTag) character;
                     child = sprite.getTimeline(); bounds = sprite.getRect();
-                    count = state.characterId == 460 ? 2 : 1;
-                    kind = state.characterId == 460 ? "sound" : "quality";
+                    count = switch (state.characterId) { case 460, 519 -> 2; case 509 -> 14; default -> 1; };
+                    kind = switch (state.characterId) { case 460 -> "sound"; case 455 -> "quality"; default -> "visual"; };
                 }
                 if (exported.add(state.characterId)) {
                     for (int f=0; f<count; f++) render(child, f, bounds, state.characterId + "-" + f + ".png");
@@ -109,8 +109,30 @@ class ExportMenuArt {
         manifest.put("source_sha256", HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(Files.readAllBytes(Path.of(args[0])))));
         manifest.put("zoom", ZOOM);
         manifest.put("screens", screens);
+        // Source-created p_pointer instances use independently selected label and
+        // arrow frames. Export children separately so their colors follow heroId.
+        var pointerArt = new LinkedHashMap<String,Object>();
+        for (int symbol : List.of(200, 209)) {
+            var sprite = (DefineSpriteTag) swf.getCharacter(symbol);
+            var bounds = sprite.getRect();
+            int count = symbol == 200 ? 4 : 8;
+            for (int f=0; f<count; f++) render(sprite.getTimeline(), f, bounds, symbol + "-" + f + ".png");
+            pointerArt.put(Integer.toString(symbol), List.of(bounds.Xmin/20.0, bounds.Ymin/20.0));
+        }
+        var pointer = ((DefineSpriteTag) swf.getCharacter(210)).getTimeline();
+        var pointerFrames = new ArrayList<Object>();
+        for (int f=0; f<60; f++) {
+            var placements = new ArrayList<Object>();
+            for (var state : pointer.getFrame(f).layers.values()) {
+                var sprite = (DefineSpriteTag) state.getCharacter();
+                placements.add(placement(state, sprite.getRect()));
+            }
+            pointerFrames.add(placements);
+        }
+        manifest.put("pointer_frames", pointerFrames);
+        manifest.put("pointer_bounds", pointerArt);
         Files.writeString(output.resolve("manifest.json"), json(manifest) + "\n");
-        System.out.println("Exported four original menu/help screens and their button states at 2x.");
+        System.out.println("Exported original menu/help screens and their button states at 2x.");
         System.exit(0);
     }
 }
