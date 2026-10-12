@@ -1,0 +1,50 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 20.219,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-post-core-merge\\import.log"
+  },
+  {
+    "name": "python_compile",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.203,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-post-core-merge\\python_compile.log"
+  },
+  {
+    "name": "tooling",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 6.188,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-post-core-merge\\tooling.log"
+  },
+  {
+    "name": "reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-post-core-merge\\reference_parse.log"
+  },
+  {
+    "name": "core_reference_parse",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-post-core-merge\\core_reference_parse.log"
+  },
+  {
+    "name": "campaign",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.046,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue09\\.artifacts\\issue09-post-core-merge\\campaign.log"
+  }
+]
