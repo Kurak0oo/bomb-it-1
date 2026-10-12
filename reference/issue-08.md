@@ -103,3 +103,10 @@ Godot sampling also differ. The comparison retains all differing pixels; it is
 **not** a proven renderer-only exception or an exact-original-parity claim.
 Arena raster assets retain their existing finite resolution at enlarged sizes.
 Physical iPhone legibility is outside this desktop capture evidence.
+
+Reviewed the slice against `f797372`: only presentation wiring, source-derived
+assets/export tooling and public-runner rendered coverage change; no simulation
+file changes. Integration `498ef7e` merged cleanly. Godot 4.7.2 Windows rendered
+view/HUD/death/feedback/input/menu/UI/timeline phases all passed; after merging,
+Python compilation/tooling, reference parsing and view checks passed again.
+See `issue-08-capture/summary.json` and `merged-checks.json` for retained results.
