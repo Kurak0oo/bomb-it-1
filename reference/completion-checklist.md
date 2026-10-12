@@ -25,7 +25,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 | Original map generation | Recovered algorithm and seeded connectivity regressions | Strict bound/order replay across setup, drops, retry and stage continuation (#14) | Godot seeded RNG and deterministic timer remain explicit policies |
 | AI and actor behavior | Four actors, difficulty regressions; 259 actor-presentation observations agree (#3) | Mixed interactions and full-match callback evidence (#13, #21) | Named fixtures do not establish every AI/game interaction |
 | Items and special weapons | Existing item/weapon regressions and final rocket-smoke fix | Complete effect lifetimes and independent collision/ownership evidence (#4–#5, #12–#13) | Existing port tests are not an independent oracle |
-| Visual timelines, depth and audio | #3 placement/timing/depth; #8 five-theme composition and source depth audit | Death difference isolation, ordinary/special effects and audio audit (#2, #4–#5, #10) | Exact image differences remain; HUD level/timer font substitution is documented |
+| Visual timelines, depth and audio | #2 death corrections and component attribution; #3 placement/timing/depth; #8 five-theme composition and source depth audit | Ordinary/special effects and audio audit (#4–#5, #10) | Exact image differences remain; HUD level/timer font substitution is documented |
 | Game flow | Original menu/help (#6), independent 2P selection (#7), HUD counters/status (#8), twelve-route outcome matrix and source win timing (#9) | Integrated desktop flow (#21), broader independent outcome playback | Local high scores; source/port images and selection animation phases differ |
 | Smooth display and phone experience | Rendered input delivery/cancellation (#15) | Safe areas, lifecycle, schedule invariance, packaging and desktop acceptance (#16–#21) | No Mac/Xcode; native signing/install and real-iPhone performance remain unverified (#20, #22) |
 
@@ -33,7 +33,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 
 | Ticket | Status and remaining evidence |
 |---|---|
-| [#2 Deaths](https://github.com/Kurak0oo/bomb-it-1/issues/2) | Partial: all four source-bytecode death fixtures and separate eye/body compositing. Timing traces agree; 28/36 reference images still differ. |
+| [#2 Deaths](https://github.com/Kurak0oo/bomb-it-1/issues/2) | Integrated: source alpha/shadow fixes, all four creation/removal boundaries and per-sample component/compositor attribution. Actual source/port comparison still differs in 32/40 images (35,236 pixels), separately from 360 exact source-input controls. No tolerance or tick changes. See [death evidence](issue-02.md). |
 | [#3 Actor feedback](https://github.com/Kurak0oo/bomb-it-1/issues/3) | Integrated: required placement/depth/timing/visibility fixtures pass; 259 independent observations agree. All 56 exact pixel differences remain unwaived. See [actor evidence](issue-03.md). |
 | [#4 Ordinary effects](https://github.com/Kurak0oo/bomb-it-1/issues/4) | Pending expanded source captures and boundary comparison. |
 | [#5 Special effects](https://github.com/Kurak0oo/bomb-it-1/issues/5) | Partial: impact-tick rocket smoke restored and rendered regression passes. Other effect comparisons remain. |
