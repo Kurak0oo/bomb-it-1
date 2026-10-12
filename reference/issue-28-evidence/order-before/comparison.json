@@ -1,0 +1,4852 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "rocket_move_hold",
+    "tick": 0,
+    "field": "fireReady",
+    "original": true,
+    "rebuilt": false
+  },
+  "scenario_first_divergences": {
+    "bomb_move_hold": null,
+    "bomb_move_tap": null,
+    "bomb_move_continuous": null,
+    "bomb_blocked": null,
+    "rocket_move_hold": {
+      "scenario": "rocket_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "rocket_move_tap": {
+      "scenario": "rocket_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "rocket_move_continuous": {
+      "scenario": "rocket_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "rocket_blocked": {
+      "scenario": "rocket_blocked",
+      "tick": 0,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    "mine_move_hold": {
+      "scenario": "mine_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "mine_move_tap": {
+      "scenario": "mine_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "mine_move_continuous": {
+      "scenario": "mine_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "mine_blocked": null,
+    "grenade_move_hold": {
+      "scenario": "grenade_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "grenade_move_tap": {
+      "scenario": "grenade_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "grenade_move_continuous": {
+      "scenario": "grenade_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "grenade_blocked": {
+      "scenario": "grenade_blocked",
+      "tick": 0,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    "gas_move_hold": {
+      "scenario": "gas_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "gas_move_tap": {
+      "scenario": "gas_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "gas_move_continuous": {
+      "scenario": "gas_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "gas_blocked": null,
+    "ice_move_hold": {
+      "scenario": "ice_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "ice_move_tap": {
+      "scenario": "ice_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "ice_move_continuous": {
+      "scenario": "ice_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "ice_blocked": {
+      "scenario": "ice_blocked",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "fire_move_hold": {
+      "scenario": "fire_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "fire_move_tap": {
+      "scenario": "fire_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "fire_move_continuous": {
+      "scenario": "fire_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "fire_blocked": {
+      "scenario": "fire_blocked",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    }
+  },
+  "differences": [
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 6,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 7,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 8,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 9,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 10,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 11,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 12,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_hold",
+      "tick": 13,
+      "field": "specials",
+      "original": "rocket,9,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_tap",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 8,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 9,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 10,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 11,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 12,
+      "field": "specials",
+      "original": "rocket,10,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_move_continuous",
+      "tick": 13,
+      "field": "specials",
+      "original": "rocket,10,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 0,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 1,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 2,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 3,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 4,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 9,
+      "field": "fireReady",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 9,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 10,
+      "field": "fireReady",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 10,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 11,
+      "field": "fireReady",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 11,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 12,
+      "field": "fireReady",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 12,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 13,
+      "field": "fireReady",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "rocket_blocked",
+      "tick": 13,
+      "field": "specials",
+      "original": "rocket,8,6,1,0;",
+      "rebuilt": "rocket,8,6,0,1;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 6,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 7,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 8,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 9,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 10,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 11,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 12,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_hold",
+      "tick": 13,
+      "field": "specials",
+      "original": "mine,9,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_tap",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 8,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 9,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 10,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 11,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 12,
+      "field": "specials",
+      "original": "mine,10,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "mine_move_continuous",
+      "tick": 13,
+      "field": "specials",
+      "original": "mine,10,6,0,0;",
+      "rebuilt": "mine,8,6,0,0;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 6,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 7,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 8,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 9,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 10,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 11,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 12,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_hold",
+      "tick": 13,
+      "field": "specials",
+      "original": "grenade,9,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_tap",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 8,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 9,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 10,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 11,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 12,
+      "field": "specials",
+      "original": "grenade,10,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_move_continuous",
+      "tick": 13,
+      "field": "specials",
+      "original": "grenade,10,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 0,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 1,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 2,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 3,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 4,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 5,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 6,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 7,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 8,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 9,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 10,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 11,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 12,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "grenade_blocked",
+      "tick": 13,
+      "field": "specials",
+      "original": "grenade,8,6,1,0;",
+      "rebuilt": "grenade,8,6,0,1;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 6,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 7,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 8,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 9,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 10,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 11,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 12,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_hold",
+      "tick": 13,
+      "field": "specials",
+      "original": "gas,9,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_tap",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 8,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 9,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 10,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 11,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 12,
+      "field": "specials",
+      "original": "gas,10,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "gas_move_continuous",
+      "tick": 13,
+      "field": "specials",
+      "original": "gas,10,6,0,0;",
+      "rebuilt": "gas,8,6,0,0;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 6,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 7,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 8,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 9,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 10,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 11,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 12,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_hold",
+      "tick": 13,
+      "field": "specials",
+      "original": "ice,9,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_tap",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 8,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 9,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 10,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 11,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 12,
+      "field": "specials",
+      "original": "ice,10,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_move_continuous",
+      "tick": 13,
+      "field": "specials",
+      "original": "ice,10,6,1,0;",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ice_blocked",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "ice,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 6,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 7,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 8,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 9,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 10,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 11,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 12,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_hold",
+      "tick": 13,
+      "field": "specials",
+      "original": "fire,9,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_tap",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 8,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 9,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 10,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 11,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 12,
+      "field": "specials",
+      "original": "fire,10,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_move_continuous",
+      "tick": 13,
+      "field": "specials",
+      "original": "fire,10,6,1,0;",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 0,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 1,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 2,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 3,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 4,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 5,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 6,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 6,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 6,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 7,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 7,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 7,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 8,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 8,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 9,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 9,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 10,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 10,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 11,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 11,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 12,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 12,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 13,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "fire_blocked",
+      "tick": 13,
+      "field": "specials",
+      "original": "",
+      "rebuilt": "fire,8,6,0,1;"
+    }
+  ]
+}

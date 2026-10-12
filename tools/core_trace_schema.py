@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import re
 
-CONFIGS = {name + "-v1": Path(__file__).resolve().parents[1] / f"godot/tests/fixtures/{name}_scenarios.json" for name in ["core", "motion", "interaction"]}
+CONFIGS = {name + "-v1": Path(__file__).resolve().parents[1] / f"godot/tests/fixtures/{name}_scenarios.json" for name in ["core", "motion", "interaction", "order"]}
 
 
 def validate(capture):

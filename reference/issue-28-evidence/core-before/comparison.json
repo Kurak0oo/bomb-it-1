@@ -1,0 +1,551 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "move_tap",
+    "tick": 1,
+    "field": "pixelXTwips",
+    "original": 4899,
+    "rebuilt": 4900
+  },
+  "scenario_first_divergences": {
+    "move_tap": {
+      "scenario": "move_tap",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "move_hold": {
+      "scenario": "move_hold",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "fire_during_move": {
+      "scenario": "fire_during_move",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "ordinary_hold": {
+      "scenario": "ordinary_hold",
+      "tick": 60,
+      "field": "bombs",
+      "original": "8,6,60;",
+      "rebuilt": ""
+    },
+    "special_hold_release": {
+      "scenario": "special_hold_release",
+      "tick": 2,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "special_move_and_fire": {
+      "scenario": "special_move_and_fire",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    "damage_growth": null,
+    "damage_rounded": {
+      "scenario": "damage_rounded",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "damage_expiry_before": null,
+    "damage_expiry_at": null
+  },
+  "differences": [
+    {
+      "scenario": "move_tap",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "move_hold",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "fire_during_move",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 60,
+      "field": "bombs",
+      "original": "8,6,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 60,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 61,
+      "field": "originEnergy",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "bombs",
+      "original": "8,6,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "originEnergy",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 62,
+      "field": "probeEnergy",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 63,
+      "field": "originEnergy",
+      "original": 4,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 63,
+      "field": "probeEnergy",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "bombs",
+      "original": "8,6,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "originEnergy",
+      "original": 5,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 64,
+      "field": "probeEnergy",
+      "original": 4,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 65,
+      "field": "originEnergy",
+      "original": 6,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 65,
+      "field": "probeEnergy",
+      "original": 5,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "bombs",
+      "original": "8,6,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "originEnergy",
+      "original": 7,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 66,
+      "field": "probeEnergy",
+      "original": 6,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 67,
+      "field": "originEnergy",
+      "original": 8,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 67,
+      "field": "probeEnergy",
+      "original": 7,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "bombs",
+      "original": "8,6,60;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "bombsAvailable",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "originEnergy",
+      "original": 9,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 68,
+      "field": "probeEnergy",
+      "original": 8,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 69,
+      "field": "originEnergy",
+      "original": 10,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 69,
+      "field": "probeEnergy",
+      "original": 9,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 70,
+      "field": "originEnergy",
+      "original": 11,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 70,
+      "field": "probeEnergy",
+      "original": 10,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 71,
+      "field": "originEnergy",
+      "original": 10,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "ordinary_hold",
+      "tick": 71,
+      "field": "probeEnergy",
+      "original": 10,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "special_hold_release",
+      "tick": 2,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 0,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 0,
+      "field": "mines",
+      "original": "",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 1,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 1,
+      "field": "mines",
+      "original": "",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 2,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 2,
+      "field": "mines",
+      "original": "",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 3,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 3,
+      "field": "mines",
+      "original": "",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 4,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 4,
+      "field": "mines",
+      "original": "",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 5,
+      "field": "fireReady",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 5,
+      "field": "mines",
+      "original": "",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 3,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 6,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 7,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 8,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 9,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 10,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 11,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 12,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 13,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 14,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 15,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 16,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 17,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 18,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 19,
+      "field": "mines",
+      "original": "9,6;",
+      "rebuilt": "8,6;"
+    },
+    {
+      "scenario": "damage_rounded",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    }
+  ]
+}

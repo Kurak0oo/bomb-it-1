@@ -1,0 +1,34 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.406,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-after\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 29.234,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-after\\original.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.0,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-after\\import.log"
+  },
+  {
+    "name": "rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.5,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue28\\.artifacts\\issue28\\order-after\\rebuilt.log"
+  }
+]

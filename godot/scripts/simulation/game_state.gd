@@ -163,14 +163,16 @@ func _tick_hero(hero: HeroState, commands: PlayerCommands) -> void:
 	if hero.stop_ticks > 0:
 		hero.stop_ticks -= 1
 		return
+	# Original human polling turns/starts movement before attempting fire.
+	# Specials reject moving actors; ordinary bombs still use the current cell.
+	if commands.direction != Vector2i.ZERO:
+		_try_move(hero, commands.direction)
 	if commands.bomb_requested or hero.prev_fire:
 		hero.prev_fire = false
 		if hero.special_count > 0:
 			SpecialRules.place(self, hero)
 		else:
 			_place_bomb(hero, hero.cell)
-	if commands.direction != Vector2i.ZERO:
-		_try_move(hero, commands.direction)
 
 
 func _try_move(hero: HeroState, dir: Vector2i) -> void:
