@@ -1,0 +1,66 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 24.359,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\view.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\death_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.906,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\feedback_render.log"
+  },
+  {
+    "name": "input_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.438,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\input_render.log"
+  },
+  {
+    "name": "menu_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.312,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\menu_render.log"
+  },
+  {
+    "name": "ui",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\ui.log"
+  },
+  {
+    "name": "visual_timelines",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.235,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue06\\.artifacts\\issue06\\checks\\visual_timelines.log"
+  }
+]
