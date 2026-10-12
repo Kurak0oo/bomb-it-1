@@ -83,6 +83,7 @@ def main():
             phases.append(("python_compile", [sys.executable, "-m", "compileall", "-q", "tools"], None))
             phases.append(("tooling", [sys.executable, "-m", "unittest", "discover", "-s", "tools/tests", "-v"], None))
             phases.append(("reference_parse", command + ["--check-only", "--script", "res://tests/reference_capture.gd"], None))
+            phases.append(("core_reference_parse", command + ["--check-only", "--script", "res://tests/core_reference_capture.gd"], None))
         for suite in args.suite or SUITES:
             if suite == "tooling":
                 continue
