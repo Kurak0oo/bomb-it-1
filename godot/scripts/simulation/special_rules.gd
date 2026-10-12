@@ -22,6 +22,7 @@ static func place(state: GameState, hero: HeroState) -> bool:
 		if weapon.kind == "ice" and (cell.kind != GameState.Kind.FLOOR or cell.bomb != null):
 			return false
 	state.specials.append(weapon)
+	state.register_callback(weapon)
 	hero.special_count -= 1
 	if hero.controller == HeroState.Controller.HUMAN:
 		hero.fire_ready = false
@@ -42,65 +43,65 @@ static func pulse(state: GameState, at: Vector2i, owner: int) -> void:
 	effect.origin = at
 	effect.position = Vector2(at) * 30
 	state.specials.append(effect)
+	state.register_callback(effect)
 	state.events.append("explode")
 
-static func tick(state: GameState) -> void:
-	for weapon: SpecialState in state.specials.duplicate():
-		if weapon.just_placed:
-			weapon.just_placed = false
-			continue
-		weapon.age += 1
-		match weapon.kind:
-			"pulse":
-				if weapon.age >= 10:
-					state.cell_at(weapon.cell).energy -= 1
-					state.specials.erase(weapon)
-			"grenade":
-				# Nested grenade body symbols 307/308/309 have 19 timeline frames.
-				if weapon.age >= 19:
-					pulse(state, weapon.cell, weapon.owner_id)
-					for i in 4:
-						pulse(state, weapon.cell + SimRules.direction(i), weapon.owner_id)
-					state.specials.erase(weapon)
-			"rocket":
-				weapon.position += Vector2(weapon.direction) * weapon.age
-				weapon.cell = Vector2i(roundi(weapon.position.x / 30), roundi(weapon.position.y / 30))
-				var hit := false
-				for hero in state.heroes:
-					if hero.alive and hero.id != weapon.owner_id and hero.pixel_position().distance_squared_to(weapon.position) < 225:
-						hit = true
-				var cell := state.cell_at(weapon.cell)
-				if hit:
-					pulse(state, weapon.cell, weapon.owner_id)
-				elif cell == null or cell.kind == GameState.Kind.SOLID:
-					pulse(state, weapon.cell - weapon.direction, weapon.owner_id)
+static func tick_weapon(state: GameState, weapon: SpecialState) -> void:
+	if weapon.just_placed:
+		weapon.just_placed = false
+		return
+	weapon.age += 1
+	match weapon.kind:
+		"pulse":
+			if weapon.age >= 10:
+				state.cell_at(weapon.cell).energy -= 1
+				state.specials.erase(weapon)
+		"grenade":
+			# Nested grenade body symbols 307/308/309 have 19 timeline frames.
+			if weapon.age >= 19:
+				pulse(state, weapon.cell, weapon.owner_id)
+				for i in 4:
+					pulse(state, weapon.cell + SimRules.direction(i), weapon.owner_id)
+				state.specials.erase(weapon)
+		"rocket":
+			weapon.position += Vector2(weapon.direction) * weapon.age
+			weapon.cell = Vector2i(roundi(weapon.position.x / 30), roundi(weapon.position.y / 30))
+			var hit := false
+			for hero in state.heroes:
+				if hero.alive and hero.id != weapon.owner_id and hero.pixel_position().distance_squared_to(weapon.position) < 225:
 					hit = true
-				elif cell.kind != GameState.Kind.FLOOR or cell.bomb != null:
+			var cell := state.cell_at(weapon.cell)
+			if hit:
+				pulse(state, weapon.cell, weapon.owner_id)
+			elif cell == null or cell.kind == GameState.Kind.SOLID:
+				pulse(state, weapon.cell - weapon.direction, weapon.owner_id)
+				hit = true
+			elif cell.kind != GameState.Kind.FLOOR or cell.bomb != null:
+				pulse(state, weapon.cell, weapon.owner_id)
+				hit = true
+			if hit:
+				# The original creates smoke before checking impact/removal.
+				state.presentation_events.append({"kind":"rocket_impact_smoke", "position":weapon.position, "direction":weapon.direction, "tick":state.tick_number})
+				state.specials.erase(weapon)
+		"mine", "gas":
+			var hit := false
+			for hero in state.heroes:
+				if not hero.alive or hero.id == weapon.owner_id:
+					continue
+				var distance: float = hero.pixel_position().distance_squared_to(weapon.position)
+				if weapon.kind == "mine" and distance < 225:
+					hit = true
+				elif weapon.kind == "gas" and is_zero_approx(distance):
+					hero.slow_ticks = 600
+					hit = true
+			if state.cell_at(weapon.cell).energy > 0:
+				hit = true
+			if hit:
+				if weapon.kind == "mine":
 					pulse(state, weapon.cell, weapon.owner_id)
-					hit = true
-				if hit:
-					# The original creates smoke before checking impact/removal.
-					state.presentation_events.append({"kind":"rocket_impact_smoke", "position":weapon.position, "direction":weapon.direction, "tick":state.tick_number})
-					state.specials.erase(weapon)
-			"mine", "gas":
-				var hit := false
-				for hero in state.heroes:
-					if not hero.alive or hero.id == weapon.owner_id:
-						continue
-					var distance: float = hero.pixel_position().distance_squared_to(weapon.position)
-					if weapon.kind == "mine" and distance < 225:
-						hit = true
-					elif weapon.kind == "gas" and is_zero_approx(distance):
-						hero.slow_ticks = 600
-						hit = true
-				if state.cell_at(weapon.cell).energy > 0:
-					hit = true
-				if hit:
-					if weapon.kind == "mine":
-						pulse(state, weapon.cell, weapon.owner_id)
-					state.specials.erase(weapon)
-			"ice", "fire":
-				_tick_ray(state, weapon)
+				state.specials.erase(weapon)
+		"ice", "fire":
+			_tick_ray(state, weapon)
 
 static func _tick_ray(state: GameState, weapon: SpecialState) -> void:
 	if weapon.age <= 12 and weapon.age % 4 == 0 and not weapon.growth_stopped:

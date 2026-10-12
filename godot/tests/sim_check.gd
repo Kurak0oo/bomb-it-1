@@ -147,9 +147,9 @@ func _test_fuse_and_plus() -> void:
 	_expect_eq(board.bombs[0].fuse, 1, "fuse is 1")
 	_expect_eq(board.heroes[0].bombs_available, 0, "charge still spent")
 	_tick(board, _cmd(Vector2i.ZERO, true))
-	_expect_eq(board.bombs.size(), 0, "60th fuse tick explodes")
-	_expect_eq(board.heroes[0].bombs_available, 1, "charge returns when the explosion starts")
-	_expect_eq(board.bombs.size(), 0, "place on the explode tick itself is rejected")
+	_expect_eq(board.bombs.size(), 1, "60th fuse tick refunds before held fire replaces the bomb")
+	_expect_eq(board.heroes[0].bombs_available, 0, "same-update replacement spends the returned charge once")
+	_expect_eq(board.bombs[0].fuse, 60, "replacement waits until its first child callback")
 	_expect(_energy(board, Vector2i(3, 3)) > 0, "center is lit on the explode tick")
 	for neighbor in [Vector2i(2, 3), Vector2i(4, 3), Vector2i(3, 2), Vector2i(3, 4)]:
 		_expect_eq(_energy(board, neighbor), 0, "neighbor dark on the explode tick %s" % neighbor)
@@ -268,6 +268,7 @@ func _plant(board: GameState, at: Vector2i, fuse: int, just_placed: bool, level:
 	bomb.level = level
 	board.cell_at(at).bomb = bomb
 	board.bombs.append(bomb)
+	board.register_callback(bomb)
 
 
 func _cmd(dir: Vector2i, bomb := false) -> PlayerCommands:
