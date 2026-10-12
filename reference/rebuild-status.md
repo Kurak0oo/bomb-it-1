@@ -50,8 +50,9 @@ The playable systems are implemented, but **exact equivalence is not established
    corrections #30–#33; [all seven push cases now agree](issue-30.md), including
    their newly observed allowance fields. The [grenade endpoint correction](issue-31.md)
    now makes the full motion profile agree and matches all 17,792 new endpoint/accounting
-   fields. The nested interaction profile retains 106 differences, including the
-   pending accounting/contact corrections and residual-energy uncertainty.
+   fields. [Shield-hit credit and removed-owner refunds](issue-32.md) now match
+   24,816 independent accounting fields. The nested interaction profile retains
+   47 differences: 33 gas/ice timing fields and 14 residual-energy observations.
    Earlier death, level-one explosion-energy and brick-blocking
    traces agree. These fixtures do not establish full-match or Adobe Flash Player
    parity, and uncertain residual pulse energy is not reproduced as invisible danger.
