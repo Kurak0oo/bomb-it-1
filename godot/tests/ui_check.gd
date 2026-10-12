@@ -13,7 +13,7 @@ func run() -> void:
 	root.add_child(main)
 	main.audio.muted = true
 	await capture("menu")
-	for point in [Vector2(477,100), Vector2(470,155)]:
+	for point in [Vector2(477,100), Vector2(470,155), Vector2(477,205)]:
 		for pressed in [true, false]:
 			var event := InputEventMouseButton.new()
 			event.position = main.position + point
@@ -21,6 +21,7 @@ func run() -> void:
 			event.pressed = pressed
 			root.push_input(event, true)
 	check(main.screen == "select", "menu signal safely changes screens")
+	main.original_menu.set_process(false)
 	await capture("select")
 	main.session.start(42, 1, 1, 1)
 	main._show_round()
@@ -83,15 +84,8 @@ func run() -> void:
 	check(not main.touch.bomb_held and main.touch.direction == Vector2i.ZERO, "touch resets on pause")
 	main._show_help()
 	await capture("help")
-	main.players = 2
-	main.selection_slot = 0
-	main._show_select()
-	main._choose_character(3)
-	main._start_game()
-	check(main.screen == "select" and main.selection_slot == 1, "two-player setup selects second robot")
-	main._choose_character(4)
-	main._start_game()
-	check(main.session.state.heroes[0].character_id == 3 and main.session.state.heroes[1].character_id == 4, "both selected characters enter game")
+	# Independent 1P/2P choices now run through actual rendered input in
+	# selection_render_check instead of calling selection helpers directly.
 	main.set_physics_process(false)
 	# Let the final screen enter a frame before retiring its audio players.
 	await process_frame
