@@ -47,8 +47,8 @@ The playable systems are implemented, but **exact equivalence is not established
    [AI branch](issue-28-ai.md) retains source fire-before-move ordering. A one-twip movement
    discrepancy remains unproven as a port defect. [Pushing and grenade traces](issue-12.md)
    and [nested interaction traces](issue-13.md) now establish separate bounded
-   corrections #30–#33; all seven existing push cases now agree after #29, with
-   #30's acceptance audit pending. Earlier death, level-one explosion-energy and brick-blocking
+   corrections #30–#33; [all seven push cases now agree](issue-30.md), including
+   their newly observed allowance fields. Earlier death, level-one explosion-energy and brick-blocking
    traces agree. These fixtures do not establish full-match or Adobe Flash Player
    parity, and uncertain residual pulse energy is not reproduced as invisible danger.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
@@ -93,7 +93,10 @@ The playable systems are implemented, but **exact equivalence is not established
    cancellation, hidden/disabled controls, pause and scene changes discard pending
    presses. [Lifecycle checks](issue-17.md) cover overlapping interruptions and
    deliberate match/outcome resume. [Safe-area layouts](issue-16.md) preserve the
-   complete game image across nine synthetic desktop layouts. iPhone hardware
+   complete game image across nine synthetic desktop layouts. [Schedule checks](issue-18.md)
+   preserve authoritative state across 35/60/120 Hz rendering and bounded stalls;
+   public performance reports distinguish submission/input timing from physical
+   presentation. iPhone hardware
    latency, actual safe-area insets, sustained frame pacing, native builds, signing, and store packaging
    have not been verified. The user has iPhones but no Mac; native iOS build/install
    remains externally blocked. No release executable or iOS package is claimed.
