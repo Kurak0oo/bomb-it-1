@@ -1,0 +1,34 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.063,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-count-red\\import.log"
+  },
+  {
+    "name": "view",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.14,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-count-red\\view.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 2.125,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-count-red\\death_render.log"
+  },
+  {
+    "name": "feedback_render",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 4.344,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue03\\.artifacts\\feedback-count-red\\feedback_render.log"
+  }
+]
