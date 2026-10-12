@@ -1,0 +1,39 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: fire last child remains visible after its controller retires
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/special_effects_render_check.gd:102)
+       [1] run (res://tests/special_effects_render_check.gd:53)
+       [2] pixels (res://tests/special_effects_render_check.gd:27)
+ERROR: ice last child remains visible after its controller retires
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/special_effects_render_check.gd:102)
+       [1] run (res://tests/special_effects_render_check.gd:53)
+       [2] pixels (res://tests/special_effects_render_check.gd:27)
+ERROR: Outcome completes finite effects without simulation callbacks
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/special_effects_render_check.gd:102)
+       [1] run (res://tests/special_effects_render_check.gd:73)
+       [2] pixels (res://tests/special_effects_render_check.gd:27)
+ERROR: Outcome completes finite effects without simulation callbacks
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/special_effects_render_check.gd:102)
+       [1] run (res://tests/special_effects_render_check.gd:73)
+       [2] pixels (res://tests/special_effects_render_check.gd:27)
+ERROR: Outcome completes finite effects without simulation callbacks
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/special_effects_render_check.gd:102)
+       [1] run (res://tests/special_effects_render_check.gd:73)
+       [2] pixels (res://tests/special_effects_render_check.gd:27)
+ERROR: Impact burst and all smoke finish after outcome
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/special_effects_render_check.gd:102)
+       [1] run (res://tests/special_effects_render_check.gd:93)
+       [2] pixels (res://tests/special_effects_render_check.gd:27)
