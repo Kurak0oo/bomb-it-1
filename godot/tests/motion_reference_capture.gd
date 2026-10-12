@@ -18,6 +18,9 @@ func run() -> void:
 			other.alive = false
 		var actor := state.heroes[0]
 		actor.alive = true
+		actor.lives = 3
+		actor.bomb_capacity = 3
+		actor.bombs_available = 3
 		actor.shield = 999
 		for at in fixture.walls:
 			state.cell_at(Vector2i(at[0],at[1])).kind = GameState.Kind.SOLID
