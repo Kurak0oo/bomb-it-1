@@ -1,0 +1,50 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 5.094,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-loop-red\\import.log"
+  },
+  {
+    "name": "timeline",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 1.234,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-loop-red\\timeline.log"
+  },
+  {
+    "name": "layout_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.703,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-loop-red\\layout_render.log"
+  },
+  {
+    "name": "selection_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.25,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-loop-red\\selection_render.log"
+  },
+  {
+    "name": "death_render",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.735,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-loop-red\\death_render.log"
+  },
+  {
+    "name": "effects_render",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 2.172,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue04\\.artifacts\\effects-loop-red\\effects_render.log"
+  }
+]

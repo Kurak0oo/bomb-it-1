@@ -1,0 +1,292 @@
+[
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "Dummy"
+    ],
+    "pid": 44904,
+    "window": 25496326,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.313,
+    "mode": "normal",
+    "stdout_has_error": false,
+    "driver": "Dummy"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "Dummy",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 38600,
+    "window": 10947112,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.313,
+    "mode": "playing",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "playing",
+      "muted": false,
+      "paused": false,
+      "screen": "game",
+      "suspended": false,
+      "voices": 1
+    },
+    "driver": "Dummy"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "Dummy",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 45724,
+    "window": 23268684,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.36,
+    "mode": "paused",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "paused",
+      "muted": false,
+      "paused": true,
+      "screen": "game",
+      "suspended": false,
+      "voices": 1
+    },
+    "driver": "Dummy"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "Dummy",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 46700,
+    "window": 12586790,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.281,
+    "mode": "background",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "background",
+      "muted": false,
+      "paused": true,
+      "screen": "game",
+      "suspended": true,
+      "voices": 0
+    },
+    "driver": "Dummy"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "Dummy",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 10428,
+    "window": 16846522,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.25,
+    "mode": "muted",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "muted",
+      "muted": true,
+      "paused": false,
+      "screen": "game",
+      "suspended": false,
+      "voices": 1
+    },
+    "driver": "Dummy"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "WASAPI"
+    ],
+    "pid": 11400,
+    "window": 21433678,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.188,
+    "mode": "normal",
+    "stdout_has_error": false,
+    "driver": "WASAPI"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "WASAPI",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 37640,
+    "window": 11340328,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.203,
+    "mode": "playing",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "playing",
+      "muted": false,
+      "paused": false,
+      "screen": "game",
+      "suspended": false,
+      "voices": 1
+    },
+    "driver": "WASAPI"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "WASAPI",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 37392,
+    "window": 6426442,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.203,
+    "mode": "paused",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "paused",
+      "muted": false,
+      "paused": true,
+      "screen": "game",
+      "suspended": false,
+      "voices": 1
+    },
+    "driver": "WASAPI"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "WASAPI",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 16052,
+    "window": 17239738,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.203,
+    "mode": "background",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "background",
+      "muted": false,
+      "paused": true,
+      "screen": "game",
+      "suspended": true,
+      "voices": 0
+    },
+    "driver": "WASAPI"
+  },
+  {
+    "command": [
+      "C:/Users/Eiji/AppData/Local/Godot/Godot_v4.7.2-stable_win64.exe",
+      "--path",
+      "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue10\\godot",
+      "--audio-driver",
+      "WASAPI",
+      "--script",
+      "res://tests/audio_close_check.gd"
+    ],
+    "pid": 33132,
+    "window": 26151686,
+    "normal_WM_CLOSE_posted": true,
+    "exit_code": 0,
+    "repeated_close_posted": [
+      true,
+      true
+    ],
+    "close_seconds": 0.187,
+    "mode": "muted",
+    "stdout_has_error": false,
+    "observed_state": {
+      "mode": "muted",
+      "muted": true,
+      "paused": false,
+      "screen": "game",
+      "suspended": false,
+      "voices": 1
+    },
+    "driver": "WASAPI"
+  }
+]

@@ -1,0 +1,147 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Source final-frame callback replaces grenade with five pulses
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:66)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Pulses expire after ten callback updates
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:73)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)
+ERROR: Grenade and pulse visuals retire without remnants
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/grenade_render_check.gd:17)
+       [1] run (res://tests/grenade_render_check.gd:74)
+       [2] snapshot (res://tests/grenade_render_check.gd:12)

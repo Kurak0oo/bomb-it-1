@@ -1,0 +1,523 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-arena-theme-0-crossing.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-0-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-0-native.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-1-crossing.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-1-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-1-native.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-2-crossing.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-2-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-2-native.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-3-crossing.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-3-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-3-native.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-4-crossing.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-4-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena-theme-4-native.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-arena.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-death-timelines.png",
+      "passed": false,
+      "changed_pixels": 12289,
+      "changed_fraction": 0.013964772727272727
+    },
+    {
+      "name": "qa-difficulty.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-effect-timelines.png",
+      "passed": false,
+      "changed_pixels": 3346,
+      "changed_fraction": 0.0038022727272727275
+    },
+    {
+      "name": "qa-feedback-equipped.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-help.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hud-base.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hud-status.png",
+      "passed": false,
+      "changed_pixels": 5,
+      "changed_fraction": 2.2727272727272726e-05
+    },
+    {
+      "name": "qa-interruption-paused-2p.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-compact-insets.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-content-scale.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-four-insets.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-left-inset.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-narrow.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-native-insets.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-notch-left.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-notch-right.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-layout-small-landscape.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-controls-hover.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-controls-pressed.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-controls-touch-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-controls.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-players.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-powerups-hover.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-powerups-landscape.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-powerups-pressed.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-powerups.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-title-hover.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-title-local-best-muted.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-title-pressed.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu-title.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-menu.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-outcome-1p-complete.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-1p-exhausted.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-1p-lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-1p-timeup_lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-1p-timeup_win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-1p-win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-2p-complete.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-2p-exhausted.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-2p-lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-2p-timeup_lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-2p-timeup_win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-outcome-2p-win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-pause.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-result-button-continue-down.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-result-button-continue-over.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-result-button-portal-down.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-result-button-portal-over.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-result-button-submit-down.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-result-button-submit-over.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-result.png",
+      "passed": false,
+      "changed_pixels": 328526,
+      "changed_fraction": 0.373325
+    },
+    {
+      "name": "qa-score-1p-complete.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-1p-exhausted.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-1p-lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-1p-timeup_lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-1p-timeup_win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-1p-win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-2p-complete.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-2p-exhausted.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-2p-lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-2p-timeup_lose.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-2p-timeup_win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-score-2p-win.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-select.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-selection-1p-changed.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-selection-1p.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-selection-2p-changed.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-selection-2p-confirmed.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-selection-2p.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-source-score-1p.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-source-score-2p.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-timeout-death-1p-retired.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-timeout-death-1p-start.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-timeout-death-1p-tick10.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-timeout-death-2p-retired.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-timeout-death-2p-start.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-timeout-death-2p-tick10.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-touch.png",
+      "passed": false,
+      "changed_pixels": 899502,
+      "changed_fraction": 0.7027359375
+    }
+  ]
+}

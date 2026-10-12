@@ -1,0 +1,43 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-difficulty.png",
+      "passed": false,
+      "changed_pixels": 135741,
+      "changed_fraction": 0.6170045454545454
+    },
+    {
+      "name": "qa-selection-1p-changed.png",
+      "passed": false,
+      "changed_pixels": 117671,
+      "changed_fraction": 0.5348681818181819
+    },
+    {
+      "name": "qa-selection-1p.png",
+      "passed": false,
+      "changed_pixels": 117772,
+      "changed_fraction": 0.5353272727272728
+    },
+    {
+      "name": "qa-selection-2p-changed.png",
+      "passed": false,
+      "changed_pixels": 117748,
+      "changed_fraction": 0.5352181818181818
+    },
+    {
+      "name": "qa-selection-2p-confirmed.png",
+      "passed": false,
+      "changed_pixels": 117571,
+      "changed_fraction": 0.5344136363636364
+    },
+    {
+      "name": "qa-selection-2p.png",
+      "passed": false,
+      "changed_pixels": 117662,
+      "changed_fraction": 0.5348272727272727
+    }
+  ]
+}

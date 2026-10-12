@@ -1,0 +1,6 @@
+test_non_string_profiles_report_incompatible_capture (tools.tests.test_trace_compare.ReferenceComparison.test_non_string_profiles_report_incompatible_capture) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.228s
+
+OK

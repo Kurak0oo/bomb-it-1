@@ -1,0 +1,13 @@
+{
+  "revision": "581395fe152ef1f3c9556e6c85a8fe4d3e46dcee",
+  "image": "a6211dc5d5fb",
+  "capture_id": "258423e93aef",
+  "unchanged": 94,
+  "new": [
+    "qa-ordinary-pickup-loop.png",
+    "qa-ordinary-pickup-fade.png",
+    "qa-ordinary-flame-fade.png"
+  ],
+  "images": 97,
+  "scope": "Reviewed port regression captures. Original parity comparisons remain separate and strict."
+}

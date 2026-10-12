@@ -1,0 +1,778 @@
+{
+  "review_baseline": "0d3b2d18b67db1dcffc5c8468c110e0976748c25",
+  "tickets": [
+    24,
+    25,
+    26
+  ],
+  "date": "2026-10-11",
+  "full_game_complete": false,
+  "original_image_parity": false,
+  "windows_import_initial_failure": [
+    {
+      "name": "import",
+      "passed": false,
+      "exit_code": 3221225477,
+      "timeout": false,
+      "seconds": 18.094,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-checks\\import.log"
+    }
+  ],
+  "windows_full_suite": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 13.953,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\import.log"
+    },
+    {
+      "name": "python_compile",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.141,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\python_compile.log"
+    },
+    {
+      "name": "tooling",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.469,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\tooling.log"
+    },
+    {
+      "name": "reference_parse",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.312,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\reference_parse.log"
+    },
+    {
+      "name": "sim",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.313,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\sim.log"
+    },
+    {
+      "name": "actors",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.312,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\actors.log"
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.063,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\view.log"
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.047,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\timeline.log"
+    },
+    {
+      "name": "campaign",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.187,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\campaign.log"
+    },
+    {
+      "name": "special",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.453,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\special.log"
+    },
+    {
+      "name": "soak",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.375,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\soak.log"
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.047,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\death_render.log"
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.641,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\feedback_render.log"
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 5.078,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\input_render.log"
+    },
+    {
+      "name": "menu_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.797,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\menu_render.log"
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.14,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\ui.log"
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.0,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-full-retry\\visual_timelines.log"
+    }
+  ],
+  "linux_focused": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 5.988,
+      "log": "/artifacts/import.log"
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.52,
+      "log": "/artifacts/view.log"
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.574,
+      "log": "/artifacts/death_render.log"
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.776,
+      "log": "/artifacts/feedback_render.log"
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.431,
+      "log": "/artifacts/input_render.log"
+    },
+    {
+      "name": "menu_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.328,
+      "log": "/artifacts/menu_render.log"
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.779,
+      "log": "/artifacts/ui.log"
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.171,
+      "log": "/artifacts/visual_timelines.log"
+    }
+  ],
+  "reference": {
+    "source": "unmodified-original-swf",
+    "source_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
+    "runtime": "Ruffle 0.7.1",
+    "browser": "156.0.8078.4",
+    "fps": 35,
+    "capture_sha256": "a38270f99b7833e4020d7c181036fbce02370586559f580b503dda05f9a809f2",
+    "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
+    "renderer": "canvas",
+    "clock": "Playwright virtual clock; stopped root menu frames",
+    "caveat": "Original bytecode in Ruffle, not Adobe Flash Player certification. No port images used as source."
+  },
+  "baseline_notes": {
+    "prior_main_and_ui_probe": "Restoring baseline main.gd and ui_check.gd in the same container exactly reproduced prior arena/pause/result/touch images.",
+    "reviewed_text_pixel_changes": {
+      "arena": 192,
+      "pause": 192,
+      "result": 248,
+      "touch": 27
+    },
+    "new_menu_captures": 13,
+    "exact_comparator_tolerance": 0
+  },
+  "linux_reviewed_regression": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 6.189,
+      "log": "/artifacts/import.log"
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.419,
+      "log": "/artifacts/view.log"
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.52,
+      "log": "/artifacts/timeline.log"
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.375,
+      "log": "/artifacts/death_render.log"
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.372,
+      "log": "/artifacts/feedback_render.log"
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.33,
+      "log": "/artifacts/input_render.log"
+    },
+    {
+      "name": "menu_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.027,
+      "log": "/artifacts/menu_render.log"
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.879,
+      "log": "/artifacts/ui.log"
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.171,
+      "log": "/artifacts/visual_timelines.log"
+    },
+    {
+      "name": "visual_compare",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.472,
+      "log": "/artifacts/visual_compare.log"
+    }
+  ],
+  "linux_exact_comparison": {
+    "passed": true,
+    "tolerance": 0,
+    "max_changed_fraction": 0.0,
+    "images": [
+      {
+        "name": "qa-arena.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-death-timelines.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-effect-timelines.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-feedback-equipped.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-help.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls-hover.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls-pressed.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls-touch-landscape.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-players.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups-hover.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups-landscape.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups-pressed.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title-hover.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title-local-best-muted.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title-pressed.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-pause.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-result.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-select.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-touch.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      }
+    ]
+  },
+  "implementation_commits": [
+    "197bc1c",
+    "ee82468"
+  ],
+  "windows_after_review": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.797,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\import.log"
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.062,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\view.log"
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.063,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\death_render.log"
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.671,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\feedback_render.log"
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 5.11,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\input_render.log"
+    },
+    {
+      "name": "menu_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.828,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\menu_render.log"
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.141,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\ui.log"
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 2.031,
+      "log": "C:\\Users\\Eiji\\Github\\bomb-it-1\\.artifacts\\menu-review-fix\\visual_timelines.log"
+    }
+  ],
+  "linux_after_review": [
+    {
+      "name": "import",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 6.238,
+      "log": "/artifacts/import.log"
+    },
+    {
+      "name": "view",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.419,
+      "log": "/artifacts/view.log"
+    },
+    {
+      "name": "timeline",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 0.419,
+      "log": "/artifacts/timeline.log"
+    },
+    {
+      "name": "death_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.422,
+      "log": "/artifacts/death_render.log"
+    },
+    {
+      "name": "feedback_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.372,
+      "log": "/artifacts/feedback_render.log"
+    },
+    {
+      "name": "input_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 4.179,
+      "log": "/artifacts/input_render.log"
+    },
+    {
+      "name": "menu_render",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.026,
+      "log": "/artifacts/menu_render.log"
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 3.779,
+      "log": "/artifacts/ui.log"
+    },
+    {
+      "name": "visual_timelines",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.172,
+      "log": "/artifacts/visual_timelines.log"
+    },
+    {
+      "name": "visual_compare",
+      "passed": true,
+      "exit_code": 0,
+      "timeout": false,
+      "seconds": 1.674,
+      "log": "/artifacts/visual_compare.log"
+    }
+  ],
+  "linux_exact_comparison_after_review": {
+    "passed": true,
+    "tolerance": 0,
+    "max_changed_fraction": 0.0,
+    "images": [
+      {
+        "name": "qa-arena.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-death-timelines.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-effect-timelines.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-feedback-equipped.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-help.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls-hover.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls-pressed.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls-touch-landscape.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-controls.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-players.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups-hover.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups-landscape.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups-pressed.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-powerups.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title-hover.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title-local-best-muted.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title-pressed.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu-title.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-menu.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-pause.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-result.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-select.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      },
+      {
+        "name": "qa-touch.png",
+        "passed": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0
+      }
+    ]
+  },
+  "review": {
+    "standards_hard_violations": 0,
+    "standards_findings_fixed": 1,
+    "standards_unresolved_findings": 0,
+    "spec_actionable_findings": 0
+  }
+}

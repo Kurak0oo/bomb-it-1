@@ -1,0 +1,25 @@
+{
+  "capture_sha256": "afb979b3c25b0b20636e6477e96b887eb7c54785e8e3b9eda762bafea93fa01c",
+  "results": [
+    {
+      "fixture": "startup-double",
+      "collector_exit": 1,
+      "rejected_attempts": 3,
+      "passed": true,
+      "fixture_sha256": "bc21ccb3dcee48f61f02d85d1a652cd6c7b281dbfd3be2a23da25e5e2ba91c44",
+      "script_sha256": "dad43f0c2ada9c8ffb6e69c4250b7d879a158e6569345358de78df804ce8d44e",
+      "configuration_sha256": "20e011253f61e22fd97602f603d95480d3787a84dfdeda6494dda2e8bd26c553"
+    },
+    {
+      "fixture": "mid-sequence-gap",
+      "collector_exit": 1,
+      "rejected_attempts": 1,
+      "passed": true,
+      "fixture_sha256": "dd7246e420cb5caa5c8690f9fe6a69102e2bed7f2251c2ab1450e776911ddd29",
+      "script_sha256": "822fab95d0f42a03a9f2e224d569db548129fbda6949e2abee5ebd0773460d5e",
+      "configuration_sha256": "c6cd34e2debaa16b02ba5cd48a52869e29482a6c3656369475ae870d6e7dd9c3"
+    }
+  ],
+  "builder_sha256": "4ddfd9913d0766f6ce07c99ee688cc9809741ef0d08605813f7430a503614778",
+  "original_swf_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b"
+}

@@ -1,0 +1,104 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "move_tap",
+    "tick": 1,
+    "field": "pixelXTwips",
+    "original": 4899,
+    "rebuilt": 4900
+  },
+  "scenario_first_divergences": {
+    "move_tap": {
+      "scenario": "move_tap",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "move_hold": {
+      "scenario": "move_hold",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "fire_during_move": {
+      "scenario": "fire_during_move",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "ordinary_hold": null,
+    "special_hold_release": {
+      "scenario": "special_hold_release",
+      "tick": 2,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "special_move_and_fire": {
+      "scenario": "special_move_and_fire",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "damage_growth": null,
+    "damage_rounded": {
+      "scenario": "damage_rounded",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    "damage_expiry_before": null,
+    "damage_expiry_at": null
+  },
+  "differences": [
+    {
+      "scenario": "move_tap",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "move_hold",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "fire_during_move",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "special_hold_release",
+      "tick": 2,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "special_move_and_fire",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    },
+    {
+      "scenario": "damage_rounded",
+      "tick": 1,
+      "field": "pixelXTwips",
+      "original": 4899,
+      "rebuilt": 4900
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-creation.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-00.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-04.png",
+      "passed": false,
+      "changed_pixels": 25,
+      "changed_fraction": 0.00011363636363636364
+    },
+    {
+      "name": "qa-frame-05.png",
+      "passed": false,
+      "changed_pixels": 13,
+      "changed_fraction": 5.909090909090909e-05
+    },
+    {
+      "name": "qa-frame-10.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-11.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-19.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-20.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-creation.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-00.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-04.png",
+      "passed": false,
+      "changed_pixels": 25,
+      "changed_fraction": 0.00011363636363636364
+    },
+    {
+      "name": "qa-hero2-frame-05.png",
+      "passed": false,
+      "changed_pixels": 13,
+      "changed_fraction": 5.909090909090909e-05
+    },
+    {
+      "name": "qa-hero2-frame-10.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-11.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-19.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-20.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero2-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-creation.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-00.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-04.png",
+      "passed": false,
+      "changed_pixels": 23,
+      "changed_fraction": 0.00010454545454545455
+    },
+    {
+      "name": "qa-hero3-frame-05.png",
+      "passed": false,
+      "changed_pixels": 15,
+      "changed_fraction": 6.818181818181818e-05
+    },
+    {
+      "name": "qa-hero3-frame-10.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-11.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-19.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-20.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero3-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-creation.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-00.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-04.png",
+      "passed": false,
+      "changed_pixels": 23,
+      "changed_fraction": 0.00010454545454545455
+    },
+    {
+      "name": "qa-hero4-frame-05.png",
+      "passed": false,
+      "changed_pixels": 15,
+      "changed_fraction": 6.818181818181818e-05
+    },
+    {
+      "name": "qa-hero4-frame-10.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-11.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-19.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-20.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-34.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-hero4-frame-35.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    }
+  ]
+}

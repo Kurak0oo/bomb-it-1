@@ -1,0 +1,42 @@
+[
+  {
+    "name": "fixture",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.094,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\review-fixes\\.artifacts\\final-review\\special-effects-final\\fixture.log"
+  },
+  {
+    "name": "original",
+    "passed": false,
+    "exit_code": 1,
+    "timeout": false,
+    "seconds": 1.64,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\review-fixes\\.artifacts\\final-review\\special-effects-final\\original.log"
+  },
+  {
+    "name": "original-restart-1",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 14.781,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\review-fixes\\.artifacts\\final-review\\special-effects-final\\original-restart-1.log"
+  },
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.969,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\review-fixes\\.artifacts\\final-review\\special-effects-final\\import.log"
+  },
+  {
+    "name": "rebuilt",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 13.031,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\review-fixes\\.artifacts\\final-review\\special-effects-final\\rebuilt.log"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\smoke\\588fa1047dd3\\application\\BombIt.exe",
+    "--audio-driver",
+    "Dummy",
+    "--quit-after",
+    "120"
+  ],
+  "exit_code": 0,
+  "normal_window_close": false,
+  "stdout": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\nOpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU\n\nWARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).\n   at: cleanup (core/object/object.cpp:2536)\nERROR: 1 resources still in use at exit (run with --verbose for details).\n   at: clear (core/io/resource.cpp:822)\n",
+  "isolated_user_root": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue21\\.artifacts\\issue21\\abrupt\\user-data",
+  "package_sha256": "a1cfa28eff02306bc43269d30ab6cf9985b13152c5edb6afe044359caaad1f87"
+}

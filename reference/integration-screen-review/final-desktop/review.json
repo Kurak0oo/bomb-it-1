@@ -1,0 +1,12 @@
+{
+  "capture": "3fd0e778e103",
+  "images": 108,
+  "docker_image": "8f52756b2528",
+  "changed_pixels": 0,
+  "headless_evidence": ".artifacts/integration-33-10-14/summary.json",
+  "note": "All nineteen Linux phases pass, including fifteen rendered phases and exact comparison. Docker source tree omits Git; normalized fingerprints identify the production inputs. This is a port regression, not original pixel equivalence.",
+  "headless_phases": 28,
+  "tooling_tests": 50,
+  "source_revision": "af67fc49510de6ac9e9473c70b4fcb464305080a",
+  "baseline_changes": 0
+}

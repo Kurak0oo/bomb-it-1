@@ -1,0 +1,132 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-arena.png",
+      "passed": false,
+      "changed_pixels": 192,
+      "changed_fraction": 0.00021818181818181818
+    },
+    {
+      "name": "qa-death-timelines.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-effect-timelines.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-feedback-equipped.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-help.png",
+      "passed": false,
+      "changed_pixels": 774797,
+      "changed_fraction": 0.60531015625
+    },
+    {
+      "name": "qa-menu-controls-hover.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-controls-pressed.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-controls-touch-landscape.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-controls.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-players.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-powerups-hover.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-powerups-landscape.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-powerups-pressed.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-powerups.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-title-hover.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-title-local-best-muted.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-title-pressed.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu-title.png",
+      "passed": false,
+      "error": "Missing baseline or capture"
+    },
+    {
+      "name": "qa-menu.png",
+      "passed": false,
+      "changed_pixels": 301742,
+      "changed_fraction": 0.34288863636363637
+    },
+    {
+      "name": "qa-pause.png",
+      "passed": false,
+      "changed_pixels": 192,
+      "changed_fraction": 0.00021818181818181818
+    },
+    {
+      "name": "qa-result.png",
+      "passed": false,
+      "changed_pixels": 248,
+      "changed_fraction": 0.0002818181818181818
+    },
+    {
+      "name": "qa-select.png",
+      "passed": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0
+    },
+    {
+      "name": "qa-touch.png",
+      "passed": false,
+      "changed_pixels": 27,
+      "changed_fraction": 2.109375e-05
+    }
+  ]
+}

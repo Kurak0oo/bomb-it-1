@@ -1,0 +1,563 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "ai_rocket",
+    "tick": 0,
+    "field": "specialCount",
+    "original": 2,
+    "rebuilt": 3
+  },
+  "scenario_first_divergences": {
+    "ai_bomb": null,
+    "ai_rocket": {
+      "scenario": "ai_rocket",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    "ai_mine": {
+      "scenario": "ai_mine",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    "ai_grenade": {
+      "scenario": "ai_grenade",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    "ai_gas": {
+      "scenario": "ai_gas",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    "ai_ice": {
+      "scenario": "ai_ice",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    "ai_fire": {
+      "scenario": "ai_fire",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    }
+  },
+  "differences": [
+    {
+      "scenario": "ai_rocket",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 0,
+      "field": "specials",
+      "original": "rocket,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 1,
+      "field": "specials",
+      "original": "rocket,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 2,
+      "field": "specials",
+      "original": "rocket,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 3,
+      "field": "specials",
+      "original": "rocket,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 4,
+      "field": "specials",
+      "original": "rocket,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_rocket",
+      "tick": 5,
+      "field": "specials",
+      "original": "rocket,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 0,
+      "field": "specials",
+      "original": "mine,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 1,
+      "field": "specials",
+      "original": "mine,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 2,
+      "field": "specials",
+      "original": "mine,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 3,
+      "field": "specials",
+      "original": "mine,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 4,
+      "field": "specials",
+      "original": "mine,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_mine",
+      "tick": 5,
+      "field": "specials",
+      "original": "mine,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 0,
+      "field": "specials",
+      "original": "grenade,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 1,
+      "field": "specials",
+      "original": "grenade,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 2,
+      "field": "specials",
+      "original": "grenade,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 3,
+      "field": "specials",
+      "original": "grenade,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 4,
+      "field": "specials",
+      "original": "grenade,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_grenade",
+      "tick": 5,
+      "field": "specials",
+      "original": "grenade,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 0,
+      "field": "specials",
+      "original": "gas,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 1,
+      "field": "specials",
+      "original": "gas,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 2,
+      "field": "specials",
+      "original": "gas,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 3,
+      "field": "specials",
+      "original": "gas,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 4,
+      "field": "specials",
+      "original": "gas,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_gas",
+      "tick": 5,
+      "field": "specials",
+      "original": "gas,8,6,0,0;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 0,
+      "field": "specials",
+      "original": "ice,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 1,
+      "field": "specials",
+      "original": "ice,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 2,
+      "field": "specials",
+      "original": "ice,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 3,
+      "field": "specials",
+      "original": "ice,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 4,
+      "field": "specials",
+      "original": "ice,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_ice",
+      "tick": 5,
+      "field": "specials",
+      "original": "ice,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 0,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 0,
+      "field": "specials",
+      "original": "fire,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 1,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 1,
+      "field": "specials",
+      "original": "fire,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 2,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 2,
+      "field": "specials",
+      "original": "fire,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 3,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 3,
+      "field": "specials",
+      "original": "fire,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 4,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 4,
+      "field": "specials",
+      "original": "fire,8,6,0,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 5,
+      "field": "specialCount",
+      "original": 2,
+      "rebuilt": 3
+    },
+    {
+      "scenario": "ai_fire",
+      "tick": 5,
+      "field": "specials",
+      "original": "fire,8,6,0,1;",
+      "rebuilt": ""
+    }
+  ]
+}

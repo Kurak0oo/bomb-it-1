@@ -1,0 +1,22 @@
+{
+  "raw": {
+    "original_path": "../issue14/.artifacts/rng-reference/raw-control/raw.json",
+    "sha256": "9650d35b8f8209246a1023eae168995180cc59788bb8c2ba84fd42dff2b873cd",
+    "observations": 500,
+    "differences": [],
+    "boundary": []
+  },
+  "adapted": {
+    "original_path": "../issue14/.artifacts/issue14-controlled/original/raw.json",
+    "sha256": "e66ebaae5afc024b2d45c7e62b0194d18b8db6dd146b562d7ff12a53d2d19a41",
+    "observations": 505,
+    "differences": [],
+    "boundary": [
+      "RNG_SHUFFLE|boundary|1,2,3,4|1,2,3,4",
+      "RNG_SHUFFLE|boundary|1,2,3,4|1,2,3,4",
+      "RNG_SHUFFLE|boundary|1,2,3,4|1,2,3,4",
+      "RNG_SHUFFLE|boundary|1,2,3,4|1,2,3,4",
+      "RNG_SHUFFLE|boundary|1,2,3,4|1,2,3,4"
+    ]
+  }
+}

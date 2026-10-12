@@ -1,0 +1,80 @@
+[
+  {
+    "profile": "core-v1",
+    "exit_code": 1,
+    "identical_report": true,
+    "differences": 6
+  },
+  {
+    "profile": "motion-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "interaction-v1",
+    "exit_code": 1,
+    "identical_report": true,
+    "differences": 14
+  },
+  {
+    "profile": "dispatch-v1",
+    "exit_code": 1,
+    "identical_report": true,
+    "differences": 28
+  },
+  {
+    "profile": "order-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "expiry-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "ai_order-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "push-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "grenade-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "grenadescore-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "accounting-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "contact-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  },
+  {
+    "profile": "icewalk-v1",
+    "exit_code": 0,
+    "identical_report": true,
+    "differences": 0
+  }
+]

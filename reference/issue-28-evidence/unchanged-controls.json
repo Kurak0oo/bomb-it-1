@@ -1,0 +1,18 @@
+{
+  "motion": {
+    "rebuilt_trace_identical_to": "reference\\issue-12-evidence\\rebuilt-trace.json",
+    "observations": 480
+  },
+  "interaction": {
+    "rebuilt_trace_identical_to": "reference\\issue-13-evidence\\rebuilt-trace.json",
+    "observations": 784
+  },
+  "order_original_repeated_identically": true,
+  "core_original_repeated_identically": true,
+  "core_before_differences": 69,
+  "core_after_differences": 37,
+  "core_after_quantization_differences": 6,
+  "core_after_expiry_order_differences": 31,
+  "order_before_differences": 668,
+  "order_after_differences": 0
+}

@@ -1,0 +1,16 @@
+Preserved 16 original function bodies (21432 bytes), and all character definitions.
+file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue33/tools/reference/capture_core.mjs:120
+          const error = new Error(`Capture skipped a tick: expected ${tick}, received ${JSON.stringify(observed)}`);
+                        ^
+
+Error: Capture skipped a tick: expected 1, received [{"tick":0},{"tick":2}]
+    at file:///C:/Users/Eiji/Github/bomb-it-worktrees/issue33/tools/reference/capture_core.mjs:120:25 {
+  retryStartup: false,
+  diagnostic: {
+    expected_tick: 1,
+    observed: [ { tick: 0 }, { tick: 2 } ],
+    attempt: 1
+  }
+}
+
+Node.js v22.14.0

@@ -1,0 +1,211 @@
+{
+  "description": "Original special-weapon clip timelines at controlled source positions, plus original putSpecial rocket collision and smoke; no translated gameplay expectations. Not Adobe Flash Player certification.",
+  "scenarios": {
+    "rocket-0": {
+      "end": 22,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "rocket-1": {
+      "end": 22,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "rocket-2": {
+      "end": 22,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "rocket-3": {
+      "end": 22,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "grenade-0": {
+      "end": 18,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17
+      ]
+    },
+    "grenade-1": {
+      "end": 18,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17
+      ]
+    },
+    "grenade-2": {
+      "end": 18,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17
+      ]
+    },
+    "grenade-3": {
+      "end": 18,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        16,
+        17
+      ]
+    },
+    "mine": {
+      "end": 62,
+      "captures": [
+        -1,
+        0,
+        1,
+        14,
+        29,
+        44,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    "gas": {
+      "end": 103,
+      "captures": [
+        -1,
+        0,
+        1,
+        39,
+        78,
+        79,
+        80,
+        89,
+        98,
+        99,
+        100,
+        101,
+        102
+      ]
+    },
+    "ice": {
+      "end": 41,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        18,
+        28,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    "fire": {
+      "end": 41,
+      "captures": [
+        -1,
+        0,
+        1,
+        6,
+        7,
+        8,
+        18,
+        28,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    "impact": {
+      "end": 27,
+      "captures": [
+        -1,
+        0,
+        1,
+        3,
+        4,
+        5,
+        13,
+        23,
+        24,
+        25,
+        26
+      ]
+    }
+  }
+}
