@@ -67,6 +67,18 @@ integration `exclusive.py` wrapper. Ticket evidence is in
 `qa-result.png` changes to a deterministic settled banner and
 `qa-interruption-paused-2p.png` is new. No image tolerance was relaxed.
 
+Validation on 2026-10-12: all 11 rendered phases plus simulation, view, tooling
+and source-parser checks pass. After merging integration `ca793d7`, the same
+headless checks (including the new interaction parser) and focused rendered
+interruption/UI checks pass. The implementation was reviewed against starting
+revision `200706f`; the final input, audio and interpolation changes remain
+outside the authoritative simulation. The settled UI capture advances both
+banner time and retiring death presentation to frame 70. Retained post-merge
+captures were visually inspected for the complete pause surface and centered
+settled outcome. A second independent UI run produced an identical SHA-256 for
+`qa-result.png`; both hashes are retained. Final synchronization also includes
+integration `1dda2fe` (completion-ledger documentation only).
+
 ## Limits
 
 These are Windows desktop synthetic lifecycle notifications and rendered input,

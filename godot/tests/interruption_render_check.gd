@@ -134,12 +134,14 @@ func run() -> void:
 	check(main.paused and main.original_results.elapsed == elapsed,"backgrounding freezes outcome presentation time")
 	root.propagate_notification(Node.NOTIFICATION_APPLICATION_RESUMED)
 	check(main.paused,"return preserves the interrupted outcome")
+	var resumed_at := Time.get_ticks_usec()
 	click(Vector2(280,205))
 	check(not main.paused and main.screen == "result","Resume restores outcome instead of triggering Continue")
 	key(false,KEY_SPACE)
 	check(main.original_results.phase == "outcome","release held across an interruption cannot skip a source-ready outcome")
 	await create_timer(0.1).timeout
-	check(main.original_results.elapsed > elapsed and main.original_results.elapsed < elapsed+0.2,"outcome resumes without a background-time backlog")
+	var foreground_seconds := (Time.get_ticks_usec()-resumed_at)/1000000.0
+	check(main.original_results.elapsed > elapsed and main.original_results.elapsed-elapsed <= foreground_seconds+0.05,"outcome resumes without a background-time backlog")
 	key(true,KEY_SPACE)
 	key(false,KEY_SPACE)
 	check(main.original_results.phase == "scores","fresh key release still invokes the original outcome skip")
