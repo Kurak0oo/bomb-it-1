@@ -12,7 +12,7 @@ import time
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-SUITES = ("sim", "actors", "view", "timeline", "campaign", "special", "soak", "pacing")
+SUITES = ("sim", "actors", "view", "timeline", "campaign", "special", "audio", "soak", "pacing")
 ENGINE_VERSION = (ROOT / "tools/godot-version.txt").read_text().strip()
 
 
@@ -145,7 +145,8 @@ def main():
         render = [executable, "--path", str(args.project.resolve()), "--resolution", "1100x800", "--audio-driver", "Dummy"]
         if args.visual:
             print(f"Captures: {captures}", flush=True)
-            phases += [("grenade_render", render + ["--script", "res://tests/grenade_render_check.gd"], "GRENADE_RENDER_OK"),
+            phases += [("audio_render", render + ["--script", "res://tests/audio_render_check.gd"], "AUDIO_RENDER_OK"),
+                       ("grenade_render", render + ["--script", "res://tests/grenade_render_check.gd"], "GRENADE_RENDER_OK"),
                        ("interruption_render", render + ["--script", "res://tests/interruption_render_check.gd"], "INTERRUPTION_RENDER_OK"),
                        ("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
                        ("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),

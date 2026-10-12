@@ -1,0 +1,7 @@
+{
+  "tested_revision": "f8d5a079589fd88f22b59a811ed895d1512ee1b7",
+  "integration_ancestor": "423b60e",
+  "linux_image": "0b22bba7bb7e851cd0981f296e5877a09c54abb186dca90a95c92e00fdb6994f",
+  "source_fixture_hash_matches_retained_capture": true,
+  "screenshots_changed": []
+}

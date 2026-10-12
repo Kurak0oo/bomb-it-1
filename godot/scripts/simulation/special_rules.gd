@@ -27,6 +27,7 @@ static func place(state: GameState, hero: HeroState) -> bool:
 	if hero.controller == HeroState.Controller.HUMAN:
 		hero.fire_ready = false
 	state.events.append(weapon.kind)
+	if weapon.kind in ["rocket","mine","grenade"]:state.audio_cues.append(weapon.kind)
 	return true
 
 static func pulse(state: GameState, at: Vector2i, owner: int) -> void:
@@ -63,6 +64,7 @@ static func tick_weapon(state: GameState, weapon: SpecialState) -> void:
 				pulse(state, weapon.cell, weapon.owner_id)
 				for i in 4:
 					pulse(state, weapon.cell + SimRules.direction(i), weapon.owner_id)
+				state.audio_cues.append("explode")
 				state.specials.erase(weapon)
 		"rocket":
 			weapon.position += Vector2(weapon.direction) * weapon.age
@@ -74,8 +76,10 @@ static func tick_weapon(state: GameState, weapon: SpecialState) -> void:
 			var cell := state.cell_at(weapon.cell)
 			if hit:
 				pulse(state, weapon.cell, weapon.owner_id)
+				state.audio_cues.append("explode")
 			elif cell == null or cell.kind == GameState.Kind.SOLID:
 				pulse(state, weapon.cell - weapon.direction, weapon.owner_id)
+				state.audio_cues.append("explode")
 				hit = true
 			elif cell.kind != GameState.Kind.FLOOR or cell.bomb != null:
 				pulse(state, weapon.cell, weapon.owner_id)
@@ -100,6 +104,7 @@ static func tick_weapon(state: GameState, weapon: SpecialState) -> void:
 			if hit:
 				if weapon.kind == "mine":
 					pulse(state, weapon.cell, weapon.owner_id)
+					state.audio_cues.append("explode")
 				state.specials.erase(weapon)
 		"ice", "fire":
 			_tick_ray(state, weapon)
@@ -119,6 +124,7 @@ static func _tick_ray(state: GameState, weapon: SpecialState) -> void:
 					state._explode(cell.bomb)
 				if cell.kind == GameState.Kind.BRICK:
 					state._break_brick(cell, at, weapon.owner_id)
+					state.audio_cues.append("explode")
 				cell.energy += 1
 				cell.energy_owner = weapon.owner_id
 			else:

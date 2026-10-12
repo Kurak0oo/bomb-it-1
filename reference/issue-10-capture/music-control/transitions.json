@@ -1,0 +1,262 @@
+{
+  "0": [
+    {
+      "phase": "initial",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "retry",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage2",
+      "music_index": 1,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage3",
+      "music_index": 2,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage4",
+      "music_index": 3,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    }
+  ],
+  "1": [
+    {
+      "phase": "initial",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "retry",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage2",
+      "music_index": 1,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage3",
+      "music_index": 2,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage4",
+      "music_index": 3,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    }
+  ],
+  "2": [
+    {
+      "phase": "initial",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_1",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "retry",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_1",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage2",
+      "music_index": 1,
+      "tracks": [
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_1",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage3",
+      "music_index": 2,
+      "tracks": [
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_1",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage4",
+      "music_index": 3,
+      "tracks": [
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_1",
+        "Bombit_-_level_4"
+      ]
+    }
+  ],
+  "3": [
+    {
+      "phase": "initial",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "retry",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage2",
+      "music_index": 1,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage3",
+      "music_index": 2,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage4",
+      "music_index": 3,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    }
+  ],
+  "4": [
+    {
+      "phase": "initial",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "retry",
+      "music_index": 0,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage2",
+      "music_index": 1,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage3",
+      "music_index": 2,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    },
+    {
+      "phase": "stage4",
+      "music_index": 3,
+      "tracks": [
+        "Bombit_-_level_1",
+        "Bombit_-_level_2",
+        "Bombit_-_level_3",
+        "Bombit_-_level_4"
+      ]
+    }
+  ]
+}
