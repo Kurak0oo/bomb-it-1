@@ -55,7 +55,7 @@ are separate claims. Passing a port regression does not certify the entire area.
 | [#21 Desktop acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/21) | Pending prerequisite fidelity and packaging work. |
 | [#22 iPhone acceptance](https://github.com/Kurak0oo/bomb-it-1/issues/22) | Blocked by native build plus remaining phone work. Simulator/Windows results cannot satisfy it. |
 | [#23 Release evidence](https://github.com/Kurak0oo/bomb-it-1/issues/23) | Pending both integrated release gates; no completion claim. |
-| [#28 Move/special ordering](https://github.com/Kurak0oo/bomb-it-1/issues/28) | Pending source-backed CORE-03 correction, separately from visual work. |
+| [#28 Move/special ordering](https://github.com/Kurak0oo/bomb-it-1/issues/28) | Integrated: direction/movement precedes fire; all 28 independent cases / 4,704 fields match. Existing core differences fall from 69 to 37 (CORE-01/02); motion and interaction rows remain unchanged. See [ordering evidence](issue-28.md). |
 | [#29 Bomb expiry/refire](https://github.com/Kurak0oo/bomb-it-1/issues/29) | Pending source-backed CORE-02 correction after pushed-bomb and interaction evidence. |
 | [#30 Push lifecycle](https://github.com/Kurak0oo/bomb-it-1/issues/30) | Pending source-backed activation and completed-cell visibility correction. |
 | [#31 Grenade endpoint](https://github.com/Kurak0oo/bomb-it-1/issues/31) | Pending source final-frame boundary correction, including refund/score/damage consequences. |
