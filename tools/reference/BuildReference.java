@@ -1,6 +1,7 @@
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
+import java.security.MessageDigest;
 import com.jpexs.decompiler.flash.SWF;
 import com.jpexs.decompiler.flash.tags.*;
 import com.jpexs.decompiler.flash.tags.base.CharacterTag;
@@ -15,8 +16,12 @@ class BuildReference {
         var swf = new SWF(new FileInputStream(args[0]), false);
         var game = (DefineSpriteTag) swf.getCharacters(false).get(564);
         DoActionTag original = null;
+        DoActionTag frameTwo = null;
+        int frame = 1;
         for (var tag : game.getTags()) {
-            if (tag instanceof DoActionTag action) { original = action; break; }
+            if (tag instanceof DoActionTag action && frame == 1) original = action;
+            if (tag instanceof DoActionTag action && frame == 2) frameTwo = action;
+            if (tag instanceof ShowFrameTag) frame++;
         }
         if (original == null) throw new IllegalStateException("Missing Sprite 564 actions");
         long end = 0;
@@ -47,6 +52,22 @@ class BuildReference {
         }
         for (var tag : remove) swf.removeTag(tag);
         swf.addTag(originalFunctions);
+        if (args.length == 4) {
+            if (frameTwo == null) throw new IllegalStateException("Missing Sprite 564 frame 2 actions");
+            var prelude = new DoActionTag(swf);
+            prelude.setActions(new ActionScript2Parser(swf, prelude).actionsFromString(Files.readString(Path.of(args[3])), "UTF-8"));
+            swf.addTag(prelude);
+            var polling = new DoActionTag(swf);
+            byte[] sourceBytes = frameTwo.getActionBytes().getRangeData();
+            polling.setActionBytes(sourceBytes.clone());
+            swf.addTag(polling);
+            String sourceHash = HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(sourceBytes));
+            String copyHash = HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(polling.getActionBytes().getRangeData()));
+            if (!sourceHash.equals(copyHash)) throw new IllegalStateException("Frame 2 bytecode changed");
+            Files.writeString(Path.of(args[1] + ".bytecode.json"), "{\"sprite\":564,\"frame\":2,\"bytes\":" + sourceBytes.length
+                + ",\"original_sha256\":\"" + sourceHash + "\",\"preserved_sha256\":\"" + copyHash + "\"}\n");
+            System.out.println("Preserved complete original frame 2 polling/release bytecode: " + sourceBytes.length + " bytes, SHA-256 " + sourceHash);
+        }
         swf.addTag(script);
         swf.addTag(new ShowFrameTag(swf));
         swf.frameCount = 1;
