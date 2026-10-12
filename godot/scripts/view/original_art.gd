@@ -3,6 +3,7 @@ extends RefCounted
 
 var manifest: Dictionary
 var textures: Dictionary = {}
+var pickup_fades: Dictionary = {}
 
 func _init() -> void:
 	manifest = JSON.parse_string(FileAccess.get_file_as_string("res://art/original/manifest.json"))
@@ -28,6 +29,12 @@ func sprite(symbol: int, number: int = 1) -> Sprite2D:
 	result.texture = frame(symbol, number)
 	result.position = offset(symbol)
 	return result
+
+func pickup_fade(variant: int, frame_index: int) -> Texture2D:
+	var key := Vector2i(variant,frame_index)
+	if not pickup_fades.has(key):
+		pickup_fades[key] = load("res://art/original/pickup_removal/%d/%d.svg" % [variant,frame_index+1])
+	return pickup_fades[key]
 
 static func depth(at: Vector2i, adjustment: int = 0) -> int:
 	# Original calDepth(x,y,10). Fits inside Godot's ±4096 z-index range.

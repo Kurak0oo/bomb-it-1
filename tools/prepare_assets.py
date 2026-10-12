@@ -100,6 +100,43 @@ for sid in [210,237,299,305,313,326]:
             tracks.append(track)
     timelines[str(sid)] = {'length': length, 'tracks': tracks}
 manifest['timelines'] = timelines
+# Normal item removal transforms each original vector fill before compositing.
+# Flattening an opaque icon and fading that PNG incorrectly preserves its white
+# highlights over the body. Retain the source paths and bake only their CXFORM.
+pickup_removal = {}
+svg_ns = {'s': 'http://www.w3.org/2000/svg'}
+ET.register_namespace('', 'http://www.w3.org/2000/svg')
+ET.register_namespace('ffdec', 'https://www.free-decompiler.com/flash')
+for variant, sid in enumerate(range(280,286),1):
+    original = ET.parse(ROOT / f'extracted/all/shapes/{sid}.svg')
+    group = original.find('s:g', svg_ns)
+    registration = [float(v) for v in re.search(r'matrix\((.*?)\)', group.get('transform'))[1].split(',')]
+    source_gradients = []
+    xfl = ET.parse(ROOT / f'xfl/Bomb It 1/LIBRARY/Symbol {sid}.xml')
+    for gradient_kind in ['LinearGradient','RadialGradient']:
+        for matrix in xfl.findall(f'.//x:{gradient_kind}/x:matrix/x:Matrix',ns):
+            source_gradients.append([float(matrix.get(k,default))/20 for k,default in [('a',1),('b',0),('c',0),('d',1),('tx',0),('ty',0)]])
+    target = OUT / 'pickup_removal' / str(variant)
+    target.mkdir(parents=True,exist_ok=True)
+    alphas = [timelines['326']['tracks'][1][frame]['alpha'] for frame in range(80,100)]
+    for index, alpha in enumerate(alphas,1):
+        doc = ET.parse(ROOT / f'extracted/all/shapes/{sid}.svg')
+        for node in doc.getroot().iter():
+            if node.tag.endswith('Gradient'):
+                rounded = [float(v) for v in re.search(r'matrix\((.*?)\)',node.get('gradientTransform'))[1].split(',')]
+                matrix = min(source_gradients,key=lambda m:sum(abs(a-b) for a,b in zip(m,rounded)))
+                if any(abs(a-b)>0.000051 for a,b in zip(matrix,rounded)):
+                    raise ValueError(f'Cannot recover source gradient {sid}')
+                node.set('gradientTransform','matrix('+','.join(map(str,matrix))+')')
+            elif node.tag.endswith('path'):
+                if node.get('fill','').startswith('url'):
+                    node.set('opacity',str(alpha))
+                else:
+                    source_alpha = round(255*float(node.get('fill-opacity','1')))
+                    node.set('fill-opacity',str(int(source_alpha*alpha)/255))
+        doc.write(target / f'{index}.svg',encoding='utf-8',xml_declaration=True)
+    pickup_removal[str(variant)] = {'offset':[-registration[4],-registration[5]],'alphas':alphas}
+manifest['pickup_removal'] = pickup_removal
 (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
 audio = OUT / 'audio'
 audio.mkdir(exist_ok=True)

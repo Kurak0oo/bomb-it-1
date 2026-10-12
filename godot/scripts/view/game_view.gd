@@ -112,6 +112,9 @@ func sync_view() -> void:
 			add_child(sprite)
 			_pop_sprites[pop] = sprite
 		_pop_sprites[pop].texture = art.frame(248, 12 - pop.ticks)
+		# Source frame 11 removes the clip. State keeps its accepted lifetime;
+		# the final exported transparent frame is no longer a visible effect.
+		_pop_sprites[pop].visible = 12 - pop.ticks < 11
 	_prune(_bomb_sprites, state.bombs)
 	for bomb in state.bombs:
 		if not _bomb_sprites.has(bomb):
@@ -133,7 +136,10 @@ func sync_view() -> void:
 			add_child(group)
 			_flame_sprites[blast] = group
 		var group: Node2D = _flame_sprites[blast]
-		group.modulate.a = blast.alpha / 100
+		# Flash stores each `_alpha -= 20` assignment in 8.8 precision.
+		# Quantization accumulates (256,204,152,100,48), independently of energy.
+		var fade_steps := roundi((100.0 - blast.alpha) / 20.0)
+		group.modulate.a = (256 - 52 * fade_steps) / 256.0
 		for n in range(group.get_child_count(), blast.painted.size()):
 			var holder := Node2D.new()
 			holder.position = Vector2(blast.painted[n]) * 30 + Vector2(15,15)

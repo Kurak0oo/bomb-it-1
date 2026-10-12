@@ -1,0 +1,5 @@
+{
+  "source_extractor_sha256": "8e73c65fc98335d7227ca17cea011a2c29a7b4b86bf8e7d5a056a5eedf0ee7af",
+  "source_replay_sha256": "2b6b252183f6094afa40be31241edbb137df317a1a41adf2727f9175c172624d",
+  "input_contract": "Original raw bitmap channels, original shape paths and matrices, original-runtime observations. No port images are drawing inputs."
+}

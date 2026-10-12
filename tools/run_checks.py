@@ -95,6 +95,7 @@ def main():
             phases += [("layout_render", render + ["--script", "res://tests/layout_render_check.gd"], "LAYOUT_RENDER_OK"),
                        ("selection_render", render + ["--script", "res://tests/selection_render_check.gd"], "SELECTION_RENDER_OK"),
                        ("death_render", render + ["--script", "res://tests/death_render_check.gd"], "DEATH_RENDER_OK"),
+                       ("effects_render", render + ["--script", "res://tests/effects_render_check.gd"], "EFFECTS_RENDER_OK"),
                        ("result_render", render + ["--script", "res://tests/result_render_check.gd"], "RESULT_RENDER_OK"),
                        ("hud_render", render + ["--script", "res://tests/hud_render_check.gd"], "HUD_RENDER_OK"),
                        ("feedback_render", render + ["--script", "res://tests/feedback_render_check.gd"], "FEEDBACK_RENDER_OK"),
