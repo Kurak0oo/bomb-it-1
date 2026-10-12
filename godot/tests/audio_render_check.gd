@@ -84,7 +84,18 @@ func run() -> void:
 	check(not main.audio.music.playing,"nonterminal score sheet stops outcome music")
 	click(Vector2(278,362))
 	check(main.screen == "game" and main.session.stage == 1,"Continue retries the same stage")
-	check(main.audio.music.stream.resource_path != previous_music,"retry advances source soundtrack selection independently of stage number")
+	check(main.audio.music.stream.resource_path == previous_music,"source frame-2 retry restarts the same selected soundtrack")
+	check(main.audio.music.get_playback_position() < 0.1,"retry restarts the selected track at the beginning")
+	for id in [1,2,3]:main.session.state.heroes[id].alive = false
+	tick = main.session.state.tick_number
+	main.set_physics_process(true)
+	while main.session.state.tick_number == tick:await physics_frame
+	main.set_physics_process(false)
+	check(main.audio.music.stream.resource_path.ends_with("405_Bombit_-_level_complete.mp3"),"win selects the recovered level-complete track")
+	await create_timer(2.0).timeout
+	key(KEY_SPACE)
+	click(Vector2(278,362))
+	check(main.session.stage == 2 and main.audio.music.stream.resource_path != previous_music,"source frame-1 next stage advances soundtrack selection")
 	play_cues(["explode","explode","place"])
 	check(main.audio.voices.filter(func(voice):return voice.playing).size() == 3,"duplicate cue starts overlap with the next cue instead of being deduplicated")
 	play_cues(["explode","explode","explode","explode","explode","explode"])

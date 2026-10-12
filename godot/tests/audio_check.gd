@@ -72,4 +72,3 @@ func run() -> void:
 	print("AUDIO_TRACE ",JSON.stringify(trace_rows))
 	if not failed:print("AUDIO_OK")
 	quit(1 if failed else 0)
-

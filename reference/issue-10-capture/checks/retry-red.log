@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: source frame-2 retry restarts the same selected soundtrack
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/audio_render_check.gd:11)
+       [1] run (res://tests/audio_render_check.gd:87)
+AUDIO_MUSIC_TRACE {"gameplay_calls_after":705,"gameplay_calls_before":705,"tracks":["res://art/original/audio/401_Bombit_-_level_1.mp3","res://art/original/audio/402_Bombit_-_level_2.mp3","res://art/original/audio/403_Bombit_-_level_3.mp3","res://art/original/audio/404_Bombit_-_level_4.mp3","res://art/original/audio/401_Bombit_-_level_1.mp3","res://art/original/audio/402_Bombit_-_level_2.mp3","res://art/original/audio/403_Bombit_-_level_3.mp3","res://art/original/audio/404_Bombit_-_level_4.mp3"]}
+AUDIO_GAIN_TRACE {"actual_peak":1.23222839832306,"control_peak":1.23222839832306}

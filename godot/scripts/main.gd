@@ -190,7 +190,7 @@ func _start_game() -> void:
 	session.start(int(Time.get_unix_time_from_system()), difficulty, selected_character, players, selected_second_character)
 	_show_round()
 
-func _show_round() -> void:
+func _show_round(retry: bool = false) -> void:
 	_clear_screen()
 	screen = "game"
 	_background("res://art/backdrop.png")
@@ -217,7 +217,7 @@ func _show_round() -> void:
 	touch.visibility_changed.connect(_resize)
 	_resize()
 	_update_hud()
-	audio.play_round_music()
+	audio.play_round_music(retry)
 
 func _command(id: int) -> PlayerCommands:
 	var command := keyboard.poll(id, players)
@@ -330,8 +330,9 @@ func _result_action(action: String) -> void:
 	match action:
 		"continue":
 			if original_results.phase == "scores" and session.can_continue():
+				var retry := not session.result.ends_with("win")
 				session.next_round()
-				_show_round()
+				_show_round(retry)
 		"replay": _start_game()
 		"menu": _show_menu()
 		"save":

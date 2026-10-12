@@ -49,12 +49,15 @@ func new_campaign() -> void:
 	_round_tracks = ROUND_TRACKS.duplicate()
 	_round_index = 4
 
-func play_round_music() -> void:
-	if _round_index >= 3:
-		_round_index = 0
-		music_rng.disorder(_round_tracks)
-	else:
-		_round_index += 1
+func play_round_music(retry: bool = false) -> void:
+	# A retry enters original frame 2 directly, reattaching the current track.
+	# Only a new stage executes frame 1's selection/shuffle.
+	if not retry:
+		if _round_index >= 3:
+			_round_index = 0
+			music_rng.disorder(_round_tracks)
+		else:
+			_round_index += 1
 	play_music(_round_tracks[_round_index])
 
 func _start(player: AudioStreamPlayer) -> void:
