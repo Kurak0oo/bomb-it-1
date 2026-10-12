@@ -168,6 +168,7 @@ func run() -> void:
 	root.propagate_notification(Node.NOTIFICATION_APPLICATION_FOCUS_OUT)
 	finger(Vector2(477,100), false)
 	check(main.screen == "menu", "focus loss cancels menu press")
+	root.propagate_notification(Node.NOTIFICATION_APPLICATION_FOCUS_IN)
 	tap(Vector2(477,149))
 	mouse(Vector2(132,334), true, InputEvent.DEVICE_ID_EMULATION)
 	mouse(Vector2(132,334), false, InputEvent.DEVICE_ID_EMULATION)

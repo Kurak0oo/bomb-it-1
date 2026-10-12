@@ -26,6 +26,11 @@ var original_menu: OriginalMenu
 # Optional platform adapter returning a physical display-space safe rectangle.
 var safe_area_provider := Callable()
 var _last_safe_area := Rect2()
+var _focus_lost := false
+var _backgrounded := false
+var _held_keys: Dictionary = {}
+var _cancelled_keys: Dictionary = {}
+var _skip_presentation_delta := false
 
 func _ready() -> void:
 	art = OriginalArt.new()
@@ -82,6 +87,10 @@ func _safe_viewport_rect() -> Rect2:
 
 func _clear_screen() -> void:
 	_reset_input()
+	# Menus own their key releases. Do not carry their consumed events into the
+	# next screen's shortcut filter; FireInput retains its physical-source gate.
+	_held_keys.clear()
+	_cancelled_keys.clear()
 	if is_instance_valid(world):
 		remove_child(world)
 		world.queue_free()
@@ -100,6 +109,7 @@ func _clear_screen() -> void:
 	original_hud = null
 	original_results = null
 	paused = false
+	audio.suspended = _away()
 	_resize()
 
 func _background(path: String) -> void:
@@ -124,6 +134,7 @@ func _show_original_menu(page: String) -> void:
 	ui.add_child(original_menu)
 
 func _menu_action(action: String) -> void:
+	if _away():return
 	match action:
 		"players": _show_players()
 		"one", "two":
@@ -208,6 +219,25 @@ func _command(id: int) -> PlayerCommands:
 
 func _input(event: InputEvent) -> void:
 	keyboard.observe(event)
+	# Even a discarded release must re-arm its source for a later fresh press.
+	for id in 2:
+		if event.is_action_released("p%d_bomb" % (id+1)):
+			fire_inputs[id].set_source("keyboard",false)
+	if event is InputEventKey:
+		if event.pressed:_held_keys[event.keycode] = true
+		else:_held_keys.erase(event.keycode)
+		if _cancelled_keys.has(event.keycode):
+			if not event.pressed:_cancelled_keys.erase(event.keycode)
+			get_viewport().set_input_as_handled()
+			return
+	if _away():
+		get_viewport().set_input_as_handled()
+		return
+	if paused and event is InputEventKey:
+		if event.pressed and not event.echo and event.keycode in [KEY_ESCAPE,KEY_P]:
+			_toggle_pause()
+		get_viewport().set_input_as_handled()
+		return
 	if screen != "game" or paused:
 		return
 	for id in players:
@@ -218,6 +248,7 @@ func _input(event: InputEvent) -> void:
 			fire_inputs[id].set_source("keyboard", false)
 
 func _reset_input() -> void:
+	_cancelled_keys.merge(_held_keys)
 	keyboard.cancel()
 	if is_instance_valid(touch):
 		touch.release_all()
@@ -226,6 +257,7 @@ func _reset_input() -> void:
 		fire_inputs[id].cancel()
 
 func _physics_process(_delta: float) -> void:
+	if paused or _away():return
 	if screen == "result":
 		view.advance_presentation()
 		return
@@ -273,11 +305,15 @@ func _show_result() -> void:
 func _process(delta: float) -> void:
 	if _safe_viewport_rect() != _last_safe_area:
 		_resize()
+	if paused or _away():return
+	if _skip_presentation_delta:
+		_skip_presentation_delta = false
+		return
 	if screen == "result" and is_instance_valid(original_results):
 		original_results.advance(delta)
 
 func _result_action(action: String) -> void:
-	if screen != "result":
+	if screen != "result" or paused or _away():
 		return
 	match action:
 		"continue":
@@ -293,25 +329,35 @@ func _result_action(action: String) -> void:
 			original_results.notice.text = "Saved locally · best %d" % high_score
 
 func _toggle_pause() -> void:
-	if screen != "game":
+	if _away() or (screen != "game" and not paused):
 		return
-	paused = not paused
-	view.frozen = paused
-	audio.music.stream_paused = paused
+	_set_paused(not paused)
+
+func _set_paused(value: bool) -> void:
+	paused = value
+	view.frozen = paused or screen == "result"
+	audio.suspended = paused
 	_reset_input()
-	touch.enabled = not paused
+	touch.enabled = not paused and screen == "game"
+	if is_instance_valid(original_results):
+		original_results.process_mode = Node.PROCESS_MODE_DISABLED if paused else Node.PROCESS_MODE_INHERIT
 	if not paused:
+		_skip_presentation_delta = true
 		if is_instance_valid(overlay):
 			ui.remove_child(overlay)
 			overlay.queue_free()
 			overlay = null
 		return
+	if is_instance_valid(overlay):return
 	overlay = Control.new()
+	overlay.size = Vector2(550,400)
+	overlay.mouse_filter = Control.MOUSE_FILTER_STOP
 	ui.add_child(overlay)
 	_panel(overlay, Rect2(164,122,273,167))
 	_label(overlay, "PAUSED", Rect2(175,137,250,40), 28)
 	_button(overlay, "RESUME", Rect2(203,190,193,34), _toggle_pause)
-	_button(overlay, "MAIN MENU", Rect2(203,238,193,29), _show_menu)
+	_button(overlay, "MAIN MENU", Rect2(203,238,193,29), func():
+		if not _away():_show_menu())
 
 func _toggle_sound() -> void:
 	audio.muted = not audio.muted
@@ -332,8 +378,24 @@ func _save_preferences() -> void:
 	prefs.save("user://preferences.cfg")
 
 func _notification(what: int) -> void:
-	if what in [NOTIFICATION_APPLICATION_FOCUS_OUT, NOTIFICATION_APPLICATION_PAUSED] and screen == "game" and not paused:
-		_toggle_pause()
+	if not is_instance_valid(audio):return
+	match what:
+		NOTIFICATION_APPLICATION_FOCUS_OUT:_focus_lost = true
+		NOTIFICATION_APPLICATION_PAUSED:_backgrounded = true
+		NOTIFICATION_APPLICATION_FOCUS_IN:_focus_lost = false
+		NOTIFICATION_APPLICATION_RESUMED:_backgrounded = false
+		_:return
+	_reset_input()
+	if _away() and screen in ["game","result"]:
+		_set_paused(true)
+	# Idle menus return immediately; an interrupted match/outcome stays paused.
+	if is_instance_valid(original_menu):
+		original_menu.process_mode = Node.PROCESS_MODE_DISABLED if _away() else Node.PROCESS_MODE_INHERIT
+	audio.suspended = _away() or paused
+	_skip_presentation_delta = true
+
+func _away() -> bool:
+	return _focus_lost or _backgrounded
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if screen == "result" and event is InputEventKey:
