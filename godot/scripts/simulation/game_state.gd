@@ -40,6 +40,8 @@ var presentation_events: Array[Dictionary] = []
 var specials: Array[SpecialState] = []
 var special_choices: Array = []
 var brick_styles: Array = []
+# Original child callbacks dispatch newest clips first; newborns wait a frame.
+var _callbacks: Array[RefCounted] = []
 
 
 func setup_round(seed_value: int, selected_character: int = 1, humans: int = 1, level: int = 1, second_character: int = 0) -> void:
@@ -85,6 +87,7 @@ func setup(rows: PackedStringArray) -> void:
 	events.clear()
 	presentation_events.clear()
 	specials.clear()
+	_callbacks.clear()
 	cells = []
 	bombs = []
 	explosions = []
@@ -117,29 +120,52 @@ func cell_at(at: Vector2i) -> CellState:
 	return _cell(at)
 
 
-# Hero (shield, step, maybe place) → explosions → bombs → damage → brick pops.
-# A bomb's creation tick is not an active fuse tick. Growth runs before fuse,
-# so a flame paints a cell and chains an already-active bomb in the same tick.
-# This preserves the prototype order, not verified Flash callback scheduling.
-# See reference/core-stabilization.md before changing boundary-tick behavior.
-# Slots are stable, zero-based hero IDs. Missing commands mean idle, including AI
-# slots until AI is ported. No rendering, input polling, or wall clock lives here.
+# Preserve hero movement/timer updates, then dispatch the existing child snapshot
+# before applying commands. Creation order governs bomb/energy visibility; a
+# callback created during this tick cannot run until the next update.
+# Damage/accounting remains a separate, unchanged pass.
 func tick(commands: Array[PlayerCommands]) -> void:
 	tick_number += 1
 	events.clear()
 	presentation_events.clear()
+	var can_act: Array[bool] = []
 	for actor in heroes:
 		var command := commands[actor.id] if actor.id < commands.size() else PlayerCommands.new()
-		_tick_hero(actor, command)
-	_tick_explosions()
-	SpecialRules.tick(self)
-	_tick_bombs()
+		can_act.append(_tick_hero(actor, command))
+	_tick_callbacks()
+	for actor in heroes:
+		if can_act[actor.id]:
+			var command := commands[actor.id] if actor.id < commands.size() else PlayerCommands.new()
+			_apply_hero_commands(actor, command)
 	for actor in heroes:
 		_tick_damage(actor)
 	_tick_pops()
+	# Parent-created objects missed this snapshot; next tick is their first update.
+	for bomb in bombs:
+		bomb.just_placed = false
+	for weapon in specials:
+		weapon.just_placed = false
 
 
-func _tick_hero(hero: HeroState, commands: PlayerCommands) -> void:
+func register_callback(effect: RefCounted) -> void:
+	_callbacks.append(effect)
+
+
+func _tick_callbacks() -> void:
+	var snapshot := _callbacks.duplicate()
+	snapshot.reverse()
+	for effect in snapshot:
+		if effect is BombState and bombs.has(effect):
+			_tick_bomb(effect)
+		elif effect is ExplosionState and explosions.has(effect):
+			_tick_explosion(effect)
+		elif effect is SpecialState and specials.has(effect):
+			SpecialRules.tick_weapon(self, effect)
+		else:
+			_callbacks.erase(effect)
+
+
+func _tick_hero(hero: HeroState, commands: PlayerCommands) -> bool:
 	if commands.bomb_released:
 		hero.fire_ready = true
 	if hero.slow_ticks > 0:
@@ -149,23 +175,27 @@ func _tick_hero(hero: HeroState, commands: PlayerCommands) -> void:
 		hero.shield -= 1
 	if not hero.alive:
 		hero.death_ticks += 1
-		return
+		return false
 	if hero.moving:
 		hero.walk_frame += 1
 		hero.ticks_remaining -= 1
 		if hero.ticks_remaining > 0:
 			if commands.bomb_requested:
 				hero.prev_fire = true
-			return
+			return false
 		hero.cell += hero.direction
 		hero.moving = false
 		_collect_item(hero)
 	if hero.stop_ticks > 0:
 		hero.stop_ticks -= 1
-		return
+		return false
+	return true
+
+
+func _apply_hero_commands(hero: HeroState, commands: PlayerCommands) -> void:
 	# Original human polling turns/starts movement before attempting fire.
 	# Specials reject moving actors; ordinary bombs still use the current cell.
-	if commands.direction != Vector2i.ZERO:
+	if hero.controller == HeroState.Controller.HUMAN and commands.direction != Vector2i.ZERO:
 		_try_move(hero, commands.direction)
 	if commands.bomb_requested or hero.prev_fire:
 		hero.prev_fire = false
@@ -173,6 +203,9 @@ func _tick_hero(hero: HeroState, commands: PlayerCommands) -> void:
 			SpecialRules.place(self, hero)
 		else:
 			_place_bomb(hero, hero.cell)
+	# The original AI branch fires before starting its chosen escape step.
+	if hero.controller == HeroState.Controller.AI and commands.direction != Vector2i.ZERO:
+		_try_move(hero, commands.direction)
 
 
 func _try_move(hero: HeroState, dir: Vector2i) -> void:
@@ -216,29 +249,25 @@ func _place_bomb(hero: HeroState, at: Vector2i) -> bool:
 	bomb.level = hero.bomb_level
 	cell.bomb = bomb
 	bombs.append(bomb)
+	register_callback(bomb)
 	hero.bombs_available -= 1
 	events.append("place")
 	return true
 
 
-func _tick_explosions() -> void:
-	var finished: Array = []
-	for exp in explosions:
-		var blast: ExplosionState = exp
-		if blast.phase == ExplosionState.Phase.GROWING:
-			_grow_explosion(blast)
-		elif blast.phase == ExplosionState.Phase.LINGER:
-			blast.linger -= 1
-			if blast.linger <= 0:
-				_clear_energy(blast)
-				blast.phase = ExplosionState.Phase.FADE
-				blast.alpha = 100.0
-		elif blast.phase == ExplosionState.Phase.FADE:
-			blast.alpha -= SimRules.FADE_STEP
-			if blast.alpha < SimRules.FADE_REMOVE_BELOW:
-				finished.append(blast)
-	for blast in finished:
-		explosions.erase(blast)
+func _tick_explosion(blast: ExplosionState) -> void:
+	if blast.phase == ExplosionState.Phase.GROWING:
+		_grow_explosion(blast)
+	elif blast.phase == ExplosionState.Phase.LINGER:
+		blast.linger -= 1
+		if blast.linger <= 0:
+			_clear_energy(blast)
+			blast.phase = ExplosionState.Phase.FADE
+			blast.alpha = 100.0
+	elif blast.phase == ExplosionState.Phase.FADE:
+		blast.alpha -= SimRules.FADE_STEP
+		if blast.alpha < SimRules.FADE_REMOVE_BELOW:
+			explosions.erase(blast)
 
 
 func _grow_explosion(blast: ExplosionState) -> void:
@@ -292,31 +321,26 @@ func _break_brick(cell: CellState, at: Vector2i, owner: int = 0) -> void:
 				cell.item = special_choices[rng.next(2)]
 
 
-func _tick_bombs() -> void:
-	var snapshot: Array = bombs.duplicate()
-	for item in snapshot:
-		var bomb: BombState = item
-		if not bombs.has(bomb):
-			continue
-		if bomb.just_placed:
-			bomb.just_placed = false
-			continue
+func _tick_bomb(bomb: BombState) -> void:
+	if bomb.just_placed:
+		bomb.just_placed = false
+		return
+	if bomb.slide_ticks > 0:
+		bomb.slide_ticks -= 1
 		if bomb.slide_ticks > 0:
-			bomb.slide_ticks -= 1
-			if bomb.slide_ticks > 0:
-				continue
-			if _push_bomb(bomb, bomb.slide_direction):
-				continue
-			bomb.slide_direction = Vector2i.ZERO
-			# Original pushing replaces the fuse handler and explodes on stopping.
-			_explode(bomb)
-			continue
-		var cell := _cell(bomb.cell)
-		bomb.fuse -= 1
-		if cell != null and cell.energy > 0:
-			bomb.fuse = 0
-		if bomb.fuse <= 0:
-			_explode(bomb)
+			return
+		if _push_bomb(bomb, bomb.slide_direction):
+			return
+		bomb.slide_direction = Vector2i.ZERO
+		# Original pushing replaces the fuse handler and explodes on stopping.
+		_explode(bomb)
+		return
+	var cell := _cell(bomb.cell)
+	bomb.fuse -= 1
+	if cell != null and cell.energy > 0:
+		bomb.fuse = 0
+	if bomb.fuse <= 0:
+		_explode(bomb)
 
 
 func _explode(bomb: BombState) -> void:
@@ -337,6 +361,7 @@ func _explode(bomb: BombState) -> void:
 	cell.energy += 1
 	cell.energy_owner = bomb.owner_id
 	explosions.append(blast)
+	register_callback(blast)
 	events.append("explode")
 
 

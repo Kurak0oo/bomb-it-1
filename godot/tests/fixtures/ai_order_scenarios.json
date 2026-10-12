@@ -1,0 +1,242 @@
+{
+  "profile": "ai_order-v1",
+  "fps": 35,
+  "tick_origin": "after-first-fixed-update-from-controlled-setup",
+  "fields": {
+    "tick": "int",
+    "cellX": "int",
+    "cellY": "int",
+    "facing": "int",
+    "moving": "bool",
+    "moveRemaining": "int",
+    "prevFire": "bool",
+    "fireReady": "bool",
+    "bombsAvailable": "int",
+    "specialCount": "int",
+    "bombs": "str",
+    "specials": "str"
+  },
+  "serialized_fields": {
+    "bombs": "(?:\\d+,\\d+,\\d+;)*",
+    "specials": "(?:(?:rocket|mine|grenade|gas|fire|ice),\\d+,\\d+,-?\\d+,-?\\d+;)*"
+  },
+  "scenarios": [
+    {
+      "name": "ai_bomb",
+      "weapon": "bomb",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_rocket",
+      "weapon": "rocket",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_mine",
+      "weapon": "mine",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_grenade",
+      "weapon": "grenade",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_gas",
+      "weapon": "gas",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_ice",
+      "weapon": "ice",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    },
+    {
+      "name": "ai_fire",
+      "weapon": "fire",
+      "walls": [],
+      "commands": [
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ],
+        [
+          -1,
+          false
+        ]
+      ]
+    }
+  ]
+}

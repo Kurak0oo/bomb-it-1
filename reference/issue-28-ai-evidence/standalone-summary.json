@@ -1,0 +1,50 @@
+[
+  {
+    "name": "import",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 4.969,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\ai-standalone\\import.log"
+  },
+  {
+    "name": "actors",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.297,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\ai-standalone\\actors.log"
+  },
+  {
+    "name": "ai_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.421,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\ai-standalone\\ai_order.log"
+  },
+  {
+    "name": "special",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.313,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\ai-standalone\\special.log"
+  },
+  {
+    "name": "command_order",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 0.391,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\ai-standalone\\command_order.log"
+  },
+  {
+    "name": "soak",
+    "passed": true,
+    "exit_code": 0,
+    "timeout": false,
+    "seconds": 3.187,
+    "log": "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue29\\.artifacts\\issue29\\ai-standalone\\soak.log"
+  }
+]

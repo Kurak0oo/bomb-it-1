@@ -44,9 +44,9 @@ class Commands(unittest.TestCase):
             return result, summary
 
     def test_runner_imports_before_selected_suite(self):
-        result, summary = self.check_runner("print('SIM_OK')")
+        result, summary = self.check_runner("print('SIM_OK'); print('CORE_REFERENCE_CAPTURE_OK')")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertEqual([phase["name"] for phase in summary], ["import", "sim"])
+        self.assertEqual([phase["name"] for phase in summary], ["import", "sim", "bomb_expiry"])
 
     def test_runner_rejects_engine_error_even_with_zero_exit(self):
         result, summary = self.check_runner("print('SCRIPT ERROR: fixture'); print('SIM_OK')")
