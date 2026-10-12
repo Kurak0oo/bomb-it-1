@@ -1,0 +1,19 @@
+{
+  "passed": false,
+  "tolerance": 0,
+  "max_changed_fraction": 0.0,
+  "images": [
+    {
+      "name": "qa-score-1p.png",
+      "passed": false,
+      "changed_pixels": 134965,
+      "changed_fraction": 0.6134772727272727
+    },
+    {
+      "name": "qa-score-2p.png",
+      "passed": false,
+      "changed_pixels": 135910,
+      "changed_fraction": 0.6177727272727273
+    }
+  ]
+}

@@ -52,6 +52,9 @@ func _init() -> void:
 	check(game.result == "win" and game.totals[0] > 1000, "two-player win and time bonus")
 	game.next_round()
 	check(game.stage == 2 and game.result == "", "campaign advances")
+	var continued_state := game.state
+	game.next_round()
+	check(game.state == continued_state, "repeated continue does not rebuild or advance the next round")
 	game.remaining_ticks = 1
 	game.tick([])
 	check(game.result == "timeup_lose", "time-up tie favors opponents")
@@ -70,6 +73,7 @@ func _init() -> void:
 		state._collect_item(hero)
 		check(state.cell_at(hero.cell).item == "", "normal pickup consumed")
 	check(hero.lives == 2 and hero.glove and hero.armor, "life glove and armor effects")
+	check(hero.destruction_score == 600 and hero.score == 600, "six pickups contribute once to source destruction score breakdown")
 	check(hero.bombs_available == 2 and hero.bomb_level == 2 and hero.speed_level == 5, "bomb range and speed effects")
 	hero.shield = 0
 	state.cell_at(hero.cell).energy = 1

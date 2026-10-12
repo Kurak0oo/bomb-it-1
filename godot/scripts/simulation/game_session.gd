@@ -94,7 +94,9 @@ func _finish(outcome: String) -> void:
 	for hero in state.heroes:
 		if hero.id < humans and hero.alive:
 			if outcome.ends_with("win"):
-				hero.score += 1000 + (int(remaining_ticks / 35.0 * 10) if outcome == "win" else 0)
+				hero.bonus_score = 1000
+				hero.time_score = int(remaining_ticks / 35.0 * 10) if outcome == "win" else 0
+				hero.score += hero.bonus_score + hero.time_score
 			elif outcome == "timeup_lose":
 				hero.lives -= 1
 		lives[hero.id] = hero.lives
@@ -107,6 +109,8 @@ func can_continue() -> bool:
 	return false
 
 func next_round() -> void:
+	if result == "" or not can_continue():
+		return
 	var retry := not result.ends_with("win")
 	if result.ends_with("win"):
 		stage += 1

@@ -18,6 +18,11 @@ var fire_ready := true
 var slow_ticks := 0
 var stop_ticks := 0
 var score := 0
+# Read-only score-sheet breakdown; awards still happen once in the simulation.
+var kill_score := 0
+var destruction_score := 0
+var time_score := 0
+var bonus_score := 0
 var walk_frame := 0
 var death_ticks := 0
 var death_position := Vector2.ZERO
