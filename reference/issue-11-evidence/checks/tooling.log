@@ -1,0 +1,21 @@
+test_runner_imports_before_selected_suite (test_commands.Commands.test_runner_imports_before_selected_suite) ... ok
+test_runner_kills_a_stalled_suite (test_commands.Commands.test_runner_kills_a_stalled_suite) ... ok
+test_runner_rejects_engine_error_even_with_zero_exit (test_commands.Commands.test_runner_rejects_engine_error_even_with_zero_exit) ... ok
+test_symbol_reports_original_removal_script_and_dependencies (test_commands.Commands.test_symbol_reports_original_removal_script_and_dependencies) ... ok
+test_core_profile_rejects_truncated_observations (test_trace_compare.ReferenceComparison.test_core_profile_rejects_truncated_observations) ... ok
+test_malformed_json_is_rejected (test_trace_compare.ReferenceComparison.test_malformed_json_is_rejected) ... ok
+test_port_generated_reference_is_rejected (test_trace_compare.ReferenceComparison.test_port_generated_reference_is_rejected) ... ok
+test_real_capture_field_perturbation_reports_exact_location (test_trace_compare.ReferenceComparison.test_real_capture_field_perturbation_reports_exact_location) ... ok
+test_real_capture_one_tick_perturbation_is_rejected (test_trace_compare.ReferenceComparison.test_real_capture_one_tick_perturbation_is_rejected) ... ok
+test_real_captures_fail_closed_when_both_are_incomplete_or_malformed (test_trace_compare.ReferenceComparison.test_real_captures_fail_closed_when_both_are_incomplete_or_malformed) ... ok
+test_real_captures_retain_the_observed_differences (test_trace_compare.ReferenceComparison.test_real_captures_retain_the_observed_differences) ... ok
+test_real_movement_completion_delayed_one_tick_is_detected (test_trace_compare.ReferenceComparison.test_real_movement_completion_delayed_one_tick_is_detected) ... ok
+test_reports_first_divergent_tick_and_field (test_trace_compare.ReferenceComparison.test_reports_first_divergent_tick_and_field) ... ok
+test_changed_pixel_fails_and_produces_evidence_without_replacing_baseline (test_visual_compare.VisualComparison.test_changed_pixel_fails_and_produces_evidence_without_replacing_baseline) ... ok
+test_identical_images_pass (test_visual_compare.VisualComparison.test_identical_images_pass) ... ok
+test_missing_capture_and_empty_sets_fail (test_visual_compare.VisualComparison.test_missing_capture_and_empty_sets_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 6.287s
+
+OK
