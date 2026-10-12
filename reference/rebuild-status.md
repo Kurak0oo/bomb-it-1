@@ -39,12 +39,15 @@ and builds the manifest. No artwork was generated or redrawn to replace the SWF.
 
 The playable systems are implemented, but **exact equivalence is not established**:
 
-1. Flash's ordering of parent/child `onEnterFrame` callbacks and newly created
-   clips still needs trace comparison. Movement-start, damage versus growth/expiry,
-   grenade endpoint, and animation transition ticks remain parity-sensitive.
-   Controlled Ruffle captures now agree with the port's 40-update death, level-one
-   explosion-energy and brick-blocking traces. This narrows the uncertainty for
-   those fixtures; it does not establish full-match or Adobe Flash Player parity.
+1. Independent original-bytecode fixtures cover movement, damage around blast
+   growth/expiry, and firing through the preserved parent/child callbacks.
+   [Core traces](issue-11.md) retain 69 field differences across 252 ticks:
+   movement/special-fire ordering and bomb expiry/refire have separate correction
+   tickets (#28/#29); a one-twip movement-coordinate discrepancy remains unproven
+   as a port defect. Earlier 40-update death, level-one explosion-energy and
+   brick-blocking traces agree. Pushing, grenade endpoints and mixed interactions
+   still need completion; these fixtures do not establish full-match or Adobe
+   Flash Player parity.
 2. `OriginalRng` reproduces the random(n) interface and supports recorded values.
    Its seeded backend is Godot's RNG, not Flash's unrecovered generator. Stage
    setup/audio random calls and cross-stage random-state continuation are not yet
@@ -54,16 +57,24 @@ The playable systems are implemented, but **exact equivalence is not established
 4. Title, player count, controls help and the power-up guide now use original
    root display-list artwork, lettering and button states, with keyboard/mouse/
    touch navigation. Exact image comparison still finds differences; see
-   `menu-restoration.md`. Selection/HUD/results remain reconstructed controls,
-   including unfinished score-counting and original 5.5-second outcome transitions.
-   High scores are local, not a recreation of the old portal.
+   `menu-restoration.md`. Original difficulty/selection, independent 2P confirmation,
+   HUD artwork/counters and outcome screens are now integrated; see
+   [selection](issue-07.md), [HUD](issue-08.md) and [outcomes](issue-09.md).
+   The source assigns score fields immediately rather than counting them up;
+   its verified 5.5-second outcome delay and button states are implemented.
+   Twelve outcome routes pass port checks, with narrower independent win fixtures.
+   Source/port pixels still differ, including a documented HUD font substitution.
+   High scores remain local, not a recreation of the old portal.
 5. Death, pickup and rocket compositions now replay recovered XFL placement,
    scale, rotation and opacity. The hero shadow uses the original embedded bitmap;
    the invented shield outline is removed (the source indicates possession in the
    HUD). The floating weapon indicator, surviving-hit smoke and final impact-tick
    rocket smoke are now present. Death silhouettes composite body and eyes as
    separate source shapes. Nested idle clips and reference playback comparison of
-   effect creation/removal boundaries remain incomplete. Raster exports retain their source
+   effect creation/removal boundaries remain incomplete. The startup pointer,
+   equipped-counter layout and nested actor phases now have 259 agreeing original
+   observations; [actor feedback](issue-03.md) retains all 56 exact image differences.
+   Raster exports retain their source
    resolution, so large windows cannot recover vector detail. See
    `visual-fidelity.md` for the completed animation pass.
 6. Special weapons follow source logic but still need reference traces for mixed
