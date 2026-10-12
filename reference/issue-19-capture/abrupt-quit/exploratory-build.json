@@ -1,0 +1,27 @@
+{
+  "revision": "581395fe152ef1f3c9556e6c85a8fe4d3e46dcee",
+  "production_source_sha256": "231e5cd572e67cf163a17f34944ac6b206216cd84e2070c5fc3ca36777d34971",
+  "instrumentation_sha256": "53d9ca5302bc6f73a18044cd5eb97a477933aefaa9432a67a073434da07e1697",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "engine_sha256": "c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643",
+  "template_version": "4.7.2.stable",
+  "template_sha256": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562",
+  "platform": "Windows",
+  "architecture": "x86_64",
+  "configuration": "release",
+  "signed": false,
+  "embedded_pck": true,
+  "files": {
+    "BombIt.exe": {
+      "sha256": "5830dc5178867db95b1a6f0cca98e880d1a42517dd75585551b029632a7ae558",
+      "bytes": 116231472
+    },
+    "README.txt": {
+      "sha256": "ffa1cccaff6983c3527707554ceba4899d35705a3c6f9bee0a595f53b5c5341a",
+      "bytes": 663
+    }
+  },
+  "artifact": "bomb-it-windows-x64-581395fe152e.zip",
+  "artifact_sha256": "c2baf4c2c6cc33974d714418c4c5398a4bc858ceee1df47b6024504d457c1eba",
+  "artifact_bytes": 43642703
+}

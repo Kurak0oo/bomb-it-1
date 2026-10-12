@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\Eiji\\Github\\bomb-it-worktrees\\issue19\\.artifacts\\issue19-final-smoke\\8f7e2ffa113c\\application\\BombIt.exe",
+    "--audio-driver",
+    "Dummy",
+    "--",
+    "--package-smoke"
+  ],
+  "exit_code": 1,
+  "guard_observed": true,
+  "preference_files_written": [],
+  "passed": true
+}
