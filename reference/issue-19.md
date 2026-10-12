@@ -35,3 +35,16 @@ BombIt.exe --audio-driver Dummy --quit-after 120 --log-file <absolute-log-path>
 ```
 
 The engine log file closes before these final stderr/stdout messages; both streams must be inspected. The successful smoke deliberately retires its test scene and waits one second for the existing asynchronous audio cleanup, as other rendered tests do. It does not prove ordinary window-close cleanup, and no production exit delay was added here. This evidence is handed to #10's audio audit; #21 must reassess normal close behavior and rebuild/re-smoke the final integrated candidate. No native iPhone or release-signing claim is made.
+
+
+## Committed artifact and retained smoke
+
+The final #19 artifact was built from clean commit `7fcbdb4545c3d00d74c7396a14489d5cbfcc60d6` (`source_tree_dirty: false`), including integration's #31 correction. It remains outside tracked source at `.artifacts/issue19-final/bomb-it-windows-x64-7fcbdb4545c3.zip` (43,648,537 bytes).
+
+- ZIP SHA-256: `d1596ab41945d53b0298afb6d57d196f8c7592e582d279be720f60ea6aa4825e`
+- Embedded executable SHA-256: `7295d929986f52d15b548646d348cfca84e7cbc065d52c9e0d96436df55cb645`
+- Complete exported-source SHA-256: `27a13a653aafa0ef311c2a5befa55caff6531481aa3093b57c57370498b46167`
+
+[Final build manifest, runtime reports, screenshots and isolated preference file](issue-19-capture/final/) show the actual Windows release executable from that ZIP. Both processes report `editor: false`, `debug_build: false`, and 35 Hz. The human moved from cell (3,3) to (5,3), placed its own bomb, paused and resumed; the second process restored `muted=true`. Four rendered captures were retained. All runtime checks passed, and both stdout and engine log streams are checked by the public smoke command. The artifact was tested on Windows 11 build 26200 with the RTX 3080 Laptop GPU using Compatibility/OpenGL rendering.
+
+A deliberately wrong isolated-root path was also tested against this exact executable: it exited 1 with the isolation guard message and created no preference file. The negative result, stdout and reproduction script are retained with the final evidence. The regular executable's abrupt-quit limitation above remains separate and was passed to #10. Final #21 will rebuild and smoke the final integrated revision, including later preservation changes.
