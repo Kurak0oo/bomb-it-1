@@ -118,3 +118,10 @@ are still outstanding.
 Fresh [CI run 38248697898](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38248697898)
 at `69e8694` passes both jobs and reproduces all 108 images exactly. Its
 [job record](integration-screen-review/specials-grenade/ci.json) is retained.
+
+The later [accounting/iPhone-configuration checkpoint](https://github.com/Kurak0oo/bomb-it-1/actions/runs/38249989959)
+at `385ff77` also passes both jobs and all 108 images. The first rendered attempt
+stopped before tests when the upstream engine download returned HTTP 504 after
+retries; an unchanged second attempt passed. The
+[job record](integration-screen-review/specials-grenade/ci-platform-accounting.json)
+preserves the successful attempt number and source revision.

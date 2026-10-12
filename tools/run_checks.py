@@ -133,6 +133,9 @@ def main():
                 phases.append(("push_motion", command + ["--script", "res://tests/motion_reference_capture.gd", "--", "--push-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
             if suite == "actors":
                 phases.append(("ai_order", command + ["--script", "res://tests/ai_order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
+                phases.append(("hit_accounting", command + ["--script", "res://tests/interaction_reference_capture.gd", "--", "--accounting-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
+            if suite == "campaign":
+                phases.append(("accounting_session", command + ["--script", "res://tests/accounting_session_check.gd"], "ACCOUNTING_SESSION_OK"))
             if suite == "special":
                 phases.append(("command_order", command + ["--script", "res://tests/order_reference_capture.gd", "--", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))
                 phases.append(("grenade_endpoint", command + ["--script", "res://tests/motion_reference_capture.gd", "--", "--grenade-profile", "--verify-reference"], "CORE_REFERENCE_CAPTURE_OK"))

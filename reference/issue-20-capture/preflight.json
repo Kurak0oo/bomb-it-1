@@ -1,0 +1,34 @@
+{
+  "revision": "39ccf1f1c2cf306021a19940dd2e4371910c27b4",
+  "production_source_sha256": "3344291ce8d9eb703a59cfd191c6bb0cd36c74749597277ab32ed55fb2ab9683",
+  "instrumentation_sha256": "25c131b585079766692a5d536d251728bdef84969639c3b79457641162627d61",
+  "host": "Windows",
+  "blockers": [
+    "team_id",
+    "bundle_identifier",
+    "macos_xcode"
+  ],
+  "export_performed": false,
+  "signing": "unverified",
+  "device_install": "unverified",
+  "identity_validation": "format only; Apple ownership and eligibility unverified",
+  "export_preset_sha256": "c62588cfa80bdfdc5360edd82f830a10e0b2aa967b41bbb850d9f17678d528bf",
+  "preflight_sha256": "6f782700041874bf8a95e80a44704db3f7117752cc3ec0b5641b14ce8693a57b",
+  "configuration": {
+    "valid": true,
+    "errors": [],
+    "preset": "iOS Development Project",
+    "section": "preset.1",
+    "orientation": "both_landscape",
+    "physics_ticks_per_second": 35,
+    "minimum_ios": "15.0",
+    "icon": "res://art/original/hud/portrait-1.png",
+    "device_family": "iPhone"
+  },
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "template_version": "4.7.2.stable",
+  "ios_template_sha256": "fd3280d10dc75356dded006f6f8813f40a5aebd32d128592b781256d8ffbdff4",
+  "team_id_configured": false,
+  "bundle_identifier_configured": false,
+  "status": "blocked"
+}

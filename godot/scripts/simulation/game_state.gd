@@ -355,7 +355,10 @@ func _explode(bomb: BombState) -> void:
 	if cell.bomb == bomb:
 		cell.bomb = null
 	bombs.erase(bomb)
-	heroes[bomb.owner_id].bombs_available += 1
+	# Source bombExp refunds through the live display actor; removed owners
+	# keep their root allowance until the next round resets it.
+	if heroes[bomb.owner_id].alive:
+		heroes[bomb.owner_id].bombs_available += 1
 	var blast := ExplosionState.new(bomb.cell, bomb.level)
 	blast.owner_id = bomb.owner_id
 	for i in 4:
@@ -375,13 +378,14 @@ func _tick_damage(hero: HeroState) -> void:
 		return
 	var cell := _cell(hero.rounded_cell())
 	if cell != null and cell.energy > 0:
+		# Original parent polling credits the hit before hurtHero consumes armor.
+		if cell.energy_owner >= 0 and cell.energy_owner != hero.id:
+			heroes[cell.energy_owner].score += 1000
+			heroes[cell.energy_owner].kill_score += 1000
 		if hero.armor:
 			hero.armor = false
 			hero.shield = 60
 			return
-		if cell.energy_owner >= 0 and cell.energy_owner != hero.id:
-			heroes[cell.energy_owner].score += 1000
-			heroes[cell.energy_owner].kill_score += 1000
 		hero.lives -= 1
 		if hero.controller == HeroState.Controller.AI and hero.lives > 0:
 			hero.shield = 60

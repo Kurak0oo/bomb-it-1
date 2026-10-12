@@ -16,7 +16,8 @@ func install_bomb(state: GameState, spec: Dictionary, deferred: bool) -> void:
 
 func run() -> void:
 	var grenade_profile := OS.get_cmdline_user_args().has("--grenade-account")
-	var stem := "grenadescore" if grenade_profile else "interaction"
+	var accounting_profile := OS.get_cmdline_user_args().has("--accounting-profile")
+	var stem := "grenadescore" if grenade_profile else "accounting" if accounting_profile else "interaction"
 	var path := "res://tests/fixtures/%s_scenarios.json" % stem
 	var config: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(path))
 	var scenarios := {}
@@ -79,6 +80,8 @@ func run() -> void:
 				row[key+"Stop"] = actor.stop_ticks if actor.alive else 0
 				row[key+"Bombs"] = actor.bombs_available
 				row[key+"Score"] = actor.score
+				if accounting_profile:
+					row[key+"KillScore"] = actor.kill_score
 			for y in 13:
 				for x in 15:
 					var cell: CellState = state.cell_at(Vector2i(x,y))
@@ -108,8 +111,8 @@ func run() -> void:
 		file.store_string(JSON.stringify(capture,"  "))
 	if OS.get_cmdline_user_args().has("--verify-reference"):
 		var reference: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://tests/fixtures/%s_original.json" % stem))
-		if not grenade_profile or reference.configuration_sha256 != capture.configuration_sha256 or reference.source != "original-swf-bytecode":
-			push_error("Incompatible independent grenade accounting reference")
+		if stem == "interaction" or reference.configuration_sha256 != capture.configuration_sha256 or reference.source != "original-swf-bytecode":
+			push_error("Incompatible independent accounting reference")
 			quit(1)
 			return
 		for name in scenarios:

@@ -65,6 +65,7 @@ this.onEnterFrame=function() {
         result+="|"+alive+"|"+ledger.life+"|"+(alive ? hero.shield : false)
             +"|"+(alive ? hero.varShield : 0)+"|"+(alive ? Math.max(0,hero.slowTime) : 0)
             +"|"+(alive ? hero.stopTime : 0)+"|"+ledger.totalBomb+"|"+ledger.score;
+        if(configuration.profile == "accounting-v1") result+="|"+ledger.killScore;
     }
     var energies="";var owners="";var bombs="";var rockets="";
     for (var y=0;y<h;y++) for (var x=0;x<w;x++) {
