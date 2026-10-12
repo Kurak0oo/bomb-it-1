@@ -15,6 +15,7 @@ const html = `<!doctype html><style>html,body{margin:0;background:#fff}ruffle-pl
 <script src="/ruffle/ruffle.js"></script><script>
 window.samples=[];
 window.referenceSample = message => {
+  if (message.startsWith('COUNT_METRICS|')) console.log(message);
   if (!message.startsWith('FEEDBACK_SAMPLE|')) return;
   const p = message.split('|');
   window.samples.push({tick:Number(p[1]),bodyFrame:Number(p[2]),pointerVisible:p[3]==='true',pointerLabelTwips:Number(p[4]),life:Number(p[5])});
@@ -51,7 +52,7 @@ try {
   browser = await chromium.launch({ headless: true });
   const address = `http://127.0.0.1:${server.address().port}`;
   const all = {};
-  for (const scenario of ['pointer', 'idle', 'walk', 'weapons', 'depth', 'hit']) {
+  for (const scenario of ['pointer', 'idle', 'walk', 'weapons', 'depth', 'hit', 'counts']) {
     const page = await browser.newPage({ viewport: { width: 550, height: 400 }, deviceScaleFactor: 1 });
     const messages = [];
     page.on('console', message => messages.push(message.text()));

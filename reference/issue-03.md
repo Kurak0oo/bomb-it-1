@@ -24,8 +24,15 @@ count baseline. It does not change simulation, damage, shield, RNG, or outcome r
   The independent count-1 fixture at actor registration `(60,100)` exposed the
   visible dark glyph at y=54..64 in the old port versus y=59..69 in Ruffle. Its
   baseline is now five pixels lower. This is a measured presentation correction;
-  it is not a claim that the two runtimes have identical font metrics. Horizontal
-  glyph placement and raster differences remain in the exact comparison.
+  it is not a claim that the two runtimes have identical font metrics.
+- A second dark-background fixture isolates `1`, `2`, `10`, `11`, `12`, `20`.
+  The original TextField reports widths 9, 9, 18, 18, 18, 18 at size 15. Font 295
+  has `fontFlagsHasLayout=false`: the SWF contains no advance table. FFDec's TTF
+  export synthesized proportional advances (520 units for `1`, 711 for `2`,
+  at 1024 units/em). This caused the trailing zero to shift when `10` became
+  `20`. Counter glyphs now use the independently measured 9-pixel advance;
+  their source field origins and recovered outlines remain unchanged. The
+  rendered trailing-zero comparison failed before and passes after this fix.
 - Existing `hurtHero` smoke transport remains unchanged: surviving AI damage starts
   Symbol 279 at frame 20; frame 36 removes it. The new independent fixture calls
   original `hurtHero` bytecode. Its first post-creation observation is frame 21,
@@ -60,13 +67,13 @@ distinction is recorded in capture provenance. Browser time advances explicitly;
 skipped observations fail. `--require-parity` fails on any trace or image difference.
 
 - [Original observations](feedback-capture/original/trace.json) and
-  [rebuilt observations](feedback-capture/rebuilt/trace.json): 241 updates across
-  pointer, idle, walk, weapons, scenery depth, and surviving-hit scenes.
+  [rebuilt observations](feedback-capture/rebuilt/trace.json): 259 updates across
+  pointer, idle, walk, weapons, scenery depth, surviving-hit, and numeric-layout scenes.
 - [Trace comparison](feedback-capture/trace-comparison.json): all observed body
   frames, pointer visibility/label placement, and life values match. Pointer
   placement is observed from the rendered layer transform in twips; body frame
   is observed from the selected texture, not calculated from a duplicate timer.
-- [Exact image report](feedback-capture/image-comparison/report.json): all 48
+- [Exact image report](feedback-capture/image-comparison/report.json): all 56
   sampled images differ. Source and port PNGs plus all full-frame difference
   images are retained separately. No tick shifts, crops, tolerance changes or
   port-baseline replacements were used to establish parity.
@@ -75,15 +82,43 @@ skipped observations fail. `--require-parity` fails on any trace or image differ
   [scenery occlusion](feedback-capture/image-comparison/qa-depth-frame-00-diff.png),
   [surviving hit](feedback-capture/image-comparison/qa-hit-frame-00-diff.png).
   The before-correction weapon captures are in `count-baseline-before`.
+- [Original numeric measurements](feedback-capture/original/counts.log),
+  [SWF font flags/bounds](feedback-capture/count-layout/source-font-metrics.txt),
+  and [glyph bounds](feedback-capture/count-layout/glyph-bounds.json) isolate the
+  horizontal issue. Enlarged diagnostic strips show [source](feedback-capture/count-layout/source-glyphs.png),
+  [before](feedback-capture/count-layout/before-glyphs.png), and
+  [after](feedback-capture/count-layout/after-glyphs.png). These diagnostic crops
+  are not used to mask the full-frame comparison. Single-digit `2` starts at
+  the same x in both runtimes; the narrower source `1` lies inside the thicker
+  port glyph. A uniform x shift would therefore be incorrect. The remaining
+  single-glyph bounds differences are demonstrated outline/weight differences;
+  the known multi-digit registration defect is corrected.
+
+The measured numeric advance is specific to the source size-15 device field.
+Other sizes, including the HUD's size-10 fields, should be measured independently
+rather than inheriting an assumed scale. The source probe uses
+`getInstanceAtDepth(-16368)` for Symbol 299's white TextField and reads its
+`textWidth`, `textHeight`, font and size directly.
 
 ## Status and limitations
 
-**Implemented; independently verified for the named timing/state fixtures. Exact
-appearance acceptance remains open.** Source and port show the same pointer
-selection, loop, removal, body poses, weapon choices, and foreground scenery order.
-The raster exports are visibly softer than original playback, and count glyph
-placement/weight differs. The evidence does not isolate every changed pixel to
-the renderer, so the 48 image failures remain failures; they are not waived.
+**Issue #3's placement, depth, timing and visibility criteria pass for the named
+fixtures. The parent project's exact pixel parity remains unclaimed.** Source and port show
+the same pointer selection, loop, removal, body poses, weapon choices, and
+foreground scenery order. Counter field origins, baseline and tabular advance
+now match the measured source layout; no known uniform registration error remains.
+The raster exports are visibly softer than original playback, and the source
+device TextField draws thinner glyphs than the recovered embedded font outlines.
+The evidence does not isolate every changed pixel to the renderer, so the 56 image
+failures remain failures; they are not waived.
+
+| Required criterion | Result and evidence |
+|---|---|
+| Surviving smoke starts at the source frame | Pass: source `hurtHero` starts 279 at 20, rendered damage emits the smoke, independent post-creation boundary images cover playback and removal. Life remains one in the independent fixture. |
+| Equipped and nested placement/depth | Pass for all six weapons, four character directions, eight player-pointer variants, and the scenery-occlusion fixture. Counter source registration/baseline and directly observed tabular advance are reproduced. |
+| Timing and visibility | Pass: body stops while idle; pointer loops at 60 frames, disappears on update 150, and stays replaced after weapon exhaustion. Repeated synchronization does not advance it. Source/port observations match for all 259 recorded updates. |
+| Read-only event transport | Pass: the rendered hit fixture drives actual state damage; presentation then finishes while life and simulation remain unchanged. No simulation file was modified. |
+| Focused checks and review | Pass: three rendered red/green corrections, tooling/actors/timeline checks, all merged rendered phases, and scoped review against `f797372`. |
 
 This is Ruffle 0.7.1/Chromium original-symbol evidence compared with Godot 4.7.2
 Windows OpenGL, not Adobe Flash Player or iPhone certification. The controlled

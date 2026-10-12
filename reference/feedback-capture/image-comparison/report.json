@@ -4,6 +4,54 @@
   "max_changed_fraction": 0.0,
   "images": [
     {
+      "name": "qa-counts-frame-00.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-02.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-05.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-11.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-14.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-15.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-16.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
+      "name": "qa-counts-frame-17.png",
+      "passed": false,
+      "changed_pixels": 10004,
+      "changed_fraction": 0.045472727272727276
+    },
+    {
       "name": "qa-depth-frame-00.png",
       "passed": false,
       "changed_pixels": 11000,

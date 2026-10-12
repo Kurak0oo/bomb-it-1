@@ -9,7 +9,8 @@ func run() -> void:
 	RenderingServer.set_default_clear_color(Color.WHITE)
 	var scenarios := {}
 	var art := OriginalArt.new()
-	for scenario in ["pointer", "idle", "walk", "weapons", "depth", "hit"]:
+	for scenario in ["pointer", "idle", "walk", "weapons", "depth", "hit", "counts"]:
+		RenderingServer.set_default_clear_color(Color("202020") if scenario == "counts" else Color.WHITE)
 		var container := Node2D.new()
 		root.add_child(container)
 		var heroes: Array[HeroView] = []
@@ -37,7 +38,7 @@ func run() -> void:
 			state.tick([])
 			view.sync_view()
 		else:
-			var count := 6 if scenario in ["weapons", "depth"] else 16 if scenario == "walk" else 8
+			var count := 6 if scenario in ["weapons", "depth", "counts"] else 16 if scenario == "walk" else 8
 			for i in count:
 				var actor := HeroState.new()
 				actor.id = i / 4 if scenario == "pointer" else 0
@@ -45,9 +46,12 @@ func run() -> void:
 				actor.cell = Vector2i(2 + (i if scenario == "weapons" else i % 4) * 3, 0)
 				actor.shield = 0
 				actor.facing = i / 4 if scenario == "walk" else 3
-				if scenario in ["weapons", "depth"]:
+				if scenario in ["weapons", "depth", "counts"]:
 					actor.special_weapon = SpecialRules.WEAPONS[i]
 					actor.special_count = i + 1
+				if scenario == "counts":
+					actor.cell = Vector2i(2+i*2,0)
+					actor.special_count = [1,2,10,11,12,20][i]
 				if scenario == "depth":
 					actor.cell = Vector2i(2+i*2,6)
 					var brick := art.sprite(195)
@@ -64,6 +68,8 @@ func run() -> void:
 				holder.position.y = 100 + (0 if scenario == "weapons" else i / 4) * 80
 				if scenario == "depth":
 					holder.position.y = 0
+				elif scenario == "counts":
+					holder.position.y = 100
 				container.add_child(holder)
 				holder.add_child(hero)
 				heroes.append(hero)

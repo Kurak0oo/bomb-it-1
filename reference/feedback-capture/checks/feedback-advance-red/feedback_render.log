@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 555.85 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3080 Laptop GPU
+
+ERROR: the second count digit must keep the source's tabular advance after either 1 or 2
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/feedback_render_check.gd:24)
+       [1] run (res://tests/feedback_render_check.gd:138)
+       [2] snapshot (res://tests/feedback_render_check.gd:11)

@@ -2,6 +2,134 @@
   "fps": 35,
   "runtime": "4.7.2-stable (official)",
   "scenarios": {
+    "counts": [
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 0
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 1
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 2
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 3
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 4
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 5
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 6
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 7
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 8
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 9
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 10
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 11
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 12
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 13
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 14
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 15
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 16
+      },
+      {
+        "bodyFrame": 1,
+        "life": 0,
+        "pointerLabelTwips": 0,
+        "pointerVisible": false,
+        "tick": 17
+      }
+    ],
     "depth": [
       {
         "bodyFrame": 1,

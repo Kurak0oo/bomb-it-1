@@ -2,7 +2,7 @@
   "source": "original-swf-bytecode",
   "runtime": "Ruffle 0.7.1",
   "browser": "156.0.8078.4",
-  "fixture_sha256": "1602a2af7383b71a105cdd4c0a158bef1c989c80b97d6fb194876971c9cb66c4",
+  "fixture_sha256": "8fb916012c751d200aa1d8605ecc2c1b1d58db055396ea7484fb0f9b84658108",
   "ruffle_integrity": "sha512-6ZWxx/cfX3RoNyQ1AVimECSae4gKqMxdPimOD+chiIcOFiJS0ATGKcjkretxNT03lqNUpiSyJjF55AuvvZ+QeA==",
   "fps": 35,
   "tick_origin": "first onEnterFrame observation after fixture creation",
@@ -1706,11 +1706,139 @@
         "pointerLabelTwips": 0,
         "life": 1
       }
+    ],
+    "counts": [
+      {
+        "tick": 0,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 1,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 2,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 3,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 4,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 5,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 6,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 7,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 8,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 9,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 10,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 11,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 12,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 13,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 14,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 15,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 16,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      },
+      {
+        "tick": 17,
+        "bodyFrame": 1,
+        "pointerVisible": false,
+        "pointerLabelTwips": 0,
+        "life": 0
+      }
     ]
   },
   "original_swf_sha256": "a780f395a61bae8d0ddf9c0dfc1b75780046461c4197d949523c6eedf5969b0b",
-  "harness_sha256": "aa254df876109ea79dfadecb26bdb8b4004a2132f3206db6d9e1516b52c1a03a",
+  "harness_sha256": "72e588a6d431131abbf95ca39ee13af8ec99732026c9ffd755d1f20223a21485",
   "builder_sha256": "011d0973afdd2b4c9dedd4896095518b1209b7d3263b9951ae56ce7c8ec7f900",
-  "capture_sha256": "5aa01574980ce24208db97d911e92f4a4a6c5eeb2dee1674e659a7ac5129063b",
+  "capture_sha256": "4eece25f877b331e8cd8dcd0fe1d22b891ff7c15ea6a65ba206b6ef49aea1016",
   "ffdec_sha256": "1587e60b2ec2c0e4f5721fd5f2aaaf2379f6d416569de99054b5c5d1e9ba841c"
 }

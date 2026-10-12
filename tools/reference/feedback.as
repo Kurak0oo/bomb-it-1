@@ -9,6 +9,12 @@ d = 30;
 pausing = false;
 totalPlayer = 1;
 createEmptyMovieClip("brickArea", 2);
+if (scenario == "counts") {
+    var backdrop = createEmptyMovieClip("backdrop", 1);
+    backdrop.beginFill(0x202020);
+    backdrop.moveTo(0,0); backdrop.lineTo(550,0); backdrop.lineTo(550,400);
+    backdrop.lineTo(0,400); backdrop.lineTo(0,0); backdrop.endFill();
+}
 actors = [];
 if (scenario == "hit") {
     createEmptyMovieClip("bgArea", 1);
@@ -31,7 +37,7 @@ if (scenario == "hit") {
     hurtHero(hero);
 } else {
     var i = 0;
-    var count = scenario == "weapons" || scenario == "depth" ? 6 : scenario == "walk" ? 16 : 8;
+    var count = scenario == "weapons" || scenario == "depth" || scenario == "counts" ? 6 : scenario == "walk" ? 16 : 8;
     while (i < count) {
         var character = i % 4 + 1;
         var column = scenario == "weapons" ? i : i % 4;
@@ -47,7 +53,12 @@ if (scenario == "hit") {
             var brick = brickArea.attachMovie("brick", "brick" + i, calDepth(2+i*2,6,10), {_x:hero._x,_y:hero._y});
             brick.gotoAndStop(1);
         }
-        if (scenario == "weapons" || scenario == "depth") {
+        if (scenario == "counts") {
+            hero._x = 60+i*60;
+            hero._y = 100;
+            hero.totalSpecial = [1,2,10,11,12,20][i];
+        }
+        if (scenario == "weapons" || scenario == "depth" || scenario == "counts") {
             hero.attachMovie("specialToolViewer", "specialToolViewer", 0);
             hero.specialToolViewer.tool.gotoAndStop(i+7);
         } else if (scenario == "pointer") {
@@ -67,6 +78,14 @@ if (scenario == "hit") {
 tick = -1;
 this.onEnterFrame = function() {
     tick++;
+    if (scenario == "counts" && tick == 0) {
+        var j = 0;
+        while (j < actors.length) {
+            var field = actors[j].specialToolViewer.getInstanceAtDepth(-16368);
+            trace("COUNT_METRICS|" + actors[j].totalSpecial + "|" + field.textWidth + "|" + field.textHeight + "|" + field.getTextFormat().font + "|" + field.getTextFormat().size);
+            j++;
+        }
+    }
     var pointer = actors[0].p_pointer;
     var smoke = brickArea.heroDieSmoke2;
     trace("FEEDBACK_SAMPLE|" + tick + "|" + actors[0].body._currentframe

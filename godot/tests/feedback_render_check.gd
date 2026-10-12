@@ -130,6 +130,12 @@ func run() -> void:
 	indicator.sync(actor)
 	var count_image := await snapshot()
 	check(changed(blank, count_image, Rect2i(84,68,12,3)) > 0, "equipped count must use the source TextField baseline")
+	actor.special_count = 10
+	indicator.sync(actor)
+	var ten := await snapshot()
+	actor.special_count = 20
+	indicator.sync(actor)
+	check(changed(ten, await snapshot(), Rect2i(95,56,12,16)) == 0, "the second count digit must keep the source's tabular advance after either 1 or 2")
 	indicator.free()
 	if not failed:
 		print("FEEDBACK_RENDER_OK")
