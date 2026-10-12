@@ -1,0 +1,2266 @@
+{
+  "passed": false,
+  "original_runtime": "Ruffle 0.7.1",
+  "rebuilt_runtime": "4.7.2-stable (official)",
+  "first_divergence": {
+    "scenario": "push_corridor",
+    "tick": 0,
+    "field": "bombFuse",
+    "original": 59,
+    "rebuilt": 60
+  },
+  "scenario_first_divergences": {
+    "push_corridor": {
+      "scenario": "push_corridor",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    "push_short_fuse": {
+      "scenario": "push_short_fuse",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": 2
+    },
+    "push_expiring_fuse": {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    "push_energy_source": {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    "push_energy_reserved": {
+      "scenario": "push_energy_reserved",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    "push_blocked": null,
+    "push_alignment": {
+      "scenario": "push_alignment",
+      "tick": 1,
+      "field": "heroMoving",
+      "original": true,
+      "rebuilt": false
+    },
+    "grenade_left": {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "energies",
+      "original": "6,5,1;5,6,1;6,6,1;7,6,1;6,7,1;",
+      "rebuilt": ""
+    },
+    "grenade_up": {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "energies",
+      "original": "8,3,1;7,4,1;8,4,1;9,4,1;8,5,1;",
+      "rebuilt": ""
+    },
+    "grenade_right": {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "energies",
+      "original": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;",
+      "rebuilt": ""
+    },
+    "grenade_down": {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "energies",
+      "original": "8,7,1;7,8,1;8,8,1;9,8,1;8,9,1;",
+      "rebuilt": ""
+    },
+    "grenade_blocked": null,
+    "grenade_edge": null,
+    "grenade_brick": {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "bricks",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    "grenade_chain": {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    }
+  },
+  "differences": [
+    {
+      "scenario": "push_corridor",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 0,
+      "field": "bombPixelXTwips",
+      "original": 4800,
+      "rebuilt": 5100
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 0,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 1,
+      "field": "bombCellX",
+      "original": 8,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 1,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 1,
+      "field": "bombPixelXTwips",
+      "original": 5100,
+      "rebuilt": 5400
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 1,
+      "field": "occupancy",
+      "original": "9,6;",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 1,
+      "field": "reservationX",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 1,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 2,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 2,
+      "field": "bombPixelXTwips",
+      "original": 5400,
+      "rebuilt": 5700
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 2,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 3,
+      "field": "bombCellX",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 3,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 3,
+      "field": "bombPixelXTwips",
+      "original": 5700,
+      "rebuilt": 6000
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 3,
+      "field": "occupancy",
+      "original": "10,6;",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 3,
+      "field": "reservationX",
+      "original": 10,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 3,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 4,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 4,
+      "field": "bombPixelXTwips",
+      "original": 6000,
+      "rebuilt": 6300
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 4,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "bombActive",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "bombCellX",
+      "original": 10,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "bombCellY",
+      "original": 6,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "bombPixelXTwips",
+      "original": 6300,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "bombPixelYTwips",
+      "original": 3600,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,6,1;"
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "occupancy",
+      "original": "11,6;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "reservationX",
+      "original": 11,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "reservationY",
+      "original": 6,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 5,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 6,
+      "field": "energies",
+      "original": "11,6,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_corridor",
+      "tick": 16,
+      "field": "energies",
+      "original": "11,5,1;10,6,1;11,6,1;11,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 0,
+      "field": "bombPixelXTwips",
+      "original": 4800,
+      "rebuilt": 5100
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 0,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 1,
+      "field": "bombCellX",
+      "original": 8,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 1,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 1,
+      "field": "bombPixelXTwips",
+      "original": 5100,
+      "rebuilt": 5400
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 1,
+      "field": "occupancy",
+      "original": "9,6;",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 1,
+      "field": "reservationX",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 1,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 2,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 2,
+      "field": "bombPixelXTwips",
+      "original": 5400,
+      "rebuilt": 5700
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 2,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 3,
+      "field": "bombCellX",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 3,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 3,
+      "field": "bombPixelXTwips",
+      "original": 5700,
+      "rebuilt": 6000
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 3,
+      "field": "occupancy",
+      "original": "10,6;",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 3,
+      "field": "reservationX",
+      "original": 10,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 3,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 4,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 4,
+      "field": "bombPixelXTwips",
+      "original": 6000,
+      "rebuilt": 6300
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 4,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "bombActive",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "bombCellX",
+      "original": 10,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "bombCellY",
+      "original": 6,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "bombFuse",
+      "original": 1,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "bombPixelXTwips",
+      "original": 6300,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "bombPixelYTwips",
+      "original": 3600,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,6,1;"
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "occupancy",
+      "original": "11,6;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "reservationX",
+      "original": 11,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "reservationY",
+      "original": 6,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 5,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 6,
+      "field": "energies",
+      "original": "11,6,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_short_fuse",
+      "tick": 16,
+      "field": "energies",
+      "original": "11,5,1;10,6,1;11,6,1;11,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 5100
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "energies",
+      "original": "8,6,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "9,6;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 0,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 5400
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 1,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 5700
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 2,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 6000
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 3,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 6300
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 4,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 5,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,6,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 6,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 7,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 8,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 9,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 10,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 11,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 12,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 13,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 14,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_expiring_fuse",
+      "tick": 15,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 5100
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "energies",
+      "original": "8,6,2;",
+      "rebuilt": "8,6,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "9,6;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 0,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 5400
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "8,6,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 1,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 5700
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "8,6,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 2,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 6000
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "8,6,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 3,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 6300
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "8,6,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 4,
+      "field": "slideRemaining",
+      "original": 0,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 5,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "8,6,1;11,6,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 6,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;8,6,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 7,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;8,6,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 8,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,2;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;8,6,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 9,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 10,
+      "field": "energies",
+      "original": "8,5,1;7,6,1;8,6,1;9,6,1;8,7,1;",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 11,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 12,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 13,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 14,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_source",
+      "tick": 15,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "11,5,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 0,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 0,
+      "field": "bombPixelXTwips",
+      "original": 4800,
+      "rebuilt": 5100
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 0,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 1,
+      "field": "bombCellX",
+      "original": 8,
+      "rebuilt": 9
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 1,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 1,
+      "field": "bombPixelXTwips",
+      "original": 5100,
+      "rebuilt": 5400
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 1,
+      "field": "occupancy",
+      "original": "9,6;",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 1,
+      "field": "reservationX",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 1,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 2,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 2,
+      "field": "bombPixelXTwips",
+      "original": 5400,
+      "rebuilt": 5700
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 2,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 3,
+      "field": "bombCellX",
+      "original": 9,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 3,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 3,
+      "field": "bombPixelXTwips",
+      "original": 5700,
+      "rebuilt": 6000
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 3,
+      "field": "occupancy",
+      "original": "10,6;",
+      "rebuilt": "11,6;"
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 3,
+      "field": "reservationX",
+      "original": 10,
+      "rebuilt": 11
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 3,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 2
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 4,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": 60
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 4,
+      "field": "bombPixelXTwips",
+      "original": 6000,
+      "rebuilt": 6300
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 4,
+      "field": "slideRemaining",
+      "original": 2,
+      "rebuilt": 1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "bombActive",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "bombCellX",
+      "original": 10,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "bombCellY",
+      "original": 6,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "bombFuse",
+      "original": 59,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "bombPixelXTwips",
+      "original": 6300,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "bombPixelYTwips",
+      "original": 3600,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "energies",
+      "original": "9,6,1;",
+      "rebuilt": "9,6,1;11,6,1;"
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "occupancy",
+      "original": "11,6;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "reservationX",
+      "original": 11,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "reservationY",
+      "original": 6,
+      "rebuilt": -1
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 5,
+      "field": "slideRemaining",
+      "original": 1,
+      "rebuilt": 0
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 6,
+      "field": "energies",
+      "original": "9,6,1;11,6,1;",
+      "rebuilt": "11,5,1;9,6,1;10,6,1;11,6,1;11,7,1;"
+    },
+    {
+      "scenario": "push_energy_reserved",
+      "tick": 16,
+      "field": "energies",
+      "original": "11,5,1;10,6,1;11,6,1;11,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "push_alignment",
+      "tick": 1,
+      "field": "heroMoving",
+      "original": true,
+      "rebuilt": false
+    },
+    {
+      "scenario": "push_alignment",
+      "tick": 7,
+      "field": "heroCellY",
+      "original": 6,
+      "rebuilt": 5
+    },
+    {
+      "scenario": "push_alignment",
+      "tick": 7,
+      "field": "heroMoving",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "energies",
+      "original": "6,5,1;5,6,1;6,6,1;7,6,1;6,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeFrame",
+      "original": 0,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeOriginX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeOriginY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeRootXTwips",
+      "original": -1,
+      "rebuilt": 4800
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeRootYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeTargetX",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 18,
+      "field": "grenadeTargetY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_left",
+      "tick": 28,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "6,5,1;5,6,1;6,6,1;7,6,1;6,7,1;"
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "energies",
+      "original": "8,3,1;7,4,1;8,4,1;9,4,1;8,5,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeFrame",
+      "original": 0,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeOriginX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeOriginY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeRootXTwips",
+      "original": -1,
+      "rebuilt": 4800
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeRootYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeTargetX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 18,
+      "field": "grenadeTargetY",
+      "original": -1,
+      "rebuilt": 4
+    },
+    {
+      "scenario": "grenade_up",
+      "tick": 28,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "8,3,1;7,4,1;8,4,1;9,4,1;8,5,1;"
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "energies",
+      "original": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeFrame",
+      "original": 0,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeOriginX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeOriginY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeRootXTwips",
+      "original": -1,
+      "rebuilt": 4800
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeRootYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeTargetX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 18,
+      "field": "grenadeTargetY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_right",
+      "tick": 28,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;"
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "energies",
+      "original": "8,7,1;7,8,1;8,8,1;9,8,1;8,9,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeFrame",
+      "original": 0,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeOriginX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeOriginY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeRootXTwips",
+      "original": -1,
+      "rebuilt": 4800
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeRootYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeTargetX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 18,
+      "field": "grenadeTargetY",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_down",
+      "tick": 28,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "8,7,1;7,8,1;8,8,1;9,8,1;8,9,1;"
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "bricks",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "energies",
+      "original": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeFrame",
+      "original": 0,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeOriginX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeOriginY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeRootXTwips",
+      "original": -1,
+      "rebuilt": 4800
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeRootYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeTargetX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 18,
+      "field": "grenadeTargetY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_brick",
+      "tick": 28,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;"
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombCellX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombCellY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombFuse",
+      "original": -1,
+      "rebuilt": 980
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombPixelXTwips",
+      "original": -1,
+      "rebuilt": 6000
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "bombPixelYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "energies",
+      "original": "10,5,1;9,6,1;10,6,2;11,6,1;10,7,1;",
+      "rebuilt": ""
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeActive",
+      "original": false,
+      "rebuilt": true
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeFrame",
+      "original": 0,
+      "rebuilt": 19
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeOriginX",
+      "original": -1,
+      "rebuilt": 8
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeOriginY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeRootXTwips",
+      "original": -1,
+      "rebuilt": 4800
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeRootYTwips",
+      "original": -1,
+      "rebuilt": 3600
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeTargetX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "grenadeTargetY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "occupancy",
+      "original": "",
+      "rebuilt": "10,6;"
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "reservationX",
+      "original": -1,
+      "rebuilt": 10
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 18,
+      "field": "reservationY",
+      "original": -1,
+      "rebuilt": 6
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 19,
+      "field": "energies",
+      "original": "10,5,2;9,6,2;10,6,2;11,6,2;10,7,2;",
+      "rebuilt": "10,5,1;9,6,1;10,6,2;11,6,1;10,7,1;"
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 28,
+      "field": "energies",
+      "original": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;",
+      "rebuilt": "10,5,2;9,6,2;10,6,2;11,6,2;10,7,2;"
+    },
+    {
+      "scenario": "grenade_chain",
+      "tick": 29,
+      "field": "energies",
+      "original": "",
+      "rebuilt": "10,5,1;9,6,1;10,6,1;11,6,1;10,7,1;"
+    }
+  ]
+}

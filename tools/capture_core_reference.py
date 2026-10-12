@@ -19,7 +19,9 @@ def main():
     parser.add_argument("--output", type=Path, default=ROOT / ".artifacts/core-reference")
     parser.add_argument("--timeout", type=float, default=180)
     parser.add_argument("--require-parity", action="store_true", help="Fail on observed differences as well as harness errors")
+    parser.add_argument("--profile", choices=["core-v1", "motion-v1"], default="core-v1")
     args = parser.parse_args()
+    stem = "core" if args.profile == "core-v1" else "motion"
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=True)
     (output / "rebuilt").mkdir(exist_ok=True)
@@ -34,7 +36,7 @@ def main():
                                  timeout=args.timeout, check=True).stdout.strip()
         if not version.startswith(ENGINE_VERSION + "."):
             raise ValueError(f"Expected Godot {ENGINE_VERSION}, found {version}")
-        config = json.loads((ROOT / "godot/tests/fixtures/core_scenarios.json").read_text(encoding="utf-8"))
+        config = json.loads((ROOT / f"godot/tests/fixtures/{stem}_scenarios.json").read_text(encoding="utf-8"))
         # Execute the whole unchanged frame-2 tag on an empty controlled stage.
         # Its original callbacks survive; the fixture installs actors afterward.
         prelude = output / "prelude.as"
@@ -44,10 +46,10 @@ def main():
         classpath = os.pathsep.join([str(args.ffdec / "ffdec.jar"), str(args.ffdec / "lib/*")])
         commands = [
             ("fixture", ["java", "--class-path", classpath, str(ROOT / "tools/reference/BuildReference.java"),
-                         str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / "tools/reference/core_scenario.as"), str(prelude)], "Preserved complete original frame 2"),
-            ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original")], "Captured original"),
+                         str(ROOT / "Bomb It 1.swf"), str(output / "fixture.swf"), str(ROOT / f"tools/reference/{stem}_scenario.as"), str(prelude)], "Preserved complete original frame 2"),
+            ("original", ["node", str(ROOT / "tools/reference/capture_core.mjs"), str(output / "fixture.swf"), str(output / "original"), str(ROOT / f"godot/tests/fixtures/{stem}_scenarios.json")], "Captured original"),
             ("import", [godot, "--headless", "--path", str(ROOT / "godot"), "--editor", "--import", "--quit"], None),
-            ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", "res://tests/core_reference_capture.gd"], "CORE_REFERENCE_CAPTURE_OK")]
+            ("rebuilt", [godot, "--headless", "--path", str(ROOT / "godot"), "--script", f"res://tests/{stem}_reference_capture.gd"], "CORE_REFERENCE_CAPTURE_OK")]
         for name, command, marker in commands:
             phase = run_phase(name, command, output, args.timeout, env, marker)
             phases.append(phase)
@@ -56,7 +58,7 @@ def main():
         original = output / "original/trace.json"
         data = json.loads(original.read_text(encoding="utf-8"))
         for label, path in {
-            "original_swf": ROOT / "Bomb It 1.swf", "harness": ROOT / "tools/reference/core_scenario.as",
+            "original_swf": ROOT / "Bomb It 1.swf", "harness": ROOT / f"tools/reference/{stem}_scenario.as",
             "builder": ROOT / "tools/reference/BuildReference.java", "capture": ROOT / "tools/reference/capture_core.mjs",
             "ffdec": args.ffdec / "ffdec.jar", "prelude": prelude,
         }.items():

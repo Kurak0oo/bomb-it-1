@@ -37,8 +37,8 @@ class ReferenceComparison(unittest.TestCase):
                                           "--output", str(root / "report.json")], capture_output=True, text=True)
                     self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
 
-    def compare_real(self, mutate=None):
-        evidence = ROOT / "reference/issue-11-evidence"
+    def compare_real(self, mutate=None, evidence_name="issue-11-evidence"):
+        evidence = ROOT / "reference" / evidence_name
         original = json.loads((evidence / "original-trace.json").read_text(encoding="utf-8"))
         rebuilt = json.loads((evidence / "rebuilt-trace.json").read_text(encoding="utf-8"))
         if mutate:
@@ -103,6 +103,56 @@ class ReferenceComparison(unittest.TestCase):
                     change(original)
                     change(rebuilt)
                 run, report = self.compare_real(perturb)
+                self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+                self.assertIsNone(report)
+
+    def test_motion_profile_rejects_incomplete_capture(self):
+        def perturb(original, rebuilt):
+            for capture in (original, rebuilt):
+                capture["profile"] = "motion-v1"
+        run, report = self.compare_real(perturb)
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("motion-v1: incompatible configuration", run.stderr)
+
+    def test_motion_capture_reports_first_divergence_for_each_scenario(self):
+        run, report = self.compare_real(evidence_name="issue-12-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        first = report["scenario_first_divergences"]
+        self.assertEqual(first["push_corridor"], {"scenario":"push_corridor", "tick":0,
+                         "field":"bombFuse", "original":59, "rebuilt":60})
+        self.assertEqual(first["grenade_right"]["tick"], 18)
+        self.assertEqual(first["grenade_right"]["field"], "energies")
+        self.assertIsNone(first["push_blocked"])
+        self.assertIsNone(first["grenade_edge"])
+
+    def test_motion_real_field_and_tick_perturbations_are_detected(self):
+        def field(original, rebuilt):
+            rebuilt["scenarios"]["grenade_right"][0]["grenadeTargetX"] += 1
+        run, report = self.compare_real(field, "issue-12-evidence")
+        self.assertEqual(run.returncode, 1, run.stdout + run.stderr)
+        self.assertIn({"scenario":"grenade_right", "tick":0, "field":"grenadeTargetX",
+                       "original":10, "rebuilt":11}, report["differences"])
+        def tick(original, rebuilt):
+            rebuilt["scenarios"]["push_alignment"][1]["tick"] += 1
+        run, report = self.compare_real(tick, "issue-12-evidence")
+        self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
+        self.assertIn("out-of-order tick 1", run.stderr)
+        self.assertIsNone(report)
+
+    def test_motion_captures_reject_shared_truncation_and_malformed_cells(self):
+        changes = {
+            "scenario": lambda c: c["scenarios"].pop("push_alignment"),
+            "row": lambda c: c["scenarios"]["grenade_right"].pop(),
+            "field": lambda c: c["scenarios"]["grenade_right"][0].pop("grenadeFrame"),
+            "cells": lambda c: c["scenarios"]["grenade_right"][0].update(energies="undefined"),
+            "activity": lambda c: c["scenarios"]["grenade_right"][0].update(grenadeActive=1),
+        }
+        for name, change in changes.items():
+            with self.subTest(name=name):
+                def perturb(original, rebuilt):
+                    change(original)
+                    change(rebuilt)
+                run, report = self.compare_real(perturb, "issue-12-evidence")
                 self.assertEqual(run.returncode, 2, run.stdout + run.stderr)
                 self.assertIsNone(report)
 
