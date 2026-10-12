@@ -7,10 +7,10 @@ import { chromium } from 'playwright';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
-if (args.length !== 2) throw new Error('Usage: node capture_core.mjs <fixture.swf> <output-directory>');
+if (args.length !== 2 && args.length !== 3) throw new Error('Usage: node capture_core.mjs <fixture.swf> <output-directory> [configuration.json]');
 const swf = await readFile(resolve(args[0]));
 const output = resolve(args[1]);
-const configBytes = await readFile(resolve(here, '../../godot/tests/fixtures/core_scenarios.json'));
+const configBytes = await readFile(args[2] ? resolve(args[2]) : resolve(here, '../../godot/tests/fixtures/core_scenarios.json'));
 const config = JSON.parse(configBytes);
 await mkdir(output, { recursive: true });
 const html = `<!doctype html><style>html,body{margin:0;background:#fff}ruffle-player{width:550px;height:400px;display:block}</style>

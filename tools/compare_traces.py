@@ -14,16 +14,18 @@ def compare(original, rebuilt):
         if not isinstance(capture.get("runtime"), str) or not capture["runtime"]:
             raise ValueError("Capture runtime is required")
     if any("profile" in capture or "configuration_sha256" in capture for capture in (original, rebuilt)):
-        if original.get("profile") != "core-v1" or rebuilt.get("profile") != "core-v1":
+        if original.get("profile") not in ("core-v1", "motion-v1") or original.get("profile") != rebuilt.get("profile"):
             raise ValueError("Unknown or incompatible capture profile")
         from core_trace_schema import validate
         validate(original)
         validate(rebuilt)
     differences = []
+    first_by_scenario = {}
     first, second = original["scenarios"], rebuilt["scenarios"]
     if not isinstance(first, dict) or not isinstance(second, dict) or not first or set(first) != set(second):
         raise ValueError("Scenario sets must be nonempty and identical")
     for scenario in first:
+        first_by_scenario[scenario] = None
         expected, actual = first[scenario], second[scenario]
         if not isinstance(expected, list) or not isinstance(actual, list) or not expected or len(expected) != len(actual):
             raise ValueError(f"{scenario}: trace lengths must be nonzero and identical")
@@ -36,11 +38,14 @@ def compare(original, rebuilt):
                 raise ValueError(f"{scenario}: observation fields differ at tick {tick}")
             for field in sorted(left):
                 if type(left[field]) != type(right[field]) or left[field] != right[field]:
-                    differences.append({"scenario":scenario, "tick":tick, "field":field,
-                                        "original":left[field], "rebuilt":right[field]})
+                    difference = {"scenario":scenario, "tick":tick, "field":field,
+                                  "original":left[field], "rebuilt":right[field]}
+                    differences.append(difference)
+                    if first_by_scenario[scenario] is None:
+                        first_by_scenario[scenario] = difference
     return {"passed": not differences, "original_runtime": original["runtime"],
             "rebuilt_runtime": rebuilt["runtime"], "first_divergence": differences[0] if differences else None,
-            "differences":differences}
+            "scenario_first_divergences":first_by_scenario, "differences":differences}
 
 
 def load_capture(path):
